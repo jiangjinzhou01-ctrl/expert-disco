@@ -3,12 +3,18 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Branch-based Pages may publish source HTML. Publish the compiled artifact
+  # after that workflow completes, so it cannot leave the source entry online.
+  workflow_run:
+    workflows: ['pages build and deployment']
+    branches: [main]
+    types: [completed]
 permissions:
   contents: read
   pages: write
   id-token: write
 concurrency:
-  group: pages
+  group: threshold-g0-pages-publish
   cancel-in-progress: true
 jobs:
   build:
@@ -21,10 +27,6 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      - name: Publish the Vite build instead of the source branch
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh api --method PUT 'repos/${{ github.repository }}/pages' -f build_type=workflow
       - uses: actions/configure-pages@v5
         with:
           enablement: true
