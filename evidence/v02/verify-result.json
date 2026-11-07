@@ -1,7 +1,0 @@
-{
-  "command": "npm run verify",
-  "exitCode": 0,
-  "observedToolSession": 66598,
-  "finishedAtUtc": "2026-11-07T11:51:34.427665+00:00",
-  "note": "62 Vitest, 28 development browser, 2 production browser, subpath PASS. Root HTML title subsequently rebuilt; engine/assets remain the verified version."
-}

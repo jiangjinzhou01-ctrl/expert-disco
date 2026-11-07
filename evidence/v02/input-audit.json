@@ -1,7 +1,0 @@
-{
-  "inputArchiveSha256": "b6d3af3126658d8084f10660a59e9a9beb99d041825924d746d20064c6216578",
-  "baselineCommit": "b8d9311",
-  "originalSourceFilesCompared": 36,
-  "different": [],
-  "method": "Compare each original attachment src file against git show b8d9311:path, not against modified V02 files."
-}
