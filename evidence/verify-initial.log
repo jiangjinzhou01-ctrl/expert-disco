@@ -1,0 +1,75 @@
+
+> threshold-g0@0.1.0 verify
+> npm run typecheck && npm run lint && npm run test:unit && npm run test:e2e && npm run test:production
+
+
+> threshold-g0@0.1.0 typecheck
+> tsc --noEmit
+
+
+> threshold-g0@0.1.0 lint
+> eslint .
+
+
+> threshold-g0@0.1.0 test:unit
+> vitest run
+
+
+ RUN  v5.1.0 /workspace
+
+ ✓ src/tests/integration/portal-physics.test.ts (12 tests) 594ms
+   ✓ Rapier capsule portal integration (12)
+     ✓ P03: survives 100 complete natural A → B → A cycles with exactly 200 unique commits 395ms
+ ✓ src/tests/integration/collision-queries.test.ts (3 tests) 131ms
+ ✓ src/tests/unit/portal-math.test.ts (8 tests) 65ms
+ ✓ src/tests/unit/renderer-state.test.ts (4 tests) 23ms
+ ✓ src/tests/unit/performance-monitor.test.ts (3 tests) 5ms
+
+ Test Files  5 passed (5)
+      Tests  30 passed (30)
+   Start at  14:10:03
+   Duration  1.67s (tests 75%, import 20%, transform 3%, worker 2%)
+
+    Isolate  5 workers spawned · ~103ms startup each (spawn + environment, per file)
+             at least ~414ms faster with isolate: false — reuses workers across files instead of one per file
+
+JSON report written to /workspace/evidence/vitest.json
+
+> threshold-g0@0.1.0 test:e2e
+> playwright test
+
+
+Running 19 tests using 1 worker
+
+(node:7191) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 src/tests/e2e/input.spec.ts:58:1 › mobile uses distinct captured pointer IDs for simultaneous movement and look, with cancellation (3.7s)
+  ✓   2 src/tests/e2e/input.spec.ts:99:3 › mobile blur clears held movement and allows a fresh contact (4.5s)
+  ✓   3 src/tests/e2e/input.spec.ts:99:3 › mobile orientationchange clears held movement and allows a fresh contact (4.4s)
+  ✓   4 src/tests/e2e/input.spec.ts:99:3 › mobile visibilitychange clears held movement and allows a fresh contact (4.4s)
+  ✓   5 src/tests/e2e/input.spec.ts:122:1 › mobile touch controls traverse A → B, turn around, return, and reset the real capsule (9.5s)
+  ✓   6 src/tests/e2e/lifecycle.spec.ts:4:1 › WebGL2 context loss/restoration resumes real portal passes (4.5s)
+  ✓   7 src/tests/e2e/lifecycle.spec.ts:26:1 › resize and render quality retain aspect and bounded GPU resources; disposal releases resources (9.7s)
+  ✓   8 src/tests/e2e/runtime.spec.ts:10:1 › real Rapier state crosses both ways and preserves committed event order (7.1s)
+  ✓   9 src/tests/e2e/runtime.spec.ts:35:1 › door frame blocks the capsule, blocked exit rejects then recovers (6.0s)
+  ✓  10 src/tests/e2e/runtime.spec.ts:53:1 › fast segments retain remaining displacement and long frames cap catch-up (5.4s)
+  ✓  11 src/tests/e2e/runtime.spec.ts:72:1 › desktop keyboard moves the real capsule and R resets it (8.0s)
+  ✓  12 src/tests/e2e/visual.spec.ts:60:25 › portal projection front: real pixels match independent camera (13.1s)
+  ✓  13 src/tests/e2e/visual.spec.ts:60:25 › portal projection oblique-30: real pixels match independent camera (13.4s)
+  ✓  14 src/tests/e2e/visual.spec.ts:60:25 › portal projection oblique-60: real pixels match independent camera (13.6s)
+  ✓  15 src/tests/e2e/visual.spec.ts:60:25 › portal projection distance-1m: real pixels match independent camera (13.3s)
+  ✓  16 src/tests/e2e/visual.spec.ts:60:25 › portal projection distance-0.1m: real pixels match independent camera (12.5s)
+  ✓  17 src/tests/e2e/visual.spec.ts:60:25 › portal projection pre-plane-0.005m: real pixels match independent camera (12.8s)
+  ✓  18 src/tests/e2e/visual.spec.ts:60:25 › portal projection frame-edge: real pixels match independent camera (13.7s)
+  ✓  19 src/tests/e2e/visual.spec.ts:91:1 › lateral parallax, live target animation and viewport resizing remain real (35.5s)
+
+  19 passed (3.3m)
+
+> threshold-g0@0.1.0 test:production
+> npm run build && playwright test --config playwright.production.config.ts
+
+
+> threshold-g0@0.1.0 build
+> tsc --noEmit && vite build
+
+src/tests/e2e/diagnostics.spec.ts(66,9): error TS18046: 'stopped.input' is of type 'unknown'.

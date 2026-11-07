@@ -1,0 +1,105 @@
+{
+  "initial": {
+    "targetWidth": 1632,
+    "targetHeight": 918,
+    "quality": 0.85,
+    "mainDrawCalls": 13,
+    "offscreenDrawCalls": 31,
+    "geometries": 5,
+    "textures": 1,
+    "programs": 5,
+    "context": "active",
+    "passes": 1
+  },
+  "samples": [
+    {
+      "targetWidth": 1088,
+      "targetHeight": 612,
+      "quality": 0.85,
+      "mainDrawCalls": 13,
+      "offscreenDrawCalls": 31,
+      "geometries": 5,
+      "textures": 1,
+      "programs": 5,
+      "context": "active",
+      "passes": 1
+    },
+    {
+      "targetWidth": 816,
+      "targetHeight": 544,
+      "quality": 0.85,
+      "mainDrawCalls": 13,
+      "offscreenDrawCalls": 31,
+      "geometries": 5,
+      "textures": 1,
+      "programs": 5,
+      "context": "active",
+      "passes": 1
+    },
+    {
+      "targetWidth": 918,
+      "targetHeight": 612,
+      "quality": 0.85,
+      "mainDrawCalls": 13,
+      "offscreenDrawCalls": 31,
+      "geometries": 5,
+      "textures": 1,
+      "programs": 5,
+      "context": "active",
+      "passes": 1
+    },
+    {
+      "targetWidth": 1360,
+      "targetHeight": 765,
+      "quality": 0.85,
+      "mainDrawCalls": 13,
+      "offscreenDrawCalls": 31,
+      "geometries": 5,
+      "textures": 1,
+      "programs": 5,
+      "context": "active",
+      "passes": 1
+    },
+    {
+      "targetWidth": 1632,
+      "targetHeight": 918,
+      "quality": 0.85,
+      "mainDrawCalls": 13,
+      "offscreenDrawCalls": 31,
+      "geometries": 5,
+      "textures": 1,
+      "programs": 5,
+      "context": "active",
+      "passes": 1
+    },
+    {
+      "targetWidth": 1088,
+      "targetHeight": 612,
+      "quality": 0.85,
+      "mainDrawCalls": 13,
+      "offscreenDrawCalls": 31,
+      "geometries": 5,
+      "textures": 1,
+      "programs": 5,
+      "context": "active",
+      "passes": 1
+    }
+  ],
+  "quality": {
+    "targetWidth": 640,
+    "targetHeight": 360,
+    "quality": 0.5,
+    "mainDrawCalls": 13,
+    "offscreenDrawCalls": 31,
+    "geometries": 5,
+    "textures": 1,
+    "programs": 5,
+    "context": "active",
+    "passes": 1
+  },
+  "disposed": {
+    "geometries": 0,
+    "textures": 0,
+    "programs": 0
+  }
+}

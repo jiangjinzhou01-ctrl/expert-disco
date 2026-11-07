@@ -1,0 +1,207 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/node_modules/.bin/playwright",
+      "test",
+      "src/tests/e2e/lifecycle.spec.ts",
+      "--output=evidence/lifecycle-artifacts",
+      "--reporter=json"
+    ],
+    "configFile": "/workspace/playwright.config.ts",
+    "rootDir": "/workspace/src/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/evidence/lifecycle-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/workspace/src/tests/e2e",
+        "testIgnore": [
+          "**/production.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/evidence/lifecycle-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/workspace/src/tests/e2e",
+        "snapshotDir": "/workspace/src/tests/e2e",
+        "testIgnore": "**/production.spec.ts",
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5173",
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "headless": true,
+          "launchOptions": {
+            "args": [
+              "--no-sandbox",
+              "--use-gl=angle",
+              "--use-angle=swiftshader",
+              "--enable-unsafe-swiftshader"
+            ]
+          },
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev -- --port 5173",
+      "url": "http://127.0.0.1:5173",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "lifecycle.spec.ts",
+      "file": "lifecycle.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "WebGL2 context loss/restoration resumes real portal passes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4303,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-06T14:04:28.967Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "context-restoration.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZWFkeSI6IHRydWUsCiAgImVycm9yIjogbnVsbCwKICAid29ybGRJZCI6ICJBIiwKICAicG9zaXRpb24iOiBbCiAgICAtMC4wMDAwMDE1NDI2MDIxNDkxMjkzNzk1LAogICAgMC44Nzk1OTI4MzU5MDMxNjc3LAogICAgLTMuMDAwMDAxOTA3MzQ4NjMzCiAgXSwKICAicm90YXRpb24iOiBbCiAgICAwLAogICAgMCwKICAgIDAsCiAgICAxCiAgXSwKICAieWF3IjogMCwKICAicGl0Y2giOiAwLAogICJ2ZWxvY2l0eSI6IFsKICAgIDAsCiAgICAwLAogICAgMAogIF0sCiAgInN0ZXAiOiAzMSwKICAiZ3JvdW5kZWQiOiB0cnVlLAogICJldmVudHMiOiBbXSwKICAibGFzdEV2ZW50SWQiOiAwLAogICJ0cmFuc2ZlclN0YXRlIjogIkFSTUVEIiwKICAibGFzdFJlamVjdGlvbiI6IG51bGwsCiAgInBvcnRhbCI6IHsKICAgICJzb3VyY2UiOiAiQS1kb29yIiwKICAgICJkZXN0aW5hdGlvbiI6ICJCLWRvb3IiLAogICAgInBvc2VzIjogWwogICAgICB7CiAgICAgICAgImlkIjogIkEtZG9vciIsCiAgICAgICAgInBvc2l0aW9uIjogWwogICAgICAgICAgMCwKICAgICAgICAgIDEuNDUsCiAgICAgICAgICAtOAogICAgICAgIF0sCiAgICAgICAgInJvdGF0aW9uIjogWwogICAgICAgICAgMCwKICAgICAgICAgIDAsCiAgICAgICAgICAwLAogICAgICAgICAgMQogICAgICAgIF0KICAgICAgfSwKICAgICAgewogICAgICAgICJpZCI6ICJCLWRvb3IiLAogICAgICAgICJwb3NpdGlvbiI6IFsKICAgICAgICAgIDMyLAogICAgICAgICAgMS40NSwKICAgICAgICAgIDAKICAgICAgICBdLAogICAgICAgICJyb3RhdGlvbiI6IFsKICAgICAgICAgIDAsCiAgICAgICAgICAwLjcwNzEwNjc4MTE4NjU0NzUsCiAgICAgICAgICAwLAogICAgICAgICAgMC43MDcxMDY3ODExODY1NDc2CiAgICAgICAgXQogICAgICB9CiAgICBdLAogICAgInNpZ25lZERpc3RhbmNlIjogNC45OTk5OTgwOTI2NTEzNjcsCiAgICAiY3Jvc3NpbmdDb25kaXRpb24iOiBmYWxzZQogIH0sCiAgInJlbmRlciI6IHsKICAgICJ0YXJnZXRXaWR0aCI6IDE2MzIsCiAgICAidGFyZ2V0SGVpZ2h0IjogOTE4LAogICAgInF1YWxpdHkiOiAwLjg1LAogICAgIm1haW5EcmF3Q2FsbHMiOiAxMywKICAgICJvZmZzY3JlZW5EcmF3Q2FsbHMiOiAzMSwKICAgICJnZW9tZXRyaWVzIjogNSwKICAgICJ0ZXh0dXJlcyI6IDEsCiAgICAicHJvZ3JhbXMiOiA1LAogICAgImNvbnRleHQiOiAiYWN0aXZlIiwKICAgICJwYXNzZXMiOiAxCiAgfSwKICAicGVyZm9ybWFuY2UiOiB7CiAgICAic2FtcGxlcyI6IDE3LAogICAgImZwcyI6IDguMzE2NjE4NTYwNzM2MzQ1LAogICAgImF2ZXJhZ2VNcyI6IDEyMC4yNDExNzY0NzA1ODAwMiwKICAgICJwOTVNcyI6IDg4MS42MDAwMDAwMDAwOTMxLAogICAgInA5OU1zIjogODgxLjYwMDAwMDAwMDA5MzEsCiAgICAicGh5c2ljc01zIjogMCwKICAgICJncHVNcyI6IG51bGwKICB9LAogICJtb3ZpbmdSZWZlcmVuY2UiOiBbCiAgICAzNiwKICAgIDEuMjg0NTI2ODQwNDMzNjkwMywKICAgIDAuODMxODIyNDI1Njg3Mjg3OAogIF0sCiAgImVsYXBzZWQiOiAwLjUxNjY2NjY2NjY2NjY2NjYsCiAgImRyb3BwZWRTZWNvbmRzIjogMS40NTMxMzMzMzMzMzMzNzk4Cn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f1785dee40219527314-8972f4071f6c8248062c",
+          "file": "lifecycle.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "resize and render quality retain aspect and bounded GPU resources; disposal releases resources",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11852,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-06T14:04:33.366Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "resize-resources.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJpbml0aWFsIjogewogICAgInRhcmdldFdpZHRoIjogMTYzMiwKICAgICJ0YXJnZXRIZWlnaHQiOiA5MTgsCiAgICAicXVhbGl0eSI6IDAuODUsCiAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgIm9mZnNjcmVlbkRyYXdDYWxscyI6IDMxLAogICAgImdlb21ldHJpZXMiOiA1LAogICAgInRleHR1cmVzIjogMSwKICAgICJwcm9ncmFtcyI6IDUsCiAgICAiY29udGV4dCI6ICJhY3RpdmUiLAogICAgInBhc3NlcyI6IDEKICB9LAogICJzYW1wbGVzIjogWwogICAgewogICAgICAidGFyZ2V0V2lkdGgiOiAxMDg4LAogICAgICAidGFyZ2V0SGVpZ2h0IjogNjEyLAogICAgICAicXVhbGl0eSI6IDAuODUsCiAgICAgICJtYWluRHJhd0NhbGxzIjogMTMsCiAgICAgICJvZmZzY3JlZW5EcmF3Q2FsbHMiOiAzMSwKICAgICAgImdlb21ldHJpZXMiOiA1LAogICAgICAidGV4dHVyZXMiOiAxLAogICAgICAicHJvZ3JhbXMiOiA1LAogICAgICAiY29udGV4dCI6ICJhY3RpdmUiLAogICAgICAicGFzc2VzIjogMQogICAgfSwKICAgIHsKICAgICAgInRhcmdldFdpZHRoIjogODE2LAogICAgICAidGFyZ2V0SGVpZ2h0IjogNTQ0LAogICAgICAicXVhbGl0eSI6IDAuODUsCiAgICAgICJtYWluRHJhd0NhbGxzIjogMTMsCiAgICAgICJvZmZzY3JlZW5EcmF3Q2FsbHMiOiAzMSwKICAgICAgImdlb21ldHJpZXMiOiA1LAogICAgICAidGV4dHVyZXMiOiAxLAogICAgICAicHJvZ3JhbXMiOiA1LAogICAgICAiY29udGV4dCI6ICJhY3RpdmUiLAogICAgICAicGFzc2VzIjogMQogICAgfSwKICAgIHsKICAgICAgInRhcmdldFdpZHRoIjogOTE4LAogICAgICAidGFyZ2V0SGVpZ2h0IjogNjEyLAogICAgICAicXVhbGl0eSI6IDAuODUsCiAgICAgICJtYWluRHJhd0NhbGxzIjogMTMsCiAgICAgICJvZmZzY3JlZW5EcmF3Q2FsbHMiOiAzMSwKICAgICAgImdlb21ldHJpZXMiOiA1LAogICAgICAidGV4dHVyZXMiOiAxLAogICAgICAicHJvZ3JhbXMiOiA1LAogICAgICAiY29udGV4dCI6ICJhY3RpdmUiLAogICAgICAicGFzc2VzIjogMQogICAgfSwKICAgIHsKICAgICAgInRhcmdldFdpZHRoIjogMTM2MCwKICAgICAgInRhcmdldEhlaWdodCI6IDc2NSwKICAgICAgInF1YWxpdHkiOiAwLjg1LAogICAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgICAib2Zmc2NyZWVuRHJhd0NhbGxzIjogMzEsCiAgICAgICJnZW9tZXRyaWVzIjogNSwKICAgICAgInRleHR1cmVzIjogMSwKICAgICAgInByb2dyYW1zIjogNSwKICAgICAgImNvbnRleHQiOiAiYWN0aXZlIiwKICAgICAgInBhc3NlcyI6IDEKICAgIH0sCiAgICB7CiAgICAgICJ0YXJnZXRXaWR0aCI6IDE2MzIsCiAgICAgICJ0YXJnZXRIZWlnaHQiOiA5MTgsCiAgICAgICJxdWFsaXR5IjogMC44NSwKICAgICAgIm1haW5EcmF3Q2FsbHMiOiAxMywKICAgICAgIm9mZnNjcmVlbkRyYXdDYWxscyI6IDMxLAogICAgICAiZ2VvbWV0cmllcyI6IDUsCiAgICAgICJ0ZXh0dXJlcyI6IDEsCiAgICAgICJwcm9ncmFtcyI6IDUsCiAgICAgICJjb250ZXh0IjogImFjdGl2ZSIsCiAgICAgICJwYXNzZXMiOiAxCiAgICB9LAogICAgewogICAgICAidGFyZ2V0V2lkdGgiOiAxMDg4LAogICAgICAidGFyZ2V0SGVpZ2h0IjogNjEyLAogICAgICAicXVhbGl0eSI6IDAuODUsCiAgICAgICJtYWluRHJhd0NhbGxzIjogMTMsCiAgICAgICJvZmZzY3JlZW5EcmF3Q2FsbHMiOiAzMSwKICAgICAgImdlb21ldHJpZXMiOiA1LAogICAgICAidGV4dHVyZXMiOiAxLAogICAgICAicHJvZ3JhbXMiOiA1LAogICAgICAiY29udGV4dCI6ICJhY3RpdmUiLAogICAgICAicGFzc2VzIjogMQogICAgfQogIF0sCiAgInF1YWxpdHkiOiB7CiAgICAidGFyZ2V0V2lkdGgiOiA2NDAsCiAgICAidGFyZ2V0SGVpZ2h0IjogMzYwLAogICAgInF1YWxpdHkiOiAwLjUsCiAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgIm9mZnNjcmVlbkRyYXdDYWxscyI6IDMxLAogICAgImdlb21ldHJpZXMiOiA1LAogICAgInRleHR1cmVzIjogMSwKICAgICJwcm9ncmFtcyI6IDUsCiAgICAiY29udGV4dCI6ICJhY3RpdmUiLAogICAgInBhc3NlcyI6IDEKICB9LAogICJkaXNwb3NlZCI6IHsKICAgICJnZW9tZXRyaWVzIjogMCwKICAgICJ0ZXh0dXJlcyI6IDAsCiAgICAicHJvZ3JhbXMiOiAwCiAgfQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f1785dee40219527314-b7df8a524beb07bdf3a6",
+          "file": "lifecycle.spec.ts",
+          "line": 26,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-06T14:04:28.514Z",
+    "duration": 16889.146,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

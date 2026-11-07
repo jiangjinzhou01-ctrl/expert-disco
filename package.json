@@ -1,0 +1,45 @@
+{
+  "name": "threshold-g0",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test:unit": "vitest run",
+    "test:e2e": "playwright test",
+    "test:production": "npm run build && playwright test --config playwright.production.config.ts",
+    "build": "tsc --noEmit && vite build",
+    "build:test": "tsc --noEmit && vite build --mode e2e",
+    "preview": "vite preview --host 0.0.0.0",
+    "verify": "npm run typecheck && npm run lint && npm run test:unit && npm run test:e2e && npm run test:production",
+    "test:subpath": "node scripts/subpath-smoke.js",
+    "measure:software": "node scripts/measure-performance.js"
+  },
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "0.21.0",
+    "@react-three/fiber": "9.8.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.65.0",
+    "@types/node": "26.6.6",
+    "@types/pngjs": "6.0.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.187.0",
+    "@vitejs/plugin-react": "6.2.1",
+    "eslint": "10.14.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "17.14.0",
+    "pngjs": "7.0.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.1",
+    "vite": "8.3.6",
+    "vitest": "5.1.0"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "capturedAt": "2026-11-06T14:31:46.459Z",
+  "command": "npx vite build --base=/threshold-g0/ --outDir /tmp/threshold-g0-subpath",
+  "url": "http://127.0.0.1:4181/threshold-g0/?debug=1&test=1",
+  "result": "PASS",
+  "requests": [
+    {
+      "url": "http://127.0.0.1:4181/threshold-g0/?debug=1&test=1",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-g0/assets/index-DD7S2-Wh.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-g0/assets/index-B9wo7Ptu.js",
+      "status": 200
+    }
+  ],
+  "pageErrors": [],
+  "requestFailures": [],
+  "browser": "158.0.8127.18",
+  "snapshot": {
+    "diagnostics": {
+      "input": {
+        "movement": {
+          "x": 0,
+          "y": 0
+        },
+        "touchState": {
+          "moveActive": false,
+          "lookActive": false,
+          "moveX": 0,
+          "moveY": 0
+        },
+        "touch": false
+      },
+      "ready": true,
+      "error": null,
+      "worldId": "A",
+      "position": [
+        -0.0000015504081147810211,
+        0.8798928260803223,
+        -3.000002145767212
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "yaw": 0,
+      "pitch": 0,
+      "velocity": [
+        0,
+        0,
+        0
+      ],
+      "step": 22,
+      "grounded": true,
+      "events": [],
+      "lastEventId": 0,
+      "transferState": "ARMED",
+      "lastRejection": null,
+      "portal": {
+        "source": "A-door",
+        "destination": "B-door",
+        "poses": [
+          {
+            "id": "A-door",
+            "position": [
+              0,
+              1.45,
+              -8
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "id": "B-door",
+            "position": [
+              32,
+              1.45,
+              0
+            ],
+            "rotation": [
+              0,
+              0.7071067811865475,
+              0,
+              0.7071067811865476
+            ]
+          }
+        ],
+        "signedDistance": 4.999997854232788,
+        "crossingCondition": false
+      },
+      "render": {
+        "targetWidth": 1088,
+        "targetHeight": 612,
+        "quality": 0.85,
+        "mainDrawCalls": 13,
+        "offscreenDrawCalls": 31,
+        "geometries": 5,
+        "textures": 1,
+        "programs": 5,
+        "context": "active",
+        "passes": 1
+      },
+      "performance": {
+        "samples": 16,
+        "fps": 31.391014322138812,
+        "averageMs": 31.85625000001164,
+        "p95Ms": 151.89999999990687,
+        "p99Ms": 151.89999999990687,
+        "physicsMs": 0.2999999998137355,
+        "gpuMs": null
+      },
+      "movingReference": [
+        35.8,
+        0.8648086056789737,
+        -1.252783319918118
+      ],
+      "elapsed": 0.36666666666666664,
+      "droppedSeconds": 0.08333333333333333
+    },
+    "webgl2": true,
+    "mutationAdapter": "undefined",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.8127.18 Safari/537.36",
+    "viewport": [
+      1280,
+      720
+    ],
+    "dpr": 1
+  }
+}
