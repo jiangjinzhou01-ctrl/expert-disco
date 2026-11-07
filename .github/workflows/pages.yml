@@ -6,7 +6,7 @@ on:
   # Branch-based Pages may publish source HTML. Publish the compiled artifact
   # after that workflow completes, so it cannot leave the source entry online.
   workflow_run:
-    workflows: ['pages build and deployment']
+    workflows: ['pages-build-deployment']
     branches: [main]
     types: [completed]
 permissions:
