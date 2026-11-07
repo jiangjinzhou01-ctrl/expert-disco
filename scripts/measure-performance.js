@@ -1,7 +1,7 @@
 import {chromium} from '@playwright/test';
 import {writeFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
-const url=process.argv[2]??'http://127.0.0.1:5173/?test=1&debug=1';
+const url=process.argv[2]??'http://127.0.0.1:5180/?test=1&debug=1';
 const duration=Number(process.argv[3]??15);
 assert(Number.isFinite(duration)&&duration>=1&&duration<=600,'Duration must be 1–600 seconds');
 const browser=await chromium.launch({args:['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});

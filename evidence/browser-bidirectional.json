@@ -34,7 +34,7 @@
       0,
       0
     ],
-    "step": 17,
+    "step": 12,
     "grounded": false,
     "events": [],
     "lastEventId": 0,
@@ -86,24 +86,26 @@
       "textures": 1,
       "programs": 5,
       "context": "active",
-      "passes": 1
+      "passes": 1,
+      "targetResizes": 1
     },
     "performance": {
-      "samples": 15,
-      "fps": 13.118768584917888,
-      "averageMs": 76.2266666666915,
-      "p95Ms": 702.8000000002794,
-      "p99Ms": 702.8000000002794,
-      "physicsMs": 1,
+      "samples": 8,
+      "fps": 10.174233753059038,
+      "averageMs": 98.28749999962747,
+      "p50Ms": 20.900000005960464,
+      "p95Ms": 339.8999999985099,
+      "p99Ms": 339.8999999985099,
+      "physicsMs": 0.29999999701976776,
       "gpuMs": null
     },
     "movingReference": [
       35.8,
-      0.8504490817268756,
-      -1.2633745287579332
+      0.8358059146851649,
+      -1.2740731714760611
     ],
-    "elapsed": 0.2833333333333333,
-    "droppedSeconds": 0.7028000000002794
+    "elapsed": 0.19999999999999998,
+    "droppedSeconds": 0.42973333333184316
   },
   "outbound": {
     "input": {
@@ -140,12 +142,12 @@
       0,
       0
     ],
-    "step": 47,
+    "step": 42,
     "grounded": true,
     "events": [
       {
         "id": 1,
-        "step": 32,
+        "step": 27,
         "sourceId": "A-door",
         "destinationId": "B-door",
         "sourceWorldId": "A",
@@ -227,24 +229,26 @@
       "textures": 1,
       "programs": 5,
       "context": "active",
-      "passes": 1
+      "passes": 1,
+      "targetResizes": 1
     },
     "performance": {
-      "samples": 15,
-      "fps": 13.118768584917888,
-      "averageMs": 76.2266666666915,
-      "p95Ms": 702.8000000002794,
-      "p99Ms": 702.8000000002794,
-      "physicsMs": 1,
+      "samples": 8,
+      "fps": 10.174233753059038,
+      "averageMs": 98.28749999962747,
+      "p50Ms": 20.900000005960464,
+      "p95Ms": 339.8999999985099,
+      "p99Ms": 339.8999999985099,
+      "physicsMs": 0.29999999701976776,
       "gpuMs": null
     },
     "movingReference": [
       35.8,
-      0.9296067659071217,
-      -1.2025100419257198
+      0.917828951588454,
+      -1.2121075372388292
     ],
-    "elapsed": 0.7833333333333341,
-    "droppedSeconds": 0.7028000000002794
+    "elapsed": 0.7000000000000005,
+    "droppedSeconds": 0.42973333333184316
   },
   "inbound": {
     "input": {
@@ -281,12 +285,12 @@
       0,
       3
     ],
-    "step": 77,
+    "step": 72,
     "grounded": true,
     "events": [
       {
         "id": 1,
-        "step": 32,
+        "step": 27,
         "sourceId": "A-door",
         "destinationId": "B-door",
         "sourceWorldId": "A",
@@ -320,7 +324,7 @@
       },
       {
         "id": 2,
-        "step": 62,
+        "step": 57,
         "sourceId": "B-door",
         "destinationId": "A-door",
         "sourceWorldId": "B",
@@ -402,23 +406,25 @@
       "textures": 1,
       "programs": 5,
       "context": "active",
-      "passes": 1
+      "passes": 1,
+      "targetResizes": 1
     },
     "performance": {
-      "samples": 15,
-      "fps": 13.118768584917888,
-      "averageMs": 76.2266666666915,
-      "p95Ms": 702.8000000002794,
-      "p99Ms": 702.8000000002794,
-      "physicsMs": 1,
+      "samples": 8,
+      "fps": 10.174233753059038,
+      "averageMs": 98.28749999962747,
+      "p50Ms": 20.900000005960464,
+      "p95Ms": 339.8999999985099,
+      "p99Ms": 339.8999999985099,
+      "physicsMs": 0.29999999701976776,
       "gpuMs": null
     },
     "movingReference": [
       35.8,
-      0.9829589918858629,
-      -1.1518526120675836
+      0.9763915613769896,
+      -1.159344116159918
     ],
-    "elapsed": 1.2833333333333337,
-    "droppedSeconds": 0.7028000000002794
+    "elapsed": 1.2000000000000006,
+    "droppedSeconds": 0.42973333333184316
   }
 }

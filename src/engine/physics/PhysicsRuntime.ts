@@ -10,6 +10,8 @@ export const CHARACTER_OFFSET = 0.01;
 export const CAPSULE_CYLINDER_HALF_HEIGHT = PLAYER_HALF_HEIGHT - PLAYER_RADIUS;
 
 export interface ColliderMetadata { worldId: WorldId; id: string }
+export type PortalPhysics = Pick<PhysicsRuntime, 'world'|'body'|'collider'|'metadata'|'constrainMovement'> & {allowsExitContact?:(collider:RAPIER.Collider,position:Vector3)=>boolean};
+
 export interface ConstrainedMovement { displacement: Vector3; grounded: boolean }
 
 /** One physics world, two disjoint regions, and one upright kinematic capsule. */

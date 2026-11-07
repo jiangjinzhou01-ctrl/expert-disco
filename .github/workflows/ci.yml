@@ -1,9 +1,9 @@
-name: G0 verification
+name: THRESHOLD V0.2 verification
 on: [push, pull_request]
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -17,7 +17,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: g0-evidence
+          name: threshold-v02-evidence
           path: |
             evidence/
             playwright-report/

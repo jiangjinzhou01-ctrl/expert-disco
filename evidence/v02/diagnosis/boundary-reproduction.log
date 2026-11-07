@@ -1,0 +1,37 @@
+
+ RUN  v5.1.0 /workspace/threshold-v02
+
+ ❯ src/tests/integration/v02-traversal.test.ts (9 tests | 2 failed | 7 skipped) 598ms
+   ↓ survives 30 reversible full body arcs and 100 genuinely swept wall routes
+   ↓ crosses the new chapter portal using G0 transfer, completes the device, and returns upright
+   ↓ physically blocks observation glass and preserves the wall rotation when resetting
+   ↓ completes the entire chapter from the actual spawn using only input, including the return portal
+   ↓ can freely enter and cross the actual atrium bridge through its visible guard openings
+   ↓ uses real character stepping on the low architectural treads
+   ↓ collides with the visible thickness when freely approaching the curved shell from behind
+   × keeps the actual front wall outside the aperture at the same depth as the threshold 412ms
+   × closes the visible compression corridor behind the spawn with real geometry and collision 184ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/tests/integration/v02-traversal.test.ts > keeps the actual front wall outside the aperture at the same depth as the threshold
+AssertionError: [8.000023907340271,-4.936010045142325e-9,-19.99999999627471]: expected -19.99999999627471 to be greater than -19.3
+ ❯ src/tests/integration/v02-traversal.test.ts:17:275
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  src/tests/integration/v02-traversal.test.ts > closes the visible compression corridor behind the spawn with real geometry and collision
+AssertionError: [-0.000014685956379878462,-1.762100528040901,37.97403268329799]: expected 37.97403268329799 to be less than 35.8
+ ❯ src/tests/integration/v02-traversal.test.ts:18:281
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed | 7 skipped (9)
+   Start at  10:21:42
+   Duration  1.07s (tests 72%, import 16%, transform 11%, worker 1%)
+
+JSON report written to /workspace/threshold-v02/evidence/vitest.json

@@ -1,0 +1,66 @@
+{
+  "status": "PARTIALLY VERIFIED",
+  "unitPassed": 62,
+  "developmentBrowserPassed": 28,
+  "productionBrowserPassed": 2,
+  "subpath": "PASS",
+  "verifyExitCode": 0,
+  "sourceAssets": 355,
+  "colliderBoxes": 285,
+  "supportShellVertices": 528,
+  "supportShellTriangles": 1052,
+  "performance": [
+    {
+      "samples": 5,
+      "fps": 0.3240671726435769,
+      "averageMs": 3085.779999999702,
+      "p50Ms": 2448.5,
+      "p95Ms": 6304.19999999553,
+      "p99Ms": 6304.19999999553,
+      "physicsMs": 1,
+      "gpuMs": null,
+      "camera": "ARRIVAL"
+    },
+    {
+      "samples": 7,
+      "fps": 0.4982667435420014,
+      "averageMs": 2006.9571428575687,
+      "p50Ms": 1999.6999999955297,
+      "p95Ms": 2197.1999999955297,
+      "p99Ms": 2197.1999999955297,
+      "physicsMs": 3.1999999955296516,
+      "gpuMs": null,
+      "camera": "CROSSING"
+    },
+    {
+      "samples": 6,
+      "fps": 0.3765556455105505,
+      "averageMs": 2655.649999999752,
+      "p50Ms": 1935.2000000029802,
+      "p95Ms": 6026.5,
+      "p99Ms": 6026.5,
+      "physicsMs": 0.8999999985098839,
+      "gpuMs": null,
+      "camera": "C3"
+    }
+  ],
+  "encodedNetworkBytes": 5537834,
+  "productionVideo": {
+    "file": "production-journey.webm",
+    "bytes": 19915607,
+    "durationSeconds": "434.440000",
+    "source": "Playwright continuous browser capture during genuine keyboard input; no video cuts or image substitution"
+  },
+  "blocked": [
+    "Real desktop GPU",
+    "Real Android 10 minute performance"
+  ],
+  "notRun": [
+    "Remote CI/deployment",
+    "GPU timing"
+  ],
+  "feedbackScreenSamples": 35,
+  "supplementalBrowserPassed": 1,
+  "finalUnresolvedAutomatedFailures": 0,
+  "artTarget": "PASS / architecture, support and sideways original-gravity staircase verified; GI and photographic polish remain limited"
+}

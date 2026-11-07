@@ -1,0 +1,25 @@
+
+> threshold-g0@0.1.0 test:unit
+> vitest run
+
+
+ RUN  v5.1.0 /workspace/threshold-v02
+
+ ✓ src/tests/integration/portal-physics.test.ts (12 tests) 715ms
+   ✓ Rapier capsule portal integration (12)
+     ✓ M08: requires spatial rearming and does not emit a second event when immediately reversed 310ms
+     ✓ P03: survives 100 complete natural A → B → A cycles with exactly 200 unique commits 356ms
+ ✓ src/tests/integration/collision-queries.test.ts (7 tests) 143ms
+ ✓ src/tests/unit/portal-math.test.ts (8 tests) 58ms
+ ✓ src/tests/unit/renderer-state.test.ts (4 tests) 21ms
+ ✓ src/tests/unit/performance-monitor.test.ts (3 tests) 5ms
+
+ Test Files  5 passed (5)
+      Tests  34 passed (34)
+   Start at  08:41:50
+   Duration  1.97s (tests 67%, import 21%, transform 11%, worker 1%)
+
+    Isolate  5 workers spawned · ~102ms startup each (spawn + environment, per file)
+             at least ~408ms faster with isolate: false — reuses workers across files instead of one per file
+
+JSON report written to /workspace/threshold-v02/evidence/vitest.json

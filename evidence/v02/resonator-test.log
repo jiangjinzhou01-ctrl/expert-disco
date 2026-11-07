@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:12460) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 src/tests/e2e/v02.spec.ts:5:1 › V02: complete input-driven chapter, trigger, return, and deterministic uncut frame sequence (2.0m)
+
+  1 passed (2.0m)

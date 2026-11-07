@@ -1,0 +1,150 @@
+
+> threshold-v02@0.2.0 verify
+> npm run typecheck && npm run lint && npm run test:unit && npm run test:e2e && npm run test:production && npm run test:subpath
+
+
+> threshold-v02@0.2.0 typecheck
+> tsc --noEmit
+
+
+> threshold-v02@0.2.0 lint
+> eslint .
+
+
+> threshold-v02@0.2.0 test:unit
+> vitest run
+
+
+ RUN  v5.1.0 /workspace/threshold-v02
+
+ ✓ src/tests/integration/v02-traversal.test.ts (6 tests) 8941ms
+   ✓ survives 30 reversible full body arcs and 100 genuinely swept wall routes 8003ms
+   ✓ completes the entire chapter from the actual spawn using only input, including the return portal 647ms
+ ✓ src/tests/integration/v02-gravity.test.ts (17 tests) 863ms
+   ✓ V02 actual rotated capsule and continuous support (12)
+     ✓ walks forward, stops, reverses from 45°, reaches wall and returns, without camera scripting 358ms
+ ✓ src/tests/integration/portal-physics.test.ts (12 tests) 584ms
+   ✓ Rapier capsule portal integration (12)
+     ✓ P03: survives 100 complete natural A → B → A cycles with exactly 200 unique commits 389ms
+ ✓ src/tests/integration/collision-queries.test.ts (7 tests) 161ms
+ ✓ src/tests/unit/v02-assets.test.ts (1 test) 71ms
+ ✓ src/tests/unit/portal-math.test.ts (8 tests) 60ms
+ ✓ src/tests/unit/renderer-state.test.ts (4 tests) 22ms
+ ✓ src/tests/unit/performance-monitor.test.ts (3 tests) 5ms
+
+ Test Files  8 passed (8)
+      Tests  58 passed (58)
+   Start at  09:54:06
+   Duration  11.94s (tests 96%, import 3%)
+
+JSON report written to /workspace/threshold-v02/evidence/vitest.json
+
+> threshold-v02@0.2.0 test:e2e
+> playwright test
+
+
+Running 28 tests using 1 worker
+
+(node:6804) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 src/tests/e2e/diagnostics.spec.ts:12:1 › F3 diagnostics exports a real JSON download and UI quality resizes the live target (7.5s)
+  ✓   2 src/tests/e2e/diagnostics.spec.ts:51:1 › Esc cancels held keyboard and mouse drag, development geometry remains observational (7.7s)
+  ✓   3 src/tests/e2e/input.spec.ts:58:1 › mobile uses distinct captured pointer IDs for simultaneous movement and look, with cancellation (4.8s)
+  ✓   4 src/tests/e2e/input.spec.ts:99:3 › mobile blur clears held movement and allows a fresh contact (3.6s)
+  ✓   5 src/tests/e2e/input.spec.ts:99:3 › mobile orientationchange clears held movement and allows a fresh contact (3.4s)
+  ✓   6 src/tests/e2e/input.spec.ts:99:3 › mobile visibilitychange clears held movement and allows a fresh contact (3.6s)
+  ✓   7 src/tests/e2e/input.spec.ts:122:1 › mobile touch controls traverse A → B, turn around, return, and reset the real capsule (8.2s)
+  ✓   8 src/tests/e2e/lifecycle.spec.ts:4:1 › WebGL2 context loss/restoration resumes real portal passes (4.1s)
+  ✓   9 src/tests/e2e/lifecycle.spec.ts:26:1 › resize and render quality retain aspect and bounded GPU resources; disposal releases resources (7.2s)
+  ✓  10 src/tests/e2e/runtime.spec.ts:10:1 › real Rapier state crosses both ways and preserves committed event order (6.0s)
+  ✓  11 src/tests/e2e/runtime.spec.ts:35:1 › door frame blocks the capsule, blocked exit rejects then recovers (4.9s)
+  ✓  12 src/tests/e2e/runtime.spec.ts:53:1 › fast segments retain remaining displacement and long frames cap catch-up (4.7s)
+  ✓  13 src/tests/e2e/runtime.spec.ts:72:1 › desktop keyboard moves the real capsule and R resets it (6.8s)
+  ✓  14 src/tests/e2e/v02-mobile.spec.ts:5:165 › V02 mobile 1170:540 › actual dual Pointer Events control the full chapter and remain live during gravity rotation (31.4s)
+  ✓  15 src/tests/e2e/v02-mobile.spec.ts:5:165 › V02 mobile 1200:540 › actual dual Pointer Events control the full chapter and remain live during gravity rotation (32.0s)
+  ✓  16 src/tests/e2e/v02.spec.ts:5:1 › V02: complete input-driven chapter, trigger, return, and deterministic uncut frame sequence (1.2m)
+  ✓  17 src/tests/e2e/v02.spec.ts:14:1 › V02: CR1 cameras show real geometry and both fixed-axis witnesses after the turn (1.2m)
+  ✓  18 src/tests/e2e/v02.spec.ts:21:1 › V02: offscreen portal culling, resizing, context restoration, and checkpoint reset (1.5m)
+  ✓  19 src/tests/e2e/v02.spec.ts:31:1 › V02: seeded free look and free movement expose real enclosing geometry beyond hero cameras (39.6s)
+  ✓  20 src/tests/e2e/visual.spec.ts:60:25 › portal projection front: real pixels match independent camera (9.0s)
+  ✓  21 src/tests/e2e/visual.spec.ts:60:25 › portal projection oblique-30: real pixels match independent camera (13.2s)
+  ✓  22 src/tests/e2e/visual.spec.ts:60:25 › portal projection oblique-60: real pixels match independent camera (11.2s)
+  ✓  23 src/tests/e2e/visual.spec.ts:60:25 › portal projection distance-1m: real pixels match independent camera (11.8s)
+  ✓  24 src/tests/e2e/visual.spec.ts:60:25 › portal projection distance-0.1m: real pixels match independent camera (9.8s)
+  ✓  25 src/tests/e2e/visual.spec.ts:60:25 › portal projection pre-plane-0.005m: real pixels match independent camera (10.2s)
+  ✓  26 src/tests/e2e/visual.spec.ts:60:25 › portal projection frame-edge: real pixels match independent camera (10.8s)
+  ✓  27 src/tests/e2e/visual.spec.ts:91:1 › lateral parallax, live target animation and viewport resizing remain real (25.0s)
+  ✓  28 src/tests/e2e/visual.spec.ts:131:1 › a real fixed-step crossing keeps projected pixels continuous across the portal plane (11.8s)
+
+  28 passed (8.8m)
+
+> threshold-v02@0.2.0 test:production
+> npm run build && playwright test --config playwright.production.config.ts && node scripts/collect-v02-video.js
+
+
+> threshold-v02@0.2.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.6 building client environment for production...
+transforming...
+✓ 66 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                           0.40 kB │ gzip:     0.30 kB
+dist/assets/LabApp-DD7S2-Wh.css           3.92 kB │ gzip:     1.45 kB
+dist/assets/ChapterView-RmE_mpAb.css      4.19 kB │ gzip:     1.34 kB
+dist/assets/LabApp-BLltBew-.js           13.22 kB │ gzip:     4.86 kB
+dist/assets/ChapterView-apAKlMmJ.js     186.14 kB │ gzip:    40.48 kB
+dist/assets/index-NPjVdF0q.js           222.52 kB │ gzip:    69.90 kB
+dist/assets/InputManager-Ihb2NOGm.js  5,283.03 kB │ gzip: 1,921.58 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 1800 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 518ms
+[WebServer] (node:7467) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:7485) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 src/tests/e2e/production.spec.ts:10:1 › normal production bundle runs WebGL and real desktop input traverses both ways (20.0s)
+  ✓  2 src/tests/e2e/production.spec.ts:41:1 › V02 production: genuine keyboard journey from spawn through the turn, interaction and return (6.6m)
+
+  Slow test file: src/tests/e2e/production.spec.ts (7.0m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  2 passed (7.1m)
+Saved actual production recording: 18429823 bytes, 391.280000 seconds
+
+> threshold-v02@0.2.0 test:subpath
+> node scripts/subpath-smoke.js
+
+vite v8.3.6 building client environment for production...
+transforming...
+✓ 66 modules transformed.
+rendering chunks...
+computing gzip size...
+../../tmp/threshold-v02-subpath/index.html                           0.41 kB │ gzip:     0.31 kB
+../../tmp/threshold-v02-subpath/assets/LabApp-DD7S2-Wh.css           3.92 kB │ gzip:     1.45 kB
+../../tmp/threshold-v02-subpath/assets/ChapterView-RmE_mpAb.css      4.19 kB │ gzip:     1.34 kB
+../../tmp/threshold-v02-subpath/assets/LabApp-DG84PHQt.js           13.22 kB │ gzip:     4.86 kB
+../../tmp/threshold-v02-subpath/assets/ChapterView-DCSZ383A.js     220.03 kB │ gzip:    46.81 kB
+../../tmp/threshold-v02-subpath/assets/index-BbvD-rzz.js           222.51 kB │ gzip:    69.91 kB
+../../tmp/threshold-v02-subpath/assets/InputManager-CNR1dcKC.js  5,283.03 kB │ gzip: 1,921.58 kB
+
+✓ built in 794ms
+
+
+(!) outDir /tmp/threshold-v02-subpath is not inside project root and will not be emptied.
+Use --emptyOutDir to override.
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 1800 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+PASS Chromium 158.0.8127.18; WebGL2 active; ready=true; main/portal draws=13/31; 39 successful requests; mutation adapter absent.

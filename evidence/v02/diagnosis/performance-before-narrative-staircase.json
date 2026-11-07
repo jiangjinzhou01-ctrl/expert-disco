@@ -1,0 +1,371 @@
+{
+  "capturedAt": "2026-11-07T10:47:08.352Z",
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.8127.18 Safari/537.36",
+    "dpr": 1,
+    "viewport": [
+      1280,
+      720
+    ],
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "gpuTimerSupported": true,
+    "gpuTimingCollected": false
+  },
+  "samples": [
+    {
+      "camera": "ARRIVAL",
+      "seconds": 15.003437987000002,
+      "snapshot": {
+        "ready": true,
+        "input": {
+          "x": 0,
+          "y": 0
+        },
+        "error": null,
+        "world": "VESTIBULE",
+        "slot": "A",
+        "foot": [
+          8,
+          -8.940696960557659e-9,
+          18
+        ],
+        "body": [
+          8,
+          0.875999991059303,
+          18
+        ],
+        "eye": [
+          8,
+          1.5499999910593032,
+          18
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "gravity": [
+          0,
+          -9.81,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "cameraRotation": [
+          0.057647723809991565,
+          0.15460934534482568,
+          -0.009037128383081834,
+          0.9862509926900754
+        ],
+        "yaw": 0.31099828060554097,
+        "pitch": 0.11676988136729685,
+        "theta": 0,
+        "thetaDegrees": 0,
+        "s": 6.5,
+        "mode": "NORMAL",
+        "grounded": true,
+        "supportNormal": [
+          0,
+          1,
+          0
+        ],
+        "velocity": [
+          0,
+          -0.000001180171966819188,
+          0
+        ],
+        "step": 65,
+        "progress": "ARRIVAL",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 0,
+        "translationQueries": 0,
+        "supportQueries": 65,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.1962971687316895,
+            "z": 0.5886505246162415
+          },
+          "velocity": {
+            "x": 0.00001012161374092102,
+            "y": 0.00004628614260582253,
+            "z": -0.000060931473853997886
+          },
+          "resets": 0
+        },
+        "render": {
+          "targetWidth": 448,
+          "targetHeight": 252,
+          "quality": 0.75,
+          "mainDrawCalls": 9,
+          "offscreenDrawCalls": 12,
+          "geometries": 19,
+          "textures": 34,
+          "programs": 10,
+          "context": "active",
+          "passes": 1,
+          "targetResizes": 2
+        },
+        "performance": {
+          "samples": 6,
+          "fps": 0.35715561270032686,
+          "averageMs": 2799.9000000009933,
+          "p50Ms": 2562.60000000149,
+          "p95Ms": 5104.60000000149,
+          "p99Ms": 5104.60000000149,
+          "physicsMs": 1.8000000044703484,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 1.0833333333333344
+      }
+    },
+    {
+      "camera": "CROSSING",
+      "seconds": 15.004735751000004,
+      "snapshot": {
+        "ready": true,
+        "input": {
+          "x": 0,
+          "y": 0
+        },
+        "error": null,
+        "world": "VESTIBULE",
+        "slot": "A",
+        "foot": [
+          2.4,
+          -2.9802323942007547e-9,
+          -15
+        ],
+        "body": [
+          2.4,
+          0.8759999970197676,
+          -15
+        ],
+        "eye": [
+          2.4,
+          1.5499999970197678,
+          -15
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "gravity": [
+          0,
+          -9.81,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "cameraRotation": [
+          0.09950450710733073,
+          0.22073900008140687,
+          -0.02264431736493425,
+          0.9699795780321686
+        ],
+        "yaw": 0.44751997515716985,
+        "pitch": 0.20445306583057554,
+        "theta": 0,
+        "thetaDegrees": 0,
+        "s": 0.8999999999999999,
+        "mode": "NORMAL",
+        "grounded": true,
+        "supportNormal": [
+          0,
+          1,
+          0
+        ],
+        "velocity": [
+          0,
+          6.079673764425308e-7,
+          0
+        ],
+        "step": 100,
+        "progress": "ARRIVAL",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 0,
+        "translationQueries": 0,
+        "supportQueries": 100,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196347713470459,
+            "z": 0.5886090993881226
+          },
+          "velocity": {
+            "x": 0.000018298625946044922,
+            "y": 0.00006393397052306682,
+            "z": -0.00008725362567929551
+          },
+          "resets": 0
+        },
+        "render": {
+          "targetWidth": 960,
+          "targetHeight": 540,
+          "quality": 0.75,
+          "mainDrawCalls": 6,
+          "offscreenDrawCalls": 10,
+          "geometries": 19,
+          "textures": 34,
+          "programs": 10,
+          "context": "active",
+          "passes": 1,
+          "targetResizes": 3
+        },
+        "performance": {
+          "samples": 6,
+          "fps": 0.41762081422133746,
+          "averageMs": 2394.516666666915,
+          "p50Ms": 2087.89999999851,
+          "p95Ms": 3966.3000000044703,
+          "p99Ms": 3966.3000000044703,
+          "physicsMs": 0.7999999970197678,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 1.6666666666666656
+      }
+    },
+    {
+      "camera": "C3",
+      "seconds": 15.003709626999996,
+      "snapshot": {
+        "ready": true,
+        "input": {
+          "x": 0,
+          "y": 0
+        },
+        "error": null,
+        "world": "INVERT",
+        "slot": "B",
+        "foot": [
+          4.7,
+          4,
+          -12
+        ],
+        "body": [
+          3.823999999999998,
+          4,
+          -12
+        ],
+        "eye": [
+          3.1500000000000057,
+          4,
+          -12
+        ],
+        "up": [
+          -1,
+          6.123233995736766e-17,
+          0
+        ],
+        "gravity": [
+          9.81,
+          -6.006892549817768e-16,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0.7071068286895752,
+          0.7071068286895752
+        ],
+        "cameraRotation": [
+          0.366962578731047,
+          -0.2201031718544455,
+          0.6719781199857718,
+          0.6044323500699316
+        ],
+        "yaw": -0.8621700546672261,
+        "pitch": 0.2291057103184731,
+        "theta": 1.5707963267948966,
+        "thetaDegrees": 90,
+        "s": 5.826548245743669,
+        "mode": "WALL",
+        "grounded": true,
+        "supportNormal": [
+          -1,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "step": 143,
+        "progress": "WALL_WALK",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 0,
+        "translationQueries": 0,
+        "supportQueries": 143,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196413516998291,
+            "z": 0.5885586738586426
+          },
+          "velocity": {
+            "x": 0.0000025229528546333313,
+            "y": 0.00005069482358521782,
+            "z": -0.00004684670420829207
+          },
+          "resets": 0
+        },
+        "render": {
+          "targetWidth": 960,
+          "targetHeight": 540,
+          "quality": 0.75,
+          "mainDrawCalls": 8,
+          "offscreenDrawCalls": 0,
+          "geometries": 20,
+          "textures": 34,
+          "programs": 10,
+          "context": "active",
+          "passes": 0,
+          "targetResizes": 3
+        },
+        "performance": {
+          "samples": 8,
+          "fps": 0.5445214337250455,
+          "averageMs": 1836.4749999996275,
+          "p50Ms": 1980.2999999970198,
+          "p95Ms": 4142.79999999702,
+          "p99Ms": 4142.79999999702,
+          "physicsMs": 0.6000000014901161,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 2.3833333333333298
+      }
+    }
+  ],
+  "scope": "Cloud software rendering only. Real desktop GPU and Android remain unverified."
+}

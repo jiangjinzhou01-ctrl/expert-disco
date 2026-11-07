@@ -1,0 +1,149 @@
+{
+  "before": {
+    "targetWidth": 1440,
+    "targetHeight": 810,
+    "quality": 0.75,
+    "mainDrawCalls": 9,
+    "offscreenDrawCalls": 0,
+    "geometries": 20,
+    "textures": 34,
+    "programs": 10,
+    "context": "active",
+    "passes": 0,
+    "targetResizes": 3
+  },
+  "resized": {
+    "targetWidth": 720,
+    "targetHeight": 405,
+    "quality": 0.75,
+    "mainDrawCalls": 9,
+    "offscreenDrawCalls": 0,
+    "geometries": 20,
+    "textures": 33,
+    "programs": 10,
+    "context": "active",
+    "passes": 0,
+    "targetResizes": 6
+  },
+  "after": {
+    "ready": true,
+    "input": {
+      "x": 0,
+      "y": 0
+    },
+    "error": null,
+    "world": "VESTIBULE",
+    "slot": "A",
+    "foot": [
+      0,
+      0,
+      33
+    ],
+    "body": [
+      0,
+      0.876,
+      33
+    ],
+    "eye": [
+      0,
+      1.55,
+      33
+    ],
+    "up": [
+      0,
+      1,
+      0
+    ],
+    "gravity": [
+      0,
+      -9.81,
+      0
+    ],
+    "bodyRotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "cameraRotation": [
+      0,
+      1,
+      0,
+      6.123233995736766e-17
+    ],
+    "yaw": 3.141592653589793,
+    "pitch": 0,
+    "theta": 0,
+    "thetaDegrees": 0,
+    "s": -1.5,
+    "mode": "NORMAL",
+    "grounded": false,
+    "supportNormal": [
+      0,
+      1,
+      0
+    ],
+    "velocity": [
+      0,
+      0,
+      0
+    ],
+    "step": 15,
+    "progress": "ARRIVAL",
+    "terminal": false,
+    "returned": false,
+    "interactable": false,
+    "events": [],
+    "transferState": "ARMED",
+    "rejection": null,
+    "blocked": null,
+    "rotationQueries": 0,
+    "translationQueries": 0,
+    "supportQueries": 30,
+    "witness": {
+      "position": {
+        "x": 107.1116714477539,
+        "y": 4.199999809265137,
+        "z": 0.6000000238418579
+      },
+      "velocity": {
+        "x": 2.4524989128112793,
+        "y": 0,
+        "z": 0
+      },
+      "resets": 0
+    },
+    "render": {
+      "targetWidth": 720,
+      "targetHeight": 405,
+      "quality": 0.75,
+      "mainDrawCalls": 9,
+      "offscreenDrawCalls": 0,
+      "geometries": 16,
+      "textures": 22,
+      "programs": 6,
+      "context": "active",
+      "passes": 0,
+      "targetResizes": 6
+    },
+    "performance": {
+      "samples": 5,
+      "fps": 7.2950102130301575,
+      "averageMs": 137.07999999970198,
+      "p50Ms": 63.399999998509884,
+      "p95Ms": 377.1000000014901,
+      "p99Ms": 377.1000000014901,
+      "physicsMs": 0.3999999985098839,
+      "gpuMs": null
+    },
+    "errors": [],
+    "elapsed": 0.24999999999999997
+  },
+  "disposed": {
+    "ready": false,
+    "memory": {
+      "geometries": 0,
+      "textures": 0
+    }
+  }
+}

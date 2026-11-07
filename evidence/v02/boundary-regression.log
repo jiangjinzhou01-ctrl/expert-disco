@@ -1,0 +1,12 @@
+
+ RUN  v5.1.0 /workspace/threshold-v02
+
+ ✓ src/tests/integration/v02-traversal.test.ts (9 tests | 6 skipped) 2817ms
+   ✓ completes the entire chapter from the actual spawn using only input, including the return portal 2657ms
+
+ Test Files  1 passed (1)
+      Tests  3 passed | 6 skipped (9)
+   Start at  10:22:31
+   Duration  3.37s (tests 90%, transform 6%, import 4%)
+
+JSON report written to /workspace/threshold-v02/evidence/vitest.json

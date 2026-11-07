@@ -3,7 +3,7 @@ import { PLAYER_HALF_HEIGHT, PLAYER_RADIUS, portalA, portalB } from '../../scene
 import type { WorldId } from '../../scenes/RoomLayout';
 import type { PlayerState } from '../player/PlayerState';
 import { CollisionQueries } from '../physics/CollisionQueries';
-import { PhysicsRuntime } from '../physics/PhysicsRuntime';
+import { type PortalPhysics } from '../physics/PhysicsRuntime';
 import { computeSignedPlaneDistance, intersectMovementWithPortal, isPointInsideAperture, transformDirection, transformPosition, transformQuaternion } from './PortalMath';
 import { PortalRegistry } from './PortalRegistry';
 import type { Portal } from './PortalTypes';
@@ -26,7 +26,7 @@ const REJECTION_DISTANCE = PLAYER_RADIUS + 0.02;
 
 /** Sole owner of crossing detection, rearming, and atomic mapped state changes. */
 export class PortalTransfer {
-  readonly registry = new PortalRegistry([portalA, portalB], [
+  private static readonly labRegistry = new PortalRegistry([portalA, portalB], [
     { sourceId: portalA.id, destinationId: portalB.id, sourceWorldId: 'A', destinationWorldId: 'B' },
     { sourceId: portalB.id, destinationId: portalA.id, sourceWorldId: 'B', destinationWorldId: 'A' },
   ]);
@@ -39,7 +39,7 @@ export class PortalTransfer {
   private exitPortal: Portal | null = null;
   private readonly queries: CollisionQueries;
 
-  constructor(private readonly physics: PhysicsRuntime, private readonly state: PlayerState) {
+  constructor(private readonly physics: PortalPhysics, private readonly state: PlayerState, readonly registry:PortalRegistry=PortalTransfer.labRegistry) {
     this.queries = new CollisionQueries(physics);
   }
 

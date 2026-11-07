@@ -1,0 +1,692 @@
+[
+  {
+    "id": "ARRIVAL",
+    "snapshot": {
+      "ready": true,
+      "input": {
+        "x": 0,
+        "y": 0
+      },
+      "error": null,
+      "world": "VESTIBULE",
+      "slot": "A",
+      "foot": [
+        8,
+        0,
+        18
+      ],
+      "body": [
+        8,
+        0.876,
+        18
+      ],
+      "eye": [
+        8,
+        1.55,
+        18
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "gravity": [
+        0,
+        -9.81,
+        0
+      ],
+      "bodyRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cameraRotation": [
+        0.057647723809991565,
+        0.15460934534482568,
+        -0.009037128383081834,
+        0.9862509926900754
+      ],
+      "yaw": 0.31099828060554097,
+      "pitch": 0.11676988136729685,
+      "theta": 0,
+      "thetaDegrees": 0,
+      "s": 6.5,
+      "mode": "NORMAL",
+      "grounded": false,
+      "supportNormal": [
+        0,
+        1,
+        0
+      ],
+      "velocity": [
+        0,
+        -3.9786100414218595e-7,
+        0
+      ],
+      "step": 12,
+      "progress": "ARRIVAL",
+      "terminal": false,
+      "returned": false,
+      "interactable": false,
+      "events": [],
+      "transferState": "ARMED",
+      "rejection": null,
+      "blocked": null,
+      "rotationQueries": 0,
+      "translationQueries": 0,
+      "supportQueries": 24,
+      "witness": {
+        "position": {
+          "x": 107.00029754638672,
+          "y": 4.199999809265137,
+          "z": 0.6000000238418579
+        },
+        "velocity": {
+          "x": 1.9619992971420288,
+          "y": 0,
+          "z": 0
+        },
+        "resets": 0
+      },
+      "render": {
+        "targetWidth": 672,
+        "targetHeight": 378,
+        "quality": 0.75,
+        "mainDrawCalls": 9,
+        "offscreenDrawCalls": 13,
+        "geometries": 20,
+        "textures": 34,
+        "programs": 10,
+        "context": "active",
+        "passes": 1,
+        "targetResizes": 2
+      },
+      "performance": {
+        "samples": 5,
+        "fps": 13.620266957177076,
+        "averageMs": 73.42000000029802,
+        "p50Ms": 16.899999998509884,
+        "p95Ms": 195,
+        "p99Ms": 195,
+        "physicsMs": 0.5999999940395355,
+        "gpuMs": null
+      },
+      "errors": [],
+      "elapsed": 0.19999999999999998
+    },
+    "visibility": {
+      "slab": {
+        "id": "ORIGINAL_AXIS_CANTILEVER",
+        "found": false,
+        "visibleSamples": 0
+      },
+      "pier": {
+        "id": "ORIGINAL_AXIS_PIER",
+        "found": false,
+        "visibleSamples": 0
+      }
+    },
+    "coverage": null
+  },
+  {
+    "id": "CROSSING",
+    "snapshot": {
+      "ready": true,
+      "input": {
+        "x": 0,
+        "y": 0
+      },
+      "error": null,
+      "world": "VESTIBULE",
+      "slot": "A",
+      "foot": [
+        2.4,
+        0,
+        -15
+      ],
+      "body": [
+        2.4,
+        0.876,
+        -15
+      ],
+      "eye": [
+        2.4,
+        1.55,
+        -15
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "gravity": [
+        0,
+        -9.81,
+        0
+      ],
+      "bodyRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cameraRotation": [
+        0.09950450710733073,
+        0.22073900008140687,
+        -0.02264431736493425,
+        0.9699795780321686
+      ],
+      "yaw": 0.44751997515716985,
+      "pitch": 0.20445306583057554,
+      "theta": 0,
+      "thetaDegrees": 0,
+      "s": 0.8999999999999999,
+      "mode": "NORMAL",
+      "grounded": false,
+      "supportNormal": [
+        0,
+        1,
+        0
+      ],
+      "velocity": [
+        0,
+        -3.9786100414218595e-7,
+        0
+      ],
+      "step": 12,
+      "progress": "ARRIVAL",
+      "terminal": false,
+      "returned": false,
+      "interactable": false,
+      "events": [],
+      "transferState": "ARMED",
+      "rejection": null,
+      "blocked": null,
+      "rotationQueries": 0,
+      "translationQueries": 0,
+      "supportQueries": 24,
+      "witness": {
+        "position": {
+          "x": 107.00029754638672,
+          "y": 4.199999809265137,
+          "z": 0.6000000238418579
+        },
+        "velocity": {
+          "x": 1.9619992971420288,
+          "y": 0,
+          "z": 0
+        },
+        "resets": 0
+      },
+      "render": {
+        "targetWidth": 1440,
+        "targetHeight": 810,
+        "quality": 0.75,
+        "mainDrawCalls": 6,
+        "offscreenDrawCalls": 12,
+        "geometries": 20,
+        "textures": 34,
+        "programs": 10,
+        "context": "active",
+        "passes": 1,
+        "targetResizes": 3
+      },
+      "performance": {
+        "samples": 5,
+        "fps": 13.620266957177076,
+        "averageMs": 73.42000000029802,
+        "p50Ms": 16.899999998509884,
+        "p95Ms": 195,
+        "p99Ms": 195,
+        "physicsMs": 0.5999999940395355,
+        "gpuMs": null
+      },
+      "errors": [],
+      "elapsed": 0.19999999999999998
+    },
+    "visibility": {
+      "slab": {
+        "id": "ORIGINAL_AXIS_CANTILEVER",
+        "found": false,
+        "visibleSamples": 0
+      },
+      "pier": {
+        "id": "ORIGINAL_AXIS_PIER",
+        "found": false,
+        "visibleSamples": 0
+      }
+    },
+    "coverage": null
+  },
+  {
+    "id": "C1",
+    "snapshot": {
+      "ready": true,
+      "input": {
+        "x": 0,
+        "y": 0
+      },
+      "error": null,
+      "world": "INVERT",
+      "slot": "B",
+      "foot": [
+        0,
+        0,
+        -2
+      ],
+      "body": [
+        0,
+        0.876,
+        -2
+      ],
+      "eye": [
+        0,
+        1.55,
+        -2
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "gravity": [
+        0,
+        -9.81,
+        0
+      ],
+      "bodyRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cameraRotation": [
+        -0.04530005385131673,
+        -0.26663851969445906,
+        -0.012547388528115265,
+        0.962649660041149
+      ],
+      "yaw": -0.5404195002705842,
+      "pitch": -0.09404596965043614,
+      "theta": 0,
+      "thetaDegrees": 0,
+      "s": -1.5,
+      "mode": "NORMAL",
+      "grounded": false,
+      "supportNormal": [
+        0,
+        1,
+        0
+      ],
+      "velocity": [
+        0,
+        -3.9786100414218595e-7,
+        0
+      ],
+      "step": 12,
+      "progress": "INVERT",
+      "terminal": false,
+      "returned": false,
+      "interactable": false,
+      "events": [],
+      "transferState": "ARMED",
+      "rejection": null,
+      "blocked": null,
+      "rotationQueries": 0,
+      "translationQueries": 0,
+      "supportQueries": 24,
+      "witness": {
+        "position": {
+          "x": 107.00029754638672,
+          "y": 4.199999809265137,
+          "z": 0.6000000238418579
+        },
+        "velocity": {
+          "x": 1.9619992971420288,
+          "y": 0,
+          "z": 0
+        },
+        "resets": 0
+      },
+      "render": {
+        "targetWidth": 1440,
+        "targetHeight": 810,
+        "quality": 0.75,
+        "mainDrawCalls": 12,
+        "offscreenDrawCalls": 0,
+        "geometries": 21,
+        "textures": 34,
+        "programs": 10,
+        "context": "active",
+        "passes": 0,
+        "targetResizes": 3
+      },
+      "performance": {
+        "samples": 5,
+        "fps": 13.620266957177076,
+        "averageMs": 73.42000000029802,
+        "p50Ms": 16.899999998509884,
+        "p95Ms": 195,
+        "p99Ms": 195,
+        "physicsMs": 0.5999999940395355,
+        "gpuMs": null
+      },
+      "errors": [],
+      "elapsed": 0.19999999999999998
+    },
+    "visibility": {
+      "slab": {
+        "id": "ORIGINAL_AXIS_CANTILEVER",
+        "found": true,
+        "visibleSamples": 0,
+        "samples": 450
+      },
+      "pier": {
+        "id": "ORIGINAL_AXIS_PIER",
+        "found": true,
+        "visibleSamples": 0,
+        "samples": 450
+      }
+    },
+    "coverage": null
+  },
+  {
+    "id": "C2",
+    "snapshot": {
+      "ready": true,
+      "input": {
+        "x": 0,
+        "y": 0
+      },
+      "error": null,
+      "world": "INVERT",
+      "slot": "B",
+      "foot": [
+        3.762741699796952,
+        0.9372583002030478,
+        -7
+      ],
+      "body": [
+        3.1433161594775356,
+        1.5566838405224634,
+        -7
+      ],
+      "eye": [
+        2.666726188957796,
+        2.0332738110421964,
+        -7
+      ],
+      "up": [
+        -0.7071067811865475,
+        0.7071067811865476,
+        0
+      ],
+      "gravity": [
+        6.936717523440031,
+        -6.9367175234400325,
+        0
+      ],
+      "bodyRotation": [
+        0,
+        0,
+        0.38268348574638367,
+        0.9238796234130859
+      ],
+      "cameraRotation": [
+        0.34421359392810164,
+        -0.0027185306072842336,
+        0.40079485508829715,
+        0.8490424579967647
+      ],
+      "yaw": -0.2843507906941264,
+      "pitch": 0.6518861935727736,
+      "theta": 0.7853981633974483,
+      "thetaDegrees": 45,
+      "s": 2.5132741228718345,
+      "mode": "ARC",
+      "grounded": false,
+      "supportNormal": [
+        0,
+        1,
+        0
+      ],
+      "velocity": [
+        0,
+        -3.9786100414218595e-7,
+        0
+      ],
+      "step": 12,
+      "progress": "GRAVITY_TURN",
+      "terminal": false,
+      "returned": false,
+      "interactable": false,
+      "events": [],
+      "transferState": "ARMED",
+      "rejection": null,
+      "blocked": null,
+      "rotationQueries": 0,
+      "translationQueries": 0,
+      "supportQueries": 24,
+      "witness": {
+        "position": {
+          "x": 107.00029754638672,
+          "y": 4.199999809265137,
+          "z": 0.6000000238418579
+        },
+        "velocity": {
+          "x": 1.9619992971420288,
+          "y": 0,
+          "z": 0
+        },
+        "resets": 0
+      },
+      "render": {
+        "targetWidth": 1440,
+        "targetHeight": 810,
+        "quality": 0.75,
+        "mainDrawCalls": 9,
+        "offscreenDrawCalls": 0,
+        "geometries": 21,
+        "textures": 34,
+        "programs": 10,
+        "context": "active",
+        "passes": 0,
+        "targetResizes": 3
+      },
+      "performance": {
+        "samples": 5,
+        "fps": 13.620266957177076,
+        "averageMs": 73.42000000029802,
+        "p50Ms": 16.899999998509884,
+        "p95Ms": 195,
+        "p99Ms": 195,
+        "physicsMs": 0.5999999940395355,
+        "gpuMs": null
+      },
+      "errors": [],
+      "elapsed": 0.19999999999999998
+    },
+    "visibility": {
+      "slab": {
+        "id": "ORIGINAL_AXIS_CANTILEVER",
+        "found": true,
+        "visibleSamples": 155,
+        "samples": 450
+      },
+      "pier": {
+        "id": "ORIGINAL_AXIS_PIER",
+        "found": true,
+        "visibleSamples": 304,
+        "samples": 450
+      }
+    },
+    "coverage": null
+  },
+  {
+    "id": "C3",
+    "snapshot": {
+      "ready": true,
+      "input": {
+        "x": 0,
+        "y": 0
+      },
+      "error": null,
+      "world": "INVERT",
+      "slot": "B",
+      "foot": [
+        4.7,
+        4,
+        -12
+      ],
+      "body": [
+        3.823999999999998,
+        4,
+        -12
+      ],
+      "eye": [
+        3.1500000000000057,
+        4,
+        -12
+      ],
+      "up": [
+        -1,
+        6.123233995736766e-17,
+        0
+      ],
+      "gravity": [
+        9.81,
+        -6.006892549817768e-16,
+        0
+      ],
+      "bodyRotation": [
+        0,
+        0,
+        0.7071068286895752,
+        0.7071068286895752
+      ],
+      "cameraRotation": [
+        0.23426513704975796,
+        -0.1423769918431873,
+        0.6926245679974721,
+        0.6671730252063989
+      ],
+      "yaw": -0.5404195002705842,
+      "pitch": 0.13494458697076284,
+      "theta": 1.5707963267948966,
+      "thetaDegrees": 90,
+      "s": 5.826548245743669,
+      "mode": "WALL",
+      "grounded": false,
+      "supportNormal": [
+        0,
+        1,
+        0
+      ],
+      "velocity": [
+        0,
+        -3.9786100414218595e-7,
+        0
+      ],
+      "step": 12,
+      "progress": "WALL_WALK",
+      "terminal": false,
+      "returned": false,
+      "interactable": false,
+      "events": [],
+      "transferState": "ARMED",
+      "rejection": null,
+      "blocked": null,
+      "rotationQueries": 0,
+      "translationQueries": 0,
+      "supportQueries": 24,
+      "witness": {
+        "position": {
+          "x": 107.00029754638672,
+          "y": 4.199999809265137,
+          "z": 0.6000000238418579
+        },
+        "velocity": {
+          "x": 1.9619992971420288,
+          "y": 0,
+          "z": 0
+        },
+        "resets": 0
+      },
+      "render": {
+        "targetWidth": 1440,
+        "targetHeight": 810,
+        "quality": 0.75,
+        "mainDrawCalls": 11,
+        "offscreenDrawCalls": 0,
+        "geometries": 21,
+        "textures": 34,
+        "programs": 10,
+        "context": "active",
+        "passes": 0,
+        "targetResizes": 3
+      },
+      "performance": {
+        "samples": 5,
+        "fps": 13.620266957177076,
+        "averageMs": 73.42000000029802,
+        "p50Ms": 16.899999998509884,
+        "p95Ms": 195,
+        "p99Ms": 195,
+        "physicsMs": 0.5999999940395355,
+        "gpuMs": null
+      },
+      "errors": [],
+      "elapsed": 0.19999999999999998
+    },
+    "visibility": {
+      "slab": {
+        "id": "ORIGINAL_AXIS_CANTILEVER",
+        "found": true,
+        "visibleSamples": 83,
+        "samples": 450
+      },
+      "pier": {
+        "id": "ORIGINAL_AXIS_PIER",
+        "found": true,
+        "visibleSamples": 36,
+        "samples": 450
+      }
+    },
+    "coverage": {
+      "width": 32,
+      "height": 18,
+      "total": 576,
+      "counts": {
+        "I-axis-stair-15": 14,
+        "I-rear-wall": 293,
+        "I-axis-landing-cantilever": 4,
+        "I-axis-observation-landing": 7,
+        "I-axis-landing-front-post--0.2": 1,
+        "ORIGINAL_AXIS_PIER": 33,
+        "ORIGINAL_AXIS_CANTILEVER": 151,
+        "I-axis-landing-pier-0.4": 3,
+        "I-pier-plumb-reveal-0.8": 1,
+        "I-axis-stair-16": 8,
+        "I-axis-nosing-16": 1,
+        "I-axis-stair-17": 7,
+        "I-axis-stair-18": 6,
+        "I-axis-landing-front-post-1.17": 2,
+        "I-axis-nosing-15": 1,
+        "I-axis-landing-nosing": 2,
+        "I-axis-nosing-17": 1,
+        "I-axis-nosing-18": 1,
+        "I-axis-landing-post-2.5--18.8": 1,
+        "I-wall-handrail-7.35": 6,
+        "I-wall-rail-post-7.35--18": 3,
+        "I-wall-rail-post-7.35--14": 3,
+        "I-endcap-frame-4.7": 6,
+        "I-continuous-ground-arc-wall": 13,
+        "": 1,
+        "INVERT_TERMINAL": 2
+      },
+      "stairs": 41,
+      "method": "first opaque real triangle hit per camera ray; batch face identity preserved"
+    }
+  }
+]

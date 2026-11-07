@@ -1,0 +1,73 @@
+
+> threshold-v02@0.2.0 verify
+> npm run typecheck && npm run lint && npm run test:unit && npm run test:e2e && npm run test:production && npm run test:subpath
+
+
+> threshold-v02@0.2.0 typecheck
+> tsc --noEmit
+
+
+> threshold-v02@0.2.0 lint
+> eslint .
+
+
+> threshold-v02@0.2.0 test:unit
+> vitest run
+
+
+ RUN  v5.1.0 /workspace/threshold-v02
+
+ ✓ src/tests/integration/v02-traversal.test.ts (6 tests) 8813ms
+   ✓ survives 30 reversible full body arcs and 100 genuinely swept wall routes 7886ms
+   ✓ completes the entire chapter from the actual spawn using only input, including the return portal 638ms
+ ✓ src/tests/integration/v02-gravity.test.ts (17 tests) 833ms
+   ✓ V02 actual rotated capsule and continuous support (12)
+     ✓ walks forward, stops, reverses from 45°, reaches wall and returns, without camera scripting 360ms
+ ✓ src/tests/integration/portal-physics.test.ts (12 tests) 577ms
+   ✓ Rapier capsule portal integration (12)
+     ✓ P03: survives 100 complete natural A → B → A cycles with exactly 200 unique commits 380ms
+ ✓ src/tests/integration/collision-queries.test.ts (7 tests) 140ms
+ ✓ src/tests/unit/portal-math.test.ts (8 tests) 69ms
+ ✓ src/tests/unit/renderer-state.test.ts (4 tests) 20ms
+ ✓ src/tests/unit/v02-assets.test.ts (1 test) 9ms
+ ✓ src/tests/unit/performance-monitor.test.ts (3 tests) 4ms
+
+ Test Files  8 passed (8)
+      Tests  58 passed (58)
+   Start at  09:46:01
+   Duration  11.65s (tests 96%, import 3%)
+
+    Isolate  8 workers spawned · ~84ms startup each (spawn + environment, per file)
+             at least ~588ms faster with isolate: false — reuses workers across files instead of one per file
+
+JSON report written to /workspace/threshold-v02/evidence/vitest.json
+
+> threshold-v02@0.2.0 test:e2e
+> playwright test
+
+
+Running 27 tests using 1 worker
+
+(node:5866) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 src/tests/e2e/diagnostics.spec.ts:12:1 › F3 diagnostics exports a real JSON download and UI quality resizes the live target (7.6s)
+  ✓   2 src/tests/e2e/diagnostics.spec.ts:51:1 › Esc cancels held keyboard and mouse drag, development geometry remains observational (8.2s)
+  ✓   3 src/tests/e2e/input.spec.ts:58:1 › mobile uses distinct captured pointer IDs for simultaneous movement and look, with cancellation (5.6s)
+  ✓   4 src/tests/e2e/input.spec.ts:99:3 › mobile blur clears held movement and allows a fresh contact (4.1s)
+  ✓   5 src/tests/e2e/input.spec.ts:99:3 › mobile orientationchange clears held movement and allows a fresh contact (3.9s)
+  ✓   6 src/tests/e2e/input.spec.ts:99:3 › mobile visibilitychange clears held movement and allows a fresh contact (3.6s)
+  ✓   7 src/tests/e2e/input.spec.ts:122:1 › mobile touch controls traverse A → B, turn around, return, and reset the real capsule (7.9s)
+  ✓   8 src/tests/e2e/lifecycle.spec.ts:4:1 › WebGL2 context loss/restoration resumes real portal passes (4.7s)
+  ✓   9 src/tests/e2e/lifecycle.spec.ts:26:1 › resize and render quality retain aspect and bounded GPU resources; disposal releases resources (8.6s)
+  ✓  10 src/tests/e2e/runtime.spec.ts:10:1 › real Rapier state crosses both ways and preserves committed event order (6.0s)
+  ✓  11 src/tests/e2e/runtime.spec.ts:35:1 › door frame blocks the capsule, blocked exit rejects then recovers (5.3s)
+  ✓  12 src/tests/e2e/runtime.spec.ts:53:1 › fast segments retain remaining displacement and long frames cap catch-up (5.1s)
+  ✓  13 src/tests/e2e/runtime.spec.ts:72:1 › desktop keyboard moves the real capsule and R resets it (6.3s)
+  ✘  14 src/tests/e2e/v02-mobile.spec.ts:5:165 › V02 mobile 1170:540 › actual dual Pointer Events control the full chapter and remain live during gravity rotation (36.4s)
+(node:6208) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  15 src/tests/e2e/v02-mobile.spec.ts:5:165 › V02 mobile 1200:540 › actual dual Pointer Events control the full chapter and remain live during gravity rotation (29.3s)
+  ✓  16 src/tests/e2e/v02.spec.ts:5:1 › V02: complete input-driven chapter, trigger, return, and deterministic uncut frame sequence (1.1m)
+  ✓  17 src/tests/e2e/v02.spec.ts:14:1 › V02: CR1 cameras show real geometry and both fixed-axis witnesses after the turn (50.8s)
+  ✓  18 src/tests/e2e/v02.spec.ts:21:1 › V02: offscreen portal culling, resizing, context restoration, and checkpoint reset (1.0m)
+  ✓  19 src/tests/e2e/visual.spec.ts:60:25 › portal projection front: real pixels match independent camera (8.5s)

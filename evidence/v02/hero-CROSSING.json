@@ -1,0 +1,121 @@
+{
+  "slab": {
+    "id": "ORIGINAL_AXIS_CANTILEVER",
+    "found": false,
+    "visibleSamples": 0
+  },
+  "pier": {
+    "id": "ORIGINAL_AXIS_PIER",
+    "found": false,
+    "visibleSamples": 0
+  },
+  "snapshot": {
+    "ready": true,
+    "error": null,
+    "world": "VESTIBULE",
+    "slot": "A",
+    "foot": [
+      2.4,
+      0,
+      -15
+    ],
+    "body": [
+      2.4,
+      0.876,
+      -15
+    ],
+    "eye": [
+      2.4,
+      1.55,
+      -15
+    ],
+    "up": [
+      0,
+      1,
+      0
+    ],
+    "gravity": [
+      0,
+      -9.81,
+      0
+    ],
+    "bodyRotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "cameraRotation": [
+      0.09950450710733073,
+      0.22073900008140687,
+      -0.02264431736493425,
+      0.9699795780321686
+    ],
+    "yaw": 0.44751997515716985,
+    "pitch": 0.20445306583057554,
+    "theta": 0,
+    "thetaDegrees": 0,
+    "s": 0.8999999999999999,
+    "mode": "NORMAL",
+    "grounded": true,
+    "supportNormal": [
+      0,
+      1,
+      0
+    ],
+    "velocity": [
+      0,
+      0,
+      0
+    ],
+    "step": 10,
+    "progress": "ARRIVAL",
+    "terminal": false,
+    "returned": false,
+    "interactable": false,
+    "events": [],
+    "transferState": "ARMED",
+    "rejection": null,
+    "blocked": null,
+    "rotationQueries": 0,
+    "translationQueries": 0,
+    "supportQueries": 10,
+    "witness": {
+      "position": {
+        "x": 106.93965911865234,
+        "y": 4.199999809265137,
+        "z": 0.6000000238418579
+      },
+      "velocity": {
+        "x": 1.6349996328353882,
+        "y": 0,
+        "z": 0
+      },
+      "resets": 0
+    },
+    "render": {
+      "targetWidth": 758,
+      "targetHeight": 426,
+      "quality": 0.75,
+      "mainDrawCalls": 6,
+      "offscreenDrawCalls": 11,
+      "geometries": 19,
+      "textures": 15,
+      "programs": 10,
+      "context": "active",
+      "passes": 1
+    },
+    "performance": {
+      "samples": 3,
+      "fps": 7.896814951256514,
+      "averageMs": 126.63333333407839,
+      "p50Ms": 177.39999999850988,
+      "p95Ms": 194.60000000149012,
+      "p99Ms": 194.60000000149012,
+      "physicsMs": 0,
+      "gpuMs": null
+    },
+    "errors": [],
+    "elapsed": 0.16666666666666666
+  }
+}

@@ -1,0 +1,2379 @@
+{
+  "emulation": "Chromium CDP, not real Android",
+  "captured": [
+    true,
+    true
+  ],
+  "trace": [
+    {
+      "stage": "entryhall",
+      "done": true,
+      "n": 307,
+      "snapshot": {
+        "ready": true,
+        "input": {
+          "x": 0,
+          "y": 1
+        },
+        "error": null,
+        "world": "VESTIBULE",
+        "slot": "A",
+        "foot": [
+          -0.00001687889314450075,
+          2.0488954977082585e-10,
+          17.962036926307547
+        ],
+        "body": [
+          -0.00001687889314450075,
+          0.8760000002048896,
+          17.962036926307547
+        ],
+        "eye": [
+          -0.00001687889314450075,
+          1.5500000002048897,
+          17.962036926307547
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "gravity": [
+          0,
+          -9.81,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "cameraRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "theta": 0,
+        "thetaDegrees": 0,
+        "s": -1.5000168788931445,
+        "mode": "NORMAL",
+        "grounded": true,
+        "supportNormal": [
+          0,
+          1,
+          0
+        ],
+        "velocity": [
+          0,
+          8.454546329694779e-7,
+          -3.0000000447034836
+        ],
+        "step": 319,
+        "progress": "ARRIVAL",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 0,
+        "translationQueries": 0,
+        "supportQueries": 638,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196691036224365,
+            "z": 0.5883511900901794
+          },
+          "velocity": {
+            "x": 0.000004307366907596588,
+            "y": 0.0000618228004896082,
+            "z": -0.00006011173900333233
+          },
+          "resets": 0
+        },
+        "render": {
+          "targetWidth": 420,
+          "targetHeight": 189,
+          "quality": 0.75,
+          "mainDrawCalls": 9,
+          "offscreenDrawCalls": 13,
+          "geometries": 20,
+          "textures": 34,
+          "programs": 10,
+          "context": "active",
+          "passes": 1,
+          "targetResizes": 2
+        },
+        "performance": {
+          "samples": 5,
+          "fps": 11.025358324145534,
+          "averageMs": 90.7,
+          "p50Ms": 29.200000002980232,
+          "p95Ms": 251,
+          "p99Ms": 251,
+          "physicsMs": 0.19999999552965164,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 5.316666666666653
+      }
+    },
+    {
+      "stage": "around",
+      "done": true,
+      "n": 163,
+      "snapshot": {
+        "ready": true,
+        "input": {
+          "x": 1,
+          "y": 0
+        },
+        "error": null,
+        "world": "VESTIBULE",
+        "slot": "A",
+        "foot": [
+          8.020015895763866,
+          -3.2270348615526245e-9,
+          17.962053071644917
+        ],
+        "body": [
+          8.020015895763866,
+          0.8759999967729651,
+          17.962053071644917
+        ],
+        "eye": [
+          8.020015895763866,
+          1.5499999967729652,
+          17.962053071644917
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "gravity": [
+          0,
+          -9.81,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "cameraRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "theta": 0,
+        "thetaDegrees": 0,
+        "s": 6.520015895763866,
+        "mode": "NORMAL",
+        "grounded": true,
+        "supportNormal": [
+          0,
+          1,
+          0
+        ],
+        "velocity": [
+          3.000010550022072,
+          -5.654990675729721e-7,
+          0
+        ],
+        "step": 482,
+        "progress": "ARRIVAL",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 0,
+        "translationQueries": 0,
+        "supportQueries": 964,
+        "witness": {
+          "position": {
+            "x": 106.80170440673828,
+            "y": 4.199999809265137,
+            "z": 0.6000000238418579
+          },
+          "velocity": {
+            "x": 0.16350001096725464,
+            "y": 0,
+            "z": 0
+          },
+          "resets": 1
+        },
+        "render": {
+          "targetWidth": 420,
+          "targetHeight": 189,
+          "quality": 0.75,
+          "mainDrawCalls": 9,
+          "offscreenDrawCalls": 13,
+          "geometries": 20,
+          "textures": 34,
+          "programs": 10,
+          "context": "active",
+          "passes": 1,
+          "targetResizes": 2
+        },
+        "performance": {
+          "samples": 5,
+          "fps": 11.025358324145534,
+          "averageMs": 90.7,
+          "p50Ms": 29.200000002980232,
+          "p95Ms": 251,
+          "p99Ms": 251,
+          "physicsMs": 0.3999999985098839,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 8.033333333333312
+      }
+    },
+    {
+      "stage": "nave",
+      "done": true,
+      "n": 643,
+      "snapshot": {
+        "ready": true,
+        "input": {
+          "x": 0,
+          "y": 1
+        },
+        "error": null,
+        "world": "VESTIBULE",
+        "slot": "A",
+        "foot": [
+          8.020114306055223,
+          4.1909465897660425e-9,
+          -14.030693575802431
+        ],
+        "body": [
+          8.020114306055223,
+          0.8760000041909466,
+          -14.030693575802431
+        ],
+        "eye": [
+          8.020114306055223,
+          1.5500000041909465,
+          -14.030693575802431
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "gravity": [
+          0,
+          -9.81,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "cameraRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "theta": 0,
+        "thetaDegrees": 0,
+        "s": 6.520114306055223,
+        "mode": "NORMAL",
+        "grounded": true,
+        "supportNormal": [
+          0,
+          1,
+          0
+        ],
+        "velocity": [
+          0.000017255199509236263,
+          -7.610768082422226e-7,
+          -3.0000000447034836
+        ],
+        "step": 1125,
+        "progress": "ARRIVAL",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 0,
+        "translationQueries": 0,
+        "supportQueries": 2250,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196482181549072,
+            "z": 0.5884548425674438
+          },
+          "velocity": {
+            "x": 0.00001567881554365158,
+            "y": 0.0000549807446077466,
+            "z": -0.00007368259684881195
+          },
+          "resets": 2
+        },
+        "render": {
+          "targetWidth": 420,
+          "targetHeight": 189,
+          "quality": 0.75,
+          "mainDrawCalls": 6,
+          "offscreenDrawCalls": 0,
+          "geometries": 20,
+          "textures": 34,
+          "programs": 10,
+          "context": "active",
+          "passes": 0,
+          "targetResizes": 2
+        },
+        "performance": {
+          "samples": 5,
+          "fps": 11.025358324145534,
+          "averageMs": 90.7,
+          "p50Ms": 29.200000002980232,
+          "p95Ms": 251,
+          "p99Ms": 251,
+          "physicsMs": 0.10000000149011612,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 18.750000000000217
+      }
+    },
+    {
+      "stage": "align",
+      "done": true,
+      "n": 161,
+      "snapshot": {
+        "ready": true,
+        "input": {
+          "x": -1,
+          "y": 0
+        },
+        "error": null,
+        "world": "VESTIBULE",
+        "slot": "A",
+        "foot": [
+          -0.0037567339164858993,
+          1.3926468200864406e-8,
+          -14.030656664817302
+        ],
+        "body": [
+          -0.0037567339164858993,
+          0.8760000139264682,
+          -14.030656664817302
+        ],
+        "eye": [
+          -0.0037567339164858993,
+          1.5500000139264682,
+          -14.030656664817302
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "gravity": [
+          0,
+          -9.81,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "cameraRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "theta": 0,
+        "thetaDegrees": 0,
+        "s": -1.503756733916486,
+        "mode": "NORMAL",
+        "grounded": true,
+        "supportNormal": [
+          0,
+          1,
+          0
+        ],
+        "velocity": [
+          -3.000108450651169,
+          7.336959240156204e-7,
+          0
+        ],
+        "step": 1286,
+        "progress": "ARRIVAL",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 0,
+        "translationQueries": 0,
+        "supportQueries": 2572,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196568965911865,
+            "z": 0.5882867574691772
+          },
+          "velocity": {
+            "x": 0.0000019390136003494263,
+            "y": 0.00005256981239654124,
+            "z": -0.000047932862798916176
+          },
+          "resets": 2
+        },
+        "render": {
+          "targetWidth": 900,
+          "targetHeight": 405,
+          "quality": 0.75,
+          "mainDrawCalls": 6,
+          "offscreenDrawCalls": 13,
+          "geometries": 20,
+          "textures": 34,
+          "programs": 10,
+          "context": "active",
+          "passes": 1,
+          "targetResizes": 3
+        },
+        "performance": {
+          "samples": 5,
+          "fps": 11.025358324145534,
+          "averageMs": 90.7,
+          "p50Ms": 29.200000002980232,
+          "p95Ms": 251,
+          "p99Ms": 251,
+          "physicsMs": 0,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 21.433333333333398
+      }
+    },
+    {
+      "stage": "portalout",
+      "done": true,
+      "n": 121,
+      "snapshot": {
+        "ready": true,
+        "input": {
+          "x": 0,
+          "y": 1
+        },
+        "error": null,
+        "world": "INVERT",
+        "slot": "B",
+        "foot": [
+          -0.003747464380452925,
+          1.8117990885357926e-8,
+          18.170906428143386
+        ],
+        "body": [
+          -0.003747464380452925,
+          0.8760000181179909,
+          18.170906428143386
+        ],
+        "eye": [
+          -0.003747464380452925,
+          1.550000018117991,
+          18.170906428143386
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "gravity": [
+          0,
+          -9.81,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "cameraRotation": [
+          0,
+          -1.2246467991473532e-16,
+          0,
+          1
+        ],
+        "yaw": -2.4492935982947064e-16,
+        "pitch": 0,
+        "theta": 0,
+        "thetaDegrees": 0,
+        "s": -1.503747464380453,
+        "mode": "NORMAL",
+        "grounded": true,
+        "supportNormal": [
+          0,
+          1,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          -3
+        ],
+        "step": 1407,
+        "progress": "INVERT",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [
+          {
+            "id": 1,
+            "step": 1407,
+            "sourceId": "VESTIBULE-THRESHOLD",
+            "destinationId": "INVERT-THRESHOLD",
+            "sourceWorldId": "A",
+            "destinationWorldId": "B",
+            "sourcePosition": [
+              -0.0037479352370892727,
+              0.8724322584672315,
+              -20
+            ],
+            "destinationPosition": [
+              99.99625253561955,
+              0.8722484171372322,
+              18.170906428143386
+            ],
+            "velocityBefore": [
+              0,
+              0,
+              -3
+            ],
+            "velocityAfter": [
+              7.347880794884119e-16,
+              0,
+              -3
+            ],
+            "crossingT": 0.42812856710763497,
+            "remainingDisplacement": [
+              4.7085663368306996e-7,
+              -0.00018384132999926805,
+              -0.028593571856617928
+            ]
+          }
+        ],
+        "transferState": "WAITING_FOR_REARM",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 0,
+        "translationQueries": 0,
+        "supportQueries": 2814,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196647644042969,
+            "z": 0.5881583094596863
+          },
+          "velocity": {
+            "x": 0.0000017713755369186401,
+            "y": 0.00005534290539799258,
+            "z": -0.0000507313889102079
+          },
+          "resets": 2
+        },
+        "render": {
+          "targetWidth": 900,
+          "targetHeight": 405,
+          "quality": 0.75,
+          "mainDrawCalls": 14,
+          "offscreenDrawCalls": 0,
+          "geometries": 21,
+          "textures": 34,
+          "programs": 10,
+          "context": "active",
+          "passes": 0,
+          "targetResizes": 3
+        },
+        "performance": {
+          "samples": 5,
+          "fps": 11.025358324145534,
+          "averageMs": 90.7,
+          "p50Ms": 29.200000002980232,
+          "p95Ms": 251,
+          "p99Ms": 251,
+          "physicsMs": 2.7000000029802322,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 23.44999999999995
+      }
+    },
+    {
+      "stage": "arcroom",
+      "done": true,
+      "n": 515,
+      "snapshot": {
+        "ready": true,
+        "input": {
+          "x": 0,
+          "y": 1
+        },
+        "error": null,
+        "world": "INVERT",
+        "slot": "B",
+        "foot": [
+          -0.003842524525140334,
+          -5.961065530080134e-9,
+          -7.034095210564086
+        ],
+        "body": [
+          -0.003842524525140334,
+          0.8759999940389345,
+          -7.034095210564086
+        ],
+        "eye": [
+          -0.003842524525140334,
+          1.5499999940389344,
+          -7.034095210564086
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "gravity": [
+          0,
+          -9.81,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "cameraRotation": [
+          0,
+          -1.2246467991473532e-16,
+          0,
+          1
+        ],
+        "yaw": -2.4492935982947064e-16,
+        "pitch": 0,
+        "theta": 0,
+        "thetaDegrees": 0,
+        "s": -1.5038425245251403,
+        "mode": "NORMAL",
+        "grounded": true,
+        "supportNormal": [
+          0,
+          1,
+          0
+        ],
+        "velocity": [
+          0.00001628935876851756,
+          3.0237715664682696e-7,
+          -2.9999927803874016
+        ],
+        "step": 1922,
+        "progress": "INVERT",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [
+          {
+            "id": 1,
+            "step": 1407,
+            "sourceId": "VESTIBULE-THRESHOLD",
+            "destinationId": "INVERT-THRESHOLD",
+            "sourceWorldId": "A",
+            "destinationWorldId": "B",
+            "sourcePosition": [
+              -0.0037479352370892727,
+              0.8724322584672315,
+              -20
+            ],
+            "destinationPosition": [
+              99.99625253561955,
+              0.8722484171372322,
+              18.170906428143386
+            ],
+            "velocityBefore": [
+              0,
+              0,
+              -3
+            ],
+            "velocityAfter": [
+              7.347880794884119e-16,
+              0,
+              -3
+            ],
+            "crossingT": 0.42812856710763497,
+            "remainingDisplacement": [
+              4.7085663368306996e-7,
+              -0.00018384132999926805,
+              -0.028593571856617928
+            ]
+          }
+        ],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 0,
+        "translationQueries": 0,
+        "supportQueries": 5904,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.197170734405518,
+            "z": 0.5881023406982422
+          },
+          "velocity": {
+            "x": 0.000011124648153781891,
+            "y": 0.000057006287534022704,
+            "z": -0.00006554317951668054
+          },
+          "resets": 3
+        },
+        "render": {
+          "targetWidth": 900,
+          "targetHeight": 405,
+          "quality": 0.75,
+          "mainDrawCalls": 12,
+          "offscreenDrawCalls": 0,
+          "geometries": 21,
+          "textures": 34,
+          "programs": 10,
+          "context": "active",
+          "passes": 0,
+          "targetResizes": 3
+        },
+        "performance": {
+          "samples": 5,
+          "fps": 11.025358324145534,
+          "averageMs": 90.7,
+          "p50Ms": 29.200000002980232,
+          "p95Ms": 251,
+          "p99Ms": 251,
+          "physicsMs": 0.3999999985098839,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 32.0333333333328
+      }
+    },
+    {
+      "phase": "real touch stop, look, reverse during 45 degree body rotation",
+      "middle": {
+        "ready": true,
+        "input": {
+          "x": 1,
+          "y": 0
+        },
+        "error": null,
+        "world": "INVERT",
+        "slot": "B",
+        "foot": [
+          3.732050888773768,
+          0.9069782316942061,
+          -7.034087821414845
+        ],
+        "body": [
+          3.1210269579719494,
+          1.534692940767917,
+          -7.034087821414845
+        ],
+        "eye": [
+          2.650901239523975,
+          2.017660650717325,
+          -7.034087821414845
+        ],
+        "up": [
+          -0.6975159027418025,
+          0.7165693025955606,
+          0
+        ],
+        "gravity": [
+          6.842631005897083,
+          -7.02954485846245,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0.3764509856700897,
+          0.9264365434646606
+        ],
+        "cameraRotation": [
+          4.61019501289794e-17,
+          -1.134557535822828e-16,
+          0.37645099110271935,
+          0.9264365338747066
+        ],
+        "yaw": -2.4492935982947064e-16,
+        "pitch": 0,
+        "theta": 0.7719249675350776,
+        "thetaDegrees": 44.22804274053303,
+        "s": 2.470159896112248,
+        "mode": "ARC",
+        "grounded": true,
+        "supportNormal": [
+          -0.6939677596092224,
+          0.720005989074707,
+          0
+        ],
+        "velocity": [
+          1.572987929349381,
+          1.5074103102364944,
+          0
+        ],
+        "step": 2002,
+        "progress": "GRAVITY_TURN",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [
+          {
+            "id": 1,
+            "step": 1407,
+            "sourceId": "VESTIBULE-THRESHOLD",
+            "destinationId": "INVERT-THRESHOLD",
+            "sourceWorldId": "A",
+            "destinationWorldId": "B",
+            "sourcePosition": [
+              -0.0037479352370892727,
+              0.8724322584672315,
+              -20
+            ],
+            "destinationPosition": [
+              99.99625253561955,
+              0.8722484171372322,
+              18.170906428143386
+            ],
+            "velocityBefore": [
+              0,
+              0,
+              -3
+            ],
+            "velocityAfter": [
+              7.347880794884119e-16,
+              0,
+              -3
+            ],
+            "crossingT": 0.42812856710763497,
+            "remainingDisplacement": [
+              4.7085663368306996e-7,
+              -0.00018384132999926805,
+              -0.028593571856617928
+            ]
+          }
+        ],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 249,
+        "translationQueries": 249,
+        "supportQueries": 6384,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196527481079102,
+            "z": 0.5885884165763855
+          },
+          "velocity": {
+            "x": 0.000012908130884170532,
+            "y": 0.00006864397437311709,
+            "z": -0.00007831051334505901
+          },
+          "resets": 4
+        },
+        "render": {
+          "targetWidth": 900,
+          "targetHeight": 405,
+          "quality": 0.75,
+          "mainDrawCalls": 12,
+          "offscreenDrawCalls": 0,
+          "geometries": 21,
+          "textures": 34,
+          "programs": 10,
+          "context": "active",
+          "passes": 0,
+          "targetResizes": 3
+        },
+        "performance": {
+          "samples": 5,
+          "fps": 11.025358324145534,
+          "averageMs": 90.7,
+          "p50Ms": 29.200000002980232,
+          "p95Ms": 251,
+          "p99Ms": 251,
+          "physicsMs": 0.8999999985098839,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 33.366666666666056
+      },
+      "stopped": {
+        "ready": true,
+        "input": {
+          "x": 0,
+          "y": 0
+        },
+        "error": null,
+        "world": "INVERT",
+        "slot": "B",
+        "foot": [
+          3.732050888773768,
+          0.9069782316942061,
+          -7.034087821414845
+        ],
+        "body": [
+          3.1210269579719494,
+          1.534692940767917,
+          -7.034087821414845
+        ],
+        "eye": [
+          2.650901239523975,
+          2.017660650717325,
+          -7.034087821414845
+        ],
+        "up": [
+          -0.6975159027418025,
+          0.7165693025955606,
+          0
+        ],
+        "gravity": [
+          6.842631005897083,
+          -7.02954485846245,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0.3764509856700897,
+          0.9264365434646606
+        ],
+        "cameraRotation": [
+          4.61019501289794e-17,
+          -1.134557535822828e-16,
+          0.37645099110271935,
+          0.9264365338747066
+        ],
+        "yaw": -2.4492935982947064e-16,
+        "pitch": 0,
+        "theta": 0.7719249675350776,
+        "thetaDegrees": 44.22804274053303,
+        "s": 2.470159896112248,
+        "mode": "ARC",
+        "grounded": true,
+        "supportNormal": [
+          -0.6939677596092224,
+          0.720005989074707,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "step": 2022,
+        "progress": "GRAVITY_TURN",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [
+          {
+            "id": 1,
+            "step": 1407,
+            "sourceId": "VESTIBULE-THRESHOLD",
+            "destinationId": "INVERT-THRESHOLD",
+            "sourceWorldId": "A",
+            "destinationWorldId": "B",
+            "sourcePosition": [
+              -0.0037479352370892727,
+              0.8724322584672315,
+              -20
+            ],
+            "destinationPosition": [
+              99.99625253561955,
+              0.8722484171372322,
+              18.170906428143386
+            ],
+            "velocityBefore": [
+              0,
+              0,
+              -3
+            ],
+            "velocityAfter": [
+              7.347880794884119e-16,
+              0,
+              -3
+            ],
+            "crossingT": 0.42812856710763497,
+            "remainingDisplacement": [
+              4.7085663368306996e-7,
+              -0.00018384132999926805,
+              -0.028593571856617928
+            ]
+          }
+        ],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 249,
+        "translationQueries": 249,
+        "supportQueries": 6404,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196559906005859,
+            "z": 0.5885637402534485
+          },
+          "velocity": {
+            "x": 0.000012901611626148224,
+            "y": 0.00006870177458040416,
+            "z": -0.00007835245924070477
+          },
+          "resets": 4
+        },
+        "render": {
+          "targetWidth": 900,
+          "targetHeight": 405,
+          "quality": 0.75,
+          "mainDrawCalls": 12,
+          "offscreenDrawCalls": 0,
+          "geometries": 21,
+          "textures": 34,
+          "programs": 10,
+          "context": "active",
+          "passes": 0,
+          "targetResizes": 3
+        },
+        "performance": {
+          "samples": 5,
+          "fps": 11.025358324145534,
+          "averageMs": 90.7,
+          "p50Ms": 29.200000002980232,
+          "p95Ms": 251,
+          "p99Ms": 251,
+          "physicsMs": 0,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 33.69999999999937
+      },
+      "turning": {
+        "ready": true,
+        "input": {
+          "x": 0,
+          "y": 0
+        },
+        "error": null,
+        "world": "INVERT",
+        "slot": "B",
+        "foot": [
+          3.732050888773768,
+          0.9069782316942061,
+          -7.034087821414845
+        ],
+        "body": [
+          3.1210269579719494,
+          1.534692940767917,
+          -7.034087821414845
+        ],
+        "eye": [
+          2.650901239523975,
+          2.017660650717325,
+          -7.034087821414845
+        ],
+        "up": [
+          -0.6975159027418025,
+          0.7165693025955606,
+          0
+        ],
+        "gravity": [
+          6.842631005897083,
+          -7.02954485846245,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0.3764509856700897,
+          0.9264365434646606
+        ],
+        "cameraRotation": [
+          -0.03615936028389527,
+          0.03924516767342435,
+          0.3767825585371599,
+          0.9247633324588167
+        ],
+        "yaw": 0.09999999999999976,
+        "pitch": -0.0375,
+        "theta": 0.7719249675350776,
+        "thetaDegrees": 44.22804274053303,
+        "s": 2.470159896112248,
+        "mode": "ARC",
+        "grounded": true,
+        "supportNormal": [
+          -0.6939677596092224,
+          0.720005989074707,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "step": 2022,
+        "progress": "GRAVITY_TURN",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [
+          {
+            "id": 1,
+            "step": 1407,
+            "sourceId": "VESTIBULE-THRESHOLD",
+            "destinationId": "INVERT-THRESHOLD",
+            "sourceWorldId": "A",
+            "destinationWorldId": "B",
+            "sourcePosition": [
+              -0.0037479352370892727,
+              0.8724322584672315,
+              -20
+            ],
+            "destinationPosition": [
+              99.99625253561955,
+              0.8722484171372322,
+              18.170906428143386
+            ],
+            "velocityBefore": [
+              0,
+              0,
+              -3
+            ],
+            "velocityAfter": [
+              7.347880794884119e-16,
+              0,
+              -3
+            ],
+            "crossingT": 0.42812856710763497,
+            "remainingDisplacement": [
+              4.7085663368306996e-7,
+              -0.00018384132999926805,
+              -0.028593571856617928
+            ]
+          }
+        ],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 249,
+        "translationQueries": 249,
+        "supportQueries": 6404,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196559906005859,
+            "z": 0.5885637402534485
+          },
+          "velocity": {
+            "x": 0.000012901611626148224,
+            "y": 0.00006870177458040416,
+            "z": -0.00007835245924070477
+          },
+          "resets": 4
+        },
+        "render": {
+          "targetWidth": 900,
+          "targetHeight": 405,
+          "quality": 0.75,
+          "mainDrawCalls": 12,
+          "offscreenDrawCalls": 0,
+          "geometries": 21,
+          "textures": 34,
+          "programs": 10,
+          "context": "active",
+          "passes": 0,
+          "targetResizes": 3
+        },
+        "performance": {
+          "samples": 5,
+          "fps": 11.025358324145534,
+          "averageMs": 90.7,
+          "p50Ms": 29.200000002980232,
+          "p95Ms": 251,
+          "p99Ms": 251,
+          "physicsMs": 0,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 33.69999999999937
+      },
+      "reversed": {
+        "ready": true,
+        "input": {
+          "x": -1,
+          "y": 0
+        },
+        "error": null,
+        "world": "INVERT",
+        "slot": "B",
+        "foot": [
+          3.2655182747029974,
+          0.5311153599884183,
+          -7.034087821414845
+        ],
+        "body": [
+          2.782207647003048,
+          1.2617225301915889,
+          -7.034087821414845
+        ],
+        "eye": [
+          2.410345360393734,
+          1.8238563574940283,
+          -7.034087821414845
+        ],
+        "up": [
+          -0.5517244608446867,
+          0.8340264500036193,
+          0
+        ],
+        "gravity": [
+          5.412416960886377,
+          -8.181799474535506,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0.288074254989624,
+          0.9576081037521362
+        ],
+        "cameraRotation": [
+          3.59805001515104e-17,
+          -1.196053349913112e-16,
+          0.2880742525776823,
+          0.9576080748415866
+        ],
+        "yaw": -2.498001805406602e-16,
+        "pitch": 0,
+        "theta": 0.5844304605158631,
+        "thetaDegrees": 33.48539880644606,
+        "s": 1.8701774736507621,
+        "mode": "ARC",
+        "grounded": true,
+        "supportNormal": [
+          -0.550472617149353,
+          0.8348532915115356,
+          0
+        ],
+        "velocity": [
+          -1.8076175333118272,
+          -1.216180793530106,
+          0
+        ],
+        "step": 2034,
+        "progress": "GRAVITY_TURN",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [
+          {
+            "id": 1,
+            "step": 1407,
+            "sourceId": "VESTIBULE-THRESHOLD",
+            "destinationId": "INVERT-THRESHOLD",
+            "sourceWorldId": "A",
+            "destinationWorldId": "B",
+            "sourcePosition": [
+              -0.0037479352370892727,
+              0.8724322584672315,
+              -20
+            ],
+            "destinationPosition": [
+              99.99625253561955,
+              0.8722484171372322,
+              18.170906428143386
+            ],
+            "velocityBefore": [
+              0,
+              0,
+              -3
+            ],
+            "velocityAfter": [
+              7.347880794884119e-16,
+              0,
+              -3
+            ],
+            "crossingT": 0.42812856710763497,
+            "remainingDisplacement": [
+              4.7085663368306996e-7,
+              -0.00018384132999926805,
+              -0.028593571856617928
+            ]
+          }
+        ],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 309,
+        "translationQueries": 309,
+        "supportQueries": 6476,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196579933166504,
+            "z": 0.5885488390922546
+          },
+          "velocity": {
+            "x": 0.000012938864529132843,
+            "y": 0.00006848865450592712,
+            "z": -0.00007824136991985142
+          },
+          "resets": 4
+        },
+        "render": {
+          "targetWidth": 900,
+          "targetHeight": 405,
+          "quality": 0.75,
+          "mainDrawCalls": 12,
+          "offscreenDrawCalls": 0,
+          "geometries": 21,
+          "textures": 34,
+          "programs": 10,
+          "context": "active",
+          "passes": 0,
+          "targetResizes": 3
+        },
+        "performance": {
+          "samples": 5,
+          "fps": 11.025358324145534,
+          "averageMs": 90.7,
+          "p50Ms": 29.200000002980232,
+          "p95Ms": 251,
+          "p99Ms": 251,
+          "physicsMs": 0.7999999970197678,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 33.89999999999936
+      }
+    },
+    {
+      "stage": "landing",
+      "done": true,
+      "n": 80,
+      "snapshot": {
+        "ready": true,
+        "input": {
+          "x": 1,
+          "y": 0
+        },
+        "error": null,
+        "world": "INVERT",
+        "slot": "B",
+        "foot": [
+          4.7,
+          4.04353686424578,
+          -7.034087821414845
+        ],
+        "body": [
+          3.823999999999998,
+          4.04353686424578,
+          -7.034087821414845
+        ],
+        "eye": [
+          3.1500000000000057,
+          4.04353686424578,
+          -7.034087821414845
+        ],
+        "up": [
+          -1,
+          6.123233995736766e-17,
+          0
+        ],
+        "gravity": [
+          9.81,
+          -6.006892549817768e-16,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0.7071068286895752,
+          0.7071068286895752
+        ],
+        "cameraRotation": [
+          8.831770080096235e-17,
+          -8.831770080096236e-17,
+          0.7071067811865475,
+          0.7071067811865476
+        ],
+        "yaw": -2.498001805406602e-16,
+        "pitch": 0,
+        "theta": 1.5707963267948966,
+        "thetaDegrees": 90,
+        "s": 5.870085109989448,
+        "mode": "WALL",
+        "grounded": true,
+        "supportNormal": [
+          -1,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          3.0000000000000426,
+          0
+        ],
+        "step": 2114,
+        "progress": "WALL_WALK",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [
+          {
+            "id": 1,
+            "step": 1407,
+            "sourceId": "VESTIBULE-THRESHOLD",
+            "destinationId": "INVERT-THRESHOLD",
+            "sourceWorldId": "A",
+            "destinationWorldId": "B",
+            "sourcePosition": [
+              -0.0037479352370892727,
+              0.8724322584672315,
+              -20
+            ],
+            "destinationPosition": [
+              99.99625253561955,
+              0.8722484171372322,
+              18.170906428143386
+            ],
+            "velocityBefore": [
+              0,
+              0,
+              -3
+            ],
+            "velocityAfter": [
+              7.347880794884119e-16,
+              0,
+              -3
+            ],
+            "crossingT": 0.42812856710763497,
+            "remainingDisplacement": [
+              4.7085663368306996e-7,
+              -0.00018384132999926805,
+              -0.028593571856617928
+            ]
+          }
+        ],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 709,
+        "translationQueries": 709,
+        "supportQueries": 6956,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196719646453857,
+            "z": 0.5884512662887573
+          },
+          "velocity": {
+            "x": 0.00001300964504480362,
+            "y": 0.00006858382403152063,
+            "z": -0.00007841089245630428
+          },
+          "resets": 4
+        },
+        "render": {
+          "targetWidth": 900,
+          "targetHeight": 405,
+          "quality": 0.75,
+          "mainDrawCalls": 12,
+          "offscreenDrawCalls": 0,
+          "geometries": 21,
+          "textures": 34,
+          "programs": 10,
+          "context": "active",
+          "passes": 0,
+          "targetResizes": 3
+        },
+        "performance": {
+          "samples": 5,
+          "fps": 11.025358324145534,
+          "averageMs": 90.7,
+          "p50Ms": 29.200000002980232,
+          "p95Ms": 251,
+          "p99Ms": 251,
+          "physicsMs": 0.09999999403953552,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 35.23333333333262
+      }
+    },
+    {
+      "stage": "terminal",
+      "done": true,
+      "n": 188,
+      "snapshot": {
+        "ready": true,
+        "input": {
+          "x": 0,
+          "y": 1
+        },
+        "error": null,
+        "world": "INVERT",
+        "slot": "B",
+        "foot": [
+          4.7,
+          4.04353686424578,
+          -16.43408782141472
+        ],
+        "body": [
+          3.823999999999998,
+          4.04353686424578,
+          -16.43408782141472
+        ],
+        "eye": [
+          3.1500000000000057,
+          4.04353686424578,
+          -16.43408782141472
+        ],
+        "up": [
+          -1,
+          6.123233995736766e-17,
+          0
+        ],
+        "gravity": [
+          9.81,
+          -6.006892549817768e-16,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0.7071068286895752,
+          0.7071068286895752
+        ],
+        "cameraRotation": [
+          8.831770080096235e-17,
+          -8.831770080096236e-17,
+          0.7071067811865475,
+          0.7071067811865476
+        ],
+        "yaw": -2.498001805406602e-16,
+        "pitch": 0,
+        "theta": 1.5707963267948966,
+        "thetaDegrees": 90,
+        "s": 5.870085109989448,
+        "mode": "WALL",
+        "grounded": true,
+        "supportNormal": [
+          -1,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          -3.000000000000469
+        ],
+        "step": 2302,
+        "progress": "WALL_WALK",
+        "terminal": false,
+        "returned": false,
+        "interactable": true,
+        "events": [
+          {
+            "id": 1,
+            "step": 1407,
+            "sourceId": "VESTIBULE-THRESHOLD",
+            "destinationId": "INVERT-THRESHOLD",
+            "sourceWorldId": "A",
+            "destinationWorldId": "B",
+            "sourcePosition": [
+              -0.0037479352370892727,
+              0.8724322584672315,
+              -20
+            ],
+            "destinationPosition": [
+              99.99625253561955,
+              0.8722484171372322,
+              18.170906428143386
+            ],
+            "velocityBefore": [
+              0,
+              0,
+              -3
+            ],
+            "velocityAfter": [
+              7.347880794884119e-16,
+              0,
+              -3
+            ],
+            "crossingT": 0.42812856710763497,
+            "remainingDisplacement": [
+              4.7085663368306996e-7,
+              -0.00018384132999926805,
+              -0.028593571856617928
+            ]
+          }
+        ],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 1649,
+        "translationQueries": 1649,
+        "supportQueries": 8084,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.19704008102417,
+            "z": 0.5882222652435303
+          },
+          "velocity": {
+            "x": 0.000011119060218334198,
+            "y": 0.000057302262575831264,
+            "z": -0.00006527394725708291
+          },
+          "resets": 4
+        },
+        "render": {
+          "targetWidth": 900,
+          "targetHeight": 405,
+          "quality": 0.75,
+          "mainDrawCalls": 9,
+          "offscreenDrawCalls": 0,
+          "geometries": 21,
+          "textures": 34,
+          "programs": 10,
+          "context": "active",
+          "passes": 0,
+          "targetResizes": 3
+        },
+        "performance": {
+          "samples": 5,
+          "fps": 11.025358324145534,
+          "averageMs": 90.7,
+          "p50Ms": 29.200000002980232,
+          "p95Ms": 251,
+          "p99Ms": 251,
+          "physicsMs": 0.09999999403953552,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 38.36666666666577
+      }
+    },
+    {
+      "stage": "backlanding",
+      "done": true,
+      "n": 189,
+      "snapshot": {
+        "ready": true,
+        "input": {
+          "x": 0,
+          "y": -1
+        },
+        "error": null,
+        "world": "INVERT",
+        "slot": "B",
+        "foot": [
+          4.7,
+          4.04353686424578,
+          -6.984087821414846
+        ],
+        "body": [
+          3.823999999999998,
+          4.04353686424578,
+          -6.984087821414846
+        ],
+        "eye": [
+          3.1500000000000057,
+          4.04353686424578,
+          -6.984087821414846
+        ],
+        "up": [
+          -1,
+          6.123233995736766e-17,
+          0
+        ],
+        "gravity": [
+          9.81,
+          -6.006892549817768e-16,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0.7071068286895752,
+          0.7071068286895752
+        ],
+        "cameraRotation": [
+          8.831770080096235e-17,
+          -8.831770080096236e-17,
+          0.7071067811865475,
+          0.7071067811865476
+        ],
+        "yaw": -2.498001805406602e-16,
+        "pitch": 0,
+        "theta": 1.5707963267948966,
+        "thetaDegrees": 90,
+        "s": 5.870085109989448,
+        "mode": "WALL",
+        "grounded": true,
+        "supportNormal": [
+          -1,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          2.999999999999936
+        ],
+        "step": 2491,
+        "progress": "RETURN_TO_VESTIBULE",
+        "terminal": true,
+        "returned": false,
+        "interactable": false,
+        "events": [
+          {
+            "id": 1,
+            "step": 1407,
+            "sourceId": "VESTIBULE-THRESHOLD",
+            "destinationId": "INVERT-THRESHOLD",
+            "sourceWorldId": "A",
+            "destinationWorldId": "B",
+            "sourcePosition": [
+              -0.0037479352370892727,
+              0.8724322584672315,
+              -20
+            ],
+            "destinationPosition": [
+              99.99625253561955,
+              0.8722484171372322,
+              18.170906428143386
+            ],
+            "velocityBefore": [
+              0,
+              0,
+              -3
+            ],
+            "velocityAfter": [
+              7.347880794884119e-16,
+              0,
+              -3
+            ],
+            "crossingT": 0.42812856710763497,
+            "remainingDisplacement": [
+              4.7085663368306996e-7,
+              -0.00018384132999926805,
+              -0.028593571856617928
+            ]
+          }
+        ],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 2594,
+        "translationQueries": 2594,
+        "supportQueries": 9218,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196525573730469,
+            "z": 0.5886363387107849
+          },
+          "velocity": {
+            "x": 0.000012896023690700531,
+            "y": 0.00007264286250574514,
+            "z": -0.00008197279385058209
+          },
+          "resets": 5
+        },
+        "render": {
+          "targetWidth": 900,
+          "targetHeight": 405,
+          "quality": 0.75,
+          "mainDrawCalls": 12,
+          "offscreenDrawCalls": 0,
+          "geometries": 21,
+          "textures": 34,
+          "programs": 10,
+          "context": "active",
+          "passes": 0,
+          "targetResizes": 3
+        },
+        "performance": {
+          "samples": 5,
+          "fps": 11.025358324145534,
+          "averageMs": 90.7,
+          "p50Ms": 29.200000002980232,
+          "p95Ms": 251,
+          "p99Ms": 251,
+          "physicsMs": 0.10000000149011612,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 41.51666666666559
+      }
+    },
+    {
+      "stage": "ground",
+      "done": true,
+      "n": 148,
+      "snapshot": {
+        "ready": true,
+        "input": {
+          "x": -1,
+          "y": 0
+        },
+        "error": null,
+        "world": "INVERT",
+        "slot": "B",
+        "foot": [
+          -0.021794762268328327,
+          -3.2438470798368257e-9,
+          -6.984088945968836
+        ],
+        "body": [
+          -0.021794762268328327,
+          0.8759999967561529,
+          -6.984088945968836
+        ],
+        "eye": [
+          -0.021794762268328327,
+          1.5499999967561529,
+          -6.984088945968836
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "gravity": [
+          0,
+          -9.81,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "cameraRotation": [
+          0,
+          -1.249000902703301e-16,
+          0,
+          1
+        ],
+        "yaw": -2.498001805406602e-16,
+        "pitch": 0,
+        "theta": 0,
+        "thetaDegrees": 0,
+        "s": -1.5217947622683283,
+        "mode": "NORMAL",
+        "grounded": true,
+        "supportNormal": [
+          0,
+          1,
+          0
+        ],
+        "velocity": [
+          -3.0000069737434387,
+          -9.969226111294915e-8,
+          0.0000033318349679234416
+        ],
+        "step": 2639,
+        "progress": "RETURN_TO_VESTIBULE",
+        "terminal": true,
+        "returned": false,
+        "interactable": false,
+        "events": [
+          {
+            "id": 1,
+            "step": 1407,
+            "sourceId": "VESTIBULE-THRESHOLD",
+            "destinationId": "INVERT-THRESHOLD",
+            "sourceWorldId": "A",
+            "destinationWorldId": "B",
+            "sourcePosition": [
+              -0.0037479352370892727,
+              0.8724322584672315,
+              -20
+            ],
+            "destinationPosition": [
+              99.99625253561955,
+              0.8722484171372322,
+              18.170906428143386
+            ],
+            "velocityBefore": [
+              0,
+              0,
+              -3
+            ],
+            "velocityAfter": [
+              7.347880794884119e-16,
+              0,
+              -3
+            ],
+            "crossingT": 0.42812856710763497,
+            "remainingDisplacement": [
+              4.7085663368306996e-7,
+              -0.00018384132999926805,
+              -0.028593571856617928
+            ]
+          }
+        ],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 3181,
+        "translationQueries": 3181,
+        "supportQueries": 10106,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196776866912842,
+            "z": 0.5884567499160767
+          },
+          "velocity": {
+            "x": 0.000012888573110103607,
+            "y": 0.00006787986785639077,
+            "z": -0.00007675555389141664
+          },
+          "resets": 5
+        },
+        "render": {
+          "targetWidth": 900,
+          "targetHeight": 405,
+          "quality": 0.75,
+          "mainDrawCalls": 12,
+          "offscreenDrawCalls": 0,
+          "geometries": 21,
+          "textures": 34,
+          "programs": 10,
+          "context": "active",
+          "passes": 0,
+          "targetResizes": 3
+        },
+        "performance": {
+          "samples": 5,
+          "fps": 11.025358324145534,
+          "averageMs": 90.7,
+          "p50Ms": 29.200000002980232,
+          "p95Ms": 251,
+          "p99Ms": 251,
+          "physicsMs": 0.20000000298023224,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 43.98333333333212
+      }
+    },
+    {
+      "stage": "portalin",
+      "done": true,
+      "n": 514,
+      "snapshot": {
+        "ready": true,
+        "input": {
+          "x": 0,
+          "y": -1
+        },
+        "error": null,
+        "world": "VESTIBULE",
+        "slot": "A",
+        "foot": [
+          -0.021953134184201417,
+          1.6003489422544703e-8,
+          -19.968618715031077
+        ],
+        "body": [
+          -0.021953134184201417,
+          0.8760000160034894,
+          -19.968618715031077
+        ],
+        "eye": [
+          -0.021953134184201417,
+          1.5500000160034895,
+          -19.968618715031077
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "gravity": [
+          0,
+          -9.81,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "cameraRotation": [
+          0,
+          -1.249000902703301e-16,
+          0,
+          1
+        ],
+        "yaw": -2.498001805406602e-16,
+        "pitch": 0,
+        "theta": 0,
+        "thetaDegrees": 0,
+        "s": -1.5219531341842014,
+        "mode": "NORMAL",
+        "grounded": true,
+        "supportNormal": [
+          0,
+          1,
+          0
+        ],
+        "velocity": [
+          -7.494005416219807e-16,
+          0,
+          3
+        ],
+        "step": 3153,
+        "progress": "RETURNED",
+        "terminal": true,
+        "returned": true,
+        "interactable": false,
+        "events": [
+          {
+            "id": 1,
+            "step": 1407,
+            "sourceId": "VESTIBULE-THRESHOLD",
+            "destinationId": "INVERT-THRESHOLD",
+            "sourceWorldId": "A",
+            "destinationWorldId": "B",
+            "sourcePosition": [
+              -0.0037479352370892727,
+              0.8724322584672315,
+              -20
+            ],
+            "destinationPosition": [
+              99.99625253561955,
+              0.8722484171372322,
+              18.170906428143386
+            ],
+            "velocityBefore": [
+              0,
+              0,
+              -3
+            ],
+            "velocityAfter": [
+              7.347880794884119e-16,
+              0,
+              -3
+            ],
+            "crossingT": 0.42812856710763497,
+            "remainingDisplacement": [
+              4.7085663368306996e-7,
+              -0.00018384132999926805,
+              -0.028593571856617928
+            ]
+          },
+          {
+            "id": 2,
+            "step": 3153,
+            "sourceId": "INVERT-THRESHOLD",
+            "destinationId": "VESTIBULE-THRESHOLD",
+            "sourceWorldId": "B",
+            "destinationWorldId": "A",
+            "sourcePosition": [
+              99.97805210653937,
+              0.8728138295434098,
+              18.2
+            ],
+            "destinationPosition": [
+              -0.021947893460634305,
+              0.8726666622121035,
+              -19.998616996070375
+            ],
+            "velocityBefore": [
+              -7.494005416219807e-16,
+              0,
+              3
+            ],
+            "velocityAfter": [
+              -7.494005416219807e-16,
+              0,
+              3
+            ],
+            "crossingT": 0.9116996050399452,
+            "remainingDisplacement": [
+              0,
+              -0.0001471673313062638,
+              0.0008830039296299219
+            ]
+          }
+        ],
+        "transferState": "WAITING_FOR_REARM",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 3181,
+        "translationQueries": 3181,
+        "supportQueries": 13190,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196902275085449,
+            "z": 0.5884009003639221
+          },
+          "velocity": {
+            "x": 0.000012388452887535095,
+            "y": 0.00006971126276766881,
+            "z": -0.00007816719153197482
+          },
+          "resets": 6
+        },
+        "render": {
+          "targetWidth": 900,
+          "targetHeight": 405,
+          "quality": 0.75,
+          "mainDrawCalls": 6,
+          "offscreenDrawCalls": 13,
+          "geometries": 21,
+          "textures": 34,
+          "programs": 10,
+          "context": "active",
+          "passes": 1,
+          "targetResizes": 3
+        },
+        "performance": {
+          "samples": 5,
+          "fps": 11.025358324145534,
+          "averageMs": 90.7,
+          "p50Ms": 29.200000002980232,
+          "p95Ms": 251,
+          "p99Ms": 251,
+          "physicsMs": 0.8999999985098839,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 52.5499999999983
+      }
+    }
+  ],
+  "final": {
+    "ready": true,
+    "input": {
+      "x": 0,
+      "y": 0
+    },
+    "error": null,
+    "world": "VESTIBULE",
+    "slot": "A",
+    "foot": [
+      -0.021953134184201417,
+      1.6003489422544703e-8,
+      -19.968618715031077
+    ],
+    "body": [
+      -0.021953134184201417,
+      0.8760000160034894,
+      -19.968618715031077
+    ],
+    "eye": [
+      -0.021953134184201417,
+      1.5500000160034895,
+      -19.968618715031077
+    ],
+    "up": [
+      0,
+      1,
+      0
+    ],
+    "gravity": [
+      0,
+      -9.81,
+      0
+    ],
+    "bodyRotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "cameraRotation": [
+      0,
+      -1.249000902703301e-16,
+      0,
+      1
+    ],
+    "yaw": -2.498001805406602e-16,
+    "pitch": 0,
+    "theta": 0,
+    "thetaDegrees": 0,
+    "s": -1.5219531341842014,
+    "mode": "NORMAL",
+    "grounded": true,
+    "supportNormal": [
+      0,
+      1,
+      0
+    ],
+    "velocity": [
+      -7.494005416219807e-16,
+      0,
+      3
+    ],
+    "step": 3153,
+    "progress": "RETURNED",
+    "terminal": true,
+    "returned": true,
+    "interactable": false,
+    "events": [
+      {
+        "id": 1,
+        "step": 1407,
+        "sourceId": "VESTIBULE-THRESHOLD",
+        "destinationId": "INVERT-THRESHOLD",
+        "sourceWorldId": "A",
+        "destinationWorldId": "B",
+        "sourcePosition": [
+          -0.0037479352370892727,
+          0.8724322584672315,
+          -20
+        ],
+        "destinationPosition": [
+          99.99625253561955,
+          0.8722484171372322,
+          18.170906428143386
+        ],
+        "velocityBefore": [
+          0,
+          0,
+          -3
+        ],
+        "velocityAfter": [
+          7.347880794884119e-16,
+          0,
+          -3
+        ],
+        "crossingT": 0.42812856710763497,
+        "remainingDisplacement": [
+          4.7085663368306996e-7,
+          -0.00018384132999926805,
+          -0.028593571856617928
+        ]
+      },
+      {
+        "id": 2,
+        "step": 3153,
+        "sourceId": "INVERT-THRESHOLD",
+        "destinationId": "VESTIBULE-THRESHOLD",
+        "sourceWorldId": "B",
+        "destinationWorldId": "A",
+        "sourcePosition": [
+          99.97805210653937,
+          0.8728138295434098,
+          18.2
+        ],
+        "destinationPosition": [
+          -0.021947893460634305,
+          0.8726666622121035,
+          -19.998616996070375
+        ],
+        "velocityBefore": [
+          -7.494005416219807e-16,
+          0,
+          3
+        ],
+        "velocityAfter": [
+          -7.494005416219807e-16,
+          0,
+          3
+        ],
+        "crossingT": 0.9116996050399452,
+        "remainingDisplacement": [
+          0,
+          -0.0001471673313062638,
+          0.0008830039296299219
+        ]
+      }
+    ],
+    "transferState": "WAITING_FOR_REARM",
+    "rejection": null,
+    "blocked": null,
+    "rotationQueries": 3181,
+    "translationQueries": 3181,
+    "supportQueries": 13190,
+    "witness": {
+      "position": {
+        "x": 109.35003662109375,
+        "y": 4.196902275085449,
+        "z": 0.5884009003639221
+      },
+      "velocity": {
+        "x": 0.000012388452887535095,
+        "y": 0.00006971126276766881,
+        "z": -0.00007816719153197482
+      },
+      "resets": 6
+    },
+    "render": {
+      "targetWidth": 900,
+      "targetHeight": 405,
+      "quality": 0.75,
+      "mainDrawCalls": 6,
+      "offscreenDrawCalls": 13,
+      "geometries": 21,
+      "textures": 34,
+      "programs": 10,
+      "context": "active",
+      "passes": 1,
+      "targetResizes": 3
+    },
+    "performance": {
+      "samples": 5,
+      "fps": 11.025358324145534,
+      "averageMs": 90.7,
+      "p50Ms": 29.200000002980232,
+      "p95Ms": 251,
+      "p99Ms": 251,
+      "physicsMs": 0.8999999985098839,
+      "gpuMs": null
+    },
+    "errors": [],
+    "elapsed": 52.5499999999983
+  }
+}

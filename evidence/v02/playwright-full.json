@@ -1,0 +1,1214 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/threshold-v02/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/workspace/threshold-v02/playwright.config.ts",
+    "rootDir": "/workspace/threshold-v02/src/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/threshold-v02/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/workspace/threshold-v02/src/tests/e2e",
+        "testIgnore": [
+          "**/production.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/threshold-v02/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/workspace/threshold-v02/src/tests/e2e",
+        "snapshotDir": "/workspace/threshold-v02/src/tests/e2e",
+        "testIgnore": "**/production.spec.ts",
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5180",
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "headless": true,
+          "launchOptions": {
+            "args": [
+              "--no-sandbox",
+              "--use-gl=angle",
+              "--use-angle=swiftshader",
+              "--enable-unsafe-swiftshader"
+            ]
+          },
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/playwright.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev -- --port 5180",
+      "url": "http://127.0.0.1:5180",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "diagnostics.spec.ts",
+      "file": "diagnostics.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "F3 diagnostics exports a real JSON download and UI quality resizes the live target",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7154,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:27:14.292Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "80bb835772e7bc2f1ed9-5629a8819a31a2765f88",
+          "file": "diagnostics.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "Esc cancels held keyboard and mouse drag, development geometry remains observational",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7999,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:27:21.534Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "80bb835772e7bc2f1ed9-1e805cb8ab44bba51b44",
+          "file": "diagnostics.spec.ts",
+          "line": 51,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "input.spec.ts",
+      "file": "input.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "mobile uses distinct captured pointer IDs for simultaneous movement and look, with cancellation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5106,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:27:29.609Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "mobile-multitouch",
+                      "contentType": "application/json",
+                      "body": "ewogICJwb2ludGVycyI6IFsKICAgIHsKICAgICAgImlkIjogMiwKICAgICAgIngiOiAxNTAKICAgIH0sCiAgICB7CiAgICAgICJpZCI6IDMsCiAgICAgICJ4IjogODAwCiAgICB9CiAgXSwKICAiY2FwdHVyZWQiOiBbCiAgICB0cnVlLAogICAgdHJ1ZQogIF0sCiAgImR1cmluZyI6IHsKICAgICJpbnB1dCI6IHsKICAgICAgIm1vdmVtZW50IjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDEKICAgICAgfSwKICAgICAgInRvdWNoU3RhdGUiOiB7CiAgICAgICAgIm1vdmVBY3RpdmUiOiB0cnVlLAogICAgICAgICJsb29rQWN0aXZlIjogdHJ1ZSwKICAgICAgICAibW92ZVgiOiAwLAogICAgICAgICJtb3ZlWSI6IC01OAogICAgICB9LAogICAgICAidG91Y2giOiB0cnVlCiAgICB9LAogICAgInJlYWR5IjogdHJ1ZSwKICAgICJlcnJvciI6IG51bGwsCiAgICAid29ybGRJZCI6ICJBIiwKICAgICJwb3NpdGlvbiI6IFsKICAgICAgLTAuMDg5Nzc4Mjc0Mjk3NzE0MjMsCiAgICAgIDAuODc5NzM3NDM2NzcxMzkyOCwKICAgICAgLTMuNTkzMjU3OTA0MDUyNzM0NAogICAgXSwKICAgICJyb3RhdGlvbiI6IFsKICAgICAgLTAuMDI0OTI3MTIzNjg4MDc0OTE1LAogICAgICAwLjA3NDkwNjI5Mjk1ODc1MzI0LAogICAgICAwLjAwMTg3MzA0NzU1ODQ3MDI0MDQsCiAgICAgIDAuOTk2ODc3MjEyODM2NDk2MQogICAgXSwKICAgICJ5YXciOiAwLjE1LAogICAgInBpdGNoIjogLTAuMDUsCiAgICAidmVsb2NpdHkiOiBbCiAgICAgIC0wLjQ0ODMxNDM5NzQyMDc5NzY1LAogICAgICAwLAogICAgICAtMi45NjYzMTMyMzM4MDgxMjY2CiAgICBdLAogICAgInN0ZXAiOiAxOCwKICAgICJncm91bmRlZCI6IHRydWUsCiAgICAiZXZlbnRzIjogW10sCiAgICAibGFzdEV2ZW50SWQiOiAwLAogICAgInRyYW5zZmVyU3RhdGUiOiAiQVJNRUQiLAogICAgImxhc3RSZWplY3Rpb24iOiBudWxsLAogICAgInBvcnRhbCI6IHsKICAgICAgInNvdXJjZSI6ICJBLWRvb3IiLAogICAgICAiZGVzdGluYXRpb24iOiAiQi1kb29yIiwKICAgICAgInBvc2VzIjogWwogICAgICAgIHsKICAgICAgICAgICJpZCI6ICJBLWRvb3IiLAogICAgICAgICAgInBvc2l0aW9uIjogWwogICAgICAgICAgICAwLAogICAgICAgICAgICAxLjQ1LAogICAgICAgICAgICAtOAogICAgICAgICAgXSwKICAgICAgICAgICJyb3RhdGlvbiI6IFsKICAgICAgICAgICAgMCwKICAgICAgICAgICAgMCwKICAgICAgICAgICAgMCwKICAgICAgICAgICAgMQogICAgICAgICAgXQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogIkItZG9vciIsCiAgICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAgIDMyLAogICAgICAgICAgICAxLjQ1LAogICAgICAgICAgICAwCiAgICAgICAgICBdLAogICAgICAgICAgInJvdGF0aW9uIjogWwogICAgICAgICAgICAwLAogICAgICAgICAgICAwLjcwNzEwNjc4MTE4NjU0NzUsCiAgICAgICAgICAgIDAsCiAgICAgICAgICAgIDAuNzA3MTA2NzgxMTg2NTQ3NgogICAgICAgICAgXQogICAgICAgIH0KICAgICAgXSwKICAgICAgInNpZ25lZERpc3RhbmNlIjogNC40MDY3NDIwOTU5NDcyNjYsCiAgICAgICJjcm9zc2luZ0NvbmRpdGlvbiI6IGZhbHNlCiAgICB9LAogICAgInJlbmRlciI6IHsKICAgICAgInRhcmdldFdpZHRoIjogNzY1LAogICAgICAidGFyZ2V0SGVpZ2h0IjogNTEwLAogICAgICAicXVhbGl0eSI6IDAuODUsCiAgICAgICJtYWluRHJhd0NhbGxzIjogMTMsCiAgICAgICJvZmZzY3JlZW5EcmF3Q2FsbHMiOiAzMSwKICAgICAgImdlb21ldHJpZXMiOiA1LAogICAgICAidGV4dHVyZXMiOiAxLAogICAgICAicHJvZ3JhbXMiOiA1LAogICAgICAiY29udGV4dCI6ICJhY3RpdmUiLAogICAgICAicGFzc2VzIjogMSwKICAgICAgInRhcmdldFJlc2l6ZXMiOiAxCiAgICB9LAogICAgInBlcmZvcm1hbmNlIjogewogICAgICAic2FtcGxlcyI6IDIzLAogICAgICAiZnBzIjogMjkuMzkyOTcxMjQ2MDA2MzksCiAgICAgICJhdmVyYWdlTXMiOiAzNC4wMjE3MzkxMzA0MzQ3OCwKICAgICAgInA1ME1zIjogMTYuNjAwMDAwMDAxNDkwMTE2LAogICAgICAicDk1TXMiOiAxNTQsCiAgICAgICJwOTlNcyI6IDIxOC41LAogICAgICAicGh5c2ljc01zIjogMC4wOTk5OTk5OTQwMzk1MzU1MiwKICAgICAgImdwdU1zIjogbnVsbAogICAgfSwKICAgICJtb3ZpbmdSZWZlcmVuY2UiOiBbCiAgICAgIDM1LjgsCiAgICAgIDAuODUzMzQ2Mjg3MzM3NzY2MywKICAgICAgLTEuMjYxMjQ2NjkzMDA3NTE1NwogICAgXSwKICAgICJlbGFwc2VkIjogMC4zLAogICAgImRyb3BwZWRTZWNvbmRzIjogMC4wNjY2NjY2NjY2NjY2NjY2NwogIH0sCiAgInN0b3BwZWQiOiB7CiAgICAiaW5wdXQiOiB7CiAgICAgICJtb3ZlbWVudCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwCiAgICAgIH0sCiAgICAgICJ0b3VjaFN0YXRlIjogewogICAgICAgICJtb3ZlQWN0aXZlIjogZmFsc2UsCiAgICAgICAgImxvb2tBY3RpdmUiOiBmYWxzZSwKICAgICAgICAibW92ZVgiOiAwLAogICAgICAgICJtb3ZlWSI6IDAKICAgICAgfSwKICAgICAgInRvdWNoIjogdHJ1ZQogICAgfSwKICAgICJyZWFkeSI6IHRydWUsCiAgICAiZXJyb3IiOiBudWxsLAogICAgIndvcmxkSWQiOiAiQSIsCiAgICAicG9zaXRpb24iOiBbCiAgICAgIC0wLjEyNzI1ODg5NjgyNzY5Nzc1LAogICAgICAwLjg3OTc1NzQ2MzkzMjAzNzQsCiAgICAgIC0zLjg0MDQ1MDUyNTI4MzgxMzUKICAgIF0sCiAgICAicm90YXRpb24iOiBbCiAgICAgIC0wLjAyNDkyNzEyMzY4ODA3NDkxNSwKICAgICAgMC4wNzQ5MDYyOTI5NTg3NTMyNCwKICAgICAgMC4wMDE4NzMwNDc1NTg0NzAyNDA0LAogICAgICAwLjk5Njg3NzIxMjgzNjQ5NjEKICAgIF0sCiAgICAieWF3IjogMC4xNSwKICAgICJwaXRjaCI6IC0wLjA1LAogICAgInZlbG9jaXR5IjogWwogICAgICAwLAogICAgICAwLAogICAgICAwCiAgICBdLAogICAgInN0ZXAiOiAzNiwKICAgICJncm91bmRlZCI6IHRydWUsCiAgICAiZXZlbnRzIjogW10sCiAgICAibGFzdEV2ZW50SWQiOiAwLAogICAgInRyYW5zZmVyU3RhdGUiOiAiQVJNRUQiLAogICAgImxhc3RSZWplY3Rpb24iOiBudWxsLAogICAgInBvcnRhbCI6IHsKICAgICAgInNvdXJjZSI6ICJBLWRvb3IiLAogICAgICAiZGVzdGluYXRpb24iOiAiQi1kb29yIiwKICAgICAgInBvc2VzIjogWwogICAgICAgIHsKICAgICAgICAgICJpZCI6ICJBLWRvb3IiLAogICAgICAgICAgInBvc2l0aW9uIjogWwogICAgICAgICAgICAwLAogICAgICAgICAgICAxLjQ1LAogICAgICAgICAgICAtOAogICAgICAgICAgXSwKICAgICAgICAgICJyb3RhdGlvbiI6IFsKICAgICAgICAgICAgMCwKICAgICAgICAgICAgMCwKICAgICAgICAgICAgMCwKICAgICAgICAgICAgMQogICAgICAgICAgXQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogIkItZG9vciIsCiAgICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAgIDMyLAogICAgICAgICAgICAxLjQ1LAogICAgICAgICAgICAwCiAgICAgICAgICBdLAogICAgICAgICAgInJvdGF0aW9uIjogWwogICAgICAgICAgICAwLAogICAgICAgICAgICAwLjcwNzEwNjc4MTE4NjU0NzUsCiAgICAgICAgICAgIDAsCiAgICAgICAgICAgIDAuNzA3MTA2NzgxMTg2NTQ3NgogICAgICAgICAgXQogICAgICAgIH0KICAgICAgXSwKICAgICAgInNpZ25lZERpc3RhbmNlIjogNC4xNTk1NDk0NzQ3MTYxODY1LAogICAgICAiY3Jvc3NpbmdDb25kaXRpb24iOiBmYWxzZQogICAgfSwKICAgICJyZW5kZXIiOiB7CiAgICAgICJ0YXJnZXRXaWR0aCI6IDc2NSwKICAgICAgInRhcmdldEhlaWdodCI6IDUxMCwKICAgICAgInF1YWxpdHkiOiAwLjg1LAogICAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgICAib2Zmc2NyZWVuRHJhd0NhbGxzIjogMzEsCiAgICAgICJnZW9tZXRyaWVzIjogNSwKICAgICAgInRleHR1cmVzIjogMSwKICAgICAgInByb2dyYW1zIjogNSwKICAgICAgImNvbnRleHQiOiAiYWN0aXZlIiwKICAgICAgInBhc3NlcyI6IDEsCiAgICAgICJ0YXJnZXRSZXNpemVzIjogMQogICAgfSwKICAgICJwZXJmb3JtYW5jZSI6IHsKICAgICAgInNhbXBsZXMiOiAyOSwKICAgICAgImZwcyI6IDMxLjAyMjY3ODY0NzY5MDc1NywKICAgICAgImF2ZXJhZ2VNcyI6IDMyLjIzNDQ4Mjc1ODc3NDg0LAogICAgICAicDUwTXMiOiAxNi42MDAwMDAwMDE0OTAxMTYsCiAgICAgICJwOTVNcyI6IDE1NCwKICAgICAgInA5OU1zIjogMjE4LjUsCiAgICAgICJwaHlzaWNzTXMiOiAwLAogICAgICAiZ3B1TXMiOiBudWxsCiAgICB9LAogICAgIm1vdmluZ1JlZmVyZW5jZSI6IFsKICAgICAgMzUuOCwKICAgICAgMC45MDI4MjcxOTgzMzA2MjI2LAogICAgICAtMS4yMjM5NjIzMTY5NzUzNjc3CiAgICBdLAogICAgImVsYXBzZWQiOiAwLjYwMDAwMDAwMDAwMDAwMDIsCiAgICAiZHJvcHBlZFNlY29uZHMiOiAwLjA2NjY2NjY2NjY2NjY2NjY3CiAgfQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "62978389d577d9e03e88-a9c63171b4f2343aee38",
+          "file": "input.spec.ts",
+          "line": 58,
+          "column": 1
+        },
+        {
+          "title": "mobile blur clears held movement and allows a fresh contact",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3590,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:27:34.735Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "62978389d577d9e03e88-a118ec84af6691090989",
+          "file": "input.spec.ts",
+          "line": 99,
+          "column": 3
+        },
+        {
+          "title": "mobile orientationchange clears held movement and allows a fresh contact",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3586,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:27:38.341Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "62978389d577d9e03e88-01634808a541a4ed5810",
+          "file": "input.spec.ts",
+          "line": 99,
+          "column": 3
+        },
+        {
+          "title": "mobile visibilitychange clears held movement and allows a fresh contact",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3571,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:27:41.943Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "62978389d577d9e03e88-6d22203283c9342f258a",
+          "file": "input.spec.ts",
+          "line": 99,
+          "column": 3
+        },
+        {
+          "title": "mobile touch controls traverse A → B, turn around, return, and reset the real capsule",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8377,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:27:45.540Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "62978389d577d9e03e88-1c198eed98f205385b19",
+          "file": "input.spec.ts",
+          "line": 122,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "lifecycle.spec.ts",
+      "file": "lifecycle.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "WebGL2 context loss/restoration resumes real portal passes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4450,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:27:53.952Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "context-restoration.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJpbnB1dCI6IHsKICAgICJtb3ZlbWVudCI6IHsKICAgICAgIngiOiAwLAogICAgICAieSI6IDAKICAgIH0sCiAgICAidG91Y2hTdGF0ZSI6IHsKICAgICAgIm1vdmVBY3RpdmUiOiBmYWxzZSwKICAgICAgImxvb2tBY3RpdmUiOiBmYWxzZSwKICAgICAgIm1vdmVYIjogMCwKICAgICAgIm1vdmVZIjogMAogICAgfSwKICAgICJ0b3VjaCI6IGZhbHNlCiAgfSwKICAicmVhZHkiOiB0cnVlLAogICJlcnJvciI6IG51bGwsCiAgIndvcmxkSWQiOiAiQSIsCiAgInBvc2l0aW9uIjogWwogICAgLTAuMDAwMDAxNTM4Njk5Mjc5OTkwMzk2NSwKICAgIDAuODc5ODkyODg1Njg0OTY3LAogICAgLTMuMDAwMDAyMTQ1NzY3MjEyCiAgXSwKICAicm90YXRpb24iOiBbCiAgICAwLAogICAgMCwKICAgIDAsCiAgICAxCiAgXSwKICAieWF3IjogMCwKICAicGl0Y2giOiAwLAogICJ2ZWxvY2l0eSI6IFsKICAgIDAsCiAgICAwLAogICAgMAogIF0sCiAgInN0ZXAiOiAzNCwKICAiZ3JvdW5kZWQiOiB0cnVlLAogICJldmVudHMiOiBbXSwKICAibGFzdEV2ZW50SWQiOiAwLAogICJ0cmFuc2ZlclN0YXRlIjogIkFSTUVEIiwKICAibGFzdFJlamVjdGlvbiI6IG51bGwsCiAgInBvcnRhbCI6IHsKICAgICJzb3VyY2UiOiAiQS1kb29yIiwKICAgICJkZXN0aW5hdGlvbiI6ICJCLWRvb3IiLAogICAgInBvc2VzIjogWwogICAgICB7CiAgICAgICAgImlkIjogIkEtZG9vciIsCiAgICAgICAgInBvc2l0aW9uIjogWwogICAgICAgICAgMCwKICAgICAgICAgIDEuNDUsCiAgICAgICAgICAtOAogICAgICAgIF0sCiAgICAgICAgInJvdGF0aW9uIjogWwogICAgICAgICAgMCwKICAgICAgICAgIDAsCiAgICAgICAgICAwLAogICAgICAgICAgMQogICAgICAgIF0KICAgICAgfSwKICAgICAgewogICAgICAgICJpZCI6ICJCLWRvb3IiLAogICAgICAgICJwb3NpdGlvbiI6IFsKICAgICAgICAgIDMyLAogICAgICAgICAgMS40NSwKICAgICAgICAgIDAKICAgICAgICBdLAogICAgICAgICJyb3RhdGlvbiI6IFsKICAgICAgICAgIDAsCiAgICAgICAgICAwLjcwNzEwNjc4MTE4NjU0NzUsCiAgICAgICAgICAwLAogICAgICAgICAgMC43MDcxMDY3ODExODY1NDc2CiAgICAgICAgXQogICAgICB9CiAgICBdLAogICAgInNpZ25lZERpc3RhbmNlIjogNC45OTk5OTc4NTQyMzI3ODgsCiAgICAiY3Jvc3NpbmdDb25kaXRpb24iOiBmYWxzZQogIH0sCiAgInJlbmRlciI6IHsKICAgICJ0YXJnZXRXaWR0aCI6IDE2MzIsCiAgICAidGFyZ2V0SGVpZ2h0IjogOTE4LAogICAgInF1YWxpdHkiOiAwLjg1LAogICAgIm1haW5EcmF3Q2FsbHMiOiAxMywKICAgICJvZmZzY3JlZW5EcmF3Q2FsbHMiOiAzMSwKICAgICJnZW9tZXRyaWVzIjogNSwKICAgICJ0ZXh0dXJlcyI6IDEsCiAgICAicHJvZ3JhbXMiOiA1LAogICAgImNvbnRleHQiOiAiYWN0aXZlIiwKICAgICJwYXNzZXMiOiAxLAogICAgInRhcmdldFJlc2l6ZXMiOiAxCiAgfSwKICAicGVyZm9ybWFuY2UiOiB7CiAgICAic2FtcGxlcyI6IDE2LAogICAgImZwcyI6IDEzLjA4MDQ0NDczNTE2ODc5OSwKICAgICJhdmVyYWdlTXMiOiA3Ni40NDk5OTk5OTk3MjA2LAogICAgInA1ME1zIjogMzMuNzAwMDAwMDAyOTgwMjMsCiAgICAicDk1TXMiOiAzNDQuMDk5OTk5OTk0MDM5NTQsCiAgICAicDk5TXMiOiAzNDQuMDk5OTk5OTk0MDM5NTQsCiAgICAicGh5c2ljc01zIjogMCwKICAgICJncHVNcyI6IG51bGwKICB9LAogICJtb3ZpbmdSZWZlcmVuY2UiOiBbCiAgICAzNS44LAogICAgMC44OTc2MzU0NDkzNzY1ODE2LAogICAgLTEuMjI3OTg3Nzg5NjkzNzA2NgogIF0sCiAgImVsYXBzZWQiOiAwLjU2NjY2NjY2NjY2NjY2NjgsCiAgImRyb3BwZWRTZWNvbmRzIjogMC41NzU5MzMzMzMzMjczNzI4Cn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f1785dee40219527314-8972f4071f6c8248062c",
+          "file": "lifecycle.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "resize and render quality retain aspect and bounded GPU resources; disposal releases resources",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7636,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:27:58.413Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "resize-resources.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJpbml0aWFsIjogewogICAgInRhcmdldFdpZHRoIjogMTYzMiwKICAgICJ0YXJnZXRIZWlnaHQiOiA5MTgsCiAgICAicXVhbGl0eSI6IDAuODUsCiAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgIm9mZnNjcmVlbkRyYXdDYWxscyI6IDMxLAogICAgImdlb21ldHJpZXMiOiA1LAogICAgInRleHR1cmVzIjogMSwKICAgICJwcm9ncmFtcyI6IDUsCiAgICAiY29udGV4dCI6ICJhY3RpdmUiLAogICAgInBhc3NlcyI6IDEsCiAgICAidGFyZ2V0UmVzaXplcyI6IDEKICB9LAogICJzYW1wbGVzIjogWwogICAgewogICAgICAidGFyZ2V0V2lkdGgiOiAxMDg4LAogICAgICAidGFyZ2V0SGVpZ2h0IjogNjEyLAogICAgICAicXVhbGl0eSI6IDAuODUsCiAgICAgICJtYWluRHJhd0NhbGxzIjogMTMsCiAgICAgICJvZmZzY3JlZW5EcmF3Q2FsbHMiOiAzMSwKICAgICAgImdlb21ldHJpZXMiOiA1LAogICAgICAidGV4dHVyZXMiOiAxLAogICAgICAicHJvZ3JhbXMiOiA1LAogICAgICAiY29udGV4dCI6ICJhY3RpdmUiLAogICAgICAicGFzc2VzIjogMSwKICAgICAgInRhcmdldFJlc2l6ZXMiOiAyCiAgICB9LAogICAgewogICAgICAidGFyZ2V0V2lkdGgiOiA4MTYsCiAgICAgICJ0YXJnZXRIZWlnaHQiOiA1NDQsCiAgICAgICJxdWFsaXR5IjogMC44NSwKICAgICAgIm1haW5EcmF3Q2FsbHMiOiAxMywKICAgICAgIm9mZnNjcmVlbkRyYXdDYWxscyI6IDMxLAogICAgICAiZ2VvbWV0cmllcyI6IDUsCiAgICAgICJ0ZXh0dXJlcyI6IDEsCiAgICAgICJwcm9ncmFtcyI6IDUsCiAgICAgICJjb250ZXh0IjogImFjdGl2ZSIsCiAgICAgICJwYXNzZXMiOiAxLAogICAgICAidGFyZ2V0UmVzaXplcyI6IDMKICAgIH0sCiAgICB7CiAgICAgICJ0YXJnZXRXaWR0aCI6IDkxOCwKICAgICAgInRhcmdldEhlaWdodCI6IDYxMiwKICAgICAgInF1YWxpdHkiOiAwLjg1LAogICAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgICAib2Zmc2NyZWVuRHJhd0NhbGxzIjogMzEsCiAgICAgICJnZW9tZXRyaWVzIjogNSwKICAgICAgInRleHR1cmVzIjogMSwKICAgICAgInByb2dyYW1zIjogNSwKICAgICAgImNvbnRleHQiOiAiYWN0aXZlIiwKICAgICAgInBhc3NlcyI6IDEsCiAgICAgICJ0YXJnZXRSZXNpemVzIjogNAogICAgfSwKICAgIHsKICAgICAgInRhcmdldFdpZHRoIjogMTM2MCwKICAgICAgInRhcmdldEhlaWdodCI6IDc2NSwKICAgICAgInF1YWxpdHkiOiAwLjg1LAogICAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgICAib2Zmc2NyZWVuRHJhd0NhbGxzIjogMzEsCiAgICAgICJnZW9tZXRyaWVzIjogNSwKICAgICAgInRleHR1cmVzIjogMSwKICAgICAgInByb2dyYW1zIjogNSwKICAgICAgImNvbnRleHQiOiAiYWN0aXZlIiwKICAgICAgInBhc3NlcyI6IDEsCiAgICAgICJ0YXJnZXRSZXNpemVzIjogNQogICAgfSwKICAgIHsKICAgICAgInRhcmdldFdpZHRoIjogMTYzMiwKICAgICAgInRhcmdldEhlaWdodCI6IDkxOCwKICAgICAgInF1YWxpdHkiOiAwLjg1LAogICAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgICAib2Zmc2NyZWVuRHJhd0NhbGxzIjogMzEsCiAgICAgICJnZW9tZXRyaWVzIjogNSwKICAgICAgInRleHR1cmVzIjogMSwKICAgICAgInByb2dyYW1zIjogNSwKICAgICAgImNvbnRleHQiOiAiYWN0aXZlIiwKICAgICAgInBhc3NlcyI6IDEsCiAgICAgICJ0YXJnZXRSZXNpemVzIjogNgogICAgfSwKICAgIHsKICAgICAgInRhcmdldFdpZHRoIjogMTA4OCwKICAgICAgInRhcmdldEhlaWdodCI6IDYxMiwKICAgICAgInF1YWxpdHkiOiAwLjg1LAogICAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgICAib2Zmc2NyZWVuRHJhd0NhbGxzIjogMzEsCiAgICAgICJnZW9tZXRyaWVzIjogNSwKICAgICAgInRleHR1cmVzIjogMSwKICAgICAgInByb2dyYW1zIjogNSwKICAgICAgImNvbnRleHQiOiAiYWN0aXZlIiwKICAgICAgInBhc3NlcyI6IDEsCiAgICAgICJ0YXJnZXRSZXNpemVzIjogNwogICAgfQogIF0sCiAgInF1YWxpdHkiOiB7CiAgICAidGFyZ2V0V2lkdGgiOiA2NDAsCiAgICAidGFyZ2V0SGVpZ2h0IjogMzYwLAogICAgInF1YWxpdHkiOiAwLjUsCiAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgIm9mZnNjcmVlbkRyYXdDYWxscyI6IDMxLAogICAgImdlb21ldHJpZXMiOiA1LAogICAgInRleHR1cmVzIjogMSwKICAgICJwcm9ncmFtcyI6IDUsCiAgICAiY29udGV4dCI6ICJhY3RpdmUiLAogICAgInBhc3NlcyI6IDEsCiAgICAidGFyZ2V0UmVzaXplcyI6IDgKICB9LAogICJkaXNwb3NlZCI6IHsKICAgICJnZW9tZXRyaWVzIjogMCwKICAgICJ0ZXh0dXJlcyI6IDAsCiAgICAicHJvZ3JhbXMiOiAwCiAgfQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f1785dee40219527314-b7df8a524beb07bdf3a6",
+          "file": "lifecycle.spec.ts",
+          "line": 26,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "runtime.spec.ts",
+      "file": "runtime.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "real Rapier state crosses both ways and preserves committed event order",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6054,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:28:06.076Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ca9246177367606c6c3b-5c4802c19718a7e64b0d",
+          "file": "runtime.spec.ts",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "door frame blocks the capsule, blocked exit rejects then recovers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5058,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:28:12.141Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ca9246177367606c6c3b-1f97d05cc05dad81f43c",
+          "file": "runtime.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "fast segments retain remaining displacement and long frames cap catch-up",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4494,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:28:17.219Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ca9246177367606c6c3b-384d452515262d7f8757",
+          "file": "runtime.spec.ts",
+          "line": 53,
+          "column": 1
+        },
+        {
+          "title": "desktop keyboard moves the real capsule and R resets it",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6366,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:28:21.736Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ca9246177367606c6c3b-7040d68b7c4aafe17d43",
+          "file": "runtime.spec.ts",
+          "line": 72,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "v02-mobile.spec.ts",
+      "file": "v02-mobile.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "V02 mobile 1170:540",
+          "file": "v02-mobile.spec.ts",
+          "line": 5,
+          "column": 37,
+          "specs": [
+            {
+              "title": "actual dual Pointer Events control the full chapter and remain live during gravity rotation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 40257,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-07T11:28:28.135Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "20c371e82a264a038190-7e00d5c33809edb85501",
+              "file": "v02-mobile.spec.ts",
+              "line": 5,
+              "column": 165
+            }
+          ]
+        },
+        {
+          "title": "V02 mobile 1200:540",
+          "file": "v02-mobile.spec.ts",
+          "line": 5,
+          "column": 37,
+          "specs": [
+            {
+              "title": "actual dual Pointer Events control the full chapter and remain live during gravity rotation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 34305,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-07T11:29:08.401Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "20c371e82a264a038190-70e33a93fde149537fcf",
+              "file": "v02-mobile.spec.ts",
+              "line": 5,
+              "column": 165
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "v02.spec.ts",
+      "file": "v02.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "V02: complete input-driven chapter, trigger, return, and deterministic uncut frame sequence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 103207,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:29:42.735Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7abbfe996b02718659a-f980987bc4833c6c05e9",
+          "file": "v02.spec.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "V02: CR1 cameras show real geometry and both fixed-axis witnesses after the turn",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 154086,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:31:25.956Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7abbfe996b02718659a-c6220a32a82fbce78190",
+          "file": "v02.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "V02: offscreen portal culling, resizing, context restoration, and checkpoint reset",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 84615,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:34:00.053Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7abbfe996b02718659a-7540ce5abfbf1343055d",
+          "file": "v02.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "V02: seeded free look and free movement expose real enclosing geometry beyond hero cameras",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 35411,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:35:24.680Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7abbfe996b02718659a-2ee21d689e23ad38b82c",
+          "file": "v02.spec.ts",
+          "line": 32,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "visual.spec.ts",
+      "file": "visual.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "portal projection front: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8983,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:36:00.147Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "projection-measurements",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJpZCI6ICJuZWFyLXJlZCIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogMTguMDEyMTQxOTk3NDIzMjAzLAogICAgICAieCI6IDgzMi44NTU0NjgyNTM0ODMyLAogICAgICAieSI6IDQ3MC4wNzA1MDc1Mzk0MTU4LAogICAgICAieiI6IDAuOTkyNzQ5MDkzNjM2NzA0NSwKICAgICAgImlzVmlzaWJsZSI6IHRydWUsCiAgICAgICJwbGFuZUhpdCI6IFsKICAgICAgICAzMiwKICAgICAgICAxLjgxNzUsCiAgICAgICAgLTAuNDUwMDAwMDAwMDAwMDAwMQogICAgICBdCiAgICB9LAogICAgIm9ic2VydmVkIjogewogICAgICAieCI6IDgzMi44MjgyNjc0NzcyMDM3LAogICAgICAieSI6IDQ3MC4wNTQyMDQ2NjA1ODc2MywKICAgICAgImNvdW50IjogOTg3LAogICAgICAiZXJyb3IiOiAwLjAzMTcxMjIzODc3NzcyNDc4NAogICAgfQogIH0sCiAgewogICAgImlkIjogImdyZWVuIiwKICAgICJwcmVkaWN0ZWQiOiB7CiAgICAgICJwcm9qZWN0ZWRSYWRpdXMiOiA4LjAwNTM5NjQ0MzI5OTIwMSwKICAgICAgIngiOiAxMTAxLjI3MTcwMTk0MDU3NCwKICAgICAgInkiOiA1NDEuODgzNjIyNjkyNTQwOSwKICAgICAgInoiOiAwLjk5NjkxNjI4MTIwMTgxNywKICAgICAgImlzVmlzaWJsZSI6IHRydWUsCiAgICAgICJwbGFuZUhpdCI6IFsKICAgICAgICAzMiwKICAgICAgICAxLjU2MzMzMzMzMzMzMzMzMzUsCiAgICAgICAgMC40OTk5OTk5OTk5OTk5OTk1NgogICAgICBdCiAgICB9LAogICAgIm9ic2VydmVkIjogewogICAgICAieCI6IDExMDEuMjM3MzczNzM3MzczNywKICAgICAgInkiOiA1NDEuNjkxOTE5MTkxOTE5MiwKICAgICAgImNvdW50IjogMTk4LAogICAgICAiZXJyb3IiOiAwLjE5NDc1MjgxMTc1Mjc2ODIzCiAgICB9CiAgfSwKICB7CiAgICAiaWQiOiAibWFnZW50YSIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogNy4yMDQ4NTY3OTg5NjkyODEsCiAgICAgICJ4IjogODc1LjIzNjk3ODgzNTY1NTMsCiAgICAgICJ5IjogNDg2LjU5OTI5NjY2NjQ2MywKICAgICAgInoiOiAwLjk5NzI0OTY1NjIwNzAyNTksCiAgICAgICJpc1Zpc2libGUiOiB0cnVlLAogICAgICAicGxhbmVIaXQiOiBbCiAgICAgICAgMzIsCiAgICAgICAgMS43NTkwMDAwMDAwMDAwMDAxLAogICAgICAgIC0wLjMwMDAwMDAwMDAwMDAwMDQKICAgICAgXQogICAgfSwKICAgICJvYnNlcnZlZCI6IHsKICAgICAgIngiOiA4NzUuMjQxMzc5MzEwMzQ0OSwKICAgICAgInkiOiA0ODYuNzE4MzkwODA0NTk3NywKICAgICAgImNvdW50IjogMTc0LAogICAgICAiZXJyb3IiOiAwLjExOTE3NTQwODE4MjgxMjM2CiAgICB9CiAgfSwKICB7CiAgICAiaWQiOiAiY3lhbiIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogNi4wMDQwNDczMzI0NzQ0MDEsCiAgICAgICJ4IjogOTU5Ljk5OTk5OTk5OTk5OTksCiAgICAgICJ5IjogNTk0LjM4OTYwNTI0NzEyMSwKICAgICAgInoiOiAwLjk5Nzc0OTcxODcxNDgzOTQsCiAgICAgICJpc1Zpc2libGUiOiB0cnVlLAogICAgICAicGxhbmVIaXQiOiBbCiAgICAgICAgMzIsCiAgICAgICAgMS4zNzc1LAogICAgICAgIC00LjEzMzE4Mjk0NzEyMjMxN2UtMTYKICAgICAgXQogICAgfSwKICAgICJvYnNlcnZlZCI6IHsKICAgICAgIngiOiA5NjAsCiAgICAgICJ5IjogNTk0LjI4NTcxNDI4NTcxNDMsCiAgICAgICJjb3VudCI6IDExMiwKICAgICAgImVycm9yIjogMC4xMDM4OTA5NjE0MDY3MDUxNwogICAgfQogIH0KXQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-035f4911922d91ab251a",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "portal projection oblique-30: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11695,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:36:09.145Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "projection-measurements",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJpZCI6ICJuZWFyLXJlZCIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogMTcuMjk0MzE3OTY2NTMwNzcsCiAgICAgICJ4IjogOTU2LjAwOTAzMjUwODAwNzEsCiAgICAgICJ5IjogNDcyLjg1NzM1Mzc3Njk5ODIsCiAgICAgICJ6IjogMC45OTMwNDgwMjI3MzAwMTM5LAogICAgICAiaXNWaXNpYmxlIjogdHJ1ZSwKICAgICAgInBsYW5lSGl0IjogWwogICAgICAgIDMyLAogICAgICAgIDEuODA4Mjg0MzIxNzgzMjAxLAogICAgICAgIC0wLjAxNjM1NDc3NDk4NDAwNjcyNgogICAgICBdCiAgICB9LAogICAgIm9ic2VydmVkIjogewogICAgICAieCI6IDk1NS45OTUwMzg1ODg3NTQxLAogICAgICAieSI6IDQ3Mi44NTM5MTQwMDIyMDUwNCwKICAgICAgImNvdW50IjogOTA3LAogICAgICAiZXJyb3IiOiAwLjAxNDQxMDQ3NjI4MjM3ODUwOAogICAgfQogIH0sCiAgewogICAgImlkIjogIm1hZ2VudGEiLAogICAgInByZWRpY3RlZCI6IHsKICAgICAgInByb2plY3RlZFJhZGl1cyI6IDcuNTM0NzQ0NjI1ODYyMjUzNSwKICAgICAgIngiOiAxMTkzLjQ4NjE4NzQ1Mjg1NzYsCiAgICAgICJ5IjogNDg0LjE1NDI0NTcxNDE5NzQsCiAgICAgICJ6IjogMC45OTcxMTIyNzg0MzA5MzczLAogICAgICAiaXNWaXNpYmxlIjogdHJ1ZSwKICAgICAgInBsYW5lSGl0IjogWwogICAgICAgIDMyLAogICAgICAgIDEuNzQwNTMyOTI1MjU2MDUwNCwKICAgICAgICAwLjgyMzI4MjA0MjYzNDcyMDUKICAgICAgXQogICAgfSwKICAgICJvYnNlcnZlZCI6IHsKICAgICAgIngiOiAxMTkzLjUxNTIyODQyNjM5NTksCiAgICAgICJ5IjogNDg0LjE1OTg5ODQ3NzE1NzM2LAogICAgICAiY291bnQiOiAxOTcsCiAgICAgICJlcnJvciI6IDAuMDI5NTg2MDA4MDYzNDY3NTIKICAgIH0KICB9Cl0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-b95849deb13e427af079",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "portal projection oblique-60: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10960,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:36:20.855Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "projection-measurements",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJpZCI6ICJuZWFyLXJlZCIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogMTcuOTI0MjQ0ODk1ODg1MzI3LAogICAgICAieCI6IDEwNzkuMzU5NzQwNjQzODE5LAogICAgICAieSI6IDQ3MC40MTE3NTUxMTAwOTI0MywKICAgICAgInoiOiAwLjk5Mjc4NTY5NzMxNjM0ODEsCiAgICAgICJpc1Zpc2libGUiOiB0cnVlLAogICAgICAicGxhbmVIaXQiOiBbCiAgICAgICAgMzIsCiAgICAgICAgMS43NjgsCiAgICAgICAgMC42NzkyMzA0ODQ1NDEzMjY0CiAgICAgIF0KICAgIH0sCiAgICAib2JzZXJ2ZWQiOiB7CiAgICAgICJ4IjogMTA3OS40MDg4MTQ1ODk2NjU2LAogICAgICAieSI6IDQ3MC4zMzM4Mzk5MTg5NDYzLAogICAgICAiY291bnQiOiA5ODcsCiAgICAgICJlcnJvciI6IDAuMDkyMDgxNjQ0MDU3MzIwNjIKICAgIH0KICB9Cl0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-fe793f0796bc59e81cd3",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "portal projection distance-1m: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11317,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:36:31.827Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "projection-measurements",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJpZCI6ICJncmVlbiIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogMTAuMjkyNjUyNTY5OTU2MTE2LAogICAgICAieCI6IDExNDEuNjM1MDQ1MzUyMTY2NiwKICAgICAgInkiOiA1NDIuNDIxODAwNjA0Njk1NSwKICAgICAgInoiOiAwLjk5NTk2Mzc4MTE4NjkzNCwKICAgICAgImlzVmlzaWJsZSI6IHRydWUsCiAgICAgICJwbGFuZUhpdCI6IFsKICAgICAgICAzMiwKICAgICAgICAxLjU2NzE0Mjg1NzE0Mjg1NzIsCiAgICAgICAgMC4yMTQyODU3MTQyODU3MTQxCiAgICAgIF0KICAgIH0sCiAgICAib2JzZXJ2ZWQiOiB7CiAgICAgICJ4IjogMTE0MS44NTAxNDgzNjc5NTI0LAogICAgICAieSI6IDU0Mi41MzI2NDA5NDk1NTQ5LAogICAgICAiY291bnQiOiAzMzcsCiAgICAgICJlcnJvciI6IDAuMjQxOTgxMTc1ODE0ODM1MQogICAgfQogIH0sCiAgewogICAgImlkIjogIm1hZ2VudGEiLAogICAgInByZWRpY3RlZCI6IHsKICAgICAgInByb2plY3RlZFJhZGl1cyI6IDkuMDA2MDcwOTk4NzExNjAyLAogICAgICAieCI6IDg1NC4wNDYyMjM1NDQ1NjkzLAogICAgICAieSI6IDQ3My4yNDkxMjA4MzMwNzg3LAogICAgICAieiI6IDAuOTk2NDk5NTYyNDQ1MzA1NiwKICAgICAgImlzVmlzaWJsZSI6IHRydWUsCiAgICAgICJwbGFuZUhpdCI6IFsKICAgICAgICAzMiwKICAgICAgICAxLjY0ODc1MDAwMDAwMDAwMDIsCiAgICAgICAgLTAuMTI1MDAwMDAwMDAwMDAwMTcKICAgICAgXQogICAgfSwKICAgICJvYnNlcnZlZCI6IHsKICAgICAgIngiOiA4NTQuMTIxNjIxNjIxNjIxNywKICAgICAgInkiOiA0NzMuNDIyNzc5OTIyNzc5OSwKICAgICAgImNvdW50IjogMjU5LAogICAgICAiZXJyb3IiOiAwLjE4OTMyMDc1ODEzMDM1MjI2CiAgICB9CiAgfSwKICB7CiAgICAiaWQiOiAiY3lhbiIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogNy4yMDQ4NTY3OTg5NjkyODEsCiAgICAgICJ4IjogOTU5Ljk5OTk5OTk5OTk5OTksCiAgICAgICJ5IjogNjA1LjI2NzUyNjI5NjU0NTMsCiAgICAgICJ6IjogMC45OTcyNDk2NTYyMDcwMjU5LAogICAgICAiaXNWaXNpYmxlIjogdHJ1ZSwKICAgICAgInBsYW5lSGl0IjogWwogICAgICAgIDMyLAogICAgICAgIDEuNDkzLAogICAgICAgIC0xLjY1MzI3MzE3ODg0ODkyNjRlLTE2CiAgICAgIF0KICAgIH0sCiAgICAib2JzZXJ2ZWQiOiB7CiAgICAgICJ4IjogOTYwLAogICAgICAieSI6IDYwNS4yNTMwODY0MTk3NTMxLAogICAgICAiY291bnQiOiAxNjIsCiAgICAgICJlcnJvciI6IDAuMDE0NDM5ODc2NzkyMTUyOTcyCiAgICB9CiAgfQpd"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-471562085b5397d7e5d9",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "portal projection distance-0.1m: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9871,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:36:43.158Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "projection-measurements",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJpZCI6ICJncmVlbiIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogMTEuODExMjQwNjU0MDQ4LAogICAgICAieCI6IDExNjguNDMzNjU4NjAwODQ3LAogICAgICAieSI6IDU0Mi43NzkxMTU0NDgwMTEzLAogICAgICAieiI6IDAuOTk1MzMxMzgzNjM2MDY5MiwKICAgICAgImlzVmlzaWJsZSI6IHRydWUsCiAgICAgICJwbGFuZUhpdCI6IFsKICAgICAgICAzMiwKICAgICAgICAxLjU2OTY3MjEzMTE0NzU0MSwKICAgICAgICAwLjAyNDU5MDE2MzkzNDQyNjU2CiAgICAgIF0KICAgIH0sCiAgICAib2JzZXJ2ZWQiOiB7CiAgICAgICJ4IjogMTE2OC4zMTczNzE5Mzc2MzksCiAgICAgICJ5IjogNTQyLjY4NDg1NTIzMzg1MywKICAgICAgImNvdW50IjogNDQ5LAogICAgICAiZXJyb3IiOiAwLjE0OTY5MTYwMzAxNDkzNDY0CiAgICB9CiAgfSwKICB7CiAgICAiaWQiOiAibWFnZW50YSIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogMTAuMTQ3Njg1NjMyMzUxMDk5LAogICAgICAieCI6IDg0MC42MTU0NjMxNDg4MTA1LAogICAgICAieSI6IDQ2NC43ODc3NDE3ODM3NTA3LAogICAgICAieiI6IDAuOTk2MDI0MTUwOTA2MTg3MiwKICAgICAgImlzVmlzaWJsZSI6IHRydWUsCiAgICAgICJwbGFuZUhpdCI6IFsKICAgICAgICAzMiwKICAgICAgICAxLjU3ODg3MzIzOTQzNjYxOTgsCiAgICAgICAgLTAuMDE0MDg0NTA3MDQyMjUzNzM4CiAgICAgIF0KICAgIH0sCiAgICAib2JzZXJ2ZWQiOiB7CiAgICAgICJ4IjogODQwLjY3MDU4ODIzNTI5NDEsCiAgICAgICJ5IjogNDY0LjYzODIzNTI5NDExNzY0LAogICAgICAiY291bnQiOiAzNDAsCiAgICAgICJlcnJvciI6IDAuMTU5MzQ1NDI4NTU3NjQyNDcKICAgIH0KICB9LAogIHsKICAgICJpZCI6ICJjeWFuIiwKICAgICJwcmVkaWN0ZWQiOiB7CiAgICAgICJwcm9qZWN0ZWRSYWRpdXMiOiA3LjkxNzQyNTA1MzgxMjM5NiwKICAgICAgIngiOiA5NTkuOTk5OTk5OTk5OTk5OSwKICAgICAgInkiOiA2MTEuNzIyNTU2MzY5ODI5OSwKICAgICAgInoiOiAwLjk5Njk1MjkxNTgxNzc3NCwKICAgICAgImlzVmlzaWJsZSI6IHRydWUsCiAgICAgICJwbGFuZUhpdCI6IFsKICAgICAgICAzMiwKICAgICAgICAxLjU2MTUzODQ2MTUzODQ2MTUsCiAgICAgICAgLTEuODE2NzgzNzEzMDIwNzkyZS0xNwogICAgICBdCiAgICB9LAogICAgIm9ic2VydmVkIjogewogICAgICAieCI6IDk2MCwKICAgICAgInkiOiA2MTEuNzMyMzIzMjMyMzIzMiwKICAgICAgImNvdW50IjogMTk4LAogICAgICAiZXJyb3IiOiAwLjAwOTc2Njg2MjQ5MzI3OTQwNQogICAgfQogIH0KXQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-496075c2d34a805800ad",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "portal projection pre-plane-0.005m: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9180,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:36:53.049Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "projection-measurements",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJpZCI6ICJncmVlbiIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogMTEuOTk4MDk2MjUxNDA1OTY3LAogICAgICAieCI6IDExNzEuNzMxMTEwMzE4OTI4OCwKICAgICAgInkiOiA1NDIuODIzMDgxNDcwOTE5LAogICAgICAieiI6IDAuOTk1MjUzNTY5ODkzNTcyMiwKICAgICAgImlzVmlzaWJsZSI6IHRydWUsCiAgICAgICJwbGFuZUhpdCI6IFsKICAgICAgICAzMiwKICAgICAgICAxLjU2OTk4MzM0NzIxMDY1OCwKICAgICAgICAwLjAwMTI0ODk1OTIwMDY2NTg2MjQKICAgICAgXQogICAgfSwKICAgICJvYnNlcnZlZCI6IHsKICAgICAgIngiOiAxMTcxLjk0MzcyMjk0MzcyMjgsCiAgICAgICJ5IjogNTQyLjgwOTUyMzgwOTUyMzksCiAgICAgICJjb3VudCI6IDQ2MiwKICAgICAgImVycm9yIjogMC4yMTMwNDQ0NTE3MDk3NDc0MgogICAgfQogIH0sCiAgewogICAgImlkIjogIm1hZ2VudGEiLAogICAgInByZWRpY3RlZCI6IHsKICAgICAgInByb2plY3RlZFJhZGl1cyI6IDEwLjI4NTMwNTkyMjg2ODM1NSwKICAgICAgIngiOiA4MzguOTk2NDAwOTA3NDMxLAogICAgICAieSI6IDQ2My43Njc3MzI1NzE2ODE1NiwKICAgICAgInoiOiAwLjk5NTk2Njg0MDYwODgyMzIsCiAgICAgICJpc1Zpc2libGUiOiB0cnVlLAogICAgICAicGxhbmVIaXQiOiBbCiAgICAgICAgMzIsCiAgICAgICAgMS41NzA0NDk2Nzg4MDA4NTY0LAogICAgICAgIC0wLjAwMDcxMzc3NTg3NDM3NTMwNTEKICAgICAgXQogICAgfSwKICAgICJvYnNlcnZlZCI6IHsKICAgICAgIngiOiA4MzguOTQxOTI2MzQ1NjA5MSwKICAgICAgInkiOiA0NjMuNzI2NjI4ODk1MTg0MTUsCiAgICAgICJjb3VudCI6IDM1MywKICAgICAgImVycm9yIjogMC4wNjgyNDIxNDMxOTA5ODQ3MgogICAgfQogIH0sCiAgewogICAgImlkIjogImN5YW4iLAogICAgInByZWRpY3RlZCI6IHsKICAgICAgInByb2plY3RlZFJhZGl1cyI6IDguMDAwOTUxNDcwMjYwMTcsCiAgICAgICJ4IjogOTU5Ljk5OTk5OTk5OTk5OTksCiAgICAgICJ5IjogNjEyLjQ3OTIwNzQzNjQ3NDQsCiAgICAgICJ6IjogMC45OTY5MTgxMzIyNTY4MTUyLAogICAgICAiaXNWaXNpYmxlIjogdHJ1ZSwKICAgICAgInBsYW5lSGl0IjogWwogICAgICAgIDMyLAogICAgICAgIDEuNTY5NTcyNDU5NzQ0NTg2NiwKICAgICAgICAtOS4xNzk3NTExMzE4NjQ4OTZlLTE5CiAgICAgIF0KICAgIH0sCiAgICAib2JzZXJ2ZWQiOiB7CiAgICAgICJ4IjogOTYwLAogICAgICAieSI6IDYxMi41NjEyMjQ0ODk3OTU5LAogICAgICAiY291bnQiOiAxOTYsCiAgICAgICJlcnJvciI6IDAuMDgyMDE3MDUzMzIxNDY1MDMKICAgIH0KICB9Cl0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-85c8ffb6dd0663df4103",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "portal projection frame-edge: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10525,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:37:02.251Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "projection-measurements",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJpZCI6ICJncmVlbiIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogMTEuMjU3NTg4NzQ4Mzg5NTA1LAogICAgICAieCI6IDEwNTAuMDYwNzA5OTg3MTE1OCwKICAgICAgInkiOiA1NDIuNjQ4ODQ0NDExMzg1OCwKICAgICAgInoiOiAwLjk5NTU2MTk0NTI0MzE1NTIsCiAgICAgICJpc1Zpc2libGUiOiB0cnVlLAogICAgICAicGxhbmVIaXQiOiBbCiAgICAgICAgMzIsCiAgICAgICAgMS41Njg3NSwKICAgICAgICAwLjg2MjQ5OTk5OTk5OTk5OTgKICAgICAgXQogICAgfSwKICAgICJvYnNlcnZlZCI6IHsKICAgICAgIngiOiAxMDUwLjA1MTI4MjA1MTI4MiwKICAgICAgInkiOiA1NDIuNzkyMzA3NjkyMzA3NiwKICAgICAgImNvdW50IjogMzkwLAogICAgICAiZXJyb3IiOiAwLjE0Mzc3MjczMzY3MDA0Mjg0CiAgICB9CiAgfSwKICB7CiAgICAiaWQiOiAibWFnZW50YSIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogOS43MzYyOTI5NzE1ODAxMTEsCiAgICAgICJ4IjogNzUxLjUyODc4NTc4NDk5MDQsCiAgICAgICJ5IjogNDY3LjgzNjg4NzM4NzExMjEsCiAgICAgICJ6IjogMC45OTYxOTU0NzAzNzk3NDMzLAogICAgICAiaXNWaXNpYmxlIjogdHJ1ZSwKICAgICAgInBsYW5lSGl0IjogWwogICAgICAgIDMyLAogICAgICAgIDEuNjA0MDU0MDU0MDU0MDU0LAogICAgICAgIDAuNzIxNjIxNjIxNjIxNjIxOQogICAgICBdCiAgICB9LAogICAgIm9ic2VydmVkIjogewogICAgICAieCI6IDc1MS4zMTUwNDcwMjE5NDM1LAogICAgICAieSI6IDQ2Ny45NjcwODQ2Mzk0OTg0LAogICAgICAiY291bnQiOiAzMTksCiAgICAgICJlcnJvciI6IDAuMjUwMjcxMDE5ODEyMDM3MDMKICAgIH0KICB9LAogIHsKICAgICJpZCI6ICJjeWFuIiwKICAgICJwcmVkaWN0ZWQiOiB7CiAgICAgICJwcm9qZWN0ZWRSYWRpdXMiOiA3LjY2NDc0MTI3NTQ5OTIzNywKICAgICAgIngiOiA4ODYuMDU3NzkwMDQ4MTI0OCwKICAgICAgInkiOiA2MDkuNDMzNTM4NjEzMzQ2LAogICAgICAieiI6IDAuOTk3MDU4MTQyOTA2MTYxMSwKICAgICAgImlzVmlzaWJsZSI6IHRydWUsCiAgICAgICJwbGFuZUhpdCI6IFsKICAgICAgICAzMiwKICAgICAgICAxLjUzNzIzNDA0MjU1MzE5MTYsCiAgICAgICAgMC43ODUxMDYzODI5Nzg3MjM1CiAgICAgIF0KICAgIH0sCiAgICAib2JzZXJ2ZWQiOiB7CiAgICAgICJ4IjogODg2LjMzNTE2NDgzNTE2NDgsCiAgICAgICJ5IjogNjA5LjUxMDk4OTAxMDk4OSwKICAgICAgImNvdW50IjogMTgyLAogICAgICAiZXJyb3IiOiAwLjI4Nzk4NDk1ODk0ODQ2NDY1CiAgICB9CiAgfQpd"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-08ce9c05ec5013e3a518",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "lateral parallax, live target animation and viewport resizing remain real",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24788,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:37:12.784Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-ec57ce75a72c951c8d5f",
+          "file": "visual.spec.ts",
+          "line": 91,
+          "column": 1
+        },
+        {
+          "title": "a real fixed-step crossing keeps projected pixels continuous across the portal plane",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11316,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T11:37:37.608Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-4a44f9a362ce387a3c6d",
+          "file": "visual.spec.ts",
+          "line": 131,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-07T11:27:13.787Z",
+    "duration": 637202.047,
+    "expected": 28,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

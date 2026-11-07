@@ -1,0 +1,6 @@
+import {readdir,copyFile,stat,writeFile} from 'node:fs/promises';
+import {join} from 'node:path';
+import {spawnSync} from 'node:child_process';
+import assert from 'node:assert/strict';
+async function find(dir){const files=[];for(const entry of await readdir(dir,{withFileTypes:true})){const path=join(dir,entry.name);if(entry.isDirectory())files.push(...await find(path));else if(entry.name==='video.webm'&&path.includes('V02-production'))files.push(path);}return files;}
+const paths=await find('test-results');assert.equal(paths.length,1,'A real V02 production recording is required');await copyFile(paths[0],'evidence/v02/production-journey.webm');const size=(await stat(paths[0])).size;assert(size>10000,'Video must contain recorded frames');const probe=spawnSync('ffprobe',['-v','quiet','-show_entries','format=duration','-of','json',paths[0]],{encoding:'utf8'});const duration=probe.status===0?JSON.parse(probe.stdout).format.duration:null;await writeFile('evidence/v02/video.json',JSON.stringify({file:'production-journey.webm',bytes:size,durationSeconds:duration,source:'Playwright continuous browser capture during genuine keyboard input; no video cuts or image substitution'},null,2));console.log(`Saved actual production recording: ${size} bytes, ${duration??'unknown'} seconds`);

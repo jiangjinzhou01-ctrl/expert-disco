@@ -1,0 +1,123 @@
+{
+  "slab": {
+    "id": "ORIGINAL_AXIS_CANTILEVER",
+    "found": true,
+    "visibleSamples": 135,
+    "samples": 450
+  },
+  "pier": {
+    "id": "ORIGINAL_AXIS_PIER",
+    "found": true,
+    "visibleSamples": 326,
+    "samples": 450
+  },
+  "snapshot": {
+    "ready": true,
+    "error": null,
+    "world": "INVERT",
+    "slot": "B",
+    "foot": [
+      3.762741699796952,
+      0.9372583002030478,
+      -7
+    ],
+    "body": [
+      3.1433161594775356,
+      1.5566838405224634,
+      -7
+    ],
+    "eye": [
+      2.666726188957796,
+      2.0332738110421964,
+      -7
+    ],
+    "up": [
+      -0.7071067811865475,
+      0.7071067811865476,
+      0
+    ],
+    "gravity": [
+      6.936717523440031,
+      -6.9367175234400325,
+      0
+    ],
+    "bodyRotation": [
+      0,
+      0,
+      0.38268348574638367,
+      0.9238796234130859
+    ],
+    "cameraRotation": [
+      0.34421359392810164,
+      -0.0027185306072842336,
+      0.40079485508829715,
+      0.8490424579967647
+    ],
+    "yaw": -0.2843507906941264,
+    "pitch": 0.6518861935727736,
+    "theta": 0.7853981633974483,
+    "thetaDegrees": 45,
+    "s": 2.5132741228718345,
+    "mode": "ARC",
+    "grounded": true,
+    "supportNormal": [
+      0,
+      1,
+      0
+    ],
+    "velocity": [
+      0,
+      0,
+      0
+    ],
+    "step": 15,
+    "progress": "GRAVITY_TURN",
+    "terminal": false,
+    "returned": false,
+    "interactable": false,
+    "events": [],
+    "transferState": "ARMED",
+    "rejection": null,
+    "blocked": null,
+    "rotationQueries": 0,
+    "translationQueries": 0,
+    "supportQueries": 15,
+    "witness": {
+      "position": {
+        "x": 107.1116714477539,
+        "y": 4.199999809265137,
+        "z": 0.6000000238418579
+      },
+      "velocity": {
+        "x": 2.4524989128112793,
+        "y": 0,
+        "z": 0
+      },
+      "resets": 0
+    },
+    "render": {
+      "targetWidth": 960,
+      "targetHeight": 540,
+      "quality": 0.75,
+      "mainDrawCalls": 8,
+      "offscreenDrawCalls": 0,
+      "geometries": 20,
+      "textures": 14,
+      "programs": 10,
+      "context": "active",
+      "passes": 0
+    },
+    "performance": {
+      "samples": 4,
+      "fps": 0.5931022211678838,
+      "averageMs": 1686.0499999998137,
+      "p50Ms": 213.90000000223517,
+      "p95Ms": 6298.5,
+      "p99Ms": 6298.5,
+      "physicsMs": 0,
+      "gpuMs": null
+    },
+    "errors": [],
+    "elapsed": 0.24999999999999997
+  }
+}

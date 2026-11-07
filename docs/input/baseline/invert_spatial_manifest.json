@@ -1,0 +1,387 @@
+{
+  "document": "THRESHOLD V0.2.1 INVERT Spatial Proof",
+  "revision": "1.0",
+  "status": "design baseline; not engine validated",
+  "units": "meter",
+  "axes": {
+    "X": "right",
+    "Y": "up",
+    "Z": "toward entry; player explores -Z"
+  },
+  "shell": {
+    "x": [
+      -15,
+      15
+    ],
+    "z": [
+      -19,
+      19
+    ],
+    "main_y": [
+      0,
+      22
+    ],
+    "optional_lower_void_y": [
+      -7,
+      0
+    ]
+  },
+  "portal": {
+    "center": [
+      0,
+      2.8,
+      18.2
+    ],
+    "local_front": "-Z world",
+    "yaw_deg": 180,
+    "opening_width": 3.6,
+    "opening_height": 5.6,
+    "opening_bottom_y": 0
+  },
+  "arc": {
+    "radius": 3.2,
+    "origin_x": 1.5,
+    "base_y": 0,
+    "center_z": -7,
+    "z_range": [
+      -9,
+      -5
+    ],
+    "theta_deg": [
+      0,
+      90
+    ],
+    "surface_formula": "x=1.5+3.2*sin(theta); y=3.2*(1-cos(theta)); z variable in [-9,-5]",
+    "up_formula": "(-sin(theta), cos(theta), 0)",
+    "gravity_formula": "9.81*(sin(theta),-cos(theta),0)",
+    "start_foot": [
+      1.5,
+      0,
+      -7
+    ],
+    "end_foot": [
+      4.7,
+      3.2,
+      -7
+    ],
+    "asset_thickness": 0.55
+  },
+  "wallwalk": {
+    "support_plane_x": 4.7,
+    "walkable_y_range": [
+      0.4,
+      6.0
+    ],
+    "z_range": [
+      -17,
+      -5
+    ],
+    "main_route_y": 3.2,
+    "main_route_z": [
+      -7,
+      -16.5
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "gravity": [
+      9.81,
+      0,
+      0
+    ]
+  },
+  "route": {
+    "type": "player-foot contact positions; linear segments linked by genuine surface arc",
+    "waypoints": [
+      [
+        0,
+        0,
+        15.2
+      ],
+      [
+        0,
+        0,
+        8
+      ],
+      [
+        0,
+        0,
+        -4
+      ],
+      [
+        1.5,
+        0,
+        -7
+      ],
+      [
+        4.7,
+        3.2,
+        -7
+      ],
+      [
+        4.7,
+        3.2,
+        -12
+      ],
+      [
+        4.7,
+        3.2,
+        -16.5
+      ]
+    ],
+    "reverse_allowed": true
+  },
+  "cross_structures": [
+    {
+      "id": "ORIGINAL_AXIS_CANTILEVER",
+      "x_range": [
+        -12,
+        11
+      ],
+      "y_range": [
+        9.5,
+        10.5
+      ],
+      "z_range": [
+        -13.5,
+        -10.9
+      ],
+      "walkable": false
+    },
+    {
+      "id": "VERTICAL_PIER",
+      "x_range": [
+        -11,
+        -9
+      ],
+      "y_range": [
+        2,
+        20
+      ],
+      "z_range": [
+        -15,
+        4
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ANOMALY_VOLUME",
+      "x_range": [
+        6.4,
+        9.6
+      ],
+      "y_range": [
+        3.2,
+        5.0
+      ],
+      "z_range": [
+        -0.3,
+        1.5
+      ],
+      "walkable": false
+    },
+    {
+      "id": "LOWER_VOID",
+      "x_range": [
+        -13,
+        -5
+      ],
+      "y_range": [
+        -7,
+        0
+      ],
+      "z_range": [
+        -17,
+        -2
+      ],
+      "walkable": false
+    }
+  ],
+  "arc_reference_samples": [
+    {
+      "angle_deg": 0,
+      "foot": [
+        1.5,
+        0.0,
+        -7
+      ],
+      "capsule_center": [
+        1.5,
+        0.87,
+        -7
+      ],
+      "camera_eye": [
+        1.5,
+        1.55,
+        -7
+      ],
+      "local_up": [
+        -0.0,
+        1.0,
+        0
+      ],
+      "gravity_m_s2": [
+        0.0,
+        -9.81,
+        -0.0
+      ]
+    },
+    {
+      "angle_deg": 45,
+      "foot": [
+        3.7627,
+        0.9373,
+        -7
+      ],
+      "capsule_center": [
+        3.1475,
+        1.5525,
+        -7
+      ],
+      "camera_eye": [
+        2.6667,
+        2.0333,
+        -7
+      ],
+      "local_up": [
+        -0.7071,
+        0.7071,
+        0
+      ],
+      "gravity_m_s2": [
+        6.9367,
+        -6.9367,
+        -0.0
+      ]
+    },
+    {
+      "angle_deg": 90,
+      "foot": [
+        4.7,
+        3.2,
+        -7
+      ],
+      "capsule_center": [
+        3.83,
+        3.2,
+        -7
+      ],
+      "camera_eye": [
+        3.15,
+        3.2,
+        -7
+      ],
+      "local_up": [
+        -1.0,
+        0.0,
+        0
+      ],
+      "gravity_m_s2": [
+        9.81,
+        -0.0,
+        -0.0
+      ]
+    }
+  ],
+  "hero_cameras": [
+    {
+      "id": "C1_PRE_ARC",
+      "foot": [
+        0,
+        0,
+        -4
+      ],
+      "eye": [
+        0,
+        1.55,
+        -4
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "look_at": [
+        4.7,
+        3.2,
+        -7
+      ]
+    },
+    {
+      "id": "C2_MID_ARC",
+      "foot": [
+        3.7627,
+        0.9373,
+        -7
+      ],
+      "eye": [
+        2.6667,
+        2.0333,
+        -7
+      ],
+      "up": [
+        -0.7071,
+        0.7071,
+        0
+      ],
+      "look_at": [
+        3.7,
+        4.8,
+        -12
+      ]
+    },
+    {
+      "id": "C3_ON_WALL",
+      "foot": [
+        4.7,
+        3.2,
+        -12
+      ],
+      "eye": [
+        3.15,
+        3.2,
+        -12
+      ],
+      "up": [
+        -1,
+        0,
+        0
+      ],
+      "look_at": [
+        0.5,
+        7.8,
+        -17.5
+      ]
+    }
+  ],
+  "collision": {
+    "capsule_radius": 0.3,
+    "capsule_height": 1.74,
+    "eye_offset_from_foot": 1.55,
+    "arc_triangle_segments_min": 48,
+    "arc_collision_from_same_source": true,
+    "support_normal_target": 0.96,
+    "guard_walls_at_y": [
+      0.4,
+      6.0
+    ],
+    "guard_height_toward_minus_x": 1.2,
+    "transition_wall_y_allowed_when_z_in_arc": [
+      3.2,
+      6.0
+    ],
+    "clear_wall_width_when_z_lt_minus9": [
+      0.4,
+      6.0
+    ]
+  },
+  "nonnegotiables": [
+    "No rotating whole scene",
+    "No camera-only fake gravity",
+    "No teleport from arc start to wall",
+    "No walkable gaps between planar and curved colliders",
+    "No main portal in a sideways-gravity zone"
+  ]
+}

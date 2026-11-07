@@ -39,7 +39,7 @@
       0,
       0
     ],
-    "step": 17,
+    "step": 6,
     "grounded": false,
     "events": [],
     "lastEventId": 0,
@@ -91,15 +91,17 @@
       "textures": 1,
       "programs": 5,
       "context": "active",
-      "passes": 1
+      "passes": 1,
+      "targetResizes": 1
     },
     "performance": {
-      "samples": 22,
-      "fps": 21.769245992477707,
-      "averageMs": 45.93636363636787,
-      "p95Ms": 148.3000000002794,
-      "p99Ms": 459.39999999990687,
-      "physicsMs": 1.1000000000931323,
+      "samples": 17,
+      "fps": 15.540725843334087,
+      "averageMs": 64.34705882344176,
+      "p50Ms": 15.899999998509884,
+      "p95Ms": 627.2999999970198,
+      "p99Ms": 627.2999999970198,
+      "physicsMs": 0,
       "gpuMs": null
     },
     "movingReference": [
@@ -108,7 +110,7 @@
       -1.3
     ],
     "elapsed": 0,
-    "droppedSeconds": 0.42606666666657356
+    "droppedSeconds": 0.03333333333333333
   },
   "measurements": [
     {

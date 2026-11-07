@@ -1,20 +1,11 @@
-name: Publish THRESHOLD G0
-on:
-  push:
-    branches: [main]
-  workflow_dispatch:
-  # Branch-based Pages may publish source HTML. Publish the compiled artifact
-  # after that workflow completes, so it cannot leave the source entry online.
-  workflow_run:
-    workflows: ['pages-build-deployment']
-    branches: [main]
-    types: [completed]
+name: Publish THRESHOLD V0.2 manually
+on: workflow_dispatch
 permissions:
   contents: read
   pages: write
   id-token: write
 concurrency:
-  group: threshold-g0-pages-publish
+  group: threshold-v02-pages-publish
   cancel-in-progress: true
 jobs:
   build:

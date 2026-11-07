@@ -1,6 +1,5 @@
 import {
-  Color, PerspectiveCamera, Plane, Vector2, Vector3, Vector4, WebGLRenderTarget,
-  type Matrix4,
+  Box3, Frustum, Matrix4, Color, PerspectiveCamera, Plane, Vector2, Vector3, Vector4, WebGLRenderTarget,
   type WebGLRenderer,
 } from 'three';
 import { computePortalTransform } from './PortalMath';
@@ -11,7 +10,7 @@ export interface PortalRenderMetrics {
   targetWidth:number;targetHeight:number;quality:number;
   mainDrawCalls:number;offscreenDrawCalls:number;
   geometries:number;textures:number;programs:number;
-  context:'active'|'lost';passes:number;
+  context:'active'|'lost';passes:number;targetResizes:number;
 }
 export interface ProjectedMarker {
   id:string;color:number;worldPosition:number[];x:number;y:number;ndcZ:number;
@@ -21,7 +20,7 @@ export interface ProjectedMarker {
 /** Owns graphics only. Never commits physics/world membership or creates an animation loop. */
 export class PortalRenderer {
   readonly virtualCamera=new PerspectiveCamera();
-  readonly metrics:PortalRenderMetrics={targetWidth:1,targetHeight:1,quality:1,mainDrawCalls:0,offscreenDrawCalls:0,geometries:0,textures:0,programs:0,context:'active',passes:0};
+  readonly metrics:PortalRenderMetrics={targetWidth:1,targetHeight:1,quality:1,mainDrawCalls:0,offscreenDrawCalls:0,geometries:0,textures:0,programs:0,context:'active',passes:0,targetResizes:0};
   private readonly target=new WebGLRenderTarget(1,1,{depthBuffer:true,stencilBuffer:false});
   private readonly drawingBuffer=new Vector2();
   private readonly clipPlane=new Plane();
@@ -32,6 +31,7 @@ export class PortalRenderer {
   private readonly normal=new Vector3();
   private readonly markerPosition=new Vector3();
   private readonly mapping:Record<WorldId,Matrix4>;
+  visibilityCulling=false; private readonly frustum=new Frustum();private readonly viewProjection=new Matrix4();private readonly portalBounds=new Box3();
   private disposed=false;
   private readonly contextLost=(event:Event)=>{event.preventDefault();this.metrics.context='lost';};
   private readonly contextRestored=()=>{this.metrics.context='active';this.target.dispose();};
@@ -51,7 +51,7 @@ export class PortalRenderer {
     const targetWidth=Math.max(1,Math.round(width*dpr*this.metrics.quality));
     const targetHeight=Math.max(1,Math.round(height*dpr*this.metrics.quality));
     if(targetWidth!==this.metrics.targetWidth||targetHeight!==this.metrics.targetHeight){
-      this.target.setSize(targetWidth,targetHeight);
+      this.target.setSize(targetWidth,targetHeight);this.metrics.targetResizes++;
       this.metrics.targetWidth=targetWidth;this.metrics.targetHeight=targetHeight;
     }
   }
@@ -78,11 +78,27 @@ export class PortalRenderer {
     const renderer=this.renderer;
     renderer.getDrawingBufferSize(this.drawingBuffer);
     const actualDpr=renderer.getPixelRatio();
-    this.resize(this.drawingBuffer.x/actualDpr,this.drawingBuffer.y/actualDpr,actualDpr,this.metrics.quality);
+    // Adaptive chapter targets are resized exactly once below, never expanded then shrunk each frame.
+    if(!this.visibilityCulling)this.resize(this.drawingBuffer.x/actualDpr,this.drawingBuffer.y/actualDpr,actualDpr,this.metrics.quality);
     this.rooms.A.surface.material.uniforms.drawingBufferSize.value.copy(this.drawingBuffer);
     this.rooms.B.surface.material.uniforms.drawingBufferSize.value.copy(this.drawingBuffer);
     this.mapCamera(worldId);
     const source=this.rooms[worldId];const destination=this.rooms[worldId==='A'?'B':'A'];
+    if(this.visibilityCulling){
+      this.mainCamera.updateMatrixWorld(true);
+      this.frustum.setFromProjectionMatrix(this.viewProjection.multiplyMatrices(this.mainCamera.projectionMatrix,this.mainCamera.matrixWorldInverse));
+      this.portalBounds.setFromCenterAndSize(source.portal.position,new Vector3(source.portal.width,source.portal.height,.002));
+      const front=this.mainCamera.position.clone().sub(source.portal.position).dot(new Vector3(0,0,1).applyQuaternion(source.portal.rotation))>0;
+      if(!front||!this.frustum.intersectsBox(this.portalBounds)){
+        renderer.render(source.scene,this.mainCamera);this.metrics.offscreenDrawCalls=0;this.metrics.passes=0;this.metrics.mainDrawCalls=renderer.info.render.calls;this.metrics.geometries=renderer.info.memory.geometries;this.metrics.textures=renderer.info.memory.textures;this.metrics.programs=renderer.info.programs?.length??0;return;
+      }
+      const distance=this.mainCamera.position.distanceTo(source.portal.position);
+      const coverage=Math.min(1,source.portal.width*source.portal.height/Math.max(1,distance*distance));
+      // Discrete coverage bands avoid reallocating GPU attachments on every movement pixel.
+      const effective=Math.min(this.metrics.quality,coverage>.5?1:coverage>.2?.75:coverage>.08?.5:.35);
+      const w=Math.round(this.drawingBuffer.x*effective),h=Math.round(this.drawingBuffer.y*effective);
+      if(w!==this.metrics.targetWidth||h!==this.metrics.targetHeight){this.target.setSize(w,h);this.metrics.targetResizes++;this.metrics.targetWidth=w;this.metrics.targetHeight=h;}
+    }
     const previousTarget=renderer.getRenderTarget();
     const previousFace=renderer.getActiveCubeFace();const previousMip=renderer.getActiveMipmapLevel();
     renderer.getViewport(this.viewport);renderer.getScissor(this.scissor);

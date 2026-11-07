@@ -1,0 +1,123 @@
+{
+  "slab": {
+    "id": "ORIGINAL_AXIS_CANTILEVER",
+    "found": true,
+    "visibleSamples": 49,
+    "samples": 450
+  },
+  "pier": {
+    "id": "ORIGINAL_AXIS_PIER",
+    "found": true,
+    "visibleSamples": 19,
+    "samples": 450
+  },
+  "snapshot": {
+    "ready": true,
+    "error": null,
+    "world": "INVERT",
+    "slot": "B",
+    "foot": [
+      4.7,
+      4,
+      -12
+    ],
+    "body": [
+      3.823999999999998,
+      4,
+      -12
+    ],
+    "eye": [
+      3.1500000000000057,
+      4,
+      -12
+    ],
+    "up": [
+      -1,
+      6.123233995736766e-17,
+      0
+    ],
+    "gravity": [
+      9.81,
+      -6.006892549817768e-16,
+      0
+    ],
+    "bodyRotation": [
+      0,
+      0,
+      0.7071068286895752,
+      0.7071068286895752
+    ],
+    "cameraRotation": [
+      0.21362404852391867,
+      -0.18018666302330044,
+      0.6837636773538993,
+      0.6740658468519604
+    ],
+    "yaw": -0.5645693936680999,
+    "pitch": 0.04924127560969436,
+    "theta": 1.5707963267948966,
+    "thetaDegrees": 90,
+    "s": 5.826548245743669,
+    "mode": "WALL",
+    "grounded": true,
+    "supportNormal": [
+      0,
+      1,
+      0
+    ],
+    "velocity": [
+      0,
+      0,
+      0
+    ],
+    "step": 15,
+    "progress": "WALL_WALK",
+    "terminal": false,
+    "returned": false,
+    "interactable": false,
+    "events": [],
+    "transferState": "ARMED",
+    "rejection": null,
+    "blocked": null,
+    "rotationQueries": 0,
+    "translationQueries": 0,
+    "supportQueries": 15,
+    "witness": {
+      "position": {
+        "x": 107.1116714477539,
+        "y": 4.199999809265137,
+        "z": 0.6000000238418579
+      },
+      "velocity": {
+        "x": 2.4524989128112793,
+        "y": 0,
+        "z": 0
+      },
+      "resets": 0
+    },
+    "render": {
+      "targetWidth": 960,
+      "targetHeight": 540,
+      "quality": 0.75,
+      "mainDrawCalls": 8,
+      "offscreenDrawCalls": 0,
+      "geometries": 20,
+      "textures": 14,
+      "programs": 10,
+      "context": "active",
+      "passes": 0
+    },
+    "performance": {
+      "samples": 4,
+      "fps": 0.5931022211678838,
+      "averageMs": 1686.0499999998137,
+      "p50Ms": 213.90000000223517,
+      "p95Ms": 6298.5,
+      "p99Ms": 6298.5,
+      "physicsMs": 0,
+      "gpuMs": null
+    },
+    "errors": [],
+    "elapsed": 0.24999999999999997
+  }
+}

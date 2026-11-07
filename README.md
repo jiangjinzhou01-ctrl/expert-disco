@@ -1,70 +1,96 @@
-# THRESHOLD / G0 — 门界
+# THRESHOLD V0.2 / THE FIRST THRESHOLD
 
-两个独立三维房间之间的双向实时传送门实验。目标是验证空间映射、视角相关实时画面、胶囊碰撞与固定物理步穿越，不包含正式游戏世界或多人系统。
+可自由探索的双向实时传送门章节：VESTIBULE 巨构前厅 → INVERT → 真实重力弧面 → 墙面终端 → 原路返回。保留 G0-LAB 的完整数学、传送与测试实现。
 
-验收结论以 [G0 验收表](docs/G0_ACCEPTANCE.md) 和 [实际技术报告](docs/G0_TECHNICAL_REPORT.md) 为准。核心数学、实时渲染和真实Rapier穿越已实现；真实 Android 设备性能尚未验证，因此总体结论为 PARTIALLY VERIFIED。
+默认入口是 V0.2。工程结论为 **PARTIALLY VERIFIED**：运行与自动化证据见 [验收报告](docs/V02_TEST_REPORT.md)；没有接入真实 Android 设备，不能声称手机帧率已达标。美术表现的实际限度见 [美术审查](docs/V02_ART_REVIEW.md)。本次没有推送或覆盖 GitHub 上的 G0 部署。
 
-## 环境与技术栈
+## 安装与启动
 
-Node.js 24，npm 11；支持 WebGL 2 的桌面或移动浏览器。运行时依赖精确锁定为 React 19.3.1、Three.js 0.187.0、React Three Fiber 9.8.2、Rapier 0.21.0。构建与测试使用 Vite 8.3.6、TypeScript 6.0.3、Vitest 5.1.0、Playwright 1.65.0。完整版本见 `package-lock.json` 与技术报告。
-
-## 安装与运行
+需要 Node.js 24 / npm 11、WebGL 2 浏览器。交付内已包含 GLB、贴图、碰撞数据，无需先安装 Blender。
 
 ```bash
 npm ci
-npx playwright install chromium
-npm run dev
+npm run dev -- --port 5180
 ```
 
-打开终端输出的本地地址，默认 `http://localhost:5173`。`dev` 绑定 `0.0.0.0`，同一局域网设备可使用主机 IP 访问；实际网络和浏览器权限由运行环境决定。首次安装浏览器系统依赖的 Linux CI 可执行 `npx playwright install --with-deps chromium`。
-
-## 操作
-
-桌面：WASD 移动；按住鼠标拖动观察，或双击画布请求指针锁定；Esc 释放，R 重置。F3 或右上角 DATA 按钮切换诊断。
-
-手机：左半区单指拖动摇杆移动，右半区另一个手指滑动观察，两区可以同时使用；转身后可自然返回。右上角 RESET 重置，DATA 查看简化诊断；横屏优先，也支持尺寸变化。页面禁止滚动并处理取消、失焦和方向变化。自动化覆盖的是 Chromium 触控模拟，真实手机覆盖见限制文档。
-
-右上角 RT 菜单可选择 100%、85%、50%、25% 离屏分辨率。它只降低实时渲染采样分辨率，保持主视口比例和真实透视，不改变模拟速度。
-
-A 是冷灰色房间，B 是暖砂色房间。A 门位于 `(0,1.45,-8)`，B 门位于 `(32,1.45,0)` 并绕 Y 旋转 90°，因此穿越包含真正的方向变换。红色立方体、黑色立柱、方向地标与 B 房间运动物体帮助判断空间连续性。
-
-## 测试与构建
+打开 `http://localhost:5180/`。`dev` 绑定全部网络接口；同一局域网手机可使用主机 IP 与端口访问。云工作区需要平台端口转发。
 
 ```bash
+npm run build
+npm run preview -- --port 4180
+```
+
+生产预览：`http://localhost:4180/`。可直接部署 `dist/` 到静态服务器。默认相对资源路径；仓库子路径构建示例：`VITE_BASE=/your-repository/ npm run build`。不能用 file:// 打开含模块与 WASM 的入口。
+
+## 操作与章节路线
+
+- 桌面：WASD 移动；鼠标拖动观察，双击画布请求指针锁定；Esc 释放，R 回到最近有效检查点，F3 切换数据。靠近终端按 E。
+- 手机：左半区拖动移动，右半区另一个手指观察。右上角 ↺ 安全复位，⋯ 打开设置。靠近终端出现触控按钮；建议横屏。
+- 设置：实时门内画质、减少镜头运动、诊断、返回章节起点、G0-LAB。减少运动只影响镜头 Up 过渡，身体与碰撞仍真实旋转。
+
+从窄廊走出，绕过中央下沉庭院（桥也可通行），走进黑色大门。INVERT 中向前走进弧面入口，沿弧面向右上方行走；站到墙上后继续上行约 0.8m，再沿墙向前走到终端。激活后沿原路退回地面，从入口门返回前厅，中央装置会回应。可随时停止、倒退和转身，没有自动沿路线搬运角色的逻辑。INVERT后方另有原始重力方向的实体楼梯和观察廊台，可沿正常重力探索；站墙后可看到它们变为横向的建筑参照。
+
+## 模式与诊断
+
+| 入口 | 用途 |
+| --- | --- |
+| `/` | 完整首章 |
+| `/?debug=1` | 首章与实时诊断、JSON 导出 |
+| `/?mode=lab` | 原 G0 实验房间 |
+| `/?mode=chapter&test=1` | 仅开发/e2e 构建开放确定性测试接口 |
+| `/?test=1` | 保留旧测试链接，进入 LAB |
+
+首章只读运行快照为 `window.__THRESHOLD_V02__()`。正式构建不会提供 `window.__V02_TEST__`，即使 URL 带 test 参数。开发设置内的“碰撞几何”可观察真实胶囊、弧面网格和独立碰撞代理，不改变模拟。G0 的只读/测试接口保持兼容。
+
+诊断含脚底/眼睛、身体四元数、Up、重力、接触法线、θ、查询次数、事件和拒绝原因、FPS/P50/P95/P99、物理耗时、主/门内 Draw Calls、目标分辨率与资源数。GPU 时间未采集，显示 N/A；物理 CPU 耗时不冒充 GPU 时间。
+
+## 验证
+
+```bash
+npx playwright install --with-deps chromium
 npm run typecheck
 npm run lint
 npm run test:unit
 npm run test:e2e
 npm run test:production
-npm run verify
 npm run test:subpath
-npm run measure:software
-npm run build
-npm run preview
+npm run verify
 ```
 
-`test:unit` 包含数学与物理集成测试。`test:e2e` 启动 Vite 开发服务器并使用真实 Chromium。`test:production` 先构建普通生产版本，再对 `vite preview` 执行浏览器冒烟，使用真实键鼠输入完成双向穿越。`test:subpath` 构建 `/threshold-g0/` base 并在本地子路径进行浏览器冒烟。`verify` 组合类型检查、Lint、Vitest、浏览器测试和生产构建/冒烟，任一步失败会返回非零退出码。
+`verify` 顺序执行以上所有门槛。Vitest 包含原 G0 34 项与新重力/路径/资产验证；浏览器用真实 WebGL 2 与 Rapier。生产测试禁止修改接口，用真实键盘完成完整章节并录制视频。软件渲染器较慢，生产回归允许较长超时；超时仍会失败，不跳过断言。CI 安装锁定依赖与 Chromium，失败即失败并上传日志和证据。
 
-构建产物位于 `dist/`。默认相对 `base` 便于根目录及静态子目录部署；明确的 GitHub Pages 仓库路径也可使用 `VITE_BASE=/repository/ npm run build`。当前未部署到任何远程地址。
+所有测试的固定步、随机种子、断言范围与实际数量以报告为准。`evidence/` 内也有继承的 G0 历史文件，不能当作本轮新数据；本轮主日志为 `evidence/v02/verify-final.log`。
 
-## 诊断与证据
+在另一个终端已有 5180 开发服务器、且没有其他图形测试运行时：
 
-使用 `?debug=1` 开启诊断；F3 切换面板。面板包含物理状态、传送事件、Render Target、帧时间与 GPU 资源数量，并支持 JSON 导出。GPU 计时当前未采集，面板显示 N/A；测试环境检测到计时扩展也不代表已执行 GPU query，不能用 CPU 时间代替。
+```bash
+npm run measure:v02
+```
 
-开发服务器使用 `?test=1` 启用确定性输入、角色定位和强制步进适配器 `window.__THRESHOLD__`。`npm run build:test` 创建明确的 e2e 模式构建，也允许该入口。普通 `npm run build` 产物即使传入 `?test=1` 也不会暴露修改接口。`?debug=1` 仅提供只读 `window.__THRESHOLD_DIAGNOSTICS__()`，正式UI仍可操作。开发诊断的“几何”按钮显示胶囊、碰撞体、门平面和最近穿越交点；普通生产UI不提供该几何开关。
+它测量云端 SwiftShader 三个视角，并统计 `dist/` 实际字节数；不代表真实桌面 GPU 或 Android。真机 10 分钟操作和数据导出步骤见 [设备验证](docs/DEVICE_TEST_V02.md)。
 
-`npm run measure:software` 在另一个终端已有开发服务器时，使用1280×720、DPR1的SwiftShader Chromium预热3秒并采集15秒；可传入URL与1–600秒时长，例如 `npm run measure:software -- http://127.0.0.1:5173/?test=1 30`。结果写入 `evidence/performance-software-chromium.json`，只代表云端软件渲染器，不代表真实桌面GPU或手机。
+## 可维护资产
 
-实际日志和截图位于 `evidence/`；Playwright 失败截图与 trace 位于 `test-results/`，HTML 报告位于 `playwright-report/`。CI 配置为 `.github/workflows/ci.yml`，失败时上传测试产物。
+源模型：`assets/source/threshold-v02-architecture.blend`，贴图：`assets/source/textures/`，导出：`public/assets/v02/`。资产 manifest 包含每个模块的 ID、原点、包围盒、材质与三角面数。正式模型没有使用参考图作为背景或门内纹理。
 
-## 进一步阅读
+若需重新制作同源视觉/碰撞资产，安装 Blender 4.3.2（或兼容版本）后运行：
 
-- [架构](docs/ARCHITECTURE.md)
-- [验收状态](docs/G0_ACCEPTANCE.md)
-- [技术报告](docs/G0_TECHNICAL_REPORT.md)
-- [限制与真实设备覆盖](docs/G0_LIMITATIONS.md)
-- [真实手机十分钟采集流程](docs/DEVICE_TEST.md)
-- [已核查的实际官方 API](docs/API_REVIEW.md)
-- [可复现验证协议](docs/VALIDATION_PROTOCOL.md)
+```bash
+npm run assets:build
+npm run test:unit
+npm run build
+```
 
-G0 只支持一对固定、无缩放、绕竖直轴旋转的门；没有递归传送门、物体跨门模拟、局部重力或正式音频系统。真实手机十分钟测试尚未执行。
+生成器会替换该专用源文件和生成数据；Blender 源使用项目的 +Y 向上约定，两个世界各有命名Collection；默认隐藏INVERT以避免局部原点重叠，编辑时切换可见性。避免在源码模型中手工编辑后直接运行生成器而丢失修改。
+
+## 工程说明
+
+- [架构、数学和建模管线](docs/ARCHITECTURE_V02.md)
+- [CR1 实测修订](docs/CR1_DEVIATIONS.md)
+- [真实引擎截图与美术审查](docs/V02_ART_REVIEW.md)
+- [测试、构建和验收报告](docs/V02_TEST_REPORT.md)
+- [边界与限制](docs/V02_LIMITATIONS.md)
+- [原始 G0 说明](docs/README_G0_ORIGINAL.md)
+- [本轮完整任务书](docs/THRESHOLD_V02_CODEX_MASTER_PROMPT.md)
+
+依赖精确锁定于 package-lock.json。没有账号、联网 API、ECHO/DRIFT、递归门或大型物体跨门模拟。

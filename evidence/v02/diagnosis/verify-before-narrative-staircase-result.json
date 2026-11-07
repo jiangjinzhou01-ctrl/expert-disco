@@ -1,0 +1,7 @@
+{
+  "command": "npm run verify",
+  "exitCode": 0,
+  "observedToolSession": 93304,
+  "finishedAtUtc": "2026-11-07T10:44:25.935637+00:00",
+  "note": "Actual exec session completion returned exit_code 0 after the frozen asset/code verification."
+}

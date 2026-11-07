@@ -6,14 +6,14 @@ import assert from 'node:assert/strict';
 import { chromium } from '@playwright/test';
 
 // Separate output preserves the normal production build and concurrent preview tests.
-const outputDirectory='/tmp/threshold-g0-subpath';
-const prefix='/threshold-g0/';
+const outputDirectory='/tmp/threshold-v02-subpath';
+const prefix='/threshold-v02/';
 const port=4181;
 const logs=[];
-const evidence={capturedAt:new Date().toISOString(),command:'npx vite build --base=/threshold-g0/ --outDir /tmp/threshold-g0-subpath',url:`http://127.0.0.1:${port}${prefix}?debug=1&test=1`,result:'FAIL',requests:[],pageErrors:[],requestFailures:[],browser:null,snapshot:null};
+const evidence={capturedAt:new Date().toISOString(),command:'npx vite build --base=/threshold-v02/ --outDir /tmp/threshold-v02-subpath',url:`http://127.0.0.1:${port}${prefix}?debug=1&test=1`,result:'FAIL',requests:[],pageErrors:[],requestFailures:[],browser:null,snapshot:null};
 let browser;let server;
 try{
-  const build=spawnSync('npx',['vite','build','--base=/threshold-g0/','--outDir',outputDirectory],{encoding:'utf8'});
+  const build=spawnSync('npx',['vite','build','--base=/threshold-v02/','--outDir',outputDirectory],{encoding:'utf8'});
   logs.push(build.stdout,build.stderr);
   assert.equal(build.status,0,'Subpath production build must pass');
   const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json','.wasm':'application/wasm','.svg':'image/svg+xml','.png':'image/png'};
@@ -56,11 +56,20 @@ try{
   assert.equal(evidence.snapshot.diagnostics.render.context,'active');
   assert.equal(evidence.snapshot.diagnostics.render.passes,1);
   assert(evidence.snapshot.diagnostics.render.mainDrawCalls>0);
-  assert(evidence.requests.some(request=>request.url.includes('/threshold-g0/assets/')&&request.url.endsWith('.js')));
+  assert(evidence.requests.some(request=>request.url.includes('/threshold-v02/assets/')&&request.url.endsWith('.js')));
   assert(evidence.requests.every(request=>request.status<400));
   assert.deepEqual(evidence.pageErrors,[]);
   assert.deepEqual(evidence.requestFailures,[]);
   await page.screenshot({path:'evidence/subpath-smoke.png'});
+  await page.goto(`http://127.0.0.1:${port}${prefix}?mode=chapter&debug=1&test=1`);
+  await page.waitForFunction(()=>window.__THRESHOLD_V02__?.().ready===true,{},{timeout:60000});
+  evidence.chapter=await page.evaluate(()=>({snapshot:window.__THRESHOLD_V02__(),mutationAdapter:typeof window.__V02_TEST__}));
+  assert.equal(evidence.chapter.mutationAdapter,'undefined');
+  assert.equal(evidence.chapter.snapshot.world,'VESTIBULE');
+  assert.equal(evidence.chapter.snapshot.error,null);
+  assert(evidence.requests.filter(r=>r.url.endsWith('.glb')).length>=2);
+  assert(evidence.requests.every(r=>r.status<400));
+  await page.screenshot({path:'evidence/v02/subpath-chapter.png'});
   evidence.result='PASS';
   logs.push(`PASS Chromium ${evidence.browser}; WebGL2 active; ready=${evidence.snapshot.diagnostics.ready}; main/portal draws=${evidence.snapshot.diagnostics.render.mainDrawCalls}/${evidence.snapshot.diagnostics.render.offscreenDrawCalls}; ${evidence.requests.length} successful requests; mutation adapter absent.\n`);
 }catch(error){

@@ -1,0 +1,121 @@
+{
+  "slab": {
+    "id": "ORIGINAL_AXIS_CANTILEVER",
+    "found": false,
+    "visibleSamples": 0
+  },
+  "pier": {
+    "id": "ORIGINAL_AXIS_PIER",
+    "found": false,
+    "visibleSamples": 0
+  },
+  "snapshot": {
+    "ready": true,
+    "error": null,
+    "world": "VESTIBULE",
+    "slot": "A",
+    "foot": [
+      8,
+      0,
+      18
+    ],
+    "body": [
+      8,
+      0.876,
+      18
+    ],
+    "eye": [
+      8,
+      1.55,
+      18
+    ],
+    "up": [
+      0,
+      1,
+      0
+    ],
+    "gravity": [
+      0,
+      -9.81,
+      0
+    ],
+    "bodyRotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "cameraRotation": [
+      0.057647723809991565,
+      0.15460934534482568,
+      -0.009037128383081834,
+      0.9862509926900754
+    ],
+    "yaw": 0.31099828060554097,
+    "pitch": 0.11676988136729685,
+    "theta": 0,
+    "thetaDegrees": 0,
+    "s": 6.5,
+    "mode": "NORMAL",
+    "grounded": true,
+    "supportNormal": [
+      0,
+      1,
+      0
+    ],
+    "velocity": [
+      0,
+      0,
+      0
+    ],
+    "step": 10,
+    "progress": "ARRIVAL",
+    "terminal": false,
+    "returned": false,
+    "interactable": false,
+    "events": [],
+    "transferState": "ARMED",
+    "rejection": null,
+    "blocked": null,
+    "rotationQueries": 0,
+    "translationQueries": 0,
+    "supportQueries": 10,
+    "witness": {
+      "position": {
+        "x": 106.93965911865234,
+        "y": 4.199999809265137,
+        "z": 0.6000000238418579
+      },
+      "velocity": {
+        "x": 1.6349996328353882,
+        "y": 0,
+        "z": 0
+      },
+      "resets": 0
+    },
+    "render": {
+      "targetWidth": 448,
+      "targetHeight": 252,
+      "quality": 0.75,
+      "mainDrawCalls": 9,
+      "offscreenDrawCalls": 12,
+      "geometries": 19,
+      "textures": 15,
+      "programs": 10,
+      "context": "active",
+      "passes": 1
+    },
+    "performance": {
+      "samples": 3,
+      "fps": 7.896814951256514,
+      "averageMs": 126.63333333407839,
+      "p50Ms": 177.39999999850988,
+      "p95Ms": 194.60000000149012,
+      "p99Ms": 194.60000000149012,
+      "physicsMs": 0,
+      "gpuMs": null
+    },
+    "errors": [],
+    "elapsed": 0.16666666666666666
+  }
+}

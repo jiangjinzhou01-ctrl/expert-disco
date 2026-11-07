@@ -2,7 +2,7 @@ import RAPIER from '@dimforge/rapier3d-compat';
 import { Vector3 } from 'three';
 import { PLAYER_RADIUS } from '../../scenes/RoomLayout';
 import type { WorldId } from '../../scenes/RoomLayout';
-import { CAPSULE_CYLINDER_HALF_HEIGHT, PhysicsRuntime } from './PhysicsRuntime';
+import { CAPSULE_CYLINDER_HALF_HEIGHT, type PortalPhysics } from './PhysicsRuntime';
 
 const IDENTITY = { x: 0, y: 0, z: 0, w: 1 };
 const EXIT_CLEARANCE = 0.002;
@@ -14,10 +14,11 @@ export class CollisionQueries {
   private readonly shape = new RAPIER.Capsule(CAPSULE_CYLINDER_HALF_HEIGHT, PLAYER_RADIUS + EXIT_CLEARANCE);
   private queryWorld: WorldId = 'A';
   private skipFloor = false;
+  private readonly allowedFloorContacts=new Set<number>();
   private blockingId: string | null = null;
   private readonly filter = (collider: RAPIER.Collider) => {
     const meta = this.physics.metadata.get(collider.handle);
-    return collider.handle !== this.physics.collider.handle && meta?.worldId === this.queryWorld
+    return !this.allowedFloorContacts.has(collider.handle) && collider.handle !== this.physics.collider.handle && meta?.worldId === this.queryWorld
       && (!this.skipFloor || !meta.id.endsWith('-floor'));
   };
   private readonly onIntersection = (collider: RAPIER.Collider) => {
@@ -25,10 +26,12 @@ export class CollisionQueries {
     return false;
   };
 
-  constructor(private readonly physics: PhysicsRuntime) {}
+  constructor(private readonly physics: PortalPhysics) {}
 
   validateExit(position: Vector3, remaining: Vector3, worldId: WorldId): ExitValidation {
     this.queryWorld = worldId;
+    this.allowedFloorContacts.clear();
+    if(this.physics.allowsExitContact)for(const [handle,meta]of this.physics.metadata){if(meta.worldId===worldId&&this.physics.allowsExitContact(this.physics.world.getCollider(handle),position))this.allowedFloorContacts.add(handle);}
     this.skipFloor = false;
     this.blockingId = null;
     this.physics.world.intersectionsWithShape(position, IDENTITY, this.shape,

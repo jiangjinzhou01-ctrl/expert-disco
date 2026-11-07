@@ -72,3 +72,16 @@ world.castShape(shapePos, shapeRot, shapeVel, shape,
 ## Vite
 
 读取 [官方 static deploy 文档](https://vite.dev/guide/static-deploy)。`npm run build` 产物默认在 `dist`，`vite preview` 用于本地验证产物，不应声称是生产服务器。根路径默认 `base:'/'`，GitHub Pages 仓库站应为 `base:'/<REPO>/'`；可以通过环境变量或 `vite build --base=/repo/` 选择。没有授权远程仓库时只准备静态产物与 CI，不编造部署 URL。
+
+## V0.2 增补核查（2026-11-07）
+
+本轮保留全部锁定版本。实际读取当前安装包 `dist/control/character_controller.d.ts`、`dist/dynamics/rigid_body.d.ts` 与 `dist/pipeline/world.d.ts`，并通过严格类型检查和真实WASM测试验证：
+
+- `setUp(vector)` 改变KCC的平移约束方向，不会替调用方旋转刚体；本轮另行调用 `body.setRotation(rot,true)`、`setNextKinematicRotation(rot)`。
+- `setNextKinematicTranslation` 与当前translation同步用于瞬时重定位，避免产生跨世界巨大推导速度。
+- 完整胶囊 `castShape` 的当前参数顺序如前文，rotation通过独立分段姿态/重叠验证覆盖。`castRayAndGetNormal` 用于真实支持法线；明确过滤自己与其他世界。
+- `World.gravity=(0,0,0)`，动态见证物显式 `addForce(mass*g,true)`；没有把全世界设为侧重力。
+- Three.js 0.187 `GLTFLoader.loadAsync`、`mergeGeometries`、`PMREMGenerator.fromScene`、`DirectionalLight.shadow` 与 `BufferGeometry` attribute 使用当前安装版本。保留对象名的结构见证体用于真实网格 raycast。
+- Blender 4.3.2 glTF导出 API 通过实际 headless 调用验证，输出GLB由单元测试直接解析；法线/粗糙度不是仅检查schema或文件名。
+
+本轮还核对0.187.0的WebGLRenderer.getTargetPixelRatio：当前render target存在时返回1，因此离屏setViewport使用目标的物理像素尺寸；返回默认帧缓冲时使用主DPR。没有套用旧版本假设而重复乘DPR。
