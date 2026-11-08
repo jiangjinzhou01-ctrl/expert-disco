@@ -1,0 +1,48 @@
+
+> threshold-v02@0.2.0 test:unit
+> vitest run
+
+
+ RUN  v5.1.0 /workspace/threshold-v02
+
+ ✓ src/tests/integration/v02-traversal.test.ts (10 tests) 14641ms
+   ✓ survives 30 reversible full body arcs and 100 genuinely swept wall routes 11745ms
+   ✓ crosses the new chapter portal using G0 transfer, completes the device, and returns upright 530ms
+   ✓ completes the entire chapter from the actual spawn using only input, including the return portal 1460ms
+ ✓ src/tests/integration/v02-gravity.test.ts (17 tests) 2072ms
+   ✓ V02 actual rotated capsule and continuous support (12)
+     ✓ walks forward, stops, reverses from 45°, reaches wall and returns, without camera scripting 864ms
+ ✓ src/tests/unit/orbital-architecture.test.ts (2 tests) 536ms
+   ✓ decodes every deployed meshopt cell, validates provenance, full topology and finite world bounds 397ms
+ ✓ src/tests/integration/v03-locomotion.test.ts (7 tests) 1498ms
+   ✓ V03 real locomotion on existing architecture (7)
+     ✓ moves at both ends of the 1.5–7m/s range and applies stance and sprint limits 569ms
+ ✓ src/tests/integration/portal-physics.test.ts (12 tests) 1349ms
+   ✓ Rapier capsule portal integration (12)
+     ✓ M08: requires spatial rearming and does not emit a second event when immediately reversed 307ms
+     ✓ P03: survives 100 complete natural A → B → A cycles with exactly 200 unique commits 903ms
+ ✓ src/tests/integration/collision-queries.test.ts (7 tests) 514ms
+   ✓ Rapier exit shape and corrected source path edge cases (7)
+     ✓ does not let geometry behind the SOURCE portal shorten destination residual motion 484ms
+ ✓ src/tests/unit/v02-assets.test.ts (1 test) 223ms
+ ✓ src/tests/unit/portal-math.test.ts (8 tests) 112ms
+ ✓ src/tests/unit/renderer-state.test.ts (4 tests) 74ms
+ ✓ src/tests/unit/orbital-ktx2.test.ts (3 tests) 46ms
+ ✓ src/tests/unit/look-response.test.ts (7 tests) 10ms
+ ✓ src/tests/unit/spatial-streaming.test.ts (7 tests) 18ms
+ ✓ src/tests/unit/orbital-materials.test.ts (2 tests) 9ms
+ ✓ src/tests/unit/chapter-persistence.test.ts (5 tests) 9ms
+ ✓ src/tests/unit/v03-input.test.ts (2 tests) 36ms
+ ✓ src/tests/unit/performance-monitor.test.ts (3 tests) 38ms
+ ✓ src/tests/unit/chapter-audio.test.ts (3 tests) 5ms
+ ✓ src/tests/unit/v03-persistence.test.ts (2 tests) 5ms
+
+ Test Files  18 passed (18)
+      Tests  102 passed (102)
+   Start at  05:38:21
+   Duration  26.83s (tests 92%, import 7%, transform 1%)
+
+    Isolate  18 workers spawned · ~192ms startup each (spawn + environment, per file)
+             at least ~3.26s faster with isolate: false — reuses workers across files instead of one per file
+
+JSON report written to /workspace/threshold-v02/evidence/vitest.json

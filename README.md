@@ -1,3 +1,9 @@
+> **V0.3 工作分支：feat/v03-gravity-freedom。** 当前交付已接入可调速度、真实跳跃、蹲趴碰撞、失重推进和三指触控。十二节点和四闭环尚未全部建入，完整 V0.3 验收未通过。详细状态见 [V03_ACCEPTANCE.md](docs/V03_ACCEPTANCE.md)。本分支不自动发布线上站点。
+>
+> 新操作：Shift 冲刺，Space 跳跃，Ctrl 按住蹲下，Z 切换趴下。失重时 Space / Ctrl 上升和下降，X 制动。移动端右下方对应动作按钮支持同时按住。设置中的“自由实验”可调 1g 标称跳高和重力倍率，0g 启用推进；速度范围 1.5–7m/s。旧版设置和检查点可直接读取，保存时写入 v2 格式。
+>
+> 本阶段实测：110 项单元/集成、37 项开发浏览器、4 项生产浏览器测试通过，恢复点修正后另通过 1 项生产动作/复位测试；真机性能未验证。详见 [V0.3 技术报告](docs/V03_TECHNICAL_REPORT.md)。[完整源码 ZIP](https://github.com/jiangjinzhou01-ctrl/expert-disco/archive/refs/heads/feat/v03-gravity-freedom.zip) 包含模型源资产、测试和证据；不包含可重建的 node_modules 与 dist。
+
 # THRESHOLD / 门界 — Orbital
 
 可自由探索的实时空间作品：轨道舱与行星观测前厅 → 双向传送门 → INVERT 异常重力弧面 → 墙面终端 → 原路返回与装置共鸣。保留 G0-LAB 作为数学、透视和碰撞回归场景。

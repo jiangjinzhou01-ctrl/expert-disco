@@ -1,0 +1,1342 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/threshold-v02/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/workspace/threshold-v02/playwright.config.ts",
+    "rootDir": "/workspace/threshold-v02/src/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/threshold-v02/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/workspace/threshold-v02/src/tests/e2e",
+        "testIgnore": [
+          "**/production.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/threshold-v02/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/workspace/threshold-v02/src/tests/e2e",
+        "snapshotDir": "/workspace/threshold-v02/src/tests/e2e",
+        "testIgnore": "**/production.spec.ts",
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5180",
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "headless": true,
+          "launchOptions": {
+            "args": [
+              "--no-sandbox",
+              "--use-gl=angle",
+              "--use-angle=swiftshader",
+              "--enable-unsafe-swiftshader"
+            ]
+          },
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/playwright.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev -- --port 5180",
+      "url": "http://127.0.0.1:5180",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "chapter-audio.spec.ts",
+      "file": "chapter-audio.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "orbital sound stays gesture-locked, emits bounded spatial cues, and releases its audio context",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3518,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:38:24.466Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "eac79a6d18f50d265030-dfa479acc59f5be8fdd3",
+          "file": "chapter-audio.spec.ts",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "diagnostics.spec.ts",
+      "file": "diagnostics.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "F3 diagnostics exports a real JSON download and UI quality resizes the live target",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10578,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:38:28.158Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "80bb835772e7bc2f1ed9-5629a8819a31a2765f88",
+          "file": "diagnostics.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "Esc cancels held keyboard and mouse drag, development geometry remains observational",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10719,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:38:38.758Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "80bb835772e7bc2f1ed9-1e805cb8ab44bba51b44",
+          "file": "diagnostics.spec.ts",
+          "line": 51,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "input.spec.ts",
+      "file": "input.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "mobile uses distinct captured pointer IDs for simultaneous movement and look, with cancellation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4721,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:38:49.564Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "mobile-multitouch",
+                      "contentType": "application/json",
+                      "body": "ewogICJwb2ludGVycyI6IFsKICAgIHsKICAgICAgImlkIjogMiwKICAgICAgIngiOiAxNTAKICAgIH0sCiAgICB7CiAgICAgICJpZCI6IDMsCiAgICAgICJ4IjogODAwCiAgICB9CiAgXSwKICAiY2FwdHVyZWQiOiBbCiAgICB0cnVlLAogICAgdHJ1ZQogIF0sCiAgImR1cmluZyI6IHsKICAgICJpbnB1dCI6IHsKICAgICAgIm1vdmVtZW50IjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDEKICAgICAgfSwKICAgICAgInRvdWNoU3RhdGUiOiB7CiAgICAgICAgIm1vdmVBY3RpdmUiOiB0cnVlLAogICAgICAgICJsb29rQWN0aXZlIjogdHJ1ZSwKICAgICAgICAibW92ZVgiOiAwLAogICAgICAgICJtb3ZlWSI6IC01OAogICAgICB9LAogICAgICAidG91Y2giOiB0cnVlCiAgICB9LAogICAgInJlYWR5IjogdHJ1ZSwKICAgICJlcnJvciI6IG51bGwsCiAgICAid29ybGRJZCI6ICJBIiwKICAgICJwb3NpdGlvbiI6IFsKICAgICAgLTAuMDg5NTgxMjY2MDQ1NTcwMzcsCiAgICAgIDAuODc5OTg2ODIyNjA1MTMzMSwKICAgICAgLTMuNTkyOTg4NzI5NDc2OTI4NwogICAgXSwKICAgICJyb3RhdGlvbiI6IFsKICAgICAgLTAuMDI0OTI3MTIzNjg4MDc0OTE1LAogICAgICAwLjA3NDkwNjI5Mjk1ODc1MzI0LAogICAgICAwLjAwMTg3MzA0NzU1ODQ3MDI0MDQsCiAgICAgIDAuOTk2ODc3MjEyODM2NDk2MQogICAgXSwKICAgICJ5YXciOiAwLjE1LAogICAgInBpdGNoIjogLTAuMDUsCiAgICAidmVsb2NpdHkiOiBbCiAgICAgIC0wLjQ0ODMxNDM5NzQyMDc5NzY1LAogICAgICAwLAogICAgICAtMi45NjYzMTMyMzM4MDgxMjY2CiAgICBdLAogICAgInN0ZXAiOiAyNCwKICAgICJncm91bmRlZCI6IHRydWUsCiAgICAiZXZlbnRzIjogW10sCiAgICAibGFzdEV2ZW50SWQiOiAwLAogICAgInRyYW5zZmVyU3RhdGUiOiAiQVJNRUQiLAogICAgImxhc3RSZWplY3Rpb24iOiBudWxsLAogICAgInBvcnRhbCI6IHsKICAgICAgInNvdXJjZSI6ICJBLWRvb3IiLAogICAgICAiZGVzdGluYXRpb24iOiAiQi1kb29yIiwKICAgICAgInBvc2VzIjogWwogICAgICAgIHsKICAgICAgICAgICJpZCI6ICJBLWRvb3IiLAogICAgICAgICAgInBvc2l0aW9uIjogWwogICAgICAgICAgICAwLAogICAgICAgICAgICAxLjQ1LAogICAgICAgICAgICAtOAogICAgICAgICAgXSwKICAgICAgICAgICJyb3RhdGlvbiI6IFsKICAgICAgICAgICAgMCwKICAgICAgICAgICAgMCwKICAgICAgICAgICAgMCwKICAgICAgICAgICAgMQogICAgICAgICAgXQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogIkItZG9vciIsCiAgICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAgIDMyLAogICAgICAgICAgICAxLjQ1LAogICAgICAgICAgICAwCiAgICAgICAgICBdLAogICAgICAgICAgInJvdGF0aW9uIjogWwogICAgICAgICAgICAwLAogICAgICAgICAgICAwLjcwNzEwNjc4MTE4NjU0NzUsCiAgICAgICAgICAgIDAsCiAgICAgICAgICAgIDAuNzA3MTA2NzgxMTg2NTQ3NgogICAgICAgICAgXQogICAgICAgIH0KICAgICAgXSwKICAgICAgInNpZ25lZERpc3RhbmNlIjogNC40MDcwMTEyNzA1MjMwNzEsCiAgICAgICJjcm9zc2luZ0NvbmRpdGlvbiI6IGZhbHNlCiAgICB9LAogICAgInJlbmRlciI6IHsKICAgICAgInRhcmdldFdpZHRoIjogNzY1LAogICAgICAidGFyZ2V0SGVpZ2h0IjogNTEwLAogICAgICAicXVhbGl0eSI6IDAuODUsCiAgICAgICJtYWluRHJhd0NhbGxzIjogMTMsCiAgICAgICJvZmZzY3JlZW5EcmF3Q2FsbHMiOiAzMSwKICAgICAgImdlb21ldHJpZXMiOiA1LAogICAgICAidGV4dHVyZXMiOiAxLAogICAgICAicHJvZ3JhbXMiOiA1LAogICAgICAiY29udGV4dCI6ICJhY3RpdmUiLAogICAgICAicGFzc2VzIjogMSwKICAgICAgInRhcmdldFJlc2l6ZXMiOiAxCiAgICB9LAogICAgInBlcmZvcm1hbmNlIjogewogICAgICAic2FtcGxlcyI6IDI2LAogICAgICAiZnBzIjogMzMuMjk0OTE2MTIyMzI3NTQsCiAgICAgICJhdmVyYWdlTXMiOiAzMC4wMzQ2MTUzODQ3MDEzNTQsCiAgICAgICJwNTBNcyI6IDE2LjYwMDAwMDAwMTQ5MDExNiwKICAgICAgInA5NU1zIjogMTMxLjMwMDAwMDAwMDc0NTA2LAogICAgICAicDk5TXMiOiAxODAuMTAwMDAwMDAxNDkwMTIsCiAgICAgICJwaHlzaWNzTXMiOiAwLjA5OTk5OTk5Nzc2NDgyNTgyLAogICAgICAiZ3B1TXMiOiBudWxsCiAgICB9LAogICAgIm1vdmluZ1JlZmVyZW5jZSI6IFsKICAgICAgMzUuOCwKICAgICAgMC44NzA0NTQ4NDY2NTUwMTgsCiAgICAgIC0xLjI0ODU4Mzg4OTYyMTU2OQogICAgXSwKICAgICJlbGFwc2VkIjogMC4zOTk5OTk5OTk5OTk5OTk5NywKICAgICJkcm9wcGVkU2Vjb25kcyI6IDAuMTMzMzMzMzMzMzMzMzMzMzMKICB9LAogICJzdG9wcGVkIjogewogICAgImlucHV0IjogewogICAgICAibW92ZW1lbnQiOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMAogICAgICB9LAogICAgICAidG91Y2hTdGF0ZSI6IHsKICAgICAgICAibW92ZUFjdGl2ZSI6IGZhbHNlLAogICAgICAgICJsb29rQWN0aXZlIjogZmFsc2UsCiAgICAgICAgIm1vdmVYIjogMCwKICAgICAgICAibW92ZVkiOiAwCiAgICAgIH0sCiAgICAgICJ0b3VjaCI6IHRydWUKICAgIH0sCiAgICAicmVhZHkiOiB0cnVlLAogICAgImVycm9yIjogbnVsbCwKICAgICJ3b3JsZElkIjogIkEiLAogICAgInBvc2l0aW9uIjogWwogICAgICAtMC4xMzQzNjA0MDI4MjI0OTQ1LAogICAgICAwLjg3OTk2Nzg2ODMyODA5NDUsCiAgICAgIC0zLjg4OTU1MTYzOTU1Njg4NDgKICAgIF0sCiAgICAicm90YXRpb24iOiBbCiAgICAgIC0wLjAyNDkyNzEyMzY4ODA3NDkxNSwKICAgICAgMC4wNzQ5MDYyOTI5NTg3NTMyNCwKICAgICAgMC4wMDE4NzMwNDc1NTg0NzAyNDA0LAogICAgICAwLjk5Njg3NzIxMjgzNjQ5NjEKICAgIF0sCiAgICAieWF3IjogMC4xNSwKICAgICJwaXRjaCI6IC0wLjA1LAogICAgInZlbG9jaXR5IjogWwogICAgICAwLAogICAgICAwLAogICAgICAwCiAgICBdLAogICAgInN0ZXAiOiA0MiwKICAgICJncm91bmRlZCI6IHRydWUsCiAgICAiZXZlbnRzIjogW10sCiAgICAibGFzdEV2ZW50SWQiOiAwLAogICAgInRyYW5zZmVyU3RhdGUiOiAiQVJNRUQiLAogICAgImxhc3RSZWplY3Rpb24iOiBudWxsLAogICAgInBvcnRhbCI6IHsKICAgICAgInNvdXJjZSI6ICJBLWRvb3IiLAogICAgICAiZGVzdGluYXRpb24iOiAiQi1kb29yIiwKICAgICAgInBvc2VzIjogWwogICAgICAgIHsKICAgICAgICAgICJpZCI6ICJBLWRvb3IiLAogICAgICAgICAgInBvc2l0aW9uIjogWwogICAgICAgICAgICAwLAogICAgICAgICAgICAxLjQ1LAogICAgICAgICAgICAtOAogICAgICAgICAgXSwKICAgICAgICAgICJyb3RhdGlvbiI6IFsKICAgICAgICAgICAgMCwKICAgICAgICAgICAgMCwKICAgICAgICAgICAgMCwKICAgICAgICAgICAgMQogICAgICAgICAgXQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogIkItZG9vciIsCiAgICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAgIDMyLAogICAgICAgICAgICAxLjQ1LAogICAgICAgICAgICAwCiAgICAgICAgICBdLAogICAgICAgICAgInJvdGF0aW9uIjogWwogICAgICAgICAgICAwLAogICAgICAgICAgICAwLjcwNzEwNjc4MTE4NjU0NzUsCiAgICAgICAgICAgIDAsCiAgICAgICAgICAgIDAuNzA3MTA2NzgxMTg2NTQ3NgogICAgICAgICAgXQogICAgICAgIH0KICAgICAgXSwKICAgICAgInNpZ25lZERpc3RhbmNlIjogNC4xMTA0NDgzNjA0NDMxMTUsCiAgICAgICJjcm9zc2luZ0NvbmRpdGlvbiI6IGZhbHNlCiAgICB9LAogICAgInJlbmRlciI6IHsKICAgICAgInRhcmdldFdpZHRoIjogNzY1LAogICAgICAidGFyZ2V0SGVpZ2h0IjogNTEwLAogICAgICAicXVhbGl0eSI6IDAuODUsCiAgICAgICJtYWluRHJhd0NhbGxzIjogMTMsCiAgICAgICJvZmZzY3JlZW5EcmF3Q2FsbHMiOiAzMSwKICAgICAgImdlb21ldHJpZXMiOiA1LAogICAgICAidGV4dHVyZXMiOiAxLAogICAgICAicHJvZ3JhbXMiOiA1LAogICAgICAiY29udGV4dCI6ICJhY3RpdmUiLAogICAgICAicGFzc2VzIjogMSwKICAgICAgInRhcmdldFJlc2l6ZXMiOiAxCiAgICB9LAogICAgInBlcmZvcm1hbmNlIjogewogICAgICAic2FtcGxlcyI6IDI5LAogICAgICAiZnBzIjogMzEuMDY5MjA5MzQyMTE1NDQ2LAogICAgICAiYXZlcmFnZU1zIjogMzIuMTg2MjA2ODk2NjI4Nzk2LAogICAgICAicDUwTXMiOiAxNi42OTk5OTk5OTkyNTQ5NDIsCiAgICAgICJwOTVNcyI6IDEzMS4zMDAwMDAwMDA3NDUwNiwKICAgICAgInA5OU1zIjogMTgwLjEwMDAwMDAwMTQ5MDEyLAogICAgICAicGh5c2ljc01zIjogMCwKICAgICAgImdwdU1zIjogbnVsbAogICAgfSwKICAgICJtb3ZpbmdSZWZlcmVuY2UiOiBbCiAgICAgIDM1LjgsCiAgICAgIDAuOTE3ODI4OTUxNTg4NDU0LAogICAgICAtMS4yMTIxMDc1MzcyMzg4MjkyCiAgICBdLAogICAgImVsYXBzZWQiOiAwLjcwMDAwMDAwMDAwMDAwMDUsCiAgICAiZHJvcHBlZFNlY29uZHMiOiAwLjEzMzMzMzMzMzMzMzMzMzMzCiAgfQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "62978389d577d9e03e88-a9c63171b4f2343aee38",
+          "file": "input.spec.ts",
+          "line": 58,
+          "column": 1
+        },
+        {
+          "title": "mobile blur clears held movement and allows a fresh contact",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3710,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:38:54.342Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "62978389d577d9e03e88-a118ec84af6691090989",
+          "file": "input.spec.ts",
+          "line": 99,
+          "column": 3
+        },
+        {
+          "title": "mobile orientationchange clears held movement and allows a fresh contact",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3811,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:38:58.074Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "62978389d577d9e03e88-01634808a541a4ed5810",
+          "file": "input.spec.ts",
+          "line": 99,
+          "column": 3
+        },
+        {
+          "title": "mobile visibilitychange clears held movement and allows a fresh contact",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3622,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:39:01.937Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "62978389d577d9e03e88-6d22203283c9342f258a",
+          "file": "input.spec.ts",
+          "line": 99,
+          "column": 3
+        },
+        {
+          "title": "mobile touch controls traverse A → B, turn around, return, and reset the real capsule",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8370,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:39:05.568Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "62978389d577d9e03e88-1c198eed98f205385b19",
+          "file": "input.spec.ts",
+          "line": 122,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "lifecycle.spec.ts",
+      "file": "lifecycle.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "WebGL2 context loss/restoration resumes real portal passes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4094,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:39:13.963Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "context-restoration.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJpbnB1dCI6IHsKICAgICJtb3ZlbWVudCI6IHsKICAgICAgIngiOiAwLAogICAgICAieSI6IDAKICAgIH0sCiAgICAidG91Y2hTdGF0ZSI6IHsKICAgICAgIm1vdmVBY3RpdmUiOiBmYWxzZSwKICAgICAgImxvb2tBY3RpdmUiOiBmYWxzZSwKICAgICAgIm1vdmVYIjogMCwKICAgICAgIm1vdmVZIjogMAogICAgfSwKICAgICJ0b3VjaCI6IGZhbHNlCiAgfSwKICAicmVhZHkiOiB0cnVlLAogICJlcnJvciI6IG51bGwsCiAgIndvcmxkSWQiOiAiQSIsCiAgInBvc2l0aW9uIjogWwogICAgLTAuMDAwMDAxNTQyNjAyMTQ5MTI5Mzc5NSwKICAgIDAuODc5NTkyODM1OTAzMTY3NywKICAgIC0zLjAwMDAwMTkwNzM0ODYzMwogIF0sCiAgInJvdGF0aW9uIjogWwogICAgMCwKICAgIDAsCiAgICAwLAogICAgMQogIF0sCiAgInlhdyI6IDAsCiAgInBpdGNoIjogMCwKICAidmVsb2NpdHkiOiBbCiAgICAwLAogICAgMCwKICAgIDAKICBdLAogICJzdGVwIjogMzEsCiAgImdyb3VuZGVkIjogdHJ1ZSwKICAiZXZlbnRzIjogW10sCiAgImxhc3RFdmVudElkIjogMCwKICAidHJhbnNmZXJTdGF0ZSI6ICJBUk1FRCIsCiAgImxhc3RSZWplY3Rpb24iOiBudWxsLAogICJwb3J0YWwiOiB7CiAgICAic291cmNlIjogIkEtZG9vciIsCiAgICAiZGVzdGluYXRpb24iOiAiQi1kb29yIiwKICAgICJwb3NlcyI6IFsKICAgICAgewogICAgICAgICJpZCI6ICJBLWRvb3IiLAogICAgICAgICJwb3NpdGlvbiI6IFsKICAgICAgICAgIDAsCiAgICAgICAgICAxLjQ1LAogICAgICAgICAgLTgKICAgICAgICBdLAogICAgICAgICJyb3RhdGlvbiI6IFsKICAgICAgICAgIDAsCiAgICAgICAgICAwLAogICAgICAgICAgMCwKICAgICAgICAgIDEKICAgICAgICBdCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAiaWQiOiAiQi1kb29yIiwKICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAzMiwKICAgICAgICAgIDEuNDUsCiAgICAgICAgICAwCiAgICAgICAgXSwKICAgICAgICAicm90YXRpb24iOiBbCiAgICAgICAgICAwLAogICAgICAgICAgMC43MDcxMDY3ODExODY1NDc1LAogICAgICAgICAgMCwKICAgICAgICAgIDAuNzA3MTA2NzgxMTg2NTQ3NgogICAgICAgIF0KICAgICAgfQogICAgXSwKICAgICJzaWduZWREaXN0YW5jZSI6IDQuOTk5OTk4MDkyNjUxMzY3LAogICAgImNyb3NzaW5nQ29uZGl0aW9uIjogZmFsc2UKICB9LAogICJyZW5kZXIiOiB7CiAgICAidGFyZ2V0V2lkdGgiOiAxNjMyLAogICAgInRhcmdldEhlaWdodCI6IDkxOCwKICAgICJxdWFsaXR5IjogMC44NSwKICAgICJtYWluRHJhd0NhbGxzIjogMTMsCiAgICAib2Zmc2NyZWVuRHJhd0NhbGxzIjogMzEsCiAgICAiZ2VvbWV0cmllcyI6IDUsCiAgICAidGV4dHVyZXMiOiAxLAogICAgInByb2dyYW1zIjogNSwKICAgICJjb250ZXh0IjogImFjdGl2ZSIsCiAgICAicGFzc2VzIjogMSwKICAgICJ0YXJnZXRSZXNpemVzIjogMQogIH0sCiAgInBlcmZvcm1hbmNlIjogewogICAgInNhbXBsZXMiOiAxMywKICAgICJmcHMiOiA4LjczODkwODMwODY5ODI2MiwKICAgICJhdmVyYWdlTXMiOiAxMTQuNDMwNzY5MjMwNTk3MjksCiAgICAicDUwTXMiOiA0MS4zMDAwMDAwMDA3NDUwNiwKICAgICJwOTVNcyI6IDc5NC40MDAwMDAwMDIyMzUyLAogICAgInA5OU1zIjogNzk0LjQwMDAwMDAwMjIzNTIsCiAgICAicGh5c2ljc01zIjogMC4zMDAwMDAwMDA3NDUwNTgwNiwKICAgICJncHVNcyI6IG51bGwKICB9LAogICJtb3ZpbmdSZWZlcmVuY2UiOiBbCiAgICAzNS44LAogICAgMC44ODk2ODQ1NjAyODkxMjY5LAogICAgLTEuMjM0MDg4Nzg3MTU2MzU2MgogIF0sCiAgImVsYXBzZWQiOiAwLjUxNjY2NjY2NjY2NjY2NjYsCiAgImRyb3BwZWRTZWNvbmRzIjogMC44NDQ0MDAwMDAwMDIyMzUzCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f1785dee40219527314-8972f4071f6c8248062c",
+          "file": "lifecycle.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "resize and render quality retain aspect and bounded GPU resources; disposal releases resources",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8490,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:39:18.067Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "resize-resources.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJpbml0aWFsIjogewogICAgInRhcmdldFdpZHRoIjogMTYzMiwKICAgICJ0YXJnZXRIZWlnaHQiOiA5MTgsCiAgICAicXVhbGl0eSI6IDAuODUsCiAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgIm9mZnNjcmVlbkRyYXdDYWxscyI6IDMxLAogICAgImdlb21ldHJpZXMiOiA1LAogICAgInRleHR1cmVzIjogMSwKICAgICJwcm9ncmFtcyI6IDUsCiAgICAiY29udGV4dCI6ICJhY3RpdmUiLAogICAgInBhc3NlcyI6IDEsCiAgICAidGFyZ2V0UmVzaXplcyI6IDEKICB9LAogICJzYW1wbGVzIjogWwogICAgewogICAgICAidGFyZ2V0V2lkdGgiOiAxMDg4LAogICAgICAidGFyZ2V0SGVpZ2h0IjogNjEyLAogICAgICAicXVhbGl0eSI6IDAuODUsCiAgICAgICJtYWluRHJhd0NhbGxzIjogMTMsCiAgICAgICJvZmZzY3JlZW5EcmF3Q2FsbHMiOiAzMSwKICAgICAgImdlb21ldHJpZXMiOiA1LAogICAgICAidGV4dHVyZXMiOiAxLAogICAgICAicHJvZ3JhbXMiOiA1LAogICAgICAiY29udGV4dCI6ICJhY3RpdmUiLAogICAgICAicGFzc2VzIjogMSwKICAgICAgInRhcmdldFJlc2l6ZXMiOiAyCiAgICB9LAogICAgewogICAgICAidGFyZ2V0V2lkdGgiOiA4MTYsCiAgICAgICJ0YXJnZXRIZWlnaHQiOiA1NDQsCiAgICAgICJxdWFsaXR5IjogMC44NSwKICAgICAgIm1haW5EcmF3Q2FsbHMiOiAxMywKICAgICAgIm9mZnNjcmVlbkRyYXdDYWxscyI6IDMxLAogICAgICAiZ2VvbWV0cmllcyI6IDUsCiAgICAgICJ0ZXh0dXJlcyI6IDEsCiAgICAgICJwcm9ncmFtcyI6IDUsCiAgICAgICJjb250ZXh0IjogImFjdGl2ZSIsCiAgICAgICJwYXNzZXMiOiAxLAogICAgICAidGFyZ2V0UmVzaXplcyI6IDMKICAgIH0sCiAgICB7CiAgICAgICJ0YXJnZXRXaWR0aCI6IDkxOCwKICAgICAgInRhcmdldEhlaWdodCI6IDYxMiwKICAgICAgInF1YWxpdHkiOiAwLjg1LAogICAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgICAib2Zmc2NyZWVuRHJhd0NhbGxzIjogMzEsCiAgICAgICJnZW9tZXRyaWVzIjogNSwKICAgICAgInRleHR1cmVzIjogMSwKICAgICAgInByb2dyYW1zIjogNSwKICAgICAgImNvbnRleHQiOiAiYWN0aXZlIiwKICAgICAgInBhc3NlcyI6IDEsCiAgICAgICJ0YXJnZXRSZXNpemVzIjogNAogICAgfSwKICAgIHsKICAgICAgInRhcmdldFdpZHRoIjogMTM2MCwKICAgICAgInRhcmdldEhlaWdodCI6IDc2NSwKICAgICAgInF1YWxpdHkiOiAwLjg1LAogICAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgICAib2Zmc2NyZWVuRHJhd0NhbGxzIjogMzEsCiAgICAgICJnZW9tZXRyaWVzIjogNSwKICAgICAgInRleHR1cmVzIjogMSwKICAgICAgInByb2dyYW1zIjogNSwKICAgICAgImNvbnRleHQiOiAiYWN0aXZlIiwKICAgICAgInBhc3NlcyI6IDEsCiAgICAgICJ0YXJnZXRSZXNpemVzIjogNQogICAgfSwKICAgIHsKICAgICAgInRhcmdldFdpZHRoIjogMTYzMiwKICAgICAgInRhcmdldEhlaWdodCI6IDkxOCwKICAgICAgInF1YWxpdHkiOiAwLjg1LAogICAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgICAib2Zmc2NyZWVuRHJhd0NhbGxzIjogMzEsCiAgICAgICJnZW9tZXRyaWVzIjogNSwKICAgICAgInRleHR1cmVzIjogMSwKICAgICAgInByb2dyYW1zIjogNSwKICAgICAgImNvbnRleHQiOiAiYWN0aXZlIiwKICAgICAgInBhc3NlcyI6IDEsCiAgICAgICJ0YXJnZXRSZXNpemVzIjogNgogICAgfSwKICAgIHsKICAgICAgInRhcmdldFdpZHRoIjogMTA4OCwKICAgICAgInRhcmdldEhlaWdodCI6IDYxMiwKICAgICAgInF1YWxpdHkiOiAwLjg1LAogICAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgICAib2Zmc2NyZWVuRHJhd0NhbGxzIjogMzEsCiAgICAgICJnZW9tZXRyaWVzIjogNSwKICAgICAgInRleHR1cmVzIjogMSwKICAgICAgInByb2dyYW1zIjogNSwKICAgICAgImNvbnRleHQiOiAiYWN0aXZlIiwKICAgICAgInBhc3NlcyI6IDEsCiAgICAgICJ0YXJnZXRSZXNpemVzIjogNwogICAgfQogIF0sCiAgInF1YWxpdHkiOiB7CiAgICAidGFyZ2V0V2lkdGgiOiA2NDAsCiAgICAidGFyZ2V0SGVpZ2h0IjogMzYwLAogICAgInF1YWxpdHkiOiAwLjUsCiAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgIm9mZnNjcmVlbkRyYXdDYWxscyI6IDMxLAogICAgImdlb21ldHJpZXMiOiA1LAogICAgInRleHR1cmVzIjogMSwKICAgICJwcm9ncmFtcyI6IDUsCiAgICAiY29udGV4dCI6ICJhY3RpdmUiLAogICAgInBhc3NlcyI6IDEsCiAgICAidGFyZ2V0UmVzaXplcyI6IDgKICB9LAogICJkaXNwb3NlZCI6IHsKICAgICJnZW9tZXRyaWVzIjogMCwKICAgICJ0ZXh0dXJlcyI6IDAsCiAgICAicHJvZ3JhbXMiOiAwCiAgfQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f1785dee40219527314-b7df8a524beb07bdf3a6",
+          "file": "lifecycle.spec.ts",
+          "line": 26,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "orbital.spec.ts",
+      "file": "orbital.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "orbital product: highest default, closable diagnostics, saved choices, help and real canvas photo",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 60663,
+                  "error": {
+                    "message": "TimeoutError: page.waitForFunction: Timeout 60000ms exceeded.",
+                    "stack": "TimeoutError: page.waitForFunction: Timeout 60000ms exceeded.\n    at chapterReady (/workspace/threshold-v02/src/tests/e2e/v02-helpers.ts:4:99)\n    at /workspace/threshold-v02/src/tests/e2e/orbital.spec.ts:19:3",
+                    "location": {
+                      "file": "/workspace/threshold-v02/src/tests/e2e/v02-helpers.ts",
+                      "column": 99,
+                      "line": 4
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39mv02-helpers.ts:4\n\n \u001b[90m 2 |\u001b[39m \u001b[36mimport\u001b[39m type{\u001b[33mChapterRuntime\u001b[39m}\u001b[36mfrom\u001b[39m\u001b[32m'../../chapter/runtime/ChapterRuntime'\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 3 |\u001b[39m \u001b[36mexport\u001b[39m type \u001b[33mChapterSnapshot\u001b[39m\u001b[33m=\u001b[39m\u001b[33mExtract\u001b[39m\u001b[33m<\u001b[39m\u001b[33mReturnType\u001b[39m\u001b[33m<\u001b[39m\u001b[33mChapterRuntime\u001b[39m[\u001b[32m'snapshot'\u001b[39m]\u001b[33m>\u001b[39m\u001b[33m,\u001b[39m{ready\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m}\u001b[33m>\u001b[39m\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m chapterReady(page\u001b[33m:\u001b[39m\u001b[33mPage\u001b[39m){\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/?mode=chapter&test=1'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForFunction(()\u001b[33m=>\u001b[39mwindow\u001b[33m.\u001b[39m__V02_TEST__\u001b[33m?.\u001b[39msnapshot()\u001b[33m.\u001b[39mready\u001b[33m,\u001b[39m{}\u001b[33m,\u001b[39m{timeout\u001b[33m:\u001b[39m\u001b[35m60000\u001b[39m})\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(()\u001b[33m=>\u001b[39mwindow\u001b[33m.\u001b[39m__V02_TEST__\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mpause(\u001b[36mtrue\u001b[39m))\u001b[33m;\u001b[39m}\n \u001b[90m   |\u001b[39m                                                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m chapterRead(page\u001b[33m:\u001b[39m\u001b[33mPage\u001b[39m)\u001b[33m:\u001b[39m\u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[33mChapterSnapshot\u001b[39m\u001b[33m>\u001b[39m{\u001b[36mconst\u001b[39m s\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(()\u001b[33m=>\u001b[39mwindow\u001b[33m.\u001b[39m__V02_TEST__\u001b[33m!\u001b[39m\u001b[33m.\u001b[39msnapshot())\u001b[33m;\u001b[39m\u001b[36mif\u001b[39m(\u001b[33m!\u001b[39ms\u001b[33m.\u001b[39mready)\u001b[36mthrow\u001b[39m \u001b[33mError\u001b[39m(s\u001b[33m.\u001b[39merror\u001b[33m??\u001b[39m\u001b[32m'Not ready'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mreturn\u001b[39m s\u001b[33m;\u001b[39m}\n \u001b[90m 6 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36mconst\u001b[39m routeStages\u001b[33m=\u001b[39m[\u001b[32m'entryhall'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'around'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'nave'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'align'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'portalout'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'arcroom'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'landing'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'terminal'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'backlanding'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'ground'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'portalin'\u001b[39m] \u001b[36mas\u001b[39m \u001b[36mconst\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m \u001b[36mexport\u001b[39m type \u001b[33mRouteStage\u001b[39m\u001b[33m=\u001b[39m\u001b[36mtypeof\u001b[39m routeStages[number]\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/threshold-v02/src/tests/e2e/v02-helpers.ts",
+                        "column": 99,
+                        "line": 4
+                      },
+                      "message": "TimeoutError: page.waitForFunction: Timeout 60000ms exceeded.\n\n   at v02-helpers.ts:4\n\n  2 | import type{ChapterRuntime}from'../../chapter/runtime/ChapterRuntime';\n  3 | export type ChapterSnapshot=Extract<ReturnType<ChapterRuntime['snapshot']>,{ready:true}>;\n> 4 | export async function chapterReady(page:Page){await page.goto('/?mode=chapter&test=1');await page.waitForFunction(()=>window.__V02_TEST__?.snapshot().ready,{},{timeout:60000});await page.evaluate(()=>window.__V02_TEST__!.pause(true));}\n    |                                                                                                   ^\n  5 | export async function chapterRead(page:Page):Promise<ChapterSnapshot>{const s=await page.evaluate(()=>window.__V02_TEST__!.snapshot());if(!s.ready)throw Error(s.error??'Not ready');return s;}\n  6 | export const routeStages=['entryhall','around','nave','align','portalout','arcroom','landing','terminal','backlanding','ground','portalin'] as const;\n  7 | export type RouteStage=typeof routeStages[number];\n    at chapterReady (/workspace/threshold-v02/src/tests/e2e/v02-helpers.ts:4:99)\n    at /workspace/threshold-v02/src/tests/e2e/orbital.spec.ts:19:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:39:26.579Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/threshold-v02/test-results/orbital-orbital-product-hi-23e2c--help-and-real-canvas-photo/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/threshold-v02/test-results/orbital-orbital-product-hi-23e2c--help-and-real-canvas-photo/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/threshold-v02/test-results/orbital-orbital-product-hi-23e2c--help-and-real-canvas-photo/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/threshold-v02/src/tests/e2e/v02-helpers.ts",
+                    "column": 99,
+                    "line": 4
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f0b14b36ebd836448057-b4cab49db2b87c895209",
+          "file": "orbital.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "orbital streaming: deferred GLBs retain proxies, visible portal requests destination, hidden content evicts",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 60713,
+                  "error": {
+                    "message": "TimeoutError: page.waitForFunction: Timeout 60000ms exceeded.",
+                    "stack": "TimeoutError: page.waitForFunction: Timeout 60000ms exceeded.\n    at chapterReady (/workspace/threshold-v02/src/tests/e2e/v02-helpers.ts:4:99)\n    at /workspace/threshold-v02/src/tests/e2e/orbital.spec.ts:114:5",
+                    "location": {
+                      "file": "/workspace/threshold-v02/src/tests/e2e/v02-helpers.ts",
+                      "column": 99,
+                      "line": 4
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39mv02-helpers.ts:4\n\n \u001b[90m 2 |\u001b[39m \u001b[36mimport\u001b[39m type{\u001b[33mChapterRuntime\u001b[39m}\u001b[36mfrom\u001b[39m\u001b[32m'../../chapter/runtime/ChapterRuntime'\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 3 |\u001b[39m \u001b[36mexport\u001b[39m type \u001b[33mChapterSnapshot\u001b[39m\u001b[33m=\u001b[39m\u001b[33mExtract\u001b[39m\u001b[33m<\u001b[39m\u001b[33mReturnType\u001b[39m\u001b[33m<\u001b[39m\u001b[33mChapterRuntime\u001b[39m[\u001b[32m'snapshot'\u001b[39m]\u001b[33m>\u001b[39m\u001b[33m,\u001b[39m{ready\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m}\u001b[33m>\u001b[39m\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m chapterReady(page\u001b[33m:\u001b[39m\u001b[33mPage\u001b[39m){\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/?mode=chapter&test=1'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForFunction(()\u001b[33m=>\u001b[39mwindow\u001b[33m.\u001b[39m__V02_TEST__\u001b[33m?.\u001b[39msnapshot()\u001b[33m.\u001b[39mready\u001b[33m,\u001b[39m{}\u001b[33m,\u001b[39m{timeout\u001b[33m:\u001b[39m\u001b[35m60000\u001b[39m})\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(()\u001b[33m=>\u001b[39mwindow\u001b[33m.\u001b[39m__V02_TEST__\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mpause(\u001b[36mtrue\u001b[39m))\u001b[33m;\u001b[39m}\n \u001b[90m   |\u001b[39m                                                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m chapterRead(page\u001b[33m:\u001b[39m\u001b[33mPage\u001b[39m)\u001b[33m:\u001b[39m\u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[33mChapterSnapshot\u001b[39m\u001b[33m>\u001b[39m{\u001b[36mconst\u001b[39m s\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(()\u001b[33m=>\u001b[39mwindow\u001b[33m.\u001b[39m__V02_TEST__\u001b[33m!\u001b[39m\u001b[33m.\u001b[39msnapshot())\u001b[33m;\u001b[39m\u001b[36mif\u001b[39m(\u001b[33m!\u001b[39ms\u001b[33m.\u001b[39mready)\u001b[36mthrow\u001b[39m \u001b[33mError\u001b[39m(s\u001b[33m.\u001b[39merror\u001b[33m??\u001b[39m\u001b[32m'Not ready'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mreturn\u001b[39m s\u001b[33m;\u001b[39m}\n \u001b[90m 6 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36mconst\u001b[39m routeStages\u001b[33m=\u001b[39m[\u001b[32m'entryhall'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'around'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'nave'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'align'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'portalout'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'arcroom'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'landing'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'terminal'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'backlanding'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'ground'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'portalin'\u001b[39m] \u001b[36mas\u001b[39m \u001b[36mconst\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m \u001b[36mexport\u001b[39m type \u001b[33mRouteStage\u001b[39m\u001b[33m=\u001b[39m\u001b[36mtypeof\u001b[39m routeStages[number]\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/threshold-v02/src/tests/e2e/v02-helpers.ts",
+                        "column": 99,
+                        "line": 4
+                      },
+                      "message": "TimeoutError: page.waitForFunction: Timeout 60000ms exceeded.\n\n   at v02-helpers.ts:4\n\n  2 | import type{ChapterRuntime}from'../../chapter/runtime/ChapterRuntime';\n  3 | export type ChapterSnapshot=Extract<ReturnType<ChapterRuntime['snapshot']>,{ready:true}>;\n> 4 | export async function chapterReady(page:Page){await page.goto('/?mode=chapter&test=1');await page.waitForFunction(()=>window.__V02_TEST__?.snapshot().ready,{},{timeout:60000});await page.evaluate(()=>window.__V02_TEST__!.pause(true));}\n    |                                                                                                   ^\n  5 | export async function chapterRead(page:Page):Promise<ChapterSnapshot>{const s=await page.evaluate(()=>window.__V02_TEST__!.snapshot());if(!s.ready)throw Error(s.error??'Not ready');return s;}\n  6 | export const routeStages=['entryhall','around','nave','align','portalout','arcroom','landing','terminal','backlanding','ground','portalin'] as const;\n  7 | export type RouteStage=typeof routeStages[number];\n    at chapterReady (/workspace/threshold-v02/src/tests/e2e/v02-helpers.ts:4:99)\n    at /workspace/threshold-v02/src/tests/e2e/orbital.spec.ts:114:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:41:29.707Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/threshold-v02/test-results/orbital-orbital-streaming--3061a-ation-hidden-content-evicts/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/threshold-v02/test-results/orbital-orbital-streaming--3061a-ation-hidden-content-evicts/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/threshold-v02/test-results/orbital-orbital-streaming--3061a-ation-hidden-content-evicts/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/threshold-v02/src/tests/e2e/v02-helpers.ts",
+                    "column": 99,
+                    "line": 4
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f0b14b36ebd836448057-bcb876032295ec55dced",
+          "file": "orbital.spec.ts",
+          "line": 106,
+          "column": 1
+        },
+        {
+          "title": "orbital streaming: failed optional detail preserves structural physics and records error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "interrupted",
+                  "duration": 58950,
+                  "error": {
+                    "message": "Error: browserContext.close: Test ended.\nBrowser logs:\n\n<launching> /home/agent/.cache/ms-playwright/chromium_headless_shell-1254/chrome-headless-shell-linux64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,HttpsUpgrades,HttpsFirstBalancedModeAutoEnable,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,AvoidCorsURLLoaderRestartOnRedirect,TcpPortRandomizationWin,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,PreconnectToSearch,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface,SkipListAccountsWithoutGaiaCookies --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --enable-unsafe-swiftshader --edge-skip-compat-layer-relaunch --disable-stack-profiler --disable-infobars --disable-sync --do-not-de-elevate --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --no-sandbox --use-gl=angle --use-angle=swiftshader --enable-unsafe-swiftshader --user-data-dir=/tmp/playwright_chromiumdev_profile-hgLXjp --remote-debugging-pipe --no-startup-window\n<launched> pid=7569\n[pid=7569][err] [1108/054231.348698:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=7569][err] [1108/054231.348947:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=7569][err] [1108/054231.349723:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=7569][err] [1108/054231.349751:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=7569][err] [1108/054231.353141:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=7569][err] [1108/054231.353741:WARNING:dbus/object_proxy.cc:439] Failed to connect to NameOwnerChanged signal for object: /org/freedesktop/portal/desktop\n[pid=7569][err] [1108/054231.353756:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=7569][err] [1108/054231.353763:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=7569][err] [1108/054231.362169:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=7569][err] [1108/054231.362249:WARNING:device/bluetooth/dbus/bluez_dbus_manager.cc:209] Floss manager service not available, cannot set Floss enable/disable.\n[pid=7569][err] [1108/054231.362526:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=7569][err] [1108/054231.364518:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=7569][err] [1108/054231.365921:WARNING:media/gpu/vaapi/vaapi_wrapper.cc:1652] drmGetDevices2() has not found any devices\n[pid=7569][err] [1108/054231.367791:WARNING:sandbox/policy/linux/sandbox_linux.cc:405] InitializeSandbox() called with multiple threads in process gpu-process.\n[pid=7569][err] [1108/054231.490130:INFO:CONSOLE:934] \"[vite] connecting...\", source: http://127.0.0.1:5180/@vite/client (934)\n[pid=7569][err] [1108/054231.498325:INFO:CONSOLE:1043] \"[vite] connected.\", source: http://127.0.0.1:5180/@vite/client (1043)\n[pid=7569][err] [1108/054231.607829:INFO:CONSOLE:15614] \"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold\", source: http://127.0.0.1:5180/.vite-cache/deps/react-dom_client.js?v=0c6624a8 (15614)\n[pid=7569][err] [1108/054232.336203:INFO:CONSOLE:364] \"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569][err] [1108/054232.452853:INFO:CONSOLE:373] \"Uncaught TypeError: Cannot read properties of undefined (reading 'clearBufferedActions')\", source: http://127.0.0.1:5180/src/chapter/ui/ChapterView.tsx?t=1794116281904 (373)\n[pid=7569][err] [1108/054232.460164:INFO:CONSOLE:364] \"%s\n[pid=7569][err] \n[pid=7569][err] %s\n[pid=7569][err]  An error occurred in the <ChapterView> component. Consider adding an error boundary to your tree to customize error handling behavior.\n[pid=7569][err] Visit https://react.dev/link/error-boundaries to learn more about error boundaries.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569][err] [1108/054239.047662:INFO:CONSOLE:1012] \"[vite] hot updated: /src/chapter/ui/ChapterView.tsx\", source: http://127.0.0.1:5180/@vite/client (1012)\n[pid=7569][err] [1108/054239.128139:INFO:CONSOLE:364] \"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569][err] [1108/054239.169983:INFO:CONSOLE:373] \"Uncaught TypeError: Cannot read properties of undefined (reading 'clearBufferedActions')\", source: http://127.0.0.1:5180/src/chapter/ui/ChapterView.tsx?t=1794116559016 (373)\n[pid=7569][err] [1108/054239.176039:INFO:CONSOLE:364] \"%s\n[pid=7569][err] \n[pid=7569][err] %s\n[pid=7569][err]  An error occurred in the <ChapterView> component. Consider adding an error boundary to your tree to customize error handling behavior.\n[pid=7569][err] Visit https://react.dev/link/error-boundaries to learn more about error boundaries.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569][err] [1108/054322.561247:INFO:CONSOLE:1012] \"[vite] hot updated: /src/chapter/ui/ChapterView.tsx\", source: http://127.0.0.1:5180/@vite/client (1012)\n[pid=7569][err] [1108/054322.643477:INFO:CONSOLE:364] \"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569][err] [1108/054323.637842:INFO:CONSOLE:364] \"THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569][err] [1108/054326.325777:INFO:CONSOLE:364] \"THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569] <gracefully close start>",
+                    "stack": "Error: browserContext.close: Test ended.\nBrowser logs:\n\n<launching> /home/agent/.cache/ms-playwright/chromium_headless_shell-1254/chrome-headless-shell-linux64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,HttpsUpgrades,HttpsFirstBalancedModeAutoEnable,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,AvoidCorsURLLoaderRestartOnRedirect,TcpPortRandomizationWin,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,PreconnectToSearch,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface,SkipListAccountsWithoutGaiaCookies --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --enable-unsafe-swiftshader --edge-skip-compat-layer-relaunch --disable-stack-profiler --disable-infobars --disable-sync --do-not-de-elevate --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --no-sandbox --use-gl=angle --use-angle=swiftshader --enable-unsafe-swiftshader --user-data-dir=/tmp/playwright_chromiumdev_profile-hgLXjp --remote-debugging-pipe --no-startup-window\n<launched> pid=7569\n[pid=7569][err] [1108/054231.348698:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=7569][err] [1108/054231.348947:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=7569][err] [1108/054231.349723:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=7569][err] [1108/054231.349751:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=7569][err] [1108/054231.353141:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=7569][err] [1108/054231.353741:WARNING:dbus/object_proxy.cc:439] Failed to connect to NameOwnerChanged signal for object: /org/freedesktop/portal/desktop\n[pid=7569][err] [1108/054231.353756:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=7569][err] [1108/054231.353763:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=7569][err] [1108/054231.362169:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=7569][err] [1108/054231.362249:WARNING:device/bluetooth/dbus/bluez_dbus_manager.cc:209] Floss manager service not available, cannot set Floss enable/disable.\n[pid=7569][err] [1108/054231.362526:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=7569][err] [1108/054231.364518:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=7569][err] [1108/054231.365921:WARNING:media/gpu/vaapi/vaapi_wrapper.cc:1652] drmGetDevices2() has not found any devices\n[pid=7569][err] [1108/054231.367791:WARNING:sandbox/policy/linux/sandbox_linux.cc:405] InitializeSandbox() called with multiple threads in process gpu-process.\n[pid=7569][err] [1108/054231.490130:INFO:CONSOLE:934] \"[vite] connecting...\", source: http://127.0.0.1:5180/@vite/client (934)\n[pid=7569][err] [1108/054231.498325:INFO:CONSOLE:1043] \"[vite] connected.\", source: http://127.0.0.1:5180/@vite/client (1043)\n[pid=7569][err] [1108/054231.607829:INFO:CONSOLE:15614] \"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold\", source: http://127.0.0.1:5180/.vite-cache/deps/react-dom_client.js?v=0c6624a8 (15614)\n[pid=7569][err] [1108/054232.336203:INFO:CONSOLE:364] \"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569][err] [1108/054232.452853:INFO:CONSOLE:373] \"Uncaught TypeError: Cannot read properties of undefined (reading 'clearBufferedActions')\", source: http://127.0.0.1:5180/src/chapter/ui/ChapterView.tsx?t=1794116281904 (373)\n[pid=7569][err] [1108/054232.460164:INFO:CONSOLE:364] \"%s\n[pid=7569][err] \n[pid=7569][err] %s\n[pid=7569][err]  An error occurred in the <ChapterView> component. Consider adding an error boundary to your tree to customize error handling behavior.\n[pid=7569][err] Visit https://react.dev/link/error-boundaries to learn more about error boundaries.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569][err] [1108/054239.047662:INFO:CONSOLE:1012] \"[vite] hot updated: /src/chapter/ui/ChapterView.tsx\", source: http://127.0.0.1:5180/@vite/client (1012)\n[pid=7569][err] [1108/054239.128139:INFO:CONSOLE:364] \"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569][err] [1108/054239.169983:INFO:CONSOLE:373] \"Uncaught TypeError: Cannot read properties of undefined (reading 'clearBufferedActions')\", source: http://127.0.0.1:5180/src/chapter/ui/ChapterView.tsx?t=1794116559016 (373)\n[pid=7569][err] [1108/054239.176039:INFO:CONSOLE:364] \"%s\n[pid=7569][err] \n[pid=7569][err] %s\n[pid=7569][err]  An error occurred in the <ChapterView> component. Consider adding an error boundary to your tree to customize error handling behavior.\n[pid=7569][err] Visit https://react.dev/link/error-boundaries to learn more about error boundaries.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569][err] [1108/054322.561247:INFO:CONSOLE:1012] \"[vite] hot updated: /src/chapter/ui/ChapterView.tsx\", source: http://127.0.0.1:5180/@vite/client (1012)\n[pid=7569][err] [1108/054322.643477:INFO:CONSOLE:364] \"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569][err] [1108/054323.637842:INFO:CONSOLE:364] \"THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569][err] [1108/054326.325777:INFO:CONSOLE:364] \"THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569] <gracefully close start>"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserContext.close: Test ended.\nBrowser logs:\n\n<launching> /home/agent/.cache/ms-playwright/chromium_headless_shell-1254/chrome-headless-shell-linux64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,HttpsUpgrades,HttpsFirstBalancedModeAutoEnable,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,AvoidCorsURLLoaderRestartOnRedirect,TcpPortRandomizationWin,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,PreconnectToSearch,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface,SkipListAccountsWithoutGaiaCookies --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --enable-unsafe-swiftshader --edge-skip-compat-layer-relaunch --disable-stack-profiler --disable-infobars --disable-sync --do-not-de-elevate --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --no-sandbox --use-gl=angle --use-angle=swiftshader --enable-unsafe-swiftshader --user-data-dir=/tmp/playwright_chromiumdev_profile-hgLXjp --remote-debugging-pipe --no-startup-window\n<launched> pid=7569\n[pid=7569][err] [1108/054231.348698:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=7569][err] [1108/054231.348947:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=7569][err] [1108/054231.349723:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=7569][err] [1108/054231.349751:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=7569][err] [1108/054231.353141:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=7569][err] [1108/054231.353741:WARNING:dbus/object_proxy.cc:439] Failed to connect to NameOwnerChanged signal for object: /org/freedesktop/portal/desktop\n[pid=7569][err] [1108/054231.353756:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=7569][err] [1108/054231.353763:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=7569][err] [1108/054231.362169:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=7569][err] [1108/054231.362249:WARNING:device/bluetooth/dbus/bluez_dbus_manager.cc:209] Floss manager service not available, cannot set Floss enable/disable.\n[pid=7569][err] [1108/054231.362526:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=7569][err] [1108/054231.364518:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=7569][err] [1108/054231.365921:WARNING:media/gpu/vaapi/vaapi_wrapper.cc:1652] drmGetDevices2() has not found any devices\n[pid=7569][err] [1108/054231.367791:WARNING:sandbox/policy/linux/sandbox_linux.cc:405] InitializeSandbox() called with multiple threads in process gpu-process.\n[pid=7569][err] [1108/054231.490130:INFO:CONSOLE:934] \"[vite] connecting...\", source: http://127.0.0.1:5180/@vite/client (934)\n[pid=7569][err] [1108/054231.498325:INFO:CONSOLE:1043] \"[vite] connected.\", source: http://127.0.0.1:5180/@vite/client (1043)\n[pid=7569][err] [1108/054231.607829:INFO:CONSOLE:15614] \"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold\", source: http://127.0.0.1:5180/.vite-cache/deps/react-dom_client.js?v=0c6624a8 (15614)\n[pid=7569][err] [1108/054232.336203:INFO:CONSOLE:364] \"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569][err] [1108/054232.452853:INFO:CONSOLE:373] \"Uncaught TypeError: Cannot read properties of undefined (reading 'clearBufferedActions')\", source: http://127.0.0.1:5180/src/chapter/ui/ChapterView.tsx?t=1794116281904 (373)\n[pid=7569][err] [1108/054232.460164:INFO:CONSOLE:364] \"%s\n[pid=7569][err] \n[pid=7569][err] %s\n[pid=7569][err]  An error occurred in the <ChapterView> component. Consider adding an error boundary to your tree to customize error handling behavior.\n[pid=7569][err] Visit https://react.dev/link/error-boundaries to learn more about error boundaries.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569][err] [1108/054239.047662:INFO:CONSOLE:1012] \"[vite] hot updated: /src/chapter/ui/ChapterView.tsx\", source: http://127.0.0.1:5180/@vite/client (1012)\n[pid=7569][err] [1108/054239.128139:INFO:CONSOLE:364] \"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569][err] [1108/054239.169983:INFO:CONSOLE:373] \"Uncaught TypeError: Cannot read properties of undefined (reading 'clearBufferedActions')\", source: http://127.0.0.1:5180/src/chapter/ui/ChapterView.tsx?t=1794116559016 (373)\n[pid=7569][err] [1108/054239.176039:INFO:CONSOLE:364] \"%s\n[pid=7569][err] \n[pid=7569][err] %s\n[pid=7569][err]  An error occurred in the <ChapterView> component. Consider adding an error boundary to your tree to customize error handling behavior.\n[pid=7569][err] Visit https://react.dev/link/error-boundaries to learn more about error boundaries.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569][err] [1108/054322.561247:INFO:CONSOLE:1012] \"[vite] hot updated: /src/chapter/ui/ChapterView.tsx\", source: http://127.0.0.1:5180/@vite/client (1012)\n[pid=7569][err] [1108/054322.643477:INFO:CONSOLE:364] \"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569][err] [1108/054323.637842:INFO:CONSOLE:364] \"THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569][err] [1108/054326.325777:INFO:CONSOLE:364] \"THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.\", source: http://127.0.0.1:5180/@vite/client (364)\n[pid=7569] <gracefully close start>"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:42:31.292Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/threshold-v02/test-results/orbital-orbital-streaming--80c11-l-physics-and-records-error/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "f0b14b36ebd836448057-05b5888ebff07619541d",
+          "file": "orbital.spec.ts",
+          "line": 141,
+          "column": 1
+        },
+        {
+          "title": "orbital interactions: observatory records a visit and a released sample obeys Rapier sideways gravity",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "f0b14b36ebd836448057-8ac7867bf2b10960e588",
+          "file": "orbital.spec.ts",
+          "line": 156,
+          "column": 1
+        }
+      ],
+      "suites": [
+        {
+          "title": "orbital touch response",
+          "file": "orbital.spec.ts",
+          "line": 70,
+          "column": 6,
+          "specs": [
+            {
+              "title": "equal-distance fast gesture turns further; release and cancellation stop input",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 60782,
+                      "error": {
+                        "message": "TimeoutError: page.waitForFunction: Timeout 60000ms exceeded.",
+                        "stack": "TimeoutError: page.waitForFunction: Timeout 60000ms exceeded.\n    at chapterReady (/workspace/threshold-v02/src/tests/e2e/v02-helpers.ts:4:99)\n    at /workspace/threshold-v02/src/tests/e2e/orbital.spec.ts:73:5",
+                        "location": {
+                          "file": "/workspace/threshold-v02/src/tests/e2e/v02-helpers.ts",
+                          "column": 99,
+                          "line": 4
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39mv02-helpers.ts:4\n\n \u001b[90m 2 |\u001b[39m \u001b[36mimport\u001b[39m type{\u001b[33mChapterRuntime\u001b[39m}\u001b[36mfrom\u001b[39m\u001b[32m'../../chapter/runtime/ChapterRuntime'\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 3 |\u001b[39m \u001b[36mexport\u001b[39m type \u001b[33mChapterSnapshot\u001b[39m\u001b[33m=\u001b[39m\u001b[33mExtract\u001b[39m\u001b[33m<\u001b[39m\u001b[33mReturnType\u001b[39m\u001b[33m<\u001b[39m\u001b[33mChapterRuntime\u001b[39m[\u001b[32m'snapshot'\u001b[39m]\u001b[33m>\u001b[39m\u001b[33m,\u001b[39m{ready\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m}\u001b[33m>\u001b[39m\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m chapterReady(page\u001b[33m:\u001b[39m\u001b[33mPage\u001b[39m){\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/?mode=chapter&test=1'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForFunction(()\u001b[33m=>\u001b[39mwindow\u001b[33m.\u001b[39m__V02_TEST__\u001b[33m?.\u001b[39msnapshot()\u001b[33m.\u001b[39mready\u001b[33m,\u001b[39m{}\u001b[33m,\u001b[39m{timeout\u001b[33m:\u001b[39m\u001b[35m60000\u001b[39m})\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(()\u001b[33m=>\u001b[39mwindow\u001b[33m.\u001b[39m__V02_TEST__\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mpause(\u001b[36mtrue\u001b[39m))\u001b[33m;\u001b[39m}\n \u001b[90m   |\u001b[39m                                                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m chapterRead(page\u001b[33m:\u001b[39m\u001b[33mPage\u001b[39m)\u001b[33m:\u001b[39m\u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[33mChapterSnapshot\u001b[39m\u001b[33m>\u001b[39m{\u001b[36mconst\u001b[39m s\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(()\u001b[33m=>\u001b[39mwindow\u001b[33m.\u001b[39m__V02_TEST__\u001b[33m!\u001b[39m\u001b[33m.\u001b[39msnapshot())\u001b[33m;\u001b[39m\u001b[36mif\u001b[39m(\u001b[33m!\u001b[39ms\u001b[33m.\u001b[39mready)\u001b[36mthrow\u001b[39m \u001b[33mError\u001b[39m(s\u001b[33m.\u001b[39merror\u001b[33m??\u001b[39m\u001b[32m'Not ready'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mreturn\u001b[39m s\u001b[33m;\u001b[39m}\n \u001b[90m 6 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36mconst\u001b[39m routeStages\u001b[33m=\u001b[39m[\u001b[32m'entryhall'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'around'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'nave'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'align'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'portalout'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'arcroom'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'landing'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'terminal'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'backlanding'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'ground'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'portalin'\u001b[39m] \u001b[36mas\u001b[39m \u001b[36mconst\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m \u001b[36mexport\u001b[39m type \u001b[33mRouteStage\u001b[39m\u001b[33m=\u001b[39m\u001b[36mtypeof\u001b[39m routeStages[number]\u001b[33m;\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/threshold-v02/src/tests/e2e/v02-helpers.ts",
+                            "column": 99,
+                            "line": 4
+                          },
+                          "message": "TimeoutError: page.waitForFunction: Timeout 60000ms exceeded.\n\n   at v02-helpers.ts:4\n\n  2 | import type{ChapterRuntime}from'../../chapter/runtime/ChapterRuntime';\n  3 | export type ChapterSnapshot=Extract<ReturnType<ChapterRuntime['snapshot']>,{ready:true}>;\n> 4 | export async function chapterReady(page:Page){await page.goto('/?mode=chapter&test=1');await page.waitForFunction(()=>window.__V02_TEST__?.snapshot().ready,{},{timeout:60000});await page.evaluate(()=>window.__V02_TEST__!.pause(true));}\n    |                                                                                                   ^\n  5 | export async function chapterRead(page:Page):Promise<ChapterSnapshot>{const s=await page.evaluate(()=>window.__V02_TEST__!.snapshot());if(!s.ready)throw Error(s.error??'Not ready');return s;}\n  6 | export const routeStages=['entryhall','around','nave','align','portalout','arcroom','landing','terminal','backlanding','ground','portalin'] as const;\n  7 | export type RouteStage=typeof routeStages[number];\n    at chapterReady (/workspace/threshold-v02/src/tests/e2e/v02-helpers.ts:4:99)\n    at /workspace/threshold-v02/src/tests/e2e/orbital.spec.ts:73:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:40:28.048Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/threshold-v02/test-results/orbital-orbital-touch-resp-0e811-and-cancellation-stop-input/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/threshold-v02/test-results/orbital-orbital-touch-resp-0e811-and-cancellation-stop-input/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/workspace/threshold-v02/test-results/orbital-orbital-touch-resp-0e811-and-cancellation-stop-input/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/threshold-v02/src/tests/e2e/v02-helpers.ts",
+                        "column": 99,
+                        "line": 4
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "f0b14b36ebd836448057-5e4febf319ccc2604c67",
+              "file": "orbital.spec.ts",
+              "line": 72,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "runtime.spec.ts",
+      "file": "runtime.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "real Rapier state crosses both ways and preserves committed event order",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ca9246177367606c6c3b-5c4802c19718a7e64b0d",
+          "file": "runtime.spec.ts",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "door frame blocks the capsule, blocked exit rejects then recovers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ca9246177367606c6c3b-1f97d05cc05dad81f43c",
+          "file": "runtime.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "fast segments retain remaining displacement and long frames cap catch-up",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ca9246177367606c6c3b-384d452515262d7f8757",
+          "file": "runtime.spec.ts",
+          "line": 53,
+          "column": 1
+        },
+        {
+          "title": "desktop keyboard moves the real capsule and R resets it",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ca9246177367606c6c3b-7040d68b7c4aafe17d43",
+          "file": "runtime.spec.ts",
+          "line": 72,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "v02-mobile.spec.ts",
+      "file": "v02-mobile.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "V02 mobile 1170:540",
+          "file": "v02-mobile.spec.ts",
+          "line": 5,
+          "column": 37,
+          "specs": [
+            {
+              "title": "actual dual Pointer Events control the full chapter and remain live during gravity rotation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "20c371e82a264a038190-7e00d5c33809edb85501",
+              "file": "v02-mobile.spec.ts",
+              "line": 5,
+              "column": 165
+            }
+          ]
+        },
+        {
+          "title": "V02 mobile 1200:540",
+          "file": "v02-mobile.spec.ts",
+          "line": 5,
+          "column": 37,
+          "specs": [
+            {
+              "title": "actual dual Pointer Events control the full chapter and remain live during gravity rotation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "20c371e82a264a038190-70e33a93fde149537fcf",
+              "file": "v02-mobile.spec.ts",
+              "line": 5,
+              "column": 165
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "v02.spec.ts",
+      "file": "v02.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "V02: complete input-driven chapter, trigger, return, and deterministic uncut frame sequence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "b7abbfe996b02718659a-f980987bc4833c6c05e9",
+          "file": "v02.spec.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "V02: CR1 cameras show real geometry and both fixed-axis witnesses after the turn",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "b7abbfe996b02718659a-c6220a32a82fbce78190",
+          "file": "v02.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "V02: offscreen portal culling, resizing, context restoration, and checkpoint reset",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "b7abbfe996b02718659a-7540ce5abfbf1343055d",
+          "file": "v02.spec.ts",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "V02: seeded free look and free movement expose real enclosing geometry beyond hero cameras",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "b7abbfe996b02718659a-2ee21d689e23ad38b82c",
+          "file": "v02.spec.ts",
+          "line": 40,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "v03.spec.ts",
+      "file": "v03.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "V03 keyboard actions drive actual jump and stance; preferences survive reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "38efdb781084cb24a6f8-afbd795146b8b595ada9",
+          "file": "v03.spec.ts",
+          "line": 8,
+          "column": 1
+        }
+      ],
+      "suites": [
+        {
+          "title": "V03 native three-pointer touch 1170:540",
+          "file": "v03.spec.ts",
+          "line": 36,
+          "column": 39,
+          "specs": [
+            {
+              "title": "moves, looks and jumps simultaneously; cancellation and menu clear every held action",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "38efdb781084cb24a6f8-c52a402eb90cc17595c9",
+              "file": "v03.spec.ts",
+              "line": 38,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "V03 native three-pointer touch 1200:540",
+          "file": "v03.spec.ts",
+          "line": 36,
+          "column": 39,
+          "specs": [
+            {
+              "title": "moves, looks and jumps simultaneously; cancellation and menu clear every held action",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "38efdb781084cb24a6f8-792199c32d9b58127cf4",
+              "file": "v03.spec.ts",
+              "line": 38,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "visual.spec.ts",
+      "file": "visual.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "portal projection front: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-035f4911922d91ab251a",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "portal projection oblique-30: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-b95849deb13e427af079",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "portal projection oblique-60: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-fe793f0796bc59e81cd3",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "portal projection distance-1m: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-471562085b5397d7e5d9",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "portal projection distance-0.1m: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-496075c2d34a805800ad",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "portal projection pre-plane-0.005m: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-85c8ffb6dd0663df4103",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "portal projection frame-edge: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-08ce9c05ec5013e3a518",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "lateral parallax, live target animation and viewport resizing remain real",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-ec57ce75a72c951c8d5f",
+          "file": "visual.spec.ts",
+          "line": 91,
+          "column": 1
+        },
+        {
+          "title": "a real fixed-step crossing keeps projected pixels continuous across the portal plane",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-4a44f9a362ce387a3c6d",
+          "file": "visual.spec.ts",
+          "line": 131,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-08T05:38:23.747Z",
+    "duration": 311579.21400000004,
+    "expected": 10,
+    "skipped": 24,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,148 @@
+
+> threshold-v02@0.2.0 test:e2e
+> playwright test
+
+
+Running 37 tests using 1 worker
+
+(node:7933) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 src/tests/e2e/chapter-audio.spec.ts:6:1 › orbital sound stays gesture-locked, emits bounded spatial cues, and releases its audio context (3.6s)
+  ✓   2 src/tests/e2e/diagnostics.spec.ts:12:1 › F3 diagnostics exports a real JSON download and UI quality resizes the live target (10.9s)
+  ✓   3 src/tests/e2e/diagnostics.spec.ts:51:1 › Esc cancels held keyboard and mouse drag, development geometry remains observational (10.9s)
+  ✓   4 src/tests/e2e/input.spec.ts:58:1 › mobile uses distinct captured pointer IDs for simultaneous movement and look, with cancellation (8.0s)
+  ✓   5 src/tests/e2e/input.spec.ts:99:3 › mobile blur clears held movement and allows a fresh contact (5.3s)
+  ✓   6 src/tests/e2e/input.spec.ts:99:3 › mobile orientationchange clears held movement and allows a fresh contact (6.3s)
+  ✓   7 src/tests/e2e/input.spec.ts:99:3 › mobile visibilitychange clears held movement and allows a fresh contact (5.6s)
+  ✓   8 src/tests/e2e/input.spec.ts:122:1 › mobile touch controls traverse A → B, turn around, return, and reset the real capsule (8.2s)
+  ✓   9 src/tests/e2e/lifecycle.spec.ts:4:1 › WebGL2 context loss/restoration resumes real portal passes (4.8s)
+  ✓  10 src/tests/e2e/lifecycle.spec.ts:26:1 › resize and render quality retain aspect and bounded GPU resources; disposal releases resources (7.6s)
+  ✓  11 src/tests/e2e/orbital.spec.ts:17:1 › orbital product: highest default, closable diagnostics, saved choices, help and real canvas photo (31.4s)
+  ✘  12 src/tests/e2e/orbital.spec.ts:72:3 › orbital touch response › equal-distance fast gesture turns further; release and cancellation stop input (11.6s)
+(node:8498) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  13 src/tests/e2e/orbital.spec.ts:106:1 › orbital streaming: deferred GLBs retain proxies, visible portal requests destination, hidden content evicts (10.5s)
+  ✓  14 src/tests/e2e/orbital.spec.ts:141:1 › orbital streaming: failed optional detail preserves structural physics and records error (11.6s)
+  ✓  15 src/tests/e2e/orbital.spec.ts:156:1 › orbital interactions: observatory records a visit and a released sample obeys Rapier sideways gravity (15.8s)
+  ✓  16 src/tests/e2e/runtime.spec.ts:10:1 › real Rapier state crosses both ways and preserves committed event order (9.4s)
+  ✓  17 src/tests/e2e/runtime.spec.ts:35:1 › door frame blocks the capsule, blocked exit rejects then recovers (4.8s)
+  ✓  18 src/tests/e2e/runtime.spec.ts:53:1 › fast segments retain remaining displacement and long frames cap catch-up (4.4s)
+  ✓  19 src/tests/e2e/runtime.spec.ts:72:1 › desktop keyboard moves the real capsule and R resets it (5.5s)
+  ✓  20 src/tests/e2e/v02-mobile.spec.ts:5:165 › V02 mobile 1170:540 › actual dual Pointer Events control the full chapter and remain live during gravity rotation (44.4s)
+  ✓  21 src/tests/e2e/v02-mobile.spec.ts:5:165 › V02 mobile 1200:540 › actual dual Pointer Events control the full chapter and remain live during gravity rotation (43.4s)
+  ✘  22 src/tests/e2e/v02.spec.ts:5:1 › V02: complete input-driven chapter, trigger, return, and deterministic uncut frame sequence (29.5s)
+(node:8900) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  23 src/tests/e2e/v02.spec.ts:17:1 › V02: CR1 cameras show real geometry and both fixed-axis witnesses after the turn (55.8s)
+  ✓  24 src/tests/e2e/v02.spec.ts:25:1 › V02: offscreen portal culling, resizing, context restoration, and checkpoint reset (1.8m)
+  ✘  25 src/tests/e2e/v02.spec.ts:40:1 › V02: seeded free look and free movement expose real enclosing geometry beyond hero cameras (26.5s)
+(node:9139) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  26 src/tests/e2e/v03.spec.ts:8:1 › V03 keyboard actions drive actual jump and stance; preferences survive reload (29.0s)
+  ✓  27 src/tests/e2e/v03.spec.ts:38:3 › V03 native three-pointer touch 1170:540 › moves, looks and jumps simultaneously; cancellation and menu clear every held action (29.9s)
+  ✓  28 src/tests/e2e/v03.spec.ts:38:3 › V03 native three-pointer touch 1200:540 › moves, looks and jumps simultaneously; cancellation and menu clear every held action (25.6s)
+  ✓  29 src/tests/e2e/visual.spec.ts:60:25 › portal projection front: real pixels match independent camera (8.8s)
+  ✓  30 src/tests/e2e/visual.spec.ts:60:25 › portal projection oblique-30: real pixels match independent camera (11.5s)
+  ✓  31 src/tests/e2e/visual.spec.ts:60:25 › portal projection oblique-60: real pixels match independent camera (11.6s)
+  ✓  32 src/tests/e2e/visual.spec.ts:60:25 › portal projection distance-1m: real pixels match independent camera (12.3s)
+  ✓  33 src/tests/e2e/visual.spec.ts:60:25 › portal projection distance-0.1m: real pixels match independent camera (11.4s)
+  ✓  34 src/tests/e2e/visual.spec.ts:60:25 › portal projection pre-plane-0.005m: real pixels match independent camera (15.2s)
+  ✓  35 src/tests/e2e/visual.spec.ts:60:25 › portal projection frame-edge: real pixels match independent camera (10.7s)
+  ✓  36 src/tests/e2e/visual.spec.ts:91:1 › lateral parallax, live target animation and viewport resizing remain real (26.2s)
+  ✓  37 src/tests/e2e/visual.spec.ts:131:1 › a real fixed-step crossing keeps projected pixels continuous across the portal plane (11.3s)
+
+
+  1) src/tests/e2e/orbital.spec.ts:72:3 › orbital touch response › equal-distance fast gesture turns further; release and cancellation stop input 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 0
+    + Received  + 7
+
+      Object {
+    +   "brake": false,
+    +   "crouch": false,
+    +   "descend": false,
+    +   "jump": false,
+    +   "jumpPressed": false,
+    +   "pronePressed": false,
+    +   "sprint": false,
+        "x": 0,
+        "y": 0,
+      }
+
+       98 |     expect(result.fast.afterRelease).toBeLessThan(1e-10);expect(result.slow.afterRelease).toBeLessThan(1e-10);
+       99 |     expect(result.moving.ready&&result.canceled.ready).toBe(true);
+    > 100 |     if(result.moving.ready&&result.canceled.ready){expect(result.moving.input.y).toBeGreaterThan(.9);expect(result.canceled.input).toEqual({x:0,y:0});}
+          |                                                                                                                                    ^
+      101 |     expect(await page.evaluate(()=>[scrollX,scrollY])).toEqual([0,0]);
+      102 |     await record('touch-response',result);
+      103 |   });
+        at /workspace/threshold-v02/src/tests/e2e/orbital.spec.ts:100:132
+
+    Error Context: test-results/orbital-orbital-touch-resp-0e811-and-cancellation-stop-input/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/orbital-orbital-touch-resp-0e811-and-cancellation-stop-input/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/orbital-orbital-touch-resp-0e811-and-cancellation-stop-input/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) src/tests/e2e/v02.spec.ts:5:1 › V02: complete input-driven chapter, trigger, return, and deterministic uncut frame sequence 
+
+    Error: page.evaluate: TypeError: Cannot read properties of undefined (reading 'snapshot')
+        at eval (eval at evaluate (:370:30), <anonymous>:9:21)
+        at UtilityScript.evaluate (<anonymous>:372:16)
+        at UtilityScript.<anonymous> (<anonymous>:1:44)
+        at eval (eval at evaluate (:370:30), <anonymous>:9:21)
+        at UtilityScript.evaluate (<anonymous>:372:16)
+        at UtilityScript.<anonymous> (<anonymous>:1:44)
+        at driveBatch (/workspace/threshold-v02/src/tests/e2e/v02-helpers.ts:9:83)
+        at /workspace/threshold-v02/src/tests/e2e/v02.spec.ts:9:109
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/v02-V02-complete-input-dri-f7321-nistic-uncut-frame-sequence/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/v02-V02-complete-input-dri-f7321-nistic-uncut-frame-sequence/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/v02-V02-complete-input-dri-f7321-nistic-uncut-frame-sequence/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/v02-V02-complete-input-dri-f7321-nistic-uncut-frame-sequence/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) src/tests/e2e/v02.spec.ts:40:1 › V02: seeded free look and free movement expose real enclosing geometry beyond hero cameras 
+
+    Error: page.evaluate: TypeError: Cannot read properties of undefined (reading 'look')
+        at eval (eval at evaluate (:370:30), <anonymous>:8:9)
+        at UtilityScript.evaluate (<anonymous>:372:16)
+        at UtilityScript.<anonymous> (<anonymous>:1:44)
+        at eval (eval at evaluate (:370:30), <anonymous>:8:9)
+        at UtilityScript.evaluate (<anonymous>:372:16)
+        at UtilityScript.<anonymous> (<anonymous>:1:44)
+        at /workspace/threshold-v02/src/tests/e2e/v02.spec.ts:42:122
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/v02-V02-seeded-free-look-a-0ea00-eometry-beyond-hero-cameras/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/v02-V02-seeded-free-look-a-0ea00-eometry-beyond-hero-cameras/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/v02-V02-seeded-free-look-a-0ea00-eometry-beyond-hero-cameras/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/v02-V02-seeded-free-look-a-0ea00-eometry-beyond-hero-cameras/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    src/tests/e2e/orbital.spec.ts:72:3 › orbital touch response › equal-distance fast gesture turns further; release and cancellation stop input 
+    src/tests/e2e/v02.spec.ts:5:1 › V02: complete input-driven chapter, trigger, return, and deterministic uncut frame sequence 
+    src/tests/e2e/v02.spec.ts:40:1 › V02: seeded free look and free movement expose real enclosing geometry beyond hero cameras 
+  34 passed (11.7m)

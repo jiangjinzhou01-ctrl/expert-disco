@@ -1,0 +1,1002 @@
+{
+  "title": "THRESHOLD V0.3 Multi-Gravity Spatial Proof — D1 analytical layout",
+  "status": "ANALYTICAL_CANDIDATE_NOT_ENGINE_CERTIFIED",
+  "units": "metres; VESTIBULE and INVERT local coordinates; INVERT global offset is +100m X",
+  "source_revision": "0a307c666006f11cd66879153f97a9aa1283650b",
+  "source_files": {
+    "architecture_generated_sha256": "b1f71b43ded4118754ed3065a53f7491f64af2218f164a9bf8c58d6c2998fa86",
+    "cr1_manifest_sha256": "33ab9aa2ea797269aa555f8ae889ddde8a9e87a32b6d097bbdf843b5f528a3c7"
+  },
+  "existing_collision_bounds": {
+    "VESTIBULE": {
+      "boxes": 135,
+      "min": [
+        -17.0,
+        -4.48,
+        -22.0
+      ],
+      "max": [
+        17.0,
+        24.3,
+        36.8
+      ]
+    },
+    "INVERT": {
+      "boxes": 150,
+      "min": [
+        -16.0,
+        -7.6,
+        -20.0
+      ],
+      "max": [
+        16.0,
+        22.3,
+        19.1
+      ]
+    },
+    "CR1_support_samples": [
+      {
+        "angle_deg": 0,
+        "foot": [
+          1.5,
+          0.0,
+          -7
+        ],
+        "capsule_center": [
+          1.5,
+          0.87,
+          -7
+        ],
+        "camera_eye": [
+          1.5,
+          1.55,
+          -7
+        ],
+        "local_up": [
+          -0.0,
+          1.0,
+          0
+        ],
+        "gravity_m_s2": [
+          0.0,
+          -9.81,
+          -0.0
+        ]
+      },
+      {
+        "angle_deg": 45,
+        "foot": [
+          3.7627,
+          0.9373,
+          -7
+        ],
+        "capsule_center": [
+          3.1475,
+          1.5525,
+          -7
+        ],
+        "camera_eye": [
+          2.6667,
+          2.0333,
+          -7
+        ],
+        "local_up": [
+          -0.7071,
+          0.7071,
+          0
+        ],
+        "gravity_m_s2": [
+          6.9367,
+          -6.9367,
+          -0.0
+        ]
+      },
+      {
+        "angle_deg": 90,
+        "foot": [
+          4.7,
+          3.2,
+          -7
+        ],
+        "capsule_center": [
+          3.83,
+          3.2,
+          -7
+        ],
+        "camera_eye": [
+          3.15,
+          3.2,
+          -7
+        ],
+        "local_up": [
+          -1.0,
+          0.0,
+          0
+        ],
+        "gravity_m_s2": [
+          9.81,
+          -0.0,
+          -0.0
+        ]
+      }
+    ]
+  },
+  "candidate_modules": {
+    "A_entry_aperture": {
+      "world": "VESTIBULE",
+      "min": [
+        16,
+        0,
+        -1.6
+      ],
+      "max": [
+        17,
+        3.2,
+        1.6
+      ],
+      "intentional": "cut in V-main-wall-16.5 only"
+    },
+    "A_access_corridor": {
+      "world": "VESTIBULE",
+      "min": [
+        17,
+        0,
+        -1.6
+      ],
+      "max": [
+        29.1,
+        3.2,
+        1.6
+      ]
+    },
+    "A_gravity_ring_shell": {
+      "world": "VESTIBULE",
+      "center": [
+        34,
+        4.5,
+        0
+      ],
+      "support_radius": 4.5,
+      "shell_outer_radius": 4.9,
+      "z_width": 3.8,
+      "aabb_min": [
+        29.1,
+        -0.4,
+        -1.9
+      ],
+      "aabb_max": [
+        38.9,
+        9.4,
+        1.9
+      ],
+      "inner_clear_radius_min": 2.76,
+      "central_prop_radius_max": 1.8
+    },
+    "A_view_spur": {
+      "world": "VESTIBULE",
+      "centerline": [
+        [
+          24,
+          0,
+          0
+        ],
+        [
+          24,
+          0,
+          6
+        ]
+      ],
+      "clear_width": 2.4,
+      "height": 3.2
+    },
+    "B_cr1_branch_collar": {
+      "world": "INVERT",
+      "centerline_start": [
+        4.7,
+        6.2,
+        -12.5
+      ],
+      "curve_center_xy": [
+        10.1,
+        6.2
+      ],
+      "radius": 5.4,
+      "angle_deg": [
+        0,
+        90
+      ],
+      "end_foot": [
+        10.1,
+        11.6,
+        -12.5
+      ],
+      "welded_support_required": true,
+      "planned_upper_guard_aperture_z": [
+        -14.1,
+        -10.9
+      ]
+    },
+    "B_upper_deck": {
+      "world": "INVERT",
+      "z_leg": {
+        "min": [
+          8.5,
+          11.6,
+          -12.5
+        ],
+        "max": [
+          11.7,
+          11.95,
+          8.5
+        ]
+      },
+      "east_leg": {
+        "min": [
+          10.1,
+          11.6,
+          6.9
+        ],
+        "max": [
+          25,
+          11.95,
+          10.1
+        ]
+      }
+    },
+    "B_upper_shell_aperture": {
+      "world": "INVERT",
+      "center": [
+        15.5,
+        11.6,
+        8.5
+      ],
+      "clear_y": [
+        10.0,
+        13.2
+      ],
+      "clear_z": [
+        6.9,
+        10.1
+      ],
+      "intentional": "cut in I-shell-15.5; buttress free margins 1.3m and 2.3m"
+    },
+    "B_exterior_radial_ring": {
+      "world": "INVERT",
+      "center": [
+        25,
+        5.8,
+        8.5
+      ],
+      "support_radius": 5.8,
+      "support_side": "outer convex surface",
+      "shell_radial_thickness": 0.4,
+      "z_width": 3.6,
+      "aabb_min": [
+        18.8,
+        -0.4,
+        6.7
+      ],
+      "aabb_max": [
+        31.2,
+        12.0,
+        10.3
+      ],
+      "top_join": [
+        25,
+        11.6,
+        8.5
+      ],
+      "minimum_capsule_to_old_shell_clearance_m": 1.46
+    },
+    "B_east_access_corridor": {
+      "world": "INVERT",
+      "min": [
+        16,
+        0,
+        7.4
+      ],
+      "max": [
+        30,
+        3.2,
+        10.6
+      ]
+    },
+    "C_main_spine": {
+      "world": "INVERT",
+      "min": [
+        16,
+        0,
+        15.9
+      ],
+      "max": [
+        60,
+        3.2,
+        19.1
+      ]
+    },
+    "C1_cross_gravity_ring": {
+      "world": "INVERT",
+      "center": [
+        39,
+        5,
+        9
+      ],
+      "support_radius": 5.0,
+      "shell_outer_radius": 5.35,
+      "z_width": 3.6,
+      "aabb_min": [
+        33.65,
+        -0.35,
+        7.2
+      ],
+      "aabb_max": [
+        44.35,
+        10.35,
+        10.8
+      ]
+    },
+    "C2_spiral_ring": {
+      "world": "INVERT",
+      "center": [
+        52,
+        5.2,
+        9
+      ],
+      "base_radius": 5.2,
+      "r(phi)": "5.2 + 0.30*(1-cos(phi)); phi in [0,2pi]",
+      "shell_radial_outer_max": 6.15,
+      "x_width": 3.2,
+      "aabb_min": [
+        50.4,
+        -0.95,
+        2.85
+      ],
+      "aabb_max": [
+        53.6,
+        11.35,
+        15.15
+      ]
+    },
+    "D_low_zero_g_module": {
+      "world": "INVERT",
+      "outer_aabb_min": [
+        60,
+        0,
+        3
+      ],
+      "outer_aabb_max": [
+        86,
+        14,
+        22
+      ],
+      "low_g_lane_x": [
+        61,
+        70
+      ],
+      "zero_g_usable_min": [
+        73.5,
+        1,
+        5
+      ],
+      "zero_g_usable_max": [
+        82.5,
+        12,
+        15
+      ],
+      "return_corridor": {
+        "min": [
+          60,
+          0,
+          15.9
+        ],
+        "max": [
+          84,
+          3.2,
+          19.1
+        ]
+      }
+    },
+    "B_axis_landmark_frame": {
+      "world": "INVERT",
+      "X_beam_min": [
+        32,
+        15.375,
+        22.875
+      ],
+      "X_beam_max": [
+        58,
+        15.625,
+        23.125
+      ],
+      "Y_mast_min": [
+        42.85,
+        0,
+        22.85
+      ],
+      "Y_mast_max": [
+        43.15,
+        18,
+        23.15
+      ],
+      "Z_beam_min": [
+        42.875,
+        15.375,
+        12
+      ],
+      "Z_beam_max": [
+        43.125,
+        15.625,
+        34
+      ]
+    },
+    "B_observation_ramp": {
+      "world": "INVERT",
+      "centerline_start": [
+        25,
+        0,
+        17.5
+      ],
+      "centerline_end": [
+        25,
+        8.5,
+        32.22
+      ],
+      "slope_deg": 30,
+      "landing_aabb_min": [
+        23.4,
+        8.5,
+        31.5
+      ],
+      "landing_aabb_max": [
+        26.6,
+        8.8,
+        35
+      ]
+    }
+  },
+  "gravity_nodes": [
+    {
+      "id": "G01",
+      "world": "VESTIBULE local",
+      "surface": "A inner gravity ring",
+      "parameter_deg": 30,
+      "foot_or_center_m": [
+        36.25,
+        0.60289,
+        0.0
+      ],
+      "up": [
+        -0.5,
+        0.866025,
+        0.0
+      ],
+      "gravity_m_s2": [
+        4.905,
+        -8.49571,
+        -0.0
+      ]
+    },
+    {
+      "id": "G02",
+      "world": "VESTIBULE local",
+      "surface": "A inner gravity ring",
+      "parameter_deg": 90,
+      "foot_or_center_m": [
+        38.5,
+        4.5,
+        0.0
+      ],
+      "up": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "gravity_m_s2": [
+        9.81,
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "id": "G03",
+      "world": "INVERT local",
+      "surface": "CR1 original support arc",
+      "parameter_deg": 45,
+      "foot_or_center_m": [
+        3.76274,
+        0.93726,
+        -7.0
+      ],
+      "up": [
+        -0.707107,
+        0.707107,
+        0.0
+      ],
+      "gravity_m_s2": [
+        6.93672,
+        -6.93672,
+        -0.0
+      ]
+    },
+    {
+      "id": "G04",
+      "world": "INVERT local",
+      "surface": "CR1 side branch / wall-to-top quarter curve",
+      "parameter_deg": 90,
+      "foot_or_center_m": [
+        10.1,
+        11.6,
+        -12.5
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "gravity_m_s2": [
+        0,
+        -9.81,
+        0
+      ]
+    },
+    {
+      "id": "G05",
+      "world": "INVERT local",
+      "surface": "B exterior radial gravity ring",
+      "parameter_deg": 90,
+      "foot_or_center_m": [
+        30.8,
+        5.8,
+        8.5
+      ],
+      "up": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "gravity_m_s2": [
+        -9.81,
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "id": "G06",
+      "world": "INVERT local",
+      "surface": "B exterior radial gravity ring",
+      "parameter_deg": 315,
+      "foot_or_center_m": [
+        20.89878,
+        9.90122,
+        8.5
+      ],
+      "up": [
+        -0.707107,
+        0.707107,
+        0.0
+      ],
+      "gravity_m_s2": [
+        6.93672,
+        -6.93672,
+        -0.0
+      ]
+    },
+    {
+      "id": "G07",
+      "world": "INVERT local",
+      "surface": "C orthogonal inner ring, X/Y plane",
+      "parameter_deg": 90,
+      "foot_or_center_m": [
+        44.0,
+        5.0,
+        9.0
+      ],
+      "up": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "gravity_m_s2": [
+        9.81,
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "id": "G08",
+      "world": "INVERT local",
+      "surface": "C orthogonal inner ring, X/Y plane",
+      "parameter_deg": 270,
+      "foot_or_center_m": [
+        34.0,
+        5.0,
+        9.0
+      ],
+      "up": [
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "gravity_m_s2": [
+        -9.81,
+        0.0,
+        -0.0
+      ]
+    },
+    {
+      "id": "G09",
+      "world": "INVERT local",
+      "surface": "C one-turn closed gravity spiral",
+      "parameter_deg": 90,
+      "foot_or_center_m": [
+        52.0,
+        5.2,
+        14.5
+      ],
+      "up": [
+        0.0,
+        0.054464,
+        -0.998516
+      ],
+      "gravity_m_s2": [
+        -0.0,
+        -0.5343,
+        9.79544
+      ]
+    },
+    {
+      "id": "G10",
+      "world": "INVERT local",
+      "surface": "C one-turn closed gravity spiral",
+      "parameter_deg": 270,
+      "foot_or_center_m": [
+        52.0,
+        5.2,
+        3.5
+      ],
+      "up": [
+        0.0,
+        0.054464,
+        0.998516
+      ],
+      "gravity_m_s2": [
+        -0.0,
+        -0.5343,
+        -9.79544
+      ]
+    },
+    {
+      "id": "G11",
+      "world": "INVERT local",
+      "surface": "D low-g floor lane",
+      "field_samples": [
+        {
+          "point": [
+            64,
+            0,
+            9
+          ],
+          "g": 3.2373,
+          "gravity": [
+            0,
+            -3.2373,
+            0
+          ]
+        },
+        {
+          "point": [
+            68,
+            0,
+            9
+          ],
+          "g": 9.81,
+          "gravity": [
+            0,
+            -9.81,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "G12",
+      "world": "INVERT local",
+      "surface": "D free-flight chamber",
+      "field_samples": [
+        {
+          "point": [
+            73,
+            7,
+            9
+          ],
+          "g": 0.981,
+          "gravity": [
+            0,
+            -0.981,
+            0
+          ]
+        },
+        {
+          "point": [
+            78,
+            7,
+            11
+          ],
+          "g": 0,
+          "gravity": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "point": [
+            83,
+            4,
+            17
+          ],
+          "g": 4.905,
+          "gravity": [
+            0,
+            -4.905,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "camera_matrices": {
+    "A_RING_VIEW": {
+      "eye": [
+        24,
+        1.55,
+        6
+      ],
+      "target": [
+        34,
+        4.5,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "fov_deg": 50,
+      "aspect": 1.7777777777777777,
+      "near": 0.1,
+      "far": 500,
+      "view_matrix_row_major": [
+        [
+          0.51449576,
+          -0.0,
+          0.85749293,
+          -17.49285568
+        ],
+        [
+          -0.21028803,
+          0.96946344,
+          0.12617282,
+          2.7872074
+        ],
+        [
+          -0.83130804,
+          -0.24523587,
+          0.49878483,
+          17.3387997
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection_matrix_row_major": [
+        [
+          1.20628514,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.14450692,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.00040008,
+          -0.20004001
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "projected_landmarks_ndc": {
+        "ring_center": [
+          0.0,
+          -0.0,
+          0.983771
+        ],
+        "ring_right": [
+          0.177096,
+          -0.128682,
+          0.987715
+        ],
+        "ring_top": [
+          0.0,
+          0.712384,
+          0.985168
+        ],
+        "ring_left": [
+          -0.336958,
+          0.244842,
+          0.976265
+        ]
+      }
+    },
+    "B_AXIS_VIEW": {
+      "eye": [
+        25,
+        10.05,
+        33
+      ],
+      "target": [
+        43,
+        11,
+        20
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "fov_deg": 50,
+      "aspect": 1.7777777777777777,
+      "near": 0.1,
+      "far": 500,
+      "view_matrix_row_major": [
+        [
+          0.58549055,
+          -0.0,
+          0.81067923,
+          -41.38967838
+        ],
+        [
+          -0.03465389,
+          0.99908594,
+          0.02502781,
+          -10.00038416
+        ],
+        [
+          -0.80993822,
+          -0.04274674,
+          0.58495538,
+          1.37453265
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection_matrix_row_major": [
+        [
+          1.20628514,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.14450692,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.00040008,
+          -0.20004001
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "projected_landmarks_ndc": {
+        "C1_ring_center": [
+          -0.539782,
+          -0.522546,
+          0.99245
+        ],
+        "C2_spiral_center": [
+          -0.123266,
+          -0.383362,
+          0.994797
+        ],
+        "X_beam_start": [
+          -0.411435,
+          0.903665,
+          0.983378
+        ],
+        "X_beam_end": [
+          0.4123,
+          0.264786,
+          0.994303
+        ],
+        "Y_mast_top": [
+          0.14126,
+          0.729904,
+          0.990768
+        ],
+        "Z_beam_start": [
+          -0.288725,
+          0.33998,
+          0.993017
+        ],
+        "Z_beam_end": [
+          0.962314,
+          0.730508,
+          0.986339
+        ]
+      }
+    }
+  },
+  "path_capsule_audit": {
+    "shape": "Rapier capsule half-segment 0.57m, radius 0.30m; foot offset 0.87m along local up; centreline segment endpoints center +/-0.57*up",
+    "samples": 2756,
+    "sample_spacing_max_m": 0.04,
+    "modified_existing_colliders_excluded": [
+      "I-shell-15.5",
+      "I-wall-handrail-7.35",
+      "I-wall-parapet-7.35",
+      "I-wall-rail-post-7.35--12",
+      "I-wall-rail-post-7.35--14"
+    ],
+    "existing_box_collision_count": 0,
+    "penetrations": [],
+    "nearest_unmodified_box_clearances": [
+      {
+        "path": "B-branch-and-deck",
+        "box": "I-wall-handrail-3.05",
+        "minimum_clearance_m": 0.55
+      },
+      {
+        "path": "B-branch-and-deck",
+        "box": "I-wall-parapet-3.05",
+        "minimum_clearance_m": 0.56
+      },
+      {
+        "path": "B-branch-and-deck",
+        "box": "I-wall-rail-post-3.05--12",
+        "minimum_clearance_m": 0.7065
+      },
+      {
+        "path": "B-branch-and-deck",
+        "box": "ORIGINAL_AXIS_CANTILEVER",
+        "minimum_clearance_m": 0.8
+      },
+      {
+        "path": "B-branch-and-deck",
+        "box": "I-wall-rail-post-3.05--14",
+        "minimum_clearance_m": 1.4184
+      },
+      {
+        "path": "B-branch-and-deck",
+        "box": "I-axis-stair-9",
+        "minimum_clearance_m": 1.9781
+      }
+    ],
+    "warning": "This checks the proposed B branch/deck/radial-ring against current box colliders. It does not query the current CR1 trimesh support, new meshes, renderer visibility, or Rapier castShape rotation sweep."
+  }
+}

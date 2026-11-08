@@ -1,0 +1,7108 @@
+{
+  "trace": [
+    {
+      "key": "w",
+      "snapshot": {
+        "ready": true,
+        "loading": {
+          "stage": "轨道前厅已就绪",
+          "progress": 1
+        },
+        "streaming": {
+          "total": 10,
+          "resident": 7,
+          "loading": 0,
+          "queued": 0,
+          "proxy": 0,
+          "visible": 6,
+          "culled": 4,
+          "loads": 10,
+          "evictions": 3,
+          "failed": 0,
+          "bytesResident": 3857548,
+          "retainedBehind": 1,
+          "interests": [
+            {
+              "worldId": "A",
+              "kind": "main",
+              "position": [
+                0,
+                1.5499999886751161,
+                17.79999977350235
+              ]
+            },
+            {
+              "worldId": "B",
+              "kind": "portal",
+              "position": [
+                100,
+                1.5499999886751161,
+                55.99999977350235
+              ]
+            }
+          ],
+          "chunks": [
+            {
+              "id": "A-capsule",
+              "worldId": "A",
+              "state": "resident",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 4.2,
+              "lastWanted": 15.446200000006703,
+              "loadCount": 1,
+              "bytes": 1440096,
+              "triangles": 50704,
+              "failure": null
+            },
+            {
+              "id": "A-arrival",
+              "worldId": "A",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 0,
+              "lastWanted": 15.446200000006703,
+              "loadCount": 1,
+              "bytes": 165196,
+              "triangles": 5800,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-west",
+              "worldId": "A",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 7.9,
+              "lastWanted": 15.446200000006703,
+              "loadCount": 1,
+              "bytes": 396488,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-east",
+              "worldId": "A",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 7.9,
+              "lastWanted": 15.446200000006703,
+              "loadCount": 1,
+              "bytes": 399804,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gate",
+              "worldId": "A",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 33.8,
+              "lastWanted": 15.446200000006703,
+              "loadCount": 1,
+              "bytes": 521860,
+              "triangles": 18952,
+              "failure": null
+            },
+            {
+              "id": "A-roof-trusses",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 21.2,
+              "lastWanted": 9.913100000005214,
+              "loadCount": 1,
+              "bytes": 465712,
+              "triangles": 14988,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 11.3,
+              "lastWanted": 5.870000000003725,
+              "loadCount": 1,
+              "bytes": 1212256,
+              "triangles": 34176,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-east",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 9.7,
+              "lastWanted": 6.370000000003725,
+              "loadCount": 1,
+              "bytes": 1347468,
+              "triangles": 38368,
+              "failure": null
+            },
+            {
+              "id": "B-services",
+              "worldId": "B",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 37.2,
+              "lastWanted": 15.446200000006703,
+              "loadCount": 1,
+              "bytes": 743232,
+              "triangles": 26076,
+              "failure": null
+            },
+            {
+              "id": "B-gravity-instruments",
+              "worldId": "B",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 61,
+              "lastWanted": 15.446200000006703,
+              "loadCount": 1,
+              "bytes": 190872,
+              "triangles": 5416,
+              "failure": null
+            }
+          ]
+        },
+        "audio": {
+          "state": "running",
+          "unlocked": true,
+          "muted": false,
+          "volume": 0.55,
+          "activeVoices": 2,
+          "footsteps": 22,
+          "cues": 0,
+          "error": null,
+          "source": "original procedural Web Audio"
+        },
+        "sky": {
+          "bodies": 11,
+          "stars": 1900,
+          "textureCount": 5,
+          "textureBytes": 2258031,
+          "triangles": 30704,
+          "elapsed": 5.716666666666652,
+          "returned": false,
+          "heroRotation": 1.4400166666666665,
+          "positions": [
+            {
+              "id": "AUREOLE",
+              "position": [
+                -105,
+                104,
+                -222
+              ],
+              "radius": 64
+            },
+            {
+              "id": "PELAGIC",
+              "position": [
+                162,
+                81,
+                -285
+              ],
+              "radius": 31
+            },
+            {
+              "id": "EMBER",
+              "position": [
+                76,
+                37,
+                162
+              ],
+              "radius": 19
+            },
+            {
+              "id": "SELENE",
+              "position": [
+                -94,
+                26,
+                71
+              ],
+              "radius": 13
+            },
+            {
+              "id": "MOON-01",
+              "position": [
+                -32,
+                34,
+                -125
+              ],
+              "radius": 4.4
+            },
+            {
+              "id": "MOON-02",
+              "position": [
+                -202,
+                58,
+                -87
+              ],
+              "radius": 6.8
+            },
+            {
+              "id": "MOON-03",
+              "position": [
+                286,
+                120,
+                -100
+              ],
+              "radius": 5.9
+            },
+            {
+              "id": "MOON-04",
+              "position": [
+                165,
+                182,
+                180
+              ],
+              "radius": 7.2
+            },
+            {
+              "id": "MOON-05",
+              "position": [
+                -264,
+                169,
+                142
+              ],
+              "radius": 9.1
+            },
+            {
+              "id": "MOON-06",
+              "position": [
+                34,
+                249,
+                -306
+              ],
+              "radius": 6.6
+            },
+            {
+              "id": "MOON-07",
+              "position": [
+                -338,
+                48,
+                -287
+              ],
+              "radius": 8.7
+            }
+          ]
+        },
+        "materials": {
+          "sets": 3,
+          "maps": 9,
+          "sharedMaterials": 10,
+          "jpegSourceBytes": 1783030,
+          "ktxNetworkBytes": 6714783,
+          "compressedMaps": 9,
+          "formats": {
+            "36492": 9
+          },
+          "gpuUploadPayloadBytes": 12583152,
+          "payloadNote": "Typed texture payload with mips; excludes GPU driver overhead, not a measured VRAM total",
+          "fallbacks": [],
+          "source": "ambientCG CC0 / Concrete048, Metal009, Metal047B"
+        },
+        "observed": false,
+        "sampleReleased": 0,
+        "canObserve": false,
+        "canReleaseSample": false,
+        "restoredCheckpoint": false,
+        "input": {
+          "x": 0,
+          "y": 0,
+          "jump": false,
+          "jumpPressed": false,
+          "sprint": false,
+          "crouch": false,
+          "pronePressed": false,
+          "descend": false,
+          "brake": false
+        },
+        "movement": {
+          "profile": "explore",
+          "moveSpeed": 3,
+          "jumpHeight": 1.2,
+          "gravityScale": 1,
+          "autoSprint": false,
+          "touchSize": 1,
+          "touchOpacity": 0.8,
+          "sensitivity": 1.3,
+          "acceleration": 1,
+          "invertY": false,
+          "quality": 1,
+          "volume": 0.55,
+          "muted": false,
+          "reducedMotion": false,
+          "fov": 50,
+          "tutorialSeen": true
+        },
+        "stance": "STAND",
+        "locomotion": "GROUND_WALK",
+        "stanceBlocked": null,
+        "fieldId": "architectural-support",
+        "colliderRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "capsule": {
+          "offset": 0.87,
+          "eye": 1.55
+        },
+        "error": null,
+        "world": "VESTIBULE",
+        "slot": "A",
+        "foot": [
+          0,
+          -1.1324884030550209e-8,
+          17.79999977350235
+        ],
+        "body": [
+          0,
+          0.875999988675116,
+          17.79999977350235
+        ],
+        "eye": [
+          0,
+          1.5499999886751161,
+          17.79999977350235
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "gravity": [
+          0,
+          -9.81,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "cameraRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "theta": 0,
+        "thetaDegrees": 0,
+        "s": -1.5,
+        "mode": "NORMAL",
+        "grounded": true,
+        "supportNormal": [
+          0,
+          1,
+          0
+        ],
+        "velocity": [
+          0,
+          -0.000001180171966819188,
+          -3.0000000447034836
+        ],
+        "step": 343,
+        "progress": "ARRIVAL",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 0,
+        "translationQueries": 0,
+        "supportQueries": 1029,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196730613708496,
+            "z": 0.5883227586746216
+          },
+          "velocity": {
+            "x": 0.00001832377165555954,
+            "y": 0.00006390706403180957,
+            "z": -0.00008725127554498613
+          },
+          "resets": 0
+        },
+        "render": {
+          "targetWidth": 640,
+          "targetHeight": 360,
+          "quality": 1,
+          "mainDrawCalls": 83,
+          "offscreenDrawCalls": 67,
+          "geometries": 171,
+          "textures": 24,
+          "programs": 23,
+          "context": "active",
+          "passes": 1,
+          "targetResizes": 1
+        },
+        "performance": {
+          "samples": 71,
+          "fps": 1.1188026605442556,
+          "averageMs": 893.8126760563275,
+          "p50Ms": 876,
+          "p95Ms": 2209.199999999255,
+          "p99Ms": 2276.199999999255,
+          "physicsMs": 1,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 5.716666666666652
+      }
+    },
+    {
+      "key": "d",
+      "snapshot": {
+        "ready": true,
+        "loading": {
+          "stage": "轨道前厅已就绪",
+          "progress": 1
+        },
+        "streaming": {
+          "total": 10,
+          "resident": 7,
+          "loading": 0,
+          "queued": 0,
+          "proxy": 0,
+          "visible": 6,
+          "culled": 4,
+          "loads": 11,
+          "evictions": 4,
+          "failed": 0,
+          "bytesResident": 3764920,
+          "retainedBehind": 1,
+          "interests": [
+            {
+              "worldId": "A",
+              "kind": "main",
+              "position": [
+                8.00000011920929,
+                1.5500000005960444,
+                17.79999977350235
+              ]
+            },
+            {
+              "worldId": "B",
+              "kind": "portal",
+              "position": [
+                108.00000011920929,
+                1.5500000005960444,
+                55.99999977350235
+              ]
+            }
+          ],
+          "chunks": [
+            {
+              "id": "A-capsule",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 7.1,
+              "lastWanted": 20.158200000006705,
+              "loadCount": 1,
+              "bytes": 1440096,
+              "triangles": 50704,
+              "failure": null
+            },
+            {
+              "id": "A-arrival",
+              "worldId": "A",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 0,
+              "lastWanted": 23.026600000005217,
+              "loadCount": 1,
+              "bytes": 165196,
+              "triangles": 5800,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-west",
+              "worldId": "A",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 15.9,
+              "lastWanted": 23.026600000005217,
+              "loadCount": 1,
+              "bytes": 396488,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-east",
+              "worldId": "A",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 0,
+              "lastWanted": 23.026600000005217,
+              "loadCount": 1,
+              "bytes": 399804,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gate",
+              "worldId": "A",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 33.8,
+              "lastWanted": 23.026600000005217,
+              "loadCount": 1,
+              "bytes": 521860,
+              "triangles": 18952,
+              "failure": null
+            },
+            {
+              "id": "A-roof-trusses",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 21.2,
+              "lastWanted": 9.913100000005214,
+              "loadCount": 1,
+              "bytes": 465712,
+              "triangles": 14988,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 19.3,
+              "lastWanted": 5.870000000003725,
+              "loadCount": 1,
+              "bytes": 1212256,
+              "triangles": 34176,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-east",
+              "worldId": "A",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 1.7,
+              "lastWanted": 23.026600000005217,
+              "loadCount": 2,
+              "bytes": 1347468,
+              "triangles": 38368,
+              "failure": null
+            },
+            {
+              "id": "B-services",
+              "worldId": "B",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 37.2,
+              "lastWanted": 23.026600000005217,
+              "loadCount": 1,
+              "bytes": 743232,
+              "triangles": 26076,
+              "failure": null
+            },
+            {
+              "id": "B-gravity-instruments",
+              "worldId": "B",
+              "state": "resident",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 61,
+              "lastWanted": 20.408200000006705,
+              "loadCount": 1,
+              "bytes": 190872,
+              "triangles": 5416,
+              "failure": null
+            }
+          ]
+        },
+        "audio": {
+          "state": "running",
+          "unlocked": true,
+          "muted": false,
+          "volume": 0.55,
+          "activeVoices": 0,
+          "footsteps": 33,
+          "cues": 0,
+          "error": null,
+          "source": "original procedural Web Audio"
+        },
+        "sky": {
+          "bodies": 11,
+          "stars": 1900,
+          "textureCount": 5,
+          "textureBytes": 2258031,
+          "triangles": 30704,
+          "elapsed": 8.38333333333333,
+          "returned": false,
+          "heroRotation": 1.458683333333333,
+          "positions": [
+            {
+              "id": "AUREOLE",
+              "position": [
+                -105,
+                104,
+                -222
+              ],
+              "radius": 64
+            },
+            {
+              "id": "PELAGIC",
+              "position": [
+                162,
+                81,
+                -285
+              ],
+              "radius": 31
+            },
+            {
+              "id": "EMBER",
+              "position": [
+                76,
+                37,
+                162
+              ],
+              "radius": 19
+            },
+            {
+              "id": "SELENE",
+              "position": [
+                -94,
+                26,
+                71
+              ],
+              "radius": 13
+            },
+            {
+              "id": "MOON-01",
+              "position": [
+                -32,
+                34,
+                -125
+              ],
+              "radius": 4.4
+            },
+            {
+              "id": "MOON-02",
+              "position": [
+                -202,
+                58,
+                -87
+              ],
+              "radius": 6.8
+            },
+            {
+              "id": "MOON-03",
+              "position": [
+                286,
+                120,
+                -100
+              ],
+              "radius": 5.9
+            },
+            {
+              "id": "MOON-04",
+              "position": [
+                165,
+                182,
+                180
+              ],
+              "radius": 7.2
+            },
+            {
+              "id": "MOON-05",
+              "position": [
+                -264,
+                169,
+                142
+              ],
+              "radius": 9.1
+            },
+            {
+              "id": "MOON-06",
+              "position": [
+                34,
+                249,
+                -306
+              ],
+              "radius": 6.6
+            },
+            {
+              "id": "MOON-07",
+              "position": [
+                -338,
+                48,
+                -287
+              ],
+              "radius": 8.7
+            }
+          ]
+        },
+        "materials": {
+          "sets": 3,
+          "maps": 9,
+          "sharedMaterials": 10,
+          "jpegSourceBytes": 1783030,
+          "ktxNetworkBytes": 6714783,
+          "compressedMaps": 9,
+          "formats": {
+            "36492": 9
+          },
+          "gpuUploadPayloadBytes": 12583152,
+          "payloadNote": "Typed texture payload with mips; excludes GPU driver overhead, not a measured VRAM total",
+          "fallbacks": [],
+          "source": "ambientCG CC0 / Concrete048, Metal009, Metal047B"
+        },
+        "observed": false,
+        "sampleReleased": 0,
+        "canObserve": false,
+        "canReleaseSample": false,
+        "restoredCheckpoint": false,
+        "input": {
+          "x": 0,
+          "y": 0,
+          "jump": false,
+          "jumpPressed": false,
+          "sprint": false,
+          "crouch": false,
+          "pronePressed": false,
+          "descend": false,
+          "brake": false
+        },
+        "movement": {
+          "profile": "explore",
+          "moveSpeed": 3,
+          "jumpHeight": 1.2,
+          "gravityScale": 1,
+          "autoSprint": false,
+          "touchSize": 1,
+          "touchOpacity": 0.8,
+          "sensitivity": 1.3,
+          "acceleration": 1,
+          "invertY": false,
+          "quality": 1,
+          "volume": 0.55,
+          "muted": false,
+          "reducedMotion": false,
+          "fov": 50,
+          "tutorialSeen": true
+        },
+        "stance": "STAND",
+        "locomotion": "GROUND_WALK",
+        "stanceBlocked": null,
+        "fieldId": "architectural-support",
+        "colliderRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "capsule": {
+          "offset": 0.87,
+          "eye": 1.55
+        },
+        "error": null,
+        "world": "VESTIBULE",
+        "slot": "A",
+        "foot": [
+          8.00000011920929,
+          5.960442139851807e-10,
+          17.79999977350235
+        ],
+        "body": [
+          8.00000011920929,
+          0.8760000005960442,
+          17.79999977350235
+        ],
+        "eye": [
+          8.00000011920929,
+          1.5500000005960444,
+          17.79999977350235
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "gravity": [
+          0,
+          -9.81,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "cameraRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "theta": 0,
+        "thetaDegrees": 0,
+        "s": 6.5000001192092896,
+        "mode": "NORMAL",
+        "grounded": true,
+        "supportNormal": [
+          0,
+          1,
+          0
+        ],
+        "velocity": [
+          3.0000000447034836,
+          6.079673764425308e-7,
+          0
+        ],
+        "step": 503,
+        "progress": "ARRIVAL",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 0,
+        "translationQueries": 0,
+        "supportQueries": 1509,
+        "witness": {
+          "position": {
+            "x": 107.46694946289062,
+            "y": 4.199999809265137,
+            "z": 0.6000000238418579
+          },
+          "velocity": {
+            "x": 3.5969977378845215,
+            "y": 0,
+            "z": 0
+          },
+          "resets": 1
+        },
+        "render": {
+          "targetWidth": 640,
+          "targetHeight": 360,
+          "quality": 1,
+          "mainDrawCalls": 82,
+          "offscreenDrawCalls": 63,
+          "geometries": 168,
+          "textures": 24,
+          "programs": 21,
+          "context": "active",
+          "passes": 1,
+          "targetResizes": 1
+        },
+        "performance": {
+          "samples": 103,
+          "fps": 1.1652190046088566,
+          "averageMs": 858.2077669902768,
+          "p50Ms": 839.3999999985099,
+          "p95Ms": 2169.10000000149,
+          "p99Ms": 2263.7000000029802,
+          "physicsMs": 1.6000000014901161,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 8.38333333333333
+      }
+    },
+    {
+      "key": "w",
+      "snapshot": {
+        "ready": true,
+        "loading": {
+          "stage": "轨道前厅已就绪",
+          "progress": 1
+        },
+        "streaming": {
+          "total": 10,
+          "resident": 3,
+          "loading": 0,
+          "queued": 0,
+          "proxy": 0,
+          "visible": 2,
+          "culled": 8,
+          "loads": 11,
+          "evictions": 8,
+          "failed": 0,
+          "bytesResident": 1664896,
+          "retainedBehind": 1,
+          "interests": [
+            {
+              "worldId": "A",
+              "kind": "main",
+              "position": [
+                8.00000011920929,
+                1.5500000083446452,
+                -14.15000070258975
+              ]
+            }
+          ],
+          "chunks": [
+            {
+              "id": "A-capsule",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 36.6,
+              "lastWanted": 20.158200000006705,
+              "loadCount": 1,
+              "bytes": 1440096,
+              "triangles": 50704,
+              "failure": null
+            },
+            {
+              "id": "A-arrival",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 25.1,
+              "lastWanted": 34.16560000000522,
+              "loadCount": 1,
+              "bytes": 165196,
+              "triangles": 5800,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 15.9,
+              "lastWanted": 39.85830000000075,
+              "loadCount": 1,
+              "bytes": 396488,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-east",
+              "worldId": "A",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 0,
+              "lastWanted": 54.03130000000076,
+              "loadCount": 1,
+              "bytes": 399804,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gate",
+              "worldId": "A",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 1.9,
+              "lastWanted": 54.03130000000076,
+              "loadCount": 1,
+              "bytes": 521860,
+              "triangles": 18952,
+              "failure": null
+            },
+            {
+              "id": "A-roof-trusses",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 21.2,
+              "lastWanted": 9.913100000005214,
+              "loadCount": 1,
+              "bytes": 465712,
+              "triangles": 14988,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 34.3,
+              "lastWanted": 5.870000000003725,
+              "loadCount": 1,
+              "bytes": 1212256,
+              "triangles": 34176,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-east",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 29.9,
+              "lastWanted": 29.575100000005218,
+              "loadCount": 2,
+              "bytes": 1347468,
+              "triangles": 38368,
+              "failure": null
+            },
+            {
+              "id": "B-services",
+              "worldId": "B",
+              "state": "resident",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 52.31260000000151,
+              "loadCount": 1,
+              "bytes": 743232,
+              "triangles": 26076,
+              "failure": null
+            },
+            {
+              "id": "B-gravity-instruments",
+              "worldId": "B",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 20.408200000006705,
+              "loadCount": 1,
+              "bytes": 190872,
+              "triangles": 5416,
+              "failure": null
+            }
+          ]
+        },
+        "audio": {
+          "state": "running",
+          "unlocked": true,
+          "muted": false,
+          "volume": 0.55,
+          "activeVoices": 0,
+          "footsteps": 80,
+          "cues": 0,
+          "error": null,
+          "source": "original procedural Web Audio"
+        },
+        "sky": {
+          "bodies": 11,
+          "stars": 1900,
+          "textureCount": 5,
+          "textureBytes": 2258031,
+          "triangles": 30704,
+          "elapsed": 19.033333333333534,
+          "returned": false,
+          "heroRotation": 1.5332333333333346,
+          "positions": [
+            {
+              "id": "AUREOLE",
+              "position": [
+                -105,
+                104,
+                -222
+              ],
+              "radius": 64
+            },
+            {
+              "id": "PELAGIC",
+              "position": [
+                162,
+                81,
+                -285
+              ],
+              "radius": 31
+            },
+            {
+              "id": "EMBER",
+              "position": [
+                76,
+                37,
+                162
+              ],
+              "radius": 19
+            },
+            {
+              "id": "SELENE",
+              "position": [
+                -94,
+                26,
+                71
+              ],
+              "radius": 13
+            },
+            {
+              "id": "MOON-01",
+              "position": [
+                -32,
+                34,
+                -125
+              ],
+              "radius": 4.4
+            },
+            {
+              "id": "MOON-02",
+              "position": [
+                -202,
+                58,
+                -87
+              ],
+              "radius": 6.8
+            },
+            {
+              "id": "MOON-03",
+              "position": [
+                286,
+                120,
+                -100
+              ],
+              "radius": 5.9
+            },
+            {
+              "id": "MOON-04",
+              "position": [
+                165,
+                182,
+                180
+              ],
+              "radius": 7.2
+            },
+            {
+              "id": "MOON-05",
+              "position": [
+                -264,
+                169,
+                142
+              ],
+              "radius": 9.1
+            },
+            {
+              "id": "MOON-06",
+              "position": [
+                34,
+                249,
+                -306
+              ],
+              "radius": 6.6
+            },
+            {
+              "id": "MOON-07",
+              "position": [
+                -338,
+                48,
+                -287
+              ],
+              "radius": 8.7
+            }
+          ]
+        },
+        "materials": {
+          "sets": 3,
+          "maps": 9,
+          "sharedMaterials": 10,
+          "jpegSourceBytes": 1783030,
+          "ktxNetworkBytes": 6714783,
+          "compressedMaps": 9,
+          "formats": {
+            "36492": 9
+          },
+          "gpuUploadPayloadBytes": 12583152,
+          "payloadNote": "Typed texture payload with mips; excludes GPU driver overhead, not a measured VRAM total",
+          "fallbacks": [],
+          "source": "ambientCG CC0 / Concrete048, Metal009, Metal047B"
+        },
+        "observed": false,
+        "sampleReleased": 0,
+        "canObserve": false,
+        "canReleaseSample": false,
+        "restoredCheckpoint": false,
+        "input": {
+          "x": 0,
+          "y": 0,
+          "jump": false,
+          "jumpPressed": false,
+          "sprint": false,
+          "crouch": false,
+          "pronePressed": false,
+          "descend": false,
+          "brake": false
+        },
+        "movement": {
+          "profile": "explore",
+          "moveSpeed": 3,
+          "jumpHeight": 1.2,
+          "gravityScale": 1,
+          "autoSprint": false,
+          "touchSize": 1,
+          "touchOpacity": 0.8,
+          "sensitivity": 1.3,
+          "acceleration": 1,
+          "invertY": false,
+          "quality": 1,
+          "volume": 0.55,
+          "muted": false,
+          "reducedMotion": false,
+          "fov": 50,
+          "tutorialSeen": true
+        },
+        "stance": "STAND",
+        "locomotion": "GROUND_WALK",
+        "stanceBlocked": null,
+        "fieldId": "architectural-support",
+        "colliderRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "capsule": {
+          "offset": 0.87,
+          "eye": 1.55
+        },
+        "error": null,
+        "world": "VESTIBULE",
+        "slot": "A",
+        "foot": [
+          8.00000011920929,
+          8.344645197055911e-9,
+          -14.15000070258975
+        ],
+        "body": [
+          8.00000011920929,
+          0.8760000083446452,
+          -14.15000070258975
+        ],
+        "eye": [
+          8.00000011920929,
+          1.5500000083446452,
+          -14.15000070258975
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "gravity": [
+          0,
+          -9.81,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "cameraRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "theta": 0,
+        "thetaDegrees": 0,
+        "s": 6.5000001192092896,
+        "mode": "NORMAL",
+        "grounded": true,
+        "supportNormal": [
+          0,
+          1,
+          0
+        ],
+        "velocity": [
+          0,
+          6.079673764425308e-7,
+          -3.0000000447034836
+        ],
+        "step": 1142,
+        "progress": "ARRIVAL",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 0,
+        "translationQueries": 0,
+        "supportQueries": 3426,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196490287780762,
+            "z": 0.5884373188018799
+          },
+          "velocity": {
+            "x": 0.000006224960088729858,
+            "y": 0.00004798030204256065,
+            "z": -0.000049217265768675134
+          },
+          "resets": 2
+        },
+        "render": {
+          "targetWidth": 640,
+          "targetHeight": 360,
+          "quality": 1,
+          "mainDrawCalls": 33,
+          "offscreenDrawCalls": 0,
+          "geometries": 154,
+          "textures": 24,
+          "programs": 21,
+          "context": "active",
+          "passes": 0,
+          "targetResizes": 1
+        },
+        "performance": {
+          "samples": 233,
+          "fps": 1.3977581878335048,
+          "averageMs": 715.431330472103,
+          "p50Ms": 662.5999999977648,
+          "p95Ms": 1539.1000000014901,
+          "p99Ms": 2209.5,
+          "physicsMs": 0.5999999977648258,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 19.033333333333534
+      }
+    },
+    {
+      "key": "a",
+      "snapshot": {
+        "ready": true,
+        "loading": {
+          "stage": "轨道前厅已就绪",
+          "progress": 1
+        },
+        "streaming": {
+          "total": 10,
+          "resident": 4,
+          "loading": 0,
+          "queued": 0,
+          "proxy": 0,
+          "visible": 3,
+          "culled": 7,
+          "loads": 12,
+          "evictions": 8,
+          "failed": 0,
+          "bytesResident": 1855768,
+          "retainedBehind": 1,
+          "interests": [
+            {
+              "worldId": "A",
+              "kind": "main",
+              "position": [
+                -0.05000000074505806,
+                1.5500000005960408,
+                -14.15000070258975
+              ]
+            },
+            {
+              "worldId": "B",
+              "kind": "portal",
+              "position": [
+                99.94999999925494,
+                1.5500000005960408,
+                24.049999297410253
+              ]
+            }
+          ],
+          "chunks": [
+            {
+              "id": "A-capsule",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 36.2,
+              "lastWanted": 20.158200000006705,
+              "loadCount": 1,
+              "bytes": 1440096,
+              "triangles": 50704,
+              "failure": null
+            },
+            {
+              "id": "A-arrival",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 25.1,
+              "lastWanted": 34.16560000000522,
+              "loadCount": 1,
+              "bytes": 165196,
+              "triangles": 5800,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 7.8,
+              "lastWanted": 39.85830000000075,
+              "loadCount": 1,
+              "bytes": 396488,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-east",
+              "worldId": "A",
+              "state": "resident",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 7.9,
+              "lastWanted": 58.75880000000449,
+              "loadCount": 1,
+              "bytes": 399804,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gate",
+              "worldId": "A",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 1.8,
+              "lastWanted": 61.75880000000449,
+              "loadCount": 1,
+              "bytes": 521860,
+              "triangles": 18952,
+              "failure": null
+            },
+            {
+              "id": "A-roof-trusses",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 21.2,
+              "lastWanted": 9.913100000005214,
+              "loadCount": 1,
+              "bytes": 465712,
+              "triangles": 14988,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 30.5,
+              "lastWanted": 5.870000000003725,
+              "loadCount": 1,
+              "bytes": 1212256,
+              "triangles": 34176,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-east",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 31.4,
+              "lastWanted": 29.575100000005218,
+              "loadCount": 2,
+              "bytes": 1347468,
+              "triangles": 38368,
+              "failure": null
+            },
+            {
+              "id": "B-services",
+              "worldId": "B",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 5.3,
+              "lastWanted": 61.75880000000449,
+              "loadCount": 1,
+              "bytes": 743232,
+              "triangles": 26076,
+              "failure": null
+            },
+            {
+              "id": "B-gravity-instruments",
+              "worldId": "B",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 29,
+              "lastWanted": 61.75880000000449,
+              "loadCount": 2,
+              "bytes": 190872,
+              "triangles": 5416,
+              "failure": null
+            }
+          ]
+        },
+        "audio": {
+          "state": "running",
+          "unlocked": true,
+          "muted": false,
+          "volume": 0.55,
+          "activeVoices": 0,
+          "footsteps": 92,
+          "cues": 0,
+          "error": null,
+          "source": "original procedural Web Audio"
+        },
+        "sky": {
+          "bodies": 11,
+          "stars": 1900,
+          "textureCount": 5,
+          "textureBytes": 2258031,
+          "triangles": 30704,
+          "elapsed": 21.716666666666715,
+          "returned": false,
+          "heroRotation": 1.5520166666666668,
+          "positions": [
+            {
+              "id": "AUREOLE",
+              "position": [
+                -105,
+                104,
+                -222
+              ],
+              "radius": 64
+            },
+            {
+              "id": "PELAGIC",
+              "position": [
+                162,
+                81,
+                -285
+              ],
+              "radius": 31
+            },
+            {
+              "id": "EMBER",
+              "position": [
+                76,
+                37,
+                162
+              ],
+              "radius": 19
+            },
+            {
+              "id": "SELENE",
+              "position": [
+                -94,
+                26,
+                71
+              ],
+              "radius": 13
+            },
+            {
+              "id": "MOON-01",
+              "position": [
+                -32,
+                34,
+                -125
+              ],
+              "radius": 4.4
+            },
+            {
+              "id": "MOON-02",
+              "position": [
+                -202,
+                58,
+                -87
+              ],
+              "radius": 6.8
+            },
+            {
+              "id": "MOON-03",
+              "position": [
+                286,
+                120,
+                -100
+              ],
+              "radius": 5.9
+            },
+            {
+              "id": "MOON-04",
+              "position": [
+                165,
+                182,
+                180
+              ],
+              "radius": 7.2
+            },
+            {
+              "id": "MOON-05",
+              "position": [
+                -264,
+                169,
+                142
+              ],
+              "radius": 9.1
+            },
+            {
+              "id": "MOON-06",
+              "position": [
+                34,
+                249,
+                -306
+              ],
+              "radius": 6.6
+            },
+            {
+              "id": "MOON-07",
+              "position": [
+                -338,
+                48,
+                -287
+              ],
+              "radius": 8.7
+            }
+          ]
+        },
+        "materials": {
+          "sets": 3,
+          "maps": 9,
+          "sharedMaterials": 10,
+          "jpegSourceBytes": 1783030,
+          "ktxNetworkBytes": 6714783,
+          "compressedMaps": 9,
+          "formats": {
+            "36492": 9
+          },
+          "gpuUploadPayloadBytes": 12583152,
+          "payloadNote": "Typed texture payload with mips; excludes GPU driver overhead, not a measured VRAM total",
+          "fallbacks": [],
+          "source": "ambientCG CC0 / Concrete048, Metal009, Metal047B"
+        },
+        "observed": false,
+        "sampleReleased": 0,
+        "canObserve": false,
+        "canReleaseSample": false,
+        "restoredCheckpoint": false,
+        "input": {
+          "x": 0,
+          "y": 0,
+          "jump": false,
+          "jumpPressed": false,
+          "sprint": false,
+          "crouch": false,
+          "pronePressed": false,
+          "descend": false,
+          "brake": false
+        },
+        "movement": {
+          "profile": "explore",
+          "moveSpeed": 3,
+          "jumpHeight": 1.2,
+          "gravityScale": 1,
+          "autoSprint": false,
+          "touchSize": 1,
+          "touchOpacity": 0.8,
+          "sensitivity": 1.3,
+          "acceleration": 1,
+          "invertY": false,
+          "quality": 1,
+          "volume": 0.55,
+          "muted": false,
+          "reducedMotion": false,
+          "fov": 50,
+          "tutorialSeen": true
+        },
+        "stance": "STAND",
+        "locomotion": "GROUND_WALK",
+        "stanceBlocked": null,
+        "fieldId": "architectural-support",
+        "colliderRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "capsule": {
+          "offset": 0.87,
+          "eye": 1.55
+        },
+        "error": null,
+        "world": "VESTIBULE",
+        "slot": "A",
+        "foot": [
+          -0.05000000074505806,
+          5.960406612715019e-10,
+          -14.15000070258975
+        ],
+        "body": [
+          -0.05000000074505806,
+          0.8760000005960407,
+          -14.15000070258975
+        ],
+        "eye": [
+          -0.05000000074505806,
+          1.5500000005960408,
+          -14.15000070258975
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "gravity": [
+          0,
+          -9.81,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "cameraRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "theta": 0,
+        "thetaDegrees": 0,
+        "s": -1.550000000745058,
+        "mode": "NORMAL",
+        "grounded": true,
+        "supportNormal": [
+          0,
+          1,
+          0
+        ],
+        "velocity": [
+          -3.0000000447034836,
+          6.079673764425308e-7,
+          0
+        ],
+        "step": 1303,
+        "progress": "ARRIVAL",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 0,
+        "translationQueries": 0,
+        "supportQueries": 3909,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196582794189453,
+            "z": 0.5882684588432312
+          },
+          "velocity": {
+            "x": 0.0000020582228899002075,
+            "y": 0.000051295246521476656,
+            "z": -0.00004711298242909834
+          },
+          "resets": 2
+        },
+        "render": {
+          "targetWidth": 640,
+          "targetHeight": 360,
+          "quality": 1,
+          "mainDrawCalls": 33,
+          "offscreenDrawCalls": 67,
+          "geometries": 158,
+          "textures": 24,
+          "programs": 21,
+          "context": "active",
+          "passes": 1,
+          "targetResizes": 1
+        },
+        "performance": {
+          "samples": 266,
+          "fps": 1.470350872150234,
+          "averageMs": 680.1097744360874,
+          "p50Ms": 607.8999999985099,
+          "p95Ms": 1375.199999999255,
+          "p99Ms": 2209.5,
+          "physicsMs": 0.8999999985098839,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 21.716666666666715
+      }
+    },
+    {
+      "key": "w",
+      "snapshot": {
+        "ready": true,
+        "loading": {
+          "stage": "轨道前厅已就绪",
+          "progress": 1
+        },
+        "streaming": {
+          "total": 10,
+          "resident": 3,
+          "loading": 0,
+          "queued": 0,
+          "proxy": 0,
+          "visible": 2,
+          "culled": 8,
+          "loads": 12,
+          "evictions": 9,
+          "failed": 0,
+          "bytesResident": 1455964,
+          "retainedBehind": 1,
+          "interests": [
+            {
+              "worldId": "B",
+              "kind": "main",
+              "position": [
+                99.94999999925494,
+                1.5499999946355758,
+                18.049500003352765
+              ]
+            }
+          ],
+          "chunks": [
+            {
+              "id": "A-capsule",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 20.158200000006705,
+              "loadCount": 1,
+              "bytes": 1440096,
+              "triangles": 50704,
+              "failure": null
+            },
+            {
+              "id": "A-arrival",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 34.16560000000522,
+              "loadCount": 1,
+              "bytes": 165196,
+              "triangles": 5800,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 39.85830000000075,
+              "loadCount": 1,
+              "bytes": 396488,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-east",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 58.75880000000449,
+              "loadCount": 1,
+              "bytes": 399804,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gate",
+              "worldId": "A",
+              "state": "resident",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 67.5088000000045,
+              "loadCount": 1,
+              "bytes": 521860,
+              "triangles": 18952,
+              "failure": null
+            },
+            {
+              "id": "A-roof-trusses",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 9.913100000005214,
+              "loadCount": 1,
+              "bytes": 465712,
+              "triangles": 14988,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 5.870000000003725,
+              "loadCount": 1,
+              "bytes": 1212256,
+              "triangles": 34176,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-east",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 29.575100000005218,
+              "loadCount": 2,
+              "bytes": 1347468,
+              "triangles": 38368,
+              "failure": null
+            },
+            {
+              "id": "B-services",
+              "worldId": "B",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 0,
+              "lastWanted": 67.7588000000045,
+              "loadCount": 1,
+              "bytes": 743232,
+              "triangles": 26076,
+              "failure": null
+            },
+            {
+              "id": "B-gravity-instruments",
+              "worldId": "B",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 23,
+              "lastWanted": 67.7588000000045,
+              "loadCount": 2,
+              "bytes": 190872,
+              "triangles": 5416,
+              "failure": null
+            }
+          ]
+        },
+        "audio": {
+          "state": "running",
+          "unlocked": true,
+          "muted": false,
+          "volume": 0.55,
+          "activeVoices": 4,
+          "footsteps": 101,
+          "cues": 1,
+          "error": null,
+          "source": "original procedural Web Audio"
+        },
+        "sky": {
+          "bodies": 11,
+          "stars": 1900,
+          "textureCount": 5,
+          "textureBytes": 2258031,
+          "triangles": 30704,
+          "elapsed": 23.7166666666666,
+          "returned": false,
+          "heroRotation": 1.5660166666666662,
+          "positions": [
+            {
+              "id": "AUREOLE",
+              "position": [
+                -105,
+                104,
+                -222
+              ],
+              "radius": 64
+            },
+            {
+              "id": "PELAGIC",
+              "position": [
+                162,
+                81,
+                -285
+              ],
+              "radius": 31
+            },
+            {
+              "id": "EMBER",
+              "position": [
+                76,
+                37,
+                162
+              ],
+              "radius": 19
+            },
+            {
+              "id": "SELENE",
+              "position": [
+                -94,
+                26,
+                71
+              ],
+              "radius": 13
+            },
+            {
+              "id": "MOON-01",
+              "position": [
+                -32,
+                34,
+                -125
+              ],
+              "radius": 4.4
+            },
+            {
+              "id": "MOON-02",
+              "position": [
+                -202,
+                58,
+                -87
+              ],
+              "radius": 6.8
+            },
+            {
+              "id": "MOON-03",
+              "position": [
+                286,
+                120,
+                -100
+              ],
+              "radius": 5.9
+            },
+            {
+              "id": "MOON-04",
+              "position": [
+                165,
+                182,
+                180
+              ],
+              "radius": 7.2
+            },
+            {
+              "id": "MOON-05",
+              "position": [
+                -264,
+                169,
+                142
+              ],
+              "radius": 9.1
+            },
+            {
+              "id": "MOON-06",
+              "position": [
+                34,
+                249,
+                -306
+              ],
+              "radius": 6.6
+            },
+            {
+              "id": "MOON-07",
+              "position": [
+                -338,
+                48,
+                -287
+              ],
+              "radius": 8.7
+            }
+          ]
+        },
+        "materials": {
+          "sets": 3,
+          "maps": 9,
+          "sharedMaterials": 10,
+          "jpegSourceBytes": 1783030,
+          "ktxNetworkBytes": 6714783,
+          "compressedMaps": 9,
+          "formats": {
+            "36492": 9
+          },
+          "gpuUploadPayloadBytes": 12583152,
+          "payloadNote": "Typed texture payload with mips; excludes GPU driver overhead, not a measured VRAM total",
+          "fallbacks": [],
+          "source": "ambientCG CC0 / Concrete048, Metal009, Metal047B"
+        },
+        "observed": false,
+        "sampleReleased": 0,
+        "canObserve": false,
+        "canReleaseSample": false,
+        "restoredCheckpoint": false,
+        "input": {
+          "x": 0,
+          "y": 0,
+          "jump": false,
+          "jumpPressed": false,
+          "sprint": false,
+          "crouch": false,
+          "pronePressed": false,
+          "descend": false,
+          "brake": false
+        },
+        "movement": {
+          "profile": "explore",
+          "moveSpeed": 3,
+          "jumpHeight": 1.2,
+          "gravityScale": 1,
+          "autoSprint": false,
+          "touchSize": 1,
+          "touchOpacity": 0.8,
+          "sensitivity": 1.3,
+          "acceleration": 1,
+          "invertY": false,
+          "quality": 1,
+          "volume": 0.55,
+          "muted": false,
+          "reducedMotion": false,
+          "fov": 50,
+          "tutorialSeen": true
+        },
+        "stance": "STAND",
+        "locomotion": "GROUND_WALK",
+        "stanceBlocked": null,
+        "fieldId": "architectural-support",
+        "colliderRotation": [
+          0,
+          -1.2246467991473532e-16,
+          0,
+          1
+        ],
+        "capsule": {
+          "offset": 0.87,
+          "eye": 1.55
+        },
+        "error": null,
+        "world": "INVERT",
+        "slot": "B",
+        "foot": [
+          -0.05000000074505806,
+          -5.3644243491746124e-9,
+          18.049500003352765
+        ],
+        "body": [
+          -0.05000000074505806,
+          0.8759999946355757,
+          18.049500003352765
+        ],
+        "eye": [
+          -0.05000000074505806,
+          1.5499999946355758,
+          18.049500003352765
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "gravity": [
+          0,
+          -9.81,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "cameraRotation": [
+          0,
+          -1.2246467991473532e-16,
+          0,
+          1
+        ],
+        "yaw": -2.4492935982947064e-16,
+        "pitch": 0,
+        "theta": 0,
+        "thetaDegrees": 0,
+        "s": -1.550000000745058,
+        "mode": "NORMAL",
+        "grounded": true,
+        "supportNormal": [
+          0,
+          1,
+          0
+        ],
+        "velocity": [
+          0,
+          -2.861022951883285e-7,
+          -2.9999999329447746
+        ],
+        "step": 1423,
+        "progress": "INVERT",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [
+          {
+            "id": 1,
+            "step": 1420,
+            "sourceId": "VESTIBULE-THRESHOLD",
+            "destinationId": "INVERT-THRESHOLD",
+            "sourceWorldId": "A",
+            "destinationWorldId": "B",
+            "sourcePosition": [
+              -0.05000000074505806,
+              0.8759999839067396,
+              -20
+            ],
+            "destinationPosition": [
+              99.94999999925494,
+              0.8759999839067396,
+              18.199500000000004
+            ],
+            "velocityBefore": [
+              0,
+              0,
+              -3
+            ],
+            "velocityAfter": [
+              7.347880794884119e-16,
+              0,
+              -3
+            ],
+            "crossingT": 0.9999822196742582,
+            "remainingDisplacement": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "transferState": "WAITING_FOR_REARM",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 0,
+        "translationQueries": 0,
+        "supportQueries": 4281,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196661472320557,
+            "z": 0.5881410241127014
+          },
+          "velocity": {
+            "x": 0.000017791055142879486,
+            "y": 0.00006605483940802515,
+            "z": -0.00008800617069937289
+          },
+          "resets": 2
+        },
+        "render": {
+          "targetWidth": 640,
+          "targetHeight": 360,
+          "quality": 1,
+          "mainDrawCalls": 68,
+          "offscreenDrawCalls": 0,
+          "geometries": 155,
+          "textures": 24,
+          "programs": 21,
+          "context": "active",
+          "passes": 0,
+          "targetResizes": 1
+        },
+        "performance": {
+          "samples": 290,
+          "fps": 1.4841859981892873,
+          "averageMs": 673.7700000000026,
+          "p50Ms": 605,
+          "p95Ms": 1369.5,
+          "p99Ms": 2209.5,
+          "physicsMs": 4.5,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 23.7166666666666
+      }
+    },
+    {
+      "key": "w",
+      "snapshot": {
+        "ready": true,
+        "loading": {
+          "stage": "轨道前厅已就绪",
+          "progress": 1
+        },
+        "streaming": {
+          "total": 10,
+          "resident": 2,
+          "loading": 0,
+          "queued": 0,
+          "proxy": 0,
+          "visible": 2,
+          "culled": 8,
+          "loads": 12,
+          "evictions": 10,
+          "failed": 0,
+          "bytesResident": 934104,
+          "retainedBehind": 0,
+          "interests": [
+            {
+              "worldId": "B",
+              "kind": "main",
+              "position": [
+                99.94999999925494,
+                1.5500000026822005,
+                -7.100499434500929
+              ]
+            }
+          ],
+          "chunks": [
+            {
+              "id": "A-capsule",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 20.158200000006705,
+              "loadCount": 1,
+              "bytes": 1440096,
+              "triangles": 50704,
+              "failure": null
+            },
+            {
+              "id": "A-arrival",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 34.16560000000522,
+              "loadCount": 1,
+              "bytes": 165196,
+              "triangles": 5800,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 39.85830000000075,
+              "loadCount": 1,
+              "bytes": 396488,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-east",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 58.75880000000449,
+              "loadCount": 1,
+              "bytes": 399804,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gate",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 67.5088000000045,
+              "loadCount": 1,
+              "bytes": 521860,
+              "triangles": 18952,
+              "failure": null
+            },
+            {
+              "id": "A-roof-trusses",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 9.913100000005214,
+              "loadCount": 1,
+              "bytes": 465712,
+              "triangles": 14988,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 5.870000000003725,
+              "loadCount": 1,
+              "bytes": 1212256,
+              "triangles": 34176,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-east",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 29.575100000005218,
+              "loadCount": 2,
+              "bytes": 1347468,
+              "triangles": 38368,
+              "failure": null
+            },
+            {
+              "id": "B-services",
+              "worldId": "B",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 0,
+              "lastWanted": 92.10870000000673,
+              "loadCount": 1,
+              "bytes": 743232,
+              "triangles": 26076,
+              "failure": null
+            },
+            {
+              "id": "B-gravity-instruments",
+              "worldId": "B",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 1.5,
+              "lastWanted": 92.10870000000673,
+              "loadCount": 2,
+              "bytes": 190872,
+              "triangles": 5416,
+              "failure": null
+            }
+          ]
+        },
+        "audio": {
+          "state": "running",
+          "unlocked": true,
+          "muted": false,
+          "volume": 0.55,
+          "activeVoices": 0,
+          "footsteps": 138,
+          "cues": 1,
+          "error": null,
+          "source": "original procedural Web Audio"
+        },
+        "sky": {
+          "bodies": 11,
+          "stars": 1900,
+          "textureCount": 5,
+          "textureBytes": 2258031,
+          "triangles": 30704,
+          "elapsed": 32.09999999999946,
+          "returned": false,
+          "heroRotation": 1.6246999999999963,
+          "positions": [
+            {
+              "id": "AUREOLE",
+              "position": [
+                -105,
+                104,
+                -222
+              ],
+              "radius": 64
+            },
+            {
+              "id": "PELAGIC",
+              "position": [
+                162,
+                81,
+                -285
+              ],
+              "radius": 31
+            },
+            {
+              "id": "EMBER",
+              "position": [
+                76,
+                37,
+                162
+              ],
+              "radius": 19
+            },
+            {
+              "id": "SELENE",
+              "position": [
+                -94,
+                26,
+                71
+              ],
+              "radius": 13
+            },
+            {
+              "id": "MOON-01",
+              "position": [
+                -32,
+                34,
+                -125
+              ],
+              "radius": 4.4
+            },
+            {
+              "id": "MOON-02",
+              "position": [
+                -202,
+                58,
+                -87
+              ],
+              "radius": 6.8
+            },
+            {
+              "id": "MOON-03",
+              "position": [
+                286,
+                120,
+                -100
+              ],
+              "radius": 5.9
+            },
+            {
+              "id": "MOON-04",
+              "position": [
+                165,
+                182,
+                180
+              ],
+              "radius": 7.2
+            },
+            {
+              "id": "MOON-05",
+              "position": [
+                -264,
+                169,
+                142
+              ],
+              "radius": 9.1
+            },
+            {
+              "id": "MOON-06",
+              "position": [
+                34,
+                249,
+                -306
+              ],
+              "radius": 6.6
+            },
+            {
+              "id": "MOON-07",
+              "position": [
+                -338,
+                48,
+                -287
+              ],
+              "radius": 8.7
+            }
+          ]
+        },
+        "materials": {
+          "sets": 3,
+          "maps": 9,
+          "sharedMaterials": 10,
+          "jpegSourceBytes": 1783030,
+          "ktxNetworkBytes": 6714783,
+          "compressedMaps": 9,
+          "formats": {
+            "36492": 9
+          },
+          "gpuUploadPayloadBytes": 12583152,
+          "payloadNote": "Typed texture payload with mips; excludes GPU driver overhead, not a measured VRAM total",
+          "fallbacks": [],
+          "source": "ambientCG CC0 / Concrete048, Metal009, Metal047B"
+        },
+        "observed": false,
+        "sampleReleased": 0,
+        "canObserve": false,
+        "canReleaseSample": false,
+        "restoredCheckpoint": false,
+        "input": {
+          "x": 0,
+          "y": 0,
+          "jump": false,
+          "jumpPressed": false,
+          "sprint": false,
+          "crouch": false,
+          "pronePressed": false,
+          "descend": false,
+          "brake": false
+        },
+        "movement": {
+          "profile": "explore",
+          "moveSpeed": 3,
+          "jumpHeight": 1.2,
+          "gravityScale": 1,
+          "autoSprint": false,
+          "touchSize": 1,
+          "touchOpacity": 0.8,
+          "sensitivity": 1.3,
+          "acceleration": 1,
+          "invertY": false,
+          "quality": 1,
+          "volume": 0.55,
+          "muted": false,
+          "reducedMotion": false,
+          "fov": 50,
+          "tutorialSeen": true
+        },
+        "stance": "STAND",
+        "locomotion": "GROUND_WALK",
+        "stanceBlocked": null,
+        "fieldId": "architectural-support",
+        "colliderRotation": [
+          0,
+          -1.2246467991473532e-16,
+          0,
+          1
+        ],
+        "capsule": {
+          "offset": 0.87,
+          "eye": 1.55
+        },
+        "error": null,
+        "world": "INVERT",
+        "slot": "B",
+        "foot": [
+          -0.05000000074505806,
+          2.6822004617343964e-9,
+          -7.100499434500929
+        ],
+        "body": [
+          -0.05000000074505806,
+          0.8760000026822005,
+          -7.100499434500929
+        ],
+        "eye": [
+          -0.05000000074505806,
+          1.5500000026822005,
+          -7.100499434500929
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "gravity": [
+          0,
+          -9.81,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "cameraRotation": [
+          0,
+          -1.2246467991473532e-16,
+          0,
+          1
+        ],
+        "yaw": -2.4492935982947064e-16,
+        "pitch": 0,
+        "theta": 0,
+        "thetaDegrees": 0,
+        "s": -1.550000000745058,
+        "mode": "NORMAL",
+        "grounded": true,
+        "supportNormal": [
+          0,
+          1,
+          0
+        ],
+        "velocity": [
+          0,
+          1.6093254062710116e-7,
+          -2.9999999329447746
+        ],
+        "step": 1926,
+        "progress": "INVERT",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [
+          {
+            "id": 1,
+            "step": 1420,
+            "sourceId": "VESTIBULE-THRESHOLD",
+            "destinationId": "INVERT-THRESHOLD",
+            "sourceWorldId": "A",
+            "destinationWorldId": "B",
+            "sourcePosition": [
+              -0.05000000074505806,
+              0.8759999839067396,
+              -20
+            ],
+            "destinationPosition": [
+              99.94999999925494,
+              0.8759999839067396,
+              18.199500000000004
+            ],
+            "velocityBefore": [
+              0,
+              0,
+              -3
+            ],
+            "velocityAfter": [
+              7.347880794884119e-16,
+              0,
+              -3
+            ],
+            "crossingT": 0.9999822196742582,
+            "remainingDisplacement": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 0,
+        "translationQueries": 0,
+        "supportQueries": 7802,
+        "witness": {
+          "position": {
+            "x": 106.80613708496094,
+            "y": 4.199999809265137,
+            "z": 0.6000000238418579
+          },
+          "velocity": {
+            "x": 0.3270000219345093,
+            "y": 0,
+            "z": 0
+          },
+          "resets": 4
+        },
+        "render": {
+          "targetWidth": 640,
+          "targetHeight": 360,
+          "quality": 1,
+          "mainDrawCalls": 40,
+          "offscreenDrawCalls": 0,
+          "geometries": 151,
+          "textures": 24,
+          "programs": 21,
+          "context": "active",
+          "passes": 0,
+          "targetResizes": 1
+        },
+        "performance": {
+          "samples": 402,
+          "fps": 1.6511756000606352,
+          "averageMs": 605.6291044776083,
+          "p50Ms": 540.8999999985099,
+          "p95Ms": 1309.2000000029802,
+          "p99Ms": 2200.099999997765,
+          "physicsMs": 1.800000000745058,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 32.09999999999946
+      }
+    },
+    {
+      "key": "d",
+      "snapshot": {
+        "ready": true,
+        "loading": {
+          "stage": "轨道前厅已就绪",
+          "progress": 1
+        },
+        "streaming": {
+          "total": 10,
+          "resident": 2,
+          "loading": 0,
+          "queued": 0,
+          "proxy": 0,
+          "visible": 2,
+          "culled": 8,
+          "loads": 12,
+          "evictions": 10,
+          "failed": 0,
+          "bytesResident": 934104,
+          "retainedBehind": 0,
+          "interests": [
+            {
+              "worldId": "B",
+              "kind": "main",
+              "position": [
+                103.15,
+                4.2233042993385315,
+                -7.100499434500929
+              ]
+            }
+          ],
+          "chunks": [
+            {
+              "id": "A-capsule",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 20.158200000006705,
+              "loadCount": 1,
+              "bytes": 1440096,
+              "triangles": 50704,
+              "failure": null
+            },
+            {
+              "id": "A-arrival",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 34.16560000000522,
+              "loadCount": 1,
+              "bytes": 165196,
+              "triangles": 5800,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 39.85830000000075,
+              "loadCount": 1,
+              "bytes": 396488,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-east",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 58.75880000000449,
+              "loadCount": 1,
+              "bytes": 399804,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gate",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 67.5088000000045,
+              "loadCount": 1,
+              "bytes": 521860,
+              "triangles": 18952,
+              "failure": null
+            },
+            {
+              "id": "A-roof-trusses",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 9.913100000005214,
+              "loadCount": 1,
+              "bytes": 465712,
+              "triangles": 14988,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 5.870000000003725,
+              "loadCount": 1,
+              "bytes": 1212256,
+              "triangles": 34176,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-east",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 29.575100000005218,
+              "loadCount": 2,
+              "bytes": 1347468,
+              "triangles": 38368,
+              "failure": null
+            },
+            {
+              "id": "B-services",
+              "worldId": "B",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 0,
+              "lastWanted": 99.69460000000899,
+              "loadCount": 1,
+              "bytes": 743232,
+              "triangles": 26076,
+              "failure": null
+            },
+            {
+              "id": "B-gravity-instruments",
+              "worldId": "B",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 0,
+              "lastWanted": 99.69460000000899,
+              "loadCount": 2,
+              "bytes": 190872,
+              "triangles": 5416,
+              "failure": null
+            }
+          ]
+        },
+        "audio": {
+          "state": "running",
+          "unlocked": true,
+          "muted": false,
+          "volume": 0.55,
+          "activeVoices": 2,
+          "footsteps": 149,
+          "cues": 1,
+          "error": null,
+          "source": "original procedural Web Audio"
+        },
+        "sky": {
+          "bodies": 11,
+          "stars": 1900,
+          "textureCount": 5,
+          "textureBytes": 2258031,
+          "triangles": 30704,
+          "elapsed": 34.63333333333265,
+          "returned": false,
+          "heroRotation": 1.6424333333333285,
+          "positions": [
+            {
+              "id": "AUREOLE",
+              "position": [
+                -105,
+                104,
+                -222
+              ],
+              "radius": 64
+            },
+            {
+              "id": "PELAGIC",
+              "position": [
+                162,
+                81,
+                -285
+              ],
+              "radius": 31
+            },
+            {
+              "id": "EMBER",
+              "position": [
+                76,
+                37,
+                162
+              ],
+              "radius": 19
+            },
+            {
+              "id": "SELENE",
+              "position": [
+                -94,
+                26,
+                71
+              ],
+              "radius": 13
+            },
+            {
+              "id": "MOON-01",
+              "position": [
+                -32,
+                34,
+                -125
+              ],
+              "radius": 4.4
+            },
+            {
+              "id": "MOON-02",
+              "position": [
+                -202,
+                58,
+                -87
+              ],
+              "radius": 6.8
+            },
+            {
+              "id": "MOON-03",
+              "position": [
+                286,
+                120,
+                -100
+              ],
+              "radius": 5.9
+            },
+            {
+              "id": "MOON-04",
+              "position": [
+                165,
+                182,
+                180
+              ],
+              "radius": 7.2
+            },
+            {
+              "id": "MOON-05",
+              "position": [
+                -264,
+                169,
+                142
+              ],
+              "radius": 9.1
+            },
+            {
+              "id": "MOON-06",
+              "position": [
+                34,
+                249,
+                -306
+              ],
+              "radius": 6.6
+            },
+            {
+              "id": "MOON-07",
+              "position": [
+                -338,
+                48,
+                -287
+              ],
+              "radius": 8.7
+            }
+          ]
+        },
+        "materials": {
+          "sets": 3,
+          "maps": 9,
+          "sharedMaterials": 10,
+          "jpegSourceBytes": 1783030,
+          "ktxNetworkBytes": 6714783,
+          "compressedMaps": 9,
+          "formats": {
+            "36492": 9
+          },
+          "gpuUploadPayloadBytes": 12583152,
+          "payloadNote": "Typed texture payload with mips; excludes GPU driver overhead, not a measured VRAM total",
+          "fallbacks": [],
+          "source": "ambientCG CC0 / Concrete048, Metal009, Metal047B"
+        },
+        "observed": false,
+        "sampleReleased": 0,
+        "canObserve": false,
+        "canReleaseSample": false,
+        "restoredCheckpoint": false,
+        "input": {
+          "x": 0,
+          "y": 0,
+          "jump": false,
+          "jumpPressed": false,
+          "sprint": false,
+          "crouch": false,
+          "pronePressed": false,
+          "descend": false,
+          "brake": false
+        },
+        "movement": {
+          "profile": "explore",
+          "moveSpeed": 3,
+          "jumpHeight": 1.2,
+          "gravityScale": 1,
+          "autoSprint": false,
+          "touchSize": 1,
+          "touchOpacity": 0.8,
+          "sensitivity": 1.3,
+          "acceleration": 1,
+          "invertY": false,
+          "quality": 1,
+          "volume": 0.55,
+          "muted": false,
+          "reducedMotion": false,
+          "fov": 50,
+          "tutorialSeen": true
+        },
+        "stance": "STAND",
+        "locomotion": "GROUND_WALK",
+        "stanceBlocked": null,
+        "fieldId": "architectural-support",
+        "colliderRotation": [
+          8.659560562354932e-17,
+          -8.659560562354934e-17,
+          0.7071067811865475,
+          0.7071067811865476
+        ],
+        "capsule": {
+          "offset": 0.87,
+          "eye": 1.55
+        },
+        "error": null,
+        "world": "INVERT",
+        "slot": "B",
+        "foot": [
+          4.7,
+          4.2233042993385315,
+          -7.100499434500929
+        ],
+        "body": [
+          3.823999999999998,
+          4.2233042993385315,
+          -7.100499434500929
+        ],
+        "eye": [
+          3.1500000000000057,
+          4.2233042993385315,
+          -7.100499434500929
+        ],
+        "up": [
+          -1,
+          6.123233995736766e-17,
+          0
+        ],
+        "gravity": [
+          9.81,
+          -6.006892549817768e-16,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0.7071068286895752,
+          0.7071068286895752
+        ],
+        "cameraRotation": [
+          8.659560562354932e-17,
+          -8.659560562354934e-17,
+          0.7071067811865475,
+          0.7071067811865476
+        ],
+        "yaw": -2.4492935982947064e-16,
+        "pitch": 0,
+        "theta": 1.5707963267948966,
+        "thetaDegrees": 90,
+        "s": 6.0498525450822,
+        "mode": "WALL",
+        "grounded": true,
+        "supportNormal": [
+          -1,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          2.999999999999936,
+          0
+        ],
+        "step": 2078,
+        "progress": "WALL_WALK",
+        "terminal": false,
+        "returned": false,
+        "interactable": false,
+        "events": [
+          {
+            "id": 1,
+            "step": 1420,
+            "sourceId": "VESTIBULE-THRESHOLD",
+            "destinationId": "INVERT-THRESHOLD",
+            "sourceWorldId": "A",
+            "destinationWorldId": "B",
+            "sourcePosition": [
+              -0.05000000074505806,
+              0.8759999839067396,
+              -20
+            ],
+            "destinationPosition": [
+              99.94999999925494,
+              0.8759999839067396,
+              18.199500000000004
+            ],
+            "velocityBefore": [
+              0,
+              0,
+              -3
+            ],
+            "velocityAfter": [
+              7.347880794884119e-16,
+              0,
+              -3
+            ],
+            "crossingT": 0.9999822196742582,
+            "remainingDisplacement": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 605,
+        "translationQueries": 605,
+        "supportQueries": 8866,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.1966552734375,
+            "z": 0.588495135307312
+          },
+          "velocity": {
+            "x": 0.000011457130312919617,
+            "y": 0.000058738220104714856,
+            "z": -0.0000708006409695372
+          },
+          "resets": 4
+        },
+        "render": {
+          "targetWidth": 640,
+          "targetHeight": 360,
+          "quality": 1,
+          "mainDrawCalls": 38,
+          "offscreenDrawCalls": 0,
+          "geometries": 151,
+          "textures": 24,
+          "programs": 21,
+          "context": "active",
+          "passes": 0,
+          "targetResizes": 1
+        },
+        "performance": {
+          "samples": 437,
+          "fps": 1.680719455616127,
+          "averageMs": 594.9832951945064,
+          "p50Ms": 527,
+          "p95Ms": 1288.199999999255,
+          "p99Ms": 2200.099999997765,
+          "physicsMs": 0,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 34.63333333333265
+      }
+    },
+    {
+      "key": "w",
+      "snapshot": {
+        "ready": true,
+        "loading": {
+          "stage": "轨道前厅已就绪",
+          "progress": 1
+        },
+        "streaming": {
+          "total": 10,
+          "resident": 2,
+          "loading": 0,
+          "queued": 0,
+          "proxy": 0,
+          "visible": 2,
+          "culled": 8,
+          "loads": 12,
+          "evictions": 10,
+          "failed": 0,
+          "bytesResident": 934104,
+          "retainedBehind": 0,
+          "interests": [
+            {
+              "worldId": "B",
+              "kind": "main",
+              "position": [
+                103.15,
+                4.2233042993385315,
+                -16.4004994345008
+              ]
+            }
+          ],
+          "chunks": [
+            {
+              "id": "A-capsule",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 20.158200000006705,
+              "loadCount": 1,
+              "bytes": 1440096,
+              "triangles": 50704,
+              "failure": null
+            },
+            {
+              "id": "A-arrival",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 34.16560000000522,
+              "loadCount": 1,
+              "bytes": 165196,
+              "triangles": 5800,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 39.85830000000075,
+              "loadCount": 1,
+              "bytes": 396488,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-east",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 58.75880000000449,
+              "loadCount": 1,
+              "bytes": 399804,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gate",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 67.5088000000045,
+              "loadCount": 1,
+              "bytes": 521860,
+              "triangles": 18952,
+              "failure": null
+            },
+            {
+              "id": "A-roof-trusses",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 9.913100000005214,
+              "loadCount": 1,
+              "bytes": 465712,
+              "triangles": 14988,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 5.870000000003725,
+              "loadCount": 1,
+              "bytes": 1212256,
+              "triangles": 34176,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-east",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 29.575100000005218,
+              "loadCount": 2,
+              "bytes": 1347468,
+              "triangles": 38368,
+              "failure": null
+            },
+            {
+              "id": "B-services",
+              "worldId": "B",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 0,
+              "lastWanted": 108.9270000000075,
+              "loadCount": 1,
+              "bytes": 743232,
+              "triangles": 26076,
+              "failure": null
+            },
+            {
+              "id": "B-gravity-instruments",
+              "worldId": "B",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 0,
+              "lastWanted": 108.9270000000075,
+              "loadCount": 2,
+              "bytes": 190872,
+              "triangles": 5416,
+              "failure": null
+            }
+          ]
+        },
+        "audio": {
+          "state": "running",
+          "unlocked": true,
+          "muted": false,
+          "volume": 0.55,
+          "activeVoices": 2,
+          "footsteps": 165,
+          "cues": 1,
+          "error": null,
+          "source": "original procedural Web Audio"
+        },
+        "sky": {
+          "bodies": 11,
+          "stars": 1900,
+          "textureCount": 5,
+          "textureBytes": 2258031,
+          "triangles": 30704,
+          "elapsed": 37.733333333332475,
+          "returned": false,
+          "heroRotation": 1.6641333333333272,
+          "positions": [
+            {
+              "id": "AUREOLE",
+              "position": [
+                -105,
+                104,
+                -222
+              ],
+              "radius": 64
+            },
+            {
+              "id": "PELAGIC",
+              "position": [
+                162,
+                81,
+                -285
+              ],
+              "radius": 31
+            },
+            {
+              "id": "EMBER",
+              "position": [
+                76,
+                37,
+                162
+              ],
+              "radius": 19
+            },
+            {
+              "id": "SELENE",
+              "position": [
+                -94,
+                26,
+                71
+              ],
+              "radius": 13
+            },
+            {
+              "id": "MOON-01",
+              "position": [
+                -32,
+                34,
+                -125
+              ],
+              "radius": 4.4
+            },
+            {
+              "id": "MOON-02",
+              "position": [
+                -202,
+                58,
+                -87
+              ],
+              "radius": 6.8
+            },
+            {
+              "id": "MOON-03",
+              "position": [
+                286,
+                120,
+                -100
+              ],
+              "radius": 5.9
+            },
+            {
+              "id": "MOON-04",
+              "position": [
+                165,
+                182,
+                180
+              ],
+              "radius": 7.2
+            },
+            {
+              "id": "MOON-05",
+              "position": [
+                -264,
+                169,
+                142
+              ],
+              "radius": 9.1
+            },
+            {
+              "id": "MOON-06",
+              "position": [
+                34,
+                249,
+                -306
+              ],
+              "radius": 6.6
+            },
+            {
+              "id": "MOON-07",
+              "position": [
+                -338,
+                48,
+                -287
+              ],
+              "radius": 8.7
+            }
+          ]
+        },
+        "materials": {
+          "sets": 3,
+          "maps": 9,
+          "sharedMaterials": 10,
+          "jpegSourceBytes": 1783030,
+          "ktxNetworkBytes": 6714783,
+          "compressedMaps": 9,
+          "formats": {
+            "36492": 9
+          },
+          "gpuUploadPayloadBytes": 12583152,
+          "payloadNote": "Typed texture payload with mips; excludes GPU driver overhead, not a measured VRAM total",
+          "fallbacks": [],
+          "source": "ambientCG CC0 / Concrete048, Metal009, Metal047B"
+        },
+        "observed": false,
+        "sampleReleased": 0,
+        "canObserve": false,
+        "canReleaseSample": false,
+        "restoredCheckpoint": false,
+        "input": {
+          "x": 0,
+          "y": 0,
+          "jump": false,
+          "jumpPressed": false,
+          "sprint": false,
+          "crouch": false,
+          "pronePressed": false,
+          "descend": false,
+          "brake": false
+        },
+        "movement": {
+          "profile": "explore",
+          "moveSpeed": 3,
+          "jumpHeight": 1.2,
+          "gravityScale": 1,
+          "autoSprint": false,
+          "touchSize": 1,
+          "touchOpacity": 0.8,
+          "sensitivity": 1.3,
+          "acceleration": 1,
+          "invertY": false,
+          "quality": 1,
+          "volume": 0.55,
+          "muted": false,
+          "reducedMotion": false,
+          "fov": 50,
+          "tutorialSeen": true
+        },
+        "stance": "STAND",
+        "locomotion": "GROUND_WALK",
+        "stanceBlocked": null,
+        "fieldId": "architectural-support",
+        "colliderRotation": [
+          8.659560562354932e-17,
+          -8.659560562354934e-17,
+          0.7071067811865475,
+          0.7071067811865476
+        ],
+        "capsule": {
+          "offset": 0.87,
+          "eye": 1.55
+        },
+        "error": null,
+        "world": "INVERT",
+        "slot": "B",
+        "foot": [
+          4.7,
+          4.2233042993385315,
+          -16.4004994345008
+        ],
+        "body": [
+          3.823999999999998,
+          4.2233042993385315,
+          -16.4004994345008
+        ],
+        "eye": [
+          3.1500000000000057,
+          4.2233042993385315,
+          -16.4004994345008
+        ],
+        "up": [
+          -1,
+          6.123233995736766e-17,
+          0
+        ],
+        "gravity": [
+          9.81,
+          -6.006892549817768e-16,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0.7071068286895752,
+          0.7071068286895752
+        ],
+        "cameraRotation": [
+          8.659560562354932e-17,
+          -8.659560562354934e-17,
+          0.7071067811865475,
+          0.7071067811865476
+        ],
+        "yaw": -2.4492935982947064e-16,
+        "pitch": 0,
+        "theta": 1.5707963267948966,
+        "thetaDegrees": 90,
+        "s": 6.0498525450822,
+        "mode": "WALL",
+        "grounded": true,
+        "supportNormal": [
+          -1,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          -3.000000000000469
+        ],
+        "step": 2264,
+        "progress": "WALL_WALK",
+        "terminal": false,
+        "returned": false,
+        "interactable": true,
+        "events": [
+          {
+            "id": 1,
+            "step": 1420,
+            "sourceId": "VESTIBULE-THRESHOLD",
+            "destinationId": "INVERT-THRESHOLD",
+            "sourceWorldId": "A",
+            "destinationWorldId": "B",
+            "sourcePosition": [
+              -0.05000000074505806,
+              0.8759999839067396,
+              -20
+            ],
+            "destinationPosition": [
+              99.94999999925494,
+              0.8759999839067396,
+              18.199500000000004
+            ],
+            "velocityBefore": [
+              0,
+              0,
+              -3
+            ],
+            "velocityAfter": [
+              7.347880794884119e-16,
+              0,
+              -3
+            ],
+            "crossingT": 0.9999822196742582,
+            "remainingDisplacement": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 1535,
+        "translationQueries": 1535,
+        "supportQueries": 10168,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196974277496338,
+            "z": 0.5882688164710999
+          },
+          "velocity": {
+            "x": 0.00001334305852651596,
+            "y": 0.00007356279820669442,
+            "z": -0.00008782631630310789
+          },
+          "resets": 4
+        },
+        "render": {
+          "targetWidth": 640,
+          "targetHeight": 360,
+          "quality": 1,
+          "mainDrawCalls": 20,
+          "offscreenDrawCalls": 0,
+          "geometries": 151,
+          "textures": 24,
+          "programs": 21,
+          "context": "active",
+          "passes": 0,
+          "targetResizes": 1
+        },
+        "performance": {
+          "samples": 476,
+          "fps": 1.7075106073715764,
+          "averageMs": 585.6478991596607,
+          "p50Ms": 518.5,
+          "p95Ms": 1227.699999999255,
+          "p99Ms": 2200.099999997765,
+          "physicsMs": 1.9000000022351742,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 37.733333333332475
+      }
+    },
+    {
+      "desktopLookOnWall": {
+        "beforeLook": {
+          "ready": true,
+          "loading": {
+            "stage": "轨道前厅已就绪",
+            "progress": 1
+          },
+          "streaming": {
+            "total": 10,
+            "resident": 2,
+            "loading": 0,
+            "queued": 0,
+            "proxy": 0,
+            "visible": 2,
+            "culled": 8,
+            "loads": 12,
+            "evictions": 10,
+            "failed": 0,
+            "bytesResident": 934104,
+            "retainedBehind": 0,
+            "interests": [
+              {
+                "worldId": "B",
+                "kind": "main",
+                "position": [
+                  103.15,
+                  4.2233042993385315,
+                  -16.4004994345008
+                ]
+              }
+            ],
+            "chunks": [
+              {
+                "id": "A-capsule",
+                "worldId": "A",
+                "state": "proxy",
+                "visible": false,
+                "lod": "hidden",
+                "distance": null,
+                "lastWanted": 20.158200000006705,
+                "loadCount": 1,
+                "bytes": 1440096,
+                "triangles": 50704,
+                "failure": null
+              },
+              {
+                "id": "A-arrival",
+                "worldId": "A",
+                "state": "proxy",
+                "visible": false,
+                "lod": "hidden",
+                "distance": null,
+                "lastWanted": 34.16560000000522,
+                "loadCount": 1,
+                "bytes": 165196,
+                "triangles": 5800,
+                "failure": null
+              },
+              {
+                "id": "A-gallery-west",
+                "worldId": "A",
+                "state": "proxy",
+                "visible": false,
+                "lod": "hidden",
+                "distance": null,
+                "lastWanted": 39.85830000000075,
+                "loadCount": 1,
+                "bytes": 396488,
+                "triangles": 15116,
+                "failure": null
+              },
+              {
+                "id": "A-gallery-east",
+                "worldId": "A",
+                "state": "proxy",
+                "visible": false,
+                "lod": "hidden",
+                "distance": null,
+                "lastWanted": 58.75880000000449,
+                "loadCount": 1,
+                "bytes": 399804,
+                "triangles": 15116,
+                "failure": null
+              },
+              {
+                "id": "A-gate",
+                "worldId": "A",
+                "state": "proxy",
+                "visible": false,
+                "lod": "hidden",
+                "distance": null,
+                "lastWanted": 67.5088000000045,
+                "loadCount": 1,
+                "bytes": 521860,
+                "triangles": 18952,
+                "failure": null
+              },
+              {
+                "id": "A-roof-trusses",
+                "worldId": "A",
+                "state": "proxy",
+                "visible": false,
+                "lod": "hidden",
+                "distance": null,
+                "lastWanted": 9.913100000005214,
+                "loadCount": 1,
+                "bytes": 465712,
+                "triangles": 14988,
+                "failure": null
+              },
+              {
+                "id": "A-exterior-west",
+                "worldId": "A",
+                "state": "proxy",
+                "visible": false,
+                "lod": "hidden",
+                "distance": null,
+                "lastWanted": 5.870000000003725,
+                "loadCount": 1,
+                "bytes": 1212256,
+                "triangles": 34176,
+                "failure": null
+              },
+              {
+                "id": "A-exterior-east",
+                "worldId": "A",
+                "state": "proxy",
+                "visible": false,
+                "lod": "hidden",
+                "distance": null,
+                "lastWanted": 29.575100000005218,
+                "loadCount": 2,
+                "bytes": 1347468,
+                "triangles": 38368,
+                "failure": null
+              },
+              {
+                "id": "B-services",
+                "worldId": "B",
+                "state": "resident",
+                "visible": true,
+                "lod": "high",
+                "distance": 0,
+                "lastWanted": 108.9270000000075,
+                "loadCount": 1,
+                "bytes": 743232,
+                "triangles": 26076,
+                "failure": null
+              },
+              {
+                "id": "B-gravity-instruments",
+                "worldId": "B",
+                "state": "resident",
+                "visible": true,
+                "lod": "high",
+                "distance": 0,
+                "lastWanted": 108.9270000000075,
+                "loadCount": 2,
+                "bytes": 190872,
+                "triangles": 5416,
+                "failure": null
+              }
+            ]
+          },
+          "audio": {
+            "state": "running",
+            "unlocked": true,
+            "muted": false,
+            "volume": 0.55,
+            "activeVoices": 2,
+            "footsteps": 165,
+            "cues": 1,
+            "error": null,
+            "source": "original procedural Web Audio"
+          },
+          "sky": {
+            "bodies": 11,
+            "stars": 1900,
+            "textureCount": 5,
+            "textureBytes": 2258031,
+            "triangles": 30704,
+            "elapsed": 37.733333333332475,
+            "returned": false,
+            "heroRotation": 1.6641333333333272,
+            "positions": [
+              {
+                "id": "AUREOLE",
+                "position": [
+                  -105,
+                  104,
+                  -222
+                ],
+                "radius": 64
+              },
+              {
+                "id": "PELAGIC",
+                "position": [
+                  162,
+                  81,
+                  -285
+                ],
+                "radius": 31
+              },
+              {
+                "id": "EMBER",
+                "position": [
+                  76,
+                  37,
+                  162
+                ],
+                "radius": 19
+              },
+              {
+                "id": "SELENE",
+                "position": [
+                  -94,
+                  26,
+                  71
+                ],
+                "radius": 13
+              },
+              {
+                "id": "MOON-01",
+                "position": [
+                  -32,
+                  34,
+                  -125
+                ],
+                "radius": 4.4
+              },
+              {
+                "id": "MOON-02",
+                "position": [
+                  -202,
+                  58,
+                  -87
+                ],
+                "radius": 6.8
+              },
+              {
+                "id": "MOON-03",
+                "position": [
+                  286,
+                  120,
+                  -100
+                ],
+                "radius": 5.9
+              },
+              {
+                "id": "MOON-04",
+                "position": [
+                  165,
+                  182,
+                  180
+                ],
+                "radius": 7.2
+              },
+              {
+                "id": "MOON-05",
+                "position": [
+                  -264,
+                  169,
+                  142
+                ],
+                "radius": 9.1
+              },
+              {
+                "id": "MOON-06",
+                "position": [
+                  34,
+                  249,
+                  -306
+                ],
+                "radius": 6.6
+              },
+              {
+                "id": "MOON-07",
+                "position": [
+                  -338,
+                  48,
+                  -287
+                ],
+                "radius": 8.7
+              }
+            ]
+          },
+          "materials": {
+            "sets": 3,
+            "maps": 9,
+            "sharedMaterials": 10,
+            "jpegSourceBytes": 1783030,
+            "ktxNetworkBytes": 6714783,
+            "compressedMaps": 9,
+            "formats": {
+              "36492": 9
+            },
+            "gpuUploadPayloadBytes": 12583152,
+            "payloadNote": "Typed texture payload with mips; excludes GPU driver overhead, not a measured VRAM total",
+            "fallbacks": [],
+            "source": "ambientCG CC0 / Concrete048, Metal009, Metal047B"
+          },
+          "observed": false,
+          "sampleReleased": 0,
+          "canObserve": false,
+          "canReleaseSample": false,
+          "restoredCheckpoint": false,
+          "input": {
+            "x": 0,
+            "y": 0,
+            "jump": false,
+            "jumpPressed": false,
+            "sprint": false,
+            "crouch": false,
+            "pronePressed": false,
+            "descend": false,
+            "brake": false
+          },
+          "movement": {
+            "profile": "explore",
+            "moveSpeed": 3,
+            "jumpHeight": 1.2,
+            "gravityScale": 1,
+            "autoSprint": false,
+            "touchSize": 1,
+            "touchOpacity": 0.8,
+            "sensitivity": 1.3,
+            "acceleration": 1,
+            "invertY": false,
+            "quality": 1,
+            "volume": 0.55,
+            "muted": false,
+            "reducedMotion": false,
+            "fov": 50,
+            "tutorialSeen": true
+          },
+          "stance": "STAND",
+          "locomotion": "GROUND_WALK",
+          "stanceBlocked": null,
+          "fieldId": "architectural-support",
+          "colliderRotation": [
+            8.659560562354932e-17,
+            -8.659560562354934e-17,
+            0.7071067811865475,
+            0.7071067811865476
+          ],
+          "capsule": {
+            "offset": 0.87,
+            "eye": 1.55
+          },
+          "error": null,
+          "world": "INVERT",
+          "slot": "B",
+          "foot": [
+            4.7,
+            4.2233042993385315,
+            -16.4004994345008
+          ],
+          "body": [
+            3.823999999999998,
+            4.2233042993385315,
+            -16.4004994345008
+          ],
+          "eye": [
+            3.1500000000000057,
+            4.2233042993385315,
+            -16.4004994345008
+          ],
+          "up": [
+            -1,
+            6.123233995736766e-17,
+            0
+          ],
+          "gravity": [
+            9.81,
+            -6.006892549817768e-16,
+            0
+          ],
+          "bodyRotation": [
+            0,
+            0,
+            0.7071068286895752,
+            0.7071068286895752
+          ],
+          "cameraRotation": [
+            8.659560562354932e-17,
+            -8.659560562354934e-17,
+            0.7071067811865475,
+            0.7071067811865476
+          ],
+          "yaw": -2.4492935982947064e-16,
+          "pitch": 0,
+          "theta": 1.5707963267948966,
+          "thetaDegrees": 90,
+          "s": 6.0498525450822,
+          "mode": "WALL",
+          "grounded": true,
+          "supportNormal": [
+            -1,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            -3.000000000000469
+          ],
+          "step": 2264,
+          "progress": "RETURN_TO_VESTIBULE",
+          "terminal": true,
+          "returned": false,
+          "interactable": true,
+          "events": [
+            {
+              "id": 1,
+              "step": 1420,
+              "sourceId": "VESTIBULE-THRESHOLD",
+              "destinationId": "INVERT-THRESHOLD",
+              "sourceWorldId": "A",
+              "destinationWorldId": "B",
+              "sourcePosition": [
+                -0.05000000074505806,
+                0.8759999839067396,
+                -20
+              ],
+              "destinationPosition": [
+                99.94999999925494,
+                0.8759999839067396,
+                18.199500000000004
+              ],
+              "velocityBefore": [
+                0,
+                0,
+                -3
+              ],
+              "velocityAfter": [
+                7.347880794884119e-16,
+                0,
+                -3
+              ],
+              "crossingT": 0.9999822196742582,
+              "remainingDisplacement": [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "transferState": "ARMED",
+          "rejection": null,
+          "blocked": null,
+          "rotationQueries": 1535,
+          "translationQueries": 1535,
+          "supportQueries": 10168,
+          "witness": {
+            "position": {
+              "x": 109.35003662109375,
+              "y": 4.196974277496338,
+              "z": 0.5882688164710999
+            },
+            "velocity": {
+              "x": 0.00001334305852651596,
+              "y": 0.00007356279820669442,
+              "z": -0.00008782631630310789
+            },
+            "resets": 4
+          },
+          "render": {
+            "targetWidth": 640,
+            "targetHeight": 360,
+            "quality": 1,
+            "mainDrawCalls": 20,
+            "offscreenDrawCalls": 0,
+            "geometries": 151,
+            "textures": 24,
+            "programs": 21,
+            "context": "active",
+            "passes": 0,
+            "targetResizes": 1
+          },
+          "performance": {
+            "samples": 476,
+            "fps": 1.7075106073715764,
+            "averageMs": 585.6478991596607,
+            "p50Ms": 518.5,
+            "p95Ms": 1227.699999999255,
+            "p99Ms": 2200.099999997765,
+            "physicsMs": 1.9000000022351742,
+            "gpuMs": null
+          },
+          "errors": [],
+          "elapsed": 37.733333333332475
+        },
+        "duringLook": {
+          "ready": true,
+          "loading": {
+            "stage": "轨道前厅已就绪",
+            "progress": 1
+          },
+          "streaming": {
+            "total": 10,
+            "resident": 2,
+            "loading": 0,
+            "queued": 0,
+            "proxy": 0,
+            "visible": 2,
+            "culled": 8,
+            "loads": 12,
+            "evictions": 10,
+            "failed": 0,
+            "bytesResident": 934104,
+            "retainedBehind": 0,
+            "interests": [
+              {
+                "worldId": "B",
+                "kind": "main",
+                "position": [
+                  103.15,
+                  4.2233042993385315,
+                  -16.4004994345008
+                ]
+              }
+            ],
+            "chunks": [
+              {
+                "id": "A-capsule",
+                "worldId": "A",
+                "state": "proxy",
+                "visible": false,
+                "lod": "hidden",
+                "distance": null,
+                "lastWanted": 20.158200000006705,
+                "loadCount": 1,
+                "bytes": 1440096,
+                "triangles": 50704,
+                "failure": null
+              },
+              {
+                "id": "A-arrival",
+                "worldId": "A",
+                "state": "proxy",
+                "visible": false,
+                "lod": "hidden",
+                "distance": null,
+                "lastWanted": 34.16560000000522,
+                "loadCount": 1,
+                "bytes": 165196,
+                "triangles": 5800,
+                "failure": null
+              },
+              {
+                "id": "A-gallery-west",
+                "worldId": "A",
+                "state": "proxy",
+                "visible": false,
+                "lod": "hidden",
+                "distance": null,
+                "lastWanted": 39.85830000000075,
+                "loadCount": 1,
+                "bytes": 396488,
+                "triangles": 15116,
+                "failure": null
+              },
+              {
+                "id": "A-gallery-east",
+                "worldId": "A",
+                "state": "proxy",
+                "visible": false,
+                "lod": "hidden",
+                "distance": null,
+                "lastWanted": 58.75880000000449,
+                "loadCount": 1,
+                "bytes": 399804,
+                "triangles": 15116,
+                "failure": null
+              },
+              {
+                "id": "A-gate",
+                "worldId": "A",
+                "state": "proxy",
+                "visible": false,
+                "lod": "hidden",
+                "distance": null,
+                "lastWanted": 67.5088000000045,
+                "loadCount": 1,
+                "bytes": 521860,
+                "triangles": 18952,
+                "failure": null
+              },
+              {
+                "id": "A-roof-trusses",
+                "worldId": "A",
+                "state": "proxy",
+                "visible": false,
+                "lod": "hidden",
+                "distance": null,
+                "lastWanted": 9.913100000005214,
+                "loadCount": 1,
+                "bytes": 465712,
+                "triangles": 14988,
+                "failure": null
+              },
+              {
+                "id": "A-exterior-west",
+                "worldId": "A",
+                "state": "proxy",
+                "visible": false,
+                "lod": "hidden",
+                "distance": null,
+                "lastWanted": 5.870000000003725,
+                "loadCount": 1,
+                "bytes": 1212256,
+                "triangles": 34176,
+                "failure": null
+              },
+              {
+                "id": "A-exterior-east",
+                "worldId": "A",
+                "state": "proxy",
+                "visible": false,
+                "lod": "hidden",
+                "distance": null,
+                "lastWanted": 29.575100000005218,
+                "loadCount": 2,
+                "bytes": 1347468,
+                "triangles": 38368,
+                "failure": null
+              },
+              {
+                "id": "B-services",
+                "worldId": "B",
+                "state": "resident",
+                "visible": true,
+                "lod": "high",
+                "distance": 0,
+                "lastWanted": 109.96440000000973,
+                "loadCount": 1,
+                "bytes": 743232,
+                "triangles": 26076,
+                "failure": null
+              },
+              {
+                "id": "B-gravity-instruments",
+                "worldId": "B",
+                "state": "resident",
+                "visible": true,
+                "lod": "high",
+                "distance": 0,
+                "lastWanted": 109.96440000000973,
+                "loadCount": 2,
+                "bytes": 190872,
+                "triangles": 5416,
+                "failure": null
+              }
+            ]
+          },
+          "audio": {
+            "state": "running",
+            "unlocked": true,
+            "muted": false,
+            "volume": 0.55,
+            "activeVoices": 1,
+            "footsteps": 165,
+            "cues": 2,
+            "error": null,
+            "source": "original procedural Web Audio"
+          },
+          "sky": {
+            "bodies": 11,
+            "stars": 1900,
+            "textureCount": 5,
+            "textureBytes": 2258031,
+            "triangles": 30704,
+            "elapsed": 38.06666666666579,
+            "returned": false,
+            "heroRotation": 1.6664666666666603,
+            "positions": [
+              {
+                "id": "AUREOLE",
+                "position": [
+                  -105,
+                  104,
+                  -222
+                ],
+                "radius": 64
+              },
+              {
+                "id": "PELAGIC",
+                "position": [
+                  162,
+                  81,
+                  -285
+                ],
+                "radius": 31
+              },
+              {
+                "id": "EMBER",
+                "position": [
+                  76,
+                  37,
+                  162
+                ],
+                "radius": 19
+              },
+              {
+                "id": "SELENE",
+                "position": [
+                  -94,
+                  26,
+                  71
+                ],
+                "radius": 13
+              },
+              {
+                "id": "MOON-01",
+                "position": [
+                  -32,
+                  34,
+                  -125
+                ],
+                "radius": 4.4
+              },
+              {
+                "id": "MOON-02",
+                "position": [
+                  -202,
+                  58,
+                  -87
+                ],
+                "radius": 6.8
+              },
+              {
+                "id": "MOON-03",
+                "position": [
+                  286,
+                  120,
+                  -100
+                ],
+                "radius": 5.9
+              },
+              {
+                "id": "MOON-04",
+                "position": [
+                  165,
+                  182,
+                  180
+                ],
+                "radius": 7.2
+              },
+              {
+                "id": "MOON-05",
+                "position": [
+                  -264,
+                  169,
+                  142
+                ],
+                "radius": 9.1
+              },
+              {
+                "id": "MOON-06",
+                "position": [
+                  34,
+                  249,
+                  -306
+                ],
+                "radius": 6.6
+              },
+              {
+                "id": "MOON-07",
+                "position": [
+                  -338,
+                  48,
+                  -287
+                ],
+                "radius": 8.7
+              }
+            ]
+          },
+          "materials": {
+            "sets": 3,
+            "maps": 9,
+            "sharedMaterials": 10,
+            "jpegSourceBytes": 1783030,
+            "ktxNetworkBytes": 6714783,
+            "compressedMaps": 9,
+            "formats": {
+              "36492": 9
+            },
+            "gpuUploadPayloadBytes": 12583152,
+            "payloadNote": "Typed texture payload with mips; excludes GPU driver overhead, not a measured VRAM total",
+            "fallbacks": [],
+            "source": "ambientCG CC0 / Concrete048, Metal009, Metal047B"
+          },
+          "observed": false,
+          "sampleReleased": 0,
+          "canObserve": false,
+          "canReleaseSample": false,
+          "restoredCheckpoint": false,
+          "input": {
+            "x": 0,
+            "y": 0,
+            "jump": false,
+            "jumpPressed": false,
+            "sprint": false,
+            "crouch": false,
+            "pronePressed": false,
+            "descend": false,
+            "brake": false
+          },
+          "movement": {
+            "profile": "explore",
+            "moveSpeed": 3,
+            "jumpHeight": 1.2,
+            "gravityScale": 1,
+            "autoSprint": false,
+            "touchSize": 1,
+            "touchOpacity": 0.8,
+            "sensitivity": 1.3,
+            "acceleration": 1,
+            "invertY": false,
+            "quality": 1,
+            "volume": 0.55,
+            "muted": false,
+            "reducedMotion": false,
+            "fov": 50,
+            "tutorialSeen": true
+          },
+          "stance": "STAND",
+          "locomotion": "GROUND_WALK",
+          "stanceBlocked": null,
+          "fieldId": "architectural-support",
+          "colliderRotation": [
+            8.659560562354932e-17,
+            -8.659560562354934e-17,
+            0.7071067811865475,
+            0.7071067811865476
+          ],
+          "capsule": {
+            "offset": 0.87,
+            "eye": 1.55
+          },
+          "error": null,
+          "world": "INVERT",
+          "slot": "B",
+          "foot": [
+            4.7,
+            4.2233042993385315,
+            -16.4004994345008
+          ],
+          "body": [
+            3.823999999999998,
+            4.2233042993385315,
+            -16.4004994345008
+          ],
+          "eye": [
+            3.1500000000000057,
+            4.2233042993385315,
+            -16.4004994345008
+          ],
+          "up": [
+            -1,
+            6.123233995736766e-17,
+            0
+          ],
+          "gravity": [
+            9.81,
+            -6.006892549817768e-16,
+            0
+          ],
+          "bodyRotation": [
+            0,
+            0,
+            0.7071068286895752,
+            0.7071068286895752
+          ],
+          "cameraRotation": [
+            -0.026510289925765318,
+            0.02651028992576532,
+            0.706609654992098,
+            0.7066096549920982
+          ],
+          "yaw": 0.07499999999999976,
+          "pitch": 0,
+          "theta": 1.5707963267948966,
+          "thetaDegrees": 90,
+          "s": 6.0498525450822,
+          "mode": "WALL",
+          "grounded": true,
+          "supportNormal": [
+            -1,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "step": 2284,
+          "progress": "RETURN_TO_VESTIBULE",
+          "terminal": true,
+          "returned": false,
+          "interactable": true,
+          "events": [
+            {
+              "id": 1,
+              "step": 1420,
+              "sourceId": "VESTIBULE-THRESHOLD",
+              "destinationId": "INVERT-THRESHOLD",
+              "sourceWorldId": "A",
+              "destinationWorldId": "B",
+              "sourcePosition": [
+                -0.05000000074505806,
+                0.8759999839067396,
+                -20
+              ],
+              "destinationPosition": [
+                99.94999999925494,
+                0.8759999839067396,
+                18.199500000000004
+              ],
+              "velocityBefore": [
+                0,
+                0,
+                -3
+              ],
+              "velocityAfter": [
+                7.347880794884119e-16,
+                0,
+                -3
+              ],
+              "crossingT": 0.9999822196742582,
+              "remainingDisplacement": [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "transferState": "ARMED",
+          "rejection": null,
+          "blocked": null,
+          "rotationQueries": 1535,
+          "translationQueries": 1535,
+          "supportQueries": 10208,
+          "witness": {
+            "position": {
+              "x": 109.35003662109375,
+              "y": 4.19700813293457,
+              "z": 0.5882440209388733
+            },
+            "velocity": {
+              "x": 0.000012966804206371307,
+              "y": 0.0000684570477460511,
+              "z": -0.00007824040221748874
+            },
+            "resets": 4
+          },
+          "render": {
+            "targetWidth": 640,
+            "targetHeight": 360,
+            "quality": 1,
+            "mainDrawCalls": 20,
+            "offscreenDrawCalls": 0,
+            "geometries": 151,
+            "textures": 24,
+            "programs": 21,
+            "context": "active",
+            "passes": 0,
+            "targetResizes": 1
+          },
+          "performance": {
+            "samples": 483,
+            "fps": 1.7184251825070676,
+            "averageMs": 581.928157349898,
+            "p50Ms": 518.3999999985099,
+            "p95Ms": 1220,
+            "p99Ms": 2200.099999997765,
+            "physicsMs": 0.5,
+            "gpuMs": null
+          },
+          "errors": [],
+          "elapsed": 38.06666666666579
+        }
+      }
+    },
+    {
+      "key": "s",
+      "snapshot": {
+        "ready": true,
+        "loading": {
+          "stage": "轨道前厅已就绪",
+          "progress": 1
+        },
+        "streaming": {
+          "total": 10,
+          "resident": 2,
+          "loading": 0,
+          "queued": 0,
+          "proxy": 0,
+          "visible": 2,
+          "culled": 8,
+          "loads": 12,
+          "evictions": 10,
+          "failed": 0,
+          "bytesResident": 934104,
+          "retainedBehind": 0,
+          "interests": [
+            {
+              "worldId": "B",
+              "kind": "main",
+              "position": [
+                103.15,
+                4.2233042993385315,
+                -6.900499434500933
+              ]
+            }
+          ],
+          "chunks": [
+            {
+              "id": "A-capsule",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 20.158200000006705,
+              "loadCount": 1,
+              "bytes": 1440096,
+              "triangles": 50704,
+              "failure": null
+            },
+            {
+              "id": "A-arrival",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 34.16560000000522,
+              "loadCount": 1,
+              "bytes": 165196,
+              "triangles": 5800,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 39.85830000000075,
+              "loadCount": 1,
+              "bytes": 396488,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-east",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 58.75880000000449,
+              "loadCount": 1,
+              "bytes": 399804,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gate",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 67.5088000000045,
+              "loadCount": 1,
+              "bytes": 521860,
+              "triangles": 18952,
+              "failure": null
+            },
+            {
+              "id": "A-roof-trusses",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 9.913100000005214,
+              "loadCount": 1,
+              "bytes": 465712,
+              "triangles": 14988,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 5.870000000003725,
+              "loadCount": 1,
+              "bytes": 1212256,
+              "triangles": 34176,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-east",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 29.575100000005218,
+              "loadCount": 2,
+              "bytes": 1347468,
+              "triangles": 38368,
+              "failure": null
+            },
+            {
+              "id": "B-services",
+              "worldId": "B",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 0,
+              "lastWanted": 124.33650000000752,
+              "loadCount": 1,
+              "bytes": 743232,
+              "triangles": 26076,
+              "failure": null
+            },
+            {
+              "id": "B-gravity-instruments",
+              "worldId": "B",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 0,
+              "lastWanted": 124.33650000000752,
+              "loadCount": 2,
+              "bytes": 190872,
+              "triangles": 5416,
+              "failure": null
+            }
+          ]
+        },
+        "audio": {
+          "state": "running",
+          "unlocked": true,
+          "muted": false,
+          "volume": 0.55,
+          "activeVoices": 2,
+          "footsteps": 181,
+          "cues": 2,
+          "error": null,
+          "source": "original procedural Web Audio"
+        },
+        "sky": {
+          "bodies": 11,
+          "stars": 1900,
+          "textureCount": 5,
+          "textureBytes": 2258031,
+          "triangles": 30704,
+          "elapsed": 43.1666666666655,
+          "returned": false,
+          "heroRotation": 1.7021666666666584,
+          "positions": [
+            {
+              "id": "AUREOLE",
+              "position": [
+                -105,
+                104,
+                -222
+              ],
+              "radius": 64
+            },
+            {
+              "id": "PELAGIC",
+              "position": [
+                162,
+                81,
+                -285
+              ],
+              "radius": 31
+            },
+            {
+              "id": "EMBER",
+              "position": [
+                76,
+                37,
+                162
+              ],
+              "radius": 19
+            },
+            {
+              "id": "SELENE",
+              "position": [
+                -94,
+                26,
+                71
+              ],
+              "radius": 13
+            },
+            {
+              "id": "MOON-01",
+              "position": [
+                -32,
+                34,
+                -125
+              ],
+              "radius": 4.4
+            },
+            {
+              "id": "MOON-02",
+              "position": [
+                -202,
+                58,
+                -87
+              ],
+              "radius": 6.8
+            },
+            {
+              "id": "MOON-03",
+              "position": [
+                286,
+                120,
+                -100
+              ],
+              "radius": 5.9
+            },
+            {
+              "id": "MOON-04",
+              "position": [
+                165,
+                182,
+                180
+              ],
+              "radius": 7.2
+            },
+            {
+              "id": "MOON-05",
+              "position": [
+                -264,
+                169,
+                142
+              ],
+              "radius": 9.1
+            },
+            {
+              "id": "MOON-06",
+              "position": [
+                34,
+                249,
+                -306
+              ],
+              "radius": 6.6
+            },
+            {
+              "id": "MOON-07",
+              "position": [
+                -338,
+                48,
+                -287
+              ],
+              "radius": 8.7
+            }
+          ]
+        },
+        "materials": {
+          "sets": 3,
+          "maps": 9,
+          "sharedMaterials": 10,
+          "jpegSourceBytes": 1783030,
+          "ktxNetworkBytes": 6714783,
+          "compressedMaps": 9,
+          "formats": {
+            "36492": 9
+          },
+          "gpuUploadPayloadBytes": 12583152,
+          "payloadNote": "Typed texture payload with mips; excludes GPU driver overhead, not a measured VRAM total",
+          "fallbacks": [],
+          "source": "ambientCG CC0 / Concrete048, Metal009, Metal047B"
+        },
+        "observed": false,
+        "sampleReleased": 0,
+        "canObserve": false,
+        "canReleaseSample": false,
+        "restoredCheckpoint": false,
+        "input": {
+          "x": 0,
+          "y": 0,
+          "jump": false,
+          "jumpPressed": false,
+          "sprint": false,
+          "crouch": false,
+          "pronePressed": false,
+          "descend": false,
+          "brake": false
+        },
+        "movement": {
+          "profile": "explore",
+          "moveSpeed": 3,
+          "jumpHeight": 1.2,
+          "gravityScale": 1,
+          "autoSprint": false,
+          "touchSize": 1,
+          "touchOpacity": 0.8,
+          "sensitivity": 1.3,
+          "acceleration": 1,
+          "invertY": false,
+          "quality": 1,
+          "volume": 0.55,
+          "muted": false,
+          "reducedMotion": false,
+          "fov": 50,
+          "tutorialSeen": true
+        },
+        "stance": "STAND",
+        "locomotion": "GROUND_WALK",
+        "stanceBlocked": null,
+        "fieldId": "architectural-support",
+        "colliderRotation": [
+          8.659560562354932e-17,
+          -8.659560562354934e-17,
+          0.7071067811865475,
+          0.7071067811865476
+        ],
+        "capsule": {
+          "offset": 0.87,
+          "eye": 1.55
+        },
+        "error": null,
+        "world": "INVERT",
+        "slot": "B",
+        "foot": [
+          4.7,
+          4.2233042993385315,
+          -6.900499434500933
+        ],
+        "body": [
+          3.823999999999998,
+          4.2233042993385315,
+          -6.900499434500933
+        ],
+        "eye": [
+          3.1500000000000057,
+          4.2233042993385315,
+          -6.900499434500933
+        ],
+        "up": [
+          -1,
+          6.123233995736766e-17,
+          0
+        ],
+        "gravity": [
+          9.81,
+          -6.006892549817768e-16,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0.7071068286895752,
+          0.7071068286895752
+        ],
+        "cameraRotation": [
+          8.341116186757555e-17,
+          -8.341116186757556e-17,
+          0.7071067811865475,
+          0.7071067811865476
+        ],
+        "yaw": -2.3592239273284576e-16,
+        "pitch": 0,
+        "theta": 1.5707963267948966,
+        "thetaDegrees": 90,
+        "s": 6.0498525450822,
+        "mode": "WALL",
+        "grounded": true,
+        "supportNormal": [
+          -1,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          2.999999999999936
+        ],
+        "step": 2590,
+        "progress": "RETURN_TO_VESTIBULE",
+        "terminal": true,
+        "returned": false,
+        "interactable": false,
+        "events": [
+          {
+            "id": 1,
+            "step": 1420,
+            "sourceId": "VESTIBULE-THRESHOLD",
+            "destinationId": "INVERT-THRESHOLD",
+            "sourceWorldId": "A",
+            "destinationWorldId": "B",
+            "sourcePosition": [
+              -0.05000000074505806,
+              0.8759999839067396,
+              -20
+            ],
+            "destinationPosition": [
+              99.94999999925494,
+              0.8759999839067396,
+              18.199500000000004
+            ],
+            "velocityBefore": [
+              0,
+              0,
+              -3
+            ],
+            "velocityAfter": [
+              7.347880794884119e-16,
+              0,
+              -3
+            ],
+            "crossingT": 0.9999822196742582,
+            "remainingDisplacement": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 2485,
+        "translationQueries": 2485,
+        "supportQueries": 11770,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196694850921631,
+            "z": 0.588516354560852
+          },
+          "velocity": {
+            "x": 0.000003468245267868042,
+            "y": 0.00006364121509250253,
+            "z": -0.00006069204391678795
+          },
+          "resets": 5
+        },
+        "render": {
+          "targetWidth": 640,
+          "targetHeight": 360,
+          "quality": 1,
+          "mainDrawCalls": 38,
+          "offscreenDrawCalls": 0,
+          "geometries": 151,
+          "textures": 24,
+          "programs": 21,
+          "context": "active",
+          "passes": 0,
+          "targetResizes": 1
+        },
+        "performance": {
+          "samples": 552,
+          "fps": 1.8364409773858354,
+          "averageMs": 544.5315217391277,
+          "p50Ms": 495.5999999977648,
+          "p95Ms": 1199.6000000014901,
+          "p99Ms": 2169.10000000149,
+          "physicsMs": 1,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 43.1666666666655
+      }
+    },
+    {
+      "key": "a",
+      "snapshot": {
+        "ready": true,
+        "loading": {
+          "stage": "轨道前厅已就绪",
+          "progress": 1
+        },
+        "streaming": {
+          "total": 10,
+          "resident": 2,
+          "loading": 0,
+          "queued": 0,
+          "proxy": 0,
+          "visible": 2,
+          "culled": 8,
+          "loads": 12,
+          "evictions": 10,
+          "failed": 0,
+          "bytesResident": 934104,
+          "retainedBehind": 0,
+          "interests": [
+            {
+              "worldId": "B",
+              "kind": "main",
+              "position": [
+                100.09999921375726,
+                1.5500000032782033,
+                -6.900499434500933
+              ]
+            }
+          ],
+          "chunks": [
+            {
+              "id": "A-capsule",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 20.158200000006705,
+              "loadCount": 1,
+              "bytes": 1440096,
+              "triangles": 50704,
+              "failure": null
+            },
+            {
+              "id": "A-arrival",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 34.16560000000522,
+              "loadCount": 1,
+              "bytes": 165196,
+              "triangles": 5800,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 39.85830000000075,
+              "loadCount": 1,
+              "bytes": 396488,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-east",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 58.75880000000449,
+              "loadCount": 1,
+              "bytes": 399804,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gate",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 67.5088000000045,
+              "loadCount": 1,
+              "bytes": 521860,
+              "triangles": 18952,
+              "failure": null
+            },
+            {
+              "id": "A-roof-trusses",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 9.913100000005214,
+              "loadCount": 1,
+              "bytes": 465712,
+              "triangles": 14988,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 5.870000000003725,
+              "loadCount": 1,
+              "bytes": 1212256,
+              "triangles": 34176,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-east",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": null,
+              "lastWanted": 29.575100000005218,
+              "loadCount": 2,
+              "bytes": 1347468,
+              "triangles": 38368,
+              "failure": null
+            },
+            {
+              "id": "B-services",
+              "worldId": "B",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 0,
+              "lastWanted": 131.50060000000897,
+              "loadCount": 1,
+              "bytes": 743232,
+              "triangles": 26076,
+              "failure": null
+            },
+            {
+              "id": "B-gravity-instruments",
+              "worldId": "B",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 1.4,
+              "lastWanted": 131.50060000000897,
+              "loadCount": 2,
+              "bytes": 190872,
+              "triangles": 5416,
+              "failure": null
+            }
+          ]
+        },
+        "audio": {
+          "state": "running",
+          "unlocked": true,
+          "muted": false,
+          "volume": 0.55,
+          "activeVoices": 0,
+          "footsteps": 191,
+          "cues": 2,
+          "error": null,
+          "source": "original procedural Web Audio"
+        },
+        "sky": {
+          "bodies": 11,
+          "stars": 1900,
+          "textureCount": 5,
+          "textureBytes": 2258031,
+          "triangles": 30704,
+          "elapsed": 45.64999999999869,
+          "returned": false,
+          "heroRotation": 1.7195499999999908,
+          "positions": [
+            {
+              "id": "AUREOLE",
+              "position": [
+                -105,
+                104,
+                -222
+              ],
+              "radius": 64
+            },
+            {
+              "id": "PELAGIC",
+              "position": [
+                162,
+                81,
+                -285
+              ],
+              "radius": 31
+            },
+            {
+              "id": "EMBER",
+              "position": [
+                76,
+                37,
+                162
+              ],
+              "radius": 19
+            },
+            {
+              "id": "SELENE",
+              "position": [
+                -94,
+                26,
+                71
+              ],
+              "radius": 13
+            },
+            {
+              "id": "MOON-01",
+              "position": [
+                -32,
+                34,
+                -125
+              ],
+              "radius": 4.4
+            },
+            {
+              "id": "MOON-02",
+              "position": [
+                -202,
+                58,
+                -87
+              ],
+              "radius": 6.8
+            },
+            {
+              "id": "MOON-03",
+              "position": [
+                286,
+                120,
+                -100
+              ],
+              "radius": 5.9
+            },
+            {
+              "id": "MOON-04",
+              "position": [
+                165,
+                182,
+                180
+              ],
+              "radius": 7.2
+            },
+            {
+              "id": "MOON-05",
+              "position": [
+                -264,
+                169,
+                142
+              ],
+              "radius": 9.1
+            },
+            {
+              "id": "MOON-06",
+              "position": [
+                34,
+                249,
+                -306
+              ],
+              "radius": 6.6
+            },
+            {
+              "id": "MOON-07",
+              "position": [
+                -338,
+                48,
+                -287
+              ],
+              "radius": 8.7
+            }
+          ]
+        },
+        "materials": {
+          "sets": 3,
+          "maps": 9,
+          "sharedMaterials": 10,
+          "jpegSourceBytes": 1783030,
+          "ktxNetworkBytes": 6714783,
+          "compressedMaps": 9,
+          "formats": {
+            "36492": 9
+          },
+          "gpuUploadPayloadBytes": 12583152,
+          "payloadNote": "Typed texture payload with mips; excludes GPU driver overhead, not a measured VRAM total",
+          "fallbacks": [],
+          "source": "ambientCG CC0 / Concrete048, Metal009, Metal047B"
+        },
+        "observed": false,
+        "sampleReleased": 0,
+        "canObserve": false,
+        "canReleaseSample": false,
+        "restoredCheckpoint": false,
+        "input": {
+          "x": 0,
+          "y": 0,
+          "jump": false,
+          "jumpPressed": false,
+          "sprint": false,
+          "crouch": false,
+          "pronePressed": false,
+          "descend": false,
+          "brake": false
+        },
+        "movement": {
+          "profile": "explore",
+          "moveSpeed": 3,
+          "jumpHeight": 1.2,
+          "gravityScale": 1,
+          "autoSprint": false,
+          "touchSize": 1,
+          "touchOpacity": 0.8,
+          "sensitivity": 1.3,
+          "acceleration": 1,
+          "invertY": false,
+          "quality": 1,
+          "volume": 0.55,
+          "muted": false,
+          "reducedMotion": false,
+          "fov": 50,
+          "tutorialSeen": true
+        },
+        "stance": "STAND",
+        "locomotion": "GROUND_WALK",
+        "stanceBlocked": null,
+        "fieldId": "architectural-support",
+        "colliderRotation": [
+          0,
+          -1.2246467991473532e-16,
+          0,
+          1
+        ],
+        "capsule": {
+          "offset": 0.87,
+          "eye": 1.55
+        },
+        "error": null,
+        "world": "INVERT",
+        "slot": "B",
+        "foot": [
+          0.09999921375725762,
+          3.278203153378456e-9,
+          -6.900499434500933
+        ],
+        "body": [
+          0.09999921375725762,
+          0.8760000032782032,
+          -6.900499434500933
+        ],
+        "eye": [
+          0.09999921375725762,
+          1.5500000032782033,
+          -6.900499434500933
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "gravity": [
+          0,
+          -9.81,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "cameraRotation": [
+          0,
+          -1.1796119636642288e-16,
+          0,
+          1
+        ],
+        "yaw": -2.3592239273284576e-16,
+        "pitch": 0,
+        "theta": 0,
+        "thetaDegrees": 0,
+        "s": -1.4000007862427424,
+        "mode": "NORMAL",
+        "grounded": true,
+        "supportNormal": [
+          0,
+          1,
+          0
+        ],
+        "velocity": [
+          -2.9999999329447746,
+          1.6093254062710116e-7,
+          0
+        ],
+        "step": 2739,
+        "progress": "RETURN_TO_VESTIBULE",
+        "terminal": true,
+        "returned": false,
+        "interactable": false,
+        "events": [
+          {
+            "id": 1,
+            "step": 1420,
+            "sourceId": "VESTIBULE-THRESHOLD",
+            "destinationId": "INVERT-THRESHOLD",
+            "sourceWorldId": "A",
+            "destinationWorldId": "B",
+            "sourcePosition": [
+              -0.05000000074505806,
+              0.8759999839067396,
+              -20
+            ],
+            "destinationPosition": [
+              99.94999999925494,
+              0.8759999839067396,
+              18.199500000000004
+            ],
+            "velocityBefore": [
+              0,
+              0,
+              -3
+            ],
+            "velocityAfter": [
+              7.347880794884119e-16,
+              0,
+              -3
+            ],
+            "crossingT": 0.9999822196742582,
+            "remainingDisplacement": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "transferState": "ARMED",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 3089,
+        "translationQueries": 3089,
+        "supportQueries": 12813,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.196948051452637,
+            "z": 0.5883361101150513
+          },
+          "velocity": {
+            "x": 0.000011106021702289581,
+            "y": 0.000057656590797705576,
+            "z": -0.0000650444853818044
+          },
+          "resets": 5
+        },
+        "render": {
+          "targetWidth": 640,
+          "targetHeight": 360,
+          "quality": 1,
+          "mainDrawCalls": 40,
+          "offscreenDrawCalls": 0,
+          "geometries": 151,
+          "textures": 24,
+          "programs": 21,
+          "context": "active",
+          "passes": 0,
+          "targetResizes": 1
+        },
+        "performance": {
+          "samples": 583,
+          "fps": 1.8501722278675883,
+          "averageMs": 540.4902229845638,
+          "p50Ms": 495.5,
+          "p95Ms": 1179.4000000022352,
+          "p99Ms": 2169.10000000149,
+          "physicsMs": 0,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 45.64999999999869
+      }
+    },
+    {
+      "key": "s",
+      "snapshot": {
+        "ready": true,
+        "loading": {
+          "stage": "轨道前厅已就绪",
+          "progress": 1
+        },
+        "streaming": {
+          "total": 10,
+          "resident": 3,
+          "loading": 0,
+          "queued": 0,
+          "proxy": 0,
+          "visible": 2,
+          "culled": 8,
+          "loads": 13,
+          "evictions": 10,
+          "failed": 0,
+          "bytesResident": 1455964,
+          "retainedBehind": 1,
+          "interests": [
+            {
+              "worldId": "A",
+              "kind": "main",
+              "position": [
+                0.09999921375725762,
+                1.5500000038742474,
+                -19.94999989689142
+              ]
+            },
+            {
+              "worldId": "B",
+              "kind": "portal",
+              "position": [
+                100.09999921375726,
+                1.5500000038742474,
+                18.250000103108583
+              ]
+            }
+          ],
+          "chunks": [
+            {
+              "id": "A-capsule",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 42,
+              "lastWanted": 20.158200000006705,
+              "loadCount": 1,
+              "bytes": 1440096,
+              "triangles": 50704,
+              "failure": null
+            },
+            {
+              "id": "A-arrival",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 30.9,
+              "lastWanted": 34.16560000000522,
+              "loadCount": 1,
+              "bytes": 165196,
+              "triangles": 5800,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 8,
+              "lastWanted": 39.85830000000075,
+              "loadCount": 1,
+              "bytes": 396488,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gallery-east",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 7.8,
+              "lastWanted": 58.75880000000449,
+              "loadCount": 1,
+              "bytes": 399804,
+              "triangles": 15116,
+              "failure": null
+            },
+            {
+              "id": "A-gate",
+              "worldId": "A",
+              "state": "resident",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 0,
+              "lastWanted": 156.16510000001273,
+              "loadCount": 2,
+              "bytes": 521860,
+              "triangles": 18952,
+              "failure": null
+            },
+            {
+              "id": "A-roof-trusses",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 21.2,
+              "lastWanted": 9.913100000005214,
+              "loadCount": 1,
+              "bytes": 465712,
+              "triangles": 14988,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-west",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 36,
+              "lastWanted": 5.870000000003725,
+              "loadCount": 1,
+              "bytes": 1212256,
+              "triangles": 34176,
+              "failure": null
+            },
+            {
+              "id": "A-exterior-east",
+              "worldId": "A",
+              "state": "proxy",
+              "visible": false,
+              "lod": "hidden",
+              "distance": 36.9,
+              "lastWanted": 29.575100000005218,
+              "loadCount": 2,
+              "bytes": 1347468,
+              "triangles": 38368,
+              "failure": null
+            },
+            {
+              "id": "B-services",
+              "worldId": "B",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 0,
+              "lastWanted": 156.16510000001273,
+              "loadCount": 1,
+              "bytes": 743232,
+              "triangles": 26076,
+              "failure": null
+            },
+            {
+              "id": "B-gravity-instruments",
+              "worldId": "B",
+              "state": "resident",
+              "visible": true,
+              "lod": "high",
+              "distance": 23.2,
+              "lastWanted": 156.16510000001273,
+              "loadCount": 2,
+              "bytes": 190872,
+              "triangles": 5416,
+              "failure": null
+            }
+          ]
+        },
+        "audio": {
+          "state": "running",
+          "unlocked": true,
+          "muted": false,
+          "volume": 0.55,
+          "activeVoices": 7,
+          "footsteps": 228,
+          "cues": 4,
+          "error": null,
+          "source": "original procedural Web Audio"
+        },
+        "sky": {
+          "bodies": 11,
+          "stars": 1900,
+          "textureCount": 5,
+          "textureBytes": 2258031,
+          "triangles": 30704,
+          "elapsed": 54.03333333333155,
+          "returned": true,
+          "heroRotation": 1.7782333333333207,
+          "positions": [
+            {
+              "id": "AUREOLE",
+              "position": [
+                -105,
+                104,
+                -222
+              ],
+              "radius": 64
+            },
+            {
+              "id": "PELAGIC",
+              "position": [
+                162,
+                81,
+                -285
+              ],
+              "radius": 31
+            },
+            {
+              "id": "EMBER",
+              "position": [
+                76,
+                37,
+                162
+              ],
+              "radius": 19
+            },
+            {
+              "id": "SELENE",
+              "position": [
+                -94,
+                26,
+                71
+              ],
+              "radius": 13
+            },
+            {
+              "id": "MOON-01",
+              "position": [
+                -32,
+                34,
+                -125
+              ],
+              "radius": 4.4
+            },
+            {
+              "id": "MOON-02",
+              "position": [
+                -202,
+                58,
+                -87
+              ],
+              "radius": 6.8
+            },
+            {
+              "id": "MOON-03",
+              "position": [
+                286,
+                120,
+                -100
+              ],
+              "radius": 5.9
+            },
+            {
+              "id": "MOON-04",
+              "position": [
+                165,
+                182,
+                180
+              ],
+              "radius": 7.2
+            },
+            {
+              "id": "MOON-05",
+              "position": [
+                -264,
+                169,
+                142
+              ],
+              "radius": 9.1
+            },
+            {
+              "id": "MOON-06",
+              "position": [
+                34,
+                249,
+                -306
+              ],
+              "radius": 6.6
+            },
+            {
+              "id": "MOON-07",
+              "position": [
+                -338,
+                48,
+                -287
+              ],
+              "radius": 8.7
+            }
+          ]
+        },
+        "materials": {
+          "sets": 3,
+          "maps": 9,
+          "sharedMaterials": 10,
+          "jpegSourceBytes": 1783030,
+          "ktxNetworkBytes": 6714783,
+          "compressedMaps": 9,
+          "formats": {
+            "36492": 9
+          },
+          "gpuUploadPayloadBytes": 12583152,
+          "payloadNote": "Typed texture payload with mips; excludes GPU driver overhead, not a measured VRAM total",
+          "fallbacks": [],
+          "source": "ambientCG CC0 / Concrete048, Metal009, Metal047B"
+        },
+        "observed": false,
+        "sampleReleased": 0,
+        "canObserve": false,
+        "canReleaseSample": false,
+        "restoredCheckpoint": false,
+        "input": {
+          "x": 0,
+          "y": 0,
+          "jump": false,
+          "jumpPressed": false,
+          "sprint": false,
+          "crouch": false,
+          "pronePressed": false,
+          "descend": false,
+          "brake": false
+        },
+        "movement": {
+          "profile": "explore",
+          "moveSpeed": 3,
+          "jumpHeight": 1.2,
+          "gravityScale": 1,
+          "autoSprint": false,
+          "touchSize": 1,
+          "touchOpacity": 0.8,
+          "sensitivity": 1.3,
+          "acceleration": 1,
+          "invertY": false,
+          "quality": 1,
+          "volume": 0.55,
+          "muted": false,
+          "reducedMotion": false,
+          "fov": 50,
+          "tutorialSeen": true
+        },
+        "stance": "STAND",
+        "locomotion": "GROUND_WALK",
+        "stanceBlocked": null,
+        "fieldId": "architectural-support",
+        "colliderRotation": [
+          0,
+          -1.2246467991473535e-16,
+          0,
+          1
+        ],
+        "capsule": {
+          "offset": 0.87,
+          "eye": 1.55
+        },
+        "error": null,
+        "world": "VESTIBULE",
+        "slot": "A",
+        "foot": [
+          0.09999921375725762,
+          3.874247367363637e-9,
+          -19.94999989689142
+        ],
+        "body": [
+          0.09999921375725762,
+          0.8760000038742474,
+          -19.94999989689142
+        ],
+        "eye": [
+          0.09999921375725762,
+          1.5500000038742474,
+          -19.94999989689142
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "gravity": [
+          0,
+          -9.81,
+          0
+        ],
+        "bodyRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "cameraRotation": [
+          0,
+          -1.1796119636642288e-16,
+          0,
+          1
+        ],
+        "yaw": -2.3592239273284576e-16,
+        "pitch": 0,
+        "theta": 0,
+        "thetaDegrees": 0,
+        "s": -1.4000007862427424,
+        "mode": "NORMAL",
+        "grounded": true,
+        "supportNormal": [
+          0,
+          1,
+          0
+        ],
+        "velocity": [
+          -7.077671781985373e-16,
+          0,
+          3
+        ],
+        "step": 3242,
+        "progress": "RETURNED",
+        "terminal": true,
+        "returned": true,
+        "interactable": false,
+        "events": [
+          {
+            "id": 1,
+            "step": 1420,
+            "sourceId": "VESTIBULE-THRESHOLD",
+            "destinationId": "INVERT-THRESHOLD",
+            "sourceWorldId": "A",
+            "destinationWorldId": "B",
+            "sourcePosition": [
+              -0.05000000074505806,
+              0.8759999839067396,
+              -20
+            ],
+            "destinationPosition": [
+              99.94999999925494,
+              0.8759999839067396,
+              18.199500000000004
+            ],
+            "velocityBefore": [
+              0,
+              0,
+              -3
+            ],
+            "velocityAfter": [
+              7.347880794884119e-16,
+              0,
+              -3
+            ],
+            "crossingT": 0.9999822196742582,
+            "remainingDisplacement": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": 2,
+            "step": 3242,
+            "sourceId": "INVERT-THRESHOLD",
+            "destinationId": "VESTIBULE-THRESHOLD",
+            "sourceWorldId": "B",
+            "destinationWorldId": "A",
+            "sourcePosition": [
+              100.09999921375726,
+              0.8759999937414578,
+              18.2
+            ],
+            "destinationPosition": [
+              0.09999921375725762,
+              0.8759999937414578,
+              -19.98999989599735
+            ],
+            "velocityBefore": [
+              -7.077671781985373e-16,
+              0,
+              3
+            ],
+            "velocityAfter": [
+              -7.077671781985373e-16,
+              0,
+              3
+            ],
+            "crossingT": 0.04998955496461204,
+            "remainingDisplacement": [
+              0,
+              0,
+              0.009500104002654552
+            ]
+          }
+        ],
+        "transferState": "WAITING_FOR_REARM",
+        "rejection": null,
+        "blocked": null,
+        "rotationQueries": 3089,
+        "translationQueries": 3089,
+        "supportQueries": 16334,
+        "witness": {
+          "position": {
+            "x": 109.35003662109375,
+            "y": 4.1970648765563965,
+            "z": 0.5882951617240906
+          },
+          "velocity": {
+            "x": 0.000009978190064430237,
+            "y": 0.00006012695303070359,
+            "z": -0.00006616042810492218
+          },
+          "resets": 6
+        },
+        "render": {
+          "targetWidth": 640,
+          "targetHeight": 360,
+          "quality": 1,
+          "mainDrawCalls": 22,
+          "offscreenDrawCalls": 67,
+          "geometries": 151,
+          "textures": 24,
+          "programs": 21,
+          "context": "active",
+          "passes": 1,
+          "targetResizes": 1
+        },
+        "performance": {
+          "samples": 698,
+          "fps": 1.8770081028665053,
+          "averageMs": 532.7627507163303,
+          "p50Ms": 492.19999999925494,
+          "p95Ms": 1143.8999999985099,
+          "p99Ms": 1959.7000000029802,
+          "physicsMs": 1.800000000745058,
+          "gpuMs": null
+        },
+        "errors": [],
+        "elapsed": 54.03333333333155
+      }
+    }
+  ],
+  "final": {
+    "ready": true,
+    "loading": {
+      "stage": "轨道前厅已就绪",
+      "progress": 1
+    },
+    "streaming": {
+      "total": 10,
+      "resident": 3,
+      "loading": 0,
+      "queued": 0,
+      "proxy": 0,
+      "visible": 2,
+      "culled": 8,
+      "loads": 13,
+      "evictions": 10,
+      "failed": 0,
+      "bytesResident": 1455964,
+      "retainedBehind": 1,
+      "interests": [
+        {
+          "worldId": "A",
+          "kind": "main",
+          "position": [
+            0.09999921375725762,
+            1.5500000038742474,
+            -19.94999989689142
+          ]
+        },
+        {
+          "worldId": "B",
+          "kind": "portal",
+          "position": [
+            100.09999921375726,
+            1.5500000038742474,
+            18.250000103108583
+          ]
+        }
+      ],
+      "chunks": [
+        {
+          "id": "A-capsule",
+          "worldId": "A",
+          "state": "proxy",
+          "visible": false,
+          "lod": "hidden",
+          "distance": 42,
+          "lastWanted": 20.158200000006705,
+          "loadCount": 1,
+          "bytes": 1440096,
+          "triangles": 50704,
+          "failure": null
+        },
+        {
+          "id": "A-arrival",
+          "worldId": "A",
+          "state": "proxy",
+          "visible": false,
+          "lod": "hidden",
+          "distance": 30.9,
+          "lastWanted": 34.16560000000522,
+          "loadCount": 1,
+          "bytes": 165196,
+          "triangles": 5800,
+          "failure": null
+        },
+        {
+          "id": "A-gallery-west",
+          "worldId": "A",
+          "state": "proxy",
+          "visible": false,
+          "lod": "hidden",
+          "distance": 8,
+          "lastWanted": 39.85830000000075,
+          "loadCount": 1,
+          "bytes": 396488,
+          "triangles": 15116,
+          "failure": null
+        },
+        {
+          "id": "A-gallery-east",
+          "worldId": "A",
+          "state": "proxy",
+          "visible": false,
+          "lod": "hidden",
+          "distance": 7.8,
+          "lastWanted": 58.75880000000449,
+          "loadCount": 1,
+          "bytes": 399804,
+          "triangles": 15116,
+          "failure": null
+        },
+        {
+          "id": "A-gate",
+          "worldId": "A",
+          "state": "resident",
+          "visible": false,
+          "lod": "hidden",
+          "distance": 0,
+          "lastWanted": 156.16510000001273,
+          "loadCount": 2,
+          "bytes": 521860,
+          "triangles": 18952,
+          "failure": null
+        },
+        {
+          "id": "A-roof-trusses",
+          "worldId": "A",
+          "state": "proxy",
+          "visible": false,
+          "lod": "hidden",
+          "distance": 21.2,
+          "lastWanted": 9.913100000005214,
+          "loadCount": 1,
+          "bytes": 465712,
+          "triangles": 14988,
+          "failure": null
+        },
+        {
+          "id": "A-exterior-west",
+          "worldId": "A",
+          "state": "proxy",
+          "visible": false,
+          "lod": "hidden",
+          "distance": 36,
+          "lastWanted": 5.870000000003725,
+          "loadCount": 1,
+          "bytes": 1212256,
+          "triangles": 34176,
+          "failure": null
+        },
+        {
+          "id": "A-exterior-east",
+          "worldId": "A",
+          "state": "proxy",
+          "visible": false,
+          "lod": "hidden",
+          "distance": 36.9,
+          "lastWanted": 29.575100000005218,
+          "loadCount": 2,
+          "bytes": 1347468,
+          "triangles": 38368,
+          "failure": null
+        },
+        {
+          "id": "B-services",
+          "worldId": "B",
+          "state": "resident",
+          "visible": true,
+          "lod": "high",
+          "distance": 0,
+          "lastWanted": 156.16510000001273,
+          "loadCount": 1,
+          "bytes": 743232,
+          "triangles": 26076,
+          "failure": null
+        },
+        {
+          "id": "B-gravity-instruments",
+          "worldId": "B",
+          "state": "resident",
+          "visible": true,
+          "lod": "high",
+          "distance": 23.2,
+          "lastWanted": 156.16510000001273,
+          "loadCount": 2,
+          "bytes": 190872,
+          "triangles": 5416,
+          "failure": null
+        }
+      ]
+    },
+    "audio": {
+      "state": "running",
+      "unlocked": true,
+      "muted": false,
+      "volume": 0.55,
+      "activeVoices": 7,
+      "footsteps": 228,
+      "cues": 4,
+      "error": null,
+      "source": "original procedural Web Audio"
+    },
+    "sky": {
+      "bodies": 11,
+      "stars": 1900,
+      "textureCount": 5,
+      "textureBytes": 2258031,
+      "triangles": 30704,
+      "elapsed": 54.03333333333155,
+      "returned": true,
+      "heroRotation": 1.7782333333333207,
+      "positions": [
+        {
+          "id": "AUREOLE",
+          "position": [
+            -105,
+            104,
+            -222
+          ],
+          "radius": 64
+        },
+        {
+          "id": "PELAGIC",
+          "position": [
+            162,
+            81,
+            -285
+          ],
+          "radius": 31
+        },
+        {
+          "id": "EMBER",
+          "position": [
+            76,
+            37,
+            162
+          ],
+          "radius": 19
+        },
+        {
+          "id": "SELENE",
+          "position": [
+            -94,
+            26,
+            71
+          ],
+          "radius": 13
+        },
+        {
+          "id": "MOON-01",
+          "position": [
+            -32,
+            34,
+            -125
+          ],
+          "radius": 4.4
+        },
+        {
+          "id": "MOON-02",
+          "position": [
+            -202,
+            58,
+            -87
+          ],
+          "radius": 6.8
+        },
+        {
+          "id": "MOON-03",
+          "position": [
+            286,
+            120,
+            -100
+          ],
+          "radius": 5.9
+        },
+        {
+          "id": "MOON-04",
+          "position": [
+            165,
+            182,
+            180
+          ],
+          "radius": 7.2
+        },
+        {
+          "id": "MOON-05",
+          "position": [
+            -264,
+            169,
+            142
+          ],
+          "radius": 9.1
+        },
+        {
+          "id": "MOON-06",
+          "position": [
+            34,
+            249,
+            -306
+          ],
+          "radius": 6.6
+        },
+        {
+          "id": "MOON-07",
+          "position": [
+            -338,
+            48,
+            -287
+          ],
+          "radius": 8.7
+        }
+      ]
+    },
+    "materials": {
+      "sets": 3,
+      "maps": 9,
+      "sharedMaterials": 10,
+      "jpegSourceBytes": 1783030,
+      "ktxNetworkBytes": 6714783,
+      "compressedMaps": 9,
+      "formats": {
+        "36492": 9
+      },
+      "gpuUploadPayloadBytes": 12583152,
+      "payloadNote": "Typed texture payload with mips; excludes GPU driver overhead, not a measured VRAM total",
+      "fallbacks": [],
+      "source": "ambientCG CC0 / Concrete048, Metal009, Metal047B"
+    },
+    "observed": false,
+    "sampleReleased": 0,
+    "canObserve": false,
+    "canReleaseSample": false,
+    "restoredCheckpoint": false,
+    "input": {
+      "x": 0,
+      "y": 0,
+      "jump": false,
+      "jumpPressed": false,
+      "sprint": false,
+      "crouch": false,
+      "pronePressed": false,
+      "descend": false,
+      "brake": false
+    },
+    "movement": {
+      "profile": "explore",
+      "moveSpeed": 3,
+      "jumpHeight": 1.2,
+      "gravityScale": 1,
+      "autoSprint": false,
+      "touchSize": 1,
+      "touchOpacity": 0.8,
+      "sensitivity": 1.3,
+      "acceleration": 1,
+      "invertY": false,
+      "quality": 1,
+      "volume": 0.55,
+      "muted": false,
+      "reducedMotion": false,
+      "fov": 50,
+      "tutorialSeen": true
+    },
+    "stance": "STAND",
+    "locomotion": "GROUND_WALK",
+    "stanceBlocked": null,
+    "fieldId": "architectural-support",
+    "colliderRotation": [
+      0,
+      -1.2246467991473535e-16,
+      0,
+      1
+    ],
+    "capsule": {
+      "offset": 0.87,
+      "eye": 1.55
+    },
+    "error": null,
+    "world": "VESTIBULE",
+    "slot": "A",
+    "foot": [
+      0.09999921375725762,
+      3.874247367363637e-9,
+      -19.94999989689142
+    ],
+    "body": [
+      0.09999921375725762,
+      0.8760000038742474,
+      -19.94999989689142
+    ],
+    "eye": [
+      0.09999921375725762,
+      1.5500000038742474,
+      -19.94999989689142
+    ],
+    "up": [
+      0,
+      1,
+      0
+    ],
+    "gravity": [
+      0,
+      -9.81,
+      0
+    ],
+    "bodyRotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "cameraRotation": [
+      0,
+      -1.1796119636642288e-16,
+      0,
+      1
+    ],
+    "yaw": -2.3592239273284576e-16,
+    "pitch": 0,
+    "theta": 0,
+    "thetaDegrees": 0,
+    "s": -1.4000007862427424,
+    "mode": "NORMAL",
+    "grounded": true,
+    "supportNormal": [
+      0,
+      1,
+      0
+    ],
+    "velocity": [
+      -7.077671781985373e-16,
+      0,
+      3
+    ],
+    "step": 3242,
+    "progress": "RETURNED",
+    "terminal": true,
+    "returned": true,
+    "interactable": false,
+    "events": [
+      {
+        "id": 1,
+        "step": 1420,
+        "sourceId": "VESTIBULE-THRESHOLD",
+        "destinationId": "INVERT-THRESHOLD",
+        "sourceWorldId": "A",
+        "destinationWorldId": "B",
+        "sourcePosition": [
+          -0.05000000074505806,
+          0.8759999839067396,
+          -20
+        ],
+        "destinationPosition": [
+          99.94999999925494,
+          0.8759999839067396,
+          18.199500000000004
+        ],
+        "velocityBefore": [
+          0,
+          0,
+          -3
+        ],
+        "velocityAfter": [
+          7.347880794884119e-16,
+          0,
+          -3
+        ],
+        "crossingT": 0.9999822196742582,
+        "remainingDisplacement": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "step": 3242,
+        "sourceId": "INVERT-THRESHOLD",
+        "destinationId": "VESTIBULE-THRESHOLD",
+        "sourceWorldId": "B",
+        "destinationWorldId": "A",
+        "sourcePosition": [
+          100.09999921375726,
+          0.8759999937414578,
+          18.2
+        ],
+        "destinationPosition": [
+          0.09999921375725762,
+          0.8759999937414578,
+          -19.98999989599735
+        ],
+        "velocityBefore": [
+          -7.077671781985373e-16,
+          0,
+          3
+        ],
+        "velocityAfter": [
+          -7.077671781985373e-16,
+          0,
+          3
+        ],
+        "crossingT": 0.04998955496461204,
+        "remainingDisplacement": [
+          0,
+          0,
+          0.009500104002654552
+        ]
+      }
+    ],
+    "transferState": "WAITING_FOR_REARM",
+    "rejection": null,
+    "blocked": null,
+    "rotationQueries": 3089,
+    "translationQueries": 3089,
+    "supportQueries": 16334,
+    "witness": {
+      "position": {
+        "x": 109.35003662109375,
+        "y": 4.1970648765563965,
+        "z": 0.5882951617240906
+      },
+      "velocity": {
+        "x": 0.000009978190064430237,
+        "y": 0.00006012695303070359,
+        "z": -0.00006616042810492218
+      },
+      "resets": 6
+    },
+    "render": {
+      "targetWidth": 640,
+      "targetHeight": 360,
+      "quality": 1,
+      "mainDrawCalls": 22,
+      "offscreenDrawCalls": 67,
+      "geometries": 151,
+      "textures": 24,
+      "programs": 21,
+      "context": "active",
+      "passes": 1,
+      "targetResizes": 1
+    },
+    "performance": {
+      "samples": 698,
+      "fps": 1.8770081028665053,
+      "averageMs": 532.7627507163303,
+      "p50Ms": 492.19999999925494,
+      "p95Ms": 1143.8999999985099,
+      "p99Ms": 1959.7000000029802,
+      "physicsMs": 1.800000000745058,
+      "gpuMs": null
+    },
+    "errors": [],
+    "elapsed": 54.03333333333155
+  },
+  "browserErrors": [],
+  "resources": [
+    {
+      "url": "http://127.0.0.1:4180/assets/index-Le0F-kdu.js",
+      "transferSize": 69474,
+      "encodedBodySize": 69174,
+      "decodedBodySize": 222571
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/ChapterView-Dfe64pEd.js",
+      "transferSize": 107375,
+      "encodedBodySize": 107075,
+      "decodedBodySize": 404412
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/InputManager-CZd6aFMG.js",
+      "transferSize": 1896602,
+      "encodedBodySize": 1896302,
+      "decodedBodySize": 5288226
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/ChapterView-D14mCF9P.css",
+      "transferSize": 5304,
+      "encodedBodySize": 5004,
+      "decodedBodySize": 20328
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/v02/vestibule.glb",
+      "transferSize": 1708524,
+      "encodedBodySize": 1708224,
+      "decodedBodySize": 1708224
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/v02/invert.glb",
+      "transferSize": 1815152,
+      "encodedBodySize": 1814852,
+      "decodedBodySize": 1814852
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/materials/concrete-albedo.ktx2",
+      "transferSize": 932304,
+      "encodedBodySize": 932004,
+      "decodedBodySize": 932004
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/materials/concrete-roughness.ktx2",
+      "transferSize": 959551,
+      "encodedBodySize": 959251,
+      "decodedBodySize": 959251
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/materials/concrete-normal.ktx2",
+      "transferSize": 1059698,
+      "encodedBodySize": 1059398,
+      "decodedBodySize": 1059398
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/materials/metal-albedo.ktx2",
+      "transferSize": 309531,
+      "encodedBodySize": 309231,
+      "decodedBodySize": 309231
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/materials/metal-roughness.ktx2",
+      "transferSize": 728627,
+      "encodedBodySize": 728327,
+      "decodedBodySize": 728327
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/materials/metal-normal.ktx2",
+      "transferSize": 381119,
+      "encodedBodySize": 380819,
+      "decodedBodySize": 380819
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/materials/copper-albedo.ktx2",
+      "transferSize": 1260232,
+      "encodedBodySize": 1259932,
+      "decodedBodySize": 1259932
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/materials/copper-roughness.ktx2",
+      "transferSize": 798550,
+      "encodedBodySize": 798250,
+      "decodedBodySize": 798250
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/materials/copper-normal.ktx2",
+      "transferSize": 287871,
+      "encodedBodySize": 287571,
+      "decodedBodySize": 287571
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/basis/basis_transcoder.js",
+      "transferSize": 15469,
+      "encodedBodySize": 15169,
+      "decodedBodySize": 57529
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/basis/basis_transcoder.wasm",
+      "transferSize": 527633,
+      "encodedBodySize": 527333,
+      "decodedBodySize": 527333
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/space/saturn.jpg",
+      "transferSize": 200216,
+      "encodedBodySize": 199916,
+      "decodedBodySize": 199916
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/space/moon.jpg",
+      "transferSize": 1054169,
+      "encodedBodySize": 1053869,
+      "decodedBodySize": 1053869
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/architecture/manifest.json",
+      "transferSize": 4777,
+      "encodedBodySize": 4477,
+      "decodedBodySize": 46578
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/space/neptune.jpg",
+      "transferSize": 241880,
+      "encodedBodySize": 241580,
+      "decodedBodySize": 241580
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/space/mars.jpg",
+      "transferSize": 750847,
+      "encodedBodySize": 750547,
+      "decodedBodySize": 750547
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/space/saturn-ring.png",
+      "transferSize": 12419,
+      "encodedBodySize": 12119,
+      "decodedBodySize": 12119
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/architecture/A-capsule.glb",
+      "transferSize": 1440396,
+      "encodedBodySize": 1440096,
+      "decodedBodySize": 1440096
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/architecture/A-exterior-east.glb",
+      "transferSize": 1347768,
+      "encodedBodySize": 1347468,
+      "decodedBodySize": 1347468
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/architecture/A-arrival.glb",
+      "transferSize": 165496,
+      "encodedBodySize": 165196,
+      "decodedBodySize": 165196
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/architecture/A-exterior-west.glb",
+      "transferSize": 1212556,
+      "encodedBodySize": 1212256,
+      "decodedBodySize": 1212256
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/architecture/A-gallery-east.glb",
+      "transferSize": 400104,
+      "encodedBodySize": 399804,
+      "decodedBodySize": 399804
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/architecture/A-gallery-west.glb",
+      "transferSize": 396788,
+      "encodedBodySize": 396488,
+      "decodedBodySize": 396488
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/architecture/A-roof-trusses.glb",
+      "transferSize": 466012,
+      "encodedBodySize": 465712,
+      "decodedBodySize": 465712
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/architecture/A-gate.glb",
+      "transferSize": 522160,
+      "encodedBodySize": 521860,
+      "decodedBodySize": 521860
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/architecture/B-services.glb",
+      "transferSize": 743532,
+      "encodedBodySize": 743232,
+      "decodedBodySize": 743232
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/architecture/B-gravity-instruments.glb",
+      "transferSize": 191172,
+      "encodedBodySize": 190872,
+      "decodedBodySize": 190872
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/architecture/A-exterior-east.glb",
+      "transferSize": 300,
+      "encodedBodySize": 1347468,
+      "decodedBodySize": 1347468
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/architecture/B-gravity-instruments.glb",
+      "transferSize": 300,
+      "encodedBodySize": 190872,
+      "decodedBodySize": 190872
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/orbital/architecture/A-gate.glb",
+      "transferSize": 300,
+      "encodedBodySize": 521860,
+      "decodedBodySize": 521860
+    }
+  ],
+  "note": "Actual production browser Resource Timing. Encoded/decoded body bytes exclude embedded textures counted inside GLB; no compression is inferred."
+}

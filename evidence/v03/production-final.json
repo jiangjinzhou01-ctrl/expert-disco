@@ -1,0 +1,332 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/threshold-v02/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      "playwright.production.config.ts"
+    ],
+    "configFile": "/workspace/threshold-v02/playwright.production.config.ts",
+    "rootDir": "/workspace/threshold-v02/src/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/threshold-v02/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/workspace/threshold-v02/src/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "production.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/threshold-v02/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/workspace/threshold-v02/src/tests/e2e",
+        "snapshotDir": "/workspace/threshold-v02/src/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "production.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4180",
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "headless": true,
+          "launchOptions": {
+            "args": [
+              "--no-sandbox",
+              "--use-gl=angle",
+              "--use-angle=swiftshader",
+              "--enable-unsafe-swiftshader"
+            ]
+          },
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "video": {
+            "mode": "on",
+            "size": {
+              "width": 640,
+              "height": 360
+            }
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/production.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview -- --port 4180",
+      "url": "http://127.0.0.1:4180",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "production.spec.ts",
+      "file": "production.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "normal production bundle runs WebGL and real desktop input traverses both ways",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20080,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T06:12:39.000Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/threshold-v02/test-results/production-normal-producti-de56f-p-input-traverses-both-ways/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed69554c53210704c98c-fbd3b71b9dbb9f238906",
+          "file": "production.spec.ts",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "V02 production: genuine keyboard journey from spawn through the turn, interaction and return",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 388541,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "production input stage w {\n  world: \u001b[32m'VESTIBULE'\u001b[39m,\n  foot: [ \u001b[33m0\u001b[39m, \u001b[33m-1.1324884030550209e-8\u001b[39m, \u001b[33m17.79999977350235\u001b[39m ],\n  mode: \u001b[32m'NORMAL'\u001b[39m,\n  step: \u001b[33m343\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage d {\n  world: \u001b[32m'VESTIBULE'\u001b[39m,\n  foot: [ \u001b[33m8.00000011920929\u001b[39m, \u001b[33m5.960442139851807e-10\u001b[39m, \u001b[33m17.79999977350235\u001b[39m ],\n  mode: \u001b[32m'NORMAL'\u001b[39m,\n  step: \u001b[33m503\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage w {\n  world: \u001b[32m'VESTIBULE'\u001b[39m,\n  foot: [ \u001b[33m8.00000011920929\u001b[39m, \u001b[33m8.344645197055911e-9\u001b[39m, \u001b[33m-14.15000070258975\u001b[39m ],\n  mode: \u001b[32m'NORMAL'\u001b[39m,\n  step: \u001b[33m1142\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage a {\n  world: \u001b[32m'VESTIBULE'\u001b[39m,\n  foot: [ \u001b[33m-0.05000000074505806\u001b[39m, \u001b[33m5.960406612715019e-10\u001b[39m, \u001b[33m-14.15000070258975\u001b[39m ],\n  mode: \u001b[32m'NORMAL'\u001b[39m,\n  step: \u001b[33m1303\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage w {\n  world: \u001b[32m'INVERT'\u001b[39m,\n  foot: [ \u001b[33m-0.05000000074505806\u001b[39m, \u001b[33m-5.3644243491746124e-9\u001b[39m, \u001b[33m18.049500003352765\u001b[39m ],\n  mode: \u001b[32m'NORMAL'\u001b[39m,\n  step: \u001b[33m1423\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage w {\n  world: \u001b[32m'INVERT'\u001b[39m,\n  foot: [ \u001b[33m-0.05000000074505806\u001b[39m, \u001b[33m2.6822004617343964e-9\u001b[39m, \u001b[33m-7.100499434500929\u001b[39m ],\n  mode: \u001b[32m'NORMAL'\u001b[39m,\n  step: \u001b[33m1926\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage d {\n  world: \u001b[32m'INVERT'\u001b[39m,\n  foot: [ \u001b[33m4.7\u001b[39m, \u001b[33m4.2233042993385315\u001b[39m, \u001b[33m-7.100499434500929\u001b[39m ],\n  mode: \u001b[32m'WALL'\u001b[39m,\n  step: \u001b[33m2078\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage w {\n  world: \u001b[32m'INVERT'\u001b[39m,\n  foot: [ \u001b[33m4.7\u001b[39m, \u001b[33m4.2233042993385315\u001b[39m, \u001b[33m-16.4004994345008\u001b[39m ],\n  mode: \u001b[32m'WALL'\u001b[39m,\n  step: \u001b[33m2264\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage s {\n  world: \u001b[32m'INVERT'\u001b[39m,\n  foot: [ \u001b[33m4.7\u001b[39m, \u001b[33m4.2233042993385315\u001b[39m, \u001b[33m-6.900499434500933\u001b[39m ],\n  mode: \u001b[32m'WALL'\u001b[39m,\n  step: \u001b[33m2590\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage a {\n  world: \u001b[32m'INVERT'\u001b[39m,\n  foot: [ \u001b[33m0.09999921375725762\u001b[39m, \u001b[33m3.278203153378456e-9\u001b[39m, \u001b[33m-6.900499434500933\u001b[39m ],\n  mode: \u001b[32m'NORMAL'\u001b[39m,\n  step: \u001b[33m2739\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage s {\n  world: \u001b[32m'VESTIBULE'\u001b[39m,\n  foot: [ \u001b[33m0.09999921375725762\u001b[39m, \u001b[33m3.874247367363637e-9\u001b[39m, \u001b[33m-19.94999989689142\u001b[39m ],\n  mode: \u001b[32m'NORMAL'\u001b[39m,\n  step: \u001b[33m3242\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T06:12:59.173Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/threshold-v02/test-results/production-V02-production--ecf00-turn-interaction-and-return/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed69554c53210704c98c-aab5d856fa23cf91dc34",
+          "file": "production.spec.ts",
+          "line": 41,
+          "column": 1
+        },
+        {
+          "title": "Orbital production: a real walked checkpoint survives reload after physics clearance",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 71635,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T06:19:27.764Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/threshold-v02/test-results/production-Orbital-product-bb0ad-oad-after-physics-clearance/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed69554c53210704c98c-f40394ea3a9e9657c10a",
+          "file": "production.spec.ts",
+          "line": 56,
+          "column": 1
+        },
+        {
+          "title": "V03 normal production: keyboard jump, real crouch and zero-g thrust/brake without mutation adapters",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 70266,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T06:20:39.467Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/threshold-v02/test-results/production-V03-normal-prod-ef0c0-e-without-mutation-adapters/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed69554c53210704c98c-b32f507b446cad69b468",
+          "file": "production.spec.ts",
+          "line": 73,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-08T06:12:38.121Z",
+    "duration": 569142.7100000001,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

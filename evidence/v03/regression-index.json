@@ -1,0 +1,305 @@
+{
+  "note": "This run generated these artifacts at legacy paths. Copies are archived here; tracked V0.2 historical evidence was restored. Redundant intermediate frame PNGs were not copied. Suite revision scope is in docs/V03_TECHNICAL_REPORT.md.",
+  "artifacts": [
+    {
+      "generatedPath": "evidence/browser-bidirectional.json",
+      "archivedPath": "evidence/v03/regression/browser-bidirectional.json",
+      "bytes": 8719,
+      "sha256": "f153c7dd492919e587cd6aa473bbbd8c78149d53b81a1bf10fd19a32a703fd4f"
+    },
+    {
+      "generatedPath": "evidence/browser-collision.json",
+      "archivedPath": "evidence/v03/regression/browser-collision.json",
+      "bytes": 7097,
+      "sha256": "d19bc4fde1f2a816c45c6cb4e0c30c55e0f25c925ba9baaaa5d8231cac9fa3ca"
+    },
+    {
+      "generatedPath": "evidence/browser-fast-longframe.json",
+      "archivedPath": "evidence/v03/regression/browser-fast-longframe.json",
+      "bytes": 10419,
+      "sha256": "8b726b8e9bd7d9be3491de630d734c855bab20ffeaad04b16a35092cf86f0c43"
+    },
+    {
+      "generatedPath": "evidence/browser-returned-A.png",
+      "archivedPath": "evidence/v03/regression/browser-returned-A.png",
+      "bytes": 78271,
+      "sha256": "4bc5610004f349ad6be5f77b0f256534c64bf380a0aa977d49ebe7573d1f7577"
+    },
+    {
+      "generatedPath": "evidence/context-restoration.json",
+      "archivedPath": "evidence/v03/regression/context-restoration.json",
+      "bytes": 1867,
+      "sha256": "2cb9937708982b12a0740eebf23a10325f8fac9d2bb17d1a7017c2f7d2e311e4"
+    },
+    {
+      "generatedPath": "evidence/diagnostics-export.json",
+      "archivedPath": "evidence/v03/regression/diagnostics-export.json",
+      "bytes": 3254,
+      "sha256": "292c06295de89b0ee7a22b1534bf5c3eae3b08c0356d4649a5551534cb730e9b"
+    },
+    {
+      "generatedPath": "evidence/diagnostics-input-geometry.json",
+      "archivedPath": "evidence/v03/regression/diagnostics-input-geometry.json",
+      "bytes": 14947,
+      "sha256": "6df165b1d3fd71bc6d070561d2066115bb3f6ac4934d735e25f3504a05cab0c6"
+    },
+    {
+      "generatedPath": "evidence/diagnostics-ui.png",
+      "archivedPath": "evidence/v03/regression/diagnostics-ui.png",
+      "bytes": 79956,
+      "sha256": "2dda4634d50f9831ca23f51609cc2582edebadacf76b36d9c3db8d2118dedb3d"
+    },
+    {
+      "generatedPath": "evidence/mobile-bidirectional.json",
+      "archivedPath": "evidence/v03/regression/mobile-bidirectional.json",
+      "bytes": 17198,
+      "sha256": "6b0c8dddbc7910ac1783bc19d9f0623ba96882cbee75445c569f20cc83e94a88"
+    },
+    {
+      "generatedPath": "evidence/mobile-landscape.png",
+      "archivedPath": "evidence/v03/regression/mobile-landscape.png",
+      "bytes": 26230,
+      "sha256": "bcc6cb21e47c87c79a384f81c681a06e45d0bedd109648abbc6288939ce6fca1"
+    },
+    {
+      "generatedPath": "evidence/mobile-multitouch.json",
+      "archivedPath": "evidence/v03/regression/mobile-multitouch.json",
+      "bytes": 8859,
+      "sha256": "7621d534a2a276aeeeb358442baa3e522570e67baa8aa1ff524a245393a920d5"
+    },
+    {
+      "generatedPath": "evidence/orbital/interactions.json",
+      "archivedPath": "evidence/v03/regression/orbital/interactions.json",
+      "bytes": 48727,
+      "sha256": "e7e65efe0a7cf2c439653878b2aa29e1d1b180ab46a95850b2ae44e9108f9d55"
+    },
+    {
+      "generatedPath": "evidence/orbital/product-controls.json",
+      "archivedPath": "evidence/v03/regression/orbital/product-controls.json",
+      "bytes": 19930,
+      "sha256": "ec8dfdd192ba97ad9b1092173a63523912733b8dc47e0fabd00b56b3561890c4"
+    },
+    {
+      "generatedPath": "evidence/orbital/production-checkpoint.json",
+      "archivedPath": "evidence/v03/regression/orbital/production-checkpoint.json",
+      "bytes": 11209,
+      "sha256": "18d91be34b872170bcbf39add06b2d56853ca9f9fe91f06350fc19425c1f0595"
+    },
+    {
+      "generatedPath": "evidence/orbital/streaming-failure.json",
+      "archivedPath": "evidence/v03/regression/orbital/streaming-failure.json",
+      "bytes": 13631,
+      "sha256": "44fd4ba15d3603200c1c7f460fed99eef0a870e5a2ceba32e905845a2a24be8b"
+    },
+    {
+      "generatedPath": "evidence/orbital/streaming.json",
+      "archivedPath": "evidence/v03/regression/orbital/streaming.json",
+      "bytes": 15835,
+      "sha256": "3d97576878bebc5a54011695468e1a5a4d895772a3d11532a7df940066bd7d29"
+    },
+    {
+      "generatedPath": "evidence/orbital/touch-response.json",
+      "archivedPath": "evidence/v03/regression/orbital/touch-response.json",
+      "bytes": 20226,
+      "sha256": "97c99a432808d6f24ca667ffad2a0e41d586e02957afb76963b17465b27dc2af"
+    },
+    {
+      "generatedPath": "evidence/playwright.json",
+      "archivedPath": "evidence/v03/regression/playwright.json",
+      "bytes": 70640,
+      "sha256": "2764dc3eb7a08e181990ff96fd9702321588ffaa94ab4fe15135e990eb7617ef"
+    },
+    {
+      "generatedPath": "evidence/production-B.png",
+      "archivedPath": "evidence/v03/regression/production-B.png",
+      "bytes": 82126,
+      "sha256": "863c50b7aabdfa92da5c7fb3a96629faec16691af47273dfc283196df77313a9"
+    },
+    {
+      "generatedPath": "evidence/production-browser.json",
+      "archivedPath": "evidence/v03/regression/production-browser.json",
+      "bytes": 8907,
+      "sha256": "ecac2cabe1cfc3cfbef6b9029b5f9e20f340ec99684566b756025a5ee6babac0"
+    },
+    {
+      "generatedPath": "evidence/production-returned-A.png",
+      "archivedPath": "evidence/v03/regression/production-returned-A.png",
+      "bytes": 78329,
+      "sha256": "b563b5022fc867466ca246f53558dce36330f2ed6ab0d8fef746f2a06c74711e"
+    },
+    {
+      "generatedPath": "evidence/production.json",
+      "archivedPath": "evidence/v03/regression/production.json",
+      "bytes": 4805,
+      "sha256": "154d92ce918854b785a53d256af41efcdf040065e8b37c1a68cf9a13580f6d55"
+    },
+    {
+      "generatedPath": "evidence/subpath-smoke.json",
+      "archivedPath": "evidence/v03/regression/subpath-smoke.json",
+      "bytes": 21719,
+      "sha256": "cbf3091ad42d765268c681cc034adf3b245f7a9e5c24c9ab66a7889a4db370c7"
+    },
+    {
+      "generatedPath": "evidence/subpath-smoke.log",
+      "archivedPath": "evidence/v03/regression/subpath-smoke.log",
+      "bytes": 1704,
+      "sha256": "0ec2aac568d4464af50ad0c7a6c00df19c9606890f62f7a6e66e42374be331b8"
+    },
+    {
+      "generatedPath": "evidence/subpath-smoke.png",
+      "archivedPath": "evidence/v03/regression/subpath-smoke.png",
+      "bytes": 25703,
+      "sha256": "0ba855eee7a5d1c4b71e63179119f672414f059593986d93ffbc56ee56bc2be7"
+    },
+    {
+      "generatedPath": "evidence/v02/camera-visibility.json",
+      "archivedPath": "evidence/v03/regression/v02/camera-visibility.json",
+      "bytes": 56350,
+      "sha256": "ec80f8af738b60fc7e0dbe645036af29e45d5b2c1c8a84fe3059a6a37306f541"
+    },
+    {
+      "generatedPath": "evidence/v02/chapter-returned.png",
+      "archivedPath": "evidence/v03/regression/v02/chapter-returned.png",
+      "bytes": 217369,
+      "sha256": "85680c6976744be3a4fbb53441178e469b4ce5d276e7e83c7cd66a879db55022"
+    },
+    {
+      "generatedPath": "evidence/v02/continuous-path.json",
+      "archivedPath": "evidence/v03/regression/v02/continuous-path.json",
+      "bytes": 1415902,
+      "sha256": "c9588c382121f12406efb93972d4bc727c517d88c0188eeb67c65e3f0e74b980"
+    },
+    {
+      "generatedPath": "evidence/v02/lifecycle.json",
+      "archivedPath": "evidence/v03/regression/v02/lifecycle.json",
+      "bytes": 10292,
+      "sha256": "013f7179f943b90df221c85a34405c9d8fef81f389d52c9e553bd2bb209a0cdf"
+    },
+    {
+      "generatedPath": "evidence/v02/mobile-1170-wall.png",
+      "archivedPath": "evidence/v03/regression/v02/mobile-1170-wall.png",
+      "bytes": 574876,
+      "sha256": "8fc1b1d738bf68b77a8e15441fb7b3e6e945f8ea1476b35ff48bc99db7ad82e4"
+    },
+    {
+      "generatedPath": "evidence/v02/mobile-1170.json",
+      "archivedPath": "evidence/v03/regression/v02/mobile-1170.json",
+      "bytes": 202580,
+      "sha256": "17e0f5194c5ceb6533e14202f43f8a971fef38ce31c0d53344ebac761dddd08b"
+    },
+    {
+      "generatedPath": "evidence/v02/mobile-1200-wall.png",
+      "archivedPath": "evidence/v03/regression/v02/mobile-1200-wall.png",
+      "bytes": 588135,
+      "sha256": "87781c4f82625fe349a8e35accc752eab4cac630a254a5eaf5530a005edc16bf"
+    },
+    {
+      "generatedPath": "evidence/v02/mobile-1200.json",
+      "archivedPath": "evidence/v03/regression/v02/mobile-1200.json",
+      "bytes": 202965,
+      "sha256": "d664a7c0ca95762c46770b3a7ef89b2bf83b51b9758b22d039a1c411fe5ef251"
+    },
+    {
+      "generatedPath": "evidence/v02/production-journey.json",
+      "archivedPath": "evidence/v03/regression/v02/production-journey.json",
+      "bytes": 185141,
+      "sha256": "b4949f0287849e52280b003b0a59f2aebdce2f9b09a768b0a36cfb7f7dee7879"
+    },
+    {
+      "generatedPath": "evidence/v02/production-journey.webm",
+      "archivedPath": "evidence/v03/production-journey.webm",
+      "bytes": 30418649,
+      "sha256": "73616404948cf8ee9bdbaf107a925a6950b8cb8a749d823810a02fb0459d9987"
+    },
+    {
+      "generatedPath": "evidence/v02/production-returned.png",
+      "archivedPath": "evidence/v03/regression/v02/production-returned.png",
+      "bytes": 97575,
+      "sha256": "fe9015a70a234c18ee112fda0a6db7986ade3bc7fff49489f37259b9e5e95551"
+    },
+    {
+      "generatedPath": "evidence/v02/production-wall-terminal.png",
+      "archivedPath": "evidence/v03/regression/v02/production-wall-terminal.png",
+      "bytes": 185855,
+      "sha256": "68456989c499027c467ba224ca954bb271fbdf3d0ff2c91fcd74a924bf9377ec"
+    },
+    {
+      "generatedPath": "evidence/v02/resonator-response.json",
+      "archivedPath": "evidence/v03/regression/v02/resonator-response.json",
+      "bytes": 24367,
+      "sha256": "b422240b16419c920d8c39fb5edc0879f28f795f4c67bb5f9c772d671001a1c1"
+    },
+    {
+      "generatedPath": "evidence/v02/seeded-free-route.json",
+      "archivedPath": "evidence/v03/regression/v02/seeded-free-route.json",
+      "bytes": 96604,
+      "sha256": "b21ff3377f602770d0c0a58e82abd33f96e3f060c6edbb88c83299643da51a7e"
+    },
+    {
+      "generatedPath": "evidence/v02/subpath-chapter.png",
+      "archivedPath": "evidence/v03/regression/v02/subpath-chapter.png",
+      "bytes": 180192,
+      "sha256": "c5d6a9fbffa1081be1326f237cead33d02a738c99d23893302addbea1178526b"
+    },
+    {
+      "generatedPath": "evidence/v02/video.json",
+      "archivedPath": "evidence/v03/regression/v02/video.json",
+      "bytes": 215,
+      "sha256": "87f0ba4ef0d22ac08a41a5808721c8a3b5724cd413525b5d4c3714b0a075da5d"
+    },
+    {
+      "generatedPath": "evidence/visual-cross-plane.json",
+      "archivedPath": "evidence/v03/regression/visual-cross-plane.json",
+      "bytes": 7020,
+      "sha256": "814afc73272cf9d00312050fd2ef891f12ac547550a0f739b3d4e96dbbd6a486"
+    },
+    {
+      "generatedPath": "evidence/visual-distance-0.1m.json",
+      "archivedPath": "evidence/v03/regression/visual-distance-0.1m.json",
+      "bytes": 3588,
+      "sha256": "3b9f305ad2951813ad05a163dc2c5d9affb40e309eb2176434f2830290158d43"
+    },
+    {
+      "generatedPath": "evidence/visual-distance-1m.json",
+      "archivedPath": "evidence/v03/regression/visual-distance-1m.json",
+      "bytes": 3566,
+      "sha256": "4983caf28fb6808054a731f81064b6c86db400749c89a63e897c7aff144e37db"
+    },
+    {
+      "generatedPath": "evidence/visual-frame-edge.json",
+      "archivedPath": "evidence/v03/regression/visual-frame-edge.json",
+      "bytes": 3599,
+      "sha256": "c64442c62189a3bb6eff5a4cd14e72cf6f6d56dd20284841f478b1f3277280aa"
+    },
+    {
+      "generatedPath": "evidence/visual-front.json",
+      "archivedPath": "evidence/v03/regression/visual-front.json",
+      "bytes": 4040,
+      "sha256": "80e1eabdc445a6b3469ca06c82f7886fba9b2bbcde84ccc66c504e0c3cca3577"
+    },
+    {
+      "generatedPath": "evidence/visual-oblique-30.json",
+      "archivedPath": "evidence/v03/regression/visual-oblique-30.json",
+      "bytes": 3197,
+      "sha256": "7b18b0687d3f083474d2170f719f90d4d6ae442c1c15a5d395822f75aea8512c"
+    },
+    {
+      "generatedPath": "evidence/visual-oblique-60.json",
+      "archivedPath": "evidence/v03/regression/visual-oblique-60.json",
+      "bytes": 2686,
+      "sha256": "193a0e6e91db5601c1c8b55b2af875520e91668f497a0a331e5aec8804e3d5e0"
+    },
+    {
+      "generatedPath": "evidence/visual-pre-plane-0.005m.json",
+      "archivedPath": "evidence/v03/regression/visual-pre-plane-0.005m.json",
+      "bytes": 3630,
+      "sha256": "0064d89b879a640f4686891496e62b031f52f9e4e977f11a46cfa85ae635640f"
+    },
+    {
+      "generatedPath": "evidence/vitest.json",
+      "archivedPath": "evidence/v03/regression/vitest.json",
+      "bytes": 45789,
+      "sha256": "f4707bbe0cb910843ddfc018e7177653b693891bfda165001a333b408d19ec68"
+    }
+  ]
+}

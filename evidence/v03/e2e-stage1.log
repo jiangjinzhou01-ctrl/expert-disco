@@ -1,0 +1,184 @@
+
+> threshold-v02@0.2.0 test:e2e
+> playwright test
+
+
+Running 37 tests using 1 worker
+
+(node:6968) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 src/tests/e2e/chapter-audio.spec.ts:6:1 › orbital sound stays gesture-locked, emits bounded spatial cues, and releases its audio context (3.5s)
+  ✓   2 src/tests/e2e/diagnostics.spec.ts:12:1 › F3 diagnostics exports a real JSON download and UI quality resizes the live target (10.6s)
+  ✓   3 src/tests/e2e/diagnostics.spec.ts:51:1 › Esc cancels held keyboard and mouse drag, development geometry remains observational (10.7s)
+  ✓   4 src/tests/e2e/input.spec.ts:58:1 › mobile uses distinct captured pointer IDs for simultaneous movement and look, with cancellation (4.7s)
+  ✓   5 src/tests/e2e/input.spec.ts:99:3 › mobile blur clears held movement and allows a fresh contact (3.7s)
+  ✓   6 src/tests/e2e/input.spec.ts:99:3 › mobile orientationchange clears held movement and allows a fresh contact (3.8s)
+  ✓   7 src/tests/e2e/input.spec.ts:99:3 › mobile visibilitychange clears held movement and allows a fresh contact (3.6s)
+  ✓   8 src/tests/e2e/input.spec.ts:122:1 › mobile touch controls traverse A → B, turn around, return, and reset the real capsule (8.4s)
+  ✓   9 src/tests/e2e/lifecycle.spec.ts:4:1 › WebGL2 context loss/restoration resumes real portal passes (4.1s)
+  ✓  10 src/tests/e2e/lifecycle.spec.ts:26:1 › resize and render quality retain aspect and bounded GPU resources; disposal releases resources (8.5s)
+  ✘  11 src/tests/e2e/orbital.spec.ts:17:1 › orbital product: highest default, closable diagnostics, saved choices, help and real canvas photo (1.0m)
+(node:7343) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  12 src/tests/e2e/orbital.spec.ts:72:3 › orbital touch response › equal-distance fast gesture turns further; release and cancellation stop input (1.0m)
+(node:7471) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  13 src/tests/e2e/orbital.spec.ts:106:1 › orbital streaming: deferred GLBs retain proxies, visible portal requests destination, hidden content evicts (1.0m)
+(node:7557) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  14 src/tests/e2e/orbital.spec.ts:141:1 › orbital streaming: failed optional detail preserves structural physics and records error (59.0s)
+
+
+  1) src/tests/e2e/orbital.spec.ts:17:1 › orbital product: highest default, closable diagnostics, saved choices, help and real canvas photo 
+
+    TimeoutError: page.waitForFunction: Timeout 60000ms exceeded.
+
+       at v02-helpers.ts:4
+
+      2 | import type{ChapterRuntime}from'../../chapter/runtime/ChapterRuntime';
+      3 | export type ChapterSnapshot=Extract<ReturnType<ChapterRuntime['snapshot']>,{ready:true}>;
+    > 4 | export async function chapterReady(page:Page){await page.goto('/?mode=chapter&test=1');await page.waitForFunction(()=>window.__V02_TEST__?.snapshot().ready,{},{timeout:60000});await page.evaluate(()=>window.__V02_TEST__!.pause(true));}
+        |                                                                                                   ^
+      5 | export async function chapterRead(page:Page):Promise<ChapterSnapshot>{const s=await page.evaluate(()=>window.__V02_TEST__!.snapshot());if(!s.ready)throw Error(s.error??'Not ready');return s;}
+      6 | export const routeStages=['entryhall','around','nave','align','portalout','arcroom','landing','terminal','backlanding','ground','portalin'] as const;
+      7 | export type RouteStage=typeof routeStages[number];
+        at chapterReady (/workspace/threshold-v02/src/tests/e2e/v02-helpers.ts:4:99)
+        at /workspace/threshold-v02/src/tests/e2e/orbital.spec.ts:19:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/orbital-orbital-product-hi-23e2c--help-and-real-canvas-photo/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/orbital-orbital-product-hi-23e2c--help-and-real-canvas-photo/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/orbital-orbital-product-hi-23e2c--help-and-real-canvas-photo/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/orbital-orbital-product-hi-23e2c--help-and-real-canvas-photo/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) src/tests/e2e/orbital.spec.ts:72:3 › orbital touch response › equal-distance fast gesture turns further; release and cancellation stop input 
+
+    TimeoutError: page.waitForFunction: Timeout 60000ms exceeded.
+
+       at v02-helpers.ts:4
+
+      2 | import type{ChapterRuntime}from'../../chapter/runtime/ChapterRuntime';
+      3 | export type ChapterSnapshot=Extract<ReturnType<ChapterRuntime['snapshot']>,{ready:true}>;
+    > 4 | export async function chapterReady(page:Page){await page.goto('/?mode=chapter&test=1');await page.waitForFunction(()=>window.__V02_TEST__?.snapshot().ready,{},{timeout:60000});await page.evaluate(()=>window.__V02_TEST__!.pause(true));}
+        |                                                                                                   ^
+      5 | export async function chapterRead(page:Page):Promise<ChapterSnapshot>{const s=await page.evaluate(()=>window.__V02_TEST__!.snapshot());if(!s.ready)throw Error(s.error??'Not ready');return s;}
+      6 | export const routeStages=['entryhall','around','nave','align','portalout','arcroom','landing','terminal','backlanding','ground','portalin'] as const;
+      7 | export type RouteStage=typeof routeStages[number];
+        at chapterReady (/workspace/threshold-v02/src/tests/e2e/v02-helpers.ts:4:99)
+        at /workspace/threshold-v02/src/tests/e2e/orbital.spec.ts:73:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/orbital-orbital-touch-resp-0e811-and-cancellation-stop-input/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/orbital-orbital-touch-resp-0e811-and-cancellation-stop-input/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/orbital-orbital-touch-resp-0e811-and-cancellation-stop-input/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/orbital-orbital-touch-resp-0e811-and-cancellation-stop-input/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) src/tests/e2e/orbital.spec.ts:106:1 › orbital streaming: deferred GLBs retain proxies, visible portal requests destination, hidden content evicts 
+
+    TimeoutError: page.waitForFunction: Timeout 60000ms exceeded.
+
+       at v02-helpers.ts:4
+
+      2 | import type{ChapterRuntime}from'../../chapter/runtime/ChapterRuntime';
+      3 | export type ChapterSnapshot=Extract<ReturnType<ChapterRuntime['snapshot']>,{ready:true}>;
+    > 4 | export async function chapterReady(page:Page){await page.goto('/?mode=chapter&test=1');await page.waitForFunction(()=>window.__V02_TEST__?.snapshot().ready,{},{timeout:60000});await page.evaluate(()=>window.__V02_TEST__!.pause(true));}
+        |                                                                                                   ^
+      5 | export async function chapterRead(page:Page):Promise<ChapterSnapshot>{const s=await page.evaluate(()=>window.__V02_TEST__!.snapshot());if(!s.ready)throw Error(s.error??'Not ready');return s;}
+      6 | export const routeStages=['entryhall','around','nave','align','portalout','arcroom','landing','terminal','backlanding','ground','portalin'] as const;
+      7 | export type RouteStage=typeof routeStages[number];
+        at chapterReady (/workspace/threshold-v02/src/tests/e2e/v02-helpers.ts:4:99)
+        at /workspace/threshold-v02/src/tests/e2e/orbital.spec.ts:114:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/orbital-orbital-streaming--3061a-ation-hidden-content-evicts/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/orbital-orbital-streaming--3061a-ation-hidden-content-evicts/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/orbital-orbital-streaming--3061a-ation-hidden-content-evicts/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/orbital-orbital-streaming--3061a-ation-hidden-content-evicts/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) src/tests/e2e/orbital.spec.ts:141:1 › orbital streaming: failed optional detail preserves structural physics and records error 
+
+    Test was interrupted.
+
+    Error: browserContext.close: Test ended.
+    Browser logs:
+
+    <launching> /home/agent/.cache/ms-playwright/chromium_headless_shell-1254/chrome-headless-shell-linux64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,HttpsUpgrades,HttpsFirstBalancedModeAutoEnable,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,AvoidCorsURLLoaderRestartOnRedirect,TcpPortRandomizationWin,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,PreconnectToSearch,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface,SkipListAccountsWithoutGaiaCookies --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --enable-unsafe-swiftshader --edge-skip-compat-layer-relaunch --disable-stack-profiler --disable-infobars --disable-sync --do-not-de-elevate --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --no-sandbox --use-gl=angle --use-angle=swiftshader --enable-unsafe-swiftshader --user-data-dir=/tmp/playwright_chromiumdev_profile-hgLXjp --remote-debugging-pipe --no-startup-window
+    <launched> pid=7569
+    [pid=7569][err] [1108/054231.348698:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+    [pid=7569][err] [1108/054231.348947:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [pid=7569][err] [1108/054231.349723:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+    [pid=7569][err] [1108/054231.349751:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+    [pid=7569][err] [1108/054231.353141:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [pid=7569][err] [1108/054231.353741:WARNING:dbus/object_proxy.cc:439] Failed to connect to NameOwnerChanged signal for object: /org/freedesktop/portal/desktop
+    [pid=7569][err] [1108/054231.353756:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [pid=7569][err] [1108/054231.353763:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [pid=7569][err] [1108/054231.362169:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+    [pid=7569][err] [1108/054231.362249:WARNING:device/bluetooth/dbus/bluez_dbus_manager.cc:209] Floss manager service not available, cannot set Floss enable/disable.
+    [pid=7569][err] [1108/054231.362526:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [pid=7569][err] [1108/054231.364518:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+    [pid=7569][err] [1108/054231.365921:WARNING:media/gpu/vaapi/vaapi_wrapper.cc:1652] drmGetDevices2() has not found any devices
+    [pid=7569][err] [1108/054231.367791:WARNING:sandbox/policy/linux/sandbox_linux.cc:405] InitializeSandbox() called with multiple threads in process gpu-process.
+    [pid=7569][err] [1108/054231.490130:INFO:CONSOLE:934] "[vite] connecting...", source: http://127.0.0.1:5180/@vite/client (934)
+    [pid=7569][err] [1108/054231.498325:INFO:CONSOLE:1043] "[vite] connected.", source: http://127.0.0.1:5180/@vite/client (1043)
+    [pid=7569][err] [1108/054231.607829:INFO:CONSOLE:15614] "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold", source: http://127.0.0.1:5180/.vite-cache/deps/react-dom_client.js?v=0c6624a8 (15614)
+    [pid=7569][err] [1108/054232.336203:INFO:CONSOLE:364] "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.", source: http://127.0.0.1:5180/@vite/client (364)
+    [pid=7569][err] [1108/054232.452853:INFO:CONSOLE:373] "Uncaught TypeError: Cannot read properties of undefined (reading 'clearBufferedActions')", source: http://127.0.0.1:5180/src/chapter/ui/ChapterView.tsx?t=1794116281904 (373)
+    [pid=7569][err] [1108/054232.460164:INFO:CONSOLE:364] "%s
+    [pid=7569][err] 
+    [pid=7569][err] %s
+    [pid=7569][err]  An error occurred in the <ChapterView> component. Consider adding an error boundary to your tree to customize error handling behavior.
+    [pid=7569][err] Visit https://react.dev/link/error-boundaries to learn more about error boundaries.", source: http://127.0.0.1:5180/@vite/client (364)
+    [pid=7569][err] [1108/054239.047662:INFO:CONSOLE:1012] "[vite] hot updated: /src/chapter/ui/ChapterView.tsx", source: http://127.0.0.1:5180/@vite/client (1012)
+    [pid=7569][err] [1108/054239.128139:INFO:CONSOLE:364] "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.", source: http://127.0.0.1:5180/@vite/client (364)
+    [pid=7569][err] [1108/054239.169983:INFO:CONSOLE:373] "Uncaught TypeError: Cannot read properties of undefined (reading 'clearBufferedActions')", source: http://127.0.0.1:5180/src/chapter/ui/ChapterView.tsx?t=1794116559016 (373)
+    [pid=7569][err] [1108/054239.176039:INFO:CONSOLE:364] "%s
+    [pid=7569][err] 
+    [pid=7569][err] %s
+    [pid=7569][err]  An error occurred in the <ChapterView> component. Consider adding an error boundary to your tree to customize error handling behavior.
+    [pid=7569][err] Visit https://react.dev/link/error-boundaries to learn more about error boundaries.", source: http://127.0.0.1:5180/@vite/client (364)
+    [pid=7569][err] [1108/054322.561247:INFO:CONSOLE:1012] "[vite] hot updated: /src/chapter/ui/ChapterView.tsx", source: http://127.0.0.1:5180/@vite/client (1012)
+    [pid=7569][err] [1108/054322.643477:INFO:CONSOLE:364] "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.", source: http://127.0.0.1:5180/@vite/client (364)
+    [pid=7569][err] [1108/054323.637842:INFO:CONSOLE:364] "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.", source: http://127.0.0.1:5180/@vite/client (364)
+    [pid=7569][err] [1108/054326.325777:INFO:CONSOLE:364] "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.", source: http://127.0.0.1:5180/@vite/client (364)
+    [pid=7569] <gracefully close start>
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/orbital-orbital-streaming--80c11-l-physics-and-records-error/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/orbital-orbital-streaming--80c11-l-physics-and-records-error/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    src/tests/e2e/orbital.spec.ts:17:1 › orbital product: highest default, closable diagnostics, saved choices, help and real canvas photo 
+    src/tests/e2e/orbital.spec.ts:72:3 › orbital touch response › equal-distance fast gesture turns further; release and cancellation stop input 
+    src/tests/e2e/orbital.spec.ts:106:1 › orbital streaming: deferred GLBs retain proxies, visible portal requests destination, hidden content evicts 
+  1 interrupted
+    src/tests/e2e/orbital.spec.ts:141:1 › orbital streaming: failed optional detail preserves structural physics and records error 
+  23 did not run
+  10 passed (5.2m)

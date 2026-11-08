@@ -1,0 +1,50 @@
+
+> threshold-v02@0.2.0 test:e2e
+> playwright test
+
+
+Running 37 tests using 1 worker
+
+(node:9529) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 src/tests/e2e/chapter-audio.spec.ts:6:1 › orbital sound stays gesture-locked, emits bounded spatial cues, and releases its audio context (3.4s)
+  ✓   2 src/tests/e2e/diagnostics.spec.ts:12:1 › F3 diagnostics exports a real JSON download and UI quality resizes the live target (11.0s)
+  ✓   3 src/tests/e2e/diagnostics.spec.ts:51:1 › Esc cancels held keyboard and mouse drag, development geometry remains observational (11.2s)
+  ✓   4 src/tests/e2e/input.spec.ts:58:1 › mobile uses distinct captured pointer IDs for simultaneous movement and look, with cancellation (9.0s)
+  ✓   5 src/tests/e2e/input.spec.ts:99:3 › mobile blur clears held movement and allows a fresh contact (6.8s)
+  ✓   6 src/tests/e2e/input.spec.ts:99:3 › mobile orientationchange clears held movement and allows a fresh contact (5.6s)
+  ✓   7 src/tests/e2e/input.spec.ts:99:3 › mobile visibilitychange clears held movement and allows a fresh contact (6.8s)
+  ✓   8 src/tests/e2e/input.spec.ts:122:1 › mobile touch controls traverse A → B, turn around, return, and reset the real capsule (8.7s)
+  ✓   9 src/tests/e2e/lifecycle.spec.ts:4:1 › WebGL2 context loss/restoration resumes real portal passes (4.1s)
+  ✓  10 src/tests/e2e/lifecycle.spec.ts:26:1 › resize and render quality retain aspect and bounded GPU resources; disposal releases resources (7.9s)
+  ✓  11 src/tests/e2e/orbital.spec.ts:17:1 › orbital product: highest default, closable diagnostics, saved choices, help and real canvas photo (31.8s)
+  ✓  12 src/tests/e2e/orbital.spec.ts:72:3 › orbital touch response › equal-distance fast gesture turns further; release and cancellation stop input (10.8s)
+  ✓  13 src/tests/e2e/orbital.spec.ts:106:1 › orbital streaming: deferred GLBs retain proxies, visible portal requests destination, hidden content evicts (10.8s)
+  ✓  14 src/tests/e2e/orbital.spec.ts:141:1 › orbital streaming: failed optional detail preserves structural physics and records error (10.2s)
+  ✓  15 src/tests/e2e/orbital.spec.ts:156:1 › orbital interactions: observatory records a visit and a released sample obeys Rapier sideways gravity (14.7s)
+  ✓  16 src/tests/e2e/runtime.spec.ts:10:1 › real Rapier state crosses both ways and preserves committed event order (8.1s)
+  ✓  17 src/tests/e2e/runtime.spec.ts:35:1 › door frame blocks the capsule, blocked exit rejects then recovers (5.2s)
+  ✓  18 src/tests/e2e/runtime.spec.ts:53:1 › fast segments retain remaining displacement and long frames cap catch-up (4.7s)
+  ✓  19 src/tests/e2e/runtime.spec.ts:72:1 › desktop keyboard moves the real capsule and R resets it (6.3s)
+  ✓  20 src/tests/e2e/v02-mobile.spec.ts:5:165 › V02 mobile 1170:540 › actual dual Pointer Events control the full chapter and remain live during gravity rotation (46.2s)
+  ✓  21 src/tests/e2e/v02-mobile.spec.ts:5:165 › V02 mobile 1200:540 › actual dual Pointer Events control the full chapter and remain live during gravity rotation (52.7s)
+  ✓  22 src/tests/e2e/v02.spec.ts:5:1 › V02: complete input-driven chapter, trigger, return, and deterministic uncut frame sequence (1.4m)
+  ✓  23 src/tests/e2e/v02.spec.ts:17:1 › V02: CR1 cameras show real geometry and both fixed-axis witnesses after the turn (1.2m)
+  ✓  24 src/tests/e2e/v02.spec.ts:25:1 › V02: offscreen portal culling, resizing, context restoration, and checkpoint reset (1.9m)
+  ✓  25 src/tests/e2e/v02.spec.ts:40:1 › V02: seeded free look and free movement expose real enclosing geometry beyond hero cameras (48.9s)
+  ✓  26 src/tests/e2e/v03.spec.ts:8:1 › V03 keyboard actions drive actual jump and stance; preferences survive reload (36.5s)
+  ✓  27 src/tests/e2e/v03.spec.ts:38:3 › V03 native three-pointer touch 1170:540 › moves, looks and jumps simultaneously; cancellation and menu clear every held action (34.5s)
+  ✓  28 src/tests/e2e/v03.spec.ts:38:3 › V03 native three-pointer touch 1200:540 › moves, looks and jumps simultaneously; cancellation and menu clear every held action (28.6s)
+  ✓  29 src/tests/e2e/visual.spec.ts:60:25 › portal projection front: real pixels match independent camera (10.7s)
+  ✓  30 src/tests/e2e/visual.spec.ts:60:25 › portal projection oblique-30: real pixels match independent camera (11.3s)
+  ✓  31 src/tests/e2e/visual.spec.ts:60:25 › portal projection oblique-60: real pixels match independent camera (13.4s)
+  ✓  32 src/tests/e2e/visual.spec.ts:60:25 › portal projection distance-1m: real pixels match independent camera (14.5s)
+  ✓  33 src/tests/e2e/visual.spec.ts:60:25 › portal projection distance-0.1m: real pixels match independent camera (9.6s)
+  ✓  34 src/tests/e2e/visual.spec.ts:60:25 › portal projection pre-plane-0.005m: real pixels match independent camera (8.8s)
+  ✓  35 src/tests/e2e/visual.spec.ts:60:25 › portal projection frame-edge: real pixels match independent camera (10.7s)
+  ✓  36 src/tests/e2e/visual.spec.ts:91:1 › lateral parallax, live target animation and viewport resizing remain real (24.1s)
+  ✓  37 src/tests/e2e/visual.spec.ts:131:1 › a real fixed-step crossing keeps projected pixels continuous across the portal plane (10.9s)
+
+  Slow test file: src/tests/e2e/v02.spec.ts (5.3m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  37 passed (13.5m)

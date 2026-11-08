@@ -97,5 +97,7 @@ test('V03 normal production: keyboard jump, real crouch and zero-g thrust/brake 
  const descent=await page.evaluate(()=>window.__THRESHOLD_V02__!());if(!descent.ready)throw Error('Not ready');
  expect(descent.stance).toBe('STAND');expect(Math.hypot(...descent.gravity)).toBe(0);expect(errors).toEqual([]);
  await page.screenshot({path:'evidence/v03/production-motion.png'});
- await writeFile('evidence/v03/production-motion.json',JSON.stringify({jump,crouch,thrust,braked,descent,errors,method:'Normal Vite production preview; actual keyboard/UI input; read-only diagnostics; no test adapter.'},null,2));
+ await page.keyboard.press('r');await page.waitForFunction(()=>{const s=window.__THRESHOLD_V02__!();return s.ready&&s.foot[2]>32&&s.foot[2]<34&&Math.abs(s.foot[1])<.02;},null,{timeout:30000});
+ const reset=await page.evaluate(()=>window.__THRESHOLD_V02__!());if(!reset.ready)throw Error('Recovery failed');expect(reset.body.every(Number.isFinite)).toBe(true);
+ await writeFile('evidence/v03/production-motion.json',JSON.stringify({jump,crouch,thrust,braked,descent,reset,errors,method:'Normal Vite production preview; actual keyboard/UI input; read-only diagnostics; no test adapter.'},null,2));
 });

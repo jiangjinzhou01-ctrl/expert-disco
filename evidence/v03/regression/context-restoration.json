@@ -1,0 +1,108 @@
+{
+  "input": {
+    "movement": {
+      "x": 0,
+      "y": 0
+    },
+    "touchState": {
+      "moveActive": false,
+      "lookActive": false,
+      "moveX": 0,
+      "moveY": 0
+    },
+    "touch": false
+  },
+  "ready": true,
+  "error": null,
+  "worldId": "A",
+  "position": [
+    -0.0000015426021491293795,
+    0.8796928524971008,
+    -3.0000016689300537
+  ],
+  "rotation": [
+    0,
+    0,
+    0,
+    1
+  ],
+  "yaw": 0,
+  "pitch": 0,
+  "velocity": [
+    0,
+    0,
+    0
+  ],
+  "step": 32,
+  "grounded": true,
+  "events": [],
+  "lastEventId": 0,
+  "transferState": "ARMED",
+  "lastRejection": null,
+  "portal": {
+    "source": "A-door",
+    "destination": "B-door",
+    "poses": [
+      {
+        "id": "A-door",
+        "position": [
+          0,
+          1.45,
+          -8
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "B-door",
+        "position": [
+          32,
+          1.45,
+          0
+        ],
+        "rotation": [
+          0,
+          0.7071067811865475,
+          0,
+          0.7071067811865476
+        ]
+      }
+    ],
+    "signedDistance": 4.999998331069946,
+    "crossingCondition": false
+  },
+  "render": {
+    "targetWidth": 1632,
+    "targetHeight": 918,
+    "quality": 0.85,
+    "mainDrawCalls": 13,
+    "offscreenDrawCalls": 31,
+    "geometries": 5,
+    "textures": 1,
+    "programs": 5,
+    "context": "active",
+    "passes": 1,
+    "targetResizes": 1
+  },
+  "performance": {
+    "samples": 14,
+    "fps": 9.044511919361575,
+    "averageMs": 110.56428571444538,
+    "p50Ms": 31.199999999254942,
+    "p95Ms": 599.8000000007451,
+    "p99Ms": 599.8000000007451,
+    "physicsMs": 0,
+    "gpuMs": null
+  },
+  "movingReference": [
+    35.8,
+    0.8923558351082966,
+    -1.2320470668216337
+  ],
+  "elapsed": 0.5333333333333333,
+  "droppedSeconds": 0.8817666666681567
+}

@@ -1,0 +1,153 @@
+{
+  "source_revision": "0a307c666006f11cd66879153f97a9aa1283650b",
+  "existing_bounds": {
+    "VESTIBULE": {
+      "min": [
+        -17.0,
+        -4.48,
+        -22.0
+      ],
+      "max": [
+        17.0,
+        24.3,
+        36.8
+      ],
+      "boxes": 135
+    },
+    "INVERT": {
+      "min": [
+        -16.0,
+        -7.6,
+        -20.0
+      ],
+      "max": [
+        16.0,
+        22.3,
+        19.1
+      ],
+      "boxes": 150
+    }
+  },
+  "B_branch_deck_ring_samples": 2756,
+  "B_existing_box_hits": 0,
+  "penetrations": [],
+  "near_clearances": [
+    {
+      "path": "B-branch-and-deck",
+      "box": "I-wall-handrail-3.05",
+      "minimum_clearance_m": 0.55
+    },
+    {
+      "path": "B-branch-and-deck",
+      "box": "I-wall-parapet-3.05",
+      "minimum_clearance_m": 0.56
+    },
+    {
+      "path": "B-branch-and-deck",
+      "box": "I-wall-rail-post-3.05--12",
+      "minimum_clearance_m": 0.7065
+    },
+    {
+      "path": "B-branch-and-deck",
+      "box": "ORIGINAL_AXIS_CANTILEVER",
+      "minimum_clearance_m": 0.8
+    },
+    {
+      "path": "B-branch-and-deck",
+      "box": "I-wall-rail-post-3.05--14",
+      "minimum_clearance_m": 1.4184
+    },
+    {
+      "path": "B-branch-and-deck",
+      "box": "I-axis-stair-9",
+      "minimum_clearance_m": 1.9781
+    }
+  ],
+  "node_count": 12,
+  "camera_views": {
+    "A_RING_VIEW": {
+      "eye": [
+        24,
+        1.55,
+        6
+      ],
+      "target": [
+        34,
+        4.5,
+        0
+      ],
+      "ndc": {
+        "ring_center": [
+          0.0,
+          -0.0,
+          0.983771
+        ],
+        "ring_right": [
+          0.177096,
+          -0.128682,
+          0.987715
+        ],
+        "ring_top": [
+          0.0,
+          0.712384,
+          0.985168
+        ],
+        "ring_left": [
+          -0.336958,
+          0.244842,
+          0.976265
+        ]
+      }
+    },
+    "B_AXIS_VIEW": {
+      "eye": [
+        25,
+        10.05,
+        33
+      ],
+      "target": [
+        43,
+        11,
+        20
+      ],
+      "ndc": {
+        "C1_ring_center": [
+          -0.539782,
+          -0.522546,
+          0.99245
+        ],
+        "C2_spiral_center": [
+          -0.123266,
+          -0.383362,
+          0.994797
+        ],
+        "X_beam_start": [
+          -0.411435,
+          0.903665,
+          0.983378
+        ],
+        "X_beam_end": [
+          0.4123,
+          0.264786,
+          0.994303
+        ],
+        "Y_mast_top": [
+          0.14126,
+          0.729904,
+          0.990768
+        ],
+        "Z_beam_start": [
+          -0.288725,
+          0.33998,
+          0.993017
+        ],
+        "Z_beam_end": [
+          0.962314,
+          0.730508,
+          0.986339
+        ]
+      }
+    }
+  },
+  "output": "/workspace/threshold-v02/evidence/v03/spatial-proof"
+}

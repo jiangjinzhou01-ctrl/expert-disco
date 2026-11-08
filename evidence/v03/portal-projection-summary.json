@@ -1,0 +1,101 @@
+{
+  "measurements": [
+    {
+      "file": "evidence/visual-distance-0.1m.json",
+      "id": "green",
+      "errorPixels": 0.14969160301493464
+    },
+    {
+      "file": "evidence/visual-distance-0.1m.json",
+      "id": "magenta",
+      "errorPixels": 0.15934542855764247
+    },
+    {
+      "file": "evidence/visual-distance-0.1m.json",
+      "id": "cyan",
+      "errorPixels": 0.009766862493279405
+    },
+    {
+      "file": "evidence/visual-distance-1m.json",
+      "id": "green",
+      "errorPixels": 0.2419811758148351
+    },
+    {
+      "file": "evidence/visual-distance-1m.json",
+      "id": "magenta",
+      "errorPixels": 0.18932075813035226
+    },
+    {
+      "file": "evidence/visual-distance-1m.json",
+      "id": "cyan",
+      "errorPixels": 0.014439876792152972
+    },
+    {
+      "file": "evidence/visual-frame-edge.json",
+      "id": "green",
+      "errorPixels": 0.14377273367004284
+    },
+    {
+      "file": "evidence/visual-frame-edge.json",
+      "id": "magenta",
+      "errorPixels": 0.25027101981203703
+    },
+    {
+      "file": "evidence/visual-frame-edge.json",
+      "id": "cyan",
+      "errorPixels": 0.28798495894846465
+    },
+    {
+      "file": "evidence/visual-oblique-60.json",
+      "id": "near-red",
+      "errorPixels": 0.09208164405732062
+    },
+    {
+      "file": "evidence/visual-pre-plane-0.005m.json",
+      "id": "green",
+      "errorPixels": 0.21304445170974742
+    },
+    {
+      "file": "evidence/visual-pre-plane-0.005m.json",
+      "id": "magenta",
+      "errorPixels": 0.06824214319098472
+    },
+    {
+      "file": "evidence/visual-pre-plane-0.005m.json",
+      "id": "cyan",
+      "errorPixels": 0.08201705332146503
+    },
+    {
+      "file": "evidence/visual-front.json",
+      "id": "near-red",
+      "errorPixels": 0.031712238777724784
+    },
+    {
+      "file": "evidence/visual-front.json",
+      "id": "green",
+      "errorPixels": 0.19475281175276823
+    },
+    {
+      "file": "evidence/visual-front.json",
+      "id": "magenta",
+      "errorPixels": 0.11917540818281236
+    },
+    {
+      "file": "evidence/visual-front.json",
+      "id": "cyan",
+      "errorPixels": 0.10389096140670517
+    },
+    {
+      "file": "evidence/visual-oblique-30.json",
+      "id": "near-red",
+      "errorPixels": 0.014410476282378508
+    },
+    {
+      "file": "evidence/visual-oblique-30.json",
+      "id": "magenta",
+      "errorPixels": 0.02958600806346752
+    }
+  ],
+  "count": 19,
+  "maxErrorPixels": 0.28798495894846465
+}

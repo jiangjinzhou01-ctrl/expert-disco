@@ -1,0 +1,25 @@
+
+> threshold-v02@0.2.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.6 building client environment for production...
+transforming...
+✓ 84 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                 1.16 kB │ gzip:     0.66 kB
+dist/assets/basis_transcoder-o4Hde_L7.js       57.52 kB
+dist/assets/basis_transcoder-VXdx5NbI.wasm    527.33 kB │ gzip:   248.94 kB
+dist/assets/LabApp-DD7S2-Wh.css                 3.92 kB │ gzip:     1.45 kB
+dist/assets/ChapterView-D14mCF9P.css           20.32 kB │ gzip:     5.02 kB
+dist/assets/LabApp-Mj0IzG9j.js                 13.22 kB │ gzip:     4.85 kB
+dist/assets/index-CDCScx0v.js                 222.57 kB │ gzip:    69.91 kB
+dist/assets/ChapterView-CslHaWPj.js           404.42 kB │ gzip:   107.83 kB
+dist/assets/InputManager-yejAvL6f.js        5,288.22 kB │ gzip: 1,923.37 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 1800 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 616ms

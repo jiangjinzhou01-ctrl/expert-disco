@@ -1,0 +1,28 @@
+vite v8.3.6 building client environment for production...
+transforming...
+✓ 84 modules transformed.
+rendering chunks...
+computing gzip size...
+../../tmp/threshold-v02-subpath/index.html                                 1.17 kB │ gzip:     0.67 kB
+../../tmp/threshold-v02-subpath/assets/basis_transcoder-o4Hde_L7.js       57.52 kB
+../../tmp/threshold-v02-subpath/assets/basis_transcoder-VXdx5NbI.wasm    527.33 kB │ gzip:   248.94 kB
+../../tmp/threshold-v02-subpath/assets/LabApp-DD7S2-Wh.css                 3.92 kB │ gzip:     1.45 kB
+../../tmp/threshold-v02-subpath/assets/ChapterView-D14mCF9P.css           20.32 kB │ gzip:     5.02 kB
+../../tmp/threshold-v02-subpath/assets/LabApp-C_eJFBwC.js                 13.22 kB │ gzip:     4.85 kB
+../../tmp/threshold-v02-subpath/assets/index-CVYynhm8.js                 222.56 kB │ gzip:    69.92 kB
+../../tmp/threshold-v02-subpath/assets/ChapterView-C52_qbiJ.js           404.46 kB │ gzip:   107.84 kB
+../../tmp/threshold-v02-subpath/assets/InputManager-lrncberY.js        5,288.22 kB │ gzip: 1,923.37 kB
+
+✓ built in 657ms
+
+
+(!) outDir /tmp/threshold-v02-subpath is not inside project root and will not be emptied.
+Use --emptyOutDir to override.
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 1800 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+PASS Chromium 158.0.8127.18; WebGL2 active; ready=true; main/portal draws=13/31; 68 successful requests; mutation adapter absent.
