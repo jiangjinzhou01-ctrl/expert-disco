@@ -81,7 +81,9 @@ The application has no ray-traced GI/reflections, authored high-resolution light
 
 Physical Android/iPhone, representative desktop GPU and continuous mobile tests have not been run. Highest-quality compatibility/performance therefore remains unverified. New source assets do not replace the unfinished twelve gravity nodes, four loops or shared-walker chapter migration described in V03_ACCEPTANCE.md.
 
-No production deployment is performed in this round. The prior GitHub Pages V0.2 site remains unchanged. The feature branch/source ZIP identifies the new implementation; the older V0.2/V0.3 reports and manifests are historical snapshots for their named revisions.
+The feature branch build is published at [GitHub Pages](https://jiangjinzhou01-ctrl.github.io/expert-disco/). GitHub Pages run 42465477553 succeeded, followed by a live Chromium smoke test: HTTP 200, the chapter runtime reached `ready`, WebGL2 was active, the player was in `VESTIBULE`, and the browser reported no errors. `/DEPLOYMENT.json` on the live site records the exact source revision and branch used for that build.
+
+GitHub blocked direct publication from the feature branch under its `github-pages` environment rule. The checked-in `npm run deploy:pages` command therefore published only the compiled `dist/` tree to the repository's configured Pages branch, preserving the source branch and existing protections. The V0.2/V0.3 reports and manifests remain historical snapshots for their named revisions.
 
 
 ## Final recorded evidence

@@ -20,6 +20,7 @@ Status: **IMPLEMENTED / AUTOMATED VERIFICATION PASSED for this visual pass**. In
 | Sustained 10-minute mobile performance | NOT RUN | cannot substitute SwiftShader |
 | International AAA production-quality claim | NOT VERIFIED | outside the evidence established by this rendering pass |
 | G01–G12 and four new gravity circuits | NOT COMPLETE | unchanged scope from V03_ACCEPTANCE.md |
-| Production publication | NOT RUN (intentional) | no deployment authorization in this round |
+| Production publication | PASS | GitHub Pages run 42465477553 published the compiled Atelier build |
+| Live production browser smoke test | PASS | HTTP 200, runtime ready, WebGL2 active, VESTIBULE state, zero browser errors |
 
 `npm run verify` completed with exit code 0 on runtime revision 9abdcbd. Evidence is in `evidence/atelier/verify-final.log`. The previously interrupted resource-failure run remains separately archived.

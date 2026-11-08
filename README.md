@@ -1,4 +1,4 @@
-> **Atelier 视觉工作分支：feat/v03-art-direction。** 本轮已实际改造 UI、建筑材质和灯光，并加入原创展廊长椅、导向柱、曲面嵌条。品牌参考、真实截图与测试状态见 [视觉方向](docs/ATELIER_ART_DIRECTION.md)、[改造前后对照](docs/ATELIER_VISUAL_REVIEW.md) 和 [技术报告](docs/ATELIER_TECHNICAL_REPORT.md)。本轮 `npm run verify` 实际通过：115 项单元/物理、40 项开发浏览器、4 项生产浏览器测试及生产构建、子路径验证。本分支不自动发布线上站点，尚未宣称达到国际 3A 成品水平。
+> **Atelier 视觉工作分支：feat/v03-art-direction。** 本轮已实际改造 UI、建筑材质和灯光，并加入原创展廊长椅、导向柱、曲面嵌条。品牌参考、真实截图与测试状态见 [视觉方向](docs/ATELIER_ART_DIRECTION.md)、[改造前后对照](docs/ATELIER_VISUAL_REVIEW.md) 和 [技术报告](docs/ATELIER_TECHNICAL_REPORT.md)。`npm run verify` 实际通过：115 项单元/物理、40 项开发浏览器、4 项生产浏览器测试及生产构建、子路径验证。当前版本已部署至 [GitHub Pages](https://jiangjinzhou01-ctrl.github.io/expert-disco/)；来源提交见线上 `DEPLOYMENT.json`。本分支不自动部署，项目尚未宣称达到国际 3A 成品水平。
 >
 > 保留 V0.3 第一阶段移动系统：Shift 冲刺，Space 跳跃，Ctrl 蹲下，Z 趴下；失重时 Space / Ctrl 上升和下降，X 制动。设置可调 1.5–7m/s 基础速度；自由实验可调整标准跳高与重力。十二节点、四闭环和完整重力控制器迁移仍未完成，详见 [V03_ACCEPTANCE.md](docs/V03_ACCEPTANCE.md)。
 >
