@@ -30,5 +30,14 @@
   "artCaptures": 4,
   "maxPortalMarkerErrorPixels": 0.28798495894846465,
   "physicalDevices": "BLOCKED / not attached",
-  "ci": "Independent aggregate workflow triggered; inspect GitHub for completion, not asserted green"
+  "ci": "Independent aggregate workflow triggered; inspect GitHub for completion, not asserted green",
+  "publication": {
+    "status": "PASS",
+    "sourceCommit": "783ed9703ba7cf20d0e7a2c8dbfb4446085247e4",
+    "staticMain": "72828cc",
+    "pagesRun": 42435012135,
+    "liveBrowser": "PASS",
+    "responses": 64,
+    "mutationAdapter": "absent"
+  }
 }

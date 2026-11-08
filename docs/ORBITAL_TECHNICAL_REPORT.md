@@ -86,3 +86,7 @@ Runtime/assets were frozen at source commit `61a1bf3`; subsequent changes correc
 The production keyboard recording contains 381.16 continuous seconds (31,123,692 bytes). It includes real input and rendering; simulation advances at a bounded fixed step on this slow software renderer, so video duration is not a real-device completion-time benchmark. Checkpoint recovery also passed in the normal production bundle with no mutation adapter.
 
 Build still warns about the large Rapier-compatible embedded-WASM/shared engine chunk (about 5.29 MB raw / 1.92 MB gzip). The warning is retained; dependencies were not downgraded or replaced to silence it. Assets use actual Meshopt and KTX2 compression; no claim is made that JPEG file size measures GPU memory.
+
+## Published artifact
+
+The real site was published from source `783ed97` to static main `72828cc` and checked in a fresh HTTPS browser. Eleven bodies, nine actual GPU-compressed PBR maps, default quality, menu input clearing, diagnostic closing and photography passed. Read-only live verification is retained in `evidence/orbital/live-browser.json`; the development mutation adapter is absent. Subsequent source commits add delivery evidence only and do not change the published runtime.

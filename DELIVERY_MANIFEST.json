@@ -1,9 +1,10 @@
 {
   "project": "THRESHOLD / Orbital revision",
-  "generatedAt": "2026-11-08T01:36:08.546059+00:00",
+  "generatedAt": "2026-11-08T01:42:09.837702+00:00",
   "runtimeSourceCommit": "61a1bf3",
+  "publishedSourceCommit": "783ed9703ba7cf20d0e7a2c8dbfb4446085247e4",
   "status": "PARTIALLY VERIFIED",
-  "note": "Manifest excludes itself. Includes source, actual evidence and deployable dist. Test history is preserved; physical-device/thermal acceptance is blocked.",
+  "note": "Excludes itself. Source, actual evidence and dist; physical-device acceptance remains blocked, independent aggregate CI not asserted complete.",
   "files": [
     {
       "path": ".github/workflows/ci.yml",
@@ -582,8 +583,8 @@
     },
     {
       "path": "docs/ORBITAL_ACCEPTANCE.md",
-      "bytes": 8807,
-      "sha256": "4e14b0ad1fc1cd41f022cdf95b91afb85ce44d3ca66c1bc333cebb01dc31682d"
+      "bytes": 9938,
+      "sha256": "e5c94c02e0771f71585736d2202107391340da971fae5e30a106f3e714d6c87d"
     },
     {
       "path": "docs/ORBITAL_DEPLOYMENT.md",
@@ -607,8 +608,8 @@
     },
     {
       "path": "docs/ORBITAL_TECHNICAL_REPORT.md",
-      "bytes": 9328,
-      "sha256": "2afc884c10f31e41fc3ea629dbb0c46a6fdb47dde7e03d4111f57b7c7874e84c"
+      "bytes": 9817,
+      "sha256": "98627974c479fd57f403c29e47fb804b283ac936c860491da4b722060c43f496"
     },
     {
       "path": "docs/README_G0_ORIGINAL.md",
@@ -871,6 +872,16 @@
       "sha256": "437a86fe562a7dee0b8aa813338dfeb38e13435b6a07ceaa100d04a0078bb61f"
     },
     {
+      "path": "evidence/orbital/live-browser.json",
+      "bytes": 28625,
+      "sha256": "324ffbf79cae9bce9919203665d2f84d3dbe0944ced58dbbb0db160bf1be295c"
+    },
+    {
+      "path": "evidence/orbital/live-browser.png",
+      "bytes": 191496,
+      "sha256": "74273a8e653d3830be78d6945fe6120fe6c12accffb43b445bf43e9b598d33e1"
+    },
+    {
       "path": "evidence/orbital/photo-export.png",
       "bytes": 308132,
       "sha256": "0a39fd3f59a08c5a7af3c29daff7da8d4128ea196a2a3aa086fb65876f643e04"
@@ -952,8 +963,8 @@
     },
     {
       "path": "evidence/orbital/verification-summary.json",
-      "bytes": 748,
-      "sha256": "5e0e75f11c20b0bd86e5f25c941fa192c6b4a93c042e1af789461ce7cf1a8aff"
+      "bytes": 996,
+      "sha256": "cb0cebc2471758faced7cd6e2856bc4ef64cf7b5607024e84ef4fed642e7ffde"
     },
     {
       "path": "evidence/performance-software-chromium.json",
@@ -2636,6 +2647,6 @@
       "sha256": "e01e7f9b6bab79514ecdd1cc3c70616b93451dcebec2b8d63ecbcf32378d7374"
     }
   ],
-  "fileCount": 526,
-  "totalBytes": 179790790
+  "fileCount": 528,
+  "totalBytes": 180012779
 }

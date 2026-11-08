@@ -1,0 +1,1129 @@
+{
+  "pass": true,
+  "capturedAt": "2026-11-08T01:40:22.705Z",
+  "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/?v=orbital-783ed97",
+  "browser": "158.0.8127.18",
+  "deployment": {
+    "project": "THRESHOLD Orbital",
+    "sourceRevision": "783ed9703ba7cf20d0e7a2c8dbfb4446085247e4",
+    "sourceBranch": "threshold-v02",
+    "builtAt": "2026-11-08T01:36:57.636Z"
+  },
+  "initial": {
+    "snapshot": {
+      "ready": true,
+      "loading": {
+        "stage": "轨道前厅已就绪",
+        "progress": 1
+      },
+      "streaming": {
+        "total": 10,
+        "resident": 10,
+        "loading": 0,
+        "queued": 0,
+        "proxy": 0,
+        "visible": 10,
+        "culled": 0,
+        "loads": 10,
+        "evictions": 0,
+        "failed": 0,
+        "bytesResident": 6882984,
+        "retainedBehind": 0,
+        "interests": [
+          {
+            "worldId": "A",
+            "kind": "main",
+            "position": [
+              -3.13558928155544e-7,
+              1.5499999864399432,
+              33.000000188135374
+            ]
+          },
+          {
+            "worldId": "B",
+            "kind": "portal",
+            "position": [
+              99.99999968644106,
+              1.5499999864399432,
+              71.20000018813538
+            ]
+          }
+        ],
+        "chunks": [
+          {
+            "id": "A-capsule",
+            "worldId": "A",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 0,
+            "lastWanted": 1.9406999999997205,
+            "loadCount": 1,
+            "bytes": 1440096,
+            "triangles": 50704,
+            "failure": null
+          },
+          {
+            "id": "A-arrival",
+            "worldId": "A",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 10.6,
+            "lastWanted": 1.9406999999997205,
+            "loadCount": 1,
+            "bytes": 165196,
+            "triangles": 5800,
+            "failure": null
+          },
+          {
+            "id": "A-gallery-west",
+            "worldId": "A",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 12.8,
+            "lastWanted": 1.9406999999997205,
+            "loadCount": 1,
+            "bytes": 396488,
+            "triangles": 15116,
+            "failure": null
+          },
+          {
+            "id": "A-gallery-east",
+            "worldId": "A",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 12.8,
+            "lastWanted": 1.9406999999997205,
+            "loadCount": 1,
+            "bytes": 399804,
+            "triangles": 15116,
+            "failure": null
+          },
+          {
+            "id": "A-gate",
+            "worldId": "A",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 49,
+            "lastWanted": 1.9406999999997205,
+            "loadCount": 1,
+            "bytes": 521860,
+            "triangles": 18952,
+            "failure": null
+          },
+          {
+            "id": "A-roof-trusses",
+            "worldId": "A",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 24,
+            "lastWanted": 1.9406999999997205,
+            "loadCount": 1,
+            "bytes": 465712,
+            "triangles": 14988,
+            "failure": null
+          },
+          {
+            "id": "A-exterior-west",
+            "worldId": "A",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 11.3,
+            "lastWanted": 1.9406999999997205,
+            "loadCount": 1,
+            "bytes": 1212256,
+            "triangles": 34176,
+            "failure": null
+          },
+          {
+            "id": "A-exterior-east",
+            "worldId": "A",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 9.7,
+            "lastWanted": 1.9406999999997205,
+            "loadCount": 1,
+            "bytes": 1347468,
+            "triangles": 38368,
+            "failure": null
+          },
+          {
+            "id": "B-services",
+            "worldId": "B",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 52.4,
+            "lastWanted": 1.9406999999997205,
+            "loadCount": 1,
+            "bytes": 743232,
+            "triangles": 26076,
+            "failure": null
+          },
+          {
+            "id": "B-gravity-instruments",
+            "worldId": "B",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 76.2,
+            "lastWanted": 1.9406999999997205,
+            "loadCount": 1,
+            "bytes": 190872,
+            "triangles": 5416,
+            "failure": null
+          }
+        ]
+      },
+      "audio": {
+        "state": "locked",
+        "unlocked": false,
+        "muted": false,
+        "volume": 0.55,
+        "activeVoices": 0,
+        "footsteps": 0,
+        "cues": 0,
+        "error": null,
+        "source": "original procedural Web Audio"
+      },
+      "sky": {
+        "bodies": 11,
+        "stars": 1900,
+        "textureCount": 5,
+        "textureBytes": 2258031,
+        "triangles": 30704,
+        "elapsed": 1.0500000000000012,
+        "returned": false,
+        "heroRotation": 1.4073499999999999,
+        "positions": [
+          {
+            "id": "AUREOLE",
+            "position": [
+              -105,
+              104,
+              -222
+            ],
+            "radius": 64
+          },
+          {
+            "id": "PELAGIC",
+            "position": [
+              162,
+              81,
+              -285
+            ],
+            "radius": 31
+          },
+          {
+            "id": "EMBER",
+            "position": [
+              76,
+              37,
+              162
+            ],
+            "radius": 19
+          },
+          {
+            "id": "SELENE",
+            "position": [
+              -94,
+              26,
+              71
+            ],
+            "radius": 13
+          },
+          {
+            "id": "MOON-01",
+            "position": [
+              -32,
+              34,
+              -125
+            ],
+            "radius": 4.4
+          },
+          {
+            "id": "MOON-02",
+            "position": [
+              -202,
+              58,
+              -87
+            ],
+            "radius": 6.8
+          },
+          {
+            "id": "MOON-03",
+            "position": [
+              286,
+              120,
+              -100
+            ],
+            "radius": 5.9
+          },
+          {
+            "id": "MOON-04",
+            "position": [
+              165,
+              182,
+              180
+            ],
+            "radius": 7.2
+          },
+          {
+            "id": "MOON-05",
+            "position": [
+              -264,
+              169,
+              142
+            ],
+            "radius": 9.1
+          },
+          {
+            "id": "MOON-06",
+            "position": [
+              34,
+              249,
+              -306
+            ],
+            "radius": 6.6
+          },
+          {
+            "id": "MOON-07",
+            "position": [
+              -338,
+              48,
+              -287
+            ],
+            "radius": 8.7
+          }
+        ]
+      },
+      "materials": {
+        "sets": 3,
+        "maps": 9,
+        "sharedMaterials": 10,
+        "jpegSourceBytes": 1783030,
+        "ktxNetworkBytes": 6714783,
+        "compressedMaps": 9,
+        "formats": {
+          "36492": 9
+        },
+        "gpuUploadPayloadBytes": 12583152,
+        "payloadNote": "Typed texture payload with mips; excludes GPU driver overhead, not a measured VRAM total",
+        "fallbacks": [],
+        "source": "ambientCG CC0 / Concrete048, Metal009, Metal047B"
+      },
+      "observed": false,
+      "sampleReleased": 0,
+      "canObserve": true,
+      "canReleaseSample": false,
+      "restoredCheckpoint": false,
+      "input": {
+        "x": 0,
+        "y": 0
+      },
+      "error": null,
+      "world": "VESTIBULE",
+      "slot": "A",
+      "foot": [
+        -3.13558928155544e-7,
+        -1.356005696617757e-8,
+        33.000000188135374
+      ],
+      "body": [
+        -3.13558928155544e-7,
+        0.875999986439943,
+        33.000000188135374
+      ],
+      "eye": [
+        -3.13558928155544e-7,
+        1.5499999864399432,
+        33.000000188135374
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "gravity": [
+        0,
+        -9.81,
+        0
+      ],
+      "bodyRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cameraRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "yaw": 0,
+      "pitch": 0,
+      "theta": 0,
+      "thetaDegrees": 0,
+      "s": -1.5000003135589282,
+      "mode": "NORMAL",
+      "grounded": true,
+      "supportNormal": [
+        0,
+        1,
+        0
+      ],
+      "velocity": [
+        0,
+        -3.9786100414218595e-7,
+        0
+      ],
+      "step": 63,
+      "progress": "ARRIVAL",
+      "terminal": false,
+      "returned": false,
+      "interactable": false,
+      "events": [],
+      "transferState": "ARMED",
+      "rejection": null,
+      "blocked": null,
+      "rotationQueries": 0,
+      "translationQueries": 0,
+      "supportQueries": 126,
+      "witness": {
+        "position": {
+          "x": 109.35003662109375,
+          "y": 4.196295261383057,
+          "z": 0.5886521339416504
+        },
+        "velocity": {
+          "x": 0.000015051104128360748,
+          "y": 0.000058236095355823636,
+          "z": -0.00004678601544583216
+        },
+        "resets": 0
+      },
+      "render": {
+        "targetWidth": 640,
+        "targetHeight": 360,
+        "quality": 1,
+        "mainDrawCalls": 107,
+        "offscreenDrawCalls": 67,
+        "geometries": 182,
+        "textures": 24,
+        "programs": 23,
+        "context": "active",
+        "passes": 1,
+        "targetResizes": 1
+      },
+      "performance": {
+        "samples": 23,
+        "fps": 5.274745436198626,
+        "averageMs": 189.58260869564813,
+        "p50Ms": 41.6999999997206,
+        "p95Ms": 874.1000000000931,
+        "p99Ms": 1387.3999999999069,
+        "physicsMs": 1.7000000001862645,
+        "gpuMs": null
+      },
+      "errors": [],
+      "elapsed": 1.0500000000000012
+    },
+    "mutationAdapter": "undefined",
+    "webgl2": true
+  },
+  "snapshot": {
+    "ready": true,
+    "loading": {
+      "stage": "轨道前厅已就绪",
+      "progress": 1
+    },
+    "streaming": {
+      "total": 10,
+      "resident": 10,
+      "loading": 0,
+      "queued": 0,
+      "proxy": 0,
+      "visible": 10,
+      "culled": 0,
+      "loads": 10,
+      "evictions": 0,
+      "failed": 0,
+      "bytesResident": 6882984,
+      "retainedBehind": 0,
+      "interests": [
+        {
+          "worldId": "A",
+          "kind": "main",
+          "position": [
+            7.187693711330212e-7,
+            1.5499999874178316,
+            32.52599986898139
+          ]
+        },
+        {
+          "worldId": "B",
+          "kind": "portal",
+          "position": [
+            100.00000071876936,
+            1.5499999874178316,
+            70.72599986898139
+          ]
+        }
+      ],
+      "chunks": [
+        {
+          "id": "A-capsule",
+          "worldId": "A",
+          "state": "resident",
+          "visible": true,
+          "lod": "high",
+          "distance": 0,
+          "lastWanted": 4.835600000000094,
+          "loadCount": 1,
+          "bytes": 1440096,
+          "triangles": 50704,
+          "failure": null
+        },
+        {
+          "id": "A-arrival",
+          "worldId": "A",
+          "state": "resident",
+          "visible": true,
+          "lod": "high",
+          "distance": 10.1,
+          "lastWanted": 4.835600000000094,
+          "loadCount": 1,
+          "bytes": 165196,
+          "triangles": 5800,
+          "failure": null
+        },
+        {
+          "id": "A-gallery-west",
+          "worldId": "A",
+          "state": "resident",
+          "visible": true,
+          "lod": "high",
+          "distance": 12.5,
+          "lastWanted": 4.835600000000094,
+          "loadCount": 1,
+          "bytes": 396488,
+          "triangles": 15116,
+          "failure": null
+        },
+        {
+          "id": "A-gallery-east",
+          "worldId": "A",
+          "state": "resident",
+          "visible": true,
+          "lod": "high",
+          "distance": 12.5,
+          "lastWanted": 4.835600000000094,
+          "loadCount": 1,
+          "bytes": 399804,
+          "triangles": 15116,
+          "failure": null
+        },
+        {
+          "id": "A-gate",
+          "worldId": "A",
+          "state": "resident",
+          "visible": true,
+          "lod": "high",
+          "distance": 48.5,
+          "lastWanted": 4.835600000000094,
+          "loadCount": 1,
+          "bytes": 521860,
+          "triangles": 18952,
+          "failure": null
+        },
+        {
+          "id": "A-roof-trusses",
+          "worldId": "A",
+          "state": "resident",
+          "visible": true,
+          "lod": "high",
+          "distance": 23.8,
+          "lastWanted": 4.835600000000094,
+          "loadCount": 1,
+          "bytes": 465712,
+          "triangles": 14988,
+          "failure": null
+        },
+        {
+          "id": "A-exterior-west",
+          "worldId": "A",
+          "state": "resident",
+          "visible": true,
+          "lod": "high",
+          "distance": 11.3,
+          "lastWanted": 4.835600000000094,
+          "loadCount": 1,
+          "bytes": 1212256,
+          "triangles": 34176,
+          "failure": null
+        },
+        {
+          "id": "A-exterior-east",
+          "worldId": "A",
+          "state": "resident",
+          "visible": true,
+          "lod": "high",
+          "distance": 9.7,
+          "lastWanted": 4.835600000000094,
+          "loadCount": 1,
+          "bytes": 1347468,
+          "triangles": 38368,
+          "failure": null
+        },
+        {
+          "id": "B-services",
+          "worldId": "B",
+          "state": "resident",
+          "visible": true,
+          "lod": "high",
+          "distance": 51.9,
+          "lastWanted": 4.835600000000094,
+          "loadCount": 1,
+          "bytes": 743232,
+          "triangles": 26076,
+          "failure": null
+        },
+        {
+          "id": "B-gravity-instruments",
+          "worldId": "B",
+          "state": "resident",
+          "visible": true,
+          "lod": "high",
+          "distance": 75.7,
+          "lastWanted": 4.835600000000094,
+          "loadCount": 1,
+          "bytes": 190872,
+          "triangles": 5416,
+          "failure": null
+        }
+      ]
+    },
+    "audio": {
+      "state": "running",
+      "unlocked": true,
+      "muted": false,
+      "volume": 0.55,
+      "activeVoices": 0,
+      "footsteps": 0,
+      "cues": 0,
+      "error": null,
+      "source": "original procedural Web Audio"
+    },
+    "sky": {
+      "bodies": 11,
+      "stars": 1900,
+      "textureCount": 5,
+      "textureBytes": 2258031,
+      "triangles": 30704,
+      "elapsed": 2.0499999999999976,
+      "returned": false,
+      "heroRotation": 1.41435,
+      "positions": [
+        {
+          "id": "AUREOLE",
+          "position": [
+            -105,
+            104,
+            -222
+          ],
+          "radius": 64
+        },
+        {
+          "id": "PELAGIC",
+          "position": [
+            162,
+            81,
+            -285
+          ],
+          "radius": 31
+        },
+        {
+          "id": "EMBER",
+          "position": [
+            76,
+            37,
+            162
+          ],
+          "radius": 19
+        },
+        {
+          "id": "SELENE",
+          "position": [
+            -94,
+            26,
+            71
+          ],
+          "radius": 13
+        },
+        {
+          "id": "MOON-01",
+          "position": [
+            -32,
+            34,
+            -125
+          ],
+          "radius": 4.4
+        },
+        {
+          "id": "MOON-02",
+          "position": [
+            -202,
+            58,
+            -87
+          ],
+          "radius": 6.8
+        },
+        {
+          "id": "MOON-03",
+          "position": [
+            286,
+            120,
+            -100
+          ],
+          "radius": 5.9
+        },
+        {
+          "id": "MOON-04",
+          "position": [
+            165,
+            182,
+            180
+          ],
+          "radius": 7.2
+        },
+        {
+          "id": "MOON-05",
+          "position": [
+            -264,
+            169,
+            142
+          ],
+          "radius": 9.1
+        },
+        {
+          "id": "MOON-06",
+          "position": [
+            34,
+            249,
+            -306
+          ],
+          "radius": 6.6
+        },
+        {
+          "id": "MOON-07",
+          "position": [
+            -338,
+            48,
+            -287
+          ],
+          "radius": 8.7
+        }
+      ]
+    },
+    "materials": {
+      "sets": 3,
+      "maps": 9,
+      "sharedMaterials": 10,
+      "jpegSourceBytes": 1783030,
+      "ktxNetworkBytes": 6714783,
+      "compressedMaps": 9,
+      "formats": {
+        "36492": 9
+      },
+      "gpuUploadPayloadBytes": 12583152,
+      "payloadNote": "Typed texture payload with mips; excludes GPU driver overhead, not a measured VRAM total",
+      "fallbacks": [],
+      "source": "ambientCG CC0 / Concrete048, Metal009, Metal047B"
+    },
+    "observed": false,
+    "sampleReleased": 0,
+    "canObserve": true,
+    "canReleaseSample": false,
+    "restoredCheckpoint": false,
+    "input": {
+      "x": 0,
+      "y": 0
+    },
+    "error": null,
+    "world": "VESTIBULE",
+    "slot": "A",
+    "foot": [
+      7.187693711330212e-7,
+      -1.2582168529284843e-8,
+      32.52599986898139
+    ],
+    "body": [
+      7.187693711330212e-7,
+      0.8759999874178315,
+      32.52599986898139
+    ],
+    "eye": [
+      7.187693711330212e-7,
+      1.5499999874178316,
+      32.52599986898139
+    ],
+    "up": [
+      0,
+      1,
+      0
+    ],
+    "gravity": [
+      0,
+      -9.81,
+      0
+    ],
+    "bodyRotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "cameraRotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "yaw": 0,
+    "pitch": 0,
+    "theta": 0,
+    "thetaDegrees": 0,
+    "s": -1.4999992812306289,
+    "mode": "NORMAL",
+    "grounded": true,
+    "supportNormal": [
+      0,
+      1,
+      0
+    ],
+    "velocity": [
+      0,
+      -0.0000012779608371538131,
+      0
+    ],
+    "step": 123,
+    "progress": "ARRIVAL",
+    "terminal": false,
+    "returned": false,
+    "interactable": false,
+    "events": [],
+    "transferState": "ARMED",
+    "rejection": null,
+    "blocked": null,
+    "rotationQueries": 0,
+    "translationQueries": 0,
+    "supportQueries": 246,
+    "witness": {
+      "position": {
+        "x": 109.35003662109375,
+        "y": 4.196382999420166,
+        "z": 0.5885820388793945
+      },
+      "velocity": {
+        "x": 0.000018279999494552612,
+        "y": 0.00006398840196197852,
+        "z": -0.0000873484241310507
+      },
+      "resets": 0
+    },
+    "render": {
+      "targetWidth": 640,
+      "targetHeight": 360,
+      "quality": 1,
+      "mainDrawCalls": 107,
+      "offscreenDrawCalls": 67,
+      "geometries": 182,
+      "textures": 24,
+      "programs": 23,
+      "context": "active",
+      "passes": 1,
+      "targetResizes": 1
+    },
+    "performance": {
+      "samples": 36,
+      "fps": 1.9368375746489483,
+      "averageMs": 516.3055555555555,
+      "p50Ms": 71.10000000009313,
+      "p95Ms": 1812.9000000003725,
+      "p99Ms": 2893.899999999907,
+      "physicsMs": 1.8999999999068677,
+      "gpuMs": null
+    },
+    "errors": [],
+    "elapsed": 2.0499999999999976
+  },
+  "pageErrors": [],
+  "responses": [
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/DEPLOYMENT.json?revision=783ed97",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/?v=orbital-783ed97",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/index-CA5C3zr0.js",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/ChapterView-CrFmmNQE.js",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/ChapterView-DjlXMTcr.css",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/InputManager-DR0NFIOJ.js",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/materials/concrete-roughness.ktx2",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/materials/copper-roughness.ktx2",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/materials/metal-roughness.ktx2",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/materials/metal-albedo.ktx2",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/materials/copper-albedo.ktx2",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/materials/metal-normal.ktx2",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/materials/concrete-albedo.ktx2",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/materials/concrete-normal.ktx2",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/v02/vestibule.glb",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/63c4090a-d890-456b-a36d-0f25eae9b205",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/2f340441-2a35-44f2-bcd8-90dd570b24d0",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/83fe4a36-e867-41de-9de0-82839dd2a77d",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/de8f7415-8fe8-401a-8cb5-dc027973240d",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/4f6beefa-3ed6-4dd4-9ff7-d87af2d8c015",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/f1f0c5d0-db4a-4e2a-beb5-37d687dac24b",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/938a8c06-50e3-4240-9115-96a0b9d5c141",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/49d2b961-de9f-4cc4-96f1-52798ff5d5e5",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/5402b26c-403c-492d-9cf7-906d6a342a61",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/b65e99d8-544e-4fb9-8192-86deeb3ab085",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/8f9a8775-62e9-42c2-976f-855501783262",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/c946a020-5c12-4de3-aa4c-d917579a260d",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/ebbc64a5-c9e1-4048-8aae-6ecce678936b",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/9ab44b81-d2d7-4ee6-b751-5287883ab995",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/860d83ec-0153-4d8e-ab89-dcf87b29ad1f",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/basis/basis_transcoder.wasm",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/basis/basis_transcoder.js",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/materials/copper-normal.ktx2",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/2c7ab1fd-35c5-468d-b339-ca5d7d2aa59f",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/2c7ab1fd-35c5-468d-b339-ca5d7d2aa59f",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/v02/invert.glb",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/a84ae5c0-fb3e-48f0-946d-46731a7a6166",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/4a3baf4e-c8cd-4759-aae0-8ff12a94a137",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/26912243-ce55-4067-ac93-16847954527f",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/b1b53e8a-08ad-4232-b0f1-937eaf47a65c",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/1f5dcaf6-78b1-487d-b3de-c2f7a16962e6",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/6cfeda18-9153-43ed-9d2a-40b544d2b5d1",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/9b8e94af-ee52-43ce-9ab1-e98b41865c24",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/86c88c19-46ed-4d56-9ecd-b499e9a331a2",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/d6d28894-b394-47ca-a895-b055f6e3c544",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/d7841129-43b0-44c2-9a4c-983ec48934cb",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/45e025f1-0ec1-4b16-9a68-e98d22678871",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jiangjinzhou01-ctrl.github.io/6ca3525a-689d-48d4-b024-ac1953bf9e82",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/space/neptune.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/space/mars.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/space/saturn.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/space/saturn-ring.png",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/architecture/manifest.json",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/space/moon.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/architecture/A-exterior-east.glb",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/architecture/A-capsule.glb",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/architecture/A-arrival.glb",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/architecture/A-exterior-west.glb",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/architecture/A-gallery-west.glb",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/architecture/A-gallery-east.glb",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/architecture/A-roof-trusses.glb",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/architecture/B-services.glb",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/architecture/A-gate.glb",
+      "status": 200
+    },
+    {
+      "url": "https://jiangjinzhou01-ctrl.github.io/expert-disco/assets/orbital/architecture/B-gravity-instruments.glb",
+      "status": 200
+    }
+  ],
+  "menuInputCleared": true,
+  "diagnosticsClosed": true
+}

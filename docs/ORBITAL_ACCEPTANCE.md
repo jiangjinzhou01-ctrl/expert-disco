@@ -73,3 +73,13 @@ The 34 distinct development-browser scenarios and three production-browser scena
 Shared portal pixel regression measured 23 marker centers; maximum center error was **0.287985 px**, below the 2 px assertion. This checks the shared renderer in G0-LAB; the chapter's additional architectural visibility is validated separately.
 
 Overall: **PARTIALLY VERIFIED**. All distinct local software scenarios above are verified after corrections. Physical-device and commercial art/performance acceptance remain outstanding; a running independent CI workflow is not marked PASS.
+
+## Actual publication and live browser verification
+
+GitHub Pages published main commit `72828cc`; its `pages-build-deployment` run completed successfully: https://github.com/jiangjinzhou01-ctrl/expert-disco/actions/runs/42435012135 . The site's deployment metadata identifies source `783ed9703ba7cf20d0e7a2c8dbfb4446085247e4`.
+
+A fresh Chromium 158 browser loaded the real HTTPS site and verified WebGL2, chapter readiness, eleven celestial bodies, all nine BC7 PBR textures, highest default quality, real held-input clearing across settings, diagnostics open/close and photography. Sixty-four responses were recorded with no critical asset/page errors. The production mutation adapter was absent. Evidence: `evidence/orbital/live-browser.json` and `live-browser.png`. This live smoke is separate from the full local production keyboard journey.
+
+Published URL: https://jiangjinzhou01-ctrl.github.io/expert-disco/?v=orbital-783ed97 .
+
+The independent aggregate CI for source/evidence revision remains running at record time; it is not asserted PASS. Physical-device items remain BLOCKED regardless of the successful publication.
