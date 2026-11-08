@@ -2376,11 +2376,374 @@
       "sourceSha256": "a074467cadd900166f23bb6b1c64de5f8c18545d229e5bdb047e0c498468b3c5",
       "compression": "EXT_meshopt_compression",
       "maximumBoundsErrorMetres": 0.00007514700303163811
+    },
+    {
+      "id": "A-atelier-east",
+      "slot": "A",
+      "description": "Machined gallery benches, bronze tactile inlays and etched wayfinding pylons",
+      "proxy": [
+        {
+          "type": "box",
+          "position": [
+            10.7,
+            0.465,
+            -11
+          ],
+          "size": [
+            0.72,
+            0.11,
+            2.8
+          ],
+          "material": "obsidian"
+        },
+        {
+          "type": "box",
+          "position": [
+            10.7,
+            0.205,
+            -11.92
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            10.7,
+            0.205,
+            -10.08
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            10.7,
+            0.465,
+            1
+          ],
+          "size": [
+            0.72,
+            0.11,
+            2.8
+          ],
+          "material": "obsidian"
+        },
+        {
+          "type": "box",
+          "position": [
+            10.7,
+            0.205,
+            0.07999999999999996
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            10.7,
+            0.205,
+            1.92
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            10.7,
+            0.465,
+            13
+          ],
+          "size": [
+            0.72,
+            0.11,
+            2.8
+          ],
+          "material": "obsidian"
+        },
+        {
+          "type": "box",
+          "position": [
+            10.7,
+            0.205,
+            12.08
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            10.7,
+            0.205,
+            13.92
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            6.4,
+            0.58,
+            -12.8
+          ],
+          "size": [
+            0.32,
+            1.16,
+            0.36
+          ],
+          "material": "obsidian"
+        }
+      ],
+      "file": "A-atelier-east.glb",
+      "bounds": [
+        [
+          6.240000247955322,
+          0,
+          -12.980000495910645
+        ],
+        [
+          11.059999465942383,
+          1.159999966621399,
+          14.399999618530273
+        ]
+      ],
+      "triangles": 17628,
+      "bytes": 354328,
+      "drawCalls": 4,
+      "sourceBytes": 1132200,
+      "sha256": "2458e64cc69f76965e9ebb1a55b427f5cecbcfb3c37492505ead4ec49378de60",
+      "sourceSha256": "2d93b4a539d43b6843d33ad90835f7473289fbd7521128c0cba4df6c50df88c0",
+      "compression": "EXT_meshopt_compression",
+      "maximumBoundsErrorMetres": 0.00013865793752110278
+    },
+    {
+      "id": "A-atelier-west",
+      "slot": "A",
+      "description": "Machined gallery benches, bronze tactile inlays and etched wayfinding pylons",
+      "proxy": [
+        {
+          "type": "box",
+          "position": [
+            -10.7,
+            0.465,
+            -11
+          ],
+          "size": [
+            0.72,
+            0.11,
+            2.8
+          ],
+          "material": "obsidian"
+        },
+        {
+          "type": "box",
+          "position": [
+            -10.7,
+            0.205,
+            -11.92
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            -10.7,
+            0.205,
+            -10.08
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            -10.7,
+            0.465,
+            1
+          ],
+          "size": [
+            0.72,
+            0.11,
+            2.8
+          ],
+          "material": "obsidian"
+        },
+        {
+          "type": "box",
+          "position": [
+            -10.7,
+            0.205,
+            0.07999999999999996
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            -10.7,
+            0.205,
+            1.92
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            -10.7,
+            0.465,
+            13
+          ],
+          "size": [
+            0.72,
+            0.11,
+            2.8
+          ],
+          "material": "obsidian"
+        },
+        {
+          "type": "box",
+          "position": [
+            -10.7,
+            0.205,
+            12.08
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            -10.7,
+            0.205,
+            13.92
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            -6.4,
+            0.58,
+            -12.8
+          ],
+          "size": [
+            0.32,
+            1.16,
+            0.36
+          ],
+          "material": "obsidian"
+        }
+      ],
+      "file": "A-atelier-west.glb",
+      "bounds": [
+        [
+          -11.059999465942383,
+          0,
+          -12.980000495910645
+        ],
+        [
+          -6.240000247955322,
+          1.159999966621399,
+          14.399999618530273
+        ]
+      ],
+      "triangles": 17628,
+      "bytes": 354436,
+      "drawCalls": 4,
+      "sourceBytes": 1132156,
+      "sha256": "f15ce6677f138eeacb23bf084cc17e39c4ad163bfd057a6f2ce1c773aa320f55",
+      "sourceSha256": "a39b63ab2035e8876f38230d35e94cbbbca97f72564df3868e71abc9d15751c6",
+      "compression": "EXT_meshopt_compression",
+      "maximumBoundsErrorMetres": 0.00013865793752110278
+    },
+    {
+      "id": "B-atelier-surface",
+      "slot": "B",
+      "description": "Continuous curved bronze coping, precision edge inlays and original-axis witness marks",
+      "proxy": [],
+      "file": "B-atelier-surface.glb",
+      "bounds": [
+        [
+          -1,
+          0,
+          -14.106500625610352
+        ],
+        [
+          4.691999912261963,
+          7.199999809265137,
+          -0.1971612423658371
+        ]
+      ],
+      "triangles": 3620,
+      "bytes": 63268,
+      "drawCalls": 1,
+      "sourceBytes": 209972,
+      "sha256": "d2f0ea15929b21f863492c8f1b22a3cfcecc27c8c2032f02354adce82c6b06fa",
+      "sourceSha256": "31c5650f4fe11e8dbdd38402e205cf39f007e14bb610180f6786e359ca5d499b",
+      "compression": "EXT_meshopt_compression",
+      "maximumBoundsErrorMetres": 0.00009290552965701693
     }
   ],
-  "totalTriangles": 224712,
-  "totalBytes": 6882984,
-  "totalSourceBytes": 14750964,
+  "totalTriangles": 263588,
+  "totalBytes": 7655016,
+  "totalSourceBytes": 17225292,
   "compression": {
     "format": "EXT_meshopt_compression",
     "tool": "@gltf-transform/cli 4.5.1 / core-functions + meshoptimizer",
@@ -2388,5 +2751,6 @@
     "normalBits": 12,
     "texcoordBits": 14,
     "geometrySimplification": false
-  }
+  },
+  "atelierGenerator": "scripts/build-atelier-assets.py"
 }
