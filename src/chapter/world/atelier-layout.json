@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "units": "metres",
+  "props": [
+    {
+      "id": "ATELIER-BENCH-E1",
+      "world": "VESTIBULE",
+      "kind": "bench",
+      "center": [
+        10.7,
+        0.26,
+        -11
+      ],
+      "size": [
+        0.76,
+        0.52,
+        2.84
+      ]
+    },
+    {
+      "id": "ATELIER-BENCH-E2",
+      "world": "VESTIBULE",
+      "kind": "bench",
+      "center": [
+        10.7,
+        0.26,
+        1
+      ],
+      "size": [
+        0.76,
+        0.52,
+        2.84
+      ]
+    },
+    {
+      "id": "ATELIER-BENCH-E3",
+      "world": "VESTIBULE",
+      "kind": "bench",
+      "center": [
+        10.7,
+        0.26,
+        13
+      ],
+      "size": [
+        0.76,
+        0.52,
+        2.84
+      ]
+    },
+    {
+      "id": "ATELIER-BENCH-W1",
+      "world": "VESTIBULE",
+      "kind": "bench",
+      "center": [
+        -10.7,
+        0.26,
+        -11
+      ],
+      "size": [
+        0.76,
+        0.52,
+        2.84
+      ]
+    },
+    {
+      "id": "ATELIER-BENCH-W2",
+      "world": "VESTIBULE",
+      "kind": "bench",
+      "center": [
+        -10.7,
+        0.26,
+        1
+      ],
+      "size": [
+        0.76,
+        0.52,
+        2.84
+      ]
+    },
+    {
+      "id": "ATELIER-BENCH-W3",
+      "world": "VESTIBULE",
+      "kind": "bench",
+      "center": [
+        -10.7,
+        0.26,
+        13
+      ],
+      "size": [
+        0.76,
+        0.52,
+        2.84
+      ]
+    },
+    {
+      "id": "ATELIER-WAYFINDING-E",
+      "world": "VESTIBULE",
+      "kind": "pylon",
+      "center": [
+        6.4,
+        0.58,
+        -12.8
+      ],
+      "size": [
+        0.32,
+        1.16,
+        0.36
+      ]
+    },
+    {
+      "id": "ATELIER-WAYFINDING-W",
+      "world": "VESTIBULE",
+      "kind": "pylon",
+      "center": [
+        -6.4,
+        0.58,
+        -12.8
+      ],
+      "size": [
+        0.32,
+        1.16,
+        0.36
+      ]
+    }
+  ]
+}

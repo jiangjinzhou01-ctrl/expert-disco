@@ -11,8 +11,8 @@ export interface ExperienceArtifacts {groups:Record<'A'|'B',Group>;update:(elaps
 /** These details communicate actual simulation state; they never move a player. */
 export function createExperienceArtifacts():ExperienceArtifacts{
  const A=new Group(),B=new Group();A.name='ORBITAL-INTERACTIVE-DETAILS';B.name='GRAVITY-INTERACTIVE-DETAILS';B.position.x=100;
- const bronze=new MeshStandardMaterial({color:0xb6a087,metalness:.8,roughness:.29});const dark=new MeshStandardMaterial({color:0x1f2b34,metalness:.7,roughness:.38});
- const glow=new MeshStandardMaterial({color:0xb9cfdb,emissive:0x527988,emissiveIntensity:.6,metalness:.4,roughness:.3});
+ const bronze=new MeshStandardMaterial({name:'bronze',color:0xb6a087,metalness:.8,roughness:.29});const dark=new MeshStandardMaterial({name:'obsidian',color:0x1f2b34,metalness:.7,roughness:.38});
+ const glow=new MeshStandardMaterial({name:'atelier-state-signal',color:0xb9cfdb,emissive:0x527988,emissiveIntensity:.6,metalness:.4,roughness:.3});glow.userData.finishRole='state-signal';
  const rings:Mesh[]=[];
  for(let i=0;i<3;i++){
   const ring=new Mesh(new TorusGeometry(1.22+i*.27,.025+i*.008,8,96),bronze);ring.position.set(0,-2,6);ring.rotation.set(.25+i*.8,.4+i*.3,.25);ring.castShadow=false;A.add(ring);rings.push(ring);

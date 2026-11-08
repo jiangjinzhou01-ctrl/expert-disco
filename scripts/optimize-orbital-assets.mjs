@@ -25,13 +25,15 @@ const io = new NodeIO().registerExtensions(ALL_EXTENSIONS).registerDependencies(
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const manifest = JSON.parse(await readFile(resolve(deployed, 'manifest.json'), 'utf8'));
 const results = [];
+const atelierOnly = process.argv.includes('--atelier-only');
 function triangles(document) {
   return document.getRoot().listMeshes().flatMap(mesh => mesh.listPrimitives())
     .reduce((sum, primitive) => sum + primitive.getIndices().getCount() / 3, 0);
 }
-for (const chunk of manifest.chunks) {
+for (const chunk of manifest.chunks.filter(chunk => !atelierOnly || chunk.id.includes('-atelier-'))) {
   const input = resolve(raw, chunk.file);
-  try { await stat(input); } catch { await copyFile(resolve(deployed, chunk.file), input); }
+  if (atelierOnly) await copyFile(resolve(deployed, chunk.file), input);
+  else { try { await stat(input); } catch { await copyFile(resolve(deployed, chunk.file), input); } }
   const sourceBytes = await readFile(input);
   const original = await io.read(input);
   const originalTriangles = triangles(original);

@@ -1,11 +1,13 @@
 import {
-  BoxGeometry, Color, Group, Mesh, MeshBasicMaterial, MeshLambertMaterial,
+  BoxGeometry, Color, Group, Mesh, MeshBasicMaterial, MeshStandardMaterial,
   Object3D, PlaneGeometry, Scene, ShaderMaterial, SphereGeometry,
   Vector2, Vector3,
 } from 'three';
 import type { Portal } from './PortalTypes';
 import type { WorldId } from '../../scenes/RoomLayout';
 import { markers, portalA, portalB, roomBoxes } from '../../scenes/RoomLayout';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+import { installArchitecturalFinish } from '../rendering/ArchitecturalFinish';
 
 export interface MarkerSpec { id:string; position:[number,number,number]; color:number }
 export interface RoomScene {
@@ -55,12 +57,15 @@ export function buildRoomGeometry(worldId:WorldId):RoomScene{
   const surface=createPortalSurface(portal);
   scene.add(surface);
   const box=new BoxGeometry(1,1,1);
-  const materials=new Map<string,MeshLambertMaterial>();
+  const materials=new Map<string,MeshStandardMaterial>();
   for(const spec of roomBoxes(worldId)){
-    let material=materials.get(spec.color);
-    if(!material){ material=new MeshLambertMaterial({color:spec.color});materials.set(spec.color,material); }
-    const mesh=new Mesh(box,material);
-    mesh.name=spec.id;mesh.position.set(...spec.center);mesh.scale.set(...spec.size);
+    const role=spec.id.includes('frame')||spec.id.includes('pillar')?'obsidian':spec.id.endsWith('floor')?'limestone':'mineral';
+    const key=`${spec.color}:${role}`;
+    let material=materials.get(key);
+    if(!material){material=new MeshStandardMaterial({name:`LAB-finish-${role}`,color:spec.color,roughness:role==='obsidian'?.36:.82,metalness:role==='obsidian'?.35:0});installArchitecturalFinish(material,role);materials.set(key,material);}
+    const geometry=new RoundedBoxGeometry(...spec.size,2,Math.min(.025,...spec.size.map(s=>s*.12)));
+    const mesh=new Mesh(geometry,material);
+    mesh.name=spec.id;mesh.position.set(...spec.center);
     scene.add(mesh);
   }
   // Directional floor chevrons use shared geometry, have no collision volume.
@@ -86,7 +91,7 @@ export function buildRoomGeometry(worldId:WorldId):RoomScene{
     mesh.name=`marker-${marker.id}`;mesh.position.set(...marker.position);scene.add(mesh);
   }
   let movingReference:Mesh|null=null;
-  const movingMaterial=new MeshLambertMaterial({color:'#ecb34c'});
+  const movingMaterial=new MeshStandardMaterial({color:'#ecb34c',metalness:.35,roughness:.38});
   if(worldId==='B'){
     movingReference=new Mesh(new BoxGeometry(.65,.65,.65),movingMaterial);
     movingReference.name='moving-reference';movingReference.position.set(35.8,.8,-1.3);scene.add(movingReference);

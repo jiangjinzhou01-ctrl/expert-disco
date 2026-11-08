@@ -38,7 +38,12 @@ export class ChapterRuntime {
    const [sky,...chunksByWorld]=await Promise.all([loadOrbitalSky(import.meta.env.BASE_URL,new Vector3()),...this.registry.worlds.map(w=>loadOrbitalArchitecture(import.meta.env.BASE_URL,w.slot,w.offset))]);
    this.sky=sky;scenes.A.scene.add(sky.group);this.camera.far=1500;this.camera.updateProjectionMatrix();
    this.materials.apply(scenes.A.scene);this.materials.apply(scenes.B.scene);
+   // The resonator changes color with real chapter state. Its material must not
+   // mutate the shared finish used by every dark architectural fitting.
+   const finish=scenes.A.device.material as import('three').MeshStandardMaterial;
+   const animatedFinish=finish.clone();animatedFinish.onBeforeCompile=finish.onBeforeCompile;animatedFinish.customProgramCacheKey=finish.customProgramCacheKey;animatedFinish.userData.sharedOrbitalPBR=false;scenes.A.device.material=animatedFinish;
    this.artifacts=createExperienceArtifacts();scenes.A.scene.add(this.artifacts.groups.A);scenes.B.scene.add(this.artifacts.groups.B);
+   this.materials.apply(this.artifacts.groups.A);this.materials.apply(this.artifacts.groups.B);
    const descriptors=chunksByWorld.flat().map(chunk=>({id:chunk.id,worldId:chunk.slot,bounds:chunk.bounds,proxy:chunk.proxy,bytes:chunk.bytes,triangles:chunk.triangles,load:async()=>{const root=await chunk.load();if(!this.disposed)this.materials.apply(root);return root;}}));
    for(const descriptor of descriptors)this.materials.apply(descriptor.proxy);
    this.streaming=new SpatialStreamingManager({A:scenes.A.scene,B:scenes.B.scene},descriptors);
@@ -83,7 +88,7 @@ export class ChapterRuntime {
   if(!this.ready||new URLSearchParams(location.search).has('test')||!this.controller.state.grounded)return;
   const s=this.controller.state;this.persistence.writeCheckpoint({version:2,stance:s.stance,locomotion:s.locomotion==='REATTACH'?'REATTACH':'GROUND_WALK',fieldId:s.fieldId,velocity:s.velocity.toArray() as [number,number,number],gravity:s.gravity.toArray() as [number,number,number],bodyRotation:s.bodyRotation.toArray() as [number,number,number,number],slot:s.worldId,foot:s.foot.toArray() as [number,number,number],mode:s.mode,s:s.s,yaw:s.yaw,pitch:s.pitch,terminal:s.terminal,returned:s.returned,savedAt:Date.now()});
  }
- private prepareEnvironment(){this.environmentTarget?.dispose();const room=new RoomEnvironment();const pmrem=new PMREMGenerator(this.gl);this.environmentTarget=pmrem.fromScene(room);this.environment=this.environmentTarget.texture;room.dispose();pmrem.dispose();for(const scene of [this.scenes.A.scene,this.scenes.B.scene]){scene.environment=this.environment;scene.environmentIntensity=.3;}}
+ private prepareEnvironment(){this.environmentTarget?.dispose();const room=new RoomEnvironment();const pmrem=new PMREMGenerator(this.gl);this.environmentTarget=pmrem.fromScene(room,.04);this.environment=this.environmentTarget.texture;room.dispose();pmrem.dispose();for(const scene of [this.scenes.A.scene,this.scenes.B.scene]){scene.environment=this.environment;scene.environmentIntensity=.72;}}
  advance(delta:number){if(!this.ready)return;this.accumulator+=Math.min(delta,.25);this.droppedSeconds+=Math.max(0,delta-.25);let steps=0;const now=performance.now();while(this.accumulator>=1/60&&steps<5){this.controller.step(1/60,this.input());this.elapsed+=1/60;this.accumulator-=1/60;steps++;}if(steps===5&&this.accumulator>=1/60){this.droppedSeconds+=this.accumulator;this.accumulator=0;}this.performance.physicsMs=performance.now()-now;}
  step(n:number,x:number,y:number){if(!this.ready)throw Error('Not ready');if(n>20000||n<0)throw RangeError('Step bound');for(let i=0;i<n;i++){this.controller.step(1/60,{x,y});this.elapsed+=1/60;}this.sync();}
  tick(dt:number){

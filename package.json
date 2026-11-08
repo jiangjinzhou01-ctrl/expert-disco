@@ -18,11 +18,13 @@
     "measure:software": "node scripts/measure-performance.js",
     "assets:build": "blender -b --python scripts/build-v02-assets.py -- \"$PWD\"",
     "measure:v02": "node scripts/measure-v02.js",
-    "assets:orbital": "blender -b --python scripts/build-orbital-assets.py -- \"$PWD\" && node scripts/optimize-orbital-assets.mjs",
+    "assets:orbital": "blender -b --python scripts/build-orbital-assets.py -- \"$PWD\" && node scripts/optimize-orbital-assets.mjs && npm run assets:atelier",
     "test:orbital": "playwright test src/tests/e2e/orbital.spec.ts",
     "capture:orbital": "node scripts/capture-orbital.mjs",
     "deploy:pages": "node scripts/deploy-pages.mjs",
-    "measure:orbital": "node scripts/measure-orbital.mjs"
+    "measure:orbital": "node scripts/measure-orbital.mjs",
+    "assets:atelier": "blender -b --python scripts/build-atelier-assets.py -- \"$PWD\" && node scripts/optimize-orbital-assets.mjs --atelier-only",
+    "capture:atelier": "node scripts/capture-atelier.mjs"
   },
   "dependencies": {
     "@dimforge/rapier3d-compat": "0.21.0",

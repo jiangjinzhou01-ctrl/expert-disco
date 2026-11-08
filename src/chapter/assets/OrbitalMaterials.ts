@@ -1,5 +1,6 @@
 import {KTX2Loader} from 'three/addons/loaders/KTX2Loader.js';
-import {Mesh,MeshStandardMaterial,RepeatWrapping,SRGBColorSpace,TextureLoader,Vector2,type Object3D,type Texture,type WebGLRenderer} from 'three';
+import {DoubleSide,Mesh,MeshPhysicalMaterial,MeshStandardMaterial,RepeatWrapping,SRGBColorSpace,TextureLoader,Vector2,type Object3D,type Texture,type WebGLRenderer} from 'three';
+import {architecturalRole,FINISHES,installArchitecturalFinish} from '../../engine/rendering/ArchitecturalFinish';
 
 /** Shared, locally hosted photogrammetric maps. Chunk eviction never duplicates
  * textures, and every map is released on final experience teardown. */
@@ -21,17 +22,32 @@ export class OrbitalMaterials {
     if(!(o instanceof Mesh))return;
     const replace=(material:import('three').Material)=>{
       if(!(material instanceof MeshStandardMaterial))return material;
-      const name=material.name.replace(/^orbital-proxy-/,'').replace(/\.\d+$/,'');
-      if(!['mineral','limestone','cold','obsidian','basalt','copper','metal','bronze'].includes(name))return material;
+      if(material.userData.sharedOrbitalPBR)return material;
+      const name=architecturalRole(material.name);
+      if(!name)return material;
+      if(name==='glass')o.castShadow=false;
       // Existing vertex AO must remain active on the original meshes, while the
       // newly authored chunks have their own baked vertex AO/color semantics.
       const ao=Boolean(o.geometry.getAttribute('color'));
-      const key=`${name}:${ao?'ao':'plain'}`;let replacement=this.materials.get(key);
+      const key=`${name}:${ao?'ao':'plain'}:${name==='glass'?material.opacity.toFixed(3):''}`;let replacement=this.materials.get(key);
       if(!replacement){
-        const set=['copper','bronze'].includes(name)?'copper':['metal','obsidian','basalt'].includes(name)?'metal':'concrete';
-        const color={mineral:0xb7b2a7,limestone:0xa49c8d,cold:0x88989b,obsidian:0x151d24,basalt:0x394249,copper:0xc9a87b,metal:0x84949f,bronze:0xbc986b}[name as 'metal'];
-        replacement=new MeshStandardMaterial({name:`orbital-PBR-${name}`,color,map:this.textures.get(`${set}-albedo`),normalMap:this.textures.get(`${set}-normal`),roughnessMap:this.textures.get(`${set}-roughness`),normalScale:new Vector2(set==='concrete'?.24:.32,set==='concrete'?.24:.32),roughness:set==='concrete'?.92:.65,metalness:set==='concrete'?.02:.78,vertexColors:ao,envMapIntensity:set==='concrete'?.35:.65});
-        replacement.userData.sharedOrbitalPBR=true;this.materials.set(key,replacement);
+        if(name==='glass'){
+          // Thin pressure glazing: specular IBL, no transmission prepass or
+          // screen-space refraction that could sample the wrong portal world.
+          replacement=new MeshPhysicalMaterial({name:'atelier-PBR-glass',color:0xb7d4da,metalness:0,roughness:.12,ior:1.46,clearcoat:.35,clearcoatRoughness:.11,transparent:true,opacity:material.opacity,depthWrite:false,side:DoubleSide,envMapIntensity:1.1});
+          replacement.forceSinglePass=true;o.castShadow=false;
+        }else if(name==='luminous'||name==='cool-luminous'){
+          const color=name==='luminous'?0xffd6a0:0xa5d6df;
+          replacement=new MeshStandardMaterial({name:`atelier-PBR-${name}`,color,emissive:color,emissiveIntensity:name==='luminous'?1.8:1.25,roughness:.45,metalness:.12,vertexColors:ao});
+        }else{
+          const finish=FINISHES[name],set=finish.set;
+          const parameters={name:`atelier-PBR-${name}`,color:finish.color,map:this.textures.get(`${set}-albedo`),normalMap:this.textures.get(`${set}-normal`),roughnessMap:this.textures.get(`${set}-roughness`),normalScale:new Vector2(set==='concrete'?.38:.23,set==='concrete'?.38:.23),roughness:finish.roughness,metalness:finish.metalness,vertexColors:ao,envMapIntensity:1};
+          // Reserve the more expensive layered/anisotropic BRDF for machined
+          // fittings. Stone and painted structure use the standard PBR BRDF.
+          replacement=name==='metal'||name==='bronze'?new MeshPhysicalMaterial({...parameters,clearcoat:finish.clearcoat,clearcoatRoughness:.32,anisotropy:name==='metal'?.25:0}):new MeshStandardMaterial(parameters);
+          installArchitecturalFinish(replacement,name);
+        }
+        replacement.userData.sharedOrbitalPBR=true;replacement.userData.finishRole=name;this.materials.set(key,replacement);
       }
       if(material!==replacement){this.retired.add(material);for(const value of Object.values(material)){if(value&&typeof value==='object'&&(value as Texture).isTexture&&!this.texturesHas(value as Texture))this.retiredTextures.add(value as Texture);}}
       return replacement;

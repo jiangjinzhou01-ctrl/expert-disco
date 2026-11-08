@@ -1,6 +1,7 @@
 import RAPIER from '@dimforge/rapier3d-compat';
 import {Quaternion,Vector3} from 'three';
 import data from '../assets/architecture.generated.json';
+import atelier from '../world/atelier-layout.json';
 import type {Portal} from '../../engine/portal/PortalTypes';
 import type {WorldId} from '../../scenes/RoomLayout';
 import {WorldRegistry} from '../world/WorldRegistry';
@@ -39,7 +40,7 @@ export class ChapterPhysics {
  private constructor(readonly registry:WorldRegistry){
   // Gravity is explicit per body: the character's support field never changes the witness or other worlds.
   this.world=new RAPIER.World({x:0,y:0,z:0});this.world.timestep=1/60;
-  for(const b of data.boxes){const worldId:WorldId=b.world==='VESTIBULE'?'A':'B';const off=registry.get(worldId).offset;const c=this.world.createCollider(RAPIER.ColliderDesc.cuboid(b.size[0]/2,b.size[1]/2,b.size[2]/2).setTranslation(b.center[0]+off.x,b.center[1],b.center[2]));this.metadata.set(c.handle,{id:b.id,worldId,walkable:b.walkable,glass:b.glass});if(b.walkable)this.floorBoxes.push({handle:c.handle,slot:worldId,top:b.center[1]+b.size[1]/2});}
+  for(const b of [...data.boxes,...atelier.props.map(p=>({...p,walkable:true,glass:false}))]){const worldId:WorldId=b.world==='VESTIBULE'?'A':'B';const off=registry.get(worldId).offset;const c=this.world.createCollider(RAPIER.ColliderDesc.cuboid(b.size[0]/2,b.size[1]/2,b.size[2]/2).setTranslation(b.center[0]+off.x,b.center[1],b.center[2]));this.metadata.set(c.handle,{id:b.id,worldId,walkable:b.walkable,glass:b.glass});if(b.walkable)this.floorBoxes.push({handle:c.handle,slot:worldId,top:b.center[1]+b.size[1]/2});}
   const v=new Float32Array(data.supportVolume.vertices.flat());for(let i=0;i<v.length;i+=3)v[i]+=100;
   const support=this.world.createCollider(RAPIER.ColliderDesc.trimesh(v,new Uint32Array(data.supportVolume.indices)));this.metadata.set(support.handle,{id:'INVERT-CONTINUOUS-SUPPORT',worldId:'B',walkable:true});
   const terminal=this.world.createCollider(RAPIER.ColliderDesc.cuboid(.22,.22,.22).setTranslation(104.5,5.1,-16.5));this.metadata.set(terminal.handle,{id:'INVERT_TERMINAL',worldId:'B'});

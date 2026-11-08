@@ -1,0 +1,354 @@
+{
+  "generator": "scripts/build-atelier-assets.py",
+  "sharedLayout": "src/chapter/world/atelier-layout.json",
+  "chunks": [
+    {
+      "id": "A-atelier-east",
+      "slot": "A",
+      "description": "Machined gallery benches, bronze tactile inlays and etched wayfinding pylons",
+      "proxy": [
+        {
+          "type": "box",
+          "position": [
+            10.7,
+            0.465,
+            -11
+          ],
+          "size": [
+            0.72,
+            0.11,
+            2.8
+          ],
+          "material": "obsidian"
+        },
+        {
+          "type": "box",
+          "position": [
+            10.7,
+            0.205,
+            -11.92
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            10.7,
+            0.205,
+            -10.08
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            10.7,
+            0.465,
+            1
+          ],
+          "size": [
+            0.72,
+            0.11,
+            2.8
+          ],
+          "material": "obsidian"
+        },
+        {
+          "type": "box",
+          "position": [
+            10.7,
+            0.205,
+            0.07999999999999996
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            10.7,
+            0.205,
+            1.92
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            10.7,
+            0.465,
+            13
+          ],
+          "size": [
+            0.72,
+            0.11,
+            2.8
+          ],
+          "material": "obsidian"
+        },
+        {
+          "type": "box",
+          "position": [
+            10.7,
+            0.205,
+            12.08
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            10.7,
+            0.205,
+            13.92
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            6.4,
+            0.58,
+            -12.8
+          ],
+          "size": [
+            0.32,
+            1.16,
+            0.36
+          ],
+          "material": "obsidian"
+        }
+      ],
+      "file": "A-atelier-east.glb",
+      "bounds": [
+        [
+          6.240000247955322,
+          0.0,
+          -12.980000495910645
+        ],
+        [
+          11.059999465942383,
+          1.159999966621399,
+          14.399999618530273
+        ]
+      ],
+      "triangles": 17628,
+      "bytes": 1132200,
+      "drawCalls": 4
+    },
+    {
+      "id": "A-atelier-west",
+      "slot": "A",
+      "description": "Machined gallery benches, bronze tactile inlays and etched wayfinding pylons",
+      "proxy": [
+        {
+          "type": "box",
+          "position": [
+            -10.7,
+            0.465,
+            -11
+          ],
+          "size": [
+            0.72,
+            0.11,
+            2.8
+          ],
+          "material": "obsidian"
+        },
+        {
+          "type": "box",
+          "position": [
+            -10.7,
+            0.205,
+            -11.92
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            -10.7,
+            0.205,
+            -10.08
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            -10.7,
+            0.465,
+            1
+          ],
+          "size": [
+            0.72,
+            0.11,
+            2.8
+          ],
+          "material": "obsidian"
+        },
+        {
+          "type": "box",
+          "position": [
+            -10.7,
+            0.205,
+            0.07999999999999996
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            -10.7,
+            0.205,
+            1.92
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            -10.7,
+            0.465,
+            13
+          ],
+          "size": [
+            0.72,
+            0.11,
+            2.8
+          ],
+          "material": "obsidian"
+        },
+        {
+          "type": "box",
+          "position": [
+            -10.7,
+            0.205,
+            12.08
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            -10.7,
+            0.205,
+            13.92
+          ],
+          "size": [
+            0.42,
+            0.41,
+            0.2
+          ],
+          "material": "metal"
+        },
+        {
+          "type": "box",
+          "position": [
+            -6.4,
+            0.58,
+            -12.8
+          ],
+          "size": [
+            0.32,
+            1.16,
+            0.36
+          ],
+          "material": "obsidian"
+        }
+      ],
+      "file": "A-atelier-west.glb",
+      "bounds": [
+        [
+          -11.059999465942383,
+          0.0,
+          -12.980000495910645
+        ],
+        [
+          -6.240000247955322,
+          1.159999966621399,
+          14.399999618530273
+        ]
+      ],
+      "triangles": 17628,
+      "bytes": 1132156,
+      "drawCalls": 4
+    },
+    {
+      "id": "B-atelier-surface",
+      "slot": "B",
+      "description": "Continuous curved bronze coping, precision edge inlays and original-axis witness marks",
+      "proxy": [],
+      "file": "B-atelier-surface.glb",
+      "bounds": [
+        [
+          -1.0,
+          0.0,
+          -14.106500625610352
+        ],
+        [
+          4.691999912261963,
+          7.199999809265137,
+          -0.1971612423658371
+        ]
+      ],
+      "triangles": 3620,
+      "bytes": 209972,
+      "drawCalls": 1
+    }
+  ]
+}

@@ -28,7 +28,8 @@ it('decodes every deployed meshopt cell, validates provenance, full topology and
   }
   expect(count,chunk.id).toBe(chunk.triangles);triangles+=count;
  }
- expect(bytes).toBe(manifest.totalBytes);expect(triangles).toBe(manifest.totalTriangles);expect(manifest.chunks).toHaveLength(10);
+ expect(bytes).toBe(manifest.totalBytes);expect(triangles).toBe(manifest.totalTriangles);expect(manifest.chunks).toHaveLength(13);
+ expect(manifest.chunks.filter(c=>c.id.includes('-atelier-')).map(c=>c.id).sort()).toEqual(['A-atelier-east','A-atelier-west','B-atelier-surface']);
 });
 
 it('permanent pressure glazing leaves the portal aperture clear and stays on existing guarded boundaries',()=>{

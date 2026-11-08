@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { ACESFilmicToneMapping, PerspectiveCamera, Vector3 } from 'three';
+import { AgXToneMapping, PerspectiveCamera, Vector3 } from 'three';
 import { InputManager } from '../../input/InputManager';
 import type { Action } from '../../input/ActionBuffer';
 import { ChapterRuntime } from '../runtime/ChapterRuntime';
@@ -47,8 +47,8 @@ function Engine({ ready, progress }: { ready: (r: ChapterRuntime | null) => void
   const { gl, camera, size, viewport } = useThree();
   const ref = useRef<ChapterRuntime | null>(null);
   useEffect(() => {
-    gl.toneMapping = ACESFilmicToneMapping;
-    gl.toneMappingExposure = 1;
+    gl.toneMapping = AgXToneMapping;
+    gl.toneMappingExposure = 1.12;
     const r = new ChapterRuntime(gl, camera as PerspectiveCamera);
     ref.current = r;
     ready(r);
@@ -71,6 +71,11 @@ function saveBlob(blob: Blob, filename: string) {
 }
 
 function MotionButton({ action, label, input, active }: { action: Action; label: string; input: InputManager | null; active?: boolean }) {
+  const paths: Record<Action, string> = {
+    jump: 'M12 20V4m-6 6 6-6 6 6', sprint: 'm4 8 5 4-5 4m8-8 5 4-5 4',
+    crouch: 'M4 19h16M7 14l5-5 5 5M12 9V5', prone: 'M3 16h18M5 11h9l4 3M5 8h.01',
+    brake: 'M7 5v14M17 5v14',
+  };
   const end = (event: React.PointerEvent<HTMLButtonElement>) => {
     event.preventDefault(); event.stopPropagation(); input?.setAction(action, false, event.pointerId);
     if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId);
@@ -78,7 +83,7 @@ function MotionButton({ action, label, input, active }: { action: Action; label:
   return <button aria-label={label} aria-pressed={active} data-action={action} onPointerDown={event => {
     event.preventDefault(); event.stopPropagation(); event.currentTarget.setPointerCapture(event.pointerId);
     input?.setAction(action, true, event.pointerId);
-  }} onPointerUp={end} onPointerCancel={end} onLostPointerCapture={end}>{label}</button>;
+  }} onPointerUp={end} onPointerCancel={end} onLostPointerCapture={end}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={paths[action]}/></svg><span>{label}</span></button>;
 }
 
 export function ChapterView() {
@@ -95,7 +100,7 @@ export function ChapterView() {
   const panelRef = useRef<HTMLElement | null>(null);
   const busyRef = useRef(false); busyRef.current = panel !== null || photo;
   const priorPause = useRef(false);
-  const photoWasActive = useRef(false);
+  const overlayWasActive = useRef(false);
   const touch = navigator.maxTouchPoints > 0 || matchMedia('(pointer: coarse)').matches;
   const onReady = useCallback((r: ChapterRuntime | null) => setRuntime(r), []);
   const onProgress = useCallback((s: Snapshot) => setStats(s), []);
@@ -183,10 +188,11 @@ export function ChapterView() {
     inputRef.current?.clear();runtime?.controller?.clearBufferedActions();
     if ((panel || photo) && document.pointerLockElement) document.exitPointerLock();
     if (!runtime) return;
-    if (photo && !photoWasActive.current) {
+    const shouldPause = photo || panel !== null;
+    if (shouldPause && !overlayWasActive.current) {
       priorPause.current = runtime.paused; runtime.paused = true; runtime.tick(0);
-    } else if (!photo && photoWasActive.current) runtime.paused = priorPause.current;
-    photoWasActive.current = photo;
+    } else if (!shouldPause && overlayWasActive.current) runtime.paused = priorPause.current;
+    overlayWasActive.current = shouldPause;
   }, [panel, photo, runtime]);
   useEffect(() => {
     if (!panel) return;
@@ -218,7 +224,7 @@ export function ChapterView() {
       <Engine ready={onReady} progress={onProgress}/>
     </Canvas>
     {!photo && <>
-      <header className="chapter-header"><a href="?" aria-label="THRESHOLD 门界"><span className="chapter-mark" aria-hidden="true"/>THRESHOLD <span className="chapter-chinese">门界</span></a><div className="chapter-edition">THE FIRST THRESHOLD<span>V0.3 / MOVEMENT PREVIEW</span></div></header>
+      <header className="chapter-header"><a href="?" aria-label="THRESHOLD 门界"><span className="chapter-mark" aria-hidden="true"/>THRESHOLD <span className="chapter-chinese">门界</span></a><div className="chapter-edition">AN EXPLORATION OF ELSEWHERE<span>01 — ORBITAL EDITION</span></div></header>
       <nav className="chapter-nav" aria-label="体验控制">
         <button aria-label="声音" title={preferences.muted ? '开启声音' : '静音'} aria-pressed={!preferences.muted} onClick={() => changePreference('muted', !preferences.muted)}><Icon name={preferences.muted ? 'muted' : 'sound'}/></button>
         <button aria-label="摄影模式" title="摄影模式 / P" onClick={() => { setPanel(null); setPhoto(true); }}><Icon name="camera"/></button>
@@ -226,7 +232,7 @@ export function ChapterView() {
         <button aria-label="设置" title="设置" aria-expanded={panel === 'settings'} onClick={() => { setDebug(false); setPanel(v => v === 'settings' ? null : 'settings'); }}><Icon name="settings"/></button>
       </nav>
       <div className="chapter-reticle" aria-hidden="true"/>
-      <footer className="chapter-footer"><div className="chapter-coordinate"><span className="chapter-dot"/>{s?.world === 'INVERT' ? '02 / INVERT' : '01 / VESTIBULE'}<i>{s?.returned ? 'RESONANCE ESTABLISHED' : 'ORBITAL STATION'}</i></div><p>{hint}</p><small>{touch ? '左侧移动 · 右侧观察' : 'WASD 移动 · 拖动观察 · 双击锁定鼠标'}<button aria-label="操作帮助" onClick={() => setPanel('help')}>操作指南 <span>↗</span></button></small></footer>
+      <footer className="chapter-footer"><div className="chapter-coordinate"><span className="chapter-dot"/>{s?.world === 'INVERT' ? '02 / INVERT' : '01 / VESTIBULE'}<i>{s?.returned ? 'RESONANCE ESTABLISHED' : 'ORBITAL STATION'}</i></div><h1 className="chapter-location">{s?.returned ? '归来，已不再相同。' : s?.world === 'INVERT' ? '另一种向上。' : '在世界之间。'}</h1><p>{hint}</p><small>{touch ? '左侧移动 · 右侧观察' : 'WASD 移动 · 拖动观察 · 双击锁定鼠标'}<button aria-label="操作帮助" onClick={() => setPanel('help')}>操作指南 <span>↗</span></button></small></footer>
       {!preferences.tutorialSeen && isReady && !panel && <div className="chapter-first-hint" role="status"><span>{touch ? '用左手移动，用右手探索。' : '按 W 向前，按住鼠标拖动观察。'}</span><button onClick={dismissTutorial} aria-label="关闭操作提示">知道了</button></div>}
       {touch && !panel && <div className="chapter-touch" aria-hidden="true"><div className="chapter-joystick" ref={joystickRef}><span className="chapter-joystick-cross"/><i/><small>MOVE</small></div><div className="chapter-look"><span>＋</span><small>LOOK</small></div><small className="chapter-landscape">横屏体验更佳</small></div>}
       {touch && !panel && <div className="chapter-motion-controls" aria-label="移动动作" style={{ '--motion-scale': preferences.touchSize, opacity: preferences.touchOpacity } as React.CSSProperties}>
@@ -244,7 +250,7 @@ export function ChapterView() {
       </div>}
     </>}
 
-    {(!runtime?.ready || !isReady) && <div className="chapter-loading" role="status" aria-live="polite"><div className="chapter-loading-mark"/><span className="chapter-eyebrow">THE FIRST THRESHOLD</span><h1>Between worlds.</h1><p>{runtime?.error ?? loading?.stage ?? '正在准备轨道空间'}</p><div className="chapter-progress" role="progressbar" aria-label="场景加载" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round((loading?.progress ?? 0) * 100)}><i style={{ width: `${Math.round((loading?.progress ?? 0) * 100)}%` }}/></div><small>{runtime?.error ? '资源未能完成加载' : '建筑 · 光线 · 物理空间'}</small>{runtime?.error && <button onClick={() => location.reload()}>重新载入</button>}</div>}
+    {(!runtime?.ready || !isReady) && <div className="chapter-loading" role="status" aria-live="polite"><div className="chapter-loading-mark"/><span className="chapter-eyebrow">THRESHOLD / 门界</span><h1>The art of<br/><em>elsewhere.</em></h1><p>{runtime?.error ?? loading?.stage ?? '正在准备轨道空间'}</p><div className="chapter-progress" role="progressbar" aria-label="场景加载" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round((loading?.progress ?? 0) * 100)}><i style={{ width: `${Math.round((loading?.progress ?? 0) * 100)}%` }}/></div><small>{runtime?.error ? '资源未能完成加载' : '建筑 · 光线 · 自由探索'}</small>{runtime?.error && <button onClick={() => location.reload()}>重新载入</button>}</div>}
 
     {panel && <div className="chapter-panel-shade" onPointerDown={event => { if (event.target === event.currentTarget) setPanel(null); }}><aside ref={panelRef} className="chapter-panel" onKeyDown={event => {
       if (event.key !== 'Tab') return;
@@ -283,7 +289,7 @@ export function ChapterView() {
         </>}
         {panel === 'observatory' && <><p className="chapter-panel-intro">环冠的日夜分界缓缓移动。站在舷窗前，沿轨道设施望向远处的星环。</p><div className="chapter-help-card"><span>AUREOLE · PELAGIC · SELENE</span><p>巨行星与星环位于前厅左上方；深蓝色的 Pelagic 在右侧远空，静月 Selene 悬在舱体后方。你所处的是一座悬浮的轨道观测站。</p></div><dl className="chapter-controls"><div><dt>天体</dt><dd>11 个三维天体</dd></div><div><dt>观测</dt><dd>行星自转、日夜分界、星环阴影</dd></div><div><dt>位置</dt><dd>艺术化轨道构图，非真实太阳系比例</dd></div></dl><button className="chapter-primary" onClick={()=>setPanel(null)}>返回舷窗 <span>→</span></button></>}
         {panel === 'help' && <><p className="chapter-panel-intro">慢慢走，抬头看。这个空间允许你随时停下、回头，再次穿过门界。</p><dl className="chapter-controls"><div><dt>移动</dt><dd>{touch ? '屏幕左侧摇杆' : 'W A S D / 方向键'}</dd></div><div><dt>观察</dt><dd>{touch ? '屏幕右侧滑动，快滑可加速' : '按住鼠标拖动 / 双击锁定'}</dd></div><div><dt>互动</dt><dd>{touch ? '点按出现的操作按钮' : 'E / 点击操作按钮'}</dd></div><div><dt>安全复位</dt><dd>{touch ? '右上角 ↺' : 'R / 右上角 ↺'}</dd></div><div><dt>动作</dt><dd>{touch ? '右下方跳跃 / 蹲下 / 趴下 / 冲刺' : 'Space 跳跃 · Shift 冲刺 · Ctrl 蹲 · Z 趴'}</dd></div><div><dt>失重</dt><dd>{touch ? '上升 / 下降 / 制动按钮' : 'Space 上升 · Ctrl 下降 · X 制动'}</dd></div><div><dt>摄影</dt><dd>{touch ? '右上角相机' : 'P / 右上角相机'}</dd></div><div><dt>关闭面板</dt><dd>{touch ? '面板右上角 ×' : 'Esc / 面板右上角 ×'}</dd></div></dl><div className="chapter-help-card"><span>01 → 02 → 01</span><p>走出轨道舱，绕过庭院，穿越门界。循弧面站上墙壁，激活终端，再沿原路返回。</p></div><button className="chapter-primary" onClick={() => { dismissTutorial(); setPanel(null); }}>继续探索 <span>→</span></button></>}
-        {panel === 'about' && <><p className="chapter-panel-intro">THRESHOLD / 门界是一件实时空间作品。在悬浮的建筑中，观察另一侧的世界，跨过门，重新认识「向上」。</p><div className="chapter-about-title">A quiet encounter<br/>with impossible space.</div><p className="chapter-setting-note">门内画面实时渲染。穿越保留真实位置与方向；弧面上的身体、碰撞与重力同步转向。</p><section className="chapter-credits"><h3>制作与资源 / CREDITS</h3><p>定制建筑、轨道装置、实时传送与局部重力系统。</p><p>行星贴图：<a href="https://www.solarsystemscope.com/textures/" target="_blank" rel="noreferrer">Solar System Scope</a> · CC BY 4.0。材质及其他第三方资源的具体使用记录见工程资产清单。</p><a href="https://github.com/jiangjinzhou01-ctrl/expert-disco/tree/threshold-v02" target="_blank" rel="noreferrer">查看工程与制作记录 ↗</a></section><button className="chapter-primary" onClick={() => setPanel(null)}>返回空间 <span>→</span></button></>}
+        {panel === 'about' && <><p className="chapter-panel-intro">THRESHOLD / 门界是一件实时空间作品。在悬浮的建筑中，观察另一侧的世界，跨过门，重新认识「向上」。</p><div className="chapter-about-title">A quiet encounter<br/>with impossible space.</div><p className="chapter-setting-note">门内画面实时渲染。穿越保留真实位置与方向；弧面上的身体、碰撞与重力同步转向。</p><section className="chapter-credits"><h3>制作与资源 / CREDITS</h3><p>定制建筑、轨道装置、实时传送与局部重力系统。</p><p>行星贴图：<a href="https://www.solarsystemscope.com/textures/" target="_blank" rel="noreferrer">Solar System Scope</a> · CC BY 4.0。材质及其他第三方资源的具体使用记录见工程资产清单。</p><a href="https://github.com/jiangjinzhou01-ctrl/expert-disco/tree/feat/v03-art-direction" target="_blank" rel="noreferrer">查看工程与制作记录 ↗</a></section><button className="chapter-primary" onClick={() => setPanel(null)}>返回空间 <span>→</span></button></>}
       </div>
     </aside></div>}
 
