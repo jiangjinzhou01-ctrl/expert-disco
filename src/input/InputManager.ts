@@ -1,6 +1,12 @@
 import { DesktopInput } from './DesktopInput';
 import type { InputCallbacks } from './DesktopInput';
 import { TouchInput } from './TouchInput';
+import { DEFAULT_LOOK_SETTINGS, type LookSettings } from './LookResponse';
+
+export interface InputOptions {
+  /** Chapter enables this; G0-LAB retains its original linear regression profile. */
+  enhancedTouchLook?: boolean;
+}
 
 /** One event-input adapter read by the fixed-step ExperienceLoop. */
 export class InputManager {
@@ -10,12 +16,19 @@ export class InputManager {
   private readonly initialTouch: boolean;
   private readonly previousTouchAction: string;
 
-  constructor(private readonly canvas: HTMLElement, callbacks: InputCallbacks) {
+  constructor(private readonly canvas: HTMLElement, callbacks: InputCallbacks, options: InputOptions = {}) {
     this.previousTouchAction = canvas.style.touchAction;
     canvas.style.touchAction = 'none';
     this.initialTouch = navigator.maxTouchPoints > 0 || window.matchMedia('(pointer: coarse)').matches;
-    this.desktop = new DesktopInput(canvas, callbacks);
-    this.touchscreen = new TouchInput(canvas, callbacks);
+    this.touchscreen = new TouchInput(canvas, callbacks, options.enhancedTouchLook ?? false);
+    this.desktop = new DesktopInput(canvas, {
+      ...callbacks,
+      look: (x, y) => {
+        const settings = this.touchscreen.lookResponse.settings;
+        const gain = settings.sensitivity / DEFAULT_LOOK_SETTINGS.sensitivity;
+        callbacks.look(x * gain, y * gain * (settings.invertY ? -1 : 1));
+      },
+    });
     window.addEventListener('blur', this.clear);
     document.addEventListener('visibilitychange', this.visibilityChange);
     window.addEventListener('orientationchange', this.clear);
@@ -37,6 +50,9 @@ export class InputManager {
 
   get touch(): boolean { return this.initialTouch || this.touchscreen.used; }
   get touchState() { return this.touchscreen.state; }
+  get lookSettings() { return this.touchscreen.lookResponse.settings; }
+  get lookDiagnostics() { return this.touchscreen.lookResponse.snapshot; }
+  setLookSettings(settings: Partial<LookSettings>): void { this.touchscreen.setLookSettings(settings); }
 
   readonly clear = (): void => {
     this.desktop.clear();

@@ -26,8 +26,13 @@ test('V02: offscreen portal culling, resizing, context restoration, and checkpoi
  await chapterReady(page);await page.evaluate(()=>{const a=window.__V02_TEST__!;a.place([0,0,-15],'A');a.look(0,0);a.render();});expect((await chapterRead(page)).render.passes).toBe(1);
  const allocations=(await chapterRead(page)).render.targetResizes;await page.evaluate(()=>{for(let i=0;i<8;i++)window.__V02_TEST__!.render();});expect((await chapterRead(page)).render.targetResizes).toBe(allocations);
  await page.evaluate(()=>{window.__V02_TEST__!.look(-Math.PI/.0025,0);window.__V02_TEST__!.render();});expect((await chapterRead(page)).render.passes).toBe(0);
- const before=(await chapterRead(page)).render;for(const [width,height]of [[1170,540],[1200,540],[960,540]]){await page.setViewportSize({width,height});await page.waitForFunction(ratio=>Math.abs(window.__V02_TEST__!.runtime.camera.aspect-ratio)<.0001,width/height);await page.evaluate(()=>window.__V02_TEST__!.render());}
- const resized=(await chapterRead(page)).render;expect(resized.geometries).toBeLessThanOrEqual(before.geometries+1);expect(resized.textures).toBeLessThanOrEqual(before.textures+2);
+ // A wider view legitimately loads new cells and retains them for six seconds.
+ // Warm the exact viewport sequence before asserting repeated resize allocations.
+ const sizes=[[1170,540],[1200,540],[960,540]];
+ async function resizeCycle(){for(const [width,height]of sizes){await page.setViewportSize({width,height});await page.waitForFunction(ratio=>Math.abs(window.__V02_TEST__!.runtime.camera.aspect-ratio)<.0001,width/height);await page.evaluate(async()=>{const a=window.__V02_TEST__!;a.render();await a.runtime.streaming.settle();a.render();});}}
+ await resizeCycle();const before=(await chapterRead(page)).render;
+ await resizeCycle();const resized=(await chapterRead(page)).render;
+ expect(resized.geometries).toBeLessThanOrEqual(before.geometries+1);expect(resized.textures).toBeLessThanOrEqual(before.textures+2);
  const supported=await page.evaluate(()=>{const gl=window.__V02_TEST__!.runtime.gl.getContext();const e=gl.getExtension('WEBGL_lose_context');if(!e)return false;e.loseContext();setTimeout(()=>e.restoreContext(),150);return true;});expect(supported).toBe(true);await page.waitForTimeout(500);await page.evaluate(()=>window.__V02_TEST__!.render());expect((await chapterRead(page)).render.context).toBe('active');
  await page.getByRole('button',{name:'安全复位'}).click();expect((await chapterRead(page)).foot.every(Number.isFinite)).toBe(true);const after=await chapterRead(page);const disposed=await page.evaluate(()=>{const a=window.__V02_TEST__!;a.runtime.dispose();return {ready:a.runtime.ready,memory:{...a.runtime.gl.info.memory}};});expect(disposed.ready).toBe(false);expect(disposed.memory.geometries).toBe(0);expect(disposed.memory.textures).toBe(0);await writeFile('evidence/v02/lifecycle.json',JSON.stringify({before,resized,after,disposed},null,2));
 });

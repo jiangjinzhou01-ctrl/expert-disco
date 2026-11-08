@@ -1,0 +1,1190 @@
+{
+  "version": 1,
+  "generator": "scripts/compress-orbital-textures.py",
+  "format": "KTX2/UASTC + Zstandard",
+  "encoder": {
+    "version": "4.4.2",
+    "officialPackage": "https://github.com/KhronosGroup/KTX-Software/releases/download/v4.4.2/KTX-Software-4.4.2-Linux-x86_64.deb",
+    "officialPackageSha256": "ca635ed489d8bf54fac8d7687056c651193de0740830a7738cc034adc63e3027",
+    "binarySha256": "2a11939550fcc2d9b324c66d08f756ce3f512c8a02f6f5b03885e1a8b28f67f4"
+  },
+  "ktx2Bytes": 6714783,
+  "jpegFallbackBytes": 1783030,
+  "estimatedGpuPayloadBytes": {
+    "RGBA8Mipmapped": 50331636,
+    "ASTC4x4OrBC7Mipmapped": 12583152,
+    "ETC2RGBMipmapped": 6291576
+  },
+  "estimatesNote": "Texture payload estimates only. These are not measured GPU allocation statistics or FPS. Actual runtime transcoding depends on WebGL compressed-texture extensions. JPEG is smaller over the network in this dataset; KTX2 adds offline mipmaps and reduces supported GPU residency.",
+  "transcoder": {
+    "source": "three@0.187.0/examples/jsm/libs/basis",
+    "license": "Apache-2.0",
+    "licenseSource": "https://github.com/BinomialLLC/basis_universal/blob/2e18939796bfb0784e30d4ec0eb69a0554391b7c/LICENSE",
+    "files": [
+      {
+        "file": "basis_transcoder.js",
+        "bytes": 57529,
+        "sha256": "8478b5b6d6b74e7d3082b89f6417321d8d1dc0307f2b30d4484bb11b441696a1"
+      },
+      {
+        "file": "basis_transcoder.wasm",
+        "bytes": 527333,
+        "sha256": "6cf17dc889352c42e9acf8897107978d127005fe3386c36a0e3845e27967630a"
+      },
+      {
+        "file": "README.md",
+        "bytes": 1388,
+        "sha256": "a578df416c1e0852e9c36a1cf91b4d28d91a251294f87ce610a3bc7ca4df15e0"
+      },
+      {
+        "file": "LICENSE",
+        "bytes": 11347,
+        "sha256": "065fcf48d6af21c0b75e23be5ed5753aee75c892e1c2cf178fa6736305614a5c"
+      },
+      {
+        "file": "THREE-LICENSE",
+        "bytes": 1081,
+        "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+      }
+    ]
+  },
+  "textures": [
+    {
+      "file": "concrete-albedo.ktx2",
+      "semantic": "albedo",
+      "bytes": 932004,
+      "sha256": "e3b73c8a78ee45c0d079d729d0b774142cc38245bf8bd15e4adab023db437929",
+      "source": "concrete-albedo.jpg",
+      "sourceSha256": "100b70b53fed826b41b3784fb88b9dfd9d2fa51d4a1637451fc4f0b7326109fe",
+      "encoderArguments": [
+        "--t2",
+        "--genmipmap",
+        "--encode",
+        "uastc",
+        "--uastc_quality",
+        "3",
+        "--uastc_rdo_l",
+        "1",
+        "--uastc_rdo_m",
+        "--zcmp",
+        "18",
+        "--threads",
+        "2",
+        "--lower_left_maps_to_s0t0",
+        "--assign_oetf",
+        "srgb",
+        "--assign_primaries",
+        "bt709"
+      ],
+      "validation": "ktx2check --warn-as-error passed",
+      "header": {
+        "width": 1024,
+        "height": 1024,
+        "mipLevels": 11,
+        "supercompression": "Zstandard",
+        "dfdColorModel": 166,
+        "dfdPrimaries": 1,
+        "dfdTransferFunction": 2,
+        "dfdFlags": 0,
+        "orientation": "ru",
+        "mips": [
+          {
+            "level": 0,
+            "width": 1024,
+            "height": 1024,
+            "encodedBytes": 679785,
+            "uastcBytes": 1048576
+          },
+          {
+            "level": 1,
+            "width": 512,
+            "height": 512,
+            "encodedBytes": 194016,
+            "uastcBytes": 262144
+          },
+          {
+            "level": 2,
+            "width": 256,
+            "height": 256,
+            "encodedBytes": 44667,
+            "uastcBytes": 65536
+          },
+          {
+            "level": 3,
+            "width": 128,
+            "height": 128,
+            "encodedBytes": 9642,
+            "uastcBytes": 16384
+          },
+          {
+            "level": 4,
+            "width": 64,
+            "height": 64,
+            "encodedBytes": 2452,
+            "uastcBytes": 4096
+          },
+          {
+            "level": 5,
+            "width": 32,
+            "height": 32,
+            "encodedBytes": 583,
+            "uastcBytes": 1024
+          },
+          {
+            "level": 6,
+            "width": 16,
+            "height": 16,
+            "encodedBytes": 174,
+            "uastcBytes": 256
+          },
+          {
+            "level": 7,
+            "width": 8,
+            "height": 8,
+            "encodedBytes": 58,
+            "uastcBytes": 64
+          },
+          {
+            "level": 8,
+            "width": 4,
+            "height": 4,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          },
+          {
+            "level": 9,
+            "width": 2,
+            "height": 2,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          },
+          {
+            "level": 10,
+            "width": 1,
+            "height": 1,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          }
+        ]
+      },
+      "estimatedGpuPayloadBytes": {
+        "RGBA8Mipmapped": 5592404,
+        "ASTC4x4OrBC7Mipmapped": 1398128,
+        "ETC2RGBMipmapped": 699064,
+        "note": "Estimated block payload bytes, excluding driver allocations. Runtime actual compressed format and mip payloads are measured separately; unsupported GPUs may use RGBA8 fallback."
+      }
+    },
+    {
+      "file": "concrete-roughness.ktx2",
+      "semantic": "roughness",
+      "bytes": 959251,
+      "sha256": "610cdd60fd93effd8157326446a72984de6764fcbf8a9fa364b66bc29dcd8470",
+      "source": "concrete-roughness.jpg",
+      "sourceSha256": "9c8a1d425220dddfcf31f363731b8c96c0f193dbb8b8d47395f7fb7f14628c64",
+      "encoderArguments": [
+        "--t2",
+        "--genmipmap",
+        "--encode",
+        "uastc",
+        "--uastc_quality",
+        "3",
+        "--uastc_rdo_l",
+        "1",
+        "--uastc_rdo_m",
+        "--zcmp",
+        "18",
+        "--threads",
+        "2",
+        "--lower_left_maps_to_s0t0",
+        "--assign_oetf",
+        "linear",
+        "--assign_primaries",
+        "none"
+      ],
+      "validation": "ktx2check --warn-as-error passed",
+      "header": {
+        "width": 1024,
+        "height": 1024,
+        "mipLevels": 11,
+        "supercompression": "Zstandard",
+        "dfdColorModel": 166,
+        "dfdPrimaries": 0,
+        "dfdTransferFunction": 1,
+        "dfdFlags": 0,
+        "orientation": "ru",
+        "mips": [
+          {
+            "level": 0,
+            "width": 1024,
+            "height": 1024,
+            "encodedBytes": 729973,
+            "uastcBytes": 1048576
+          },
+          {
+            "level": 1,
+            "width": 512,
+            "height": 512,
+            "encodedBytes": 177117,
+            "uastcBytes": 262144
+          },
+          {
+            "level": 2,
+            "width": 256,
+            "height": 256,
+            "encodedBytes": 40461,
+            "uastcBytes": 65536
+          },
+          {
+            "level": 3,
+            "width": 128,
+            "height": 128,
+            "encodedBytes": 8478,
+            "uastcBytes": 16384
+          },
+          {
+            "level": 4,
+            "width": 64,
+            "height": 64,
+            "encodedBytes": 1901,
+            "uastcBytes": 4096
+          },
+          {
+            "level": 5,
+            "width": 32,
+            "height": 32,
+            "encodedBytes": 473,
+            "uastcBytes": 1024
+          },
+          {
+            "level": 6,
+            "width": 16,
+            "height": 16,
+            "encodedBytes": 148,
+            "uastcBytes": 256
+          },
+          {
+            "level": 7,
+            "width": 8,
+            "height": 8,
+            "encodedBytes": 73,
+            "uastcBytes": 64
+          },
+          {
+            "level": 8,
+            "width": 4,
+            "height": 4,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          },
+          {
+            "level": 9,
+            "width": 2,
+            "height": 2,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          },
+          {
+            "level": 10,
+            "width": 1,
+            "height": 1,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          }
+        ]
+      },
+      "estimatedGpuPayloadBytes": {
+        "RGBA8Mipmapped": 5592404,
+        "ASTC4x4OrBC7Mipmapped": 1398128,
+        "ETC2RGBMipmapped": 699064,
+        "note": "Estimated block payload bytes, excluding driver allocations. Runtime actual compressed format and mip payloads are measured separately; unsupported GPUs may use RGBA8 fallback."
+      }
+    },
+    {
+      "file": "concrete-normal.ktx2",
+      "semantic": "normal",
+      "bytes": 1059398,
+      "sha256": "a98bb3d5ff6c83d629983c1e9510e20d4bcd0b8712f10095c4135e844b9894fa",
+      "source": "concrete-normal.jpg",
+      "sourceSha256": "d87621aeb8458ae66bc0987606b4a3ddb5977c5d20bb9a6a0efba390b0387817",
+      "encoderArguments": [
+        "--t2",
+        "--genmipmap",
+        "--encode",
+        "uastc",
+        "--uastc_quality",
+        "3",
+        "--uastc_rdo_l",
+        "0.25",
+        "--uastc_rdo_m",
+        "--zcmp",
+        "18",
+        "--threads",
+        "2",
+        "--lower_left_maps_to_s0t0",
+        "--assign_oetf",
+        "linear",
+        "--assign_primaries",
+        "none",
+        "--normal_mode",
+        "--normalize",
+        "--input_swizzle",
+        "rgb1"
+      ],
+      "validation": "ktx2check --warn-as-error passed",
+      "header": {
+        "width": 1024,
+        "height": 1024,
+        "mipLevels": 11,
+        "supercompression": "Zstandard",
+        "dfdColorModel": 166,
+        "dfdPrimaries": 0,
+        "dfdTransferFunction": 1,
+        "dfdFlags": 0,
+        "orientation": "ru",
+        "mips": [
+          {
+            "level": 0,
+            "width": 1024,
+            "height": 1024,
+            "encodedBytes": 808792,
+            "uastcBytes": 1048576
+          },
+          {
+            "level": 1,
+            "width": 512,
+            "height": 512,
+            "encodedBytes": 195280,
+            "uastcBytes": 262144
+          },
+          {
+            "level": 2,
+            "width": 256,
+            "height": 256,
+            "encodedBytes": 45008,
+            "uastcBytes": 65536
+          },
+          {
+            "level": 3,
+            "width": 128,
+            "height": 128,
+            "encodedBytes": 6926,
+            "uastcBytes": 16384
+          },
+          {
+            "level": 4,
+            "width": 64,
+            "height": 64,
+            "encodedBytes": 1999,
+            "uastcBytes": 4096
+          },
+          {
+            "level": 5,
+            "width": 32,
+            "height": 32,
+            "encodedBytes": 497,
+            "uastcBytes": 1024
+          },
+          {
+            "level": 6,
+            "width": 16,
+            "height": 16,
+            "encodedBytes": 171,
+            "uastcBytes": 256
+          },
+          {
+            "level": 7,
+            "width": 8,
+            "height": 8,
+            "encodedBytes": 70,
+            "uastcBytes": 64
+          },
+          {
+            "level": 8,
+            "width": 4,
+            "height": 4,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          },
+          {
+            "level": 9,
+            "width": 2,
+            "height": 2,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          },
+          {
+            "level": 10,
+            "width": 1,
+            "height": 1,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          }
+        ]
+      },
+      "estimatedGpuPayloadBytes": {
+        "RGBA8Mipmapped": 5592404,
+        "ASTC4x4OrBC7Mipmapped": 1398128,
+        "ETC2RGBMipmapped": 699064,
+        "note": "Estimated block payload bytes, excluding driver allocations. Runtime actual compressed format and mip payloads are measured separately; unsupported GPUs may use RGBA8 fallback."
+      }
+    },
+    {
+      "file": "metal-albedo.ktx2",
+      "semantic": "albedo",
+      "bytes": 309231,
+      "sha256": "c038ccae370ea483b27c73b7b872453c83b8623b04ec49d6d0afd88b99fee848",
+      "source": "metal-albedo.jpg",
+      "sourceSha256": "c1a6677f2fdb70baa821b32e7de21dbb9acb58fc19543a435187ffbfda7697da",
+      "encoderArguments": [
+        "--t2",
+        "--genmipmap",
+        "--encode",
+        "uastc",
+        "--uastc_quality",
+        "3",
+        "--uastc_rdo_l",
+        "1",
+        "--uastc_rdo_m",
+        "--zcmp",
+        "18",
+        "--threads",
+        "2",
+        "--lower_left_maps_to_s0t0",
+        "--assign_oetf",
+        "srgb",
+        "--assign_primaries",
+        "bt709"
+      ],
+      "validation": "ktx2check --warn-as-error passed",
+      "header": {
+        "width": 1024,
+        "height": 1024,
+        "mipLevels": 11,
+        "supercompression": "Zstandard",
+        "dfdColorModel": 166,
+        "dfdPrimaries": 1,
+        "dfdTransferFunction": 2,
+        "dfdFlags": 0,
+        "orientation": "ru",
+        "mips": [
+          {
+            "level": 0,
+            "width": 1024,
+            "height": 1024,
+            "encodedBytes": 224994,
+            "uastcBytes": 1048576
+          },
+          {
+            "level": 1,
+            "width": 512,
+            "height": 512,
+            "encodedBytes": 60112,
+            "uastcBytes": 262144
+          },
+          {
+            "level": 2,
+            "width": 256,
+            "height": 256,
+            "encodedBytes": 15912,
+            "uastcBytes": 65536
+          },
+          {
+            "level": 3,
+            "width": 128,
+            "height": 128,
+            "encodedBytes": 5083,
+            "uastcBytes": 16384
+          },
+          {
+            "level": 4,
+            "width": 64,
+            "height": 64,
+            "encodedBytes": 1723,
+            "uastcBytes": 4096
+          },
+          {
+            "level": 5,
+            "width": 32,
+            "height": 32,
+            "encodedBytes": 529,
+            "uastcBytes": 1024
+          },
+          {
+            "level": 6,
+            "width": 16,
+            "height": 16,
+            "encodedBytes": 185,
+            "uastcBytes": 256
+          },
+          {
+            "level": 7,
+            "width": 8,
+            "height": 8,
+            "encodedBytes": 66,
+            "uastcBytes": 64
+          },
+          {
+            "level": 8,
+            "width": 4,
+            "height": 4,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          },
+          {
+            "level": 9,
+            "width": 2,
+            "height": 2,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          },
+          {
+            "level": 10,
+            "width": 1,
+            "height": 1,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          }
+        ]
+      },
+      "estimatedGpuPayloadBytes": {
+        "RGBA8Mipmapped": 5592404,
+        "ASTC4x4OrBC7Mipmapped": 1398128,
+        "ETC2RGBMipmapped": 699064,
+        "note": "Estimated block payload bytes, excluding driver allocations. Runtime actual compressed format and mip payloads are measured separately; unsupported GPUs may use RGBA8 fallback."
+      }
+    },
+    {
+      "file": "metal-roughness.ktx2",
+      "semantic": "roughness",
+      "bytes": 728327,
+      "sha256": "88e36ea5a2e09365aa854af7b10d26a2320a0857e89bfc45e47c6c47608d44d9",
+      "source": "metal-roughness.jpg",
+      "sourceSha256": "c255c68063cf079683d915a936bb76267aced0ab1822671932d7cbfb380d4f10",
+      "encoderArguments": [
+        "--t2",
+        "--genmipmap",
+        "--encode",
+        "uastc",
+        "--uastc_quality",
+        "3",
+        "--uastc_rdo_l",
+        "1",
+        "--uastc_rdo_m",
+        "--zcmp",
+        "18",
+        "--threads",
+        "2",
+        "--lower_left_maps_to_s0t0",
+        "--assign_oetf",
+        "linear",
+        "--assign_primaries",
+        "none"
+      ],
+      "validation": "ktx2check --warn-as-error passed",
+      "header": {
+        "width": 1024,
+        "height": 1024,
+        "mipLevels": 11,
+        "supercompression": "Zstandard",
+        "dfdColorModel": 166,
+        "dfdPrimaries": 0,
+        "dfdTransferFunction": 1,
+        "dfdFlags": 0,
+        "orientation": "ru",
+        "mips": [
+          {
+            "level": 0,
+            "width": 1024,
+            "height": 1024,
+            "encodedBytes": 514272,
+            "uastcBytes": 1048576
+          },
+          {
+            "level": 1,
+            "width": 512,
+            "height": 512,
+            "encodedBytes": 155491,
+            "uastcBytes": 262144
+          },
+          {
+            "level": 2,
+            "width": 256,
+            "height": 256,
+            "encodedBytes": 41998,
+            "uastcBytes": 65536
+          },
+          {
+            "level": 3,
+            "width": 128,
+            "height": 128,
+            "encodedBytes": 11453,
+            "uastcBytes": 16384
+          },
+          {
+            "level": 4,
+            "width": 64,
+            "height": 64,
+            "encodedBytes": 3241,
+            "uastcBytes": 4096
+          },
+          {
+            "level": 5,
+            "width": 32,
+            "height": 32,
+            "encodedBytes": 920,
+            "uastcBytes": 1024
+          },
+          {
+            "level": 6,
+            "width": 16,
+            "height": 16,
+            "encodedBytes": 252,
+            "uastcBytes": 256
+          },
+          {
+            "level": 7,
+            "width": 8,
+            "height": 8,
+            "encodedBytes": 73,
+            "uastcBytes": 64
+          },
+          {
+            "level": 8,
+            "width": 4,
+            "height": 4,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          },
+          {
+            "level": 9,
+            "width": 2,
+            "height": 2,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          },
+          {
+            "level": 10,
+            "width": 1,
+            "height": 1,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          }
+        ]
+      },
+      "estimatedGpuPayloadBytes": {
+        "RGBA8Mipmapped": 5592404,
+        "ASTC4x4OrBC7Mipmapped": 1398128,
+        "ETC2RGBMipmapped": 699064,
+        "note": "Estimated block payload bytes, excluding driver allocations. Runtime actual compressed format and mip payloads are measured separately; unsupported GPUs may use RGBA8 fallback."
+      }
+    },
+    {
+      "file": "metal-normal.ktx2",
+      "semantic": "normal",
+      "bytes": 380819,
+      "sha256": "2dda9c1f34670d9292b65171b0281777221ecb56d4cc4db22855c3ee2ae46cbe",
+      "source": "metal-normal.jpg",
+      "sourceSha256": "4dc8d0139ecfde1cc1bff9e8aaaf68f00fbdc2e894daa20e804bcdfb0970a292",
+      "encoderArguments": [
+        "--t2",
+        "--genmipmap",
+        "--encode",
+        "uastc",
+        "--uastc_quality",
+        "3",
+        "--uastc_rdo_l",
+        "0.25",
+        "--uastc_rdo_m",
+        "--zcmp",
+        "18",
+        "--threads",
+        "2",
+        "--lower_left_maps_to_s0t0",
+        "--assign_oetf",
+        "linear",
+        "--assign_primaries",
+        "none",
+        "--normal_mode",
+        "--normalize",
+        "--input_swizzle",
+        "rgb1"
+      ],
+      "validation": "ktx2check --warn-as-error passed",
+      "header": {
+        "width": 1024,
+        "height": 1024,
+        "mipLevels": 11,
+        "supercompression": "Zstandard",
+        "dfdColorModel": 166,
+        "dfdPrimaries": 0,
+        "dfdTransferFunction": 1,
+        "dfdFlags": 0,
+        "orientation": "ru",
+        "mips": [
+          {
+            "level": 0,
+            "width": 1024,
+            "height": 1024,
+            "encodedBytes": 300568,
+            "uastcBytes": 1048576
+          },
+          {
+            "level": 1,
+            "width": 512,
+            "height": 512,
+            "encodedBytes": 58248,
+            "uastcBytes": 262144
+          },
+          {
+            "level": 2,
+            "width": 256,
+            "height": 256,
+            "encodedBytes": 14723,
+            "uastcBytes": 65536
+          },
+          {
+            "level": 3,
+            "width": 128,
+            "height": 128,
+            "encodedBytes": 4828,
+            "uastcBytes": 16384
+          },
+          {
+            "level": 4,
+            "width": 64,
+            "height": 64,
+            "encodedBytes": 1246,
+            "uastcBytes": 4096
+          },
+          {
+            "level": 5,
+            "width": 32,
+            "height": 32,
+            "encodedBytes": 366,
+            "uastcBytes": 1024
+          },
+          {
+            "level": 6,
+            "width": 16,
+            "height": 16,
+            "encodedBytes": 128,
+            "uastcBytes": 256
+          },
+          {
+            "level": 7,
+            "width": 8,
+            "height": 8,
+            "encodedBytes": 57,
+            "uastcBytes": 64
+          },
+          {
+            "level": 8,
+            "width": 4,
+            "height": 4,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          },
+          {
+            "level": 9,
+            "width": 2,
+            "height": 2,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          },
+          {
+            "level": 10,
+            "width": 1,
+            "height": 1,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          }
+        ]
+      },
+      "estimatedGpuPayloadBytes": {
+        "RGBA8Mipmapped": 5592404,
+        "ASTC4x4OrBC7Mipmapped": 1398128,
+        "ETC2RGBMipmapped": 699064,
+        "note": "Estimated block payload bytes, excluding driver allocations. Runtime actual compressed format and mip payloads are measured separately; unsupported GPUs may use RGBA8 fallback."
+      }
+    },
+    {
+      "file": "copper-albedo.ktx2",
+      "semantic": "albedo",
+      "bytes": 1259932,
+      "sha256": "0e4a9d0499efc6a11f2f7579d0e81820a0db767b9175baffcb801a667d9fbfc7",
+      "source": "copper-albedo.jpg",
+      "sourceSha256": "575e5c528c7b2cbf7ada0fe4cbfca6960089eddf2668c7ee78d9535df529c726",
+      "encoderArguments": [
+        "--t2",
+        "--genmipmap",
+        "--encode",
+        "uastc",
+        "--uastc_quality",
+        "3",
+        "--uastc_rdo_l",
+        "1",
+        "--uastc_rdo_m",
+        "--zcmp",
+        "18",
+        "--threads",
+        "2",
+        "--lower_left_maps_to_s0t0",
+        "--assign_oetf",
+        "srgb",
+        "--assign_primaries",
+        "bt709"
+      ],
+      "validation": "ktx2check --warn-as-error passed",
+      "header": {
+        "width": 1024,
+        "height": 1024,
+        "mipLevels": 11,
+        "supercompression": "Zstandard",
+        "dfdColorModel": 166,
+        "dfdPrimaries": 1,
+        "dfdTransferFunction": 2,
+        "dfdFlags": 0,
+        "orientation": "ru",
+        "mips": [
+          {
+            "level": 0,
+            "width": 1024,
+            "height": 1024,
+            "encodedBytes": 941460,
+            "uastcBytes": 1048576
+          },
+          {
+            "level": 1,
+            "width": 512,
+            "height": 512,
+            "encodedBytes": 239243,
+            "uastcBytes": 262144
+          },
+          {
+            "level": 2,
+            "width": 256,
+            "height": 256,
+            "encodedBytes": 58856,
+            "uastcBytes": 65536
+          },
+          {
+            "level": 3,
+            "width": 128,
+            "height": 128,
+            "encodedBytes": 14656,
+            "uastcBytes": 16384
+          },
+          {
+            "level": 4,
+            "width": 64,
+            "height": 64,
+            "encodedBytes": 3760,
+            "uastcBytes": 4096
+          },
+          {
+            "level": 5,
+            "width": 32,
+            "height": 32,
+            "encodedBytes": 991,
+            "uastcBytes": 1024
+          },
+          {
+            "level": 6,
+            "width": 16,
+            "height": 16,
+            "encodedBytes": 266,
+            "uastcBytes": 256
+          },
+          {
+            "level": 7,
+            "width": 8,
+            "height": 8,
+            "encodedBytes": 73,
+            "uastcBytes": 64
+          },
+          {
+            "level": 8,
+            "width": 4,
+            "height": 4,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          },
+          {
+            "level": 9,
+            "width": 2,
+            "height": 2,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          },
+          {
+            "level": 10,
+            "width": 1,
+            "height": 1,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          }
+        ]
+      },
+      "estimatedGpuPayloadBytes": {
+        "RGBA8Mipmapped": 5592404,
+        "ASTC4x4OrBC7Mipmapped": 1398128,
+        "ETC2RGBMipmapped": 699064,
+        "note": "Estimated block payload bytes, excluding driver allocations. Runtime actual compressed format and mip payloads are measured separately; unsupported GPUs may use RGBA8 fallback."
+      }
+    },
+    {
+      "file": "copper-roughness.ktx2",
+      "semantic": "roughness",
+      "bytes": 798250,
+      "sha256": "ddfd5d1de8c1c1bab1e7ce493d6e99d00213ddf443c69d13662e6c248a25ce95",
+      "source": "copper-roughness.jpg",
+      "sourceSha256": "7d7359c831f8fe31a6ddb93e2a3e3b89dc0a12f87637df0a97728577a629d577",
+      "encoderArguments": [
+        "--t2",
+        "--genmipmap",
+        "--encode",
+        "uastc",
+        "--uastc_quality",
+        "3",
+        "--uastc_rdo_l",
+        "1",
+        "--uastc_rdo_m",
+        "--zcmp",
+        "18",
+        "--threads",
+        "2",
+        "--lower_left_maps_to_s0t0",
+        "--assign_oetf",
+        "linear",
+        "--assign_primaries",
+        "none"
+      ],
+      "validation": "ktx2check --warn-as-error passed",
+      "header": {
+        "width": 1024,
+        "height": 1024,
+        "mipLevels": 11,
+        "supercompression": "Zstandard",
+        "dfdColorModel": 166,
+        "dfdPrimaries": 0,
+        "dfdTransferFunction": 1,
+        "dfdFlags": 0,
+        "orientation": "ru",
+        "mips": [
+          {
+            "level": 0,
+            "width": 1024,
+            "height": 1024,
+            "encodedBytes": 545843,
+            "uastcBytes": 1048576
+          },
+          {
+            "level": 1,
+            "width": 512,
+            "height": 512,
+            "encodedBytes": 182195,
+            "uastcBytes": 262144
+          },
+          {
+            "level": 2,
+            "width": 256,
+            "height": 256,
+            "encodedBytes": 50792,
+            "uastcBytes": 65536
+          },
+          {
+            "level": 3,
+            "width": 128,
+            "height": 128,
+            "encodedBytes": 13799,
+            "uastcBytes": 16384
+          },
+          {
+            "level": 4,
+            "width": 64,
+            "height": 64,
+            "encodedBytes": 3700,
+            "uastcBytes": 4096
+          },
+          {
+            "level": 5,
+            "width": 32,
+            "height": 32,
+            "encodedBytes": 960,
+            "uastcBytes": 1024
+          },
+          {
+            "level": 6,
+            "width": 16,
+            "height": 16,
+            "encodedBytes": 261,
+            "uastcBytes": 256
+          },
+          {
+            "level": 7,
+            "width": 8,
+            "height": 8,
+            "encodedBytes": 73,
+            "uastcBytes": 64
+          },
+          {
+            "level": 8,
+            "width": 4,
+            "height": 4,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          },
+          {
+            "level": 9,
+            "width": 2,
+            "height": 2,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          },
+          {
+            "level": 10,
+            "width": 1,
+            "height": 1,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          }
+        ]
+      },
+      "estimatedGpuPayloadBytes": {
+        "RGBA8Mipmapped": 5592404,
+        "ASTC4x4OrBC7Mipmapped": 1398128,
+        "ETC2RGBMipmapped": 699064,
+        "note": "Estimated block payload bytes, excluding driver allocations. Runtime actual compressed format and mip payloads are measured separately; unsupported GPUs may use RGBA8 fallback."
+      }
+    },
+    {
+      "file": "copper-normal.ktx2",
+      "semantic": "normal",
+      "bytes": 287571,
+      "sha256": "85399b9f562d092256128beaacc1aa1b3c796435d6d8797f154f50b7271c61b2",
+      "source": "copper-normal.jpg",
+      "sourceSha256": "1f1c2aa7196b8b59a2f2d31b07aec245a3a060c1a8b3de9bb66261f70ad48fe8",
+      "encoderArguments": [
+        "--t2",
+        "--genmipmap",
+        "--encode",
+        "uastc",
+        "--uastc_quality",
+        "3",
+        "--uastc_rdo_l",
+        "0.25",
+        "--uastc_rdo_m",
+        "--zcmp",
+        "18",
+        "--threads",
+        "2",
+        "--lower_left_maps_to_s0t0",
+        "--assign_oetf",
+        "linear",
+        "--assign_primaries",
+        "none",
+        "--normal_mode",
+        "--normalize",
+        "--input_swizzle",
+        "rgb1"
+      ],
+      "validation": "ktx2check --warn-as-error passed",
+      "header": {
+        "width": 1024,
+        "height": 1024,
+        "mipLevels": 11,
+        "supercompression": "Zstandard",
+        "dfdColorModel": 166,
+        "dfdPrimaries": 0,
+        "dfdTransferFunction": 1,
+        "dfdFlags": 0,
+        "orientation": "ru",
+        "mips": [
+          {
+            "level": 0,
+            "width": 1024,
+            "height": 1024,
+            "encodedBytes": 180178,
+            "uastcBytes": 1048576
+          },
+          {
+            "level": 1,
+            "width": 512,
+            "height": 512,
+            "encodedBytes": 76856,
+            "uastcBytes": 262144
+          },
+          {
+            "level": 2,
+            "width": 256,
+            "height": 256,
+            "encodedBytes": 23589,
+            "uastcBytes": 65536
+          },
+          {
+            "level": 3,
+            "width": 128,
+            "height": 128,
+            "encodedBytes": 5137,
+            "uastcBytes": 16384
+          },
+          {
+            "level": 4,
+            "width": 64,
+            "height": 64,
+            "encodedBytes": 908,
+            "uastcBytes": 4096
+          },
+          {
+            "level": 5,
+            "width": 32,
+            "height": 32,
+            "encodedBytes": 194,
+            "uastcBytes": 1024
+          },
+          {
+            "level": 6,
+            "width": 16,
+            "height": 16,
+            "encodedBytes": 28,
+            "uastcBytes": 256
+          },
+          {
+            "level": 7,
+            "width": 8,
+            "height": 8,
+            "encodedBytes": 26,
+            "uastcBytes": 64
+          },
+          {
+            "level": 8,
+            "width": 4,
+            "height": 4,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          },
+          {
+            "level": 9,
+            "width": 2,
+            "height": 2,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          },
+          {
+            "level": 10,
+            "width": 1,
+            "height": 1,
+            "encodedBytes": 25,
+            "uastcBytes": 16
+          }
+        ]
+      },
+      "estimatedGpuPayloadBytes": {
+        "RGBA8Mipmapped": 5592404,
+        "ASTC4x4OrBC7Mipmapped": 1398128,
+        "ETC2RGBMipmapped": 699064,
+        "note": "Estimated block payload bytes, excluding driver allocations. Runtime actual compressed format and mip payloads are measured separately; unsupported GPUs may use RGBA8 fallback."
+      }
+    }
+  ]
+}

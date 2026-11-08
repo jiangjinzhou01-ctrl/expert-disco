@@ -1,0 +1,2392 @@
+{
+  "schema": 1,
+  "generator": "scripts/build-orbital-assets.py",
+  "license": "CC0-1.0",
+  "author": "THRESHOLD project — original geometry",
+  "coordinateSystem": "Right handed Y up, metres, matching CR1; B offset applied at runtime",
+  "replacesVisualMeshes": [
+    "V-compression--2.4",
+    "V-compression-2.4",
+    "V-compression-roof",
+    "V-compression-end"
+  ],
+  "collisionPolicy": "Existing CR1 colliders retained. Capsule glazing meets existing X=+-2 side planes. Built-in services are coplanar treatments; no new walk obstacles.",
+  "chunks": [
+    {
+      "id": "A-capsule",
+      "slot": "A",
+      "description": "Machined octagonal transfer capsule, glazing, fasteners and services",
+      "file": "A-capsule.glb",
+      "bounds": [
+        [
+          -2.2799999713897705,
+          0,
+          22.014999389648438
+        ],
+        [
+          2.2799999713897705,
+          4.827499866485596,
+          36.36000061035156
+        ]
+      ],
+      "triangles": 50704,
+      "bytes": 1440096,
+      "drawCalls": 5,
+      "proxy": [
+        {
+          "type": "box",
+          "position": [
+            -2.06,
+            2.4,
+            22.15
+          ],
+          "size": [
+            0.12,
+            4.5,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.06,
+            2.4,
+            22.15
+          ],
+          "size": [
+            0.12,
+            4.5,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            0,
+            4.74,
+            22.15
+          ],
+          "size": [
+            3.8400000000000003,
+            0.12,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -2.06,
+            2.4,
+            24.4
+          ],
+          "size": [
+            0.12,
+            4.5,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.06,
+            2.4,
+            24.4
+          ],
+          "size": [
+            0.12,
+            4.5,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            0,
+            4.74,
+            24.4
+          ],
+          "size": [
+            3.8400000000000003,
+            0.12,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -2.06,
+            2.4,
+            26.65
+          ],
+          "size": [
+            0.12,
+            4.5,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.06,
+            2.4,
+            26.65
+          ],
+          "size": [
+            0.12,
+            4.5,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            0,
+            4.74,
+            26.65
+          ],
+          "size": [
+            3.8400000000000003,
+            0.12,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -2.06,
+            2.4,
+            28.9
+          ],
+          "size": [
+            0.12,
+            4.5,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.06,
+            2.4,
+            28.9
+          ],
+          "size": [
+            0.12,
+            4.5,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            0,
+            4.74,
+            28.9
+          ],
+          "size": [
+            3.8400000000000003,
+            0.12,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -2.06,
+            2.4,
+            31.15
+          ],
+          "size": [
+            0.12,
+            4.5,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.06,
+            2.4,
+            31.15
+          ],
+          "size": [
+            0.12,
+            4.5,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            0,
+            4.74,
+            31.15
+          ],
+          "size": [
+            3.8400000000000003,
+            0.12,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -2.06,
+            2.4,
+            33.4
+          ],
+          "size": [
+            0.12,
+            4.5,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.06,
+            2.4,
+            33.4
+          ],
+          "size": [
+            0.12,
+            4.5,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            0,
+            4.74,
+            33.4
+          ],
+          "size": [
+            3.8400000000000003,
+            0.12,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -2.06,
+            2.4,
+            35.8
+          ],
+          "size": [
+            0.12,
+            4.5,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.06,
+            2.4,
+            35.8
+          ],
+          "size": [
+            0.12,
+            4.5,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            0,
+            4.74,
+            35.8
+          ],
+          "size": [
+            3.8400000000000003,
+            0.12,
+            0.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -2.13,
+            0.42,
+            23.275
+          ],
+          "size": [
+            0.26,
+            0.84,
+            2.04
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -2.025,
+            4.44,
+            23.275
+          ],
+          "size": [
+            0.16,
+            0.67,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.13,
+            0.42,
+            23.275
+          ],
+          "size": [
+            0.26,
+            0.84,
+            2.04
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.025,
+            4.44,
+            23.275
+          ],
+          "size": [
+            0.16,
+            0.67,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -1.53,
+            4.7,
+            23.275
+          ],
+          "size": [
+            0.22,
+            0.16,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            1.53,
+            4.7,
+            23.275
+          ],
+          "size": [
+            0.22,
+            0.16,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -2.13,
+            0.42,
+            25.525
+          ],
+          "size": [
+            0.26,
+            0.84,
+            2.04
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -2.025,
+            4.44,
+            25.525
+          ],
+          "size": [
+            0.16,
+            0.67,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.13,
+            0.42,
+            25.525
+          ],
+          "size": [
+            0.26,
+            0.84,
+            2.04
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.025,
+            4.44,
+            25.525
+          ],
+          "size": [
+            0.16,
+            0.67,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -1.53,
+            4.7,
+            25.525
+          ],
+          "size": [
+            0.22,
+            0.16,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            1.53,
+            4.7,
+            25.525
+          ],
+          "size": [
+            0.22,
+            0.16,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -2.13,
+            0.42,
+            27.775
+          ],
+          "size": [
+            0.26,
+            0.84,
+            2.04
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -2.025,
+            4.44,
+            27.775
+          ],
+          "size": [
+            0.16,
+            0.67,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.13,
+            0.42,
+            27.775
+          ],
+          "size": [
+            0.26,
+            0.84,
+            2.04
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.025,
+            4.44,
+            27.775
+          ],
+          "size": [
+            0.16,
+            0.67,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -1.53,
+            4.7,
+            27.775
+          ],
+          "size": [
+            0.22,
+            0.16,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            1.53,
+            4.7,
+            27.775
+          ],
+          "size": [
+            0.22,
+            0.16,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -2.13,
+            0.42,
+            30.025
+          ],
+          "size": [
+            0.26,
+            0.84,
+            2.04
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -2.025,
+            4.44,
+            30.025
+          ],
+          "size": [
+            0.16,
+            0.67,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.13,
+            0.42,
+            30.025
+          ],
+          "size": [
+            0.26,
+            0.84,
+            2.04
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.025,
+            4.44,
+            30.025
+          ],
+          "size": [
+            0.16,
+            0.67,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -1.53,
+            4.7,
+            30.025
+          ],
+          "size": [
+            0.22,
+            0.16,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            1.53,
+            4.7,
+            30.025
+          ],
+          "size": [
+            0.22,
+            0.16,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -2.13,
+            0.42,
+            32.275
+          ],
+          "size": [
+            0.26,
+            0.84,
+            2.04
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -2.025,
+            4.44,
+            32.275
+          ],
+          "size": [
+            0.16,
+            0.67,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.13,
+            0.42,
+            32.275
+          ],
+          "size": [
+            0.26,
+            0.84,
+            2.04
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.025,
+            4.44,
+            32.275
+          ],
+          "size": [
+            0.16,
+            0.67,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -1.53,
+            4.7,
+            32.275
+          ],
+          "size": [
+            0.22,
+            0.16,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            1.53,
+            4.7,
+            32.275
+          ],
+          "size": [
+            0.22,
+            0.16,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -2.13,
+            0.42,
+            34.6
+          ],
+          "size": [
+            0.26,
+            0.84,
+            2.04
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -2.025,
+            4.44,
+            34.6
+          ],
+          "size": [
+            0.16,
+            0.67,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.13,
+            0.42,
+            34.6
+          ],
+          "size": [
+            0.26,
+            0.84,
+            2.04
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.025,
+            4.44,
+            34.6
+          ],
+          "size": [
+            0.16,
+            0.67,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -1.53,
+            4.7,
+            34.6
+          ],
+          "size": [
+            0.22,
+            0.16,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            1.53,
+            4.7,
+            34.6
+          ],
+          "size": [
+            0.22,
+            0.16,
+            2.03
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            0,
+            2.4,
+            36.3
+          ],
+          "size": [
+            4.05,
+            4.8,
+            0.12
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -1.865,
+            2.37,
+            36.11
+          ],
+          "size": [
+            0.17,
+            4.4,
+            0.16
+          ],
+          "material": "bronze",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            1.865,
+            2.37,
+            36.11
+          ],
+          "size": [
+            0.17,
+            4.4,
+            0.16
+          ],
+          "material": "bronze",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            0,
+            4.635,
+            36.11
+          ],
+          "size": [
+            3.5,
+            0.17,
+            0.16
+          ],
+          "material": "bronze",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "sourceBytes": 3247096,
+      "sha256": "6a9a9be7b76fb3f59c6b8124b748c001235fe0addf29169536893f362bff8f0a",
+      "sourceSha256": "ac70e1ce37df329835241727e2d36106c00573b39f86ff0809ef02c46455a54d",
+      "compression": "EXT_meshopt_compression",
+      "maximumBoundsErrorMetres": 0.00006731081209743195
+    },
+    {
+      "id": "A-arrival",
+      "slot": "A",
+      "description": "Built-in transition portal, fluted jambs and connected floor inlays",
+      "file": "A-arrival.glb",
+      "bounds": [
+        [
+          -11.799999237060547,
+          0,
+          10.995499610900879
+        ],
+        [
+          11.799999237060547,
+          5.569999694824219,
+          22.424999237060547
+        ]
+      ],
+      "triangles": 5800,
+      "bytes": 165196,
+      "drawCalls": 4,
+      "proxy": [
+        {
+          "type": "box",
+          "position": [
+            -2.26,
+            2.65,
+            22.05
+          ],
+          "size": [
+            0.42,
+            5.3,
+            0.75
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            2.26,
+            2.65,
+            22.05
+          ],
+          "size": [
+            0.42,
+            5.3,
+            0.75
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            0,
+            5.37,
+            22.05
+          ],
+          "size": [
+            4.94,
+            0.4,
+            0.75
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "sourceBytes": 366344,
+      "sha256": "e5b2905ed3f7af912083a7279cda04e451237795d5b1e1f7a83b71605d33a543",
+      "sourceSha256": "62a58ffd67ff4ad0e858b48b6559f24617c9415dae27f05f64bb1e28acd5699a",
+      "compression": "EXT_meshopt_compression",
+      "maximumBoundsErrorMetres": 0.0001450131693090384
+    },
+    {
+      "id": "A-gallery-west",
+      "slot": "A",
+      "description": "Stone courses, recessed metal services, gallery rib joints and bronze fittings",
+      "file": "A-gallery-west.glb",
+      "bounds": [
+        [
+          -15.982500076293945,
+          0.001999999862164259,
+          -18.909000396728516
+        ],
+        [
+          -7.862500190734863,
+          21.899999618530273,
+          22.850000381469727
+        ]
+      ],
+      "triangles": 15116,
+      "bytes": 396488,
+      "drawCalls": 4,
+      "proxy": [
+        {
+          "type": "box",
+          "position": [
+            -12.9,
+            0.34,
+            -17
+          ],
+          "size": [
+            1.6,
+            0.28,
+            2.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -12.9,
+            0.34,
+            -5
+          ],
+          "size": [
+            1.6,
+            0.28,
+            2.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -12.9,
+            0.34,
+            7
+          ],
+          "size": [
+            1.6,
+            0.28,
+            2.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -12.9,
+            0.34,
+            18
+          ],
+          "size": [
+            1.6,
+            0.28,
+            2.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "sourceBytes": 930872,
+      "sha256": "904cab0cc167f7862ebcf8d6a99e276765171a073783d1de56abbd1320cff351",
+      "sourceSha256": "ea67ba2812bc76139e7d341d4cac6256ef1a787558bc4cff7e784d7b3f963cec",
+      "compression": "EXT_meshopt_compression",
+      "maximumBoundsErrorMetres": 0.00016212369573054275
+    },
+    {
+      "id": "A-gallery-east",
+      "slot": "A",
+      "description": "Stone courses, recessed metal services, gallery rib joints and bronze fittings",
+      "file": "A-gallery-east.glb",
+      "bounds": [
+        [
+          7.862500190734863,
+          0.001999999862164259,
+          -18.909000396728516
+        ],
+        [
+          15.982500076293945,
+          21.899999618530273,
+          22.850000381469727
+        ]
+      ],
+      "triangles": 15116,
+      "bytes": 399804,
+      "drawCalls": 4,
+      "proxy": [
+        {
+          "type": "box",
+          "position": [
+            12.9,
+            0.34,
+            -17
+          ],
+          "size": [
+            1.6,
+            0.28,
+            2.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            12.9,
+            0.34,
+            -5
+          ],
+          "size": [
+            1.6,
+            0.28,
+            2.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            12.9,
+            0.34,
+            7
+          ],
+          "size": [
+            1.6,
+            0.28,
+            2.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            12.9,
+            0.34,
+            18
+          ],
+          "size": [
+            1.6,
+            0.28,
+            2.2
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "sourceBytes": 930868,
+      "sha256": "7d78e05b67621070140c2a0a236ad853ac197d508cc5a4621df25bcf8158c91b",
+      "sourceSha256": "d37c0b92c58d8f8f33c60cf3180c6ab48bd9dc98823d5ae1f9681b96311f1b59",
+      "compression": "EXT_meshopt_compression",
+      "maximumBoundsErrorMetres": 0.00016212369573054275
+    },
+    {
+      "id": "A-gate",
+      "slot": "A",
+      "description": "Layered machined portal surround, suspended crown and engraved survey inlays",
+      "file": "A-gate.glb",
+      "bounds": [
+        [
+          -7.75,
+          0,
+          -19.91499900817871
+        ],
+        [
+          7.75,
+          23,
+          -15.987500190734863
+        ]
+      ],
+      "triangles": 18952,
+      "bytes": 521860,
+      "drawCalls": 4,
+      "proxy": [
+        {
+          "type": "box",
+          "position": [
+            -1.86,
+            2.8,
+            -19.8
+          ],
+          "size": [
+            0.035,
+            5.58,
+            0.09
+          ],
+          "material": "bronze",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -4.45,
+            4,
+            -19.88
+          ],
+          "size": [
+            0.12,
+            7.9,
+            0.07
+          ],
+          "material": "bronze",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            1.86,
+            2.8,
+            -19.8
+          ],
+          "size": [
+            0.035,
+            5.58,
+            0.09
+          ],
+          "material": "bronze",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            4.45,
+            4,
+            -19.88
+          ],
+          "size": [
+            0.12,
+            7.9,
+            0.07
+          ],
+          "material": "bronze",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -6.2,
+            13.5,
+            -18.1
+          ],
+          "size": [
+            3.1,
+            0.9,
+            3.5
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            6.2,
+            13.5,
+            -18.1
+          ],
+          "size": [
+            3.1,
+            0.9,
+            3.5
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "sourceBytes": 1180060,
+      "sha256": "00e4229b15b64861d99fa67d84db9307db75793d6c43c4bf69f3d93dc73f7c60",
+      "sourceSha256": "24c14d61c126411aeab3b26fb4b07225509923af864da9b7799a7cd0eaa8b8df",
+      "compression": "EXT_meshopt_compression",
+      "maximumBoundsErrorMetres": 0.00015323285710167056
+    },
+    {
+      "id": "A-roof-trusses",
+      "slot": "A",
+      "description": "Open observatory roof, triangulated spanning trusses and edge crown connections",
+      "file": "A-roof-trusses.glb",
+      "bounds": [
+        [
+          -16.239999771118164,
+          22.724998474121094,
+          -21.75
+        ],
+        [
+          16.239999771118164,
+          24.239999771118164,
+          21.75
+        ]
+      ],
+      "triangles": 14988,
+      "bytes": 465712,
+      "drawCalls": 3,
+      "proxy": [
+        {
+          "type": "box",
+          "position": [
+            -16,
+            24.05,
+            0
+          ],
+          "size": [
+            0.48,
+            0.38,
+            43.5
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            16,
+            24.05,
+            0
+          ],
+          "size": [
+            0.48,
+            0.38,
+            43.5
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            0,
+            22.8,
+            -14
+          ],
+          "size": [
+            31.8,
+            0.15,
+            0.28
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            0,
+            23.8,
+            -14
+          ],
+          "size": [
+            31.8,
+            0.15,
+            0.28
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            0,
+            22.8,
+            1
+          ],
+          "size": [
+            31.8,
+            0.15,
+            0.28
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            0,
+            23.8,
+            1
+          ],
+          "size": [
+            31.8,
+            0.15,
+            0.28
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            0,
+            22.8,
+            16
+          ],
+          "size": [
+            31.8,
+            0.15,
+            0.28
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            0,
+            23.8,
+            16
+          ],
+          "size": [
+            31.8,
+            0.15,
+            0.28
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "sourceBytes": 999752,
+      "sha256": "fbe214301e26e5267102c632fb2c91d2966e99338a79fa49be80600cbe2af166",
+      "sourceSha256": "0e76611aea76386a914e393d6172fcce632ac69326261c600701df18469946c8",
+      "compression": "EXT_meshopt_compression",
+      "maximumBoundsErrorMetres": 0.00006869644864337943
+    },
+    {
+      "id": "A-exterior-west",
+      "slot": "A",
+      "description": "Detached orbital observatory and radial docking trusses, west parallax anchor",
+      "file": "A-exterior-west.glb",
+      "bounds": [
+        [
+          -44.71999740600586,
+          -5.837292671203613,
+          14.22599983215332
+        ],
+        [
+          -11.279998779296875,
+          16.065000534057617,
+          35.47999954223633
+        ]
+      ],
+      "triangles": 34176,
+      "bytes": 1212256,
+      "drawCalls": 4,
+      "proxy": [
+        {
+          "type": "cylinder",
+          "position": [
+            -28,
+            4,
+            19
+          ],
+          "radius": 2.4640000000000004,
+          "radius2": 1.4080000000000001,
+          "depth": 19,
+          "axis": "Y",
+          "material": "metal"
+        },
+        {
+          "type": "torus",
+          "position": [
+            -28,
+            -3.6000000000000005,
+            19
+          ],
+          "radius": 4.4,
+          "tube": 0.37400000000000005,
+          "axis": "Y",
+          "material": "basalt"
+        },
+        {
+          "type": "torus",
+          "position": [
+            -28,
+            0.96,
+            19
+          ],
+          "radius": 4.4,
+          "tube": 0.37400000000000005,
+          "axis": "Y",
+          "material": "basalt"
+        },
+        {
+          "type": "torus",
+          "position": [
+            -28,
+            7.04,
+            19
+          ],
+          "radius": 4.4,
+          "tube": 0.37400000000000005,
+          "axis": "Y",
+          "material": "basalt"
+        },
+        {
+          "type": "torus",
+          "position": [
+            -28,
+            11.600000000000001,
+            19
+          ],
+          "radius": 4.4,
+          "tube": 0.37400000000000005,
+          "axis": "Y",
+          "material": "basalt"
+        },
+        {
+          "type": "box",
+          "position": [
+            -38.78,
+            4,
+            19
+          ],
+          "size": [
+            11.880000000000003,
+            9.12,
+            0.12
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -17.22,
+            4,
+            19
+          ],
+          "size": [
+            11.880000000000003,
+            9.12,
+            0.12
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "position": [
+            -28,
+            14.829999999999998,
+            19
+          ],
+          "radius": 3.9600000000000004,
+          "radius2": 2.728,
+          "depth": 2.47,
+          "axis": "Y",
+          "material": "basalt"
+        },
+        {
+          "type": "torus",
+          "position": [
+            -22,
+            -5,
+            27
+          ],
+          "radius": 8.2,
+          "tube": 0.28,
+          "axis": "Y",
+          "material": "bronze"
+        }
+      ],
+      "sourceBytes": 2340852,
+      "sha256": "0a2bf9670051c41b69651a727bad197aa140241c07332884645e4d5ca4570c03",
+      "sourceSha256": "bee1c6b38598a5844ab137cebcc038f81c0da8964d7184d96c390205883d46ed",
+      "compression": "EXT_meshopt_compression",
+      "maximumBoundsErrorMetres": 0.00020102735412308448
+    },
+    {
+      "id": "A-exterior-east",
+      "slot": "A",
+      "description": "Detached eastern habitat, ring deck and precision radiator assemblies",
+      "file": "A-exterior-east.glb",
+      "bounds": [
+        [
+          9.720001220703125,
+          -12.5,
+          15.699999809265137
+        ],
+        [
+          52.28000259399414,
+          15.875,
+          38.29999923706055
+        ]
+      ],
+      "triangles": 38368,
+      "bytes": 1347468,
+      "drawCalls": 5,
+      "proxy": [
+        {
+          "type": "cylinder",
+          "position": [
+            31,
+            0,
+            27
+          ],
+          "radius": 3.136,
+          "radius2": 1.7919999999999998,
+          "depth": 25,
+          "axis": "Y",
+          "material": "metal"
+        },
+        {
+          "type": "torus",
+          "position": [
+            31,
+            -10,
+            27
+          ],
+          "radius": 5.6,
+          "tube": 0.476,
+          "axis": "Y",
+          "material": "basalt"
+        },
+        {
+          "type": "torus",
+          "position": [
+            31,
+            -4,
+            27
+          ],
+          "radius": 5.6,
+          "tube": 0.476,
+          "axis": "Y",
+          "material": "basalt"
+        },
+        {
+          "type": "torus",
+          "position": [
+            31,
+            4,
+            27
+          ],
+          "radius": 5.6,
+          "tube": 0.476,
+          "axis": "Y",
+          "material": "basalt"
+        },
+        {
+          "type": "torus",
+          "position": [
+            31,
+            10,
+            27
+          ],
+          "radius": 5.6,
+          "tube": 0.476,
+          "axis": "Y",
+          "material": "basalt"
+        },
+        {
+          "type": "box",
+          "position": [
+            17.28,
+            0,
+            27
+          ],
+          "size": [
+            15.12,
+            12,
+            0.12
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            44.72,
+            0,
+            27
+          ],
+          "size": [
+            15.12,
+            12,
+            0.12
+          ],
+          "material": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "position": [
+            31,
+            14.249999999999998,
+            27
+          ],
+          "radius": 5.04,
+          "radius2": 3.472,
+          "depth": 3.25,
+          "axis": "Y",
+          "material": "basalt"
+        },
+        {
+          "type": "torus",
+          "position": [
+            31,
+            -7.5,
+            27
+          ],
+          "radius": 10.8,
+          "tube": 0.5,
+          "axis": "Y",
+          "material": "basalt"
+        }
+      ],
+      "sourceBytes": 2640616,
+      "sha256": "0bd44aa8b98386c27e87411d99a385bb3a192ef6c94afe2108f1f35eb154fb90",
+      "sourceSha256": "1892ad4fdf6fbe2cca05f6738c2475265efa9c5005c9318c3c356c69196f6191",
+      "compression": "EXT_meshopt_compression",
+      "maximumBoundsErrorMetres": 0.00026401843113532664
+    },
+    {
+      "id": "B-services",
+      "slot": "B",
+      "description": "Wall-integrated pressure services, overhead ribs and measurement details",
+      "file": "B-services.glb",
+      "bounds": [
+        [
+          -14.977499961853027,
+          0.20250000059604645,
+          -18.799999237060547
+        ],
+        [
+          14.977499961853027,
+          20.524999618530273,
+          18.799999237060547
+        ]
+      ],
+      "triangles": 26076,
+      "bytes": 743232,
+      "drawCalls": 4,
+      "proxy": [
+        {
+          "type": "box",
+          "position": [
+            -13.7,
+            0.38,
+            13
+          ],
+          "size": [
+            1.5,
+            0.34,
+            1.02
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -13.7,
+            0.38,
+            5
+          ],
+          "size": [
+            1.5,
+            0.34,
+            1.02
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -13.7,
+            0.38,
+            -3
+          ],
+          "size": [
+            1.5,
+            0.34,
+            1.02
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            -13.7,
+            0.38,
+            -12
+          ],
+          "size": [
+            1.5,
+            0.34,
+            1.02
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            13.7,
+            0.38,
+            13
+          ],
+          "size": [
+            1.5,
+            0.34,
+            1.02
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            13.7,
+            0.38,
+            5
+          ],
+          "size": [
+            1.5,
+            0.34,
+            1.02
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            13.7,
+            0.38,
+            -3
+          ],
+          "size": [
+            1.5,
+            0.34,
+            1.02
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "position": [
+            13.7,
+            0.38,
+            -12
+          ],
+          "size": [
+            1.5,
+            0.34,
+            1.02
+          ],
+          "material": "metal",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "position": [
+            0,
+            20.3,
+            -14
+          ],
+          "radius": 0.16,
+          "radius2": 0.16,
+          "depth": 27,
+          "axis": "X",
+          "material": "metal"
+        },
+        {
+          "type": "cylinder",
+          "position": [
+            0,
+            20.3,
+            0
+          ],
+          "radius": 0.16,
+          "radius2": 0.16,
+          "depth": 27,
+          "axis": "X",
+          "material": "metal"
+        },
+        {
+          "type": "cylinder",
+          "position": [
+            0,
+            20.3,
+            12
+          ],
+          "radius": 0.16,
+          "radius2": 0.16,
+          "depth": 27,
+          "axis": "X",
+          "material": "metal"
+        }
+      ],
+      "sourceBytes": 1735196,
+      "sha256": "f6ca2e9d86affc926763661fa297560caded03d26b064f2c3b706021ad197aec",
+      "sourceSha256": "a652820b3772a8eb08890ab43d3dba154c8b53f4d9339d3257b6c68006bc667b",
+      "compression": "EXT_meshopt_compression",
+      "maximumBoundsErrorMetres": 0.00009061326941406378
+    },
+    {
+      "id": "B-gravity-instruments",
+      "slot": "B",
+      "description": "Same-curve gravitational survey inlays and terminal mechanism backing",
+      "file": "B-gravity-instruments.glb",
+      "bounds": [
+        [
+          1.4904999732971191,
+          0.0017806208925321698,
+          -17.649999618530273
+        ],
+        [
+          4.698219299316406,
+          6.912499904632568,
+          -4.940000057220459
+        ]
+      ],
+      "triangles": 5416,
+      "bytes": 190872,
+      "drawCalls": 4,
+      "proxy": [
+        {
+          "type": "torus",
+          "position": [
+            4.62,
+            5.1,
+            -16.5
+          ],
+          "radius": 0.66,
+          "tube": 0.035,
+          "axis": "X",
+          "material": "bronze"
+        }
+      ],
+      "sourceBytes": 379308,
+      "sha256": "f9ba7649a527653fe86338b6309d212e6c00c51a6a0219aaa0a24b03ec806e7b",
+      "sourceSha256": "a074467cadd900166f23bb6b1c64de5f8c18545d229e5bdb047e0c498468b3c5",
+      "compression": "EXT_meshopt_compression",
+      "maximumBoundsErrorMetres": 0.00007514700303163811
+    }
+  ],
+  "totalTriangles": 224712,
+  "totalBytes": 6882984,
+  "totalSourceBytes": 14750964,
+  "compression": {
+    "format": "EXT_meshopt_compression",
+    "tool": "@gltf-transform/cli 4.5.1 / core-functions + meshoptimizer",
+    "positionBits": 16,
+    "normalBits": 12,
+    "texcoordBits": 14,
+    "geometrySimplification": false
+  }
+}

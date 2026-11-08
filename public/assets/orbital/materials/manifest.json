@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "generator": "scripts/fetch-orbital-materials.py",
+  "provider": "ambientCG",
+  "license": "CC0-1.0",
+  "licenseSource": "https://docs.ambientcg.com/license/",
+  "licenseDocumentSha256": "86d690c1384e979c84fcb607c66dcd4802ff75f917a2fbef1658add632d1b11b",
+  "deployedTextureBytes": 1783030,
+  "upstreamArchiveBytes": 18969393,
+  "note": "Only Color, Roughness, and tangent-space NormalGL maps are deployed. Original 1K images are recompressed as specified in the generator; no 256px synthetic texture or runtime external fetch is used. Upstream archive downloads include unused maps and are larger than deployed textures.",
+  "materials": [
+    {
+      "id": "concrete",
+      "asset": "Concrete048",
+      "role": "pale mineral architectural concrete",
+      "creation": "PBRPhotogrammetry",
+      "source": "https://ambientcg.com/a/Concrete048",
+      "download": "https://ambientcg.com/get?file=Concrete048_1K-JPG.zip",
+      "archiveBytes": 7536748,
+      "archiveSha256": "af13b985a7a72c89f2a8e0c8ef5651a8f13126bf792b5ca5f6a0861712156df6",
+      "license": "CC0-1.0",
+      "licenseSource": "https://docs.ambientcg.com/license/",
+      "maps": [
+        {
+          "semantic": "albedo",
+          "file": "concrete-albedo.jpg",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 193011,
+          "sha256": "100b70b53fed826b41b3784fb88b9dfd9d2fa51d4a1637451fc4f0b7326109fe",
+          "upstreamArchiveMember": "Concrete048_1K-JPG_Color.jpg",
+          "upstreamMapSha256": "1bf2156b86866732660e6d3ccd1942598ac2b9e73a9bb97a23763574ac4d7722",
+          "colorSpace": "sRGB"
+        },
+        {
+          "semantic": "roughness",
+          "file": "concrete-roughness.jpg",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 260961,
+          "sha256": "9c8a1d425220dddfcf31f363731b8c96c0f193dbb8b8d47395f7fb7f14628c64",
+          "upstreamArchiveMember": "Concrete048_1K-JPG_Roughness.jpg",
+          "upstreamMapSha256": "cf9b741e1ffc25b89a7d7a8971656463009c25b30c3fd300b3296c60daef729f",
+          "colorSpace": "linear data"
+        },
+        {
+          "semantic": "normal",
+          "file": "concrete-normal.jpg",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 366144,
+          "sha256": "d87621aeb8458ae66bc0987606b4a3ddb5977c5d20bb9a6a0efba390b0387817",
+          "upstreamArchiveMember": "Concrete048_1K-JPG_NormalGL.jpg",
+          "upstreamMapSha256": "16d110670d8a1ca4dd85d498bb46afaa6953456878dae7ab6717053600dddcfc",
+          "colorSpace": "linear data"
+        }
+      ]
+    },
+    {
+      "id": "metal",
+      "asset": "Metal009",
+      "role": "brushed metal; tint in the material for dark structural steel",
+      "creation": "PBRProcedural",
+      "source": "https://ambientcg.com/a/Metal009",
+      "download": "https://ambientcg.com/get?file=Metal009_1K-JPG.zip",
+      "archiveBytes": 4767000,
+      "archiveSha256": "1b1970219b40fe707e7194b28702f1a65b0d227bbea56da69dfbc8d8b5cfcb5e",
+      "license": "CC0-1.0",
+      "licenseSource": "https://docs.ambientcg.com/license/",
+      "maps": [
+        {
+          "semantic": "albedo",
+          "file": "metal-albedo.jpg",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 101188,
+          "sha256": "c1a6677f2fdb70baa821b32e7de21dbb9acb58fc19543a435187ffbfda7697da",
+          "upstreamArchiveMember": "Metal009_1K-JPG_Color.jpg",
+          "upstreamMapSha256": "e066e240ad0eaab6a73fb0f40fa7caa94365160770331babc91de2e8ce6a986f",
+          "colorSpace": "sRGB"
+        },
+        {
+          "semantic": "roughness",
+          "file": "metal-roughness.jpg",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 161407,
+          "sha256": "c255c68063cf079683d915a936bb76267aced0ab1822671932d7cbfb380d4f10",
+          "upstreamArchiveMember": "Metal009_1K-JPG_Roughness.jpg",
+          "upstreamMapSha256": "6d06dfe8c240d3b6f33030740110284245bd8aefb2e10e8eb0c563444d9c0c5b",
+          "colorSpace": "linear data"
+        },
+        {
+          "semantic": "normal",
+          "file": "metal-normal.jpg",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 143536,
+          "sha256": "4dc8d0139ecfde1cc1bff9e8aaaf68f00fbdc2e894daa20e804bcdfb0970a292",
+          "upstreamArchiveMember": "Metal009_1K-JPG_NormalGL.jpg",
+          "upstreamMapSha256": "45c7c88685e6b44da7e8d25e2cf6d8645d42209793ccc4354e68c16cdae15d62",
+          "colorSpace": "linear data"
+        }
+      ]
+    },
+    {
+      "id": "copper",
+      "asset": "Metal047B",
+      "role": "weathered copper for mechanical fittings",
+      "creation": "PBRProcedural",
+      "source": "https://ambientcg.com/a/Metal047B",
+      "download": "https://ambientcg.com/get?file=Metal047B_1K-JPG.zip",
+      "archiveBytes": 6665645,
+      "archiveSha256": "697c61bf5715de0cfa298c537e10ccceb0846feb842046596592ea304171196e",
+      "license": "CC0-1.0",
+      "licenseSource": "https://docs.ambientcg.com/license/",
+      "maps": [
+        {
+          "semantic": "albedo",
+          "file": "copper-albedo.jpg",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 348433,
+          "sha256": "575e5c528c7b2cbf7ada0fe4cbfca6960089eddf2668c7ee78d9535df529c726",
+          "upstreamArchiveMember": "Metal047B_1K-JPG_Color.jpg",
+          "upstreamMapSha256": "6408582aa4035e794021f370d0d286eea54eeda6286178aae32bd3f1cc272b7c",
+          "colorSpace": "sRGB"
+        },
+        {
+          "semantic": "roughness",
+          "file": "copper-roughness.jpg",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 155258,
+          "sha256": "7d7359c831f8fe31a6ddb93e2a3e3b89dc0a12f87637df0a97728577a629d577",
+          "upstreamArchiveMember": "Metal047B_1K-JPG_Roughness.jpg",
+          "upstreamMapSha256": "1ab704cf6a02341113aa958c0c706426e64a8b5aa7ca5c31edec5167cd8bd5b8",
+          "colorSpace": "linear data"
+        },
+        {
+          "semantic": "normal",
+          "file": "copper-normal.jpg",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 53092,
+          "sha256": "1f1c2aa7196b8b59a2f2d31b07aec245a3a060c1a8b3de9bb66261f70ad48fe8",
+          "upstreamArchiveMember": "Metal047B_1K-JPG_NormalGL.jpg",
+          "upstreamMapSha256": "c75304c800d8a31a746224009d0158dd5849bbc2b5d9bacdd202f56324474158",
+          "colorSpace": "linear data"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "attribution": "Planet and ring textures by Solar System Scope / INOVE, CC BY 4.0. https://www.solarsystemscope.com/textures/",
+  "sourcePage": "https://www.solarsystemscope.com/textures/",
+  "mirrorProvenance": "https://github.com/RTF22/Orrery/blob/6c81feb760cb36d7d83d1421aef257833ba9768e/ASSETS.md",
+  "assets": [
+    {
+      "file": "saturn.jpg",
+      "author": "Solar System Scope / INOVE",
+      "license": "CC-BY-4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.solarsystemscope.com/textures/download/2k_saturn.jpg",
+      "mirror": "https://raw.githubusercontent.com/RTF22/Orrery/6c81feb760cb36d7d83d1421aef257833ba9768e/assets-quellen/texturen/saturn/albedo.jpg",
+      "mirrorCommit": "6c81feb760cb36d7d83d1421aef257833ba9768e",
+      "dimensions": [
+        2048,
+        1024
+      ],
+      "bytes": 199916,
+      "sha256": "54a900ca9bf7ab62e70f862852759abdf342e6d6436a95a2fe9ebdb6bcd3bbac",
+      "processing": "Unmodified upstream 2k asset, filename changed only"
+    },
+    {
+      "file": "moon.jpg",
+      "author": "Solar System Scope / INOVE",
+      "license": "CC-BY-4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.solarsystemscope.com/textures/download/2k_moon.jpg",
+      "mirror": "https://raw.githubusercontent.com/RTF22/Orrery/6c81feb760cb36d7d83d1421aef257833ba9768e/assets-quellen/texturen/moon/albedo.jpg",
+      "mirrorCommit": "6c81feb760cb36d7d83d1421aef257833ba9768e",
+      "dimensions": [
+        2048,
+        1024
+      ],
+      "bytes": 1053869,
+      "sha256": "2764ba6535ea0481a062846ee033cc7a909dae05b31a8fd13f3e98f3a7fd92bd",
+      "processing": "Unmodified upstream 2k asset, filename changed only"
+    },
+    {
+      "file": "neptune.jpg",
+      "author": "Solar System Scope / INOVE",
+      "license": "CC-BY-4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.solarsystemscope.com/textures/download/2k_neptune.jpg",
+      "mirror": "https://raw.githubusercontent.com/RTF22/Orrery/6c81feb760cb36d7d83d1421aef257833ba9768e/assets-quellen/texturen/neptune/albedo.jpg",
+      "mirrorCommit": "6c81feb760cb36d7d83d1421aef257833ba9768e",
+      "dimensions": [
+        2048,
+        1024
+      ],
+      "bytes": 241580,
+      "sha256": "cb42ea82709741d28b0af44d8b283cbc6dbd0c521a7f0e1e1e010ade00977df6",
+      "processing": "Unmodified upstream 2k asset, filename changed only"
+    },
+    {
+      "file": "mars.jpg",
+      "author": "Solar System Scope / INOVE",
+      "license": "CC-BY-4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.solarsystemscope.com/textures/download/2k_mars.jpg",
+      "mirror": "https://raw.githubusercontent.com/RTF22/Orrery/6c81feb760cb36d7d83d1421aef257833ba9768e/assets-quellen/texturen/mars/albedo.jpg",
+      "mirrorCommit": "6c81feb760cb36d7d83d1421aef257833ba9768e",
+      "dimensions": [
+        2048,
+        1024
+      ],
+      "bytes": 750547,
+      "sha256": "2d187f3e77a98eaa8cea5f4cc722f633c122ef170b9e94ace6b5fb6cbc3f8e01",
+      "processing": "Unmodified upstream 2k asset, filename changed only"
+    },
+    {
+      "file": "saturn-ring.png",
+      "author": "Solar System Scope / INOVE",
+      "license": "CC-BY-4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.solarsystemscope.com/textures/download/2k_saturn_ring_alpha.png",
+      "mirror": "https://raw.githubusercontent.com/RTF22/Orrery/6c81feb760cb36d7d83d1421aef257833ba9768e/public/textures/saturn/ring.png",
+      "mirrorCommit": "6c81feb760cb36d7d83d1421aef257833ba9768e",
+      "dimensions": [
+        2048,
+        125
+      ],
+      "bytes": 12119,
+      "sha256": "4b0644b2f3ef259fd0bfaedd9dc52f9e7d9738f65f50363e8c4dd19f650d7334",
+      "processing": "Unmodified upstream 2k asset, filename changed only"
+    }
+  ]
+}

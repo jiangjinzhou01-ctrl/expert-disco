@@ -1,0 +1,100 @@
+{
+  "result": "PASS",
+  "command": "node scripts/optimize-orbital-assets.mjs",
+  "note": "Actual decoded meshopt topology, UV/normal preservation and world-space bounds assertions; no geometry simplification.",
+  "rawBytes": 14750964,
+  "compressedBytes": 6882984,
+  "reductionPercent": 53.33875128432284,
+  "results": [
+    {
+      "id": "A-capsule",
+      "rawBytes": 3247096,
+      "compressedBytes": 1440096,
+      "reductionPercent": 55.64972516981328,
+      "triangles": 50704,
+      "maximumBoundsErrorMetres": 0.00006731081209743195,
+      "sha256": "6a9a9be7b76fb3f59c6b8124b748c001235fe0addf29169536893f362bff8f0a"
+    },
+    {
+      "id": "A-arrival",
+      "rawBytes": 366344,
+      "compressedBytes": 165196,
+      "reductionPercent": 54.90686349442054,
+      "triangles": 5800,
+      "maximumBoundsErrorMetres": 0.0001450131693090384,
+      "sha256": "e5b2905ed3f7af912083a7279cda04e451237795d5b1e1f7a83b71605d33a543"
+    },
+    {
+      "id": "A-gallery-west",
+      "rawBytes": 930872,
+      "compressedBytes": 396488,
+      "reductionPercent": 57.40681855292672,
+      "triangles": 15116,
+      "maximumBoundsErrorMetres": 0.00016212369573054275,
+      "sha256": "904cab0cc167f7862ebcf8d6a99e276765171a073783d1de56abbd1320cff351"
+    },
+    {
+      "id": "A-gallery-east",
+      "rawBytes": 930868,
+      "compressedBytes": 399804,
+      "reductionPercent": 57.05040886570384,
+      "triangles": 15116,
+      "maximumBoundsErrorMetres": 0.00016212369573054275,
+      "sha256": "7d78e05b67621070140c2a0a236ad853ac197d508cc5a4621df25bcf8158c91b"
+    },
+    {
+      "id": "A-gate",
+      "rawBytes": 1180060,
+      "compressedBytes": 521860,
+      "reductionPercent": 55.7768249072081,
+      "triangles": 18952,
+      "maximumBoundsErrorMetres": 0.00015323285710167056,
+      "sha256": "00e4229b15b64861d99fa67d84db9307db75793d6c43c4bf69f3d93dc73f7c60"
+    },
+    {
+      "id": "A-roof-trusses",
+      "rawBytes": 999752,
+      "compressedBytes": 465712,
+      "reductionPercent": 53.417247477374396,
+      "triangles": 14988,
+      "maximumBoundsErrorMetres": 0.00006869644864337943,
+      "sha256": "fbe214301e26e5267102c632fb2c91d2966e99338a79fa49be80600cbe2af166"
+    },
+    {
+      "id": "A-exterior-west",
+      "rawBytes": 2340852,
+      "compressedBytes": 1212256,
+      "reductionPercent": 48.213043797728346,
+      "triangles": 34176,
+      "maximumBoundsErrorMetres": 0.00020102735412308448,
+      "sha256": "0a2bf9670051c41b69651a727bad197aa140241c07332884645e4d5ca4570c03"
+    },
+    {
+      "id": "A-exterior-east",
+      "rawBytes": 2640616,
+      "compressedBytes": 1347468,
+      "reductionPercent": 48.97145211571845,
+      "triangles": 38368,
+      "maximumBoundsErrorMetres": 0.00026401843113532664,
+      "sha256": "0bd44aa8b98386c27e87411d99a385bb3a192ef6c94afe2108f1f35eb154fb90"
+    },
+    {
+      "id": "B-services",
+      "rawBytes": 1735196,
+      "compressedBytes": 743232,
+      "reductionPercent": 57.16725949114683,
+      "triangles": 26076,
+      "maximumBoundsErrorMetres": 0.00009061326941406378,
+      "sha256": "f6ca2e9d86affc926763661fa297560caded03d26b064f2c3b706021ad197aec"
+    },
+    {
+      "id": "B-gravity-instruments",
+      "rawBytes": 379308,
+      "compressedBytes": 190872,
+      "reductionPercent": 49.67888892404062,
+      "triangles": 5416,
+      "maximumBoundsErrorMetres": 0.00007514700303163811,
+      "sha256": "f9ba7649a527653fe86338b6309d212e6c00c51a6a0219aaa0a24b03ec806e7b"
+    }
+  ]
+}

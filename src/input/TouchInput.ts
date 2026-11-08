@@ -1,4 +1,5 @@
 import type { InputCallbacks } from './DesktopInput';
+import { DEFAULT_LOOK_SETTINGS, LookResponse, type LookSettings } from './LookResponse';
 
 const JOYSTICK_RADIUS = 58;
 export interface TouchState { moveActive: boolean; lookActive: boolean; moveX: number; moveY: number }
@@ -8,6 +9,7 @@ export class TouchInput {
   readonly movement = { x: 0, y: 0 };
   readonly state: TouchState = { moveActive: false, lookActive: false, moveX: 0, moveY: 0 };
   used = false;
+  readonly lookResponse = new LookResponse();
   private movePointer: number | null = null;
   private lookPointer: number | null = null;
   private originX = 0;
@@ -15,7 +17,8 @@ export class TouchInput {
   private lookX = 0;
   private lookY = 0;
 
-  constructor(private readonly canvas: HTMLElement, private readonly callbacks: InputCallbacks) {
+  constructor(private readonly canvas: HTMLElement, private readonly callbacks: InputCallbacks,
+    readonly enhancedLook = true) {
     canvas.addEventListener('pointerdown', this.pointerDown, { passive: false });
     canvas.addEventListener('pointermove', this.pointerMove, { passive: false });
     canvas.addEventListener('pointerup', this.pointerEnd);
@@ -25,6 +28,7 @@ export class TouchInput {
 
   private readonly pointerDown = (event: PointerEvent): void => {
     if (event.pointerType !== 'touch') return;
+    if (![event.clientX, event.clientY, event.timeStamp].every(Number.isFinite)) return;
     this.used = true;
     const bounds = this.canvas.getBoundingClientRect();
     if (event.clientX - bounds.left < bounds.width * 0.45) {
@@ -39,6 +43,7 @@ export class TouchInput {
       this.lookX = event.clientX;
       this.lookY = event.clientY;
       this.state.lookActive = true;
+      this.lookResponse.begin(event.timeStamp);
     }
     event.preventDefault();
     try { this.canvas.setPointerCapture(event.pointerId); } catch (error) {
@@ -59,9 +64,25 @@ export class TouchInput {
       this.state.moveY = -this.movement.y * JOYSTICK_RADIUS;
     } else if (event.pointerId === this.lookPointer) {
       event.preventDefault();
-      this.callbacks.look(event.clientX - this.lookX, event.clientY - this.lookY);
-      this.lookX = event.clientX;
-      this.lookY = event.clientY;
+      // Native coalesced samples retain their own timestamps. Synthetic test
+      // events and browsers without coalescing use the enclosing event.
+      const samples = typeof event.getCoalescedEvents === 'function' ? event.getCoalescedEvents() : [];
+      const last = samples.at(-1);
+      if (!last || last.clientX !== event.clientX || last.clientY !== event.clientY
+        || last.timeStamp !== event.timeStamp) samples.push(event);
+      const width = this.canvas.getBoundingClientRect().width;
+      for (const sample of samples) {
+        if (![sample.clientX, sample.clientY, sample.timeStamp].every(Number.isFinite)) continue;
+        const dx = sample.clientX - this.lookX;
+        const dy = sample.clientY - this.lookY;
+        const settings = this.lookResponse.settings;
+        const linearGain = settings.sensitivity / DEFAULT_LOOK_SETTINGS.sensitivity;
+        const delta = this.enhancedLook ? this.lookResponse.sample(dx, dy, sample.timeStamp, width)
+          : { x: dx * linearGain, y: dy * linearGain * (settings.invertY ? -1 : 1) };
+        this.callbacks.look(delta.x, delta.y);
+        this.lookX = sample.clientX;
+        this.lookY = sample.clientY;
+      }
     }
   };
 
@@ -77,6 +98,7 @@ export class TouchInput {
     if (event.pointerId === this.lookPointer) {
       this.lookPointer = null;
       this.state.lookActive = false;
+      this.lookResponse.end();
     }
     if (this.canvas.hasPointerCapture(event.pointerId)) this.canvas.releasePointerCapture(event.pointerId);
   };
@@ -88,11 +110,14 @@ export class TouchInput {
     this.lookPointer = null;
     this.movement.x = 0;
     this.movement.y = 0;
+    this.lookResponse.end();
     Object.assign(this.state, { moveActive: false, lookActive: false, moveX: 0, moveY: 0 });
     for (const pointer of [movePointer, lookPointer]) {
       if (pointer !== null && this.canvas.hasPointerCapture(pointer)) this.canvas.releasePointerCapture(pointer);
     }
   }
+
+  setLookSettings(settings: Partial<LookSettings>): void { this.lookResponse.configure(settings); }
 
   dispose(): void {
     this.clear();

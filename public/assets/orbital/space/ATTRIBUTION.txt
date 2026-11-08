@@ -1,0 +1,4 @@
+Planet and ring textures by Solar System Scope / INOVE, CC BY 4.0. https://www.solarsystemscope.com/textures/
+License: https://creativecommons.org/licenses/by/4.0/
+Retrieved through pinned GitHub mirror because upstream download returned an anti-bot challenge. No application code copied. See sources.json for original URLs, mirror URLs, dimensions and SHA-256.
+Composition, shaders and procedural stars are original THRESHOLD work; planet spacing and sizes are artistic, not a solar-system simulation.

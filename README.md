@@ -1,53 +1,54 @@
-# THRESHOLD V0.2 / THE FIRST THRESHOLD
+# THRESHOLD / 门界 — Orbital
 
-可自由探索的双向实时传送门章节：VESTIBULE 巨构前厅 → INVERT → 真实重力弧面 → 墙面终端 → 原路返回。保留 G0-LAB 的完整数学、传送与测试实现。
+可自由探索的实时空间作品：轨道舱与行星观测前厅 → 双向传送门 → INVERT 异常重力弧面 → 墙面终端 → 原路返回与装置共鸣。保留 G0-LAB 作为数学、透视和碰撞回归场景。
 
-默认入口是 V0.2。工程结论为 **PARTIALLY VERIFIED**：运行与自动化证据见 [验收报告](docs/V02_TEST_REPORT.md)；没有接入真实 Android 设备，不能声称手机帧率已达标。美术表现的实际限度见 [美术审查](docs/V02_ART_REVIEW.md)。本次没有推送或覆盖 GitHub 上的 G0 部署。
+本次改造加入原创建筑区块、真实 PBR 材质、11 个三维天体、门内视野参与的异步分区加载、触屏转向加速、可关闭诊断、摄影、声音和本地偏好/安全检查点。所有设备首次进入默认最高预设；用户可手动调整并保存选择。
 
-## 安装与启动
+验收状态与真实证据见 [Orbital 验收](docs/ORBITAL_ACCEPTANCE.md) 和 [技术报告](docs/ORBITAL_TECHNICAL_REPORT.md)。没有接入实体 Android/iPhone 或代表性桌面 GPU，真实设备性能与十分钟热稳定性尚未通过验证。当前不宣称已经达到全面商业验收。
 
-需要 Node.js 24 / npm 11、WebGL 2 浏览器。交付内已包含 GLB、贴图、碰撞数据，无需先安装 Blender。
+## 启动
 
-```bash
+需要 Node.js 24 / npm 11 和 WebGL 2 浏览器。模型、贴图、WASM 解码器均随工程提供；正常构建无需 Blender、外部资产服务或云后端。
+
+```sh
 npm ci
 npm run dev -- --port 5180
 ```
 
-打开 `http://localhost:5180/`。`dev` 绑定全部网络接口；同一局域网手机可使用主机 IP 与端口访问。云工作区需要平台端口转发。
+打开 `http://localhost:5180/`。局域网手机可访问主机 IP:5180，云工作区需使用平台端口转发。浏览器需通过 HTTP(S) 加载，不能直接打开文件。
 
-```bash
+```sh
 npm run build
 npm run preview -- --port 4180
 ```
 
-生产预览：`http://localhost:4180/`。可直接部署 `dist/` 到静态服务器。默认相对资源路径；仓库子路径构建示例：`VITE_BASE=/your-repository/ npm run build`。不能用 file:// 打开含模块与 WASM 的入口。
+`dist/` 是完整静态站点。默认相对资源路径，支持 GitHub Pages 仓库子路径；也可使用 `VITE_BASE=/repository/ npm run build`。
 
-## 操作与章节路线
+## 操作
 
-- 桌面：WASD 移动；鼠标拖动观察，双击画布请求指针锁定；Esc 释放，R 回到最近有效检查点，F3 切换数据。靠近终端按 E。
-- 手机：左半区拖动移动，右半区另一个手指观察。右上角 ↺ 安全复位，⋯ 打开设置。靠近终端出现触控按钮；建议横屏。
-- 设置：实时门内画质、减少镜头运动、诊断、返回章节起点、G0-LAB。减少运动只影响镜头 Up 过渡，身体与碰撞仍真实旋转。
+- 桌面：WASD/方向键移动，鼠标拖动观察，双击锁定鼠标；Esc 退出，R 安全复位，E 激活终端，F3 诊断，P 摄影。
+- 触屏：左侧摇杆移动，右侧另一个手指观察；快滑加速，可在设置中调整或关闭。支持 Pointer ID、取消、失焦、旋转屏幕后清理输入。
+- 右上角：声音、摄影、安全复位、设置。设置提供灵敏度、加速、反转、FOV、画质、音量、减少镜头运动和帮助；诊断具有自己的关闭按钮。
+- 舱内可打开轨道观测台；INVERT 入口附近可释放真实物理样本，观察它沿局部 +X 重力下落。
+- 靠近墙面终端后激活，沿原路返回；前厅装置会回应。随时可以停下、倒退或回头，无强制过场。
 
-从窄廊走出，绕过中央下沉庭院（桥也可通行），走进黑色大门。INVERT 中向前走进弧面入口，沿弧面向右上方行走；站到墙上后继续上行约 0.8m，再沿墙向前走到终端。激活后沿原路退回地面，从入口门返回前厅，中央装置会回应。可随时停止、倒退和转身，没有自动沿路线搬运角色的逻辑。INVERT后方另有原始重力方向的实体楼梯和观察廊台，可沿正常重力探索；站墙后可看到它们变为横向的建筑参照。
+摄影模式暂停模拟，隐藏普通界面，导出当前真实画布 PNG；退出后恢复之前的暂停状态。声音由首次真实交互解锁，支持静音与后台暂停。偏好和经过校验的安全检查点只存于本机，恢复位置还必须通过支撑与胶囊空间检查。
 
 ## 模式与诊断
 
 | 入口 | 用途 |
 | --- | --- |
-| `/` | 完整首章 |
-| `/?debug=1` | 首章与实时诊断、JSON 导出 |
-| `/?mode=lab` | 原 G0 实验房间 |
-| `/?mode=chapter&test=1` | 仅开发/e2e 构建开放确定性测试接口 |
-| `/?test=1` | 保留旧测试链接，进入 LAB |
+| `/` | 默认 Orbital 章节 |
+| `/?debug=1` | 章节与诊断 |
+| `/?mode=lab` | 原 G0 回归房间 |
+| `/?mode=chapter&test=1` | 仅开发/e2e 构建提供确定性输入适配器 |
+| `/?test=1` | 兼容旧测试，进入 LAB |
 
-首章只读运行快照为 `window.__THRESHOLD_V02__()`。正式构建不会提供 `window.__V02_TEST__`，即使 URL 带 test 参数。开发设置内的“碰撞几何”可观察真实胶囊、弧面网格和独立碰撞代理，不改变模拟。G0 的只读/测试接口保持兼容。
+正式构建只提供读取真实状态的 `window.__THRESHOLD_V02__()`；不会暴露角色放置和强制步进接口。诊断包括物理/事件、帧时间、Draw Calls、门内分辨率、分区请求/驻留/回收与纹理格式。GPU 总显存与 GPU 时间没有测量时不会用 CPU 指标替代。
 
-诊断含脚底/眼睛、身体四元数、Up、重力、接触法线、θ、查询次数、事件和拒绝原因、FPS/P50/P95/P99、物理耗时、主/门内 Draw Calls、目标分辨率与资源数。GPU 时间未采集，显示 N/A；物理 CPU 耗时不冒充 GPU 时间。
+## 测试
 
-## 验证
-
-```bash
-npx playwright install --with-deps chromium
+```sh
 npm run typecheck
 npm run lint
 npm run test:unit
@@ -57,40 +58,30 @@ npm run test:subpath
 npm run verify
 ```
 
-`verify` 顺序执行以上所有门槛。Vitest 包含原 G0 34 项与新重力/路径/资产验证；浏览器用真实 WebGL 2 与 Rapier。生产测试禁止修改接口，用真实键盘完成完整章节并录制视频。软件渲染器较慢，生产回归允许较长超时；超时仍会失败，不跳过断言。CI 安装锁定依赖与 Chromium，失败即失败并上传日志和证据。
+浏览器首次安装：`npx playwright install --with-deps chromium`。开发浏览器测试验证真实 WebGL、像素投影、双端输入、双向传送、旋转角色、加载失败回退、诊断与摄影。生产测试运行普通构建，通过真实键盘和鼠标完成章节，不依赖开发瞬移接口。测试失败会返回非零状态。
 
-所有测试的固定步、随机种子、断言范围与实际数量以报告为准。`evidence/` 内也有继承的 G0 历史文件，不能当作本轮新数据；本轮主日志为 `evidence/v02/verify-final.log`。
-
-在另一个终端已有 5180 开发服务器、且没有其他图形测试运行时：
-
-```bash
-npm run measure:v02
+```sh
+npm run capture:orbital
+node scripts/measure-orbital.mjs
 ```
 
-它测量云端 SwiftShader 三个视角，并统计 `dist/` 实际字节数；不代表真实桌面 GPU 或 Android。真机 10 分钟操作和数据导出步骤见 [设备验证](docs/DEVICE_TEST_V02.md)。
+上面两项需先运行 5180 开发服务器；云环境 SwiftShader 数据只用于如实诊断，不能视为真实手机数据。截图、命令日志、运行状态与验证报告保存在 `evidence/`。
 
-## 可维护资产
+## 资产与架构
 
-源模型：`assets/source/threshold-v02-architecture.blend`，贴图：`assets/source/textures/`，导出：`public/assets/v02/`。资产 manifest 包含每个模块的 ID、原点、包围盒、材质与三角面数。正式模型没有使用参考图作为背景或门内纹理。
+- [架构与实现](docs/ORBITAL_TECHNICAL_REPORT.md)
+- [参考过的 GitHub 实现及明确边界](docs/ORBITAL_REFERENCES.md)
+- [真实 PBR 来源、许可、KTX2 管线与字节数据](docs/ORBITAL_MATERIAL_SOURCES.md)
+- [行星贴图来源及署名](docs/ORBITAL_SPACE_ASSETS.md)
+- [原创 Blender 工程和压缩前源资产](assets/source/orbital/README.md)
+- [原始重力架构](docs/ARCHITECTURE_V02.md)
 
-若需重新制作同源视觉/碰撞资产，安装 Blender 4.3.2（或兼容版本）后运行：
+新建筑按十个区块延后请求；轮廓和安全碰撞常驻。兴趣区域同时考虑主相机和门内映射相机，使用受限并发、距离优先、短期缓存和几何回收。它不等同于硬件遮挡查询，也不会卸载脚下的物理地面。
 
-```bash
-npm run assets:build
-npm run test:unit
-npm run build
-```
+原创模型可通过 `npm run assets:orbital` 重建（需 Blender）；Meshopt 编码工具通过 lockfile 锁定。贴图的抓取、KTX2 编码和来源验证脚本位于 `scripts/`。复用资产均有独立来源与许可记录，不把开源代码许可当成任意模型的使用许可。
 
-生成器会替换该专用源文件和生成数据；Blender 源使用项目的 +Y 向上约定，两个世界各有命名Collection；默认隐藏INVERT以避免局部原点重叠，编辑时切换可见性。避免在源码模型中手工编辑后直接运行生成器而丢失修改。
+## 当前限制
 
-## 工程说明
+一对门、两个主要世界，无递归多门、多人或账户。天空是艺术化轨道构图，非真实太阳系比例。建筑静态阴影与选定 PBR 资产不等同于完整离线 GI 或电影级写实渲染。实体设备兼容性、最高预设性能、长时热稳定性和最终人工美术验收仍需独立完成。
 
-- [架构、数学和建模管线](docs/ARCHITECTURE_V02.md)
-- [CR1 实测修订](docs/CR1_DEVIATIONS.md)
-- [真实引擎截图与美术审查](docs/V02_ART_REVIEW.md)
-- [测试、构建和验收报告](docs/V02_TEST_REPORT.md)
-- [边界与限制](docs/V02_LIMITATIONS.md)
-- [原始 G0 说明](docs/README_G0_ORIGINAL.md)
-- [本轮完整任务书](docs/THRESHOLD_V02_CODEX_MASTER_PROMPT.md)
-
-依赖精确锁定于 package-lock.json。没有账号、联网 API、ECHO/DRIFT、递归门或大型物体跨门模拟。
+源码发布在仓库 `threshold-v02` 分支；受当前仓库 Pages 模式限制，`main` 保存编译后的静态站点，防止把 `/src/main.tsx` 当成线上入口。

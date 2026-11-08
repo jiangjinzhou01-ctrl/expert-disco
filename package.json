@@ -17,7 +17,12 @@
     "test:subpath": "node scripts/subpath-smoke.js",
     "measure:software": "node scripts/measure-performance.js",
     "assets:build": "blender -b --python scripts/build-v02-assets.py -- \"$PWD\"",
-    "measure:v02": "node scripts/measure-v02.js"
+    "measure:v02": "node scripts/measure-v02.js",
+    "assets:orbital": "blender -b --python scripts/build-orbital-assets.py -- \"$PWD\" && node scripts/optimize-orbital-assets.mjs",
+    "test:orbital": "playwright test src/tests/e2e/orbital.spec.ts",
+    "capture:orbital": "node scripts/capture-orbital.mjs",
+    "deploy:pages": "node scripts/deploy-pages.mjs",
+    "measure:orbital": "node scripts/measure-orbital.mjs"
   },
   "dependencies": {
     "@dimforge/rapier3d-compat": "0.21.0",
@@ -28,6 +33,7 @@
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
+    "@gltf-transform/cli": "4.5.1",
     "@playwright/test": "1.65.0",
     "@types/node": "26.6.6",
     "@types/pngjs": "6.0.5",

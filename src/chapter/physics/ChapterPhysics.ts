@@ -19,6 +19,7 @@ export class ChapterPhysics {
   const v=new Float32Array(data.supportVolume.vertices.flat());for(let i=0;i<v.length;i+=3)v[i]+=100;
   const support=this.world.createCollider(RAPIER.ColliderDesc.trimesh(v,new Uint32Array(data.supportVolume.indices)));this.metadata.set(support.handle,{id:'INVERT-CONTINUOUS-SUPPORT',worldId:'B',walkable:true});
   const terminal=this.world.createCollider(RAPIER.ColliderDesc.cuboid(.22,.22,.22).setTranslation(104.5,5.1,-16.5));this.metadata.set(terminal.handle,{id:'INVERT_TERMINAL',worldId:'B'});
+  const observatory=this.world.createCollider(RAPIER.ColliderDesc.cuboid(.25,.55,.25).setTranslation(1.62,.95,24));this.metadata.set(observatory.handle,{id:'ORBITAL-OBSERVATION-DEVICE',worldId:'A'});
   this.body=this.world.createRigidBody(RAPIER.RigidBodyDesc.kinematicPositionBased().setTranslation(0,.87+SKIN,33));
   this.collider=this.world.createCollider(RAPIER.ColliderDesc.capsule(.57,.3),this.body);
   this.character=this.world.createCharacterController(.002);this.character.setSlideEnabled(true);this.character.enableAutostep(.25,.35,true);this.character.setApplyImpulsesToDynamicBodies(false);this.character.setMaxSlopeClimbAngle(Math.PI/3);this.character.setMinSlopeSlideAngle(Math.PI/2);

@@ -52,3 +52,17 @@ test('V02 production: genuine keyboard journey from spawn through the turn, inte
  await keyUntil('s',`${read}.foot[2]>-7.1`);await keyUntil('a',`${read}.mode==='NORMAL'&&${read}.foot[0]<.1`);await keyUntil('s',`${read}.slot==='A'`);
  const final=await page.evaluate(()=>window.__THRESHOLD_V02__!());expect(final.ready).toBe(true);if(!final.ready)throw Error('Not ready');expect(final.returned).toBe(true);expect(final.up).toEqual([0,1,0]);expect(final.events.map(e=>e.id)).toEqual([1,2]);expect(final.errors).toEqual([]);await page.screenshot({path:'evidence/v02/production-returned.png'});expect(browserErrors).toEqual([]);const resources=await page.evaluate(()=>performance.getEntriesByType('resource').filter(e=>e.name.startsWith(location.origin)).map(e=>{const r=e as PerformanceResourceTiming;return {url:r.name,transferSize:r.transferSize,encodedBodySize:r.encodedBodySize,decodedBodySize:r.decodedBodySize};}));await writeFile('evidence/v02/production-journey.json',JSON.stringify({trace,final,browserErrors,resources,note:'Actual production browser Resource Timing. Encoded/decoded body bytes exclude embedded textures counted inside GLB; no compression is inferred.'},null,2));
 });
+
+test('Orbital production: a real walked checkpoint survives reload after physics clearance',async({page})=>{
+ test.setTimeout(180000);await page.setViewportSize({width:640,height:360});await page.goto('/?mode=chapter');
+ await page.waitForFunction(()=>window.__THRESHOLD_V02__?.().ready===true,null,{timeout:60000});
+ expect(await page.evaluate(()=>typeof window.__V02_TEST__)).toBe('undefined');
+ await page.keyboard.down('w');
+ try{await page.waitForFunction(()=>{const s=window.__THRESHOLD_V02__?.();return s?.ready&&s.elapsed>3.2&&s.foot[2]<23.5;},null,{timeout:90000});}finally{await page.keyboard.up('w');}
+ const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('threshold.orbital.checkpoint.v1')??'null')) as {foot:number[];slot:string};
+ expect(saved.slot).toBe('A');expect(saved.foot[2]).toBeLessThan(26);expect(saved.foot[2]).toBeGreaterThan(22);
+ await page.reload();await page.waitForFunction(()=>{const s=window.__THRESHOLD_V02__?.();return s?.ready&&s.restoredCheckpoint;},null,{timeout:60000});
+ const restored=await page.evaluate(()=>window.__THRESHOLD_V02__!());if(!restored.ready)throw Error('Restored runtime not ready');
+ expect(restored.slot).toBe('A');expect(restored.foot[2]).toBeCloseTo(saved.foot[2],1);expect(restored.errors).toEqual([]);
+ await writeFile('evidence/orbital/production-checkpoint.json',JSON.stringify({saved,restored,method:'Normal production bundle; actual held W input; no pose/test adapter; reload validates support and full-capsule overlap.'},null,2));
+});

@@ -31,7 +31,7 @@ export class PortalRenderer {
   private readonly normal=new Vector3();
   private readonly markerPosition=new Vector3();
   private readonly mapping:Record<WorldId,Matrix4>;
-  visibilityCulling=false; private readonly frustum=new Frustum();private readonly viewProjection=new Matrix4();private readonly portalBounds=new Box3();
+  visibilityCulling=false; adaptiveResolution=true; private readonly frustum=new Frustum();private readonly viewProjection=new Matrix4();private readonly portalBounds=new Box3();
   private disposed=false;
   private readonly contextLost=(event:Event)=>{event.preventDefault();this.metrics.context='lost';};
   private readonly contextRestored=()=>{this.metrics.context='active';this.target.dispose();};
@@ -95,7 +95,7 @@ export class PortalRenderer {
       const distance=this.mainCamera.position.distanceTo(source.portal.position);
       const coverage=Math.min(1,source.portal.width*source.portal.height/Math.max(1,distance*distance));
       // Discrete coverage bands avoid reallocating GPU attachments on every movement pixel.
-      const effective=Math.min(this.metrics.quality,coverage>.5?1:coverage>.2?.75:coverage>.08?.5:.35);
+      const effective=this.adaptiveResolution?Math.min(this.metrics.quality,coverage>.5?1:coverage>.2?.75:coverage>.08?.5:.35):this.metrics.quality;
       const w=Math.round(this.drawingBuffer.x*effective),h=Math.round(this.drawingBuffer.y*effective);
       if(w!==this.metrics.targetWidth||h!==this.metrics.targetHeight){this.target.setSize(w,h);this.metrics.targetResizes++;this.metrics.targetWidth=w;this.metrics.targetHeight=h;}
     }

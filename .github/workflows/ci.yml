@@ -1,5 +1,12 @@
 name: THRESHOLD V0.2 verification
-on: [push, pull_request]
+on:
+  push:
+    paths-ignore:
+      - 'docs/**'
+      - 'evidence/**'
+      - 'README.md'
+      - 'DELIVERY_MANIFEST.json'
+  pull_request:
 jobs:
   verify:
     runs-on: ubuntu-latest

@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "verifiedReferencedVertices": 10888,
+  "criterion": "All authored capsule geometry at reachable body heights0.02..1.74m and Z22..36 remains outside clear X[-2,2]. Thin floor inlays below2cm are excepted. Rear airlock remains behind original Z36 collider plane.",
+  "guardPlanesMetres": {
+    "left": -2,
+    "right": 2,
+    "rear": 36
+  }
+}
