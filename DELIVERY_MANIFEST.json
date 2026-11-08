@@ -1,6 +1,6 @@
 {
   "project": "THRESHOLD / Orbital revision",
-  "generatedAt": "2026-11-08T01:42:09.837702+00:00",
+  "generatedAt": "2026-11-08T02:07:45.473388+00:00",
   "runtimeSourceCommit": "61a1bf3",
   "publishedSourceCommit": "783ed9703ba7cf20d0e7a2c8dbfb4446085247e4",
   "status": "PARTIALLY VERIFIED",
@@ -588,8 +588,8 @@
     },
     {
       "path": "docs/ORBITAL_DEPLOYMENT.md",
-      "bytes": 1601,
-      "sha256": "3ec750476f29bfd28f9194af284adc3f77cef1e6b97d0ff43f84a71de6afcabb"
+      "bytes": 2126,
+      "sha256": "0b764639f5e9933a5f5c8897b70ace2273da83b56e226bd5d7f3c582d92a76da"
     },
     {
       "path": "docs/ORBITAL_MATERIAL_SOURCES.md",
@@ -2648,5 +2648,5 @@
     }
   ],
   "fileCount": 528,
-  "totalBytes": 180012779
+  "totalBytes": 180013304
 }

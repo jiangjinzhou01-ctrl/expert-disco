@@ -16,3 +16,7 @@ The deployment script is intentionally scoped to this authorized origin. It requ
 Then wait for the repository's actual `pages-build-deployment` workflow and verify the live site in a fresh browser. Validate WebGL2, chapter readiness, critical resources and the absence of the development mutation adapter. A successful Git push alone is not evidence that the website works.
 
 To roll back, use the last known static deployment commit as the content of a new commit on `main`; preserve history. The source branch remains available regardless of the published version.
+
+## Required handoff format
+
+For every future engineering delivery, provide both a downloadable complete source archive and the working live site URL in the final response. The archive must contain the project source, lockfile, required model/texture assets, tests, documentation and reproducible run/build commands. Exclude credentials, Git internals and node_modules. Identify the delivered revision and provide a checksum; if a live deployment is unavailable, state that explicitly rather than omitting the link silently.
