@@ -63,6 +63,9 @@ test('Orbital production: a real walked checkpoint survives reload after physics
  expect(saved.slot).toBe('A');expect(saved.foot[2]).toBeLessThan(26);expect(saved.foot[2]).toBeGreaterThan(22);
  await page.reload();await page.waitForFunction(()=>{const s=window.__THRESHOLD_V02__?.();return s?.ready&&s.restoredCheckpoint;},null,{timeout:60000});
  const restored=await page.evaluate(()=>window.__THRESHOLD_V02__!());if(!restored.ready)throw Error('Restored runtime not ready');
- expect(restored.slot).toBe('A');expect(restored.foot[2]).toBeCloseTo(saved.foot[2],1);expect(restored.errors).toEqual([]);
- await writeFile('evidence/orbital/production-checkpoint.json',JSON.stringify({saved,restored,method:'Normal production bundle; actual held W input; no pose/test adapter; reload validates support and full-capsule overlap.'},null,2));
+ // Navigation flushes a newer safe checkpoint on visibilitychange. Verify the
+ // checkpoint actually retained across navigation, not the earlier periodic one.
+ const persisted=await page.evaluate(()=>JSON.parse(localStorage.getItem('threshold.orbital.checkpoint.v1')??'null')) as {foot:number[];slot:string;savedAt:number};
+ expect(restored.slot).toBe('A');expect(persisted.slot).toBe('A');expect(restored.foot[2]).toBeCloseTo(persisted.foot[2],1);expect(persisted.foot[2]).toBeLessThanOrEqual(saved.foot[2]+.05);expect(persisted.foot[2]).toBeGreaterThan(22);expect(restored.errors).toEqual([]);
+ await writeFile('evidence/orbital/production-checkpoint.json',JSON.stringify({periodic:saved,persisted,restored,method:'Normal production bundle; actual held W input; no pose/test adapter; reload validates support and full-capsule overlap.'},null,2));
 });

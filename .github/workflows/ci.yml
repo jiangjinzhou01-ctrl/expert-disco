@@ -7,6 +7,9 @@ on:
       - 'README.md'
       - 'DELIVERY_MANIFEST.json'
   pull_request:
+concurrency:
+  group: threshold-verify-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   verify:
     runs-on: ubuntu-latest
