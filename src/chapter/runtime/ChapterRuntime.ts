@@ -6,6 +6,7 @@ import {createExperienceArtifacts,type ExperienceArtifacts} from '../assets/Expe
 import {ChapterAudio} from '../experience/ChapterAudio';
 import {ChapterPersistence} from '../experience/ChapterPersistence';
 import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
+import {releaseFinishResources} from '../../engine/rendering/FinishResources';
 import {PMREMGenerator,Euler,PerspectiveCamera,Quaternion,Raycaster,Vector2,Vector3,type WebGLRenderer} from 'three';
 import {ChapterDebugGeometry} from '../ui/ChapterDebugGeometry';
 import {ChapterPhysics} from '../physics/ChapterPhysics';
@@ -123,6 +124,6 @@ export class ChapterRuntime {
   if(this.disposed&&!this.ready)return;this.saveCheckpoint();this.disposed=true;
   document.removeEventListener('visibilitychange',this.onVisibility);void this.audio.dispose();this.streaming?.dispose();this.artifacts?.dispose();this.sky?.dispose();
   this.renderer?.dispose();this.debugGeometry?.dispose();this.physics?.dispose();this.scenes?.A.dispose();this.scenes?.B.dispose();this.materials.dispose();this.environmentTarget?.dispose();
-  this.gl.dispose();this.ready=false;this.gl.domElement.removeEventListener('webglcontextrestored',this.restored);
+  releaseFinishResources(this.gl);this.gl.dispose();this.ready=false;this.gl.domElement.removeEventListener('webglcontextrestored',this.restored);
  }
 }

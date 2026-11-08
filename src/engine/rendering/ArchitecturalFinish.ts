@@ -1,4 +1,5 @@
 import type { MeshStandardMaterial } from 'three';
+import { trackFinishResources } from './FinishResources';
 
 /** Metres, linear-light shading and authored material roles. No geometry or
  * collider displacement: the CR1 contact surface remains exactly the same. */
@@ -26,7 +27,8 @@ export function architecturalRole(name: string): ArchitecturalRole | null {
 export function installArchitecturalFinish(material: MeshStandardMaterial, role: FinishRole): void {
   const pattern = FINISHES[role].pattern;
   material.customProgramCacheKey = () => `threshold-atelier-4:pattern-${pattern}`;
-  material.onBeforeCompile = shader => {
+  material.onBeforeCompile = (shader, renderer) => {
+    trackFinishResources(renderer, shader.uniforms);
     shader.vertexShader = `varying vec3 vAtelierPosition; varying vec3 vAtelierNormal;\n${shader.vertexShader}`
       .replace('#include <worldpos_vertex>', `#include <worldpos_vertex>
         vec4 atelierWorld = vec4(transformed, 1.0);
