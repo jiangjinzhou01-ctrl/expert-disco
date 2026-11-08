@@ -13,6 +13,8 @@ const git=(args,cwd=source)=>execFileSync('git',args,{cwd,encoding:'utf8'}).trim
 if(git(['status','--porcelain']))throw Error('Commit the reviewed source and evidence before publishing.');
 const remote=git(['remote','get-url','origin']);
 if(!/^https:\/\/github\.com\/jiangjinzhou01-ctrl\/expert-disco(?:\.git)?$/.test(remote))throw Error('This command is scoped to the explicitly authorized expert-disco repository.');
+const sourceBranch=git(['branch','--show-current']);
+if(!sourceBranch)throw Error('Run deployment from a named source branch.');
 execFileSync('npm',['run','build'],{cwd:source,stdio:'inherit'});
 if(!existsSync(join(source,'dist/index.html')))throw Error('Production build missing');
 const revision=git(['rev-parse','HEAD']);
@@ -24,7 +26,7 @@ try{
  cpSync(join(source,'dist'),temporary,{recursive:true});
  if(!existsSync(join(temporary,'index.html'))||readFileSync(join(temporary,'index.html'),'utf8').includes('/src/main.tsx'))throw Error('Only a compiled production entry may be published');
  writeFileSync(join(temporary,'.nojekyll'),'');
- writeFileSync(join(temporary,'DEPLOYMENT.json'),JSON.stringify({project:'THRESHOLD Orbital',sourceRevision:revision,sourceBranch:'threshold-v02',builtAt:new Date().toISOString()},null,2)+'\n');
+ writeFileSync(join(temporary,'DEPLOYMENT.json'),JSON.stringify({project:'THRESHOLD Orbital',sourceRevision:revision,sourceBranch,builtAt:new Date().toISOString()},null,2)+'\n');
  git(['add','--all'],temporary);
  if(!git(['diff','--cached','--stat'],temporary))throw Error('No production changes');
  git(['commit','-m',`Publish THRESHOLD Orbital ${revision.slice(0,8)}`],temporary);
