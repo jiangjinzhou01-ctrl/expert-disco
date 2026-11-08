@@ -1,0 +1,211 @@
+{
+  "visualSourceRevision": "39b5d531e2b5f6d339129f794d282d5032534103",
+  "runtimeVerificationRevision": "9abdcbd79e6f3181e88a7bb635bd991f5fec81ee",
+  "baselineRevision": "952176f36b45185ea425e8c9b9f843c3ff22cb56",
+  "viewport": [
+    1600,
+    900
+  ],
+  "dpr": 1,
+  "pairedCapturePoseChecks": [
+    {
+      "view": "CAPSULE",
+      "maximumPoseErrors": {
+        "foot": 0,
+        "up": 0,
+        "cameraRotation": 0.0,
+        "bodyRotation": 0
+      },
+      "before": {
+        "mainDrawCalls": 50,
+        "offscreenDrawCalls": 0,
+        "programs": 22,
+        "textures": 24,
+        "targetWidth": 1600,
+        "targetHeight": 900
+      },
+      "after": {
+        "mainDrawCalls": 52,
+        "offscreenDrawCalls": 0,
+        "programs": 30,
+        "textures": 26,
+        "targetWidth": 1600,
+        "targetHeight": 900
+      }
+    },
+    {
+      "view": "ARRIVAL",
+      "maximumPoseErrors": {
+        "foot": 0,
+        "up": 0,
+        "cameraRotation": 0.0,
+        "bodyRotation": 0
+      },
+      "before": {
+        "mainDrawCalls": 90,
+        "offscreenDrawCalls": 63,
+        "programs": 21,
+        "textures": 24,
+        "targetWidth": 1600,
+        "targetHeight": 900
+      },
+      "after": {
+        "mainDrawCalls": 95,
+        "offscreenDrawCalls": 60,
+        "programs": 31,
+        "textures": 26,
+        "targetWidth": 1600,
+        "targetHeight": 900
+      }
+    },
+    {
+      "view": "CROSSING",
+      "maximumPoseErrors": {
+        "foot": 0.0,
+        "up": 0,
+        "cameraRotation": 0.0,
+        "bodyRotation": 0
+      },
+      "before": {
+        "mainDrawCalls": 34,
+        "offscreenDrawCalls": 62,
+        "programs": 21,
+        "textures": 24,
+        "targetWidth": 1600,
+        "targetHeight": 900
+      },
+      "after": {
+        "mainDrawCalls": 34,
+        "offscreenDrawCalls": 59,
+        "programs": 31,
+        "textures": 26,
+        "targetWidth": 1600,
+        "targetHeight": 900
+      }
+    },
+    {
+      "view": "C1",
+      "maximumPoseErrors": {
+        "foot": 0,
+        "up": 0,
+        "cameraRotation": 0.0,
+        "bodyRotation": 0
+      },
+      "before": {
+        "mainDrawCalls": 52,
+        "offscreenDrawCalls": 0,
+        "programs": 21,
+        "textures": 24,
+        "targetWidth": 1600,
+        "targetHeight": 900
+      },
+      "after": {
+        "mainDrawCalls": 50,
+        "offscreenDrawCalls": 0,
+        "programs": 32,
+        "textures": 26,
+        "targetWidth": 1600,
+        "targetHeight": 900
+      }
+    },
+    {
+      "view": "C2",
+      "maximumPoseErrors": {
+        "foot": 0.0,
+        "up": 0.0,
+        "cameraRotation": 0.0,
+        "bodyRotation": 0
+      },
+      "before": {
+        "mainDrawCalls": 35,
+        "offscreenDrawCalls": 0,
+        "programs": 21,
+        "textures": 24,
+        "targetWidth": 1600,
+        "targetHeight": 900
+      },
+      "after": {
+        "mainDrawCalls": 33,
+        "offscreenDrawCalls": 0,
+        "programs": 32,
+        "textures": 26,
+        "targetWidth": 1600,
+        "targetHeight": 900
+      }
+    },
+    {
+      "view": "C3",
+      "maximumPoseErrors": {
+        "foot": 0.0,
+        "up": 0,
+        "cameraRotation": 0.0,
+        "bodyRotation": 0
+      },
+      "before": {
+        "mainDrawCalls": 36,
+        "offscreenDrawCalls": 0,
+        "programs": 21,
+        "textures": 24,
+        "targetWidth": 1600,
+        "targetHeight": 900
+      },
+      "after": {
+        "mainDrawCalls": 34,
+        "offscreenDrawCalls": 0,
+        "programs": 32,
+        "textures": 26,
+        "targetWidth": 1600,
+        "targetHeight": 900
+      }
+    }
+  ],
+  "materialAssignments": {
+    "meshes": 176,
+    "mapped": 150,
+    "roles": {
+      "mineral": 24,
+      "basalt": 45,
+      "limestone": 7,
+      "copper": 8,
+      "glass": 8,
+      "obsidian": 13,
+      "bronze": 20,
+      "metal": 16,
+      "state-signal": 12,
+      "cool-luminous": 3,
+      "luminous": 3,
+      "cold": 17
+    },
+    "unknown": []
+  },
+  "settingsTextContrast": 12.744424100692473,
+  "newCells": 3,
+  "newTriangles": 38876,
+  "newRawBytes": 2474328,
+  "newDeployedBytes": 772032,
+  "totalStreamingTriangles": 263588,
+  "totalStreamingBytes": 7655016,
+  "fonts": [
+    {
+      "path": "public/assets/atelier/fonts/InstrumentSerif-OFL.txt",
+      "bytes": 4405,
+      "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521"
+    },
+    {
+      "path": "public/assets/atelier/fonts/InstrumentSerif.ttf",
+      "bytes": 70012,
+      "sha256": "498efd461f6ddfcb7a111bf9a565709d2085d48201d501ead960d93e84ffbb88"
+    },
+    {
+      "path": "public/assets/atelier/fonts/Manrope-OFL.txt",
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    {
+      "path": "public/assets/atelier/fonts/Manrope.ttf",
+      "bytes": 164700,
+      "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6"
+    }
+  ],
+  "performanceScope": "Paused SwiftShader captures are for image/pose/draw/resource comparison. No sustained real-GPU or phone FPS claim. The uniform-only resource fix leaves these rendering images unchanged."
+}

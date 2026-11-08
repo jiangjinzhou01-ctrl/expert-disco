@@ -1,0 +1,113 @@
+{
+  "initial": {
+    "targetWidth": 1632,
+    "targetHeight": 918,
+    "quality": 0.85,
+    "mainDrawCalls": 12,
+    "offscreenDrawCalls": 31,
+    "geometries": 25,
+    "textures": 2,
+    "programs": 10,
+    "context": "active",
+    "passes": 1,
+    "targetResizes": 1
+  },
+  "samples": [
+    {
+      "targetWidth": 1088,
+      "targetHeight": 612,
+      "quality": 0.85,
+      "mainDrawCalls": 12,
+      "offscreenDrawCalls": 31,
+      "geometries": 25,
+      "textures": 2,
+      "programs": 10,
+      "context": "active",
+      "passes": 1,
+      "targetResizes": 2
+    },
+    {
+      "targetWidth": 816,
+      "targetHeight": 544,
+      "quality": 0.85,
+      "mainDrawCalls": 12,
+      "offscreenDrawCalls": 31,
+      "geometries": 25,
+      "textures": 2,
+      "programs": 10,
+      "context": "active",
+      "passes": 1,
+      "targetResizes": 3
+    },
+    {
+      "targetWidth": 918,
+      "targetHeight": 612,
+      "quality": 0.85,
+      "mainDrawCalls": 12,
+      "offscreenDrawCalls": 31,
+      "geometries": 25,
+      "textures": 2,
+      "programs": 10,
+      "context": "active",
+      "passes": 1,
+      "targetResizes": 4
+    },
+    {
+      "targetWidth": 1360,
+      "targetHeight": 765,
+      "quality": 0.85,
+      "mainDrawCalls": 12,
+      "offscreenDrawCalls": 31,
+      "geometries": 25,
+      "textures": 2,
+      "programs": 10,
+      "context": "active",
+      "passes": 1,
+      "targetResizes": 5
+    },
+    {
+      "targetWidth": 1632,
+      "targetHeight": 918,
+      "quality": 0.85,
+      "mainDrawCalls": 12,
+      "offscreenDrawCalls": 31,
+      "geometries": 25,
+      "textures": 2,
+      "programs": 10,
+      "context": "active",
+      "passes": 1,
+      "targetResizes": 6
+    },
+    {
+      "targetWidth": 1088,
+      "targetHeight": 612,
+      "quality": 0.85,
+      "mainDrawCalls": 12,
+      "offscreenDrawCalls": 31,
+      "geometries": 25,
+      "textures": 2,
+      "programs": 10,
+      "context": "active",
+      "passes": 1,
+      "targetResizes": 7
+    }
+  ],
+  "quality": {
+    "targetWidth": 640,
+    "targetHeight": 360,
+    "quality": 0.5,
+    "mainDrawCalls": 12,
+    "offscreenDrawCalls": 31,
+    "geometries": 25,
+    "textures": 2,
+    "programs": 10,
+    "context": "active",
+    "passes": 1,
+    "targetResizes": 8
+  },
+  "disposed": {
+    "geometries": 0,
+    "textures": 0,
+    "programs": 0
+  }
+}

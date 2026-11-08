@@ -1,0 +1,75 @@
+
+> threshold-v02@0.2.0 assets:atelier
+> blender -b --python scripts/build-atelier-assets.py -- "$PWD" && node scripts/optimize-orbital-assets.mjs --atelier-only
+
+ERROR Draco mesh compression is not available because library could not be found at /usr/bin/4.3/python/lib/python3.13/site-packages/libextern_draco.so
+07:10:08 | INFO: Starting glTF 2.0 export
+07:10:08 | INFO: Extracting primitive: Cube.090
+07:10:09 | INFO: Primitives created: 4
+07:10:09 | INFO: Finished glTF 2.0 export in 0.039650917053222656 s
+
+07:10:09 | INFO: Starting glTF 2.0 export
+07:10:09 | INFO: Extracting primitive: Cube.132
+07:10:09 | INFO: Primitives created: 4
+07:10:09 | INFO: Finished glTF 2.0 export in 0.03158211708068848 s
+
+07:10:09 | INFO: Starting glTF 2.0 export
+07:10:09 | INFO: Extracting primitive: ATELIER-COPING.002
+07:10:09 | INFO: Primitives created: 1
+07:10:09 | INFO: Finished glTF 2.0 export in 0.008432388305664062 s
+
+Info: Saved "threshold-atelier-finishes.blend"
+ATELIER: generated three real streaming cells, original furniture and continuous support inlays.
+Blender 4.3.2
+
+Blender quit
+prune: Removed types... Accessor (20)
+quantize: Skipping TEXCOORD_0; out of [0,1] range.
+quantize: Skipping TEXCOORD_0; out of [0,1] range.
+quantize: Skipping TEXCOORD_0; out of [0,1] range.
+quantize: Skipping TEXCOORD_0; out of [0,1] range.
+prune: Removed types... Accessor (20)
+quantize: Skipping TEXCOORD_0; out of [0,1] range.
+quantize: Skipping TEXCOORD_0; out of [0,1] range.
+quantize: Skipping TEXCOORD_0; out of [0,1] range.
+quantize: Skipping TEXCOORD_0; out of [0,1] range.
+prune: Removed types... Accessor (6)
+quantize: Skipping TEXCOORD_0; out of [0,1] range.
+quantize: Skipping TEXCOORD_1; out of [0,1] range.
+{
+  "result": "PASS",
+  "command": "node scripts/optimize-orbital-assets.mjs",
+  "note": "Actual decoded meshopt topology, UV/normal preservation and world-space bounds assertions; no geometry simplification.",
+  "rawBytes": 17225292,
+  "compressedBytes": 7655016,
+  "reductionPercent": 55.559441314550725,
+  "results": [
+    {
+      "id": "A-atelier-east",
+      "rawBytes": 1132200,
+      "compressedBytes": 354328,
+      "reductionPercent": 68.70446917505741,
+      "triangles": 17628,
+      "maximumBoundsErrorMetres": 0.00013865793752110278,
+      "sha256": "2458e64cc69f76965e9ebb1a55b427f5cecbcfb3c37492505ead4ec49378de60"
+    },
+    {
+      "id": "A-atelier-west",
+      "rawBytes": 1132156,
+      "compressedBytes": 354436,
+      "reductionPercent": 68.6937135871735,
+      "triangles": 17628,
+      "maximumBoundsErrorMetres": 0.00013865793752110278,
+      "sha256": "f15ce6677f138eeacb23bf084cc17e39c4ad163bfd057a6f2ce1c773aa320f55"
+    },
+    {
+      "id": "B-atelier-surface",
+      "rawBytes": 209972,
+      "compressedBytes": 63268,
+      "reductionPercent": 69.8683634008344,
+      "triangles": 3620,
+      "maximumBoundsErrorMetres": 0.00009290552965701693,
+      "sha256": "d2f0ea15929b21f863492c8f1b22a3cfcecc27c8c2032f02354adce82c6b06fa"
+    }
+  ]
+}

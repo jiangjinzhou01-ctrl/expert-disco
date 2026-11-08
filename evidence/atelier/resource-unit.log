@@ -1,0 +1,11 @@
+
+ RUN  v5.1.0 /workspace/threshold-v02
+
+ ✓ src/tests/unit/finish-resources.test.ts (1 test) 4ms
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  07:40:00
+   Duration  479ms (import 57%, transform 37%, worker 4%, tests 2%)
+
+JSON report written to /workspace/threshold-v02/evidence/vitest.json

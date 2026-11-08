@@ -1,0 +1,41 @@
+{
+  "style": {
+    "color": "rgb(37, 44, 43)",
+    "background": "rgb(245, 242, 235)"
+  },
+  "contrast": 12.744424100692473,
+  "controls": [
+    {
+      "width": 44,
+      "height": 44,
+      "left": 750,
+      "right": 794,
+      "top": 21,
+      "bottom": 65
+    },
+    {
+      "width": 44,
+      "height": 44,
+      "left": 797,
+      "right": 841,
+      "top": 21,
+      "bottom": 65
+    },
+    {
+      "width": 44,
+      "height": 44,
+      "left": 844,
+      "right": 888,
+      "top": 21,
+      "bottom": 65
+    },
+    {
+      "width": 44,
+      "height": 44,
+      "left": 891,
+      "right": 935,
+      "top": 21,
+      "bottom": 65
+    }
+  ]
+}

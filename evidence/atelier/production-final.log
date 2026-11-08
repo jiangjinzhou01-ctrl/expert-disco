@@ -1,0 +1,111 @@
+> threshold-v02@0.2.0 test:production
+> npm run build && playwright test --config playwright.production.config.ts && node scripts/collect-v02-video.js
+
+
+> threshold-v02@0.2.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.6 building client environment for production...
+transforming...
+✓ 90 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                 1.16 kB │ gzip:     0.66 kB
+dist/assets/basis_transcoder-o4Hde_L7.js       57.52 kB
+dist/assets/basis_transcoder-VXdx5NbI.wasm    527.33 kB │ gzip:   248.94 kB
+dist/assets/LabApp-DD7S2-Wh.css                 3.92 kB │ gzip:     1.45 kB
+dist/assets/ChapterView-B_neIqZA.css           23.36 kB │ gzip:     5.84 kB
+dist/assets/LabApp-DxFcXp4T.js                 13.28 kB │ gzip:     4.88 kB
+dist/assets/index-DeSInpc3.js                 222.57 kB │ gzip:    69.91 kB
+dist/assets/ChapterView-CCWbsnFY.js           653.02 kB │ gzip:   213.65 kB
+dist/assets/InputManager-D69b39zT.js        5,294.45 kB │ gzip: 1,925.82 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 1800 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 820ms
+[WebServer] (node:17161) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:17179) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 src/tests/e2e/production.spec.ts:10:1 › normal production bundle runs WebGL and real desktop input traverses both ways (36.5s)
+production input stage w {
+  world: 'VESTIBULE',
+  foot: [ 0, -1.6093255506000048e-8, 17.999999776482582 ],
+  mode: 'NORMAL',
+  step: 319
+}
+production input stage d {
+  world: 'VESTIBULE',
+  foot: [ 8.00000011920929, 6.556508780342085e-9, 17.999999776482582 ],
+  mode: 'NORMAL',
+  step: 483
+}
+production input stage w {
+  world: 'VESTIBULE',
+  foot: [ 8.00000011920929, 4.768366590468531e-9, -14.050000701099634 ],
+  mode: 'NORMAL',
+  step: 1124
+}
+production input stage a {
+  world: 'VESTIBULE',
+  foot: [ -0.10000000149011612, 7.152551662059636e-9, -14.050000701099634 ],
+  mode: 'NORMAL',
+  step: 1286
+}
+production input stage w {
+  world: 'INVERT',
+  foot: [ -0.10000000149011612, 2.384179520475982e-9, 17.849500007823114 ],
+  mode: 'NORMAL',
+  step: 1412
+}
+production input stage w {
+  world: 'INVERT',
+  foot: [ -0.10000000149011612, -2.3841942864422094e-9, -7.2004994322657545 ],
+  mode: 'NORMAL',
+  step: 1913
+}
+production input stage d {
+  world: 'INVERT',
+  foot: [ 4.7, 4.0733042974758735, -7.2004994322657545 ],
+  mode: 'WALL',
+  step: 2063
+}
+production input stage w {
+  world: 'INVERT',
+  foot: [ 4.7, 4.0733042974758735, -16.300499432265614 ],
+  mode: 'WALL',
+  step: 2245
+}
+production input stage s {
+  world: 'INVERT',
+  foot: [ 4.7, 4.0733042974758735, -6.95049943226576 ],
+  mode: 'WALL',
+  step: 2589
+}
+production input stage a {
+  world: 'INVERT',
+  foot: [ -0.10000078359088604, -8.938015882975492e-10, -6.95049943226576 ],
+  mode: 'NORMAL',
+  step: 2739
+}
+production input stage s {
+  world: 'VESTIBULE',
+  foot: [ -0.10000078359088604, 2.3844516361393175e-9, -19.949999895028775 ],
+  mode: 'NORMAL',
+  step: 3243
+}
+  ✓  2 src/tests/e2e/production.spec.ts:41:1 › V02 production: genuine keyboard journey from spawn through the turn, interaction and return (9.7m)
+  ✓  3 src/tests/e2e/production.spec.ts:56:1 › Orbital production: a real walked checkpoint survives reload after physics clearance (1.7m)
+  ✓  4 src/tests/e2e/production.spec.ts:73:1 › V03 normal production: keyboard jump, real crouch and zero-g thrust/brake without mutation adapters (1.6m)
+
+  Slow test file: src/tests/e2e/production.spec.ts (13.7m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  4 passed (14.1m)
+Saved actual production recording: 46760138 bytes, 573.000000 seconds
+

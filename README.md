@@ -1,10 +1,10 @@
-> **V0.3 工作分支：feat/v03-gravity-freedom。** 当前交付已接入可调速度、真实跳跃、蹲趴碰撞、失重推进和三指触控。十二节点和四闭环尚未全部建入，完整 V0.3 验收未通过。详细状态见 [V03_ACCEPTANCE.md](docs/V03_ACCEPTANCE.md)。本分支不自动发布线上站点。
+> **Atelier 视觉工作分支：feat/v03-art-direction。** 本轮已实际改造 UI、建筑材质和灯光，并加入原创展廊长椅、导向柱、曲面嵌条。品牌参考、真实截图与测试状态见 [视觉方向](docs/ATELIER_ART_DIRECTION.md)、[改造前后对照](docs/ATELIER_VISUAL_REVIEW.md) 和 [技术报告](docs/ATELIER_TECHNICAL_REPORT.md)。本轮 `npm run verify` 实际通过：115 项单元/物理、40 项开发浏览器、4 项生产浏览器测试及生产构建、子路径验证。本分支不自动发布线上站点，尚未宣称达到国际 3A 成品水平。
 >
-> 新操作：Shift 冲刺，Space 跳跃，Ctrl 按住蹲下，Z 切换趴下。失重时 Space / Ctrl 上升和下降，X 制动。移动端右下方对应动作按钮支持同时按住。设置中的“自由实验”可调 1g 标称跳高和重力倍率，0g 启用推进；速度范围 1.5–7m/s。旧版设置和检查点可直接读取，保存时写入 v2 格式。
+> 保留 V0.3 第一阶段移动系统：Shift 冲刺，Space 跳跃，Ctrl 蹲下，Z 趴下；失重时 Space / Ctrl 上升和下降，X 制动。设置可调 1.5–7m/s 基础速度；自由实验可调整标准跳高与重力。十二节点、四闭环和完整重力控制器迁移仍未完成，详见 [V03_ACCEPTANCE.md](docs/V03_ACCEPTANCE.md)。
 >
-> 本阶段实测：110 项单元/集成、37 项开发浏览器、4 项生产浏览器测试通过，恢复点修正后另通过 1 项生产动作/复位测试；真机性能未验证。详见 [V0.3 技术报告](docs/V03_TECHNICAL_REPORT.md)。[完整源码 ZIP](https://github.com/jiangjinzhou01-ctrl/expert-disco/archive/refs/heads/feat/v03-gravity-freedom.zip) 包含模型源资产、测试和证据；不包含可重建的 node_modules 与 dist。
+> [完整源码 ZIP](https://github.com/jiangjinzhou01-ctrl/expert-disco/archive/refs/heads/feat/v03-art-direction.zip) 包含可编辑模型、字体许可、锁文件、测试、文档和证据。解压后执行 `npm ci` 与 `npm run dev -- --port 5180`。
 
-# THRESHOLD / 门界 — Orbital
+# THRESHOLD / 门界 — Orbital / Atelier
 
 可自由探索的实时空间作品：轨道舱与行星观测前厅 → 双向传送门 → INVERT 异常重力弧面 → 墙面终端 → 原路返回与装置共鸣。保留 G0-LAB 作为数学、透视和碰撞回归场景。
 
@@ -90,4 +90,14 @@ node scripts/measure-orbital.mjs
 
 一对门、两个主要世界，无递归多门、多人或账户。天空是艺术化轨道构图，非真实太阳系比例。建筑静态阴影与选定 PBR 资产不等同于完整离线 GI 或电影级写实渲染。实体设备兼容性、最高预设性能、长时热稳定性和最终人工美术验收仍需独立完成。
 
-源码发布在仓库 `threshold-v02` 分支；受当前仓库 Pages 模式限制，`main` 保存编译后的静态站点，防止把 `/src/main.tsx` 当成线上入口。
+当前视觉改造源码在 `feat/v03-art-direction`，前一轮移动系统在 `feat/v03-gravity-freedom`，旧版源码在 `threshold-v02`。`main` 保存既有编译站点，本轮未改动线上部署。
+
+
+## Atelier 资产重建与画面对照
+
+```sh
+npm run assets:atelier
+npm run capture:atelier -- after
+```
+
+资产重建需要 Blender 4.3+；画面采集需要先启动 5180 开发服务器。三套新细节以 Meshopt 压缩并进入原有分区加载。新增家具的模型与碰撞共用 `src/chapter/world/atelier-layout.json`；连续重力支撑几何保持原样。Manrope / Instrument Serif 字体及 OFL 许可随包提供，运行时不请求外部字体服务。

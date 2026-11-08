@@ -7,6 +7,7 @@ on:
       - 'README.md'
       - 'DELIVERY_MANIFEST.json'
       - 'V03_DELIVERY_MANIFEST.json'
+      - 'ATELIER_DELIVERY_MANIFEST.json'
   pull_request:
 concurrency:
   group: threshold-verify-${{ github.ref }}
@@ -14,7 +15,8 @@ concurrency:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    # The full SwiftShader run now includes high-resolution material/portal checks.
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

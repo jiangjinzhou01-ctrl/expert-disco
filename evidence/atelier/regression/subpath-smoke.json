@@ -1,0 +1,928 @@
+{
+  "capturedAt": "2026-11-08T08:22:45.768Z",
+  "command": "npx vite build --base=/threshold-v02/ --outDir /tmp/threshold-v02-subpath",
+  "url": "http://127.0.0.1:4181/threshold-v02/?debug=1&test=1",
+  "result": "PASS",
+  "requests": [
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/?debug=1&test=1",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/index-CmkXjfRj.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/LabApp-CcvwFgQc.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/LabApp-DD7S2-Wh.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/InputManager-u3oEvic3.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/?mode=chapter&debug=1&test=1",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/index-CmkXjfRj.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/ChapterView-CDM--r6e.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/ChapterView-mYbztQA9.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/atelier/fonts/Manrope.ttf",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/InputManager-u3oEvic3.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/atelier/fonts/InstrumentSerif.ttf",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/v02/vestibule.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/v02/invert.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/materials/concrete-albedo.ktx2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/materials/concrete-roughness.ktx2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/materials/metal-albedo.ktx2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/materials/concrete-normal.ktx2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/materials/metal-normal.ktx2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/materials/metal-roughness.ktx2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/materials/copper-roughness.ktx2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/materials/copper-albedo.ktx2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/materials/copper-normal.ktx2",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/aec7a2cf-f8d5-407a-ac16-65a65a1cb3a2",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/eca99874-43e7-433e-97e0-8b7bdb2362db",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/4bbd1365-692a-4ce0-84fd-982e66109495",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/2a21a092-ab87-4868-97e8-f1214f9aead9",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/edb2cf3a-c66e-4228-9efc-3bbf5e1e8368",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/38865258-689d-49d9-9bc9-63dc92c35c86",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/2513ed45-34bb-45e3-8d4e-9d4066d8b17c",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/3ab27039-4d98-4897-96ca-432546481859",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/d425056a-bf8f-4584-b989-6130ed726f7f",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/ef0fcbf2-f41c-4678-88a2-d23121948701",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/9d2c07af-82a7-4e64-8a0e-f5ec9852f40c",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/43d32208-8aed-45d2-ad95-cd58c42e510b",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/6ab42905-c61c-416c-8b3d-b2b4d47d3a5f",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/1ce738a9-4a3d-4ba7-86ee-75e4c134ed6e",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/9fa293a4-58b0-4e37-bff0-d6eab45c7162",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/29eb2727-4192-4a55-a470-2fb8036d7377",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/0e2ffde8-1e52-4a5c-b0b4-b6dd23eced09",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/3e83bc05-6613-4f1a-9f46-c7616999302f",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/0e3afd7b-f233-4ff8-967c-7224dc028142",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/d61599f3-31cd-4cd0-9751-11fddd01ea3d",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/f0d73fa3-7d41-4240-8366-1e070e7fe7e7",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/4a4cc244-665c-459a-8e00-68f2f6ce03a9",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/b0f99e02-a865-4b32-970f-11ff87413f8f",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/96f6c4dc-f313-405e-882a-7f7ad4f3fdc4",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/ad5e1801-c683-4b58-89c4-6af48aa34dbd",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/8c2e3e3e-0110-4932-8f61-cd6808f3e0b0",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/a3ad77e5-4e6c-490e-982b-be245dc9fe27",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/basis/basis_transcoder.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/basis/basis_transcoder.wasm",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/ebdc642a-67b8-43f1-a04c-73c0776bd5f5",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:4181/ebdc642a-67b8-43f1-a04c-73c0776bd5f5",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/space/neptune.jpg",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/space/saturn.jpg",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/space/moon.jpg",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/architecture/manifest.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/space/saturn-ring.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/space/mars.jpg",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/architecture/A-exterior-east.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/architecture/A-capsule.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/architecture/A-arrival.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/architecture/A-exterior-west.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/architecture/A-gallery-east.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/architecture/A-gallery-west.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/architecture/A-atelier-east.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/architecture/A-atelier-west.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/architecture/A-roof-trusses.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/architecture/A-gate.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/architecture/B-atelier-surface.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/architecture/B-services.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4181/threshold-v02/assets/orbital/architecture/B-gravity-instruments.glb",
+      "status": 200
+    }
+  ],
+  "pageErrors": [],
+  "requestFailures": [],
+  "browser": "158.0.8127.18",
+  "snapshot": {
+    "diagnostics": {
+      "input": {
+        "movement": {
+          "x": 0,
+          "y": 0
+        },
+        "touchState": {
+          "moveActive": false,
+          "lookActive": false,
+          "moveX": 0,
+          "moveY": 0
+        },
+        "touch": false
+      },
+      "ready": true,
+      "error": null,
+      "worldId": "A",
+      "position": [
+        7.869880960242881e-7,
+        0.8797927498817444,
+        -3.0000014305114746
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "yaw": 0,
+      "pitch": 0,
+      "velocity": [
+        0,
+        0,
+        0
+      ],
+      "step": 9,
+      "grounded": true,
+      "events": [],
+      "lastEventId": 0,
+      "transferState": "ARMED",
+      "lastRejection": null,
+      "portal": {
+        "source": "A-door",
+        "destination": "B-door",
+        "poses": [
+          {
+            "id": "A-door",
+            "position": [
+              0,
+              1.45,
+              -8
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "id": "B-door",
+            "position": [
+              32,
+              1.45,
+              0
+            ],
+            "rotation": [
+              0,
+              0.7071067811865475,
+              0,
+              0.7071067811865476
+            ]
+          }
+        ],
+        "signedDistance": 4.999998569488525,
+        "crossingCondition": false
+      },
+      "render": {
+        "targetWidth": 544,
+        "targetHeight": 306,
+        "quality": 0.85,
+        "mainDrawCalls": 12,
+        "offscreenDrawCalls": 31,
+        "geometries": 25,
+        "textures": 2,
+        "programs": 10,
+        "context": "active",
+        "passes": 1,
+        "targetResizes": 1
+      },
+      "performance": {
+        "samples": 6,
+        "fps": 11.853022520760236,
+        "averageMs": 84.36666666654249,
+        "p50Ms": 22.399999998509884,
+        "p95Ms": 346.19999999925494,
+        "p99Ms": 346.19999999925494,
+        "physicsMs": 0,
+        "gpuMs": null
+      },
+      "movingReference": [
+        35.8,
+        0.8269180622014697,
+        -1.2805308806308953
+      ],
+      "elapsed": 0.15,
+      "droppedSeconds": 0.2628666666659216
+    },
+    "webgl2": true,
+    "mutationAdapter": "undefined",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.8127.18 Safari/537.36",
+    "viewport": [
+      640,
+      360
+    ],
+    "dpr": 1
+  },
+  "chapter": {
+    "snapshot": {
+      "ready": true,
+      "loading": {
+        "stage": "轨道前厅已就绪",
+        "progress": 1
+      },
+      "streaming": {
+        "total": 13,
+        "resident": 2,
+        "loading": 2,
+        "queued": 9,
+        "proxy": 11,
+        "visible": 13,
+        "culled": 0,
+        "loads": 2,
+        "evictions": 0,
+        "failed": 0,
+        "bytesResident": 2787564,
+        "retainedBehind": 0,
+        "interests": [
+          {
+            "worldId": "A",
+            "kind": "main",
+            "position": [
+              0,
+              1.5499999928474426,
+              33
+            ]
+          },
+          {
+            "worldId": "B",
+            "kind": "portal",
+            "position": [
+              99.99999999999999,
+              1.5499999928474426,
+              71.2
+            ]
+          }
+        ],
+        "chunks": [
+          {
+            "id": "A-capsule",
+            "worldId": "A",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 0,
+            "lastWanted": 0.5763999999985099,
+            "loadCount": 1,
+            "bytes": 1440096,
+            "triangles": 50704,
+            "failure": null
+          },
+          {
+            "id": "A-arrival",
+            "worldId": "A",
+            "state": "loading",
+            "visible": true,
+            "lod": "proxy",
+            "distance": 10.6,
+            "lastWanted": 0.5763999999985099,
+            "loadCount": 1,
+            "bytes": 165196,
+            "triangles": 5800,
+            "failure": null
+          },
+          {
+            "id": "A-gallery-west",
+            "worldId": "A",
+            "state": "queued",
+            "visible": true,
+            "lod": "proxy",
+            "distance": 12.8,
+            "lastWanted": 0.5763999999985099,
+            "loadCount": 0,
+            "bytes": 396488,
+            "triangles": 15116,
+            "failure": null
+          },
+          {
+            "id": "A-gallery-east",
+            "worldId": "A",
+            "state": "queued",
+            "visible": true,
+            "lod": "proxy",
+            "distance": 12.8,
+            "lastWanted": 0.5763999999985099,
+            "loadCount": 0,
+            "bytes": 399804,
+            "triangles": 15116,
+            "failure": null
+          },
+          {
+            "id": "A-gate",
+            "worldId": "A",
+            "state": "queued",
+            "visible": true,
+            "lod": "proxy",
+            "distance": 49,
+            "lastWanted": 0.5763999999985099,
+            "loadCount": 0,
+            "bytes": 521860,
+            "triangles": 18952,
+            "failure": null
+          },
+          {
+            "id": "A-roof-trusses",
+            "worldId": "A",
+            "state": "queued",
+            "visible": true,
+            "lod": "proxy",
+            "distance": 24,
+            "lastWanted": 0.5763999999985099,
+            "loadCount": 0,
+            "bytes": 465712,
+            "triangles": 14988,
+            "failure": null
+          },
+          {
+            "id": "A-exterior-west",
+            "worldId": "A",
+            "state": "loading",
+            "visible": true,
+            "lod": "proxy",
+            "distance": 11.3,
+            "lastWanted": 0.5763999999985099,
+            "loadCount": 1,
+            "bytes": 1212256,
+            "triangles": 34176,
+            "failure": null
+          },
+          {
+            "id": "A-exterior-east",
+            "worldId": "A",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 9.7,
+            "lastWanted": 0.5763999999985099,
+            "loadCount": 1,
+            "bytes": 1347468,
+            "triangles": 38368,
+            "failure": null
+          },
+          {
+            "id": "A-atelier-east",
+            "worldId": "A",
+            "state": "queued",
+            "visible": true,
+            "lod": "proxy",
+            "distance": 19.6,
+            "lastWanted": 0.5763999999985099,
+            "loadCount": 0,
+            "bytes": 354328,
+            "triangles": 17628,
+            "failure": null
+          },
+          {
+            "id": "A-atelier-west",
+            "worldId": "A",
+            "state": "queued",
+            "visible": true,
+            "lod": "proxy",
+            "distance": 19.6,
+            "lastWanted": 0.5763999999985099,
+            "loadCount": 0,
+            "bytes": 354436,
+            "triangles": 17628,
+            "failure": null
+          },
+          {
+            "id": "B-services",
+            "worldId": "B",
+            "state": "queued",
+            "visible": true,
+            "lod": "proxy",
+            "distance": 52.4,
+            "lastWanted": 0.5763999999985099,
+            "loadCount": 0,
+            "bytes": 743232,
+            "triangles": 26076,
+            "failure": null
+          },
+          {
+            "id": "B-gravity-instruments",
+            "worldId": "B",
+            "state": "queued",
+            "visible": true,
+            "lod": "proxy",
+            "distance": 76.2,
+            "lastWanted": 0.5763999999985099,
+            "loadCount": 0,
+            "bytes": 190872,
+            "triangles": 5416,
+            "failure": null
+          },
+          {
+            "id": "B-atelier-surface",
+            "worldId": "B",
+            "state": "queued",
+            "visible": true,
+            "lod": "proxy",
+            "distance": 71.4,
+            "lastWanted": 0.5763999999985099,
+            "loadCount": 0,
+            "bytes": 63268,
+            "triangles": 3620,
+            "failure": null
+          }
+        ]
+      },
+      "audio": {
+        "state": "locked",
+        "unlocked": false,
+        "muted": false,
+        "volume": 0.55,
+        "activeVoices": 0,
+        "footsteps": 0,
+        "cues": 0,
+        "error": null,
+        "source": "original procedural Web Audio"
+      },
+      "sky": {
+        "bodies": 11,
+        "stars": 1900,
+        "textureCount": 5,
+        "textureBytes": 2258031,
+        "triangles": 30704,
+        "elapsed": 0.2333333333333333,
+        "returned": false,
+        "heroRotation": 1.4016333333333333,
+        "positions": [
+          {
+            "id": "AUREOLE",
+            "position": [
+              -105,
+              104,
+              -222
+            ],
+            "radius": 64
+          },
+          {
+            "id": "PELAGIC",
+            "position": [
+              162,
+              81,
+              -285
+            ],
+            "radius": 31
+          },
+          {
+            "id": "EMBER",
+            "position": [
+              76,
+              37,
+              162
+            ],
+            "radius": 19
+          },
+          {
+            "id": "SELENE",
+            "position": [
+              -94,
+              26,
+              71
+            ],
+            "radius": 13
+          },
+          {
+            "id": "MOON-01",
+            "position": [
+              -32,
+              34,
+              -125
+            ],
+            "radius": 4.4
+          },
+          {
+            "id": "MOON-02",
+            "position": [
+              -202,
+              58,
+              -87
+            ],
+            "radius": 6.8
+          },
+          {
+            "id": "MOON-03",
+            "position": [
+              286,
+              120,
+              -100
+            ],
+            "radius": 5.9
+          },
+          {
+            "id": "MOON-04",
+            "position": [
+              165,
+              182,
+              180
+            ],
+            "radius": 7.2
+          },
+          {
+            "id": "MOON-05",
+            "position": [
+              -264,
+              169,
+              142
+            ],
+            "radius": 9.1
+          },
+          {
+            "id": "MOON-06",
+            "position": [
+              34,
+              249,
+              -306
+            ],
+            "radius": 6.6
+          },
+          {
+            "id": "MOON-07",
+            "position": [
+              -338,
+              48,
+              -287
+            ],
+            "radius": 8.7
+          }
+        ]
+      },
+      "materials": {
+        "sets": 3,
+        "maps": 9,
+        "sharedMaterials": 15,
+        "jpegSourceBytes": 1783030,
+        "ktxNetworkBytes": 6714783,
+        "compressedMaps": 9,
+        "formats": {
+          "36492": 9
+        },
+        "gpuUploadPayloadBytes": 12583152,
+        "payloadNote": "Typed texture payload with mips; excludes GPU driver overhead, not a measured VRAM total",
+        "fallbacks": [],
+        "source": "ambientCG CC0 / Concrete048, Metal009, Metal047B"
+      },
+      "observed": false,
+      "sampleReleased": 0,
+      "canObserve": true,
+      "canReleaseSample": false,
+      "restoredCheckpoint": false,
+      "input": {
+        "x": 0,
+        "y": 0,
+        "jump": false,
+        "jumpPressed": false,
+        "sprint": false,
+        "crouch": false,
+        "pronePressed": false,
+        "descend": false,
+        "brake": false
+      },
+      "movement": {
+        "profile": "explore",
+        "moveSpeed": 3,
+        "jumpHeight": 1.2,
+        "gravityScale": 1,
+        "autoSprint": false,
+        "touchSize": 1,
+        "touchOpacity": 0.8,
+        "sensitivity": 1.3,
+        "acceleration": 1,
+        "invertY": false,
+        "quality": 1,
+        "volume": 0.55,
+        "muted": false,
+        "reducedMotion": false,
+        "fov": 50,
+        "tutorialSeen": false
+      },
+      "stance": "STAND",
+      "locomotion": "GROUND_WALK",
+      "stanceBlocked": null,
+      "fieldId": "architectural-support",
+      "colliderRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "capsule": {
+        "offset": 0.87,
+        "eye": 1.55
+      },
+      "error": null,
+      "world": "VESTIBULE",
+      "slot": "A",
+      "foot": [
+        0,
+        -7.152557435219364e-9,
+        33
+      ],
+      "body": [
+        0,
+        0.8759999928474426,
+        33
+      ],
+      "eye": [
+        0,
+        1.5499999928474426,
+        33
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "gravity": [
+        0,
+        -9.81,
+        0
+      ],
+      "bodyRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cameraRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "yaw": 0,
+      "pitch": 0,
+      "theta": 0,
+      "thetaDegrees": 0,
+      "s": -1.5,
+      "mode": "NORMAL",
+      "grounded": true,
+      "supportNormal": [
+        0,
+        1,
+        0
+      ],
+      "velocity": [
+        0,
+        6.079673764425308e-7,
+        0
+      ],
+      "step": 14,
+      "progress": "ARRIVAL",
+      "terminal": false,
+      "returned": false,
+      "interactable": false,
+      "events": [],
+      "transferState": "ARMED",
+      "rejection": null,
+      "blocked": null,
+      "rotationQueries": 0,
+      "translationQueries": 0,
+      "supportQueries": 42,
+      "witness": {
+        "position": {
+          "x": 107.07182312011719,
+          "y": 4.199999809265137,
+          "z": 0.6000000238418579
+        },
+        "velocity": {
+          "x": 2.288999080657959,
+          "y": 0,
+          "z": 0
+        },
+        "resets": 0
+      },
+      "render": {
+        "targetWidth": 640,
+        "targetHeight": 360,
+        "quality": 1,
+        "mainDrawCalls": 88,
+        "offscreenDrawCalls": 57,
+        "geometries": 146,
+        "textures": 26,
+        "programs": 25,
+        "context": "active",
+        "passes": 1,
+        "targetResizes": 1
+      },
+      "performance": {
+        "samples": 3,
+        "fps": 0.7324397568302672,
+        "averageMs": 1365.2999999995034,
+        "p50Ms": 1648.5,
+        "p95Ms": 2371,
+        "p99Ms": 2371,
+        "physicsMs": 1.800000000745058,
+        "gpuMs": null
+      },
+      "errors": [],
+      "elapsed": 0.2333333333333333
+    },
+    "mutationAdapter": "undefined"
+  }
+}

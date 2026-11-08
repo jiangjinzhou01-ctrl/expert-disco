@@ -1,0 +1,242 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/threshold-v02/node_modules/.bin/playwright",
+      "test",
+      "src/tests/e2e/atelier.spec.ts",
+      "--output=/tmp/threshold-atelier-focused"
+    ],
+    "configFile": "/workspace/threshold-v02/playwright.config.ts",
+    "rootDir": "/workspace/threshold-v02/src/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/tmp/threshold-atelier-focused",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/workspace/threshold-v02/src/tests/e2e",
+        "testIgnore": [
+          "**/production.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/tmp/threshold-atelier-focused",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/workspace/threshold-v02/src/tests/e2e",
+        "snapshotDir": "/workspace/threshold-v02/src/tests/e2e",
+        "testIgnore": "**/production.spec.ts",
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5180",
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "headless": true,
+          "launchOptions": {
+            "args": [
+              "--no-sandbox",
+              "--use-gl=angle",
+              "--use-angle=swiftshader",
+              "--enable-unsafe-swiftshader"
+            ]
+          },
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/playwright.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev -- --port 5180",
+      "url": "http://127.0.0.1:5180",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "atelier.spec.ts",
+      "file": "atelier.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "atelier finishes compile on real WebGL and cover resident architecture without changing the physical frame",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 22204,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    -1,\u001b[22m\n\u001b[32m-   0,\u001b[39m\n\u001b[31m+   6.123233995736766e-17,\u001b[39m\n\u001b[2m    0,\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    -1,\u001b[22m\n\u001b[32m-   0,\u001b[39m\n\u001b[31m+   6.123233995736766e-17,\u001b[39m\n\u001b[2m    0,\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at /workspace/threshold-v02/src/tests/e2e/atelier.spec.ts:23:74",
+                    "location": {
+                      "file": "/workspace/threshold-v02/src/tests/e2e/atelier.spec.ts",
+                      "column": 74,
+                      "line": 23
+                    },
+                    "snippet": " \u001b[90m 21 |\u001b[39m     expect(state\u001b[33m.\u001b[39mmaterials\u001b[33m.\u001b[39mcompressedMaps)\u001b[33m.\u001b[39mtoBe(\u001b[35m9\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     expect(state\u001b[33m.\u001b[39mmaterials\u001b[33m.\u001b[39mfallbacks)\u001b[33m.\u001b[39mtoEqual([])\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mif\u001b[39m (id \u001b[33m===\u001b[39m \u001b[32m'C3'\u001b[39m) { expect(state\u001b[33m.\u001b[39mmode)\u001b[33m.\u001b[39mtoBe(\u001b[32m'WALL'\u001b[39m)\u001b[33m;\u001b[39m expect(state\u001b[33m.\u001b[39mup)\u001b[33m.\u001b[39mtoEqual([\u001b[33m-\u001b[39m\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[35m0\u001b[39m\u001b[33m,\u001b[39m \u001b[35m0\u001b[39m])\u001b[33m;\u001b[39m }\n \u001b[90m    |\u001b[39m                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m     views\u001b[33m.\u001b[39mpush({ id\u001b[33m,\u001b[39m state })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m   }\n \u001b[90m 26 |\u001b[39m   \u001b[36mconst\u001b[39m audit \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/threshold-v02/src/tests/e2e/atelier.spec.ts",
+                        "column": 74,
+                        "line": 23
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    -1,\u001b[22m\n\u001b[32m-   0,\u001b[39m\n\u001b[31m+   6.123233995736766e-17,\u001b[39m\n\u001b[2m    0,\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  21 |     expect(state.materials.compressedMaps).toBe(9);\n  22 |     expect(state.materials.fallbacks).toEqual([]);\n> 23 |     if (id === 'C3') { expect(state.mode).toBe('WALL'); expect(state.up).toEqual([-1, 0, 0]); }\n     |                                                                          ^\n  24 |     views.push({ id, state });\n  25 |   }\n  26 |   const audit = await page.evaluate(() => {\n    at /workspace/threshold-v02/src/tests/e2e/atelier.spec.ts:23:74"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T07:16:56.309Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/tmp/threshold-atelier-focused/atelier-atelier-finishes-c-c9f69-changing-the-physical-frame/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/threshold-atelier-focused/atelier-atelier-finishes-c-c9f69-changing-the-physical-frame/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/threshold-v02/src/tests/e2e/atelier.spec.ts",
+                    "column": 74,
+                    "line": 23
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5e45d29c3e3e9c7583ac-25af68ce17fbbcb1e151",
+          "file": "atelier.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "atelier interface has local fonts, readable paper panels, keyboard focus and closable diagnostics",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13763,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T07:17:45.798Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e45d29c3e3e9c7583ac-ad4dd818cd695d7405d5",
+          "file": "atelier.spec.ts",
+          "line": 49,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-08T07:16:55.795Z",
+    "duration": 72823.19499999999,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

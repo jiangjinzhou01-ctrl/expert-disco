@@ -1,0 +1,202 @@
+{
+  "pose": {
+    "name": "front",
+    "distance": 3,
+    "angle": 0
+  },
+  "snapshot": {
+    "input": {
+      "movement": {
+        "x": 0,
+        "y": 0
+      },
+      "touchState": {
+        "moveActive": false,
+        "lookActive": false,
+        "moveX": 0,
+        "moveY": 0
+      },
+      "touch": false
+    },
+    "ready": true,
+    "error": null,
+    "worldId": "A",
+    "position": [
+      0,
+      0.89,
+      -5
+    ],
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "yaw": 0,
+    "pitch": 0,
+    "velocity": [
+      0,
+      0,
+      0
+    ],
+    "step": 11,
+    "grounded": false,
+    "events": [],
+    "lastEventId": 0,
+    "transferState": "ARMED",
+    "lastRejection": null,
+    "portal": {
+      "source": "A-door",
+      "destination": "B-door",
+      "poses": [
+        {
+          "id": "A-door",
+          "position": [
+            0,
+            1.45,
+            -8
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": "B-door",
+          "position": [
+            32,
+            1.45,
+            0
+          ],
+          "rotation": [
+            0,
+            0.7071067811865475,
+            0,
+            0.7071067811865476
+          ]
+        }
+      ],
+      "signedDistance": 3,
+      "crossingCondition": false
+    },
+    "render": {
+      "targetWidth": 1632,
+      "targetHeight": 918,
+      "quality": 0.85,
+      "mainDrawCalls": 8,
+      "offscreenDrawCalls": 31,
+      "geometries": 25,
+      "textures": 2,
+      "programs": 10,
+      "context": "active",
+      "passes": 1,
+      "targetResizes": 1
+    },
+    "performance": {
+      "samples": 17,
+      "fps": 11.740331491712707,
+      "averageMs": 85.17647058823529,
+      "p50Ms": 16.899999998509884,
+      "p95Ms": 510.60000000149006,
+      "p99Ms": 510.60000000149006,
+      "physicsMs": 0.30000000074505806,
+      "gpuMs": null
+    },
+    "movingReference": [
+      35.8,
+      0.8,
+      -1.3
+    ],
+    "elapsed": 0,
+    "droppedSeconds": 0.8466333333340783
+  },
+  "measurements": [
+    {
+      "id": "near-red",
+      "predicted": {
+        "projectedRadius": 18.012141997423203,
+        "x": 832.8554682534832,
+        "y": 470.0705075394158,
+        "z": 0.9927490936367045,
+        "isVisible": true,
+        "planeHit": [
+          32,
+          1.8175,
+          -0.4500000000000001
+        ]
+      },
+      "observed": {
+        "x": 832.8441295546559,
+        "y": 470.04655870445345,
+        "count": 988,
+        "error": 0.026497410951858435
+      }
+    },
+    {
+      "id": "green",
+      "predicted": {
+        "projectedRadius": 8.005396443299201,
+        "x": 1101.271701940574,
+        "y": 541.8836226925409,
+        "z": 0.996916281201817,
+        "isVisible": true,
+        "planeHit": [
+          32,
+          1.5633333333333335,
+          0.49999999999999956
+        ]
+      },
+      "observed": {
+        "x": 1101.2373737373737,
+        "y": 541.6919191919192,
+        "count": 198,
+        "error": 0.19475281175276823
+      }
+    },
+    {
+      "id": "magenta",
+      "predicted": {
+        "projectedRadius": 7.204856798969281,
+        "x": 875.2369788356553,
+        "y": 486.599296666463,
+        "z": 0.9972496562070259,
+        "isVisible": true,
+        "planeHit": [
+          32,
+          1.7590000000000001,
+          -0.3000000000000004
+        ]
+      },
+      "observed": {
+        "x": 875.2413793103449,
+        "y": 486.7183908045977,
+        "count": 174,
+        "error": 0.11917540818281236
+      }
+    },
+    {
+      "id": "cyan",
+      "predicted": {
+        "projectedRadius": 6.004047332474401,
+        "x": 959.9999999999999,
+        "y": 594.389605247121,
+        "z": 0.9977497187148394,
+        "isVisible": true,
+        "planeHit": [
+          32,
+          1.3775,
+          -4.133182947122317e-16
+        ]
+      },
+      "observed": {
+        "x": 959.9521739130435,
+        "y": 594.3869565217391,
+        "count": 115,
+        "error": 0.047899377237218856
+      }
+    }
+  ],
+  "leakedProbePixels": 0
+}

@@ -1,0 +1,81 @@
+
+> threshold-v02@0.2.0 test:unit
+> vitest run
+
+
+ RUN  v5.1.0 /workspace/threshold-v02
+
+ ✓ src/tests/integration/v02-traversal.test.ts (10 tests) 11198ms
+   ✓ survives 30 reversible full body arcs and 100 genuinely swept wall routes 9945ms
+   ✓ completes the entire chapter from the actual spawn using only input, including the return portal 676ms
+ ✓ src/tests/integration/v03-surface-walker.test.ts (1 test) 1234ms
+   ✓ moves an actual rotated capsule through a 360° ring, stops and reverses without scripted poses 1233ms
+ ✓ src/tests/integration/v02-gravity.test.ts (17 tests) 867ms
+   ✓ V02 actual rotated capsule and continuous support (12)
+     ✓ walks forward, stops, reverses from 45°, reaches wall and returns, without camera scripting 401ms
+ ✓ src/tests/integration/v03-locomotion.test.ts (12 tests) 1122ms
+ ✓ src/tests/integration/portal-physics.test.ts (12 tests) 534ms
+   ✓ Rapier capsule portal integration (12)
+     ✓ P03: survives 100 complete natural A → B → A cycles with exactly 200 unique commits 337ms
+ ✓ src/tests/integration/v03-charts.test.ts (2 tests) 239ms
+ ✓ src/tests/integration/collision-queries.test.ts (7 tests) 153ms
+ ✓ src/tests/unit/orbital-architecture.test.ts (2 tests) 266ms
+ ✓ src/tests/unit/portal-math.test.ts (8 tests) 63ms
+ ✓ src/tests/unit/v02-assets.test.ts (1 test) 84ms
+ ✓ src/tests/unit/orbital-ktx2.test.ts (3 tests) 22ms
+ ✓ src/tests/unit/spatial-streaming.test.ts (7 tests) 17ms
+ ✓ src/tests/unit/renderer-state.test.ts (4 tests) 22ms
+ ✓ src/tests/unit/look-response.test.ts (7 tests) 9ms
+ ✓ src/tests/unit/orbital-materials.test.ts (2 tests) 12ms
+ ✓ src/tests/unit/chapter-persistence.test.ts (5 tests) 9ms
+stderr | src/tests/unit/atelier-finishes.test.ts > upgrades every real envelope batch once and preserves shared material ownership
+THREE.Material: parameter 'map' has value of undefined.
+THREE.Material: parameter 'normalMap' has value of undefined.
+THREE.Material: parameter 'roughnessMap' has value of undefined.
+THREE.Material: parameter 'map' has value of undefined.
+THREE.Material: parameter 'normalMap' has value of undefined.
+THREE.Material: parameter 'roughnessMap' has value of undefined.
+THREE.Material: parameter 'map' has value of undefined.
+THREE.Material: parameter 'normalMap' has value of undefined.
+THREE.Material: parameter 'roughnessMap' has value of undefined.
+
+ ✓ src/tests/unit/atelier-finishes.test.ts (2 tests) 24ms
+ ✓ src/tests/unit/v03-input.test.ts (2 tests) 4ms
+ ✓ src/tests/unit/performance-monitor.test.ts (3 tests) 5ms
+ ✓ src/tests/unit/chapter-audio.test.ts (3 tests) 5ms
+ ❯ src/tests/integration/atelier-furniture.test.ts (2 tests | 1 failed) 198ms
+   × places furniture on retained floor with no overlap against original solid boxes or the protected route 18ms
+   ✓ real Rapier furniture blocks a walking capsule and uses the shared authored hull 179ms
+ ✓ src/tests/unit/v03-persistence.test.ts (2 tests) 5ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/tests/integration/atelier-furniture.test.ts > places furniture on retained floor with no overlap against original solid boxes or the protected route
+AssertionError: ATELIER-WAYFINDING-E intersects V-side-steps-1-5: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ src/tests/integration/atelier-furniture.test.ts:19:58
+     17|     for (const box of base.boxes.filter(b => b.world === prop.world)) {
+     18|       const overlap = [0, 1, 2].every(i => Math.min(hi[i], box.center[…
+     19|       expect(overlap, `${prop.id} intersects ${box.id}`).toBe(false);
+       |                                                          ^
+     20|     }
+     21|     // Existing east-side round trip uses x<=8.1 and the central gate …
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 21 passed (22)
+      Tests  1 failed | 113 passed (114)
+   Start at  07:08:20
+   Duration  19.62s (tests 92%, import 6%, transform 1%)
+
+    Isolate  22 workers spawned · ~89ms startup each (spawn + environment, per file)
+             at least ~1.87s faster with isolate: false — reuses workers across files instead of one per file
+
+JSON report written to /workspace/threshold-v02/evidence/vitest.json

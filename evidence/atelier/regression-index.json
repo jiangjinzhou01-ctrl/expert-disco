@@ -1,0 +1,360 @@
+{
+  "runtimeRevision": "9abdcbd79e6f3181e88a7bb635bd991f5fec81ee",
+  "note": "Final generated output was copied here and the older tracked V0.2/V0.3 historical artifacts restored. Redundant intermediate frame PNGs are omitted; the continuous production recording is preserved.",
+  "artifacts": [
+    {
+      "generatedPath": "evidence/browser-bidirectional.json",
+      "archivedPath": "evidence/atelier/regression/browser-bidirectional.json",
+      "bytes": 8767,
+      "sha256": "b58d1a4d211dcf3e38af9c51bb596c1af176877236ddef3f88939980c29dd6f1"
+    },
+    {
+      "generatedPath": "evidence/browser-collision.json",
+      "archivedPath": "evidence/atelier/regression/browser-collision.json",
+      "bytes": 7222,
+      "sha256": "518c79260b57b87b9bc011302111660e2eafc33045acd433c5b28aa68ee5ca65"
+    },
+    {
+      "generatedPath": "evidence/browser-fast-longframe.json",
+      "archivedPath": "evidence/atelier/regression/browser-fast-longframe.json",
+      "bytes": 10407,
+      "sha256": "4831ad187f21a6ad557c4570903bfd924cc73de08c5fb6e7bb2de3fd3f60fa96"
+    },
+    {
+      "generatedPath": "evidence/browser-returned-A.png",
+      "archivedPath": "evidence/atelier/regression/browser-returned-A.png",
+      "bytes": 176564,
+      "sha256": "ed289cea26f7636cc6d01fb6dac6b2937bf584d2a3ffe901b1155a67116dbe63"
+    },
+    {
+      "generatedPath": "evidence/context-restoration.json",
+      "archivedPath": "evidence/atelier/regression/context-restoration.json",
+      "bytes": 1885,
+      "sha256": "d27b773b761a53652ee87dfdc50ef789de08bab1633e404219acafcbd4a8be39"
+    },
+    {
+      "generatedPath": "evidence/diagnostics-export.json",
+      "archivedPath": "evidence/atelier/regression/diagnostics-export.json",
+      "bytes": 3259,
+      "sha256": "bed4bed34853e73f834cb37fab4471ec398d52e5efc526be4a5afd4a27ceed1a"
+    },
+    {
+      "generatedPath": "evidence/diagnostics-input-geometry.json",
+      "archivedPath": "evidence/atelier/regression/diagnostics-input-geometry.json",
+      "bytes": 14929,
+      "sha256": "a394447817b01cfe0238876a0f9e620e897493ef33beeed72ff6d9525ee27825"
+    },
+    {
+      "generatedPath": "evidence/diagnostics-ui.png",
+      "archivedPath": "evidence/atelier/regression/diagnostics-ui.png",
+      "bytes": 252985,
+      "sha256": "5f1ba0694d4c6f4c360c5f85fb43cfe2def7eeb9f6cb5f4f3fd2d3a418c417f8"
+    },
+    {
+      "generatedPath": "evidence/mobile-bidirectional.json",
+      "archivedPath": "evidence/atelier/regression/mobile-bidirectional.json",
+      "bytes": 17223,
+      "sha256": "5d9109880f02f1621d0980d9e91dcace62b9a1e9857cd81cf80b9b2d2891f31d"
+    },
+    {
+      "generatedPath": "evidence/mobile-landscape.png",
+      "archivedPath": "evidence/atelier/regression/mobile-landscape.png",
+      "bytes": 98298,
+      "sha256": "f25e1faa173a71fb77e7521852faab65c0775ba2ec9d4eed4337eab8713f3414"
+    },
+    {
+      "generatedPath": "evidence/mobile-multitouch.json",
+      "archivedPath": "evidence/atelier/regression/mobile-multitouch.json",
+      "bytes": 8857,
+      "sha256": "c5ff8127ad428ff60ee3023f9eded733073daae8138a275213f18f428f092bc6"
+    },
+    {
+      "generatedPath": "evidence/orbital/interactions.json",
+      "archivedPath": "evidence/atelier/regression/orbital/interactions.json",
+      "bytes": 54033,
+      "sha256": "9f5f5e2269fd150236a056883f47ea038d255900d048e29bd5730d3762615456"
+    },
+    {
+      "generatedPath": "evidence/orbital/product-controls.json",
+      "archivedPath": "evidence/atelier/regression/orbital/product-controls.json",
+      "bytes": 21908,
+      "sha256": "890819b343d161582b63b4877276cd0c9d2934c6f08cfb273a3d8089f64bdf96"
+    },
+    {
+      "generatedPath": "evidence/orbital/production-checkpoint.json",
+      "archivedPath": "evidence/atelier/regression/orbital/production-checkpoint.json",
+      "bytes": 12282,
+      "sha256": "d831ca2164c395671c6286d852cfda189610c2e628169c9c66c73fc0d0cb425b"
+    },
+    {
+      "generatedPath": "evidence/orbital/streaming-failure.json",
+      "archivedPath": "evidence/atelier/regression/orbital/streaming-failure.json",
+      "bytes": 15580,
+      "sha256": "66e4cadc3d72bd6ff60a74a84611dae5cfe3f8b3932eecac54e18b5453e21b5b"
+    },
+    {
+      "generatedPath": "evidence/orbital/streaming.json",
+      "archivedPath": "evidence/atelier/regression/orbital/streaming.json",
+      "bytes": 19969,
+      "sha256": "17bce08e2901ff4fd8eb436b65167c2217a082fc1586200def4e14d6064a82fb"
+    },
+    {
+      "generatedPath": "evidence/orbital/touch-response.json",
+      "archivedPath": "evidence/atelier/regression/orbital/touch-response.json",
+      "bytes": 22254,
+      "sha256": "40f5afa5271d74913732a8a8a9e591ccf76ad977e511adc3d3bebff51da909fa"
+    },
+    {
+      "generatedPath": "evidence/playwright.json",
+      "archivedPath": "evidence/atelier/regression/playwright.json",
+      "bytes": 74491,
+      "sha256": "f41dbde50475070b8eee9e023f59d57d7d8f9a2f4c2fa10988a4e1c92c0bc32c"
+    },
+    {
+      "generatedPath": "evidence/production-B.png",
+      "archivedPath": "evidence/atelier/regression/production-B.png",
+      "bytes": 251585,
+      "sha256": "38bc770370e1f549466db000f7521ace9f42d15a9f2eb3c0a9976a717f66775f"
+    },
+    {
+      "generatedPath": "evidence/production-browser.json",
+      "archivedPath": "evidence/atelier/regression/production-browser.json",
+      "bytes": 8987,
+      "sha256": "bc4f94886d2aeda7f43ef809ee4308edb5d5941ee7c6924b5c6f40a700b0f4ad"
+    },
+    {
+      "generatedPath": "evidence/production-returned-A.png",
+      "archivedPath": "evidence/atelier/regression/production-returned-A.png",
+      "bytes": 178574,
+      "sha256": "4d70d0c10b91c868daba04a083e02b38f75ea8ba864a1eb7e6411581ee04fb0f"
+    },
+    {
+      "generatedPath": "evidence/production.json",
+      "archivedPath": "evidence/atelier/regression/production.json",
+      "bytes": 12710,
+      "sha256": "78d54a154dcf909cc8ab7df0888fefd5f1319d7b472435c231b7ec276f443628"
+    },
+    {
+      "generatedPath": "evidence/resize-resources.json",
+      "archivedPath": "evidence/atelier/regression/resize-resources.json",
+      "bytes": 2362,
+      "sha256": "cf11fd81b30d67fbf6f6c5270059e013c04e4cc0a7cacdd0db50c52c29d04a44"
+    },
+    {
+      "generatedPath": "evidence/subpath-smoke.json",
+      "archivedPath": "evidence/atelier/regression/subpath-smoke.json",
+      "bytes": 23567,
+      "sha256": "005bb3ee6ed89d7c2be98893d7c2a30b8668ece56df0b9b350e9350954c5bbd9"
+    },
+    {
+      "generatedPath": "evidence/subpath-smoke.log",
+      "archivedPath": "evidence/atelier/regression/subpath-smoke.log",
+      "bytes": 1704,
+      "sha256": "ad07124a6a889b125d5baed82d6eb0582bf0046e9e4bd7a9067d83b308c9390f"
+    },
+    {
+      "generatedPath": "evidence/subpath-smoke.png",
+      "archivedPath": "evidence/atelier/regression/subpath-smoke.png",
+      "bytes": 42854,
+      "sha256": "db787a1bb1a7f16c31cf42dd7863292ffccdbe6bbb2175b1b610d22d61fe2ae0"
+    },
+    {
+      "generatedPath": "evidence/v02/camera-visibility.json",
+      "archivedPath": "evidence/atelier/regression/v02/camera-visibility.json",
+      "bytes": 62766,
+      "sha256": "3bbc90ede2da5d90d1390db8020c60f424466226eebc423aa634889a1452c04e"
+    },
+    {
+      "generatedPath": "evidence/v02/chapter-returned.png",
+      "archivedPath": "evidence/atelier/regression/v02/chapter-returned.png",
+      "bytes": 450358,
+      "sha256": "3f50f6fb4f0ecae1df050bf052ad354045c85e09f143aa35f1c93c3951370c07"
+    },
+    {
+      "generatedPath": "evidence/v02/continuous-path.json",
+      "archivedPath": "evidence/atelier/regression/v02/continuous-path.json",
+      "bytes": 1555078,
+      "sha256": "445e8df0315a6d5b6945e6c6f12f7c4b49213bd11383e33912b52fb53bd2a317"
+    },
+    {
+      "generatedPath": "evidence/v02/lifecycle.json",
+      "archivedPath": "evidence/atelier/regression/v02/lifecycle.json",
+      "bytes": 11326,
+      "sha256": "b218d4fa1316c81a802a0e08dccf20db3e02132f9a6134a87bfcfbb4006581dd"
+    },
+    {
+      "generatedPath": "evidence/v02/mobile-1170-wall.png",
+      "archivedPath": "evidence/atelier/regression/v02/mobile-1170-wall.png",
+      "bytes": 520672,
+      "sha256": "7698ffc72f6e7eca97edaff9b2ea32f65fe78e21c017380264d4ed9d8e492a7c"
+    },
+    {
+      "generatedPath": "evidence/v02/mobile-1170.json",
+      "archivedPath": "evidence/atelier/regression/v02/mobile-1170.json",
+      "bytes": 220950,
+      "sha256": "0908083693d4dbd14c8b4b988b3bd0ed945446a142af672b170de65f4f273fe8"
+    },
+    {
+      "generatedPath": "evidence/v02/mobile-1200-wall.png",
+      "archivedPath": "evidence/atelier/regression/v02/mobile-1200-wall.png",
+      "bytes": 532646,
+      "sha256": "97624f532abfc0e4b1f3167e4a3265a86d0121b047687df529ad1572a73ade9f"
+    },
+    {
+      "generatedPath": "evidence/v02/mobile-1200.json",
+      "archivedPath": "evidence/atelier/regression/v02/mobile-1200.json",
+      "bytes": 221755,
+      "sha256": "a0411135385689005d3a9ec2da9071ef01f8c9b5dd50e76144b79edd070ebb5b"
+    },
+    {
+      "generatedPath": "evidence/v02/production-journey.json",
+      "archivedPath": "evidence/atelier/regression/v02/production-journey.json",
+      "bytes": 202964,
+      "sha256": "8ca80444dc9b306e94ab9bc00d5e6afd4bcabc8b1683ba3174881fd009b2d818"
+    },
+    {
+      "generatedPath": "evidence/v02/production-journey.webm",
+      "archivedPath": "evidence/atelier/production-journey.webm",
+      "bytes": 46760138,
+      "sha256": "5d23491c00fbbf3065f0a19178aac814fde1941144a7b4841d092fd228223764"
+    },
+    {
+      "generatedPath": "evidence/v02/production-returned.png",
+      "archivedPath": "evidence/atelier/regression/v02/production-returned.png",
+      "bytes": 220530,
+      "sha256": "a9c1ec436c0aa6fe5d4ac42d64ccfa6dd8ed84e9d76c9f2e9f1b7beaa1ac78c2"
+    },
+    {
+      "generatedPath": "evidence/v02/production-wall-terminal.png",
+      "archivedPath": "evidence/atelier/regression/v02/production-wall-terminal.png",
+      "bytes": 188646,
+      "sha256": "515efccf78567552c3dc9ca53b14f6e113890ea9081888eb67f74f3da1963895"
+    },
+    {
+      "generatedPath": "evidence/v02/resonator-response.json",
+      "archivedPath": "evidence/atelier/regression/v02/resonator-response.json",
+      "bytes": 26477,
+      "sha256": "f2b0312bd6364db00c3edd166f60424168d54eb89813bb72d6e27b3a0c645027"
+    },
+    {
+      "generatedPath": "evidence/v02/seeded-free-route.json",
+      "archivedPath": "evidence/atelier/regression/v02/seeded-free-route.json",
+      "bytes": 106053,
+      "sha256": "35fb867b9eba015f5543e89650467189421eb17c821bed2e1a11562f3aa590c4"
+    },
+    {
+      "generatedPath": "evidence/v02/subpath-chapter.png",
+      "archivedPath": "evidence/atelier/regression/v02/subpath-chapter.png",
+      "bytes": 187314,
+      "sha256": "1a805a8a954acbe04578258c75d9f61253a9fe230facd35c3e6b715ea165464e"
+    },
+    {
+      "generatedPath": "evidence/v02/video.json",
+      "archivedPath": "evidence/atelier/regression/v02/video.json",
+      "bytes": 215,
+      "sha256": "4b1eee8423c70e982b7690d858440b02ece6c1313bc472644fc275d9d0137212"
+    },
+    {
+      "generatedPath": "evidence/v03/keyboard.json",
+      "archivedPath": "evidence/atelier/regression/v03/keyboard.json",
+      "bytes": 32618,
+      "sha256": "6e7f4544bdb3eaf78cdd45b644f62752a1f0ebf6c89ac68926db9629656ba466"
+    },
+    {
+      "generatedPath": "evidence/v03/production-motion.json",
+      "archivedPath": "evidence/atelier/regression/v03/production-motion.json",
+      "bytes": 66660,
+      "sha256": "0a25ee11be1925373ac455165b375992a9696bddbd638393bf274fb4f2cb15ce"
+    },
+    {
+      "generatedPath": "evidence/v03/production-motion.png",
+      "archivedPath": "evidence/atelier/regression/v03/production-motion.png",
+      "bytes": 232841,
+      "sha256": "ec627617125d9971818d19ee13009ac8ef14e20ebc00996db17acc59ca12a8dd"
+    },
+    {
+      "generatedPath": "evidence/v03/touch-1170.json",
+      "archivedPath": "evidence/atelier/regression/v03/touch-1170.json",
+      "bytes": 33304,
+      "sha256": "0f8edf8cc5ca3219ce6d783dcd460b22b55a6051cb5d134446ca89f1d9af5f7a"
+    },
+    {
+      "generatedPath": "evidence/v03/touch-1170.png",
+      "archivedPath": "evidence/atelier/regression/v03/touch-1170.png",
+      "bytes": 590985,
+      "sha256": "5fc2fbefa3b79918e7f8853d63b7f38da7ec683c6c937aa01cde0c2f636f49fd"
+    },
+    {
+      "generatedPath": "evidence/v03/touch-1200.json",
+      "archivedPath": "evidence/atelier/regression/v03/touch-1200.json",
+      "bytes": 33258,
+      "sha256": "56ea57dae2ff3499fd00636f8b1cbdbbed433de21cdfc277d816fc0431786d8b"
+    },
+    {
+      "generatedPath": "evidence/v03/touch-1200.png",
+      "archivedPath": "evidence/atelier/regression/v03/touch-1200.png",
+      "bytes": 596186,
+      "sha256": "95d954fb507d6f0b867ed80a8f5b68fa3c30532c83f1612d09ece49988ed8830"
+    },
+    {
+      "generatedPath": "evidence/visual-animation.json",
+      "archivedPath": "evidence/atelier/regression/visual-animation.json",
+      "bytes": 280,
+      "sha256": "94b2752f27cfe208460173b5223af70730ff0850e706813a73d8f1a8702006ff"
+    },
+    {
+      "generatedPath": "evidence/visual-cross-plane.json",
+      "archivedPath": "evidence/atelier/regression/visual-cross-plane.json",
+      "bytes": 7136,
+      "sha256": "c51858b5e2f4dfb36b1f0cc1b5b9af557e801ab099a327fee8ba7c347f50473d"
+    },
+    {
+      "generatedPath": "evidence/visual-distance-0.1m.json",
+      "archivedPath": "evidence/atelier/regression/visual-distance-0.1m.json",
+      "bytes": 3632,
+      "sha256": "ccddcc43f38e70a7c16451f8aa6f258a63133f104cd8d80905a098a465418162"
+    },
+    {
+      "generatedPath": "evidence/visual-distance-1m.json",
+      "archivedPath": "evidence/atelier/regression/visual-distance-1m.json",
+      "bytes": 3565,
+      "sha256": "470274633105f23a649f8a527f846b00d72fff0f4b6a26d0f05af9322e47f8fb"
+    },
+    {
+      "generatedPath": "evidence/visual-frame-edge.json",
+      "archivedPath": "evidence/atelier/regression/visual-frame-edge.json",
+      "bytes": 3609,
+      "sha256": "9f59bdfe7ae5134ed6a854c1c8a8aeb28386c7b7c201ea6eaacd36b8e9e639ed"
+    },
+    {
+      "generatedPath": "evidence/visual-front.json",
+      "archivedPath": "evidence/atelier/regression/visual-front.json",
+      "bytes": 4074,
+      "sha256": "48b330461d5f92cb9e0f2b80d3efd71d598917abb0fb72dcfa0631a9778d2357"
+    },
+    {
+      "generatedPath": "evidence/visual-oblique-30.json",
+      "archivedPath": "evidence/atelier/regression/visual-oblique-30.json",
+      "bytes": 3240,
+      "sha256": "91ed0e803b20c0f1a9f3800e5ae8944c80f25b1707021ed72634c29f3aef9aad"
+    },
+    {
+      "generatedPath": "evidence/visual-oblique-60.json",
+      "archivedPath": "evidence/atelier/regression/visual-oblique-60.json",
+      "bytes": 2701,
+      "sha256": "a0770bc8039066a73f6139a00e0481ab78f9442643f0547aa2fce78b2ac4c59e"
+    },
+    {
+      "generatedPath": "evidence/visual-pre-plane-0.005m.json",
+      "archivedPath": "evidence/atelier/regression/visual-pre-plane-0.005m.json",
+      "bytes": 3630,
+      "sha256": "85853031e6c83d560aabb7abdf78a2343c4f849b2121603abdaa5d3be6eb8dd1"
+    },
+    {
+      "generatedPath": "evidence/vitest.json",
+      "archivedPath": "evidence/atelier/regression/vitest.json",
+      "bytes": 47984,
+      "sha256": "76dbd31ab06384161891afaf826bc5b1147e849efb1998fb06f29935cafeac1c"
+    }
+  ]
+}

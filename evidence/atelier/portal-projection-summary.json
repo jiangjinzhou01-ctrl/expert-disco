@@ -1,0 +1,127 @@
+{
+  "measurements": [
+    {
+      "file": "evidence/atelier/regression/visual-distance-0.1m.json",
+      "id": "green",
+      "errorPixels": 0.14511623256216738,
+      "generatedPath": "evidence/visual-distance-0.1m.json"
+    },
+    {
+      "file": "evidence/atelier/regression/visual-distance-0.1m.json",
+      "id": "magenta",
+      "errorPixels": 0.17663700710878202,
+      "generatedPath": "evidence/visual-distance-0.1m.json"
+    },
+    {
+      "file": "evidence/atelier/regression/visual-distance-0.1m.json",
+      "id": "cyan",
+      "errorPixels": 0.036028881061624905,
+      "generatedPath": "evidence/visual-distance-0.1m.json"
+    },
+    {
+      "file": "evidence/atelier/regression/visual-distance-1m.json",
+      "id": "green",
+      "errorPixels": 0.23548594844744522,
+      "generatedPath": "evidence/visual-distance-1m.json"
+    },
+    {
+      "file": "evidence/atelier/regression/visual-distance-1m.json",
+      "id": "magenta",
+      "errorPixels": 0.18932075813035226,
+      "generatedPath": "evidence/visual-distance-1m.json"
+    },
+    {
+      "file": "evidence/atelier/regression/visual-distance-1m.json",
+      "id": "cyan",
+      "errorPixels": 0.014439876792152972,
+      "generatedPath": "evidence/visual-distance-1m.json"
+    },
+    {
+      "file": "evidence/atelier/regression/visual-frame-edge.json",
+      "id": "green",
+      "errorPixels": 0.11906770380673021,
+      "generatedPath": "evidence/visual-frame-edge.json"
+    },
+    {
+      "file": "evidence/atelier/regression/visual-frame-edge.json",
+      "id": "magenta",
+      "errorPixels": 0.25027101981203703,
+      "generatedPath": "evidence/visual-frame-edge.json"
+    },
+    {
+      "file": "evidence/atelier/regression/visual-frame-edge.json",
+      "id": "cyan",
+      "errorPixels": 0.28798495894846465,
+      "generatedPath": "evidence/visual-frame-edge.json"
+    },
+    {
+      "file": "evidence/atelier/regression/visual-front.json",
+      "id": "near-red",
+      "errorPixels": 0.026497410951858435,
+      "generatedPath": "evidence/visual-front.json"
+    },
+    {
+      "file": "evidence/atelier/regression/visual-front.json",
+      "id": "green",
+      "errorPixels": 0.19475281175276823,
+      "generatedPath": "evidence/visual-front.json"
+    },
+    {
+      "file": "evidence/atelier/regression/visual-front.json",
+      "id": "magenta",
+      "errorPixels": 0.11917540818281236,
+      "generatedPath": "evidence/visual-front.json"
+    },
+    {
+      "file": "evidence/atelier/regression/visual-front.json",
+      "id": "cyan",
+      "errorPixels": 0.047899377237218856,
+      "generatedPath": "evidence/visual-front.json"
+    },
+    {
+      "file": "evidence/atelier/regression/visual-oblique-30.json",
+      "id": "near-red",
+      "errorPixels": 0.014410476282378508,
+      "generatedPath": "evidence/visual-oblique-30.json"
+    },
+    {
+      "file": "evidence/atelier/regression/visual-oblique-30.json",
+      "id": "magenta",
+      "errorPixels": 0.02958600806346752,
+      "generatedPath": "evidence/visual-oblique-30.json"
+    },
+    {
+      "file": "evidence/atelier/regression/visual-oblique-60.json",
+      "id": "near-red",
+      "errorPixels": 0.09101439715178834,
+      "generatedPath": "evidence/visual-oblique-60.json"
+    },
+    {
+      "file": "evidence/atelier/regression/visual-pre-plane-0.005m.json",
+      "id": "green",
+      "errorPixels": 0.21304445170974742,
+      "generatedPath": "evidence/visual-pre-plane-0.005m.json"
+    },
+    {
+      "file": "evidence/atelier/regression/visual-pre-plane-0.005m.json",
+      "id": "magenta",
+      "errorPixels": 0.06824214319098472,
+      "generatedPath": "evidence/visual-pre-plane-0.005m.json"
+    },
+    {
+      "file": "evidence/atelier/regression/visual-pre-plane-0.005m.json",
+      "id": "cyan",
+      "errorPixels": 0.08201705332146503,
+      "generatedPath": "evidence/visual-pre-plane-0.005m.json"
+    }
+  ],
+  "count": 19,
+  "maxErrorPixels": 0.28798495894846465,
+  "browserViewport": [
+    1920,
+    1080
+  ],
+  "dpr": 1,
+  "runtimeRevision": "9abdcbd",
+  "scope": "Actual LAB portal pixel regression after the shared material/bevel change. Includes visible localized markers; separate tests cover live parallax and crossing continuity."
+}

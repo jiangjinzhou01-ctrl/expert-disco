@@ -1,0 +1,47 @@
+
+Running 2 tests using 1 worker
+
+(node:13972) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 src/tests/e2e/atelier.spec.ts:8:1 › atelier finishes compile on real WebGL and cover resident architecture without changing the physical frame (22.2s)
+(node:14058) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 src/tests/e2e/atelier.spec.ts:49:1 › atelier interface has local fonts, readable paper panels, keyboard focus and closable diagnostics (13.8s)
+
+
+  1) src/tests/e2e/atelier.spec.ts:8:1 › atelier finishes compile on real WebGL and cover resident architecture without changing the physical frame 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Array [
+        -1,
+    -   0,
+    +   6.123233995736766e-17,
+        0,
+      ]
+
+      21 |     expect(state.materials.compressedMaps).toBe(9);
+      22 |     expect(state.materials.fallbacks).toEqual([]);
+    > 23 |     if (id === 'C3') { expect(state.mode).toBe('WALL'); expect(state.up).toEqual([-1, 0, 0]); }
+         |                                                                          ^
+      24 |     views.push({ id, state });
+      25 |   }
+      26 |   const audit = await page.evaluate(() => {
+        at /workspace/threshold-v02/src/tests/e2e/atelier.spec.ts:23:74
+
+    Error Context: ../../tmp/threshold-atelier-focused/atelier-atelier-finishes-c-c9f69-changing-the-physical-frame/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../tmp/threshold-atelier-focused/atelier-atelier-finishes-c-c9f69-changing-the-physical-frame/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../tmp/threshold-atelier-focused/atelier-atelier-finishes-c-c9f69-changing-the-physical-frame/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    src/tests/e2e/atelier.spec.ts:8:1 › atelier finishes compile on real WebGL and cover resident architecture without changing the physical frame 
+  1 passed (1.2m)
