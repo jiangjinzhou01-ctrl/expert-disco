@@ -127,4 +127,11 @@ describe('V03 real locomotion on existing architecture', () => {
     run(c,140,{x:1});expect(c.state.worldId).toBe('B');expect(c.transfer.events).toHaveLength(1);
     expect(c.state.position.toArray().every(Number.isFinite)).toBe(true);
   });
+
+  it('keeps a reachable recovery point after a jump or fall into the existing lower courtyard',async()=>{
+    const c=await setup();c.place(new Vector3(0,-4,4),'A');run(c,250);
+    expect(c.state.grounded).toBe(true);expect(c.state.foot.y).toBeCloseTo(-4,2);
+    c.reset();expect(c.state.foot.z).toBe(33);expect(c.state.foot.y).toBe(0);
+    expect(c.state.position.toArray().every(Number.isFinite)).toBe(true);
+  });
 });

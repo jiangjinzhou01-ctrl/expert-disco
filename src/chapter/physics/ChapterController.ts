@@ -128,7 +128,10 @@ export class ChapterController {
    if(!moving&&st.mode==='NORMAL')tryStep(0,0);
   }
   const support=this.physics.support(this.physics.registry.global(st.foot,st.worldId),st.up,st.worldId);st.grounded=!!support||this.physics.character.computedGrounded();if(support){st.supportNormal.set(support.normal.x,support.normal.y,support.normal.z);if(st.mode==='NORMAL'){st.foot.y+=.12-support.timeOfImpact;st.position.copy(this.physics.registry.global(st.foot,st.worldId)).addScaledVector(st.up,this.physics.centerOffset+SKIN);}}
-  if(!st.grounded){this.missingSupport++;this.airborne=true;this.airTime=0;this.fallVelocity.copy(move);}else{this.fallVelocity.set(0,0,0);this.missingSupport=0;if(st.step%120===0)this.checkpoint={foot:st.foot.clone(),slot:st.worldId,s:st.s,mode:st.mode,stance:st.stance,yaw:st.yaw};}
+  if(!st.grounded){this.missingSupport++;this.airborne=true;this.airTime=0;this.fallVelocity.copy(move);}else{this.fallVelocity.set(0,0,0);this.missingSupport=0;
+   // The two existing lower void floors are valid collision surfaces, but are
+   // not recovery checkpoints: a normal jump cannot climb out of them.
+   if(st.step%120===0&&st.foot.y>=-.04)this.checkpoint={foot:st.foot.clone(),slot:st.worldId,s:st.s,mode:st.mode,stance:st.stance,yaw:st.yaw};}
   if(st.mode!=='NORMAL')st.rotatedSteps++;
   st.velocity.copy(st.position).sub(start).divideScalar(dt);if(this.transfer.events.at(-1)?.step===st.step)st.velocity.copy(move);
   this.physics.commit(st.position,st.bodyRotation,dt);this.witnessClock+=dt;if(this.witnessClock>=8){this.physics.resetWitness();this.witnessClock=0;}
