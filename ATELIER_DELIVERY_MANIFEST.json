@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "product": "THRESHOLD / Orbital / Atelier",
-  "createdAt": "2026-11-08T08:27:06.143531+00:00",
+  "createdAt": "2026-11-08T09:08:58.000Z",
   "branch": "feat/v03-art-direction",
   "baselineRevision": "952176f36b45185ea425e8c9b9f843c3ff22cb56",
   "visualImplementationRevision": "39b5d531e2b5f6d339129f794d282d5032534103",
@@ -35,13 +35,13 @@
     "sourceRevisionScope": "The final delivery commit only adds documentation, evidence and a parsed CI ceiling adjustment to the tested runtime 9abdcbd.",
     "realPhone": "NOT RUN / BLOCKED",
     "desktopGpuPerformance": "NOT RUN / BLOCKED",
-    "productionDeployment": "NOT RUN; existing site preserved"
+    "productionDeployment": "PASS; GitHub Pages run 42465858494; live Chromium smoke test HTTP 200, runtime ready, WebGL2 active, VESTIBULE state, zero browser errors."
   },
   "source": "https://github.com/jiangjinzhou01-ctrl/expert-disco/tree/feat/v03-art-direction",
   "download": "https://github.com/jiangjinzhou01-ctrl/expert-disco/archive/refs/heads/feat/v03-art-direction.zip",
   "hashScope": "Every committed file except this manifest. Older delivery manifests are historical records at their named revisions. The archive metadata identifies the final containing commit.",
   "fileCount": 728,
-  "totalFileBytes": 273705475,
+  "totalFileBytes": 273706395,
   "files": [
     {
       "path": ".github/workflows/ci.yml",
@@ -65,8 +65,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7208,
-      "sha256": "4d33e090a4e793a052f929acbe218f8bc2d957ae05a4e24028c6f5ca3cb4ea38"
+      "bytes": 7332,
+      "sha256": "19add89ab19776def93912107ccbb9ea10a28aca8dd4a90d4573300811061dfb"
     },
     {
       "path": "V03_DELIVERY_MANIFEST.json",
@@ -320,8 +320,8 @@
     },
     {
       "path": "docs/ATELIER_ACCEPTANCE.md",
-      "bytes": 2462,
-      "sha256": "f11a983808bddb717e44950bf5db8072c690683c684730b108aa1f39dea2702c"
+      "bytes": 2594,
+      "sha256": "2ef2d95fa3c6959c79084e64b7bdca10bb27adba579f5e3571fce30d7ef32487"
     },
     {
       "path": "docs/ATELIER_ART_DIRECTION.md",
@@ -330,8 +330,8 @@
     },
     {
       "path": "docs/ATELIER_TECHNICAL_REPORT.md",
-      "bytes": 11373,
-      "sha256": "66efcc115f8d5749bde62eb723182abdf2f0744c2407886373b545fac8b09aa7"
+      "bytes": 11924,
+      "sha256": "429adddc21e1c05e48aab06fe795f9886ed76499a34f3fddba384cc56c79dcdc"
     },
     {
       "path": "docs/ATELIER_VISUAL_REVIEW.md",
@@ -3175,8 +3175,8 @@
     },
     {
       "path": "scripts/deploy-pages.mjs",
-      "bytes": 2387,
-      "sha256": "2b6a042184682b09b5d79b8aeca91d0a8c1c7ade004b5c225067eefba1ff3ae6"
+      "bytes": 2500,
+      "sha256": "396dafa08524fc0106df35f8bf8a8ddb83282c6f833b252cca4b1b6870533413"
     },
     {
       "path": "scripts/fetch-orbital-materials.py",
@@ -3683,5 +3683,6 @@
       "bytes": 362,
       "sha256": "e01e7f9b6bab79514ecdd1cc3c70616b93451dcebec2b8d63ecbcf32378d7374"
     }
-  ]
+  ],
+  "sourceRevisionScope": "Runtime code was verified at 9abdcbd. Later source changes update deployment metadata and documentation; the live /DEPLOYMENT.json records the exact published source revision."
 }
