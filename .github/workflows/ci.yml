@@ -1,4 +1,4 @@
-name: THRESHOLD V0.2 verification
+name: THRESHOLD verification
 on:
   push:
     paths-ignore:
@@ -6,6 +6,7 @@ on:
       - 'evidence/**'
       - 'README.md'
       - 'DELIVERY_MANIFEST.json'
+      - 'V03_DELIVERY_MANIFEST.json'
   pull_request:
 concurrency:
   group: threshold-verify-${{ github.ref }}
@@ -27,7 +28,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: threshold-v02-evidence
+          name: threshold-evidence
           path: |
             evidence/
             playwright-report/

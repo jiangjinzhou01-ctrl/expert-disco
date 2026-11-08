@@ -69,3 +69,33 @@ test('Orbital production: a real walked checkpoint survives reload after physics
  expect(restored.slot).toBe('A');expect(persisted.slot).toBe('A');expect(restored.foot[2]).toBeCloseTo(persisted.foot[2],1);expect(persisted.foot[2]).toBeLessThanOrEqual(saved.foot[2]+.05);expect(persisted.foot[2]).toBeGreaterThan(22);expect(restored.errors).toEqual([]);
  await writeFile('evidence/orbital/production-checkpoint.json',JSON.stringify({periodic:saved,persisted,restored,method:'Normal production bundle; actual held W input; no pose/test adapter; reload validates support and full-capsule overlap.'},null,2));
 });
+
+test('V03 normal production: keyboard jump, real crouch and zero-g thrust/brake without mutation adapters',async({page})=>{
+ test.setTimeout(180000);await page.setViewportSize({width:640,height:360});
+ const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('/?mode=chapter');await page.waitForFunction(()=>window.__THRESHOLD_V02__?.().ready,null,{timeout:60000});
+ expect(await page.evaluate(()=>typeof window.__V02_TEST__)).toBe('undefined');
+ await page.keyboard.press('Space');
+ await page.waitForFunction(()=>{const s=window.__THRESHOLD_V02__!();return s.ready&&s.locomotion==='AIRBORNE'&&s.foot[1]>.2;},null,{timeout:30000});
+ const jump=await page.evaluate(()=>window.__THRESHOLD_V02__!());
+ await page.waitForFunction(()=>{const s=window.__THRESHOLD_V02__!();return s.ready&&s.grounded&&s.foot[1]<.02;},null,{timeout:30000});
+ await page.keyboard.down('ControlLeft');
+ await page.waitForFunction(()=>{const s=window.__THRESHOLD_V02__!();return s.ready&&s.stance==='CROUCH';});
+ const crouch=await page.evaluate(()=>window.__THRESHOLD_V02__!());await page.keyboard.up('ControlLeft');
+ await page.getByRole('button',{name:'设置',exact:true}).click();
+ await page.getByRole('combobox',{name:'体验档案'}).selectOption('experiment');
+ await page.getByRole('slider',{name:'重力倍率'}).fill('0');
+ await page.getByRole('button',{name:'关闭设置',exact:true}).click();
+ await page.keyboard.down('Space');
+ try{await page.waitForFunction(()=>{const s=window.__THRESHOLD_V02__!();return s.ready&&s.locomotion==='ZERO_G'&&s.velocity[1]>1;},null,{timeout:30000});}finally{await page.keyboard.up('Space');}
+ const thrust=await page.evaluate(()=>window.__THRESHOLD_V02__!());
+ await page.keyboard.down('x');
+ try{await page.waitForFunction(()=>{const s=window.__THRESHOLD_V02__!();return s.ready&&Math.hypot(...s.velocity)<.04;},null,{timeout:30000});}finally{await page.keyboard.up('x');}
+ const braked=await page.evaluate(()=>window.__THRESHOLD_V02__!());
+ await page.keyboard.down('ControlLeft');
+ try{await page.waitForFunction(()=>{const s=window.__THRESHOLD_V02__!();return s.ready&&s.velocity[1]<-.8;},null,{timeout:30000});}finally{await page.keyboard.up('ControlLeft');}
+ const descent=await page.evaluate(()=>window.__THRESHOLD_V02__!());if(!descent.ready)throw Error('Not ready');
+ expect(descent.stance).toBe('STAND');expect(Math.hypot(...descent.gravity)).toBe(0);expect(errors).toEqual([]);
+ await page.screenshot({path:'evidence/v03/production-motion.png'});
+ await writeFile('evidence/v03/production-motion.json',JSON.stringify({jump,crouch,thrust,braked,descent,errors,method:'Normal Vite production preview; actual keyboard/UI input; read-only diagnostics; no test adapter.'},null,2));
+});

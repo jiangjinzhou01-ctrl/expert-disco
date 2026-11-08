@@ -1,7 +1,10 @@
+import type { Action } from './ActionBuffer';
+
 export interface InputCallbacks {
   look(dx: number, dy: number): void;
   reset(): void;
   toggleDebug(): void;
+  action?(action: Action, down: boolean, source: string): void;
 }
 
 function isEditing(target: EventTarget | null): boolean {
@@ -12,6 +15,7 @@ function isEditing(target: EventTarget | null): boolean {
 /** Event-driven desktop input; no independent animation or simulation loop. */
 export class DesktopInput {
   private readonly keys = new Set<string>();
+  private readonly actionKeys = new Set<string>();
   private dragPointer: number | null = null;
   private lastX = 0;
   private lastY = 0;
@@ -39,6 +43,11 @@ export class DesktopInput {
 
   private readonly keyDown = (event: KeyboardEvent): void => {
     if (isEditing(event.target)) return;
+    const action = this.actionForKey(event.code);
+    if (action && this.callbacks.action) {
+      event.preventDefault();
+      if (!event.repeat) { this.actionKeys.add(event.code); this.callbacks.action(action, true, event.code); }
+    }
     if (/^(Key[WASD]|Arrow(Up|Down|Left|Right))$/.test(event.code)) {
       event.preventDefault();
       this.keys.add(event.code);
@@ -57,7 +66,16 @@ export class DesktopInput {
     }
   };
 
-  private readonly keyUp = (event: KeyboardEvent): void => { this.keys.delete(event.code); };
+  private actionForKey(code: string): Action | undefined {
+    return ({ Space: 'jump', ShiftLeft: 'sprint', ShiftRight: 'sprint', ControlLeft: 'crouch',
+      ControlRight: 'crouch', KeyZ: 'prone', KeyX: 'brake' } as Record<string, Action>)[code];
+  }
+  private readonly keyUp = (event: KeyboardEvent): void => {
+    this.keys.delete(event.code);
+    const action = this.actionForKey(event.code);
+    this.actionKeys.delete(event.code);
+    if (action) this.callbacks.action?.(action, false, event.code);
+  };
 
   private readonly pointerDown = (event: PointerEvent): void => {
     if (event.pointerType === 'touch' || event.button !== 0 || this.dragPointer !== null) return;
@@ -99,6 +117,8 @@ export class DesktopInput {
   };
 
   clear(): void {
+    for (const code of this.actionKeys) this.callbacks.action?.(this.actionForKey(code)!, false, code);
+    this.actionKeys.clear();
     this.keys.clear();
     const pointer = this.dragPointer;
     this.dragPointer = null;

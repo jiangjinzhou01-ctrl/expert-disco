@@ -74,6 +74,10 @@ export class PortalTransfer {
   ): TransferResolution {
     this.updateRearm(desired);
     const source = this.registry.forWorld(this.state.worldId)[0]!;
+    const capsule=this.physics.collisionShape?.();
+    const capsuleAxis=capsule?new Vector3(0,1,0).applyQuaternion(capsule.rotation).applyQuaternion(source.rotation.clone().invert()):null;
+    const halfWidth=capsule?capsule.radius+capsule.halfSegment*Math.abs(capsuleAxis!.x):PLAYER_RADIUS;
+    const halfHeight=capsule?capsule.radius+capsule.halfSegment*Math.abs(capsuleAxis!.y):PLAYER_HALF_HEIGHT;
     const end = start.clone().add(desired);
     const startDistance = computeSignedPlaneDistance(start, source);
     const endDistance = computeSignedPlaneDistance(end, source);
@@ -84,7 +88,7 @@ export class PortalTransfer {
     this.crossingCondition = false;
     if (!nominalCrossing) {
       const approachingAperture = startDistance > 0
-        && isPointInsideAperture(start, source, PLAYER_RADIUS, PLAYER_HALF_HEIGHT);
+        && isPointInsideAperture(start, source, halfWidth, halfHeight);
       const movement = this.physics.constrainMovement(start, desired, this.state.worldId,
         approachingAperture ? source : undefined);
       const position = start.clone().add(movement.displacement);
@@ -106,7 +110,7 @@ export class PortalTransfer {
     const distance = computeSignedPlaneDistance(prefixEnd, source);
     const reachesPlane = Math.abs(distance) <= 2e-5;
     const checkedEnd = reachesPlane ? prefixEnd.clone().addScaledVector(normal, -distance - 1e-7) : prefixEnd;
-    const actualCrossing = intersectMovementWithPortal(start, checkedEnd, source, PLAYER_RADIUS, PLAYER_HALF_HEIGHT);
+    const actualCrossing = intersectMovementWithPortal(start, checkedEnd, source, halfWidth, halfHeight);
     if (!actualCrossing) {
       this.lastRejection = 'source-collision-prevented-crossing';
       if (distance <= 0) {
@@ -127,10 +131,12 @@ export class PortalTransfer {
     const anchor = transformPosition(actualCrossing.hitPoint, transform).addScaledVector(destinationNormal, EXIT_NUDGE);
     const consumedFraction = planeT * actualCrossing.t;
     const remaining = transformDirection(desired.clone().multiplyScalar(1 - consumedFraction), transform);
-    const validation = this.queries.validateExit(anchor, remaining, destinationWorldId);
+    const mappedShapeRotation=capsule?transformQuaternion(capsule.rotation,transform):undefined;
+    const validation = this.queries.validateExit(anchor, remaining, destinationWorldId,mappedShapeRotation);
     if (!validation.valid) return this.reject(source, actualCrossing.hitPoint, validation.reason!, prefix.grounded);
 
     // Only the DESTINATION collision region may constrain post-plane movement.
+    if(mappedShapeRotation)this.physics.setTransferRotation?.(mappedShapeRotation);
     const target = this.physics.constrainMovement(anchor, remaining, destinationWorldId);
     const finalPosition = anchor.clone().add(target.displacement);
     const velocityBefore = this.state.velocity.toArray();

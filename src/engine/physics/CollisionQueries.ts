@@ -1,5 +1,5 @@
 import RAPIER from '@dimforge/rapier3d-compat';
-import { Vector3 } from 'three';
+import { Vector3, type Quaternion } from 'three';
 import { PLAYER_RADIUS } from '../../scenes/RoomLayout';
 import type { WorldId } from '../../scenes/RoomLayout';
 import { CAPSULE_CYLINDER_HALF_HEIGHT, type PortalPhysics } from './PhysicsRuntime';
@@ -28,20 +28,22 @@ export class CollisionQueries {
 
   constructor(private readonly physics: PortalPhysics) {}
 
-  validateExit(position: Vector3, remaining: Vector3, worldId: WorldId): ExitValidation {
+  validateExit(position: Vector3, remaining: Vector3, worldId: WorldId, mappedRotation?: Quaternion): ExitValidation {
+    const capsule=this.physics.collisionShape?.();
+    const shape=capsule?.shape??this.shape,rotation=mappedRotation??capsule?.rotation??IDENTITY;
     this.queryWorld = worldId;
     this.allowedFloorContacts.clear();
     if(this.physics.allowsExitContact)for(const [handle,meta]of this.physics.metadata){if(meta.worldId===worldId&&this.physics.allowsExitContact(this.physics.world.getCollider(handle),position))this.allowedFloorContacts.add(handle);}
     this.skipFloor = false;
     this.blockingId = null;
-    this.physics.world.intersectionsWithShape(position, IDENTITY, this.shape,
+    this.physics.world.intersectionsWithShape(position, rotation, shape,
       this.onIntersection, undefined, undefined, this.physics.collider, this.physics.body, this.filter);
     if (this.blockingId) return { valid: false, reason: `exit-overlap:${this.blockingId}` };
     // Floors may be contacted by the remaining gravity displacement. The target
     // character controller handles that contact; walls and objects remain blocking.
     this.skipFloor = true;
     if (remaining.lengthSq() > 1e-16) {
-      const hit = this.physics.world.castShape(position, IDENTITY, remaining, this.shape,
+      const hit = this.physics.world.castShape(position, rotation, remaining, shape,
         EXIT_CLEARANCE, 1, true, undefined, undefined, this.physics.collider, this.physics.body, this.filter);
       if (hit) {
         const id = this.physics.metadata.get(hit.collider.handle)?.id ?? `collider-${hit.collider.handle}`;

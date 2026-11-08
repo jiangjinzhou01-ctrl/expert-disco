@@ -2,14 +2,18 @@ import { DesktopInput } from './DesktopInput';
 import type { InputCallbacks } from './DesktopInput';
 import { TouchInput } from './TouchInput';
 import { DEFAULT_LOOK_SETTINGS, type LookSettings } from './LookResponse';
+import { ActionBuffer, type Action } from './ActionBuffer';
+import type { MotionInput } from '../chapter/physics/Locomotion';
 
 export interface InputOptions {
   /** Chapter enables this; G0-LAB retains its original linear regression profile. */
   enhancedTouchLook?: boolean;
+  actions?: boolean;
 }
 
 /** One event-input adapter read by the fixed-step ExperienceLoop. */
 export class InputManager {
+  readonly actions = new ActionBuffer();
   private readonly desktop: DesktopInput;
   private readonly touchscreen: TouchInput;
   private readonly combined = { x: 0, y: 0 };
@@ -23,6 +27,7 @@ export class InputManager {
     this.touchscreen = new TouchInput(canvas, callbacks, options.enhancedTouchLook ?? false);
     this.desktop = new DesktopInput(canvas, {
       ...callbacks,
+      action: options.actions ? (action, down, source) => this.actions.set(action, down, source) : undefined,
       look: (x, y) => {
         const settings = this.touchscreen.lookResponse.settings;
         const gain = settings.sensitivity / DEFAULT_LOOK_SETTINGS.sensitivity;
@@ -49,6 +54,10 @@ export class InputManager {
   }
 
   get touch(): boolean { return this.initialTouch || this.touchscreen.used; }
+  frame(): MotionInput { return { ...this.movement, ...this.actions.read(true) }; }
+  setAction(action: Action, down: boolean, pointerId: number): void {
+    this.actions.set(action, down, `touch:${pointerId}`);
+  }
   get touchState() { return this.touchscreen.state; }
   get lookSettings() { return this.touchscreen.lookResponse.settings; }
   get lookDiagnostics() { return this.touchscreen.lookResponse.snapshot; }
@@ -57,6 +66,7 @@ export class InputManager {
   readonly clear = (): void => {
     this.desktop.clear();
     this.touchscreen.clear();
+    this.actions.clear();
     this.combined.x = 0;
     this.combined.y = 0;
   };

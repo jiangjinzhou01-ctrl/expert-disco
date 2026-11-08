@@ -97,7 +97,7 @@ test.describe('orbital touch response',()=>{
     expect(result.fast.angle).toBeGreaterThan(result.slow.angle*1.15);
     expect(result.fast.afterRelease).toBeLessThan(1e-10);expect(result.slow.afterRelease).toBeLessThan(1e-10);
     expect(result.moving.ready&&result.canceled.ready).toBe(true);
-    if(result.moving.ready&&result.canceled.ready){expect(result.moving.input.y).toBeGreaterThan(.9);expect(result.canceled.input).toEqual({x:0,y:0});}
+    if(result.moving.ready&&result.canceled.ready){expect(result.moving.input.y).toBeGreaterThan(.9);expect(result.canceled.input).toMatchObject({x:0,y:0,jump:false,crouch:false,sprint:false,brake:false});}
     expect(await page.evaluate(()=>[scrollX,scrollY])).toEqual([0,0]);
     await record('touch-response',result);
   });

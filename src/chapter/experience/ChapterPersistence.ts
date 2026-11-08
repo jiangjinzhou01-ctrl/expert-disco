@@ -1,6 +1,7 @@
 import { ARC_LENGTH, surfacePose } from '../physics/GravitySurface';
+import { DEFAULT_MOVEMENT, type MovementSettings, type Stance, type LocomotionMode } from '../physics/Locomotion';
 
-export interface ChapterSettings {
+export interface ChapterSettings extends MovementSettings {
   sensitivity: number;
   acceleration: number;
   invertY: boolean;
@@ -10,10 +11,13 @@ export interface ChapterSettings {
   reducedMotion: boolean;
   fov: number;
   tutorialSeen: boolean;
+  touchSize: number;
+  touchOpacity: number;
 }
 
 /** All devices receive the same highest-quality default. Only an explicit user choice lowers it. */
 export const DEFAULT_CHAPTER_SETTINGS: Readonly<ChapterSettings> = Object.freeze({
+  ...DEFAULT_MOVEMENT, touchSize: 1, touchOpacity: .8,
   sensitivity: 1.3, acceleration: 1, invertY: false, quality: 1,
   volume: .55, muted: false, reducedMotion: false, fov: 50, tutorialSeen: false,
 });
@@ -36,6 +40,11 @@ export interface ChapterCheckpoint {
   terminal: boolean;
   returned: boolean;
   savedAt: number;
+}
+export interface ChapterCheckpointV2 extends Omit<ChapterCheckpoint, 'version'> {
+  version: 2; stance: Stance; locomotion: LocomotionMode; fieldId: string;
+  velocity: [number, number, number]; gravity: [number, number, number];
+  bodyRotation: [number, number, number, number];
 }
 
 function object(value: unknown): value is Record<string, unknown> {
@@ -61,7 +70,13 @@ export function validateChapterSettings(value: unknown): ChapterSettings | null 
     || !bool(value.invertY) || ![1, .75, .4].includes(value.quality as number)
     || !range(value.volume, 0, 1) || !bool(value.muted) || !bool(value.reducedMotion)
     || !range(value.fov, 40, 85) || !bool(value.tutorialSeen)) return null;
+  const movement = { ...DEFAULT_MOVEMENT, ...Object.fromEntries(['profile', 'moveSpeed', 'jumpHeight', 'gravityScale', 'autoSprint'].filter(k => value[k] !== undefined).map(k => [k, value[k]])) };
+  if (!['explore', 'experiment'].includes(movement.profile) || !range(movement.moveSpeed, 1.5, 7)
+    || !range(movement.jumpHeight, .3, 3) || !range(movement.gravityScale, 0, 2) || !bool(movement.autoSprint)
+    || (value.touchSize !== undefined && !range(value.touchSize, .8, 1.5))
+    || (value.touchOpacity !== undefined && !range(value.touchOpacity, .3, 1))) return null;
   return {
+    ...movement, touchSize: (value.touchSize as number | undefined) ?? 1, touchOpacity: (value.touchOpacity as number | undefined) ?? .8,
     sensitivity: value.sensitivity, acceleration: value.acceleration, invertY: value.invertY,
     quality: value.quality as ChapterSettings['quality'], volume: value.volume,
     muted: value.muted, reducedMotion: value.reducedMotion, fov: value.fov, tutorialSeen: value.tutorialSeen,
@@ -69,13 +84,13 @@ export function validateChapterSettings(value: unknown): ChapterSettings | null 
 }
 export function readChapterSettings(storage: StorageLike | undefined = browserStorage()): ChapterSettings {
   const data = readJSON(SETTINGS_KEY, storage);
-  return object(data) && data.version === 1
+  return object(data) && (data.version === 1 || data.version === 2)
     ? validateChapterSettings(data.settings) ?? { ...DEFAULT_CHAPTER_SETTINGS }
     : { ...DEFAULT_CHAPTER_SETTINGS };
 }
 export function writeChapterSettings(settings: ChapterSettings, storage: StorageLike | undefined = browserStorage()): boolean {
   const safe = validateChapterSettings(settings);
-  return safe !== null && putJSON(SETTINGS_KEY, { version: 1, settings: safe }, storage);
+  return safe !== null && putJSON(SETTINGS_KEY, { version: 2, settings: safe }, storage);
 }
 
 /**
@@ -83,7 +98,7 @@ export function writeChapterSettings(settings: ChapterSettings, storage: Storage
  * This is a first gate, not a physics clearance claim: the caller MUST check support
  * and full-capsule overlap before committing any restored pose.
  */
-export function validateChapterCheckpoint(value: unknown): ChapterCheckpoint | null {
+function validateLegacyCheckpoint(value: unknown): ChapterCheckpoint | null {
   if (!object(value) || value.version !== 1 || !['A', 'B'].includes(value.slot as string)
     || !['NORMAL', 'ARC', 'WALL'].includes(value.mode as string)
     || !Array.isArray(value.foot) || value.foot.length !== 3
@@ -116,10 +131,23 @@ export function validateChapterCheckpoint(value: unknown): ChapterCheckpoint | n
     returned: value.returned, savedAt: value.savedAt,
   };
 }
-export function readChapterCheckpoint(storage: StorageLike | undefined = browserStorage()): ChapterCheckpoint | null {
+export function validateChapterCheckpoint(value: unknown): ChapterCheckpoint | ChapterCheckpointV2 | null {
+  if (!object(value) || value.version !== 2) return validateLegacyCheckpoint(value);
+  const base = validateLegacyCheckpoint({ ...value, version: 1 });
+  const vector = (v: unknown, size: number, limit: number): v is number[] => Array.isArray(v) && v.length === size && v.every(n => range(n, -limit, limit));
+  if (!base || !['STAND','CROUCH','PRONE'].includes(value.stance as string)
+    || !['GROUND_WALK','REATTACH','RECOVER'].includes(value.locomotion as string)
+    || typeof value.fieldId !== 'string' || value.fieldId.length > 80
+    || !vector(value.velocity,3,20) || !vector(value.gravity,3,30) || !vector(value.bodyRotation,4,1)
+    || Math.abs(Math.hypot(...value.bodyRotation)-1) > .001) return null;
+  return { ...base, version: 2, stance: value.stance as Stance, locomotion: value.locomotion as LocomotionMode,
+    fieldId: value.fieldId, velocity: [...value.velocity] as [number,number,number],
+    gravity: [...value.gravity] as [number,number,number], bodyRotation: [...value.bodyRotation] as [number,number,number,number] };
+}
+export function readChapterCheckpoint(storage: StorageLike | undefined = browserStorage()): ChapterCheckpoint | ChapterCheckpointV2 | null {
   return validateChapterCheckpoint(readJSON(CHECKPOINT_KEY, storage));
 }
-export function writeChapterCheckpoint(checkpoint: ChapterCheckpoint, storage: StorageLike | undefined = browserStorage()): boolean {
+export function writeChapterCheckpoint(checkpoint: ChapterCheckpoint | ChapterCheckpointV2, storage: StorageLike | undefined = browserStorage()): boolean {
   const safe = validateChapterCheckpoint(checkpoint);
   return safe !== null && putJSON(CHECKPOINT_KEY, safe, storage);
 }
@@ -132,6 +160,6 @@ export class ChapterPersistence {
   readSettings() { return readChapterSettings(this.storage); }
   writeSettings(settings: ChapterSettings) { return writeChapterSettings(settings, this.storage); }
   readCheckpoint() { return readChapterCheckpoint(this.storage); }
-  writeCheckpoint(checkpoint: ChapterCheckpoint) { return writeChapterCheckpoint(checkpoint, this.storage); }
+  writeCheckpoint(checkpoint: ChapterCheckpoint | ChapterCheckpointV2) { return writeChapterCheckpoint(checkpoint, this.storage); }
   clearCheckpoint() { clearChapterCheckpoint(this.storage); }
 }

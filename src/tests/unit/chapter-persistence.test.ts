@@ -39,7 +39,7 @@ describe('bounded chapter persistence', () => {
   });
   it('rejects malformed JSON, unsupported versions, nonfinite values and out-of-range controls', () => {
     const storage = memoryStorage(), persistence = new ChapterPersistence(storage);
-    for (const raw of ['{broken', JSON.stringify({ version: 2, settings: DEFAULT_CHAPTER_SETTINGS }), 'null']) {
+    for (const raw of ['{broken', JSON.stringify({ version: 99, settings: DEFAULT_CHAPTER_SETTINGS }), 'null']) {
       storage.setItem(SETTINGS_KEY, raw); expect(persistence.readSettings()).toEqual(DEFAULT_CHAPTER_SETTINGS);
     }
     for (const field of ['sensitivity', 'acceleration', 'fov', 'volume']) {
@@ -64,7 +64,7 @@ describe('bounded chapter persistence', () => {
   });
   it('rejects source spoofing, unsafe voids, out-of-bounds poses and chart-inconsistent rotations', () => {
     for (const corrupt of [
-      { version: 2 }, { slot: 'C' }, { foot: [NaN, 0, 33] }, { foot: [0, Infinity, 33] },
+      { version: 99 }, { slot: 'C' }, { foot: [NaN, 0, 33] }, { foot: [0, Infinity, 33] },
       { foot: [0, 0, 6] }, { foot: [6, 0, 33], s: 4.5 }, { foot: [0, 8, 33] },
       { foot: [0, 0, 100] }, { foot: [0, 0, 33, 9] }, { mode: 'WALL' },
       { yaw: Infinity }, { pitch: 2 }, { terminal: false, returned: true }, { savedAt: -2 },

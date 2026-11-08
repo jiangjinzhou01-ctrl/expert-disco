@@ -15,6 +15,6 @@ export class ChapterDebugGeometry {
  }
  get enabled(){return this.groups.A.visible;}
  set enabled(value:boolean){for(const g of Object.values(this.groups))g.visible=value;}
- update(controller:ChapterController){const s=controller.state;this.groups[s.worldId].add(this.capsule);this.capsule.position.copy(s.position);this.capsule.quaternion.copy(s.bodyRotation);}
+ update(controller:ChapterController){const s=controller.state;this.groups[s.worldId].add(this.capsule);this.capsule.position.copy(s.position);this.capsule.quaternion.copy(controller.physics.shapeRotation(s.bodyRotation));const stance=s.stance;const dims=stance==='STAND'?[.3,1.14]:stance==='CROUCH'?[.3,.5]:[.26,.73];if(this.capsule.userData.stance!==stance){this.capsule.geometry.dispose();this.capsule.geometry=new CapsuleGeometry(dims[0],dims[1],4,8);this.capsule.userData.stance=stance;};}
  dispose(){for(const g of Object.values(this.groups)){g.traverse(o=>{if(o instanceof Mesh||o instanceof LineSegments){o.geometry.dispose();for(const material of Array.isArray(o.material)?o.material:[o.material])material.dispose();}});g.removeFromParent();}this.capsule.geometry.dispose();(this.capsule.material as MeshBasicMaterial).dispose();}
 }
