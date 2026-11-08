@@ -1,0 +1,4 @@
+CAPSULE { draws: 50, portal: 0, chunks: 7, loading: 0 }
+ARRIVAL { draws: 90, portal: 63, chunks: 7, loading: 0 }
+CROSSING { draws: 34, portal: 62, chunks: 7, loading: 0 }
+C3 { draws: 36, portal: 0, chunks: 7, loading: 0 }

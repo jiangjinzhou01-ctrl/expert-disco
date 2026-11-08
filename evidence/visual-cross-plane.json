@@ -34,7 +34,7 @@
       0,
       0
     ],
-    "step": 10,
+    "step": 16,
     "grounded": false,
     "events": [],
     "lastEventId": 0,
@@ -90,13 +90,13 @@
       "targetResizes": 1
     },
     "performance": {
-      "samples": 10,
-      "fps": 13.837000138312941,
-      "averageMs": 72.27000000029803,
-      "p50Ms": 18.700000002980232,
-      "p95Ms": 351.70000000298023,
-      "p99Ms": 351.70000000298023,
-      "physicsMs": 1.7000000029802322,
+      "samples": 12,
+      "fps": 12.87691812426033,
+      "averageMs": 77.65833333334497,
+      "p50Ms": 18.5,
+      "p95Ms": 393.10000000009313,
+      "p99Ms": 393.10000000009313,
+      "physicsMs": 0.8000000000465661,
       "gpuMs": null
     },
     "movingReference": [
@@ -105,7 +105,7 @@
       -1.3
     ],
     "elapsed": 0,
-    "droppedSeconds": 0.3683666666696469
+    "droppedSeconds": 0.4431000000000931
   },
   "after": {
     "input": {
@@ -142,12 +142,12 @@
       0,
       2.0670557090385998e-16
     ],
-    "step": 11,
+    "step": 17,
     "grounded": true,
     "events": [
       {
         "id": 1,
-        "step": 11,
+        "step": 17,
         "sourceId": "A-door",
         "destinationId": "B-door",
         "sourceWorldId": "A",
@@ -233,13 +233,13 @@
       "targetResizes": 1
     },
     "performance": {
-      "samples": 43,
-      "fps": 12.122579008198793,
-      "averageMs": 82.49069767445326,
-      "p50Ms": 42.899999998509884,
-      "p95Ms": 277.09999999403954,
-      "p99Ms": 483,
-      "physicsMs": 1.7000000029802322,
+      "samples": 49,
+      "fps": 9.621804186466461,
+      "averageMs": 103.93061224489986,
+      "p50Ms": 48.799999999813735,
+      "p95Ms": 351.89999999990687,
+      "p99Ms": 457.20000000018626,
+      "physicsMs": 0.8000000000465661,
       "gpuMs": null
     },
     "movingReference": [
@@ -248,7 +248,7 @@
       -1.297833375713486
     ],
     "elapsed": 0.016666666666666666,
-    "droppedSeconds": 0.3683666666696469
+    "droppedSeconds": 0.4431000000000931
   },
   "measurements": [
     {

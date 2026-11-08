@@ -1,0 +1,150 @@
+
+> threshold-v02@0.2.0 test:production
+> npm run build && playwright test --config playwright.production.config.ts && node scripts/collect-v02-video.js
+
+
+> threshold-v02@0.2.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.6 building client environment for production...
+transforming...
+✓ 81 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                 1.16 kB │ gzip:     0.66 kB
+dist/assets/basis_transcoder-o4Hde_L7.js       57.52 kB
+dist/assets/basis_transcoder-VXdx5NbI.wasm    527.33 kB │ gzip:   248.94 kB
+dist/assets/LabApp-DD7S2-Wh.css                 3.92 kB │ gzip:     1.45 kB
+dist/assets/ChapterView-DjlXMTcr.css           19.26 kB │ gzip:     4.76 kB
+dist/assets/LabApp-DOTTwdsg.js                 13.22 kB │ gzip:     4.85 kB
+dist/assets/index-CA5C3zr0.js                 222.57 kB │ gzip:    69.91 kB
+dist/assets/ChapterView-CrFmmNQE.js           386.70 kB │ gzip:   103.30 kB
+dist/assets/InputManager-DR0NFIOJ.js        5,286.68 kB │ gzip: 1,922.84 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 1800 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 522ms
+[WebServer] (node:3432) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:3450) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 src/tests/e2e/production.spec.ts:10:1 › normal production bundle runs WebGL and real desktop input traverses both ways (19.0s)
+production input stage w {
+  world: 'VESTIBULE',
+  foot: [
+    -0.000009082732020715412,
+    -1.2032689178376188e-8,
+    17.888021519415844
+  ],
+  mode: 'NORMAL',
+  step: 341
+}
+production input stage d {
+  world: 'VESTIBULE',
+  foot: [ 8.020268192040504, 9.618231655572629e-9, 17.88806259715448 ],
+  mode: 'NORMAL',
+  step: 503
+}
+production input stage w {
+  world: 'VESTIBULE',
+  foot: [ 8.020319027319196, 4.5401924442245445e-9, -14.096551976264614 ],
+  mode: 'NORMAL',
+  step: 1150
+}
+production input stage a {
+  world: 'VESTIBULE',
+  foot: [ -0.1496385992917979, 2.315494906923732e-9, -14.09656116674416 ],
+  mode: 'NORMAL',
+  step: 1316
+}
+production input stage w {
+  world: 'INVERT',
+  foot: [ -0.14965546176983935, -1.0643388836939494e-8, 18.181101346284155 ],
+  mode: 'NORMAL',
+  step: 1436
+}
+production input stage w {
+  world: 'INVERT',
+  foot: [ -0.1498188759220227, -2.725985104312656e-9, -7.2375789370150265 ],
+  mode: 'NORMAL',
+  step: 1955
+}
+production input stage d {
+  world: 'INVERT',
+  foot: [ 4.7, 4.113378559827051, -7.237554174211849 ],
+  mode: 'WALL',
+  step: 2107
+}
+production input stage w {
+  world: 'INVERT',
+  foot: [ 4.7, 4.113378559827051, -16.487554174211738 ],
+  mode: 'WALL',
+  step: 2292
+}
+production input stage s {
+  world: 'INVERT',
+  foot: [ 4.7, 4.113378559827051, -6.987554174211855 ],
+  mode: 'WALL',
+  step: 2630
+}
+production input stage a {
+  world: 'INVERT',
+  foot: [ 0.010079982310969626, -5.604982034057571e-10, -6.9875622474826145 ],
+  mode: 'NORMAL',
+  step: 2779
+}
+production input stage s {
+  world: 'VESTIBULE',
+  foot: [ 0.009992788019189902, -1.739399724254298e-8, -19.900721686974173 ],
+  mode: 'NORMAL',
+  step: 3293
+}
+  ✓  2 src/tests/e2e/production.spec.ts:41:1 › V02 production: genuine keyboard journey from spawn through the turn, interaction and return (6.5m)
+  ✘  3 src/tests/e2e/production.spec.ts:56:1 › Orbital production: a real walked checkpoint survives reload after physics clearance (1.1m)
+
+
+  1) src/tests/e2e/production.spec.ts:56:1 › Orbital production: a real walked checkpoint survives reload after physics clearance 
+
+    Error: expect(received).toBeCloseTo(expected, precision)
+
+    Expected: 25.181987252094615
+    Received: 23.431987401649454
+
+    Expected precision:    1
+    Expected difference: < 0.05
+    Received difference:   1.7499998504451604
+
+      64 |  await page.reload();await page.waitForFunction(()=>{const s=window.__THRESHOLD_V02__?.();return s?.ready&&s.restoredCheckpoint;},null,{timeout:60000});
+      65 |  const restored=await page.evaluate(()=>window.__THRESHOLD_V02__!());if(!restored.ready)throw Error('Restored runtime not ready');
+    > 66 |  expect(restored.slot).toBe('A');expect(restored.foot[2]).toBeCloseTo(saved.foot[2],1);expect(restored.errors).toEqual([]);
+         |                                                           ^
+      67 |  await writeFile('evidence/orbital/production-checkpoint.json',JSON.stringify({saved,restored,method:'Normal production bundle; actual held W input; no pose/test adapter; reload validates support and full-capsule overlap.'},null,2));
+      68 | });
+      69 |
+        at /workspace/threshold-v02/src/tests/e2e/production.spec.ts:66:59
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/production-Orbital-product-bb0ad-oad-after-physics-clearance/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/production-Orbital-product-bb0ad-oad-after-physics-clearance/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/production-Orbital-product-bb0ad-oad-after-physics-clearance/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/production-Orbital-product-bb0ad-oad-after-physics-clearance/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Slow test file: src/tests/e2e/production.spec.ts (7.9m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  1 failed
+    src/tests/e2e/production.spec.ts:56:1 › Orbital production: a real walked checkpoint survives reload after physics clearance 
+  2 passed (8.1m)

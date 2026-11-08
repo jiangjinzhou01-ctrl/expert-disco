@@ -1,0 +1,12 @@
+
+ RUN  v5.1.0 /workspace/threshold-v02
+
+ ✓ src/tests/unit/orbital-architecture.test.ts (2 tests) 853ms
+   ✓ decodes every deployed meshopt cell, validates provenance, full topology and finite world bounds 685ms
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  01:05:47
+   Duration  1.58s (tests 62%, import 25%, transform 12%)
+
+JSON report written to /workspace/threshold-v02/evidence/vitest.json

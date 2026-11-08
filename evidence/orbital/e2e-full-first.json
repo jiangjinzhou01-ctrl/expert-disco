@@ -1,0 +1,1479 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/threshold-v02/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/workspace/threshold-v02/playwright.config.ts",
+    "rootDir": "/workspace/threshold-v02/src/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/threshold-v02/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/workspace/threshold-v02/src/tests/e2e",
+        "testIgnore": [
+          "**/production.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/threshold-v02/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/workspace/threshold-v02/src/tests/e2e",
+        "snapshotDir": "/workspace/threshold-v02/src/tests/e2e",
+        "testIgnore": "**/production.spec.ts",
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5180",
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "headless": true,
+          "launchOptions": {
+            "args": [
+              "--no-sandbox",
+              "--use-gl=angle",
+              "--use-angle=swiftshader",
+              "--enable-unsafe-swiftshader"
+            ]
+          },
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/playwright.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev -- --port 5180",
+      "url": "http://127.0.0.1:5180",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "chapter-audio.spec.ts",
+      "file": "chapter-audio.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "orbital sound stays gesture-locked, emits bounded spatial cues, and releases its audio context",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3351,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:02:50.613Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "eac79a6d18f50d265030-dfa479acc59f5be8fdd3",
+          "file": "chapter-audio.spec.ts",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "diagnostics.spec.ts",
+      "file": "diagnostics.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "F3 diagnostics exports a real JSON download and UI quality resizes the live target",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11113,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:02:54.117Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "80bb835772e7bc2f1ed9-5629a8819a31a2765f88",
+          "file": "diagnostics.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "Esc cancels held keyboard and mouse drag, development geometry remains observational",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7996,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:03:05.250Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "80bb835772e7bc2f1ed9-1e805cb8ab44bba51b44",
+          "file": "diagnostics.spec.ts",
+          "line": 51,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "input.spec.ts",
+      "file": "input.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "mobile uses distinct captured pointer IDs for simultaneous movement and look, with cancellation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5466,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:03:13.338Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "mobile-multitouch",
+                      "contentType": "application/json",
+                      "body": "ewogICJwb2ludGVycyI6IFsKICAgIHsKICAgICAgImlkIjogMiwKICAgICAgIngiOiAxNTAKICAgIH0sCiAgICB7CiAgICAgICJpZCI6IDMsCiAgICAgICJ4IjogODAwCiAgICB9CiAgXSwKICAiY2FwdHVyZWQiOiBbCiAgICB0cnVlLAogICAgdHJ1ZQogIF0sCiAgImR1cmluZyI6IHsKICAgICJpbnB1dCI6IHsKICAgICAgIm1vdmVtZW50IjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDEKICAgICAgfSwKICAgICAgInRvdWNoU3RhdGUiOiB7CiAgICAgICAgIm1vdmVBY3RpdmUiOiB0cnVlLAogICAgICAgICJsb29rQWN0aXZlIjogdHJ1ZSwKICAgICAgICAibW92ZVgiOiAwLAogICAgICAgICJtb3ZlWSI6IC01OAogICAgICB9LAogICAgICAidG91Y2giOiB0cnVlCiAgICB9LAogICAgInJlYWR5IjogdHJ1ZSwKICAgICJlcnJvciI6IG51bGwsCiAgICAid29ybGRJZCI6ICJBIiwKICAgICJwb3NpdGlvbiI6IFsKICAgICAgLTAuMDg5NDMwMTM4NDY4NzQyMzcsCiAgICAgIDAuODgwMTM0NzAxNzI4ODIwOCwKICAgICAgLTMuNTkzMjkyNDc0NzQ2NzA0CiAgICBdLAogICAgInJvdGF0aW9uIjogWwogICAgICAtMC4wMjQ5MjcxMjM2ODgwNzQ5MTUsCiAgICAgIDAuMDc0OTA2MjkyOTU4NzUzMjQsCiAgICAgIDAuMDAxODczMDQ3NTU4NDcwMjQwNCwKICAgICAgMC45OTY4NzcyMTI4MzY0OTYxCiAgICBdLAogICAgInlhdyI6IDAuMTUsCiAgICAicGl0Y2giOiAtMC4wNSwKICAgICJ2ZWxvY2l0eSI6IFsKICAgICAgLTAuNDQ4MzE0Mzk3NDIwNzk3NjUsCiAgICAgIDAsCiAgICAgIC0yLjk2NjMxMzIzMzgwODEyNjYKICAgIF0sCiAgICAic3RlcCI6IDIzLAogICAgImdyb3VuZGVkIjogdHJ1ZSwKICAgICJldmVudHMiOiBbXSwKICAgICJsYXN0RXZlbnRJZCI6IDAsCiAgICAidHJhbnNmZXJTdGF0ZSI6ICJBUk1FRCIsCiAgICAibGFzdFJlamVjdGlvbiI6IG51bGwsCiAgICAicG9ydGFsIjogewogICAgICAic291cmNlIjogIkEtZG9vciIsCiAgICAgICJkZXN0aW5hdGlvbiI6ICJCLWRvb3IiLAogICAgICAicG9zZXMiOiBbCiAgICAgICAgewogICAgICAgICAgImlkIjogIkEtZG9vciIsCiAgICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAgIDAsCiAgICAgICAgICAgIDEuNDUsCiAgICAgICAgICAgIC04CiAgICAgICAgICBdLAogICAgICAgICAgInJvdGF0aW9uIjogWwogICAgICAgICAgICAwLAogICAgICAgICAgICAwLAogICAgICAgICAgICAwLAogICAgICAgICAgICAxCiAgICAgICAgICBdCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiaWQiOiAiQi1kb29yIiwKICAgICAgICAgICJwb3NpdGlvbiI6IFsKICAgICAgICAgICAgMzIsCiAgICAgICAgICAgIDEuNDUsCiAgICAgICAgICAgIDAKICAgICAgICAgIF0sCiAgICAgICAgICAicm90YXRpb24iOiBbCiAgICAgICAgICAgIDAsCiAgICAgICAgICAgIDAuNzA3MTA2NzgxMTg2NTQ3NSwKICAgICAgICAgICAgMCwKICAgICAgICAgICAgMC43MDcxMDY3ODExODY1NDc2CiAgICAgICAgICBdCiAgICAgICAgfQogICAgICBdLAogICAgICAic2lnbmVkRGlzdGFuY2UiOiA0LjQwNjcwNzUyNTI1MzI5NiwKICAgICAgImNyb3NzaW5nQ29uZGl0aW9uIjogZmFsc2UKICAgIH0sCiAgICAicmVuZGVyIjogewogICAgICAidGFyZ2V0V2lkdGgiOiA3NjUsCiAgICAgICJ0YXJnZXRIZWlnaHQiOiA1MTAsCiAgICAgICJxdWFsaXR5IjogMC44NSwKICAgICAgIm1haW5EcmF3Q2FsbHMiOiAxMywKICAgICAgIm9mZnNjcmVlbkRyYXdDYWxscyI6IDMxLAogICAgICAiZ2VvbWV0cmllcyI6IDUsCiAgICAgICJ0ZXh0dXJlcyI6IDEsCiAgICAgICJwcm9ncmFtcyI6IDUsCiAgICAgICJjb250ZXh0IjogImFjdGl2ZSIsCiAgICAgICJwYXNzZXMiOiAxLAogICAgICAidGFyZ2V0UmVzaXplcyI6IDEKICAgIH0sCiAgICAicGVyZm9ybWFuY2UiOiB7CiAgICAgICJzYW1wbGVzIjogMjAsCiAgICAgICJmcHMiOiAyOC42OTQ0MDQ1OTExMDQ3MzIsCiAgICAgICJhdmVyYWdlTXMiOiAzNC44NSwKICAgICAgInA1ME1zIjogMTcuMDk5OTk5OTk5OTc2NzE3LAogICAgICAicDk1TXMiOiA1MC4zMDAwMDAwMDAwNDY1NjYsCiAgICAgICJwOTlNcyI6IDI1OS4xOTk5OTk5OTk5NTM0MywKICAgICAgInBoeXNpY3NNcyI6IDAuMTk5OTk5OTk5OTUzNDMzODcsCiAgICAgICJncHVNcyI6IG51bGwKICAgIH0sCiAgICAibW92aW5nUmVmZXJlbmNlIjogWwogICAgICAzNS44LAogICAgICAwLjg2NzYzOTMzNTQ0OTU1ODMsCiAgICAgIC0xLjI1MDY4MDcxMDcxNDg1MwogICAgXSwKICAgICJlbGFwc2VkIjogMC4zODMzMzMzMzMzMzMzMzMzLAogICAgImRyb3BwZWRTZWNvbmRzIjogMC4xNzU4NjY2NjY2NjY2MjAwNwogIH0sCiAgInN0b3BwZWQiOiB7CiAgICAiaW5wdXQiOiB7CiAgICAgICJtb3ZlbWVudCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwCiAgICAgIH0sCiAgICAgICJ0b3VjaFN0YXRlIjogewogICAgICAgICJtb3ZlQWN0aXZlIjogZmFsc2UsCiAgICAgICAgImxvb2tBY3RpdmUiOiBmYWxzZSwKICAgICAgICAibW92ZVgiOiAwLAogICAgICAgICJtb3ZlWSI6IDAKICAgICAgfSwKICAgICAgInRvdWNoIjogdHJ1ZQogICAgfSwKICAgICJyZWFkeSI6IHRydWUsCiAgICAiZXJyb3IiOiBudWxsLAogICAgIndvcmxkSWQiOiAiQSIsCiAgICAicG9zaXRpb24iOiBbCiAgICAgIC0wLjEzNDE3OTYzNjgzNjA1MTk0LAogICAgICAwLjg4MDA2NzgyNTMxNzM4MjgsCiAgICAgIC0zLjg4OTg4NDQ3MTg5MzMxMDUKICAgIF0sCiAgICAicm90YXRpb24iOiBbCiAgICAgIC0wLjAyNDkyNzEyMzY4ODA3NDkxNSwKICAgICAgMC4wNzQ5MDYyOTI5NTg3NTMyNCwKICAgICAgMC4wMDE4NzMwNDc1NTg0NzAyNDA0LAogICAgICAwLjk5Njg3NzIxMjgzNjQ5NjEKICAgIF0sCiAgICAieWF3IjogMC4xNSwKICAgICJwaXRjaCI6IC0wLjA1LAogICAgInZlbG9jaXR5IjogWwogICAgICAwLAogICAgICAwLAogICAgICAwCiAgICBdLAogICAgInN0ZXAiOiA0MSwKICAgICJncm91bmRlZCI6IHRydWUsCiAgICAiZXZlbnRzIjogW10sCiAgICAibGFzdEV2ZW50SWQiOiAwLAogICAgInRyYW5zZmVyU3RhdGUiOiAiQVJNRUQiLAogICAgImxhc3RSZWplY3Rpb24iOiBudWxsLAogICAgInBvcnRhbCI6IHsKICAgICAgInNvdXJjZSI6ICJBLWRvb3IiLAogICAgICAiZGVzdGluYXRpb24iOiAiQi1kb29yIiwKICAgICAgInBvc2VzIjogWwogICAgICAgIHsKICAgICAgICAgICJpZCI6ICJBLWRvb3IiLAogICAgICAgICAgInBvc2l0aW9uIjogWwogICAgICAgICAgICAwLAogICAgICAgICAgICAxLjQ1LAogICAgICAgICAgICAtOAogICAgICAgICAgXSwKICAgICAgICAgICJyb3RhdGlvbiI6IFsKICAgICAgICAgICAgMCwKICAgICAgICAgICAgMCwKICAgICAgICAgICAgMCwKICAgICAgICAgICAgMQogICAgICAgICAgXQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogIkItZG9vciIsCiAgICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAgIDMyLAogICAgICAgICAgICAxLjQ1LAogICAgICAgICAgICAwCiAgICAgICAgICBdLAogICAgICAgICAgInJvdGF0aW9uIjogWwogICAgICAgICAgICAwLAogICAgICAgICAgICAwLjcwNzEwNjc4MTE4NjU0NzUsCiAgICAgICAgICAgIDAsCiAgICAgICAgICAgIDAuNzA3MTA2NzgxMTg2NTQ3NgogICAgICAgICAgXQogICAgICAgIH0KICAgICAgXSwKICAgICAgInNpZ25lZERpc3RhbmNlIjogNC4xMTAxMTU1MjgxMDY2ODk1LAogICAgICAiY3Jvc3NpbmdDb25kaXRpb24iOiBmYWxzZQogICAgfSwKICAgICJyZW5kZXIiOiB7CiAgICAgICJ0YXJnZXRXaWR0aCI6IDc2NSwKICAgICAgInRhcmdldEhlaWdodCI6IDUxMCwKICAgICAgInF1YWxpdHkiOiAwLjg1LAogICAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgICAib2Zmc2NyZWVuRHJhd0NhbGxzIjogMzEsCiAgICAgICJnZW9tZXRyaWVzIjogNSwKICAgICAgInRleHR1cmVzIjogMSwKICAgICAgInByb2dyYW1zIjogNSwKICAgICAgImNvbnRleHQiOiAiYWN0aXZlIiwKICAgICAgInBhc3NlcyI6IDEsCiAgICAgICJ0YXJnZXRSZXNpemVzIjogMQogICAgfSwKICAgICJwZXJmb3JtYW5jZSI6IHsKICAgICAgInNhbXBsZXMiOiAyOCwKICAgICAgImZwcyI6IDMwLjY5ODM4ODMzNDYxMzIxMywKICAgICAgImF2ZXJhZ2VNcyI6IDMyLjU3NDk5OTk5OTk5OTE3LAogICAgICAicDUwTXMiOiAxNi41LAogICAgICAicDk1TXMiOiA2OS45MDAwMDAwMDAwMjMyOCwKICAgICAgInA5OU1zIjogMjU5LjE5OTk5OTk5OTk1MzQzLAogICAgICAicGh5c2ljc01zIjogMC4wOTk5OTk5OTk5NzY3MTY5NCwKICAgICAgImdwdU1zIjogbnVsbAogICAgfSwKICAgICJtb3ZpbmdSZWZlcmVuY2UiOiBbCiAgICAgIDM1LjgsCiAgICAgIDAuOTE1MzkxNzA0NDU3MDc5NSwKICAgICAgLTEuMjE0MDU4ODg4OTI2MjEyNwogICAgXSwKICAgICJlbGFwc2VkIjogMC42ODMzMzMzMzMzMzMzMzM4LAogICAgImRyb3BwZWRTZWNvbmRzIjogMC4xNzU4NjY2NjY2NjY2MjAwNwogIH0KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "62978389d577d9e03e88-a9c63171b4f2343aee38",
+          "file": "input.spec.ts",
+          "line": 58,
+          "column": 1
+        },
+        {
+          "title": "mobile blur clears held movement and allows a fresh contact",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3578,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:03:18.833Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "62978389d577d9e03e88-a118ec84af6691090989",
+          "file": "input.spec.ts",
+          "line": 99,
+          "column": 3
+        },
+        {
+          "title": "mobile orientationchange clears held movement and allows a fresh contact",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3794,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:03:22.438Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "62978389d577d9e03e88-01634808a541a4ed5810",
+          "file": "input.spec.ts",
+          "line": 99,
+          "column": 3
+        },
+        {
+          "title": "mobile visibilitychange clears held movement and allows a fresh contact",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3680,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:03:26.250Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "62978389d577d9e03e88-6d22203283c9342f258a",
+          "file": "input.spec.ts",
+          "line": 99,
+          "column": 3
+        },
+        {
+          "title": "mobile touch controls traverse A → B, turn around, return, and reset the real capsule",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7720,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:03:29.942Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "62978389d577d9e03e88-1c198eed98f205385b19",
+          "file": "input.spec.ts",
+          "line": 122,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "lifecycle.spec.ts",
+      "file": "lifecycle.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "WebGL2 context loss/restoration resumes real portal passes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4711,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:03:37.722Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "context-restoration.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJpbnB1dCI6IHsKICAgICJtb3ZlbWVudCI6IHsKICAgICAgIngiOiAwLAogICAgICAieSI6IDAKICAgIH0sCiAgICAidG91Y2hTdGF0ZSI6IHsKICAgICAgIm1vdmVBY3RpdmUiOiBmYWxzZSwKICAgICAgImxvb2tBY3RpdmUiOiBmYWxzZSwKICAgICAgIm1vdmVYIjogMCwKICAgICAgIm1vdmVZIjogMAogICAgfSwKICAgICJ0b3VjaCI6IGZhbHNlCiAgfSwKICAicmVhZHkiOiB0cnVlLAogICJlcnJvciI6IG51bGwsCiAgIndvcmxkSWQiOiAiQSIsCiAgInBvc2l0aW9uIjogWwogICAgLTAuMDAwMDAxNTM4Njk5Mjc5OTkwMzk2NSwKICAgIDAuODc5NzAwNzIwMzEwMjExMiwKICAgIC0zLjAwMDAwMTkwNzM0ODYzMwogIF0sCiAgInJvdGF0aW9uIjogWwogICAgMCwKICAgIDAsCiAgICAwLAogICAgMQogIF0sCiAgInlhdyI6IDAsCiAgInBpdGNoIjogMCwKICAidmVsb2NpdHkiOiBbCiAgICAwLAogICAgMCwKICAgIDAKICBdLAogICJzdGVwIjogMzUsCiAgImdyb3VuZGVkIjogdHJ1ZSwKICAiZXZlbnRzIjogW10sCiAgImxhc3RFdmVudElkIjogMCwKICAidHJhbnNmZXJTdGF0ZSI6ICJBUk1FRCIsCiAgImxhc3RSZWplY3Rpb24iOiBudWxsLAogICJwb3J0YWwiOiB7CiAgICAic291cmNlIjogIkEtZG9vciIsCiAgICAiZGVzdGluYXRpb24iOiAiQi1kb29yIiwKICAgICJwb3NlcyI6IFsKICAgICAgewogICAgICAgICJpZCI6ICJBLWRvb3IiLAogICAgICAgICJwb3NpdGlvbiI6IFsKICAgICAgICAgIDAsCiAgICAgICAgICAxLjQ1LAogICAgICAgICAgLTgKICAgICAgICBdLAogICAgICAgICJyb3RhdGlvbiI6IFsKICAgICAgICAgIDAsCiAgICAgICAgICAwLAogICAgICAgICAgMCwKICAgICAgICAgIDEKICAgICAgICBdCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAiaWQiOiAiQi1kb29yIiwKICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAzMiwKICAgICAgICAgIDEuNDUsCiAgICAgICAgICAwCiAgICAgICAgXSwKICAgICAgICAicm90YXRpb24iOiBbCiAgICAgICAgICAwLAogICAgICAgICAgMC43MDcxMDY3ODExODY1NDc1LAogICAgICAgICAgMCwKICAgICAgICAgIDAuNzA3MTA2NzgxMTg2NTQ3NgogICAgICAgIF0KICAgICAgfQogICAgXSwKICAgICJzaWduZWREaXN0YW5jZSI6IDQuOTk5OTk4MDkyNjUxMzY3LAogICAgImNyb3NzaW5nQ29uZGl0aW9uIjogZmFsc2UKICB9LAogICJyZW5kZXIiOiB7CiAgICAidGFyZ2V0V2lkdGgiOiAxNjMyLAogICAgInRhcmdldEhlaWdodCI6IDkxOCwKICAgICJxdWFsaXR5IjogMC44NSwKICAgICJtYWluRHJhd0NhbGxzIjogMTMsCiAgICAib2Zmc2NyZWVuRHJhd0NhbGxzIjogMzEsCiAgICAiZ2VvbWV0cmllcyI6IDUsCiAgICAidGV4dHVyZXMiOiAxLAogICAgInByb2dyYW1zIjogNSwKICAgICJjb250ZXh0IjogImFjdGl2ZSIsCiAgICAicGFzc2VzIjogMSwKICAgICJ0YXJnZXRSZXNpemVzIjogMQogIH0sCiAgInBlcmZvcm1hbmNlIjogewogICAgInNhbXBsZXMiOiAxNSwKICAgICJmcHMiOiA4LjI1OTQ1NzA3ODM1NDgyMiwKICAgICJhdmVyYWdlTXMiOiAxMjEuMDczMzMzMzMzMzMxNzcsCiAgICAicDUwTXMiOiAzOC4zMDAwMDAwMDAwNDY1NjYsCiAgICAicDk1TXMiOiA3NjAuNSwKICAgICJwOTlNcyI6IDc2MC41LAogICAgInBoeXNpY3NNcyI6IDAuMzAwMDAwMDAwMDQ2NTY2MTMsCiAgICAiZ3B1TXMiOiBudWxsCiAgfSwKICAibW92aW5nUmVmZXJlbmNlIjogWwogICAgMzUuOCwKICAgIDAuOTAwMjQyNjAwOTM0NzU5NiwKICAgIC0xLjIyNTk3MDcwOTI5NzExNjYKICBdLAogICJlbGFwc2VkIjogMC41ODMzMzMzMzMzMzMzMzM1LAogICJkcm9wcGVkU2Vjb25kcyI6IDEuMTgyNzY2NjY2NjY2NjQzNAp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f1785dee40219527314-8972f4071f6c8248062c",
+          "file": "lifecycle.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "resize and render quality retain aspect and bounded GPU resources; disposal releases resources",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7490,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:03:42.450Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "resize-resources.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJpbml0aWFsIjogewogICAgInRhcmdldFdpZHRoIjogMTYzMiwKICAgICJ0YXJnZXRIZWlnaHQiOiA5MTgsCiAgICAicXVhbGl0eSI6IDAuODUsCiAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgIm9mZnNjcmVlbkRyYXdDYWxscyI6IDMxLAogICAgImdlb21ldHJpZXMiOiA1LAogICAgInRleHR1cmVzIjogMSwKICAgICJwcm9ncmFtcyI6IDUsCiAgICAiY29udGV4dCI6ICJhY3RpdmUiLAogICAgInBhc3NlcyI6IDEsCiAgICAidGFyZ2V0UmVzaXplcyI6IDEKICB9LAogICJzYW1wbGVzIjogWwogICAgewogICAgICAidGFyZ2V0V2lkdGgiOiAxMDg4LAogICAgICAidGFyZ2V0SGVpZ2h0IjogNjEyLAogICAgICAicXVhbGl0eSI6IDAuODUsCiAgICAgICJtYWluRHJhd0NhbGxzIjogMTMsCiAgICAgICJvZmZzY3JlZW5EcmF3Q2FsbHMiOiAzMSwKICAgICAgImdlb21ldHJpZXMiOiA1LAogICAgICAidGV4dHVyZXMiOiAxLAogICAgICAicHJvZ3JhbXMiOiA1LAogICAgICAiY29udGV4dCI6ICJhY3RpdmUiLAogICAgICAicGFzc2VzIjogMSwKICAgICAgInRhcmdldFJlc2l6ZXMiOiAyCiAgICB9LAogICAgewogICAgICAidGFyZ2V0V2lkdGgiOiA4MTYsCiAgICAgICJ0YXJnZXRIZWlnaHQiOiA1NDQsCiAgICAgICJxdWFsaXR5IjogMC44NSwKICAgICAgIm1haW5EcmF3Q2FsbHMiOiAxMywKICAgICAgIm9mZnNjcmVlbkRyYXdDYWxscyI6IDMxLAogICAgICAiZ2VvbWV0cmllcyI6IDUsCiAgICAgICJ0ZXh0dXJlcyI6IDEsCiAgICAgICJwcm9ncmFtcyI6IDUsCiAgICAgICJjb250ZXh0IjogImFjdGl2ZSIsCiAgICAgICJwYXNzZXMiOiAxLAogICAgICAidGFyZ2V0UmVzaXplcyI6IDMKICAgIH0sCiAgICB7CiAgICAgICJ0YXJnZXRXaWR0aCI6IDkxOCwKICAgICAgInRhcmdldEhlaWdodCI6IDYxMiwKICAgICAgInF1YWxpdHkiOiAwLjg1LAogICAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgICAib2Zmc2NyZWVuRHJhd0NhbGxzIjogMzEsCiAgICAgICJnZW9tZXRyaWVzIjogNSwKICAgICAgInRleHR1cmVzIjogMSwKICAgICAgInByb2dyYW1zIjogNSwKICAgICAgImNvbnRleHQiOiAiYWN0aXZlIiwKICAgICAgInBhc3NlcyI6IDEsCiAgICAgICJ0YXJnZXRSZXNpemVzIjogNAogICAgfSwKICAgIHsKICAgICAgInRhcmdldFdpZHRoIjogMTM2MCwKICAgICAgInRhcmdldEhlaWdodCI6IDc2NSwKICAgICAgInF1YWxpdHkiOiAwLjg1LAogICAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgICAib2Zmc2NyZWVuRHJhd0NhbGxzIjogMzEsCiAgICAgICJnZW9tZXRyaWVzIjogNSwKICAgICAgInRleHR1cmVzIjogMSwKICAgICAgInByb2dyYW1zIjogNSwKICAgICAgImNvbnRleHQiOiAiYWN0aXZlIiwKICAgICAgInBhc3NlcyI6IDEsCiAgICAgICJ0YXJnZXRSZXNpemVzIjogNQogICAgfSwKICAgIHsKICAgICAgInRhcmdldFdpZHRoIjogMTYzMiwKICAgICAgInRhcmdldEhlaWdodCI6IDkxOCwKICAgICAgInF1YWxpdHkiOiAwLjg1LAogICAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgICAib2Zmc2NyZWVuRHJhd0NhbGxzIjogMzEsCiAgICAgICJnZW9tZXRyaWVzIjogNSwKICAgICAgInRleHR1cmVzIjogMSwKICAgICAgInByb2dyYW1zIjogNSwKICAgICAgImNvbnRleHQiOiAiYWN0aXZlIiwKICAgICAgInBhc3NlcyI6IDEsCiAgICAgICJ0YXJnZXRSZXNpemVzIjogNgogICAgfSwKICAgIHsKICAgICAgInRhcmdldFdpZHRoIjogMTA4OCwKICAgICAgInRhcmdldEhlaWdodCI6IDYxMiwKICAgICAgInF1YWxpdHkiOiAwLjg1LAogICAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgICAib2Zmc2NyZWVuRHJhd0NhbGxzIjogMzEsCiAgICAgICJnZW9tZXRyaWVzIjogNSwKICAgICAgInRleHR1cmVzIjogMSwKICAgICAgInByb2dyYW1zIjogNSwKICAgICAgImNvbnRleHQiOiAiYWN0aXZlIiwKICAgICAgInBhc3NlcyI6IDEsCiAgICAgICJ0YXJnZXRSZXNpemVzIjogNwogICAgfQogIF0sCiAgInF1YWxpdHkiOiB7CiAgICAidGFyZ2V0V2lkdGgiOiA2NDAsCiAgICAidGFyZ2V0SGVpZ2h0IjogMzYwLAogICAgInF1YWxpdHkiOiAwLjUsCiAgICAibWFpbkRyYXdDYWxscyI6IDEzLAogICAgIm9mZnNjcmVlbkRyYXdDYWxscyI6IDMxLAogICAgImdlb21ldHJpZXMiOiA1LAogICAgInRleHR1cmVzIjogMSwKICAgICJwcm9ncmFtcyI6IDUsCiAgICAiY29udGV4dCI6ICJhY3RpdmUiLAogICAgInBhc3NlcyI6IDEsCiAgICAidGFyZ2V0UmVzaXplcyI6IDgKICB9LAogICJkaXNwb3NlZCI6IHsKICAgICJnZW9tZXRyaWVzIjogMCwKICAgICJ0ZXh0dXJlcyI6IDAsCiAgICAicHJvZ3JhbXMiOiAwCiAgfQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f1785dee40219527314-b7df8a524beb07bdf3a6",
+          "file": "lifecycle.spec.ts",
+          "line": 26,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "orbital.spec.ts",
+      "file": "orbital.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "orbital product: highest default, closable diagnostics, saved choices, help and real canvas photo",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 36145,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:03:49.971Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f0b14b36ebd836448057-b4cab49db2b87c895209",
+          "file": "orbital.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "orbital streaming: deferred GLBs retain proxies, visible portal requests destination, hidden content evicts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14331,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:04:39.711Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f0b14b36ebd836448057-bcb876032295ec55dced",
+          "file": "orbital.spec.ts",
+          "line": 106,
+          "column": 1
+        },
+        {
+          "title": "orbital streaming: failed optional detail preserves structural physics and records error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11037,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:04:54.072Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f0b14b36ebd836448057-05b5888ebff07619541d",
+          "file": "orbital.spec.ts",
+          "line": 141,
+          "column": 1
+        },
+        {
+          "title": "orbital interactions: observatory records a visit and a released sample obeys Rapier sideways gravity",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12209,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:05:05.163Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f0b14b36ebd836448057-8ac7867bf2b10960e588",
+          "file": "orbital.spec.ts",
+          "line": 156,
+          "column": 1
+        }
+      ],
+      "suites": [
+        {
+          "title": "orbital touch response",
+          "file": "orbital.spec.ts",
+          "line": 70,
+          "column": 6,
+          "specs": [
+            {
+              "title": "equal-distance fast gesture turns further; release and cancellation stop input",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13538,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T01:04:26.124Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0b14b36ebd836448057-5e4febf319ccc2604c67",
+              "file": "orbital.spec.ts",
+              "line": 72,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "runtime.spec.ts",
+      "file": "runtime.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "real Rapier state crosses both ways and preserves committed event order",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8683,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:05:17.441Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ca9246177367606c6c3b-5c4802c19718a7e64b0d",
+          "file": "runtime.spec.ts",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "door frame blocks the capsule, blocked exit rejects then recovers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4593,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:05:26.141Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ca9246177367606c6c3b-1f97d05cc05dad81f43c",
+          "file": "runtime.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "fast segments retain remaining displacement and long frames cap catch-up",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4784,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:05:30.747Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ca9246177367606c6c3b-384d452515262d7f8757",
+          "file": "runtime.spec.ts",
+          "line": 53,
+          "column": 1
+        },
+        {
+          "title": "desktop keyboard moves the real capsule and R resets it",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6971,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:05:35.557Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ca9246177367606c6c3b-7040d68b7c4aafe17d43",
+          "file": "runtime.spec.ts",
+          "line": 72,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "v02-mobile.spec.ts",
+      "file": "v02-mobile.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "V02 mobile 1170:540",
+          "file": "v02-mobile.spec.ts",
+          "line": 5,
+          "column": 37,
+          "specs": [
+            {
+              "title": "actual dual Pointer Events control the full chapter and remain live during gravity rotation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 42148,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T01:05:42.562Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "20c371e82a264a038190-7e00d5c33809edb85501",
+              "file": "v02-mobile.spec.ts",
+              "line": 5,
+              "column": 165
+            }
+          ]
+        },
+        {
+          "title": "V02 mobile 1200:540",
+          "file": "v02-mobile.spec.ts",
+          "line": 5,
+          "column": 37,
+          "specs": [
+            {
+              "title": "actual dual Pointer Events control the full chapter and remain live during gravity rotation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 57560,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T01:06:24.724Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "20c371e82a264a038190-70e33a93fde149537fcf",
+              "file": "v02-mobile.spec.ts",
+              "line": 5,
+              "column": 165
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "v02.spec.ts",
+      "file": "v02.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "V02: complete input-driven chapter, trigger, return, and deterministic uncut frame sequence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 270000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 80509,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:07:22.327Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7abbfe996b02718659a-f980987bc4833c6c05e9",
+          "file": "v02.spec.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "V02: CR1 cameras show real geometry and both fixed-axis witnesses after the turn",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 93397,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:08:42.849Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7abbfe996b02718659a-c6220a32a82fbce78190",
+          "file": "v02.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "V02: offscreen portal culling, resizing, context restoration, and checkpoint reset",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 34759,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m174\u001b[39m\nReceived:    \u001b[31m181\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m174\u001b[39m\nReceived:    \u001b[31m181\u001b[39m\n    at /workspace/threshold-v02/src/tests/e2e/v02.spec.ts:30:76",
+                    "location": {
+                      "file": "/workspace/threshold-v02/src/tests/e2e/v02.spec.ts",
+                      "column": 76,
+                      "line": 30
+                    },
+                    "snippet": " \u001b[90m 28 |\u001b[39m  \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(()\u001b[33m=>\u001b[39m{window\u001b[33m.\u001b[39m__V02_TEST__\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mlook(\u001b[33m-\u001b[39m\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39m\u001b[33mPI\u001b[39m\u001b[33m/\u001b[39m\u001b[35m.0025\u001b[39m\u001b[33m,\u001b[39m\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39mwindow\u001b[33m.\u001b[39m__V02_TEST__\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mrender()\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39mexpect((\u001b[36mawait\u001b[39m chapterRead(page))\u001b[33m.\u001b[39mrender\u001b[33m.\u001b[39mpasses)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m  \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(\u001b[36masync\u001b[39m()\u001b[33m=>\u001b[39m{\u001b[36mconst\u001b[39m a\u001b[33m=\u001b[39mwindow\u001b[33m.\u001b[39m__V02_TEST__\u001b[33m!\u001b[39m\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m a\u001b[33m.\u001b[39mruntime\u001b[33m.\u001b[39mstreaming\u001b[33m.\u001b[39msettle()\u001b[33m;\u001b[39ma\u001b[33m.\u001b[39mrender()\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 30 |\u001b[39m  \u001b[36mconst\u001b[39m before\u001b[33m=\u001b[39m(\u001b[36mawait\u001b[39m chapterRead(page))\u001b[33m.\u001b[39mrender\u001b[33m;\u001b[39m\u001b[36mfor\u001b[39m(\u001b[36mconst\u001b[39m [width\u001b[33m,\u001b[39mheight]\u001b[36mof\u001b[39m [[\u001b[35m1170\u001b[39m\u001b[33m,\u001b[39m\u001b[35m540\u001b[39m]\u001b[33m,\u001b[39m[\u001b[35m1200\u001b[39m\u001b[33m,\u001b[39m\u001b[35m540\u001b[39m]\u001b[33m,\u001b[39m[\u001b[35m960\u001b[39m\u001b[33m,\u001b[39m\u001b[35m540\u001b[39m]]){\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39msetViewportSize({width\u001b[33m,\u001b[39mheight})\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForFunction(ratio\u001b[33m=>\u001b[39m\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(window\u001b[33m.\u001b[39m__V02_TEST__\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mruntime\u001b[33m.\u001b[39mcamera\u001b[33m.\u001b[39maspect\u001b[33m-\u001b[39mratio)\u001b[33m<\u001b[39m\u001b[35m.0001\u001b[39m\u001b[33m,\u001b[39mwidth\u001b[33m/\u001b[39mheight)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(()\u001b[33m=>\u001b[39mwindow\u001b[33m.\u001b[39m__V02_TEST__\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mrender())\u001b[33m;\u001b[39m}\n \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 31 |\u001b[39m  \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(\u001b[36masync\u001b[39m()\u001b[33m=>\u001b[39m{\u001b[36mconst\u001b[39m a\u001b[33m=\u001b[39mwindow\u001b[33m.\u001b[39m__V02_TEST__\u001b[33m!\u001b[39m\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m a\u001b[33m.\u001b[39mruntime\u001b[33m.\u001b[39mstreaming\u001b[33m.\u001b[39msettle()\u001b[33m;\u001b[39ma\u001b[33m.\u001b[39mrender()\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 32 |\u001b[39m  \u001b[36mconst\u001b[39m resized\u001b[33m=\u001b[39m(\u001b[36mawait\u001b[39m chapterRead(page))\u001b[33m.\u001b[39mrender\u001b[33m;\u001b[39mexpect(resized\u001b[33m.\u001b[39mgeometries)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(before\u001b[33m.\u001b[39mgeometries\u001b[33m+\u001b[39m\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39mexpect(resized\u001b[33m.\u001b[39mtextures)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(before\u001b[33m.\u001b[39mtextures\u001b[33m+\u001b[39m\u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 33 |\u001b[39m  \u001b[36mconst\u001b[39m supported\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(()\u001b[33m=>\u001b[39m{\u001b[36mconst\u001b[39m gl\u001b[33m=\u001b[39mwindow\u001b[33m.\u001b[39m__V02_TEST__\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mruntime\u001b[33m.\u001b[39mgl\u001b[33m.\u001b[39mgetContext()\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m e\u001b[33m=\u001b[39mgl\u001b[33m.\u001b[39mgetExtension(\u001b[32m'WEBGL_lose_context'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mif\u001b[39m(\u001b[33m!\u001b[39me)\u001b[36mreturn\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m;\u001b[39me\u001b[33m.\u001b[39mloseContext()\u001b[33m;\u001b[39msetTimeout(()\u001b[33m=>\u001b[39me\u001b[33m.\u001b[39mrestoreContext()\u001b[33m,\u001b[39m\u001b[35m150\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mreturn\u001b[39m \u001b[36mtrue\u001b[39m\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39mexpect(supported)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m500\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(()\u001b[33m=>\u001b[39mwindow\u001b[33m.\u001b[39m__V02_TEST__\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mrender())\u001b[33m;\u001b[39mexpect((\u001b[36mawait\u001b[39m chapterRead(page))\u001b[33m.\u001b[39mrender\u001b[33m.\u001b[39mcontext)\u001b[33m.\u001b[39mtoBe(\u001b[32m'active'\u001b[39m)\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/threshold-v02/src/tests/e2e/v02.spec.ts",
+                        "column": 76,
+                        "line": 30
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m174\u001b[39m\nReceived:    \u001b[31m181\u001b[39m\n\n  28 |  await page.evaluate(()=>{window.__V02_TEST__!.look(-Math.PI/.0025,0);window.__V02_TEST__!.render();});expect((await chapterRead(page)).render.passes).toBe(0);\n  29 |  await page.evaluate(async()=>{const a=window.__V02_TEST__!;await a.runtime.streaming.settle();a.render();});\n> 30 |  const before=(await chapterRead(page)).render;for(const [width,height]of [[1170,540],[1200,540],[960,540]]){await page.setViewportSize({width,height});await page.waitForFunction(ratio=>Math.abs(window.__V02_TEST__!.runtime.camera.aspect-ratio)<.0001,width/height);await page.evaluate(()=>window.__V02_TEST__!.render());}\n     |                                                                            ^\n  31 |  await page.evaluate(async()=>{const a=window.__V02_TEST__!;await a.runtime.streaming.settle();a.render();});\n  32 |  const resized=(await chapterRead(page)).render;expect(resized.geometries).toBeLessThanOrEqual(before.geometries+1);expect(resized.textures).toBeLessThanOrEqual(before.textures+2);\n  33 |  const supported=await page.evaluate(()=>{const gl=window.__V02_TEST__!.runtime.gl.getContext();const e=gl.getExtension('WEBGL_lose_context');if(!e)return false;e.loseContext();setTimeout(()=>e.restoreContext(),150);return true;});expect(supported).toBe(true);await page.waitForTimeout(500);await page.evaluate(()=>window.__V02_TEST__!.render());expect((await chapterRead(page)).render.context).toBe('active');\n    at /workspace/threshold-v02/src/tests/e2e/v02.spec.ts:30:76"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:10:16.262Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/threshold-v02/test-results/v02-V02-offscreen-portal-c-848bd-ration-and-checkpoint-reset/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/threshold-v02/test-results/v02-V02-offscreen-portal-c-848bd-ration-and-checkpoint-reset/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/threshold-v02/src/tests/e2e/v02.spec.ts",
+                    "column": 76,
+                    "line": 30
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b7abbfe996b02718659a-7540ce5abfbf1343055d",
+          "file": "v02.spec.ts",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "V02: seeded free look and free movement expose real enclosing geometry beyond hero cameras",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 57334,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:11:22.259Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7abbfe996b02718659a-2ee21d689e23ad38b82c",
+          "file": "v02.spec.ts",
+          "line": 35,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "visual.spec.ts",
+      "file": "visual.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "portal projection front: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8814,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:12:19.807Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "projection-measurements",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJpZCI6ICJuZWFyLXJlZCIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogMTguMDEyMTQxOTk3NDIzMjAzLAogICAgICAieCI6IDgzMi44NTU0NjgyNTM0ODMyLAogICAgICAieSI6IDQ3MC4wNzA1MDc1Mzk0MTU4LAogICAgICAieiI6IDAuOTkyNzQ5MDkzNjM2NzA0NSwKICAgICAgImlzVmlzaWJsZSI6IHRydWUsCiAgICAgICJwbGFuZUhpdCI6IFsKICAgICAgICAzMiwKICAgICAgICAxLjgxNzUsCiAgICAgICAgLTAuNDUwMDAwMDAwMDAwMDAwMQogICAgICBdCiAgICB9LAogICAgIm9ic2VydmVkIjogewogICAgICAieCI6IDgzMi44MjgyNjc0NzcyMDM3LAogICAgICAieSI6IDQ3MC4wNTQyMDQ2NjA1ODc2MywKICAgICAgImNvdW50IjogOTg3LAogICAgICAiZXJyb3IiOiAwLjAzMTcxMjIzODc3NzcyNDc4NAogICAgfQogIH0sCiAgewogICAgImlkIjogImdyZWVuIiwKICAgICJwcmVkaWN0ZWQiOiB7CiAgICAgICJwcm9qZWN0ZWRSYWRpdXMiOiA4LjAwNTM5NjQ0MzI5OTIwMSwKICAgICAgIngiOiAxMTAxLjI3MTcwMTk0MDU3NCwKICAgICAgInkiOiA1NDEuODgzNjIyNjkyNTQwOSwKICAgICAgInoiOiAwLjk5NjkxNjI4MTIwMTgxNywKICAgICAgImlzVmlzaWJsZSI6IHRydWUsCiAgICAgICJwbGFuZUhpdCI6IFsKICAgICAgICAzMiwKICAgICAgICAxLjU2MzMzMzMzMzMzMzMzMzUsCiAgICAgICAgMC40OTk5OTk5OTk5OTk5OTk1NgogICAgICBdCiAgICB9LAogICAgIm9ic2VydmVkIjogewogICAgICAieCI6IDExMDEuMjM3MzczNzM3MzczNywKICAgICAgInkiOiA1NDEuNjkxOTE5MTkxOTE5MiwKICAgICAgImNvdW50IjogMTk4LAogICAgICAiZXJyb3IiOiAwLjE5NDc1MjgxMTc1Mjc2ODIzCiAgICB9CiAgfSwKICB7CiAgICAiaWQiOiAibWFnZW50YSIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogNy4yMDQ4NTY3OTg5NjkyODEsCiAgICAgICJ4IjogODc1LjIzNjk3ODgzNTY1NTMsCiAgICAgICJ5IjogNDg2LjU5OTI5NjY2NjQ2MywKICAgICAgInoiOiAwLjk5NzI0OTY1NjIwNzAyNTksCiAgICAgICJpc1Zpc2libGUiOiB0cnVlLAogICAgICAicGxhbmVIaXQiOiBbCiAgICAgICAgMzIsCiAgICAgICAgMS43NTkwMDAwMDAwMDAwMDAxLAogICAgICAgIC0wLjMwMDAwMDAwMDAwMDAwMDQKICAgICAgXQogICAgfSwKICAgICJvYnNlcnZlZCI6IHsKICAgICAgIngiOiA4NzUuMjQxMzc5MzEwMzQ0OSwKICAgICAgInkiOiA0ODYuNzE4MzkwODA0NTk3NywKICAgICAgImNvdW50IjogMTc0LAogICAgICAiZXJyb3IiOiAwLjExOTE3NTQwODE4MjgxMjM2CiAgICB9CiAgfSwKICB7CiAgICAiaWQiOiAiY3lhbiIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogNi4wMDQwNDczMzI0NzQ0MDEsCiAgICAgICJ4IjogOTU5Ljk5OTk5OTk5OTk5OTksCiAgICAgICJ5IjogNTk0LjM4OTYwNTI0NzEyMSwKICAgICAgInoiOiAwLjk5Nzc0OTcxODcxNDgzOTQsCiAgICAgICJpc1Zpc2libGUiOiB0cnVlLAogICAgICAicGxhbmVIaXQiOiBbCiAgICAgICAgMzIsCiAgICAgICAgMS4zNzc1LAogICAgICAgIC00LjEzMzE4Mjk0NzEyMjMxN2UtMTYKICAgICAgXQogICAgfSwKICAgICJvYnNlcnZlZCI6IHsKICAgICAgIngiOiA5NjAsCiAgICAgICJ5IjogNTk0LjI4NTcxNDI4NTcxNDMsCiAgICAgICJjb3VudCI6IDExMiwKICAgICAgImVycm9yIjogMC4xMDM4OTA5NjE0MDY3MDUxNwogICAgfQogIH0KXQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-035f4911922d91ab251a",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "portal projection oblique-30: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11679,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:12:28.646Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "projection-measurements",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJpZCI6ICJuZWFyLXJlZCIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogMTcuMjk0MzE3OTY2NTMwNzcsCiAgICAgICJ4IjogOTU2LjAwOTAzMjUwODAwNzEsCiAgICAgICJ5IjogNDcyLjg1NzM1Mzc3Njk5ODIsCiAgICAgICJ6IjogMC45OTMwNDgwMjI3MzAwMTM5LAogICAgICAiaXNWaXNpYmxlIjogdHJ1ZSwKICAgICAgInBsYW5lSGl0IjogWwogICAgICAgIDMyLAogICAgICAgIDEuODA4Mjg0MzIxNzgzMjAxLAogICAgICAgIC0wLjAxNjM1NDc3NDk4NDAwNjcyNgogICAgICBdCiAgICB9LAogICAgIm9ic2VydmVkIjogewogICAgICAieCI6IDk1NS45OTUwMzg1ODg3NTQxLAogICAgICAieSI6IDQ3Mi44NTM5MTQwMDIyMDUwNCwKICAgICAgImNvdW50IjogOTA3LAogICAgICAiZXJyb3IiOiAwLjAxNDQxMDQ3NjI4MjM3ODUwOAogICAgfQogIH0sCiAgewogICAgImlkIjogIm1hZ2VudGEiLAogICAgInByZWRpY3RlZCI6IHsKICAgICAgInByb2plY3RlZFJhZGl1cyI6IDcuNTM0NzQ0NjI1ODYyMjUzNSwKICAgICAgIngiOiAxMTkzLjQ4NjE4NzQ1Mjg1NzYsCiAgICAgICJ5IjogNDg0LjE1NDI0NTcxNDE5NzQsCiAgICAgICJ6IjogMC45OTcxMTIyNzg0MzA5MzczLAogICAgICAiaXNWaXNpYmxlIjogdHJ1ZSwKICAgICAgInBsYW5lSGl0IjogWwogICAgICAgIDMyLAogICAgICAgIDEuNzQwNTMyOTI1MjU2MDUwNCwKICAgICAgICAwLjgyMzI4MjA0MjYzNDcyMDUKICAgICAgXQogICAgfSwKICAgICJvYnNlcnZlZCI6IHsKICAgICAgIngiOiAxMTkzLjUxNTIyODQyNjM5NTksCiAgICAgICJ5IjogNDg0LjE1OTg5ODQ3NzE1NzM2LAogICAgICAiY291bnQiOiAxOTcsCiAgICAgICJlcnJvciI6IDAuMDI5NTg2MDA4MDYzNDY3NTIKICAgIH0KICB9Cl0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-b95849deb13e427af079",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "portal projection oblique-60: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13437,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:12:40.351Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "projection-measurements",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJpZCI6ICJuZWFyLXJlZCIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogMTcuOTI0MjQ0ODk1ODg1MzI3LAogICAgICAieCI6IDEwNzkuMzU5NzQwNjQzODE5LAogICAgICAieSI6IDQ3MC40MTE3NTUxMTAwOTI0MywKICAgICAgInoiOiAwLjk5Mjc4NTY5NzMxNjM0ODEsCiAgICAgICJpc1Zpc2libGUiOiB0cnVlLAogICAgICAicGxhbmVIaXQiOiBbCiAgICAgICAgMzIsCiAgICAgICAgMS43NjgsCiAgICAgICAgMC42NzkyMzA0ODQ1NDEzMjY0CiAgICAgIF0KICAgIH0sCiAgICAib2JzZXJ2ZWQiOiB7CiAgICAgICJ4IjogMTA3OS40MDg4MTQ1ODk2NjU2LAogICAgICAieSI6IDQ3MC4zMzM4Mzk5MTg5NDYzLAogICAgICAiY291bnQiOiA5ODcsCiAgICAgICJlcnJvciI6IDAuMDkyMDgxNjQ0MDU3MzIwNjIKICAgIH0KICB9Cl0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-fe793f0796bc59e81cd3",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "portal projection distance-1m: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12301,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:12:53.861Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "projection-measurements",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJpZCI6ICJncmVlbiIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogMTAuMjkyNjUyNTY5OTU2MTE2LAogICAgICAieCI6IDExNDEuNjM1MDQ1MzUyMTY2NiwKICAgICAgInkiOiA1NDIuNDIxODAwNjA0Njk1NSwKICAgICAgInoiOiAwLjk5NTk2Mzc4MTE4NjkzNCwKICAgICAgImlzVmlzaWJsZSI6IHRydWUsCiAgICAgICJwbGFuZUhpdCI6IFsKICAgICAgICAzMiwKICAgICAgICAxLjU2NzE0Mjg1NzE0Mjg1NzIsCiAgICAgICAgMC4yMTQyODU3MTQyODU3MTQxCiAgICAgIF0KICAgIH0sCiAgICAib2JzZXJ2ZWQiOiB7CiAgICAgICJ4IjogMTE0MS44NTAxNDgzNjc5NTI0LAogICAgICAieSI6IDU0Mi41MzI2NDA5NDk1NTQ5LAogICAgICAiY291bnQiOiAzMzcsCiAgICAgICJlcnJvciI6IDAuMjQxOTgxMTc1ODE0ODM1MQogICAgfQogIH0sCiAgewogICAgImlkIjogIm1hZ2VudGEiLAogICAgInByZWRpY3RlZCI6IHsKICAgICAgInByb2plY3RlZFJhZGl1cyI6IDkuMDA2MDcwOTk4NzExNjAyLAogICAgICAieCI6IDg1NC4wNDYyMjM1NDQ1NjkzLAogICAgICAieSI6IDQ3My4yNDkxMjA4MzMwNzg3LAogICAgICAieiI6IDAuOTk2NDk5NTYyNDQ1MzA1NiwKICAgICAgImlzVmlzaWJsZSI6IHRydWUsCiAgICAgICJwbGFuZUhpdCI6IFsKICAgICAgICAzMiwKICAgICAgICAxLjY0ODc1MDAwMDAwMDAwMDIsCiAgICAgICAgLTAuMTI1MDAwMDAwMDAwMDAwMTcKICAgICAgXQogICAgfSwKICAgICJvYnNlcnZlZCI6IHsKICAgICAgIngiOiA4NTQuMTIxNjIxNjIxNjIxNywKICAgICAgInkiOiA0NzMuNDIyNzc5OTIyNzc5OSwKICAgICAgImNvdW50IjogMjU5LAogICAgICAiZXJyb3IiOiAwLjE4OTMyMDc1ODEzMDM1MjI2CiAgICB9CiAgfSwKICB7CiAgICAiaWQiOiAiY3lhbiIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogNy4yMDQ4NTY3OTg5NjkyODEsCiAgICAgICJ4IjogOTU5Ljk5OTk5OTk5OTk5OTksCiAgICAgICJ5IjogNjA1LjI2NzUyNjI5NjU0NTMsCiAgICAgICJ6IjogMC45OTcyNDk2NTYyMDcwMjU5LAogICAgICAiaXNWaXNpYmxlIjogdHJ1ZSwKICAgICAgInBsYW5lSGl0IjogWwogICAgICAgIDMyLAogICAgICAgIDEuNDkzLAogICAgICAgIC0xLjY1MzI3MzE3ODg0ODkyNjRlLTE2CiAgICAgIF0KICAgIH0sCiAgICAib2JzZXJ2ZWQiOiB7CiAgICAgICJ4IjogOTYwLAogICAgICAieSI6IDYwNS4yNTMwODY0MTk3NTMxLAogICAgICAiY291bnQiOiAxNjIsCiAgICAgICJlcnJvciI6IDAuMDE0NDM5ODc2NzkyMTUyOTcyCiAgICB9CiAgfQpd"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-471562085b5397d7e5d9",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "portal projection distance-0.1m: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10741,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:13:06.180Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "projection-measurements",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJpZCI6ICJncmVlbiIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogMTEuODExMjQwNjU0MDQ4LAogICAgICAieCI6IDExNjguNDMzNjU4NjAwODQ3LAogICAgICAieSI6IDU0Mi43NzkxMTU0NDgwMTEzLAogICAgICAieiI6IDAuOTk1MzMxMzgzNjM2MDY5MiwKICAgICAgImlzVmlzaWJsZSI6IHRydWUsCiAgICAgICJwbGFuZUhpdCI6IFsKICAgICAgICAzMiwKICAgICAgICAxLjU2OTY3MjEzMTE0NzU0MSwKICAgICAgICAwLjAyNDU5MDE2MzkzNDQyNjU2CiAgICAgIF0KICAgIH0sCiAgICAib2JzZXJ2ZWQiOiB7CiAgICAgICJ4IjogMTE2OC4zMTczNzE5Mzc2MzksCiAgICAgICJ5IjogNTQyLjY4NDg1NTIzMzg1MywKICAgICAgImNvdW50IjogNDQ5LAogICAgICAiZXJyb3IiOiAwLjE0OTY5MTYwMzAxNDkzNDY0CiAgICB9CiAgfSwKICB7CiAgICAiaWQiOiAibWFnZW50YSIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogMTAuMTQ3Njg1NjMyMzUxMDk5LAogICAgICAieCI6IDg0MC42MTU0NjMxNDg4MTA1LAogICAgICAieSI6IDQ2NC43ODc3NDE3ODM3NTA3LAogICAgICAieiI6IDAuOTk2MDI0MTUwOTA2MTg3MiwKICAgICAgImlzVmlzaWJsZSI6IHRydWUsCiAgICAgICJwbGFuZUhpdCI6IFsKICAgICAgICAzMiwKICAgICAgICAxLjU3ODg3MzIzOTQzNjYxOTgsCiAgICAgICAgLTAuMDE0MDg0NTA3MDQyMjUzNzM4CiAgICAgIF0KICAgIH0sCiAgICAib2JzZXJ2ZWQiOiB7CiAgICAgICJ4IjogODQwLjY3MDU4ODIzNTI5NDEsCiAgICAgICJ5IjogNDY0LjYzODIzNTI5NDExNzY0LAogICAgICAiY291bnQiOiAzNDAsCiAgICAgICJlcnJvciI6IDAuMTU5MzQ1NDI4NTU3NjQyNDcKICAgIH0KICB9LAogIHsKICAgICJpZCI6ICJjeWFuIiwKICAgICJwcmVkaWN0ZWQiOiB7CiAgICAgICJwcm9qZWN0ZWRSYWRpdXMiOiA3LjkxNzQyNTA1MzgxMjM5NiwKICAgICAgIngiOiA5NTkuOTk5OTk5OTk5OTk5OSwKICAgICAgInkiOiA2MTEuNzIyNTU2MzY5ODI5OSwKICAgICAgInoiOiAwLjk5Njk1MjkxNTgxNzc3NCwKICAgICAgImlzVmlzaWJsZSI6IHRydWUsCiAgICAgICJwbGFuZUhpdCI6IFsKICAgICAgICAzMiwKICAgICAgICAxLjU2MTUzODQ2MTUzODQ2MTUsCiAgICAgICAgLTEuODE2NzgzNzEzMDIwNzkyZS0xNwogICAgICBdCiAgICB9LAogICAgIm9ic2VydmVkIjogewogICAgICAieCI6IDk2MCwKICAgICAgInkiOiA2MTEuNzMyMzIzMjMyMzIzMiwKICAgICAgImNvdW50IjogMTk4LAogICAgICAiZXJyb3IiOiAwLjAwOTc2Njg2MjQ5MzI3OTQwNQogICAgfQogIH0KXQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-496075c2d34a805800ad",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "portal projection pre-plane-0.005m: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9560,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:13:16.975Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "projection-measurements",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJpZCI6ICJncmVlbiIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogMTEuOTk4MDk2MjUxNDA1OTY3LAogICAgICAieCI6IDExNzEuNzMxMTEwMzE4OTI4OCwKICAgICAgInkiOiA1NDIuODIzMDgxNDcwOTE5LAogICAgICAieiI6IDAuOTk1MjUzNTY5ODkzNTcyMiwKICAgICAgImlzVmlzaWJsZSI6IHRydWUsCiAgICAgICJwbGFuZUhpdCI6IFsKICAgICAgICAzMiwKICAgICAgICAxLjU2OTk4MzM0NzIxMDY1OCwKICAgICAgICAwLjAwMTI0ODk1OTIwMDY2NTg2MjQKICAgICAgXQogICAgfSwKICAgICJvYnNlcnZlZCI6IHsKICAgICAgIngiOiAxMTcxLjk0MzcyMjk0MzcyMjgsCiAgICAgICJ5IjogNTQyLjgwOTUyMzgwOTUyMzksCiAgICAgICJjb3VudCI6IDQ2MiwKICAgICAgImVycm9yIjogMC4yMTMwNDQ0NTE3MDk3NDc0MgogICAgfQogIH0sCiAgewogICAgImlkIjogIm1hZ2VudGEiLAogICAgInByZWRpY3RlZCI6IHsKICAgICAgInByb2plY3RlZFJhZGl1cyI6IDEwLjI4NTMwNTkyMjg2ODM1NSwKICAgICAgIngiOiA4MzguOTk2NDAwOTA3NDMxLAogICAgICAieSI6IDQ2My43Njc3MzI1NzE2ODE1NiwKICAgICAgInoiOiAwLjk5NTk2Njg0MDYwODgyMzIsCiAgICAgICJpc1Zpc2libGUiOiB0cnVlLAogICAgICAicGxhbmVIaXQiOiBbCiAgICAgICAgMzIsCiAgICAgICAgMS41NzA0NDk2Nzg4MDA4NTY0LAogICAgICAgIC0wLjAwMDcxMzc3NTg3NDM3NTMwNTEKICAgICAgXQogICAgfSwKICAgICJvYnNlcnZlZCI6IHsKICAgICAgIngiOiA4MzguOTQxOTI2MzQ1NjA5MSwKICAgICAgInkiOiA0NjMuNzI2NjI4ODk1MTg0MTUsCiAgICAgICJjb3VudCI6IDM1MywKICAgICAgImVycm9yIjogMC4wNjgyNDIxNDMxOTA5ODQ3MgogICAgfQogIH0sCiAgewogICAgImlkIjogImN5YW4iLAogICAgInByZWRpY3RlZCI6IHsKICAgICAgInByb2plY3RlZFJhZGl1cyI6IDguMDAwOTUxNDcwMjYwMTcsCiAgICAgICJ4IjogOTU5Ljk5OTk5OTk5OTk5OTksCiAgICAgICJ5IjogNjEyLjQ3OTIwNzQzNjQ3NDQsCiAgICAgICJ6IjogMC45OTY5MTgxMzIyNTY4MTUyLAogICAgICAiaXNWaXNpYmxlIjogdHJ1ZSwKICAgICAgInBsYW5lSGl0IjogWwogICAgICAgIDMyLAogICAgICAgIDEuNTY5NTcyNDU5NzQ0NTg2NiwKICAgICAgICAtOS4xNzk3NTExMzE4NjQ4OTZlLTE5CiAgICAgIF0KICAgIH0sCiAgICAib2JzZXJ2ZWQiOiB7CiAgICAgICJ4IjogOTYwLAogICAgICAieSI6IDYxMi41NjEyMjQ0ODk3OTU5LAogICAgICAiY291bnQiOiAxOTYsCiAgICAgICJlcnJvciI6IDAuMDgyMDE3MDUzMzIxNDY1MDMKICAgIH0KICB9Cl0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-85c8ffb6dd0663df4103",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "portal projection frame-edge: real pixels match independent camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10720,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:13:26.586Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "projection-measurements",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJpZCI6ICJncmVlbiIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogMTEuMjU3NTg4NzQ4Mzg5NTA1LAogICAgICAieCI6IDEwNTAuMDYwNzA5OTg3MTE1OCwKICAgICAgInkiOiA1NDIuNjQ4ODQ0NDExMzg1OCwKICAgICAgInoiOiAwLjk5NTU2MTk0NTI0MzE1NTIsCiAgICAgICJpc1Zpc2libGUiOiB0cnVlLAogICAgICAicGxhbmVIaXQiOiBbCiAgICAgICAgMzIsCiAgICAgICAgMS41Njg3NSwKICAgICAgICAwLjg2MjQ5OTk5OTk5OTk5OTgKICAgICAgXQogICAgfSwKICAgICJvYnNlcnZlZCI6IHsKICAgICAgIngiOiAxMDUwLjA1MTI4MjA1MTI4MiwKICAgICAgInkiOiA1NDIuNzkyMzA3NjkyMzA3NiwKICAgICAgImNvdW50IjogMzkwLAogICAgICAiZXJyb3IiOiAwLjE0Mzc3MjczMzY3MDA0Mjg0CiAgICB9CiAgfSwKICB7CiAgICAiaWQiOiAibWFnZW50YSIsCiAgICAicHJlZGljdGVkIjogewogICAgICAicHJvamVjdGVkUmFkaXVzIjogOS43MzYyOTI5NzE1ODAxMTEsCiAgICAgICJ4IjogNzUxLjUyODc4NTc4NDk5MDQsCiAgICAgICJ5IjogNDY3LjgzNjg4NzM4NzExMjEsCiAgICAgICJ6IjogMC45OTYxOTU0NzAzNzk3NDMzLAogICAgICAiaXNWaXNpYmxlIjogdHJ1ZSwKICAgICAgInBsYW5lSGl0IjogWwogICAgICAgIDMyLAogICAgICAgIDEuNjA0MDU0MDU0MDU0MDU0LAogICAgICAgIDAuNzIxNjIxNjIxNjIxNjIxOQogICAgICBdCiAgICB9LAogICAgIm9ic2VydmVkIjogewogICAgICAieCI6IDc1MS4zMTUwNDcwMjE5NDM1LAogICAgICAieSI6IDQ2Ny45NjcwODQ2Mzk0OTg0LAogICAgICAiY291bnQiOiAzMTksCiAgICAgICJlcnJvciI6IDAuMjUwMjcxMDE5ODEyMDM3MDMKICAgIH0KICB9LAogIHsKICAgICJpZCI6ICJjeWFuIiwKICAgICJwcmVkaWN0ZWQiOiB7CiAgICAgICJwcm9qZWN0ZWRSYWRpdXMiOiA3LjY2NDc0MTI3NTQ5OTIzNywKICAgICAgIngiOiA4ODYuMDU3NzkwMDQ4MTI0OCwKICAgICAgInkiOiA2MDkuNDMzNTM4NjEzMzQ2LAogICAgICAieiI6IDAuOTk3MDU4MTQyOTA2MTYxMSwKICAgICAgImlzVmlzaWJsZSI6IHRydWUsCiAgICAgICJwbGFuZUhpdCI6IFsKICAgICAgICAzMiwKICAgICAgICAxLjUzNzIzNDA0MjU1MzE5MTYsCiAgICAgICAgMC43ODUxMDYzODI5Nzg3MjM1CiAgICAgIF0KICAgIH0sCiAgICAib2JzZXJ2ZWQiOiB7CiAgICAgICJ4IjogODg2LjMzNTE2NDgzNTE2NDgsCiAgICAgICJ5IjogNjA5LjUxMDk4OTAxMDk4OSwKICAgICAgImNvdW50IjogMTgyLAogICAgICAiZXJyb3IiOiAwLjI4Nzk4NDk1ODk0ODQ2NDY1CiAgICB9CiAgfQpd"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-08ce9c05ec5013e3a518",
+          "file": "visual.spec.ts",
+          "line": 60,
+          "column": 25
+        },
+        {
+          "title": "lateral parallax, live target animation and viewport resizing remain real",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 25855,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:13:37.340Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-ec57ce75a72c951c8d5f",
+          "file": "visual.spec.ts",
+          "line": 91,
+          "column": 1
+        },
+        {
+          "title": "a real fixed-step crossing keeps projected pixels continuous across the portal plane",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13893,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:14:03.220Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-4a44f9a362ce387a3c6d",
+          "file": "visual.spec.ts",
+          "line": 131,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-08T01:02:50.136Z",
+    "duration": 689337.855,
+    "expected": 33,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

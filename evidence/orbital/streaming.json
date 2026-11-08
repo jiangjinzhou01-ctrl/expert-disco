@@ -1,0 +1,670 @@
+{
+  "pending": {
+    "total": 10,
+    "resident": 0,
+    "loading": 2,
+    "queued": 8,
+    "proxy": 10,
+    "visible": 10,
+    "culled": 0,
+    "loads": 0,
+    "evictions": 0,
+    "failed": 0,
+    "bytesResident": 0,
+    "retainedBehind": 0,
+    "interests": [
+      {
+        "worldId": "A",
+        "kind": "main",
+        "position": [
+          -3.13558928155544e-7,
+          1.5500000033527612,
+          33.000000188135374
+        ]
+      },
+      {
+        "worldId": "B",
+        "kind": "portal",
+        "position": [
+          99.99999968644106,
+          1.5500000033527612,
+          71.20000018813538
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "id": "A-capsule",
+        "worldId": "A",
+        "state": "loading",
+        "visible": true,
+        "lod": "proxy",
+        "distance": 0,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 1,
+        "bytes": 1440096,
+        "triangles": 50704,
+        "failure": null
+      },
+      {
+        "id": "A-arrival",
+        "worldId": "A",
+        "state": "queued",
+        "visible": true,
+        "lod": "proxy",
+        "distance": 10.6,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 0,
+        "bytes": 165196,
+        "triangles": 5800,
+        "failure": null
+      },
+      {
+        "id": "A-gallery-west",
+        "worldId": "A",
+        "state": "queued",
+        "visible": true,
+        "lod": "proxy",
+        "distance": 12.8,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 0,
+        "bytes": 396488,
+        "triangles": 15116,
+        "failure": null
+      },
+      {
+        "id": "A-gallery-east",
+        "worldId": "A",
+        "state": "queued",
+        "visible": true,
+        "lod": "proxy",
+        "distance": 12.8,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 0,
+        "bytes": 399804,
+        "triangles": 15116,
+        "failure": null
+      },
+      {
+        "id": "A-gate",
+        "worldId": "A",
+        "state": "queued",
+        "visible": true,
+        "lod": "proxy",
+        "distance": 49,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 0,
+        "bytes": 521860,
+        "triangles": 18952,
+        "failure": null
+      },
+      {
+        "id": "A-roof-trusses",
+        "worldId": "A",
+        "state": "queued",
+        "visible": true,
+        "lod": "proxy",
+        "distance": 24,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 0,
+        "bytes": 465712,
+        "triangles": 14988,
+        "failure": null
+      },
+      {
+        "id": "A-exterior-west",
+        "worldId": "A",
+        "state": "queued",
+        "visible": true,
+        "lod": "proxy",
+        "distance": 11.3,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 0,
+        "bytes": 1212256,
+        "triangles": 34176,
+        "failure": null
+      },
+      {
+        "id": "A-exterior-east",
+        "worldId": "A",
+        "state": "loading",
+        "visible": true,
+        "lod": "proxy",
+        "distance": 9.7,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 1,
+        "bytes": 1347468,
+        "triangles": 38368,
+        "failure": null
+      },
+      {
+        "id": "B-services",
+        "worldId": "B",
+        "state": "queued",
+        "visible": true,
+        "lod": "proxy",
+        "distance": 52.4,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 0,
+        "bytes": 743232,
+        "triangles": 26076,
+        "failure": null
+      },
+      {
+        "id": "B-gravity-instruments",
+        "worldId": "B",
+        "state": "queued",
+        "visible": true,
+        "lod": "proxy",
+        "distance": 76.2,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 0,
+        "bytes": 190872,
+        "triangles": 5416,
+        "failure": null
+      }
+    ]
+  },
+  "portal": {
+    "total": 10,
+    "resident": 6,
+    "loading": 2,
+    "queued": 0,
+    "proxy": 2,
+    "visible": 3,
+    "culled": 7,
+    "loads": 6,
+    "evictions": 0,
+    "failed": 0,
+    "bytesResident": 4961308,
+    "retainedBehind": 5,
+    "interests": [
+      {
+        "worldId": "A",
+        "kind": "main",
+        "position": [
+          2.4,
+          1.55,
+          -15
+        ]
+      },
+      {
+        "worldId": "B",
+        "kind": "portal",
+        "position": [
+          102.4,
+          1.55,
+          23.200000000000003
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "id": "A-capsule",
+        "worldId": "A",
+        "state": "resident",
+        "visible": false,
+        "lod": "hidden",
+        "distance": 37,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 1,
+        "bytes": 1440096,
+        "triangles": 50704,
+        "failure": null
+      },
+      {
+        "id": "A-arrival",
+        "worldId": "A",
+        "state": "resident",
+        "visible": false,
+        "lod": "hidden",
+        "distance": 26,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 1,
+        "bytes": 165196,
+        "triangles": 5800,
+        "failure": null
+      },
+      {
+        "id": "A-gallery-west",
+        "worldId": "A",
+        "state": "resident",
+        "visible": true,
+        "lod": "high",
+        "distance": 10.3,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 1,
+        "bytes": 396488,
+        "triangles": 15116,
+        "failure": null
+      },
+      {
+        "id": "A-gallery-east",
+        "worldId": "A",
+        "state": "resident",
+        "visible": false,
+        "lod": "hidden",
+        "distance": 5.5,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 1,
+        "bytes": 399804,
+        "triangles": 15116,
+        "failure": null
+      },
+      {
+        "id": "A-gate",
+        "worldId": "A",
+        "state": "loading",
+        "visible": true,
+        "lod": "proxy",
+        "distance": 1,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 1,
+        "bytes": 521860,
+        "triangles": 18952,
+        "failure": null
+      },
+      {
+        "id": "A-roof-trusses",
+        "worldId": "A",
+        "state": "proxy",
+        "visible": false,
+        "lod": "hidden",
+        "distance": 21.2,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 0,
+        "bytes": 465712,
+        "triangles": 14988,
+        "failure": null
+      },
+      {
+        "id": "A-exterior-west",
+        "worldId": "A",
+        "state": "resident",
+        "visible": false,
+        "lod": "hidden",
+        "distance": 32.3,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 1,
+        "bytes": 1212256,
+        "triangles": 34176,
+        "failure": null
+      },
+      {
+        "id": "A-exterior-east",
+        "worldId": "A",
+        "state": "resident",
+        "visible": false,
+        "lod": "hidden",
+        "distance": 31.6,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 1,
+        "bytes": 1347468,
+        "triangles": 38368,
+        "failure": null
+      },
+      {
+        "id": "B-services",
+        "worldId": "B",
+        "state": "loading",
+        "visible": true,
+        "lod": "proxy",
+        "distance": 4.4,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 1,
+        "bytes": 743232,
+        "triangles": 26076,
+        "failure": null
+      },
+      {
+        "id": "B-gravity-instruments",
+        "worldId": "B",
+        "state": "proxy",
+        "visible": false,
+        "lod": "hidden",
+        "distance": 28.1,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 0,
+        "bytes": 190872,
+        "triangles": 5416,
+        "failure": null
+      }
+    ]
+  },
+  "refined": {
+    "total": 10,
+    "resident": 7,
+    "loading": 0,
+    "queued": 0,
+    "proxy": 0,
+    "visible": 3,
+    "culled": 7,
+    "loads": 8,
+    "evictions": 1,
+    "failed": 0,
+    "bytesResident": 4786304,
+    "retainedBehind": 4,
+    "interests": [
+      {
+        "worldId": "A",
+        "kind": "main",
+        "position": [
+          2.4,
+          1.55,
+          -15
+        ]
+      },
+      {
+        "worldId": "B",
+        "kind": "portal",
+        "position": [
+          102.4,
+          1.55,
+          23.200000000000003
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "id": "A-capsule",
+        "worldId": "A",
+        "state": "proxy",
+        "visible": false,
+        "lod": "hidden",
+        "distance": 37,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 1,
+        "bytes": 1440096,
+        "triangles": 50704,
+        "failure": null
+      },
+      {
+        "id": "A-arrival",
+        "worldId": "A",
+        "state": "resident",
+        "visible": false,
+        "lod": "hidden",
+        "distance": 26,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 1,
+        "bytes": 165196,
+        "triangles": 5800,
+        "failure": null
+      },
+      {
+        "id": "A-gallery-west",
+        "worldId": "A",
+        "state": "resident",
+        "visible": true,
+        "lod": "high",
+        "distance": 10.3,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 1,
+        "bytes": 396488,
+        "triangles": 15116,
+        "failure": null
+      },
+      {
+        "id": "A-gallery-east",
+        "worldId": "A",
+        "state": "resident",
+        "visible": false,
+        "lod": "hidden",
+        "distance": 5.5,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 1,
+        "bytes": 399804,
+        "triangles": 15116,
+        "failure": null
+      },
+      {
+        "id": "A-gate",
+        "worldId": "A",
+        "state": "resident",
+        "visible": true,
+        "lod": "high",
+        "distance": 1,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 1,
+        "bytes": 521860,
+        "triangles": 18952,
+        "failure": null
+      },
+      {
+        "id": "A-roof-trusses",
+        "worldId": "A",
+        "state": "proxy",
+        "visible": false,
+        "lod": "hidden",
+        "distance": 21.2,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 0,
+        "bytes": 465712,
+        "triangles": 14988,
+        "failure": null
+      },
+      {
+        "id": "A-exterior-west",
+        "worldId": "A",
+        "state": "resident",
+        "visible": false,
+        "lod": "hidden",
+        "distance": 32.3,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 1,
+        "bytes": 1212256,
+        "triangles": 34176,
+        "failure": null
+      },
+      {
+        "id": "A-exterior-east",
+        "worldId": "A",
+        "state": "resident",
+        "visible": false,
+        "lod": "hidden",
+        "distance": 31.6,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 1,
+        "bytes": 1347468,
+        "triangles": 38368,
+        "failure": null
+      },
+      {
+        "id": "B-services",
+        "worldId": "B",
+        "state": "resident",
+        "visible": true,
+        "lod": "high",
+        "distance": 4.4,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 1,
+        "bytes": 743232,
+        "triangles": 26076,
+        "failure": null
+      },
+      {
+        "id": "B-gravity-instruments",
+        "worldId": "B",
+        "state": "proxy",
+        "visible": false,
+        "lod": "hidden",
+        "distance": 28.1,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 0,
+        "bytes": 190872,
+        "triangles": 5416,
+        "failure": null
+      }
+    ]
+  },
+  "hidden": {
+    "total": 10,
+    "resident": 7,
+    "loading": 1,
+    "queued": 0,
+    "proxy": 1,
+    "visible": 8,
+    "culled": 2,
+    "loads": 9,
+    "evictions": 2,
+    "failed": 0,
+    "bytesResident": 4508784,
+    "retainedBehind": 0,
+    "interests": [
+      {
+        "worldId": "A",
+        "kind": "main",
+        "position": [
+          2.4,
+          1.55,
+          -15
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "id": "A-capsule",
+        "worldId": "A",
+        "state": "loading",
+        "visible": true,
+        "lod": "proxy",
+        "distance": 37,
+        "lastWanted": 9.333333333333334,
+        "loadCount": 2,
+        "bytes": 1440096,
+        "triangles": 50704,
+        "failure": null
+      },
+      {
+        "id": "A-arrival",
+        "worldId": "A",
+        "state": "resident",
+        "visible": true,
+        "lod": "high",
+        "distance": 26,
+        "lastWanted": 9.333333333333334,
+        "loadCount": 1,
+        "bytes": 165196,
+        "triangles": 5800,
+        "failure": null
+      },
+      {
+        "id": "A-gallery-west",
+        "worldId": "A",
+        "state": "resident",
+        "visible": true,
+        "lod": "high",
+        "distance": 10.3,
+        "lastWanted": 9.333333333333334,
+        "loadCount": 1,
+        "bytes": 396488,
+        "triangles": 15116,
+        "failure": null
+      },
+      {
+        "id": "A-gallery-east",
+        "worldId": "A",
+        "state": "resident",
+        "visible": true,
+        "lod": "high",
+        "distance": 5.5,
+        "lastWanted": 9.333333333333334,
+        "loadCount": 1,
+        "bytes": 399804,
+        "triangles": 15116,
+        "failure": null
+      },
+      {
+        "id": "A-gate",
+        "worldId": "A",
+        "state": "resident",
+        "visible": true,
+        "lod": "high",
+        "distance": 1,
+        "lastWanted": 9.333333333333334,
+        "loadCount": 1,
+        "bytes": 521860,
+        "triangles": 18952,
+        "failure": null
+      },
+      {
+        "id": "A-roof-trusses",
+        "worldId": "A",
+        "state": "resident",
+        "visible": true,
+        "lod": "high",
+        "distance": 21.2,
+        "lastWanted": 9.333333333333334,
+        "loadCount": 1,
+        "bytes": 465712,
+        "triangles": 14988,
+        "failure": null
+      },
+      {
+        "id": "A-exterior-west",
+        "worldId": "A",
+        "state": "resident",
+        "visible": true,
+        "lod": "high",
+        "distance": 32.3,
+        "lastWanted": 9.333333333333334,
+        "loadCount": 1,
+        "bytes": 1212256,
+        "triangles": 34176,
+        "failure": null
+      },
+      {
+        "id": "A-exterior-east",
+        "worldId": "A",
+        "state": "resident",
+        "visible": true,
+        "lod": "high",
+        "distance": 31.6,
+        "lastWanted": 9.333333333333334,
+        "loadCount": 1,
+        "bytes": 1347468,
+        "triangles": 38368,
+        "failure": null
+      },
+      {
+        "id": "B-services",
+        "worldId": "B",
+        "state": "proxy",
+        "visible": false,
+        "lod": "hidden",
+        "distance": null,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 1,
+        "bytes": 743232,
+        "triangles": 26076,
+        "failure": null
+      },
+      {
+        "id": "B-gravity-instruments",
+        "worldId": "B",
+        "state": "proxy",
+        "visible": false,
+        "lod": "hidden",
+        "distance": null,
+        "lastWanted": 0.6774000000000233,
+        "loadCount": 0,
+        "bytes": 190872,
+        "triangles": 5416,
+        "failure": null
+      }
+    ]
+  },
+  "requested": [
+    "http://127.0.0.1:5180/assets/orbital/architecture/A-capsule.glb",
+    "http://127.0.0.1:5180/assets/orbital/architecture/A-exterior-east.glb",
+    "http://127.0.0.1:5180/assets/orbital/architecture/A-arrival.glb",
+    "http://127.0.0.1:5180/assets/orbital/architecture/A-exterior-west.glb",
+    "http://127.0.0.1:5180/assets/orbital/architecture/A-gallery-west.glb",
+    "http://127.0.0.1:5180/assets/orbital/architecture/A-gallery-east.glb",
+    "http://127.0.0.1:5180/assets/orbital/architecture/A-gate.glb",
+    "http://127.0.0.1:5180/assets/orbital/architecture/B-services.glb",
+    "http://127.0.0.1:5180/assets/orbital/architecture/A-roof-trusses.glb",
+    "http://127.0.0.1:5180/assets/orbital/architecture/A-capsule.glb"
+  ],
+  "clockNote": "The real runtime streaming update receives a9s-later clock while physics is paused; result counters are never modified."
+}

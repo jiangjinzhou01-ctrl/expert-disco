@@ -1,17 +1,19 @@
 vite v8.3.6 building client environment for production...
 transforming...
-✓ 66 modules transformed.
+✓ 81 modules transformed.
 rendering chunks...
 computing gzip size...
-../../tmp/threshold-v02-subpath/index.html                           0.41 kB │ gzip:     0.31 kB
-../../tmp/threshold-v02-subpath/assets/LabApp-DD7S2-Wh.css           3.92 kB │ gzip:     1.45 kB
-../../tmp/threshold-v02-subpath/assets/ChapterView-RmE_mpAb.css      4.19 kB │ gzip:     1.34 kB
-../../tmp/threshold-v02-subpath/assets/LabApp-pLNrQIO3.js           13.22 kB │ gzip:     4.86 kB
-../../tmp/threshold-v02-subpath/assets/index-BQfrVWP9.js           222.51 kB │ gzip:    69.91 kB
-../../tmp/threshold-v02-subpath/assets/ChapterView-DwWm6b7E.js     240.23 kB │ gzip:    50.10 kB
-../../tmp/threshold-v02-subpath/assets/InputManager-C-2QF9Vv.js  5,283.03 kB │ gzip: 1,921.58 kB
+../../tmp/threshold-v02-subpath/index.html                                 1.17 kB │ gzip:     0.67 kB
+../../tmp/threshold-v02-subpath/assets/basis_transcoder-o4Hde_L7.js       57.52 kB
+../../tmp/threshold-v02-subpath/assets/basis_transcoder-VXdx5NbI.wasm    527.33 kB │ gzip:   248.94 kB
+../../tmp/threshold-v02-subpath/assets/LabApp-DD7S2-Wh.css                 3.92 kB │ gzip:     1.45 kB
+../../tmp/threshold-v02-subpath/assets/ChapterView-DjlXMTcr.css           19.26 kB │ gzip:     4.76 kB
+../../tmp/threshold-v02-subpath/assets/LabApp-BwIpPON9.js                 13.22 kB │ gzip:     4.85 kB
+../../tmp/threshold-v02-subpath/assets/index-TaBv_sEX.js                 222.56 kB │ gzip:    69.92 kB
+../../tmp/threshold-v02-subpath/assets/ChapterView-CVG4IopV.js           386.74 kB │ gzip:   103.30 kB
+../../tmp/threshold-v02-subpath/assets/InputManager-taCA78dp.js        5,286.68 kB │ gzip: 1,922.84 kB
 
-✓ built in 767ms
+✓ built in 599ms
 
 
 (!) outDir /tmp/threshold-v02-subpath is not inside project root and will not be emptied.
@@ -23,4 +25,4 @@ Use --emptyOutDir to override.
 - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
 
-PASS Chromium 158.0.8127.18; WebGL2 active; ready=true; main/portal draws=13/31; 39 successful requests; mutation adapter absent.
+PASS Chromium 158.0.8127.18; WebGL2 active; ready=true; main/portal draws=13/31; 68 successful requests; mutation adapter absent.

@@ -1,0 +1,243 @@
+{
+  "pass": true,
+  "webgl2": true,
+  "extensions": [
+    "EXT_clip_control",
+    "EXT_color_buffer_float",
+    "EXT_color_buffer_half_float",
+    "EXT_conservative_depth",
+    "EXT_depth_clamp",
+    "EXT_disjoint_timer_query_webgl2",
+    "EXT_float_blend",
+    "EXT_polygon_offset_clamp",
+    "EXT_texture_compression_bptc",
+    "EXT_texture_compression_rgtc",
+    "EXT_texture_filter_anisotropic",
+    "EXT_texture_mirror_clamp_to_edge",
+    "NV_shader_noperspective_interpolation",
+    "OES_draw_buffers_indexed",
+    "OES_sample_variables",
+    "OES_shader_multisample_interpolation",
+    "OES_texture_float_linear",
+    "OVR_multiview2",
+    "WEBGL_clip_cull_distance",
+    "WEBGL_compressed_texture_astc",
+    "WEBGL_compressed_texture_etc",
+    "WEBGL_compressed_texture_etc1",
+    "WEBGL_compressed_texture_s3tc",
+    "WEBGL_compressed_texture_s3tc_srgb",
+    "WEBGL_debug_renderer_info",
+    "WEBGL_debug_shaders",
+    "WEBGL_lose_context",
+    "WEBGL_multi_draw",
+    "WEBGL_polygon_mode",
+    "WEBGL_shader_pixel_local_storage",
+    "WEBGL_stencil_texturing"
+  ],
+  "records": [
+    {
+      "file": "concrete-albedo.ktx2",
+      "semantic": "albedo",
+      "width": 1024,
+      "height": 1024,
+      "mipLevels": 11,
+      "colorSpace": "srgb",
+      "format": 36492,
+      "formatName": "RGBA_BPTC_Format",
+      "compressed": true,
+      "payloadBytes": 1398128,
+      "generateMipmaps": false
+    },
+    {
+      "file": "concrete-roughness.ktx2",
+      "semantic": "roughness",
+      "width": 1024,
+      "height": 1024,
+      "mipLevels": 11,
+      "colorSpace": "",
+      "format": 36492,
+      "formatName": "RGBA_BPTC_Format",
+      "compressed": true,
+      "payloadBytes": 1398128,
+      "generateMipmaps": false
+    },
+    {
+      "file": "concrete-normal.ktx2",
+      "semantic": "normal",
+      "width": 1024,
+      "height": 1024,
+      "mipLevels": 11,
+      "colorSpace": "",
+      "format": 36492,
+      "formatName": "RGBA_BPTC_Format",
+      "compressed": true,
+      "payloadBytes": 1398128,
+      "generateMipmaps": false
+    },
+    {
+      "file": "metal-albedo.ktx2",
+      "semantic": "albedo",
+      "width": 1024,
+      "height": 1024,
+      "mipLevels": 11,
+      "colorSpace": "srgb",
+      "format": 36492,
+      "formatName": "RGBA_BPTC_Format",
+      "compressed": true,
+      "payloadBytes": 1398128,
+      "generateMipmaps": false
+    },
+    {
+      "file": "metal-roughness.ktx2",
+      "semantic": "roughness",
+      "width": 1024,
+      "height": 1024,
+      "mipLevels": 11,
+      "colorSpace": "",
+      "format": 36492,
+      "formatName": "RGBA_BPTC_Format",
+      "compressed": true,
+      "payloadBytes": 1398128,
+      "generateMipmaps": false
+    },
+    {
+      "file": "metal-normal.ktx2",
+      "semantic": "normal",
+      "width": 1024,
+      "height": 1024,
+      "mipLevels": 11,
+      "colorSpace": "",
+      "format": 36492,
+      "formatName": "RGBA_BPTC_Format",
+      "compressed": true,
+      "payloadBytes": 1398128,
+      "generateMipmaps": false
+    },
+    {
+      "file": "copper-albedo.ktx2",
+      "semantic": "albedo",
+      "width": 1024,
+      "height": 1024,
+      "mipLevels": 11,
+      "colorSpace": "srgb",
+      "format": 36492,
+      "formatName": "RGBA_BPTC_Format",
+      "compressed": true,
+      "payloadBytes": 1398128,
+      "generateMipmaps": false
+    },
+    {
+      "file": "copper-roughness.ktx2",
+      "semantic": "roughness",
+      "width": 1024,
+      "height": 1024,
+      "mipLevels": 11,
+      "colorSpace": "",
+      "format": 36492,
+      "formatName": "RGBA_BPTC_Format",
+      "compressed": true,
+      "payloadBytes": 1398128,
+      "generateMipmaps": false
+    },
+    {
+      "file": "copper-normal.ktx2",
+      "semantic": "normal",
+      "width": 1024,
+      "height": 1024,
+      "mipLevels": 11,
+      "colorSpace": "",
+      "format": 36492,
+      "formatName": "RGBA_BPTC_Format",
+      "compressed": true,
+      "payloadBytes": 1398128,
+      "generateMipmaps": false
+    }
+  ],
+  "samples": [
+    {
+      "file": "concrete-albedo.ktx2",
+      "rgba": [
+        168,
+        158,
+        144,
+        255
+      ]
+    },
+    {
+      "file": "concrete-roughness.ktx2",
+      "rgba": [
+        205,
+        205,
+        205,
+        255
+      ]
+    },
+    {
+      "file": "concrete-normal.ktx2",
+      "rgba": [
+        188,
+        187,
+        255,
+        255
+      ]
+    },
+    {
+      "file": "metal-albedo.ktx2",
+      "rgba": [
+        147,
+        149,
+        153,
+        255
+      ]
+    },
+    {
+      "file": "metal-roughness.ktx2",
+      "rgba": [
+        179,
+        179,
+        179,
+        255
+      ]
+    },
+    {
+      "file": "metal-normal.ktx2",
+      "rgba": [
+        187,
+        188,
+        255,
+        255
+      ]
+    },
+    {
+      "file": "copper-albedo.ktx2",
+      "rgba": [
+        85,
+        69,
+        59,
+        255
+      ]
+    },
+    {
+      "file": "copper-roughness.ktx2",
+      "rgba": [
+        180,
+        180,
+        180,
+        255
+      ]
+    },
+    {
+      "file": "copper-normal.ktx2",
+      "rgba": [
+        188,
+        187,
+        255,
+        255
+      ]
+    }
+  ],
+  "totalTranscodedPayloadBytes": 12583152,
+  "note": "Measured decoder mip payloads; driver GPU allocation and frame rate are not inferred.",
+  "browser": "158.0.8127.18",
+  "errors": []
+}

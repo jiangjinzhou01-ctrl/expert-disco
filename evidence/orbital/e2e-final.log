@@ -1,0 +1,76 @@
+
+> threshold-v02@0.2.0 test:e2e
+> playwright test
+
+
+Running 34 tests using 1 worker
+
+(node:1812) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 src/tests/e2e/chapter-audio.spec.ts:6:1 › orbital sound stays gesture-locked, emits bounded spatial cues, and releases its audio context (3.4s)
+  ✓   2 src/tests/e2e/diagnostics.spec.ts:12:1 › F3 diagnostics exports a real JSON download and UI quality resizes the live target (11.1s)
+  ✓   3 src/tests/e2e/diagnostics.spec.ts:51:1 › Esc cancels held keyboard and mouse drag, development geometry remains observational (8.0s)
+  ✓   4 src/tests/e2e/input.spec.ts:58:1 › mobile uses distinct captured pointer IDs for simultaneous movement and look, with cancellation (5.5s)
+  ✓   5 src/tests/e2e/input.spec.ts:99:3 › mobile blur clears held movement and allows a fresh contact (3.6s)
+  ✓   6 src/tests/e2e/input.spec.ts:99:3 › mobile orientationchange clears held movement and allows a fresh contact (3.8s)
+  ✓   7 src/tests/e2e/input.spec.ts:99:3 › mobile visibilitychange clears held movement and allows a fresh contact (3.7s)
+  ✓   8 src/tests/e2e/input.spec.ts:122:1 › mobile touch controls traverse A → B, turn around, return, and reset the real capsule (7.7s)
+  ✓   9 src/tests/e2e/lifecycle.spec.ts:4:1 › WebGL2 context loss/restoration resumes real portal passes (4.7s)
+  ✓  10 src/tests/e2e/lifecycle.spec.ts:26:1 › resize and render quality retain aspect and bounded GPU resources; disposal releases resources (7.5s)
+  ✓  11 src/tests/e2e/orbital.spec.ts:17:1 › orbital product: highest default, closable diagnostics, saved choices, help and real canvas photo (36.1s)
+  ✓  12 src/tests/e2e/orbital.spec.ts:72:3 › orbital touch response › equal-distance fast gesture turns further; release and cancellation stop input (13.5s)
+  ✓  13 src/tests/e2e/orbital.spec.ts:106:1 › orbital streaming: deferred GLBs retain proxies, visible portal requests destination, hidden content evicts (14.3s)
+  ✓  14 src/tests/e2e/orbital.spec.ts:141:1 › orbital streaming: failed optional detail preserves structural physics and records error (11.0s)
+  ✓  15 src/tests/e2e/orbital.spec.ts:156:1 › orbital interactions: observatory records a visit and a released sample obeys Rapier sideways gravity (12.2s)
+  ✓  16 src/tests/e2e/runtime.spec.ts:10:1 › real Rapier state crosses both ways and preserves committed event order (8.7s)
+  ✓  17 src/tests/e2e/runtime.spec.ts:35:1 › door frame blocks the capsule, blocked exit rejects then recovers (4.6s)
+  ✓  18 src/tests/e2e/runtime.spec.ts:53:1 › fast segments retain remaining displacement and long frames cap catch-up (4.8s)
+  ✓  19 src/tests/e2e/runtime.spec.ts:72:1 › desktop keyboard moves the real capsule and R resets it (7.0s)
+  ✓  20 src/tests/e2e/v02-mobile.spec.ts:5:165 › V02 mobile 1170:540 › actual dual Pointer Events control the full chapter and remain live during gravity rotation (42.1s)
+  ✓  21 src/tests/e2e/v02-mobile.spec.ts:5:165 › V02 mobile 1200:540 › actual dual Pointer Events control the full chapter and remain live during gravity rotation (57.6s)
+  ✓  22 src/tests/e2e/v02.spec.ts:5:1 › V02: complete input-driven chapter, trigger, return, and deterministic uncut frame sequence (1.3m)
+  ✓  23 src/tests/e2e/v02.spec.ts:17:1 › V02: CR1 cameras show real geometry and both fixed-axis witnesses after the turn (1.6m)
+  ✘  24 src/tests/e2e/v02.spec.ts:25:1 › V02: offscreen portal culling, resizing, context restoration, and checkpoint reset (34.8s)
+(node:2890) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  25 src/tests/e2e/v02.spec.ts:35:1 › V02: seeded free look and free movement expose real enclosing geometry beyond hero cameras (57.3s)
+  ✓  26 src/tests/e2e/visual.spec.ts:60:25 › portal projection front: real pixels match independent camera (8.8s)
+  ✓  27 src/tests/e2e/visual.spec.ts:60:25 › portal projection oblique-30: real pixels match independent camera (11.7s)
+  ✓  28 src/tests/e2e/visual.spec.ts:60:25 › portal projection oblique-60: real pixels match independent camera (13.4s)
+  ✓  29 src/tests/e2e/visual.spec.ts:60:25 › portal projection distance-1m: real pixels match independent camera (12.3s)
+  ✓  30 src/tests/e2e/visual.spec.ts:60:25 › portal projection distance-0.1m: real pixels match independent camera (10.7s)
+  ✓  31 src/tests/e2e/visual.spec.ts:60:25 › portal projection pre-plane-0.005m: real pixels match independent camera (9.6s)
+  ✓  32 src/tests/e2e/visual.spec.ts:60:25 › portal projection frame-edge: real pixels match independent camera (10.7s)
+  ✓  33 src/tests/e2e/visual.spec.ts:91:1 › lateral parallax, live target animation and viewport resizing remain real (25.9s)
+  ✓  34 src/tests/e2e/visual.spec.ts:131:1 › a real fixed-step crossing keeps projected pixels continuous across the portal plane (13.9s)
+
+
+  1) src/tests/e2e/v02.spec.ts:25:1 › V02: offscreen portal culling, resizing, context restoration, and checkpoint reset 
+
+    Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 174
+    Received:    181
+
+      28 |  await page.evaluate(()=>{window.__V02_TEST__!.look(-Math.PI/.0025,0);window.__V02_TEST__!.render();});expect((await chapterRead(page)).render.passes).toBe(0);
+      29 |  await page.evaluate(async()=>{const a=window.__V02_TEST__!;await a.runtime.streaming.settle();a.render();});
+    > 30 |  const before=(await chapterRead(page)).render;for(const [width,height]of [[1170,540],[1200,540],[960,540]]){await page.setViewportSize({width,height});await page.waitForFunction(ratio=>Math.abs(window.__V02_TEST__!.runtime.camera.aspect-ratio)<.0001,width/height);await page.evaluate(()=>window.__V02_TEST__!.render());}
+         |                                                                            ^
+      31 |  await page.evaluate(async()=>{const a=window.__V02_TEST__!;await a.runtime.streaming.settle();a.render();});
+      32 |  const resized=(await chapterRead(page)).render;expect(resized.geometries).toBeLessThanOrEqual(before.geometries+1);expect(resized.textures).toBeLessThanOrEqual(before.textures+2);
+      33 |  const supported=await page.evaluate(()=>{const gl=window.__V02_TEST__!.runtime.gl.getContext();const e=gl.getExtension('WEBGL_lose_context');if(!e)return false;e.loseContext();setTimeout(()=>e.restoreContext(),150);return true;});expect(supported).toBe(true);await page.waitForTimeout(500);await page.evaluate(()=>window.__V02_TEST__!.render());expect((await chapterRead(page)).render.context).toBe('active');
+        at /workspace/threshold-v02/src/tests/e2e/v02.spec.ts:30:76
+
+    Error Context: test-results/v02-V02-offscreen-portal-c-848bd-ration-and-checkpoint-reset/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/v02-V02-offscreen-portal-c-848bd-ration-and-checkpoint-reset/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/v02-V02-offscreen-portal-c-848bd-ration-and-checkpoint-reset/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    src/tests/e2e/v02.spec.ts:25:1 › V02: offscreen portal culling, resizing, context restoration, and checkpoint reset 
+  33 passed (11.5m)

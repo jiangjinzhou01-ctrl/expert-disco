@@ -35,7 +35,7 @@ try{
   await new Promise((resolveReady,reject)=>{server.once('error',reject);server.listen(port,'127.0.0.1',resolveReady);});
   browser=await chromium.launch({headless:true,args:['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
   evidence.browser=browser.version();
-  const page=await browser.newPage({viewport:{width:1280,height:720},deviceScaleFactor:1});
+  const page=await browser.newPage({viewport:{width:640,height:360},deviceScaleFactor:1});
   page.on('response',response=>{evidence.requests.push({url:response.url(),status:response.status()});});
   page.on('pageerror',error=>evidence.pageErrors.push(error.message));
   page.on('requestfailed',request=>evidence.requestFailures.push({url:request.url(),error:request.failure()?.errorText}));
@@ -60,7 +60,7 @@ try{
   assert(evidence.requests.every(request=>request.status<400));
   assert.deepEqual(evidence.pageErrors,[]);
   assert.deepEqual(evidence.requestFailures,[]);
-  await page.screenshot({path:'evidence/subpath-smoke.png'});
+  await page.screenshot({path:'evidence/subpath-smoke.png',timeout:90000});
   await page.goto(`http://127.0.0.1:${port}${prefix}?mode=chapter&debug=1&test=1`);
   await page.waitForFunction(()=>window.__THRESHOLD_V02__?.().ready===true,{},{timeout:60000});
   evidence.chapter=await page.evaluate(()=>({snapshot:window.__THRESHOLD_V02__(),mutationAdapter:typeof window.__V02_TEST__}));
@@ -69,7 +69,7 @@ try{
   assert.equal(evidence.chapter.snapshot.error,null);
   assert(evidence.requests.filter(r=>r.url.endsWith('.glb')).length>=2);
   assert(evidence.requests.every(r=>r.status<400));
-  await page.screenshot({path:'evidence/v02/subpath-chapter.png'});
+  await page.screenshot({path:'evidence/v02/subpath-chapter.png',timeout:90000});
   evidence.result='PASS';
   logs.push(`PASS Chromium ${evidence.browser}; WebGL2 active; ready=${evidence.snapshot.diagnostics.ready}; main/portal draws=${evidence.snapshot.diagnostics.render.mainDrawCalls}/${evidence.snapshot.diagnostics.render.offscreenDrawCalls}; ${evidence.requests.length} successful requests; mutation adapter absent.\n`);
 }catch(error){

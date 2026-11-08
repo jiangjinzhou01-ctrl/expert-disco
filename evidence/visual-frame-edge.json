@@ -96,13 +96,13 @@
       "targetResizes": 1
     },
     "performance": {
-      "samples": 18,
-      "fps": 20.29083530601935,
-      "averageMs": 49.28333333341612,
-      "p50Ms": 17.100000001490116,
-      "p95Ms": 442.90000000596046,
-      "p99Ms": 442.90000000596046,
-      "physicsMs": 0,
+      "samples": 17,
+      "fps": 19.53349419740215,
+      "averageMs": 51.19411764706156,
+      "p50Ms": 17.600000000093132,
+      "p95Ms": 369.4000000001397,
+      "p99Ms": 369.4000000001397,
+      "physicsMs": 3.0999999998603016,
       "gpuMs": null
     },
     "movingReference": [
@@ -111,7 +111,7 @@
       -1.3
     ],
     "elapsed": 0,
-    "droppedSeconds": 0.3929000000059605
+    "droppedSeconds": 0.3194000000001397
   },
   "measurements": [
     {

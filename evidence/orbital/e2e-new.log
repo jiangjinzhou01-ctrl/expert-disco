@@ -1,0 +1,78 @@
+
+Running 5 tests using 1 worker
+
+(node:17123) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 src/tests/e2e/orbital.spec.ts:17:1 › orbital product: highest default, closable diagnostics, saved choices, help and real canvas photo (3.0m)
+(node:17464) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 src/tests/e2e/orbital.spec.ts:72:3 › orbital touch response › equal-distance fast gesture turns further; release and cancellation stop input (12.5s)
+  ✓  3 src/tests/e2e/orbital.spec.ts:106:1 › orbital streaming: deferred GLBs retain proxies, visible portal requests destination, hidden content evicts (10.5s)
+  ✘  4 src/tests/e2e/orbital.spec.ts:141:1 › orbital streaming: failed optional detail preserves structural physics and records error (10.9s)
+(node:17595) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  5 src/tests/e2e/orbital.spec.ts:156:1 › orbital interactions: observatory records a visit and a released sample obeys Rapier sideways gravity (10.4s)
+
+
+  1) src/tests/e2e/orbital.spec.ts:17:1 › orbital product: highest default, closable diagnostics, saved choices, help and real canvas photo 
+
+    Test timeout of 180000ms exceeded.
+
+    Error: locator.click: Test timeout of 180000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: '关于本作', exact: true })
+
+
+      43 |   await expect(page.getByRole('slider',{name:'视角灵敏度',exact:true})).toHaveValue(changedSensitivity);
+      44 |   await page.getByRole('combobox',{name:'画面质量'}).selectOption('1');
+    > 45 |   await page.getByRole('button',{name:'关于本作',exact:true}).click();
+         |                                                           ^
+      46 |   await page.getByRole('button',{name:'关闭关于本作',exact:true}).click();
+      47 |   if(await page.getByRole('button',{name:'关闭设置',exact:true}).isVisible())await page.getByRole('button',{name:'关闭设置',exact:true}).click();
+      48 |   await page.getByRole('button',{name:'操作帮助',exact:true}).click();
+        at /workspace/threshold-v02/src/tests/e2e/orbital.spec.ts:45:59
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../tmp/threshold-orbital-qa/orbital-orbital-product-hi-23e2c--help-and-real-canvas-photo/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../tmp/threshold-orbital-qa/orbital-orbital-product-hi-23e2c--help-and-real-canvas-photo/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../tmp/threshold-orbital-qa/orbital-orbital-product-hi-23e2c--help-and-real-canvas-photo/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../tmp/threshold-orbital-qa/orbital-orbital-product-hi-23e2c--help-and-real-canvas-photo/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) src/tests/e2e/orbital.spec.ts:141:1 › orbital streaming: failed optional detail preserves structural physics and records error 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      147 |   const state=await chapterRead(page),streaming=await stream(page);
+      148 |   expect(failedRequests.length).toBeGreaterThan(0);
+    > 149 |   expect(state.ready).toBe(true);expect(state.grounded).toBe(true);expect(state.errors).toEqual([]);
+          |                                                         ^
+      150 |   const failed=streaming.chunks.find(c=>c.id==='B-gravity-instruments');
+      151 |   expect(failed).toBeDefined();expect(failed?.state).toBe('error');
+      152 |   if(failed?.visible)expect(failed.lod).toBe('proxy');
+        at /workspace/threshold-v02/src/tests/e2e/orbital.spec.ts:149:57
+
+    Error Context: ../../tmp/threshold-orbital-qa/orbital-orbital-streaming--80c11-l-physics-and-records-error/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../tmp/threshold-orbital-qa/orbital-orbital-streaming--80c11-l-physics-and-records-error/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../tmp/threshold-orbital-qa/orbital-orbital-streaming--80c11-l-physics-and-records-error/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    src/tests/e2e/orbital.spec.ts:17:1 › orbital product: highest default, closable diagnostics, saved choices, help and real canvas photo 
+    src/tests/e2e/orbital.spec.ts:141:1 › orbital streaming: failed optional detail preserves structural physics and records error 
+  3 passed (3.8m)

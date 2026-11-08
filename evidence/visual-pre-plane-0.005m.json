@@ -39,7 +39,7 @@
       0,
       0
     ],
-    "step": 12,
+    "step": 14,
     "grounded": false,
     "events": [],
     "lastEventId": 0,
@@ -95,13 +95,13 @@
       "targetResizes": 1
     },
     "performance": {
-      "samples": 18,
-      "fps": 19.966722129783694,
-      "averageMs": 50.083333333333336,
-      "p50Ms": 14.400000005960464,
-      "p95Ms": 402,
-      "p99Ms": 402,
-      "physicsMs": 0.4000000059604645,
+      "samples": 17,
+      "fps": 19.163566677937343,
+      "averageMs": 52.18235294118195,
+      "p50Ms": 16.600000000093132,
+      "p95Ms": 328.4000000001397,
+      "p99Ms": 328.4000000001397,
+      "physicsMs": 0,
       "gpuMs": null
     },
     "movingReference": [
@@ -110,7 +110,7 @@
       -1.3
     ],
     "elapsed": 0,
-    "droppedSeconds": 0.3853333333333333
+    "droppedSeconds": 0.361733333333473
   },
   "measurements": [
     {

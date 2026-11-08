@@ -1,0 +1,34 @@
+{
+  "status": "PARTIALLY VERIFIED",
+  "unitTests": {
+    "passed": 91,
+    "files": 15
+  },
+  "developmentBrowser": {
+    "distinctScenariosVerified": 34,
+    "firstFullRun": {
+      "passed": 33,
+      "failed": 1
+    },
+    "correctedRegression": {
+      "passed": 1,
+      "failed": 0
+    }
+  },
+  "productionBrowser": {
+    "distinctScenariosVerified": 3,
+    "firstFullRun": {
+      "passed": 2,
+      "failed": 1
+    },
+    "correctedRegression": {
+      "passed": 1,
+      "failed": 0
+    }
+  },
+  "subpath": "PASS",
+  "artCaptures": 4,
+  "maxPortalMarkerErrorPixels": 0.28798495894846465,
+  "physicalDevices": "BLOCKED / not attached",
+  "ci": "Independent aggregate workflow triggered; inspect GitHub for completion, not asserted green"
+}

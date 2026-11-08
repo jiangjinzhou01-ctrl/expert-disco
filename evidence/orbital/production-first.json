@@ -1,0 +1,326 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/threshold-v02/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      "playwright.production.config.ts"
+    ],
+    "configFile": "/workspace/threshold-v02/playwright.production.config.ts",
+    "rootDir": "/workspace/threshold-v02/src/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/threshold-v02/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/workspace/threshold-v02/src/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "production.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/threshold-v02/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/workspace/threshold-v02/src/tests/e2e",
+        "snapshotDir": "/workspace/threshold-v02/src/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "production.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4180",
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "headless": true,
+          "launchOptions": {
+            "args": [
+              "--no-sandbox",
+              "--use-gl=angle",
+              "--use-angle=swiftshader",
+              "--enable-unsafe-swiftshader"
+            ]
+          },
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "video": {
+            "mode": "on",
+            "size": {
+              "width": 640,
+              "height": 360
+            }
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/production.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview -- --port 4180",
+      "url": "http://127.0.0.1:4180",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "production.spec.ts",
+      "file": "production.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "normal production bundle runs WebGL and real desktop input traverses both ways",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18978,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:16:52.390Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/threshold-v02/test-results/production-normal-producti-de56f-p-input-traverses-both-ways/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed69554c53210704c98c-fbd3b71b9dbb9f238906",
+          "file": "production.spec.ts",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "V02 production: genuine keyboard journey from spawn through the turn, interaction and return",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 387338,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "production input stage w {\n  world: \u001b[32m'VESTIBULE'\u001b[39m,\n  foot: [\n    \u001b[33m-0.000009082732020715412\u001b[39m,\n    \u001b[33m-1.2032689178376188e-8\u001b[39m,\n    \u001b[33m17.888021519415844\u001b[39m\n  ],\n  mode: \u001b[32m'NORMAL'\u001b[39m,\n  step: \u001b[33m341\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage d {\n  world: \u001b[32m'VESTIBULE'\u001b[39m,\n  foot: [ \u001b[33m8.020268192040504\u001b[39m, \u001b[33m9.618231655572629e-9\u001b[39m, \u001b[33m17.88806259715448\u001b[39m ],\n  mode: \u001b[32m'NORMAL'\u001b[39m,\n  step: \u001b[33m503\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage w {\n  world: \u001b[32m'VESTIBULE'\u001b[39m,\n  foot: [ \u001b[33m8.020319027319196\u001b[39m, \u001b[33m4.5401924442245445e-9\u001b[39m, \u001b[33m-14.096551976264614\u001b[39m ],\n  mode: \u001b[32m'NORMAL'\u001b[39m,\n  step: \u001b[33m1150\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage a {\n  world: \u001b[32m'VESTIBULE'\u001b[39m,\n  foot: [ \u001b[33m-0.1496385992917979\u001b[39m, \u001b[33m2.315494906923732e-9\u001b[39m, \u001b[33m-14.09656116674416\u001b[39m ],\n  mode: \u001b[32m'NORMAL'\u001b[39m,\n  step: \u001b[33m1316\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage w {\n  world: \u001b[32m'INVERT'\u001b[39m,\n  foot: [ \u001b[33m-0.14965546176983935\u001b[39m, \u001b[33m-1.0643388836939494e-8\u001b[39m, \u001b[33m18.181101346284155\u001b[39m ],\n  mode: \u001b[32m'NORMAL'\u001b[39m,\n  step: \u001b[33m1436\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage w {\n  world: \u001b[32m'INVERT'\u001b[39m,\n  foot: [ \u001b[33m-0.1498188759220227\u001b[39m, \u001b[33m-2.725985104312656e-9\u001b[39m, \u001b[33m-7.2375789370150265\u001b[39m ],\n  mode: \u001b[32m'NORMAL'\u001b[39m,\n  step: \u001b[33m1955\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage d {\n  world: \u001b[32m'INVERT'\u001b[39m,\n  foot: [ \u001b[33m4.7\u001b[39m, \u001b[33m4.113378559827051\u001b[39m, \u001b[33m-7.237554174211849\u001b[39m ],\n  mode: \u001b[32m'WALL'\u001b[39m,\n  step: \u001b[33m2107\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage w {\n  world: \u001b[32m'INVERT'\u001b[39m,\n  foot: [ \u001b[33m4.7\u001b[39m, \u001b[33m4.113378559827051\u001b[39m, \u001b[33m-16.487554174211738\u001b[39m ],\n  mode: \u001b[32m'WALL'\u001b[39m,\n  step: \u001b[33m2292\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage s {\n  world: \u001b[32m'INVERT'\u001b[39m,\n  foot: [ \u001b[33m4.7\u001b[39m, \u001b[33m4.113378559827051\u001b[39m, \u001b[33m-6.987554174211855\u001b[39m ],\n  mode: \u001b[32m'WALL'\u001b[39m,\n  step: \u001b[33m2630\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage a {\n  world: \u001b[32m'INVERT'\u001b[39m,\n  foot: [ \u001b[33m0.010079982310969626\u001b[39m, \u001b[33m-5.604982034057571e-10\u001b[39m, \u001b[33m-6.9875622474826145\u001b[39m ],\n  mode: \u001b[32m'NORMAL'\u001b[39m,\n  step: \u001b[33m2779\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "production input stage s {\n  world: \u001b[32m'VESTIBULE'\u001b[39m,\n  foot: [ \u001b[33m0.009992788019189902\u001b[39m, \u001b[33m-1.739399724254298e-8\u001b[39m, \u001b[33m-19.900721686974173\u001b[39m ],\n  mode: \u001b[32m'NORMAL'\u001b[39m,\n  step: \u001b[33m3293\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:17:11.454Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/threshold-v02/test-results/production-V02-production--ecf00-turn-interaction-and-return/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed69554c53210704c98c-aab5d856fa23cf91dc34",
+          "file": "production.spec.ts",
+          "line": 41,
+          "column": 1
+        },
+        {
+          "title": "Orbital production: a real walked checkpoint survives reload after physics clearance",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 65736,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m, \u001b[22mprecision\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m25.181987252094615\u001b[39m\nReceived: \u001b[31m23.431987401649454\u001b[39m\n\nExpected precision:    1\nExpected difference: < \u001b[32m0.05\u001b[39m\nReceived difference:   \u001b[31m1.7499998504451604\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m, \u001b[22mprecision\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m25.181987252094615\u001b[39m\nReceived: \u001b[31m23.431987401649454\u001b[39m\n\nExpected precision:    1\nExpected difference: < \u001b[32m0.05\u001b[39m\nReceived difference:   \u001b[31m1.7499998504451604\u001b[39m\n    at /workspace/threshold-v02/src/tests/e2e/production.spec.ts:66:59",
+                    "location": {
+                      "file": "/workspace/threshold-v02/src/tests/e2e/production.spec.ts",
+                      "column": 59,
+                      "line": 66
+                    },
+                    "snippet": " \u001b[90m 64 |\u001b[39m  \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mreload()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForFunction(()\u001b[33m=>\u001b[39m{\u001b[36mconst\u001b[39m s\u001b[33m=\u001b[39mwindow\u001b[33m.\u001b[39m__THRESHOLD_V02__\u001b[33m?.\u001b[39m()\u001b[33m;\u001b[39m\u001b[36mreturn\u001b[39m s\u001b[33m?.\u001b[39mready\u001b[33m&&\u001b[39ms\u001b[33m.\u001b[39mrestoredCheckpoint\u001b[33m;\u001b[39m}\u001b[33m,\u001b[39m\u001b[36mnull\u001b[39m\u001b[33m,\u001b[39m{timeout\u001b[33m:\u001b[39m\u001b[35m60000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 65 |\u001b[39m  \u001b[36mconst\u001b[39m restored\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(()\u001b[33m=>\u001b[39mwindow\u001b[33m.\u001b[39m__THRESHOLD_V02__\u001b[33m!\u001b[39m())\u001b[33m;\u001b[39m\u001b[36mif\u001b[39m(\u001b[33m!\u001b[39mrestored\u001b[33m.\u001b[39mready)\u001b[36mthrow\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Restored runtime not ready'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 66 |\u001b[39m  expect(restored\u001b[33m.\u001b[39mslot)\u001b[33m.\u001b[39mtoBe(\u001b[32m'A'\u001b[39m)\u001b[33m;\u001b[39mexpect(restored\u001b[33m.\u001b[39mfoot[\u001b[35m2\u001b[39m])\u001b[33m.\u001b[39mtoBeCloseTo(saved\u001b[33m.\u001b[39mfoot[\u001b[35m2\u001b[39m]\u001b[33m,\u001b[39m\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39mexpect(restored\u001b[33m.\u001b[39merrors)\u001b[33m.\u001b[39mtoEqual([])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 67 |\u001b[39m  \u001b[36mawait\u001b[39m writeFile(\u001b[32m'evidence/orbital/production-checkpoint.json'\u001b[39m\u001b[33m,\u001b[39m\u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify({saved\u001b[33m,\u001b[39mrestored\u001b[33m,\u001b[39mmethod\u001b[33m:\u001b[39m\u001b[32m'Normal production bundle; actual held W input; no pose/test adapter; reload validates support and full-capsule overlap.'\u001b[39m}\u001b[33m,\u001b[39m\u001b[36mnull\u001b[39m\u001b[33m,\u001b[39m\u001b[35m2\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m 68 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 69 |\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/threshold-v02/src/tests/e2e/production.spec.ts",
+                        "column": 59,
+                        "line": 66
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m, \u001b[22mprecision\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m25.181987252094615\u001b[39m\nReceived: \u001b[31m23.431987401649454\u001b[39m\n\nExpected precision:    1\nExpected difference: < \u001b[32m0.05\u001b[39m\nReceived difference:   \u001b[31m1.7499998504451604\u001b[39m\n\n  64 |  await page.reload();await page.waitForFunction(()=>{const s=window.__THRESHOLD_V02__?.();return s?.ready&&s.restoredCheckpoint;},null,{timeout:60000});\n  65 |  const restored=await page.evaluate(()=>window.__THRESHOLD_V02__!());if(!restored.ready)throw Error('Restored runtime not ready');\n> 66 |  expect(restored.slot).toBe('A');expect(restored.foot[2]).toBeCloseTo(saved.foot[2],1);expect(restored.errors).toEqual([]);\n     |                                                           ^\n  67 |  await writeFile('evidence/orbital/production-checkpoint.json',JSON.stringify({saved,restored,method:'Normal production bundle; actual held W input; no pose/test adapter; reload validates support and full-capsule overlap.'},null,2));\n  68 | });\n  69 |\n    at /workspace/threshold-v02/src/tests/e2e/production.spec.ts:66:59"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T01:23:38.819Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/threshold-v02/test-results/production-Orbital-product-bb0ad-oad-after-physics-clearance/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/threshold-v02/test-results/production-Orbital-product-bb0ad-oad-after-physics-clearance/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/threshold-v02/test-results/production-Orbital-product-bb0ad-oad-after-physics-clearance/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/threshold-v02/src/tests/e2e/production.spec.ts",
+                    "column": 59,
+                    "line": 66
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ed69554c53210704c98c-f40394ea3a9e9657c10a",
+          "file": "production.spec.ts",
+          "line": 56,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-08T01:16:51.556Z",
+    "duration": 483481.207,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

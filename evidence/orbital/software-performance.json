@@ -1,0 +1,422 @@
+{
+  "browser": "158.0.8127.18",
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.8127.18 Safari/537.36",
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "viewport": [
+      640,
+      360
+    ],
+    "dpr": 1
+  },
+  "samples": [
+    {
+      "view": "ARRIVAL",
+      "seconds": 15.009387807,
+      "performance": {
+        "samples": 33,
+        "fps": 2.190013538265489,
+        "averageMs": 456.61818181818603,
+        "p50Ms": 64.9000000001397,
+        "p95Ms": 2231.1999999999534,
+        "p99Ms": 2290.4000000001397,
+        "physicsMs": 1,
+        "gpuMs": null
+      },
+      "render": {
+        "targetWidth": 640,
+        "targetHeight": 360,
+        "quality": 1,
+        "mainDrawCalls": 90,
+        "offscreenDrawCalls": 63,
+        "geometries": 170,
+        "textures": 24,
+        "programs": 21,
+        "context": "active",
+        "passes": 1,
+        "targetResizes": 1
+      },
+      "streaming": {
+        "total": 10,
+        "resident": 7,
+        "loading": 0,
+        "queued": 0,
+        "proxy": 0,
+        "visible": 7,
+        "culled": 3,
+        "loads": 9,
+        "evictions": 2,
+        "failed": 0,
+        "bytesResident": 4039760,
+        "retainedBehind": 0,
+        "interests": [
+          {
+            "worldId": "A",
+            "kind": "main",
+            "position": [
+              7.999998446795161,
+              1.5500000161956993,
+              18.000001212629684
+            ]
+          },
+          {
+            "worldId": "B",
+            "kind": "portal",
+            "position": [
+              107.99999844679516,
+              1.5500000161956993,
+              56.20000121262969
+            ]
+          }
+        ],
+        "chunks": [
+          {
+            "id": "A-capsule",
+            "worldId": "A",
+            "state": "proxy",
+            "visible": false,
+            "lod": "hidden",
+            "distance": 7,
+            "lastWanted": 0.5828999999999068,
+            "loadCount": 1,
+            "bytes": 1440096,
+            "triangles": 50704,
+            "failure": null
+          },
+          {
+            "id": "A-arrival",
+            "worldId": "A",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 0,
+            "lastWanted": 4.856699999999954,
+            "loadCount": 1,
+            "bytes": 165196,
+            "triangles": 5800,
+            "failure": null
+          },
+          {
+            "id": "A-gallery-west",
+            "worldId": "A",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 15.9,
+            "lastWanted": 4.856699999999954,
+            "loadCount": 1,
+            "bytes": 396488,
+            "triangles": 15116,
+            "failure": null
+          },
+          {
+            "id": "A-gallery-east",
+            "worldId": "A",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 0,
+            "lastWanted": 4.856699999999954,
+            "loadCount": 1,
+            "bytes": 399804,
+            "triangles": 15116,
+            "failure": null
+          },
+          {
+            "id": "A-gate",
+            "worldId": "A",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 34,
+            "lastWanted": 4.856699999999954,
+            "loadCount": 1,
+            "bytes": 521860,
+            "triangles": 18952,
+            "failure": null
+          },
+          {
+            "id": "A-roof-trusses",
+            "worldId": "A",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 21.2,
+            "lastWanted": 4.856699999999954,
+            "loadCount": 1,
+            "bytes": 465712,
+            "triangles": 14988,
+            "failure": null
+          },
+          {
+            "id": "A-exterior-west",
+            "worldId": "A",
+            "state": "proxy",
+            "visible": false,
+            "lod": "hidden",
+            "distance": 19.3,
+            "lastWanted": 0.5828999999999068,
+            "loadCount": 1,
+            "bytes": 1212256,
+            "triangles": 34176,
+            "failure": null
+          },
+          {
+            "id": "A-exterior-east",
+            "worldId": "A",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 1.7,
+            "lastWanted": 4.856699999999954,
+            "loadCount": 1,
+            "bytes": 1347468,
+            "triangles": 38368,
+            "failure": null
+          },
+          {
+            "id": "B-services",
+            "worldId": "B",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 37.4,
+            "lastWanted": 4.856699999999954,
+            "loadCount": 1,
+            "bytes": 743232,
+            "triangles": 26076,
+            "failure": null
+          },
+          {
+            "id": "B-gravity-instruments",
+            "worldId": "B",
+            "state": "proxy",
+            "visible": false,
+            "lod": "hidden",
+            "distance": 61.2,
+            "lastWanted": 0.5828999999999068,
+            "loadCount": 0,
+            "bytes": 190872,
+            "triangles": 5416,
+            "failure": null
+          }
+        ]
+      },
+      "materials": {
+        "sets": 3,
+        "maps": 9,
+        "sharedMaterials": 10,
+        "jpegSourceBytes": 1783030,
+        "ktxNetworkBytes": 6714783,
+        "compressedMaps": 9,
+        "formats": {
+          "36492": 9
+        },
+        "gpuUploadPayloadBytes": 12583152,
+        "payloadNote": "Typed texture payload with mips; excludes GPU driver overhead, not a measured VRAM total",
+        "fallbacks": [],
+        "source": "ambientCG CC0 / Concrete048, Metal009, Metal047B"
+      }
+    },
+    {
+      "view": "C3",
+      "seconds": 15.011702243,
+      "performance": {
+        "samples": 18,
+        "fps": 1.2150996381703414,
+        "averageMs": 822.97777777777,
+        "p50Ms": 814.3999999999069,
+        "p95Ms": 2680.2000000001863,
+        "p99Ms": 2680.2000000001863,
+        "physicsMs": 0.8000000000465661,
+        "gpuMs": null
+      },
+      "render": {
+        "targetWidth": 640,
+        "targetHeight": 360,
+        "quality": 1,
+        "mainDrawCalls": 36,
+        "offscreenDrawCalls": 0,
+        "geometries": 172,
+        "textures": 25,
+        "programs": 21,
+        "context": "active",
+        "passes": 0,
+        "targetResizes": 1
+      },
+      "streaming": {
+        "total": 10,
+        "resident": 7,
+        "loading": 0,
+        "queued": 0,
+        "proxy": 0,
+        "visible": 2,
+        "culled": 8,
+        "loads": 10,
+        "evictions": 3,
+        "failed": 0,
+        "bytesResident": 4065436,
+        "retainedBehind": 5,
+        "interests": [
+          {
+            "worldId": "B",
+            "kind": "main",
+            "position": [
+              103.15,
+              4,
+              -12
+            ]
+          }
+        ],
+        "chunks": [
+          {
+            "id": "A-capsule",
+            "worldId": "A",
+            "state": "proxy",
+            "visible": false,
+            "lod": "hidden",
+            "distance": null,
+            "lastWanted": 0.5828999999999068,
+            "loadCount": 1,
+            "bytes": 1440096,
+            "triangles": 50704,
+            "failure": null
+          },
+          {
+            "id": "A-arrival",
+            "worldId": "A",
+            "state": "proxy",
+            "visible": false,
+            "lod": "hidden",
+            "distance": null,
+            "lastWanted": 4.856699999999954,
+            "loadCount": 1,
+            "bytes": 165196,
+            "triangles": 5800,
+            "failure": null
+          },
+          {
+            "id": "A-gallery-west",
+            "worldId": "A",
+            "state": "resident",
+            "visible": false,
+            "lod": "hidden",
+            "distance": null,
+            "lastWanted": 4.856699999999954,
+            "loadCount": 1,
+            "bytes": 396488,
+            "triangles": 15116,
+            "failure": null
+          },
+          {
+            "id": "A-gallery-east",
+            "worldId": "A",
+            "state": "resident",
+            "visible": false,
+            "lod": "hidden",
+            "distance": null,
+            "lastWanted": 4.856699999999954,
+            "loadCount": 1,
+            "bytes": 399804,
+            "triangles": 15116,
+            "failure": null
+          },
+          {
+            "id": "A-gate",
+            "worldId": "A",
+            "state": "resident",
+            "visible": false,
+            "lod": "hidden",
+            "distance": null,
+            "lastWanted": 4.856699999999954,
+            "loadCount": 1,
+            "bytes": 521860,
+            "triangles": 18952,
+            "failure": null
+          },
+          {
+            "id": "A-roof-trusses",
+            "worldId": "A",
+            "state": "resident",
+            "visible": false,
+            "lod": "hidden",
+            "distance": null,
+            "lastWanted": 4.856699999999954,
+            "loadCount": 1,
+            "bytes": 465712,
+            "triangles": 14988,
+            "failure": null
+          },
+          {
+            "id": "A-exterior-west",
+            "worldId": "A",
+            "state": "proxy",
+            "visible": false,
+            "lod": "hidden",
+            "distance": null,
+            "lastWanted": 0.5828999999999068,
+            "loadCount": 1,
+            "bytes": 1212256,
+            "triangles": 34176,
+            "failure": null
+          },
+          {
+            "id": "A-exterior-east",
+            "worldId": "A",
+            "state": "resident",
+            "visible": false,
+            "lod": "hidden",
+            "distance": null,
+            "lastWanted": 4.856699999999954,
+            "loadCount": 1,
+            "bytes": 1347468,
+            "triangles": 38368,
+            "failure": null
+          },
+          {
+            "id": "B-services",
+            "worldId": "B",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 0,
+            "lastWanted": 9.115100000000327,
+            "loadCount": 1,
+            "bytes": 743232,
+            "triangles": 26076,
+            "failure": null
+          },
+          {
+            "id": "B-gravity-instruments",
+            "worldId": "B",
+            "state": "resident",
+            "visible": true,
+            "lod": "high",
+            "distance": 0,
+            "lastWanted": 9.115100000000327,
+            "loadCount": 1,
+            "bytes": 190872,
+            "triangles": 5416,
+            "failure": null
+          }
+        ]
+      },
+      "materials": {
+        "sets": 3,
+        "maps": 9,
+        "sharedMaterials": 10,
+        "jpegSourceBytes": 1783030,
+        "ktxNetworkBytes": 6714783,
+        "compressedMaps": 9,
+        "formats": {
+          "36492": 9
+        },
+        "gpuUploadPayloadBytes": 12583152,
+        "payloadNote": "Typed texture payload with mips; excludes GPU driver overhead, not a measured VRAM total",
+        "fallbacks": [],
+        "source": "ambientCG CC0 / Concrete048, Metal009, Metal047B"
+      }
+    }
+  ],
+  "note": "Software-rendered cloud browser, not a physical phone/desktop GPU. Fixed view sampling does not certify input latency or thermal performance."
+}

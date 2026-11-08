@@ -64,6 +64,25 @@ Blender and the pinned Khronos encoder are authoring tools, not runtime requirem
 
 ## Remaining verification
 
-There is no attached physical Android/iPhone or representative desktop GPU. Real-device frame time, touch feel, browser-specific behavior and a ten-minute thermal run remain BLOCKED. SwiftShader timings must never be presented as phone results. The project has no blanket promise of maximum-quality 60 FPS on every device.
+There is no attached physical Android/iPhone or representative desktop GPU. Real-device frame time, touch feel, browser-specific behavior and a ten-minute thermal run remain BLOCKED. The executable entry, operator sequence and collection limitations are documented in [DEVICE_TEST_ORBITAL.md](DEVICE_TEST_ORBITAL.md). SwiftShader timings must never be presented as phone results. The project has no blanket promise of maximum-quality 60 FPS on every device.
 
 The art is an original real-time architectural exhibit with selected authored assets and static shadow baking. It does not include a full offline GI bake or photorealistic cinematic rendering. It needs human art-direction and representative-device acceptance before being described as commercially qualified.
+
+## Measured cloud software-renderer sample
+
+Chromium 158.0.8127.18, Linux, ANGLE Vulkan SwiftShader, 640×360, DPR 1, highest preset. These short fixed-view samples include any outstanding driver work after scene preparation and do not certify sustained controls or physical-device performance.
+
+| View | Actual seconds | Samples | FPS | P95 ms | P99 ms |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| ARRIVAL | 15.01 | 33 | 2.190 | 2231.20 | 2290.40 |
+| C3 | 15.01 | 18 | 1.215 | 2680.20 | 2680.20 |
+
+This software environment misses the real-device design targets; those targets remain unverified. It must not be reported as mainstream desktop or Android performance. The actual payload reduction and deferred loading results are independently evidenced, rather than inferred from these frame rates.
+
+## Environment and command outcome
+
+Runtime/assets were frozen at source commit `61a1bf3`; subsequent changes correct regression expectations and software-renderer screenshot conditions, plus documentation/evidence. Local verification: TypeScript and ESLint passed, 91 unit/integration tests passed, all 34 distinct development-browser and three production-browser scenarios passed after the recorded corrections, build/root/repository-subpath checks passed. The exact intermediate command failures and targeted reruns are preserved in the acceptance record rather than rewritten into a green aggregate log.
+
+The production keyboard recording contains 381.16 continuous seconds (31,123,692 bytes). It includes real input and rendering; simulation advances at a bounded fixed step on this slow software renderer, so video duration is not a real-device completion-time benchmark. Checkpoint recovery also passed in the normal production bundle with no mutation adapter.
+
+Build still warns about the large Rapier-compatible embedded-WASM/shared engine chunk (about 5.29 MB raw / 1.92 MB gzip). The warning is retained; dependencies were not downgraded or replaced to silence it. Assets use actual Meshopt and KTX2 compression; no claim is made that JPEG file size measures GPU memory.
